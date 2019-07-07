@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  &.en {
+    font-family: $font-family-en;
+    direction: ltr;
+  }
+
+  &.fa {
+    font-family: $font-family-fa;
+    direction: rtl;
+  }
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+  cursor: pointer;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  box-sizing: border-box;
+}
+
+.root {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#main {
+  max-width: 1440px;
+  margin: 0 auto;
+}

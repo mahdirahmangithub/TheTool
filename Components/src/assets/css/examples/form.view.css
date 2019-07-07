@@ -1,0 +1,16 @@
+#header {
+  height: 65px;
+  background-color: green;
+}
+
+#content {
+  height: 100vh;
+  background-color: red;
+}
+
+.box {
+  background-color: #000;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 16px;
+}

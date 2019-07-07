@@ -1,0 +1,17 @@
+$space: 1rem !default;
+$spaces: (
+  x1: $space * 0.125,
+  x2: $space * 0.25,
+  x4: $space * 0.5,
+  x6: $space * 0.75,
+  x7: $space * 0.875,
+  x8: $space * 1,
+  x9: $space * 1.125,
+  x12: $space * 1.5,
+  x16: $space * 2,
+  x18: $space * 2.25,
+  x24: $space * 3,
+  x32: $space * 4
+) !default;
+
+$gutter: 1rem !default;

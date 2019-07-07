@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+body.en {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  direction: ltr;
+}
+body.fa {
+  font-family: IRANSans, Arial, Tahoma, Helvetica;
+  direction: rtl;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+  cursor: pointer;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  box-sizing: border-box;
+}
+
+.root {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.h6,
+h6, .h5,
+h5, .h4,
+h4, .h3,
+h3, .h2,
+h2, .h1,
+h1 {
+  margin: 0;
+  -webkit-margin-before: 0em;
+  margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+  margin-block-end: 0em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  text-size-adjust: 100%;
+}
+.responsive-typography.h6,
+h6.responsive-typography, .responsive-typography.h5,
+h5.responsive-typography, .responsive-typography.h4,
+h4.responsive-typography, .responsive-typography.h3,
+h3.responsive-typography, .responsive-typography.h2,
+h2.responsive-typography, .responsive-typography.h1,
+h1.responsive-typography {
+  transition: font-size 200ms ease, line-height 200ms ease;
+}
+
+.text-tiny, .text-xxs, .text-xs, .text-sm, .text-md, .text-lg, .text-xl {
+  line-height: 2;
+  font-weight: normal;
+  text-size-adjust: 100%;
+}
+.responsive-typography.text-tiny, .responsive-typography.text-xxs, .responsive-typography.text-xs, .responsive-typography.text-sm, .responsive-typography.text-md, .responsive-typography.text-lg, .responsive-typography.text-xl {
+  transition: font-size 200ms ease, line-height 200ms ease;
+}
+
+.h1,
+h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.h2,
+h2 {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.h3,
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.h4,
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.h5,
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.h6,
+h6 {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+  -webkit-margin-before: 0em;
+  margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+  margin-block-end: 0em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+}
+
+.text-xl {
+  font-size: 1.125rem;
+}
+
+.text-lg {
+  font-size: 1rem;
+}
+
+.text-lg-stable {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: normal;
+}
+
+.text-md {
+  font-size: 0.875rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-xxs {
+  font-size: 0.625rem;
+}
+
+.text-tiny {
+  font-size: 0.5rem;
+}
+
+@media (max-width: 769px) {
+  .h1,
+h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  .h2,
+h2 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: normal;
+  }
+
+  .h3,
+h3 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  .h4,
+h4 {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  .text-xl {
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: normal;
+  }
+
+  .text-lg {
+    font-size: 0.875rem;
+    line-height: 2;
+    font-weight: normal;
+  }
+}
+
+/*# sourceMappingURL=sonnat.typography.css.map */

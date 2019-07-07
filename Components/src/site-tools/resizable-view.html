@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../assets/css/font.css" />
+    <link rel="stylesheet" href="../assets/css/sonnat.reset.css" />
+    <link rel="stylesheet" href="../assets/css/site-tools/site-tools.css" />
+    <link rel="stylesheet" href="../assets/css/sonnat.elements.css" />
+    <title>ResizableView</title>
+    <style>
+      #x {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body class="fa">
+    <div class="root">
+      <div id="main-wrapper" class="base-wrapper">
+        <header id="header"></header>
+        <main id="main">
+          <div id="x" class="resizable-view-row">
+            <div class="resizable-view-row__breakpoints">
+              <div
+                class="resizable-view-row__breakpoints__breakpoint"
+                data-breakpoint="sm"
+              >
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 32 60"
+                  style="enable-background:new 0 0 32 60;"
+                  xml:space="preserve"
+                >
+                  <defs>
+                    <filter id="shadow">
+                      <feOffset
+                        dx="0"
+                        dy="1"
+                        in="SourceAlpha"
+                        result="shadowOffsetOuter1"
+                      ></feOffset>
+                      <feGaussianBlur
+                        stdDeviation="3"
+                        in="shadowOffsetOuter1"
+                        result="shadowBlurOuter1"
+                      ></feGaussianBlur>
+                      <feComposite
+                        in="shadowBlurOuter1"
+                        in2="SourceAlpha"
+                        operator="out"
+                        result="shadowBlurOuter1"
+                      ></feComposite>
+                      <feColorMatrix
+                        values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0"
+                        type="matrix"
+                        in="shadowBlurOuter1"
+                      ></feColorMatrix>
+                    </filter>
+                  </defs>
+                  <path
+                    d="M16,38c-0.3,0-0.5,0.2-0.5,0.5v1c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5v-1C16.5,38.2,16.3,38,16,38z"
+                    style="opacity:0.64;fill:#FF0000;"
+                  />
+                  <path
+                    d="M16,34c-0.3,0-0.5,0.2-0.5,0.5v1c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5v-1C16.5,34.2,16.3,34,16,34z"
+                    style="opacity:0.64;fill:#FF0000;"
+                  />
+                  <path
+                    d="M16,12c-0.3,0-0.5,0.2-0.5,0.5v1c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5v-1C16.5,12.2,16.3,12,16,12z"
+                    style="opacity:0.64;fill:#FF0000;"
+                  />
+                  <path
+                    d="M16,8c-0.3,0-0.5,0.2-0.5,0.5v1c0,0.3,0.2,0.5,0.5,0.5c0.3,0,0.5-0.2,0.5-0.5v-1C16.5,8.2,16.3,8,16,8z"
+                    style="opacity:0.64;fill:#FF0000;"
+                  />
+                  <path
+                    d="M22.5,0h-13c-1.1,0-2,0.9-2,2v19.7c0,0.4,0.1,0.9,0.4,1.2l6.4,8.3c0.8,1,2.3,1,3.2,0l6.6-8.3	c0.3-0.4,0.4-0.8,0.4-1.2V2C24.5,0.9,23.6,0,22.5,0z"
+                    style="opacity:0.56; filter:url(#shadow);"
+                  />
+                  <path
+                    d="M22.5,0h-13c-1.1,0-2,0.9-2,2v19.7c0,0.4,0.1,0.9,0.4,1.2l6.4,8.3c0.8,1,2.3,1,3.2,0l6.6-8.3 c0.3-0.4,0.4-0.8,0.4-1.2V2C24.5,0.9,23.6,0,22.5,0z"
+                    style="opacity:0.56;fill:#FEFFAD;  "
+                  />
+                  <path
+                    d="M16,26.3L16,26.3c-0.3,0-0.5-0.2-0.5-0.5v-7c0-0.3,0.2-0.5,0.5-0.5l0,0c0.3,0,0.5,0.2,0.5,0.5v7 C16.5,26.1,16.3,26.3,16,26.3z"
+                    style="opacity:0.64;fill:#FF0000;"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="resizable-view typography-sheet">
+              <div
+                class="resizable-view__draggable-handle ui-resizable-e"
+              ></div>
+              <div class="resizable-view__content">
+                <div class="resizable-typography-row">
+                  <div class="resizable-typography-row__type-info">
+                    <span>IRANSans</span>
+                    <span class="fw">Light</span>
+                    <span class="fs-px">48</span>
+                    <span class="fs-rem">3rem</span>
+                    <span class="lh">1.5</span>
+                  </div>
+                  <div class="resizable-typography-row__divider"></div>
+                  <div class="resizable-typography-row__type">
+                    <h1 class="responsive-typography">H1 عنوان</h1>
+                  </div>
+                </div>
+                <div class="resizable-typography-row">
+                  <div class="resizable-typography-row__type-info">
+                    <span>IRANSans</span>
+                    <span class="fw">Regular</span>
+                    <span class="fs-px">32</span>
+                    <span class="fs-rem">2rem</span>
+                    <span class="lh">1.5</span>
+                  </div>
+                  <div class="resizable-typography-row__divider"></div>
+                  <div class="resizable-typography-row__type">
+                    <h2 class="responsive-typography">H2 عنوان</h2>
+                  </div>
+                </div>
+                <div class="resizable-typography-row">
+                  <div class="resizable-typography-row__type-info">
+                    <span>IRANSans</span>
+                    <span class="fw">Medium</span>
+                    <span class="fs-px">24</span>
+                    <span class="fs-rem">1.5rem</span>
+                    <span class="lh">1.5</span>
+                  </div>
+                  <div class="resizable-typography-row__divider"></div>
+                  <div class="resizable-typography-row__type">
+                    <h3 class="responsive-typography">H3 عنوان</h3>
+                  </div>
+                </div>
+                <div class="resizable-typography-row">
+                  <div class="resizable-typography-row__type-info">
+                    <span>IRANSans</span>
+                    <span class="fw">Medium</span>
+                    <span class="fs-px">20</span>
+                    <span class="fx-rem">1.25rem</span>
+                    <span class="lh">1.5</span>
+                  </div>
+                  <div class="resizable-typography-row__divider"></div>
+                  <div class="resizable-typography-row__type">
+                    <h4 class="responsive-typography">H4 عنوان</h4>
+                  </div>
+                </div>
+                <div class="resizable-typography-row">
+                  <div class="resizable-typography-row__type-info">
+                    <span>IRANSans</span>
+                    <span class="fw">Medium</span>
+                    <span class="fs-px">18</span>
+                    <span class="fx-rem">1.125rem</span>
+                    <span class="lh">1.5</span>
+                  </div>
+                  <div class="resizable-typography-row__divider"></div>
+                  <div class="resizable-typography-row__type">
+                    <h5 class="responsive-typography">H5 عنوان</h5>
+                  </div>
+                </div>
+                <div class="resizable-typography-row">
+                  <div class="resizable-typography-row__type-info">
+                    <span>IRANSans</span>
+                    <span class="fw">Medium</span>
+                    <span class="fs-px">16</span>
+                    <span class="fs-rem">1rem</span>
+                    <span class="lh">2</span>
+                  </div>
+                  <div class="resizable-typography-row__divider"></div>
+                  <div class="resizable-typography-row__type">
+                    <h6 class="responsive-typography">H6 عنوان</h6>
+                  </div>
+                </div>
+                <div class="resizable-typography-row">
+                  <div class="resizable-typography-row__type-info">
+                    <span>IRANSans</span>
+                    <span class="fw">Regular</span>
+                    <span class="fs-px">18</span>
+                    <span class="fs-rem">1.125rem</span>
+                    <span class="lh">2</span>
+                  </div>
+                  <div class="resizable-typography-row__divider"></div>
+                  <div class="resizable-typography-row__type">
+                    <span class="text-xlg responsive-typography"
+                      >text-xlg متن</span
+                    >
+                  </div>
+                </div>
+                <div class="resizable-typography-row">
+                  <div class="resizable-typography-row__type-info">
+                    <span>IRANSans</span>
+                    <span class="fw">Regular</span>
+                    <span class="fs-px">16</span>
+                    <span class="fx-rem">1rem</span>
+                    <span class="lh">2</span>
+                  </div>
+                  <div class="resizable-typography-row__divider"></div>
+                  <div class="resizable-typography-row__type">
+                    <span class="text-lg responsive-typography"
+                      >text-lg متن</span
+                    >
+                  </div>
+                </div>
+                <div class="resizable-typography-row">
+                  <div class="resizable-typography-row__type-info">
+                    <span>IRANSans</span>
+                    <span class="fw">Regular</span>
+                    <span class="fs-px">16</span>
+                    <span class="fs-rem">1rem</span>
+                    <span class="lh">2</span>
+                  </div>
+                  <div class="resizable-typography-row__divider"></div>
+                  <div class="resizable-typography-row__type">
+                    <span class="text-lg-stable responsive-typography"
+                      >text-lg-stable متن</span
+                    >
+                  </div>
+                </div>
+                <div class="resizable-typography-row">
+                  <div class="resizable-typography-row__type-info">
+                    <span>IRANSans</span>
+                    <span class="fw">Medium</span>
+                    <span class="fs-px">14</span>
+                    <span class="fs-rem">0.875rem</span>
+                    <span class="lh">2</span>
+                  </div>
+                  <div class="resizable-typography-row__divider"></div>
+                  <div class="resizable-typography-row__type">
+                    <span class="text-md responsive-typography"
+                      >text-md متن</span
+                    >
+                  </div>
+                </div>
+                <div class="resizable-typography-row">
+                  <div class="resizable-typography-row__type-info">
+                    <span>IRANSans</span>
+                    <span class="fw">Regular</span>
+                    <span class="fs-px">14</span>
+                    <span class="fs-rem">0.875rem</span>
+                    <span class="lh">2</span>
+                  </div>
+                  <div class="resizable-typography-row__divider"></div>
+                  <div class="resizable-typography-row__type">
+                    <span class="text-sm responsive-typography"
+                      >text-sm متن</span
+                    >
+                  </div>
+                </div>
+                <div class="resizable-typography-row">
+                  <div class="resizable-typography-row__type-info">
+                    <span>IRANSans</span>
+                    <span class="fw">Regular</span>
+                    <span class="fs-px">12</span>
+                    <span class="fs-rem">0.75rem</span>
+                    <span class="lh">2</span>
+                  </div>
+                  <div class="resizable-typography-row__divider"></div>
+                  <div class="resizable-typography-row__type">
+                    <span class="text-xs responsive-typography"
+                      >text-xs متن</span
+                    >
+                  </div>
+                </div>
+                <div class="resizable-typography-row">
+                  <div class="resizable-typography-row__type-info">
+                    <span>IRANSans</span>
+                    <span class="fw">Regular</span>
+                    <span class="fs-px">10</span>
+                    <span class="fs-rem">0.625rem</span>
+                    <span class="lh">2</span>
+                  </div>
+                  <div class="resizable-typography-row__divider"></div>
+                  <div class="resizable-typography-row__type">
+                    <span class="text-xxs responsive-typography"
+                      >text-xxs متن</span
+                    >
+                  </div>
+                </div>
+                <div class="resizable-typography-row">
+                  <div class="resizable-typography-row__type-info">
+                    <span>IRANSans</span>
+                    <span class="fw">Regular</span>
+                    <span class="fs-px">8</span>
+                    <span class="fs-rem">0.5rem</span>
+                    <span class="lh">2</span>
+                  </div>
+                  <div class="resizable-typography-row__divider"></div>
+                  <div class="resizable-typography-row__type">
+                    <span class="text-tiny responsive-typography"
+                      >text-tiny متن</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="../assets/js/site-tools/resize-sensor.js"></script>
+    <script src="../assets/js/site-tools/resizable-view.js"></script>
+  </body>
+</html>

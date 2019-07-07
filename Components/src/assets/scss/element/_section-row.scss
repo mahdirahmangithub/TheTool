@@ -1,0 +1,55 @@
+.section-row {
+  & > .section-row__title ~ .section-row__title {
+    @extend %text-xlg, %text-variation;
+    line-height: 1.5;
+    margin-top: 1rem;
+    color: $black;
+
+    & + .section-row__paragraph {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+%text-variation {
+  &.primary {
+    color: $black-primary;
+  }
+
+  &.secondary {
+    color: $black-secondary;
+  }
+
+  &.hint {
+    color: $black-hint;
+  }
+
+  &.success {
+    color: $success-color;
+  }
+
+  &.danger {
+    color: $danger-color;
+  }
+
+  .en & {
+    text-align: left !important;
+  }
+}
+
+.section-row__title {
+  @extend %h4, %text-variation;
+  margin-top: 2rem;
+}
+
+.section-row__paragraph {
+  @extend %text-lg, %text-variation;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  &.no-space {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

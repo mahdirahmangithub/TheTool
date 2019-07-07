@@ -1,0 +1,65 @@
+%base-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-16,
+%icon-16 {
+  @extend %base-image-container;
+
+  width: 16px;
+  height: 16px;
+  & > svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.icon-20,
+%icon-20 {
+  @extend %base-image-container;
+
+  width: 20px;
+  height: 20px;
+  & > svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.icon-24,
+%icon-24 {
+  @extend %base-image-container;
+
+  width: 24px;
+  height: 24px;
+  & > svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.icon-32,
+%icon-32 {
+  @extend %base-image-container;
+
+  width: 32px;
+  height: 32px;
+  & > svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.icon-48,
+%icon-48 {
+  @extend %base-image-container;
+
+  width: 48px;
+  height: 48px;
+  & > svg {
+    width: 100%;
+    height: 100%;
+  }
+}

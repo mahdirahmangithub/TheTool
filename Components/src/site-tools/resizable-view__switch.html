@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../assets/css/font.css" />
+    <link rel="stylesheet" href="../assets/css/sonnat.reset.css" />
+    <link rel="stylesheet" href="../assets/css/site-tools/site-tools.css" />
+    <link rel="stylesheet" href="../assets/css/sonnat.elements.css" />
+    <title>ResizableView</title>
+    <style>
+      #x {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body class="fa">
+    <div class="root">
+      <div id="main-wrapper" class="base-wrapper">
+        <header id="header"></header>
+        <main id="main">
+          <div id="x" class="resizable-view-row">
+            <div class="resizable-view">
+              <div
+                class="resizable-view__draggable-handle ui-resizable-e"
+              ></div>
+              <div class="resizable-view__content">
+                <div class="checkbox-control">
+                  <label
+                    class="checkbox-control__label"
+                    for="checkbox_control_1"
+                    >عنوان</label
+                  >
+                  <div class="checkbox-control__cell">
+                    <input
+                      class="checkbox-control__input"
+                      id="checkbox_control_1"
+                      type="checkbox"
+                      name="r"
+                      value="x"
+                    />
+                    <div class="checkbox-control__button"></div>
+                    <div class="checkbox-control__check-icon">
+                      <svg>
+                        <polyline
+                          id="Path"
+                          transform="translate(5.974874, 2.353553) rotate(-45.000000) translate(-5.974874, -2.353553) "
+                          points="2 0.292893219 2 4.29289322 9.94974747 4.41421356"
+                        ></polyline>
+                      </svg>
+                    </div>
+                    <div class="checkbox-control__rippler rippler">
+                      <div class="checkbox-control__ripple ripple"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="../assets/js/site-tools/resize-sensor.js"></script>
+    <script src="../assets/js/site-tools/resizable-view.js"></script>
+  </body>
+</html>

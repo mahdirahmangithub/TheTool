@@ -1,0 +1,43 @@
+%visible,
+.visible {
+  visibility: visible !important;
+}
+
+%hidden,
+.hidden {
+  visibility: hidden !important;
+}
+
+%opacity-0,
+.opacity-0 {
+  opacity: 0 !important;
+}
+
+%opacity-1,
+.opacity-1 {
+  opacity: 1 !important;
+}
+
+@each $key, $val in $breakpoints {
+  @media (min-width: map-get($breakpoints, $key)) {
+    %visible-#{$key},
+    .visible-#{$key} {
+      visibility: visible !important;
+    }
+
+    %hidden-#{$key},
+    .hidden-#{$key} {
+      visibility: hidden !important;
+    }
+
+    %opacity-#{$key}-0,
+    .opacity-#{$key}-0 {
+      opacity: 0 !important;
+    }
+
+    %opacity-#{$key}-1,
+    .opacity-#{$key}-1 {
+      opacity: 1 !important;
+    }
+  }
+}

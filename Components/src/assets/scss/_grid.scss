@@ -1,0 +1,167 @@
+%container,
+.container {
+  width: 100%;
+  padding-right: $gutter;
+  padding-left: $gutter;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 576px) {
+    .normal-view & {
+      max-width: 540px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .normal-view & {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .normal-view & {
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .normal-view & {
+      max-width: 1184px;
+    }
+  }
+}
+
+%row,
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -#{$gutter / 2};
+  margin-left: -#{$gutter / 2};
+}
+
+%row-wide,
+.row-wide {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -#{$gutter * 1.5};
+  margin-left: -#{$gutter * 1.5};
+}
+
+@each $key, $val in $breakpoints {
+  @media (min-width: map-get($breakpoints, $key)) {
+    %row-#{$key},
+    .row-#{$key} {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -#{$gutter / 2};
+      margin-left: -#{$gutter / 2};
+    }
+
+    %row-#{$key}-wide,
+    .row-#{$key}-wide {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -#{$gutter * 1.5};
+      margin-left: -#{$gutter * 1.5};
+    }
+  }
+}
+
+%base-column {
+  position: relative;
+  width: 100%;
+  padding-right: #{$gutter / 2};
+  padding-left: #{$gutter / 2};
+}
+
+%base-numbered-column {
+  @extend %base-column;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.offset-0 {
+  margin-left: 0 !important;
+}
+
+@for $i from 0 to 13 {
+  @if $i == 0 {
+    .column {
+      @extend %base-column;
+      max-width: 100%;
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+  } @else {
+    .column-#{$i} {
+      @extend %base-numbered-column;
+      flex-basis: #{$i * 100 / 12} + "%";
+      max-width: #{$i * 100 / 12} + "%";
+    }
+
+    .offset-#{$i} {
+      margin-left: #{$i * 100 / 12} + "%";
+    }
+
+    .order-#{$i} {
+      order: $i;
+    }
+  }
+}
+
+@each $key, $val in $breakpoints {
+  @for $i from 0 to 13 {
+    @if $i == 0 {
+      .column-#{$key} {
+        @extend %base-column;
+      }
+    } @else {
+      .column-#{$key}-#{$i} {
+        @extend %base-numbered-column;
+      }
+    }
+  }
+  @media (min-width: map-get($breakpoints, $key)) {
+    @for $i from 0 to 13 {
+      @if $i == 0 {
+        .column-#{$key} {
+          max-width: 100%;
+          flex-basis: 0;
+          flex-grow: 1;
+        }
+
+        .offset-#{$key}-#{$i} {
+          margin-left: #{$i * 100 / 12} + "%";
+        }
+      } @else {
+        .column-#{$key}-#{$i} {
+          flex-basis: #{$i * 100 / 12} + "%";
+          max-width: #{$i * 100 / 12} + "%";
+        }
+
+        .offset-#{$key}-#{$i} {
+          margin-left: #{$i * 100 / 12} + "%";
+        }
+
+        .order-#{$key}-#{$i} {
+          order: $i;
+        }
+      }
+    }
+  }
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  & > .column,
+  & > [class*="column-"],
+  &.column,
+  &[class*="column-"],
+  &.container,
+  &[class*="container-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

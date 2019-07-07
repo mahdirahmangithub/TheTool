@@ -1,0 +1,60 @@
+.radio-control {
+  @extend %switch-control;
+
+  &.disabled {
+    .radio-control__button {
+      &:after {
+        background-color: hsla(0, 0%, 0%, 0.12);
+      }
+    }
+  }
+}
+
+.radio-control__label {
+  @extend %switch-control__label;
+}
+
+.radio-control__cell {
+  @extend %switch-control__cell;
+}
+
+.radio-control__input {
+  @extend %switch-control__input;
+
+  &:checked {
+    & + .radio-control__button {
+      border-color: hsla(360, 63%, 40%, 0.32);
+
+      &:after {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.radio-control__button {
+  @extend %switch-control__button;
+  border-radius: 50%;
+
+  &:after {
+    content: "";
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    background-color: hsla(360, 63%, 40%, 1);
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: center;
+    transition: background-color 240ms ease, opacity 240ms ease,
+      transform 240ms ease;
+  }
+}
+
+.radio-control__rippler {
+  @extend %switch-control__rippler;
+}
+
+.radio-control__ripple {
+  @extend %switch-control__ripple;
+}

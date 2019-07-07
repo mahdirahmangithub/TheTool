@@ -1,0 +1,86 @@
+%normal-view,
+.normal-view {
+  width: 100%;
+}
+
+.sidebar-view {
+  @extend %normal-view;
+
+  & > .sidebar-view__content {
+    width: 100%;
+  }
+
+  & > .sidebar-view__content,
+  & > .sidebar-view__sidebar {
+    @extend %overflow-x-hidden, %overflow-y-auto;
+  }
+
+  @media (max-width: map-get($map: $breakpoints, $key: "lg") - 1) {
+    & > .sidebar-view__sidebar {
+      display: none;
+    }
+  }
+
+  @media (min-width: map-get($map: $breakpoints, $key: "lg")) {
+    & > .sidebar-view__content {
+      padding-right: $gutter;
+      padding-left: $gutter;
+      max-width: 1184px;
+    }
+  }
+}
+
+.form-view {
+  @extend %normal-view;
+
+  & > .form-view__content {
+    width: 100%;
+    margin: 0 auto;
+    @extend %overflow-x-hidden, %overflow-y-auto;
+  }
+
+  @media (min-width: map-get($map: $breakpoints, $key: "sm")) {
+    & > .form-view__content {
+      max-width: 520px;
+    }
+  }
+}
+
+.chat-view {
+  @extend %normal-view;
+
+  & > .chat-view__content {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    @extend %overflow-x-hidden, %overflow-y-auto;
+  }
+}
+
+.post-view {
+  @extend %normal-view;
+
+  & > .post-view__content {
+    width: 100%;
+    margin: 0 auto;
+    @extend %overflow-x-hidden, %overflow-y-auto;
+  }
+
+  @media (min-width: map-get($map: $breakpoints, $key: "sm")) {
+    & > .post-view__content {
+      max-width: 770px;
+    }
+  }
+
+  @media (min-width: map-get($map: $breakpoints, $key: "md")) {
+    & > .post-view__content {
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: map-get($map: $breakpoints, $key: "lg")) {
+    & > .post-view__content {
+      max-width: 1024px;
+    }
+  }
+}

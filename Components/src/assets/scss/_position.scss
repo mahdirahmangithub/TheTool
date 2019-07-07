@@ -1,0 +1,21 @@
+%relative,
+.relative {
+  position: relative !important;
+}
+
+%absolute,
+.absolute {
+  position: absolute !important;
+}
+
+%fixed,
+.fixed {
+  position: fixed !important;
+}
+
+%sticky,
+.sticky {
+  @supports (position: sticky) {
+    position: sticky !important;
+  }
+}
