@@ -5,7 +5,7 @@ $(function() {
   var $parent = $view.parent();
 
   var minWidth = $view.attr("data-min-width");
-  var breakpointLeftOffset = 562;
+  var breakpointLeftOffset = 570;
   var indicatorSVGRealWidth = 17;
 
   $view.resizable({
@@ -90,7 +90,7 @@ $(function() {
 
       updateTypeInfo();
 
-      if (boxWidth >= 612) {
+      if (boxWidth >= breakpointLeftOffset + 42) {
         $(".resizable-typography-row").removeClass("response");
         $breakpoints.removeClass("response");
       } else {
@@ -98,7 +98,7 @@ $(function() {
         $breakpoints.addClass("response");
         $breakpoints.css(
           "right",
-          $parent.width() - $view.width() + indicatorSVGRealWidth + "px"
+          $parent.width() - $view.width() + indicatorSVGRealWidth * 0.5 + "px"
         );
       }
     });

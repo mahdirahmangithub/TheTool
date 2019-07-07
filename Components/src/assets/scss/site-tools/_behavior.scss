@@ -173,6 +173,8 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.02);
+  border-radius: map-get($spaces, "x2");
+  overflow: hidden;
 
   & > img {
     max-width: 100%;
