@@ -149,9 +149,16 @@
 .tab-list__tab-text {
   font-size: 1rem;
   line-height: 2;
-  transition: 360ms ease;
+  transition: color 360ms ease;
   color: hsla(0, 0%, 0%, 0.56);
   white-space: nowrap;
+}
+
+.tab-list__tab-icon {
+  .fill {
+    fill: hsla(0, 0%, 0%, 0.56);
+    transition: fill 360ms ease;
+  }
 }
 
 .tab-list__tab__indicator {
