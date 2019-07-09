@@ -423,7 +423,7 @@ h4 {
   pointer-events: none !important;
 }
 .disabled.checkbox-control .checkbox-control__button, .disabled.checkbox-control .radio-control__button, .disabled.radio-control .checkbox-control__button, .disabled.radio-control .radio-control__button {
-  border-color: rgba(0, 0, 0, 0.12) !important;
+  border-color: rgba(0, 0, 0, 0.12);
 }
 .checked.checkbox-control .checkbox-control__cell:before, .checked.checkbox-control .radio-control__cell:before, .checked.radio-control .checkbox-control__cell:before, .checked.radio-control .radio-control__cell:before {
   background-color: rgba(166, 38, 38, 0.04);
@@ -591,13 +591,20 @@ h4 {
 .radio-control.disabled .radio-control__button:after {
   background-color: rgba(0, 0, 0, 0.12);
 }
-
-.radio-control__input:checked + .radio-control__button {
+.radio-control.checked:not(.disabled) .radio-control__button {
   border-color: rgba(166, 38, 38, 0.32);
 }
+.radio-control.checked:not(.disabled) .radio-control__button:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
 .radio-control__input:checked + .radio-control__button:after {
   opacity: 1;
   transform: scale(1);
+}
+.radio-control:not(.disabled) .radio-control__input:checked + .radio-control__button {
+  border-color: rgba(166, 38, 38, 0.32);
 }
 
 .radio-control__button {
