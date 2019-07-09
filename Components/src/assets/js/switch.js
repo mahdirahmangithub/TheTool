@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(function($) {
   // Ripple Animations
   $(
     ".switch-toggle__cell, .radio-control__cell, .checkbox-control__cell"

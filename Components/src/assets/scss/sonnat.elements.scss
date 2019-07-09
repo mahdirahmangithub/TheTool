@@ -1,6 +1,7 @@
-@import "variable/breakpoint", "variable/color", "variable/content";
+@import "variable/breakpoint", "variable/color", "variable/content",
+  "variable/spacing";
 
-@import "root", "content", "visibility", "form-controls";
+@import "root", "content", "visibility", "form-controls", "imagery";
 
 @import "element/radio", "element/checkbox", "element/switch",
-  "element/title-row", "element/section-row";
+  "element/title-row", "element/section-row", "element/tab";
