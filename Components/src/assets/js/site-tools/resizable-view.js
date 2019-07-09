@@ -29,6 +29,10 @@ $(function() {
     return $parent.width();
   }
 
+  function trimZeros(num) {
+    return parseFloat(num);
+  }
+
   function updateTypeInfo() {
     $(".resizable-typography-row").each(function() {
       var _fs = parseInt(
@@ -77,10 +81,10 @@ $(function() {
         .text(_fs);
       $(this)
         .find(".fs-rem")
-        .text(parseFloat(_fs / 16).toFixed(1) + "rem");
+        .text(trimZeros(parseFloat(_fs / 16).toFixed(3)) + "rem");
       $(this)
         .find(".lh")
-        .text(parseFloat(_lh / _fs).toFixed(1));
+        .text(trimZeros(parseFloat(_lh / _fs).toFixed(1)));
     });
   }
 
