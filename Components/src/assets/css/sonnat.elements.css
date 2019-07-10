@@ -1030,6 +1030,11 @@ h4 {
   flex-grow: 1;
   min-width: initial;
 }
+@media (max-width: 374px) {
+  .tab-row.stable .tab-list {
+    padding: 0;
+  }
+}
 .tab-row.iconed .tab-list__tab {
   padding: 0rem 1rem;
 }

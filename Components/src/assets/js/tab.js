@@ -1,5 +1,7 @@
 jQuery(function($) {
   var _tabItemLeftOffset = 48;
+  var _scrollAnimationSpeed = $.browser.safari || $.browser.mobile ? 500 : 10;
+  var _scrollAnimationEasing = "swing";
 
   // append "fixer" to hide horizontal scrollbar
   $(".tab-row").append('<div class="fixer"></div>');
@@ -45,8 +47,14 @@ jQuery(function($) {
     if ($_this.position().left < 0) {
       var dx = Math.abs($_this.position().left);
 
-      $parent.scrollLeft(
-        $parent.scrollLeft() - (dx + convertRemToPixels(2) + _tabItemLeftOffset)
+      $parent.animate(
+        {
+          scrollLeft:
+            $parent.scrollLeft() -
+            (dx + convertRemToPixels(2) + _tabItemLeftOffset)
+        },
+        _scrollAnimationSpeed,
+        _scrollAnimationEasing
       );
     } else if (
       $_this.position().left + $_this.outerWidth() >
@@ -56,8 +64,14 @@ jQuery(function($) {
         $_this.position().left + $_this.outerWidth() - $parent.outerWidth()
       );
 
-      $parent.scrollLeft(
-        $parent.scrollLeft() + (dx + convertRemToPixels(2) + _tabItemLeftOffset)
+      $parent.animate(
+        {
+          scrollLeft:
+            $parent.scrollLeft() +
+            (dx + convertRemToPixels(2) + _tabItemLeftOffset)
+        },
+        _scrollAnimationSpeed,
+        _scrollAnimationEasing
       );
     }
   });
