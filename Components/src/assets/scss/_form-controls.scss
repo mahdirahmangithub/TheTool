@@ -100,7 +100,7 @@
 %switch-control__button {
   width: 1.125rem;
   height: 1.125rem;
-  border: 1px solid hsla(0, 0%, 0%, 0.24);
+  border: 1px solid $black-border;
   position: absolute;
   pointer-events: none;
   display: flex;

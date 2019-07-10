@@ -1,0 +1,268 @@
+.button,
+%button {
+  height: 2.5rem;
+  min-width: 6rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 0rem $space;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 1rem;
+  background-color: $black-secondary;
+  color: #fff;
+  outline: none !important;
+  font-size: 1rem;
+  vertical-align: middle;
+  line-height: 2;
+  transition: color 360ms ease, background-color 360ms ease,
+    transform 360ms ease, border-radius 360ms ease, box-shadow 400ms ease;
+
+  .button__rippler__ripple {
+    background-color: $white-divider;
+  }
+
+  &:hover {
+    background-color: $black-secondary-hover;
+  }
+
+  &.rounded {
+    border-radius: 1.5rem;
+  }
+
+  &.disabled,
+  [disabled] {
+    background-color: hsl(0, 0%, 93%) !important;
+    cursor: not-allowed;
+    color: $black-hint;
+
+    &.raised {
+      box-shadow: none;
+
+      &:hover {
+        box-shadow: none;
+        transform: none;
+      }
+    }
+
+    &.outlined {
+      background-color: transparent !important;
+      border: 1px solid $black-divider;
+      color: $black-hint;
+
+      &.button-primary {
+        border: 1px solid $brand-divider-color;
+        color: $brand-hint-color;
+      }
+
+      &:hover {
+        border: 1px solid $black-divider;
+      }
+
+      &.iconed {
+        & .fill {
+          fill: $black-hint;
+        }
+
+        &.button-primary {
+          & .fill {
+            fill: $brand-hint-color;
+          }
+        }
+      }
+    }
+
+    &.button-text {
+      background-color: transparent !important;
+      color: $black-hint;
+
+      &:hover {
+        color: $black-hint;
+
+        &.iconed {
+          & .fill {
+            fill: $black-hint;
+          }
+        }
+      }
+
+      &.iconed {
+        & .fill {
+          fill: $black-hint;
+        }
+      }
+    }
+  }
+
+  &.raised {
+    box-shadow: 0 8px 12px -6px rgba(0, 0, 0, 0.16),
+      0 12px 16px 0 rgba(0, 0, 0, 0.12), 0 1px 32px 0 rgba(0, 0, 0, 0.08);
+
+    &:hover {
+      box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.24),
+        0 4px 10px 0 rgba(0, 0, 0, 0.12), 0 0 12px 0 rgba(0, 0, 0, 0.08);
+      transform: translateY(0.125rem);
+    }
+  }
+
+  &.iconed {
+    justify-content: space-between;
+
+    & .fill {
+      fill: #fff;
+      transition: fill 360ms ease;
+    }
+
+    .en & {
+      & > * + * {
+        margin-left: 0.5rem;
+      }
+
+      & > .button__icon:first-child {
+        margin-left: -0.25rem;
+      }
+
+      & > .button__icon:last-child {
+        position: relative;
+        right: -0.5rem;
+      }
+
+      & > :not(.button__icon) {
+        margin-right: auto;
+      }
+    }
+
+    .fa & {
+      & > * + * {
+        margin-right: 0.5rem;
+      }
+
+      & > .button__icon:first-child {
+        margin-right: -0.25rem;
+      }
+
+      & > .button__icon:last-child {
+        position: relative;
+        left: -0.5rem;
+      }
+
+      & > :not(.button__icon) {
+        margin-left: auto;
+      }
+    }
+  }
+
+  &.outlined {
+    background-color: transparent;
+    border: 1px solid $black-border;
+    color: $black-primary;
+
+    .button__rippler__ripple {
+      background-color: $black-divider;
+    }
+
+    &.iconed {
+      & .fill {
+        fill: $black-primary;
+      }
+    }
+
+    &:hover {
+      background-color: $black-divider;
+      border: 1px solid $black-primary;
+    }
+  }
+
+  &.button-text {
+    color: $black-secondary;
+    background-color: transparent;
+
+    &.iconed {
+      & .fill {
+        fill: $black-secondary;
+      }
+
+      &:hover {
+        & .fill {
+          fill: $black-primary;
+        }
+      }
+    }
+
+    &:hover {
+      color: $black-primary;
+      background-color: $gray-800;
+    }
+  }
+}
+
+.button-primary {
+  background-color: $brand-primary-color;
+
+  &:hover {
+    background-color: $brand-primary-hover-color;
+  }
+
+  &.outlined {
+    background-color: transparent;
+    border: 1px solid $brand-secondary-color;
+    color: $brand-primary-color;
+
+    .button__rippler__ripple {
+      background-color: $brand-divider-color;
+    }
+
+    &.iconed {
+      & .fill {
+        fill: $brand-primary-color;
+      }
+    }
+
+    &:hover {
+      background-color: $brand-divider-color;
+      border: 1px solid $brand-primary-color;
+    }
+  }
+
+  &.raised {
+    box-shadow: 0 14px 20px -12px hsla(360, 63%, 40%, 0.32),
+      0 16px 24px 2px hsla(360, 63%, 40%, 0.14),
+      0 12px 30px -8px hsla(360, 63%, 40%, 0.12);
+
+    &:hover {
+      box-shadow: 0 0px 6px -2px hsla(360, 63%, 40%, 0.56),
+        0 4px 16px 0px hsla(360, 63%, 40%, 0.14),
+        0 2px 10px 0 hsla(360, 63%, 40%, 0.12);
+      transform: translateY(0.125rem);
+    }
+  }
+}
+
+.button-text {
+  .button__rippler__ripple {
+    background-color: $black-divider;
+  }
+}
+
+.button__rippler {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 0.25rem;
+}
+
+.button__rippler__ripple {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  transform: scale(0);
+  transform-origin: center;
+  pointer-events: none;
+  user-select: none;
+}

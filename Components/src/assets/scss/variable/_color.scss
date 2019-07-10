@@ -1,4 +1,5 @@
 $brand-primary-color: hsla(0, 63%, 40%, 1) !default;
+$brand-primary-hover-color: hsla(360, 57%, 46%, 1) !default;
 $brand-secondary-color: hsla(0, 63%, 40%, 0.56) !default;
 $brand-hint-color: hsla(0, 63%, 40%, 0.32) !default;
 $brand-divider-color: hsla(0, 63%, 40%, 0.12) !default;
@@ -9,7 +10,9 @@ $success-color: hsla(123, 46%, 34%, 1) !default;
 $black: hsla(0, 0%, 0%, 1) !default;
 $black-primary: hsla(0, 0%, 0%, 0.87) !default;
 $black-secondary: hsla(0, 0%, 0%, 0.56) !default;
+$black-secondary-hover: hsla(0, 0, 0%, 0.48) !default;
 $black-hint: hsla(0, 0%, 0%, 0.32) !default;
+$black-border: hsla(0, 0%, 0%, 0.24) !default;
 $black-divider: hsla(0, 0%, 0%, 0.12) !default;
 
 $white-primary: hsla(0, 0%, 100%, 1) !default;
