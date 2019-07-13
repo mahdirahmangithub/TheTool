@@ -1429,14 +1429,14 @@ h4 {
   background-color: whitesmoke;
   color: rgba(0, 0, 0, 0.32);
   cursor: not-allowed;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 .button.disabled .fill, .button[disabled] .fill {
   fill: rgba(0, 0, 0, 0.32);
 }
 .button.disabled:hover, .button[disabled]:hover {
-  box-shadow: none;
-  transform: none;
+  box-shadow: none !important;
+  transform: none !important;
 }
 .button .button__rippler {
   width: 100%;

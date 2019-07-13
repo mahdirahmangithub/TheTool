@@ -322,15 +322,15 @@
     background-color: $gray-100;
     color: $black-32;
     cursor: not-allowed;
-    box-shadow: none;
+    box-shadow: none !important;
 
     .fill {
       fill: $black-32;
     }
 
     &:hover {
-      box-shadow: none;
-      transform: none;
+      box-shadow: none !important;
+      transform: none !important;
     }
   }
 
