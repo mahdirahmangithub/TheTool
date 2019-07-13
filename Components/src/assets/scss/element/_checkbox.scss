@@ -3,12 +3,12 @@
 
   &.checked.disabled {
     .checkbox-control__button {
-      border-color: hsla(0, 0%, 0%, 0);
+      border-color: transparent;
       pointer-events: none !important;
     }
 
     .checkbox-control__input:checked + .checkbox-control__button {
-      background-color: hsla(0, 0%, 0%, 0.12);
+      background-color: $black-12;
       transition: border-color 360ms ease, background-color 360ms ease;
     }
   }
@@ -27,8 +27,8 @@
 
   &:checked {
     & + .checkbox-control__button {
-      border-color: hsla(360, 63%, 40%, 1);
-      background-color: hsla(360, 63%, 40%, 1);
+      border-color: $brand-primary-color;
+      background-color: $brand-primary-color;
       transition: border-color 360ms ease, background-color 360ms ease;
     }
 
@@ -63,7 +63,7 @@
       fill: none;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke: hsla(0, 0%, 100%, 1);
+      stroke: $white;
       stroke-width: 2;
       stroke-dasharray: 48;
       stroke-dashoffset: 48;

@@ -4,14 +4,14 @@
   &.disabled {
     .radio-control__button {
       &:after {
-        background-color: hsla(0, 0%, 0%, 0.12);
+        background-color: $black-12;
       }
     }
   }
 
   &.checked:not(.disabled) {
     .radio-control__button {
-      border-color: hsla(360, 63%, 40%, 0.32);
+      border-color: $brand-color-32;
 
       &:after {
         opacity: 1;
@@ -43,7 +43,7 @@
 
   .radio-control:not(.disabled) &:checked {
     & + .radio-control__button {
-      border-color: hsla(360, 63%, 40%, 0.32);
+      border-color: $brand-color-32;
     }
   }
 }
@@ -57,7 +57,7 @@
     width: 0.625rem;
     height: 0.625rem;
     border-radius: 50%;
-    background-color: hsla(360, 63%, 40%, 1);
+    background-color: $brand-primary-color;
     opacity: 0;
     transform: scale(0);
     transform-origin: center;

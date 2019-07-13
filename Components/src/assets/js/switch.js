@@ -4,9 +4,9 @@ jQuery(function($) {
     ".switch-toggle__cell, .radio-control__cell, .checkbox-control__cell"
   ).mousedown(function(e) {
     var $ripple = $(this).find(".ripple");
-    $ripple.removeClass("ripple-animation");
+    $ripple.removeClass("switch-control__ripple-animation");
     window.setTimeout(function() {
-      $ripple.addClass("ripple-animation");
+      $ripple.addClass("switch-control__ripple-animation");
     }, 1);
   });
 

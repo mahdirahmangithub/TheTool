@@ -20,7 +20,7 @@
     cursor: not-allowed !important;
 
     %switch-control__label {
-      color: hsla(0, 0%, 0%, 0.32);
+      color: $black-32;
       pointer-events: none;
     }
 
@@ -31,14 +31,14 @@
     }
 
     %switch-control__button {
-      border-color: hsla(0, 0%, 0%, 0.12);
+      border-color: $black-divider;
     }
   }
 
   &.checked {
     %switch-control__cell {
       &:before {
-        background-color: hsla(360, 63%, 40%, 0.04);
+        background-color: $brand-color-4;
       }
     }
   }
@@ -66,7 +66,7 @@
     height: 100%;
     border-radius: 50%;
     position: absolute;
-    background-color: hsla(0, 0%, 0%, 0.04);
+    background-color: $black-4;
     transform: scale(0);
     opacity: 0;
     transform-origin: center;
@@ -93,14 +93,14 @@
 %switch-control__label {
   font-size: 1rem;
   line-height: 2;
-  color: hsla(0, 0%, 0%, 0.87);
+  color: $black-primary;
   transition: 360ms ease;
 }
 
 %switch-control__button {
   width: 1.125rem;
   height: 1.125rem;
-  border: 1px solid $black-border;
+  border: 1px solid $black-24;
   position: absolute;
   pointer-events: none;
   display: flex;
@@ -131,17 +131,17 @@
   transform-origin: center;
   pointer-events: none;
   user-select: none;
-  background-color: hsla(360, 63%, 40%, 0.08);
+  background-color: $brand-color-8;
   z-index: -1;
 }
 
-.ripple-animation {
-  animation: ripple 0.4s linear;
+.switch-control__ripple-animation {
+  animation: switch_ripple 0.4s linear;
 }
 
-@keyframes ripple {
+@keyframes switch_ripple {
   100% {
     transform: scale(4);
-    background-color: hsla(360, 63%, 40%, 0.04);
+    background-color: $brand-color-4;
   }
 }
