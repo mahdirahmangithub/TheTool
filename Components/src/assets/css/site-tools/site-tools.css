@@ -1992,7 +1992,7 @@ h4 {
 
 .resizable-view-row__breakpoints {
   position: absolute;
-  left: 570px;
+  left: 577px;
   top: -2px;
   height: 100%;
   z-index: 1000;
@@ -2061,7 +2061,7 @@ h4 {
   overflow-y: auto;
   overflow-x: hidden;
   min-height: 10rem;
-  padding: 1rem 3rem 1rem 1rem;
+  padding: 1rem 2.5625rem 1rem 1rem;
   display: flex;
   flex-flow: column;
   align-items: center;

@@ -5,7 +5,7 @@ $(function() {
   var $parent = $view.parent();
 
   var minWidth = $view.attr("data-min-width");
-  var breakpointLeftOffset = 570;
+  var breakpointLeftOffset = 577;
   var indicatorSVGRealWidth = 17;
 
   $view.resizable({
