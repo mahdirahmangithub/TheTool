@@ -563,30 +563,30 @@ h4 {
     background-color: rgba(166, 38, 38, 0.04);
   }
 }
-.icon-48, .icon-32, .icon-24, .tab-list__tab__content .tab-list__tab-icon:only-child, .icon-20, .button.iconed .button__icon, .button.icon-button > .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child), .icon-16, .button.iconed.small .button__icon {
+.icon-48, .icon-32, .icon-24, .tab-list__tab__content .tab-list__tab-icon:only-child, .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child), .icon-16, .button.small .button__icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.icon-16, .button.iconed.small .button__icon, .small.button.icon-button > .button__icon {
+.icon-16, .button.small .button__icon {
   width: 16px;
   height: 16px;
   min-width: 16px;
   min-height: 16px;
 }
-.icon-16 > svg, .button.iconed.small .button__icon > svg, .small.button.icon-button > .button__icon > svg {
+.icon-16 > svg, .button.small .button__icon > svg {
   width: 100%;
   height: 100%;
 }
 
-.icon-20, .button.iconed .button__icon, .button.icon-button > .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child) {
+.icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child) {
   width: 20px;
   height: 20px;
   min-width: 20px;
   min-height: 20px;
 }
-.icon-20 > svg, .button.iconed .button__icon > svg, .button.icon-button > .button__icon > svg, .tab-list__tab__content .tab-list__tab-icon:not(:only-child) > svg {
+.icon-20 > svg, .button .button__icon > svg, .tab-list__tab__content .tab-list__tab-icon:not(:only-child) > svg {
   width: 100%;
   height: 100%;
 }
@@ -1212,6 +1212,12 @@ h4 {
   min-width: auto;
   border-radius: 50%;
 }
+.button.icon-button > .button__icon {
+  margin: 0 !important;
+}
+.button.icon-button > .button__icon + *:not(.rippler) {
+  display: none;
+}
 .small.button.icon-button {
   height: 2rem;
   width: 2rem;
@@ -1260,18 +1266,18 @@ h4 {
 .button.rounded .button__rippler {
   border-radius: 1.5rem;
 }
-.fa .button.iconed > .button__icon {
+.fa .button > .button__icon {
   margin-right: -0.25rem;
   margin-left: 0.5rem;
 }
-.en .button.iconed > .button__icon {
+.en .button > .button__icon {
   margin-left: -0.25rem;
   margin-right: 0.5rem;
 }
-.fa .button.iconed.small > .button__icon {
+.fa .button.small > .button__icon {
   margin-left: 0.25rem;
 }
-.en .button.iconed.small > .button__icon {
+.en .button.small > .button__icon {
   margin-right: 0.25rem;
 }
 .button.inlined {
@@ -1331,8 +1337,8 @@ h4 {
   border-color: rgba(0, 0, 0, 0.12);
   color: rgba(0, 0, 0, 0.32);
 }
-.button.outlined.disabled.iconed .fill,
-.button.outlined [disabled].iconed .fill {
+.button.outlined.disabled .fill,
+.button.outlined [disabled] .fill {
   fill: rgba(0, 0, 0, 0.32);
 }
 .button.button-primary {
@@ -1440,6 +1446,7 @@ h4 {
   overflow: hidden;
   position: absolute;
   border-radius: 0.25rem;
+  display: block;
 }
 .button .button__rippler__ripple {
   border-radius: 50%;

@@ -7,6 +7,11 @@
 
   & > .button__icon {
     @extend .icon-20;
+    margin: 0 !important;
+  }
+
+  & > .button__icon + *:not(.rippler) {
+    display: none;
   }
 
   &.small {
@@ -76,40 +81,38 @@
     }
   }
 
-  &.iconed {
+  .fa & {
+    & > .button__icon {
+      margin-right: -0.25rem;
+      margin-left: map-get($spaces, "x4");
+    }
+  }
+
+  .en & {
+    & > .button__icon {
+      margin-left: -0.25rem;
+      margin-right: map-get($spaces, "x4");
+    }
+  }
+
+  .button__icon {
+    @extend .icon-20;
+  }
+
+  &.small {
+    .button__icon {
+      @extend .icon-16;
+    }
+
     .fa & {
       & > .button__icon {
-        margin-right: -0.25rem;
-        margin-left: map-get($spaces, "x4");
+        margin-left: map-get($spaces, "x2");
       }
     }
 
     .en & {
       & > .button__icon {
-        margin-left: -0.25rem;
-        margin-right: map-get($spaces, "x4");
-      }
-    }
-
-    .button__icon {
-      @extend .icon-20;
-    }
-
-    &.small {
-      .button__icon {
-        @extend .icon-16;
-      }
-
-      .fa & {
-        & > .button__icon {
-          margin-left: map-get($spaces, "x2");
-        }
-      }
-
-      .en & {
-        & > .button__icon {
-          margin-right: map-get($spaces, "x2");
-        }
+        margin-right: map-get($spaces, "x2");
       }
     }
   }
@@ -340,6 +343,7 @@
     overflow: hidden;
     position: absolute;
     border-radius: 0.25rem;
+    display: block;
   }
 
   .button__rippler__ripple {
