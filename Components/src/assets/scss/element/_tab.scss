@@ -39,7 +39,7 @@
 
   &:not(.stable):after {
     left: 0;
-    background: rgb(255, 255, 255);
+    background: $white;
     background: linear-gradient(
       90deg,
       rgba(255, 255, 255, 1) 50%,
@@ -49,7 +49,7 @@
 
   &:not(.stable):before {
     right: 0rem;
-    background: rgb(255, 255, 255);
+    background: $white;
     background: linear-gradient(
       270deg,
       rgba(255, 255, 255, 1) 50%,
@@ -70,7 +70,7 @@
     position: absolute;
     bottom: 0rem;
     z-index: 1;
-    background-color: hsla(0, 0%, 100%, 1);
+    background-color: $white;
   }
 }
 
@@ -96,7 +96,7 @@
   &::-webkit-scrollbar-thumb,
   &::-webkit-scrollbar-thumb:hover {
     display: none;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: transparent;
   }
 }
 
@@ -117,12 +117,12 @@
 
   &.active {
     .tab-list__tab-text {
-      color: hsla(360, 63%, 40%, 1);
+      color: $brand-primary-color;
     }
 
     .tab-list__tab-icon {
       .fill {
-        fill: hsla(360, 63%, 40%, 1);
+        fill: $brand-primary-color;
       }
     }
 
@@ -133,7 +133,7 @@
   }
 
   &:hover {
-    background-color: hsla(0, 0%, 0%, 0.04);
+    background-color: $black-4;
   }
 }
 
@@ -156,13 +156,13 @@
   font-size: 1rem;
   line-height: 2;
   transition: color 360ms ease;
-  color: hsla(0, 0%, 0%, 0.56);
+  color: $black-secondary;
   white-space: nowrap;
 }
 
 .tab-list__tab-icon {
   .fill {
-    fill: hsla(0, 0%, 0%, 0.56);
+    fill: $black-secondary;
     transition: fill 360ms ease;
   }
 }
@@ -180,7 +180,7 @@
   content: "";
   width: 100%;
   height: 2px;
-  background-color: hsla(360, 63%, 40%, 1);
+  background-color: $brand-primary-color;
   position: absolute;
   right: 0;
   bottom: 0;
