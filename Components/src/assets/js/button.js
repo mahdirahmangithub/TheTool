@@ -8,7 +8,7 @@ jQuery(function($) {
     ".button.ripple-element:not(.disabled):not([disabled])",
     function(e) {
       var ripple = $(this).find(".ripple");
-      ripple.removeClass("ripple-animation");
+      ripple.removeClass("button__ripple-animation");
 
       var x = parseInt(e.pageX - $(this).offset().left) - ripple.width() / 2;
       var y = parseInt(e.pageY - $(this).offset().top) - ripple.height() / 2;
@@ -18,7 +18,7 @@ jQuery(function($) {
           top: y,
           left: x
         })
-        .addClass("ripple-animation");
+        .addClass("button__ripple-animation");
     }
   );
 });

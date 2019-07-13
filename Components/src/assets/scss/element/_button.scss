@@ -1,8 +1,6 @@
-.button,
-%button {
+.button {
   height: 2.5rem;
   min-width: 6rem;
-  border: 1px solid transparent;
   border-radius: 0.25rem;
   cursor: pointer;
   padding: 0rem $space;
@@ -12,257 +10,352 @@
   position: relative;
   margin: 1rem;
   background-color: $black-secondary;
-  color: #fff;
-  outline: none !important;
+  color: $white;
+  border: 1px solid transparent;
+  outline: none;
   font-size: 1rem;
+  font-weight: 500;
   vertical-align: middle;
   line-height: 2;
   transition: color 360ms ease, background-color 360ms ease,
-    transform 360ms ease, border-radius 360ms ease, box-shadow 400ms ease;
+    transform 360ms ease, border-radius 360ms ease, box-shadow 400ms ease,
+    border-color 360ms ease;
 
-  .button__rippler__ripple {
-    background-color: $white-divider;
+  &.small {
+    height: 2rem;
+    min-width: 4rem;
+    padding: 0rem 0.75rem;
+    font-size: 0.875rem;
   }
 
-  &:hover {
-    background-color: $black-secondary-hover;
+  &:hover,
+  &:focus {
+    background-color: $black-hover;
+  }
+
+  &:active {
+    background-color: $black-press;
   }
 
   &.rounded {
     border-radius: 1.5rem;
-  }
 
-  &.disabled,
-  [disabled] {
-    background-color: hsl(0, 0%, 93%) !important;
-    cursor: not-allowed;
-    color: $black-hint;
-
-    &.raised {
-      box-shadow: none;
-
-      &:hover {
-        box-shadow: none;
-        transform: none;
-      }
-    }
-
-    &.outlined {
-      background-color: transparent !important;
-      border: 1px solid $black-divider;
-      color: $black-hint;
-
-      &.button-primary {
-        border: 1px solid $brand-divider-color;
-        color: $brand-hint-color;
-      }
-
-      &:hover {
-        border: 1px solid $black-divider;
-      }
-
-      &.iconed {
-        & .fill {
-          fill: $black-hint;
-        }
-
-        &.button-primary {
-          & .fill {
-            fill: $brand-hint-color;
-          }
-        }
-      }
-    }
-
-    &.button-text {
-      background-color: transparent !important;
-      color: $black-hint;
-
-      &:hover {
-        color: $black-hint;
-
-        &.iconed {
-          & .fill {
-            fill: $black-hint;
-          }
-        }
-      }
-
-      &.iconed {
-        & .fill {
-          fill: $black-hint;
-        }
-      }
-    }
-  }
-
-  &.raised {
-    box-shadow: 0 8px 12px -6px rgba(0, 0, 0, 0.16),
-      0 12px 16px 0 rgba(0, 0, 0, 0.12), 0 1px 32px 0 rgba(0, 0, 0, 0.08);
-
-    &:hover {
-      box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.24),
-        0 4px 10px 0 rgba(0, 0, 0, 0.12), 0 0 12px 0 rgba(0, 0, 0, 0.08);
-      transform: translateY(0.125rem);
+    .button__rippler {
+      border-radius: 1.5rem;
     }
   }
 
   &.iconed {
-    justify-content: space-between;
-
-    & .fill {
-      fill: #fff;
-      transition: fill 360ms ease;
+    .fa & {
+      & > .button__icon {
+        margin-right: -0.25rem;
+        margin-left: map-get($spaces, "x4");
+      }
     }
 
     .en & {
-      & > * + * {
-        margin-left: 0.5rem;
-      }
-
-      & > .button__icon:first-child {
+      & > .button__icon {
         margin-left: -0.25rem;
-      }
-
-      & > .button__icon:last-child {
-        position: relative;
-        right: -0.5rem;
-      }
-
-      & > :not(.button__icon) {
-        margin-right: auto;
+        margin-right: map-get($spaces, "x4");
       }
     }
 
-    .fa & {
-      & > * + * {
-        margin-right: 0.5rem;
-      }
-
-      & > .button__icon:first-child {
-        margin-right: -0.25rem;
-      }
-
-      & > .button__icon:last-child {
-        position: relative;
-        left: -0.5rem;
-      }
-
-      & > :not(.button__icon) {
-        margin-left: auto;
-      }
-    }
-  }
-
-  &.outlined {
-    background-color: transparent;
-    border: 1px solid $black-border;
-    color: $black-primary;
-
-    .button__rippler__ripple {
-      background-color: $black-divider;
+    .button__icon {
+      @extend .icon-20;
     }
 
-    &.iconed {
-      & .fill {
-        fill: $black-primary;
+    &.small {
+      .button__icon {
+        @extend .icon-16;
+      }
+
+      .fa & {
+        & > .button__icon {
+          margin-left: map-get($spaces, "x2");
+        }
+      }
+
+      .en & {
+        & > .button__icon {
+          margin-right: map-get($spaces, "x2");
+        }
       }
     }
 
-    &:hover {
-      background-color: $black-divider;
-      border: 1px solid $black-primary;
+    .fill {
+      fill: $white;
+      transition: fill 360ms ease;
     }
   }
 
-  &.button-text {
-    color: $black-secondary;
+  &.inlined {
     background-color: transparent;
+    color: $black-56;
 
     &.iconed {
-      & .fill {
-        fill: $black-secondary;
+      .fill {
+        fill: $black-56;
       }
+    }
 
-      &:hover {
-        & .fill {
+    &:hover,
+    &:focus {
+      background-color: $black-4;
+      color: $black-primary;
+
+      &.iconed {
+        .fill {
           fill: $black-primary;
         }
       }
     }
 
-    &:hover {
-      color: $black-primary;
-      background-color: $gray-800;
+    &:active {
+      background-color: $black-12;
     }
-  }
-}
-
-.button-primary {
-  background-color: $brand-primary-color;
-
-  &:hover {
-    background-color: $brand-primary-hover-color;
-  }
-
-  &.outlined {
-    background-color: transparent;
-    border: 1px solid $brand-secondary-color;
-    color: $brand-primary-color;
 
     .button__rippler__ripple {
-      background-color: $brand-divider-color;
+      background-color: $black-12;
     }
 
-    &.iconed {
-      & .fill {
-        fill: $brand-primary-color;
+    &.disabled,
+    &[disabled] {
+      background-color: transparent;
+      color: $black-32;
+
+      &.iconed {
+        .fill {
+          fill: $black-32;
+        }
       }
-    }
-
-    &:hover {
-      background-color: $brand-divider-color;
-      border: 1px solid $brand-primary-color;
     }
   }
 
   &.raised {
-    box-shadow: 0 14px 20px -12px hsla(360, 63%, 40%, 0.32),
-      0 16px 24px 2px hsla(360, 63%, 40%, 0.14),
-      0 12px 30px -8px hsla(360, 63%, 40%, 0.12);
+    box-shadow: 0 8px 12px -6px $black-16, 0 12px 16px 0 $black-12,
+      0 1px 32px 0 $black-8;
 
-    &:hover {
-      box-shadow: 0 0px 6px -2px hsla(360, 63%, 40%, 0.56),
-        0 4px 16px 0px hsla(360, 63%, 40%, 0.14),
-        0 2px 10px 0 hsla(360, 63%, 40%, 0.12);
+    &:hover,
+    &:focus {
+      box-shadow: 0 2px 6px -1px $black-24, 0 4px 10px 0 $black-12,
+        0 0 12px 0 $black-8;
       transform: translateY(0.125rem);
     }
   }
-}
 
-.button-text {
-  .button__rippler__ripple {
-    background-color: $black-divider;
+  &.outlined {
+    background-color: transparent;
+    border-color: $black-48;
+    color: $black-primary;
+
+    &.iconed {
+      .fill {
+        fill: $black-primary;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $black-4;
+    }
+
+    &:active {
+      background-color: $black-12;
+    }
+
+    .button__rippler__ripple {
+      background-color: $black-12;
+    }
+
+    &.disabled,
+    [disabled] {
+      background-color: transparent !important;
+      border-color: $black-12;
+      color: $black-32;
+
+      &.iconed {
+        .fill {
+          fill: $black-32;
+        }
+      }
+    }
   }
-}
 
-.button__rippler {
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-  position: absolute;
-  border-radius: 0.25rem;
-}
+  &.button-primary {
+    background-color: $brand-primary-color;
 
-.button__rippler__ripple {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  transform: scale(0);
-  transform-origin: center;
-  pointer-events: none;
-  user-select: none;
+    &.raised {
+      box-shadow: 0 14px 20px -12px $brand-color-32,
+        0 16px 24px 2px $brand-color-14, 0 12px 30px -8px $brand-color-12;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 0px 6px -2px $brand-color-56,
+          0 4px 16px 0px $brand-color-14, 0 2px 10px 0 $brand-color-12;
+        transform: translateY(0.125rem);
+      }
+
+      &.small {
+        box-shadow: 0 8px 9px -4px $brand-color-24,
+          0 14px 16px 2px $brand-color-14, 0 5px 20px 4px $brand-color-12;
+
+        &:hover,
+        &:focus {
+          box-shadow: 0 0px 4px -2px $brand-color-56,
+            0 4px 8px 0 $brand-color-14, 0 0px 8px 2px $brand-color-12;
+        }
+      }
+    }
+
+    &.outlined {
+      background-color: transparent;
+      border-color: $brand-secondary-color;
+      color: $brand-primary-color;
+
+      &.iconed {
+        .fill {
+          fill: $brand-primary-color;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $brand-color-4;
+        border-color: $brand-primary-color;
+      }
+
+      &:active {
+        background-color: $brand-color-12;
+        border-color: $brand-primary-color;
+      }
+
+      .button__rippler__ripple {
+        background-color: $brand-color-12;
+      }
+
+      &.disabled,
+      [disabled] {
+        background-color: transparent;
+        border-color: $brand-color-12;
+        color: $brand-color-32;
+
+        &.iconed {
+          .fill {
+            fill: $brand-color-32;
+          }
+        }
+      }
+    }
+
+    &.inlined {
+      background-color: transparent;
+      color: $brand-primary-color;
+
+      &.iconed {
+        .fill {
+          fill: $brand-primary-color;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $brand-color-4;
+      }
+
+      &:active {
+        background-color: $brand-color-12;
+      }
+
+      .button__rippler__ripple {
+        background-color: $brand-color-12;
+      }
+
+      &.disabled,
+      [disabled] {
+        background-color: transparent;
+        color: $brand-color-32;
+
+        &.iconed {
+          .fill {
+            fill: $brand-color-32;
+          }
+        }
+
+        &:hover,
+        &:focus {
+          background-color: transparent;
+        }
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $brand-hover-color;
+    }
+
+    &:active {
+      background-color: $brand-press-color;
+    }
+
+    &.disabled,
+    &[disabled] {
+      &:hover,
+      &:focus {
+        background-color: $gray-100;
+      }
+    }
+  }
+
+  &.disabled,
+  &[disabled] {
+    background-color: $gray-100;
+    color: $black-32;
+    cursor: not-allowed;
+    box-shadow: none;
+
+    &.iconed {
+      .fill {
+        fill: $black-32;
+      }
+    }
+
+    &:hover {
+      box-shadow: none;
+      transform: none;
+    }
+  }
+
+  .button__rippler {
+    @extend .safari-transition-radius-overflow-combination-fix;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 0.25rem;
+  }
+
+  .button__rippler__ripple {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    transform: scale(0);
+    transform-origin: center;
+    pointer-events: none;
+    user-select: none;
+    background-color: $white-12;
+  }
+
+  .button__ripple-animation {
+    animation: button_ripple 0.4s linear;
+
+    @keyframes button_ripple {
+      100% {
+        transform: scale(4);
+        opacity: 0.04;
+      }
+    }
+  }
 }
