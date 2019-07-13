@@ -1,3 +1,25 @@
+%base-icon-button {
+  padding: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  min-width: auto;
+  border-radius: 50%;
+
+  & > .button__icon {
+    @extend .icon-20;
+  }
+
+  &.small {
+    height: 2rem;
+    width: 2rem;
+    min-width: auto;
+
+    & > .button__icon {
+      @extend .icon-16;
+    }
+  }
+}
+
 .button {
   height: 2.5rem;
   min-width: 6rem;
@@ -21,6 +43,11 @@
     transform 360ms ease, border-radius 360ms ease, box-shadow 400ms ease,
     border-color 360ms ease;
 
+  .fill {
+    fill: $white;
+    transition: fill 360ms ease;
+  }
+
   &.small {
     height: 2rem;
     min-width: 4rem;
@@ -35,6 +62,10 @@
 
   &:active {
     background-color: $black-press;
+  }
+
+  &.icon-button {
+    @extend %base-icon-button;
   }
 
   &.rounded {
@@ -81,21 +112,14 @@
         }
       }
     }
-
-    .fill {
-      fill: $white;
-      transition: fill 360ms ease;
-    }
   }
 
   &.inlined {
     background-color: transparent;
     color: $black-56;
 
-    &.iconed {
-      .fill {
-        fill: $black-56;
-      }
+    .fill {
+      fill: $black-56;
     }
 
     &:hover,
@@ -103,10 +127,8 @@
       background-color: $black-4;
       color: $black-primary;
 
-      &.iconed {
-        .fill {
-          fill: $black-primary;
-        }
+      .fill {
+        fill: $black-primary;
       }
     }
 
@@ -123,10 +145,8 @@
       background-color: transparent;
       color: $black-32;
 
-      &.iconed {
-        .fill {
-          fill: $black-32;
-        }
+      .fill {
+        fill: $black-32;
       }
     }
   }
@@ -148,10 +168,8 @@
     border-color: $black-48;
     color: $black-primary;
 
-    &.iconed {
-      .fill {
-        fill: $black-primary;
-      }
+    .fill {
+      fill: $black-primary;
     }
 
     &:hover,
@@ -173,10 +191,8 @@
       border-color: $black-12;
       color: $black-32;
 
-      &.iconed {
-        .fill {
-          fill: $black-32;
-        }
+      .fill {
+        fill: $black-32;
       }
     }
   }
@@ -212,10 +228,8 @@
       border-color: $brand-secondary-color;
       color: $brand-primary-color;
 
-      &.iconed {
-        .fill {
-          fill: $brand-primary-color;
-        }
+      .fill {
+        fill: $brand-primary-color;
       }
 
       &:hover,
@@ -239,10 +253,8 @@
         border-color: $brand-color-12;
         color: $brand-color-32;
 
-        &.iconed {
-          .fill {
-            fill: $brand-color-32;
-          }
+        .fill {
+          fill: $brand-color-32;
         }
       }
     }
@@ -251,10 +263,8 @@
       background-color: transparent;
       color: $brand-primary-color;
 
-      &.iconed {
-        .fill {
-          fill: $brand-primary-color;
-        }
+      .fill {
+        fill: $brand-primary-color;
       }
 
       &:hover,
@@ -275,10 +285,8 @@
         background-color: transparent;
         color: $brand-color-32;
 
-        &.iconed {
-          .fill {
-            fill: $brand-color-32;
-          }
+        .fill {
+          fill: $brand-color-32;
         }
 
         &:hover,
@@ -313,10 +321,8 @@
     cursor: not-allowed;
     box-shadow: none;
 
-    &.iconed {
-      .fill {
-        fill: $black-32;
-      }
+    .fill {
+      fill: $black-32;
     }
 
     &:hover {

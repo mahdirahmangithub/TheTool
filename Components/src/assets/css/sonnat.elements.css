@@ -63,6 +63,11 @@ a {
   overflow-y: hidden;
 }
 
+/*
+  Use on the element with overflow
+  Also add minus-index for the image and a higher value for the parent,
+  In case of image overflow-bug.
+*/
 .safari-transition-radius-overflow-combination-fix, .button .button__rippler {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -558,30 +563,30 @@ h4 {
     background-color: rgba(166, 38, 38, 0.04);
   }
 }
-.icon-48, .icon-32, .icon-24, .tab-list__tab__content .tab-list__tab-icon:only-child, .icon-20, .button.iconed .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child), .icon-16, .button.iconed.small .button__icon {
+.icon-48, .icon-32, .icon-24, .tab-list__tab__content .tab-list__tab-icon:only-child, .icon-20, .button.iconed .button__icon, .button.icon-button > .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child), .icon-16, .button.iconed.small .button__icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.icon-16, .button.iconed.small .button__icon {
+.icon-16, .button.iconed.small .button__icon, .small.button.icon-button > .button__icon {
   width: 16px;
   height: 16px;
   min-width: 16px;
   min-height: 16px;
 }
-.icon-16 > svg, .button.iconed.small .button__icon > svg {
+.icon-16 > svg, .button.iconed.small .button__icon > svg, .small.button.icon-button > .button__icon > svg {
   width: 100%;
   height: 100%;
 }
 
-.icon-20, .button.iconed .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child) {
+.icon-20, .button.iconed .button__icon, .button.icon-button > .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child) {
   width: 20px;
   height: 20px;
   min-width: 20px;
   min-height: 20px;
 }
-.icon-20 > svg, .button.iconed .button__icon > svg, .tab-list__tab__content .tab-list__tab-icon:not(:only-child) > svg {
+.icon-20 > svg, .button.iconed .button__icon > svg, .button.icon-button > .button__icon > svg, .tab-list__tab__content .tab-list__tab-icon:not(:only-child) > svg {
   width: 100%;
   height: 100%;
 }
@@ -1200,6 +1205,18 @@ h4 {
   transition: transform 0s, opacity 100ms;
 }
 
+.button.icon-button {
+  padding: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  min-width: auto;
+  border-radius: 50%;
+}
+.small.button.icon-button {
+  height: 2rem;
+  width: 2rem;
+  min-width: auto;
+}
 .button {
   height: 2.5rem;
   min-width: 6rem;
@@ -1220,6 +1237,10 @@ h4 {
   vertical-align: middle;
   line-height: 2;
   transition: color 360ms ease, background-color 360ms ease, transform 360ms ease, border-radius 360ms ease, box-shadow 400ms ease, border-color 360ms ease;
+}
+.button .fill {
+  fill: white;
+  transition: fill 360ms ease;
 }
 .button.small {
   height: 2rem;
@@ -1253,22 +1274,18 @@ h4 {
 .en .button.iconed.small > .button__icon {
   margin-right: 0.25rem;
 }
-.button.iconed .fill {
-  fill: white;
-  transition: fill 360ms ease;
-}
 .button.inlined {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.56);
 }
-.button.inlined.iconed .fill {
+.button.inlined .fill {
   fill: rgba(0, 0, 0, 0.56);
 }
 .button.inlined:hover, .button.inlined:focus {
   background-color: rgba(0, 0, 0, 0.04);
   color: rgba(0, 0, 0, 0.87);
 }
-.button.inlined:hover.iconed .fill, .button.inlined:focus.iconed .fill {
+.button.inlined:hover .fill, .button.inlined:focus .fill {
   fill: rgba(0, 0, 0, 0.87);
 }
 .button.inlined:active {
@@ -1281,7 +1298,7 @@ h4 {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.32);
 }
-.button.inlined.disabled.iconed .fill, .button.inlined[disabled].iconed .fill {
+.button.inlined.disabled .fill, .button.inlined[disabled] .fill {
   fill: rgba(0, 0, 0, 0.32);
 }
 .button.raised {
@@ -1296,7 +1313,7 @@ h4 {
   border-color: rgba(0, 0, 0, 0.48);
   color: rgba(0, 0, 0, 0.87);
 }
-.button.outlined.iconed .fill {
+.button.outlined .fill {
   fill: rgba(0, 0, 0, 0.87);
 }
 .button.outlined:hover, .button.outlined:focus {
@@ -1339,7 +1356,7 @@ h4 {
   border-color: rgba(166, 38, 38, 0.56);
   color: #a62626;
 }
-.button.button-primary.outlined.iconed .fill {
+.button.button-primary.outlined .fill {
   fill: #a62626;
 }
 .button.button-primary.outlined:hover, .button.button-primary.outlined:focus {
@@ -1359,15 +1376,15 @@ h4 {
   border-color: rgba(166, 38, 38, 0.12);
   color: rgba(166, 38, 38, 0.32);
 }
-.button.button-primary.outlined.disabled.iconed .fill,
-.button.button-primary.outlined [disabled].iconed .fill {
+.button.button-primary.outlined.disabled .fill,
+.button.button-primary.outlined [disabled] .fill {
   fill: rgba(166, 38, 38, 0.32);
 }
 .button.button-primary.inlined {
   background-color: transparent;
   color: #a62626;
 }
-.button.button-primary.inlined.iconed .fill {
+.button.button-primary.inlined .fill {
   fill: #a62626;
 }
 .button.button-primary.inlined:hover, .button.button-primary.inlined:focus {
@@ -1384,8 +1401,8 @@ h4 {
   background-color: transparent;
   color: rgba(166, 38, 38, 0.32);
 }
-.button.button-primary.inlined.disabled.iconed .fill,
-.button.button-primary.inlined [disabled].iconed .fill {
+.button.button-primary.inlined.disabled .fill,
+.button.button-primary.inlined [disabled] .fill {
   fill: rgba(166, 38, 38, 0.32);
 }
 .button.button-primary.inlined.disabled:hover, .button.button-primary.inlined.disabled:focus,
@@ -1408,7 +1425,7 @@ h4 {
   cursor: not-allowed;
   box-shadow: none;
 }
-.button.disabled.iconed .fill, .button[disabled].iconed .fill {
+.button.disabled .fill, .button[disabled] .fill {
   fill: rgba(0, 0, 0, 0.32);
 }
 .button.disabled:hover, .button[disabled]:hover {
