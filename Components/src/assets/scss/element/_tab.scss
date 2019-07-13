@@ -161,6 +161,14 @@
 }
 
 .tab-list__tab-icon {
+  .tab-list__tab__content &:not(:only-child) {
+    @extend .icon-20;
+  }
+
+  .tab-list__tab__content &:only-child {
+    @extend .icon-24;
+  }
+
   .fill {
     fill: $black-secondary;
     transition: fill 360ms ease;
