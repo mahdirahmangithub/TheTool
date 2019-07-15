@@ -1,49 +1,57 @@
-$brand-color-56: hsla(360, 63%, 40%, 0.56) !default;
-$brand-color-32: hsla(360, 63%, 40%, 0.32) !default;
-$brand-color-24: hsla(360, 63%, 40%, 0.24) !default;
-$brand-color-14: hsla(360, 63%, 40%, 0.14) !default;
-$brand-color-12: hsla(360, 63%, 40%, 0.12) !default;
-$brand-color-8: hsla(360, 63%, 40%, 0.08) !default;
-$brand-color-4: hsla(360, 63%, 40%, 0.04) !default;
 $brand-primary-color: hsla(360, 63%, 40%, 1) !default;
-$brand-hover-color: hsla(360, 55%, 48%, 1) !default;
-$brand-secondary-color: hsla(360, 63%, 40%, 0.56) !default;
-$brand-press-color: hsla(360, 71%, 36%) !default;
+$brand-color-56: change-color($brand-primary-color, $alpha: 0.56) !default;
+$brand-color-32: change-color($brand-primary-color, $alpha: 0.32) !default;
+$brand-color-24: change-color($brand-primary-color, $alpha: 0.24) !default;
+$brand-color-14: change-color($brand-primary-color, $alpha: 0.14) !default;
+$brand-color-12: change-color($brand-primary-color, $alpha: 0.12) !default;
+$brand-color-8: change-color($brand-primary-color, $alpha: 0.08) !default;
+$brand-color-4: change-color($brand-primary-color, $alpha: 0.04) !default;
+$brand-hover-color: adjust-color(
+  $brand-primary-color,
+  $saturation: -8%,
+  $lightness: +8%
+) !default;
+$brand-press-color: adjust-color(
+  $brand-primary-color,
+  $saturation: +8%,
+  $lightness: -4%
+) !default;
+$brand-secondary-color: $brand-color-56 !default;
 $brand-hint-color: $brand-color-32 !default;
 $brand-divider-color: $brand-color-12 !default;
 
 $danger-color: hsla(360, 100%, 50%, 1) !default;
 $success-color: hsla(123, 46%, 34%, 1) !default;
 
-$black-60: hsla(0, 0%, 0%, 0.6) !default;
-$black-56: hsla(0, 0%, 0%, 0.56) !default;
-$black-48: hsla(0, 0, 0%, 0.48) !default;
-$black-32: hsla(0, 0%, 0%, 0.32) !default;
-$black-24: hsla(0, 0%, 0%, 0.24) !default;
-$black-16: hsla(0, 0%, 0%, 0.16) !default;
-$black-12: hsla(0, 0%, 0%, 0.12) !default;
-$black-8: hsla(0, 0%, 0%, 0.08) !default;
-$black-4: hsla(0, 0%, 0%, 0.04) !default;
-$black-2: hsla(0, 0%, 0%, 0.02) !default;
 $black: hsla(0, 0%, 0%, 1) !default;
-$black-hover: hsla(0, 0%, 12%, 0.56) !default;
-$black-primary: hsla(0, 0%, 0%, 0.87) !default;
+$black-60: change-color($black, $alpha: 0.6) !default;
+$black-56: change-color($black, $alpha: 0.56) !default;
+$black-48: change-color($black, $alpha: 0.48) !default;
+$black-32: change-color($black, $alpha: 0.32) !default;
+$black-24: change-color($black, $alpha: 0.24) !default;
+$black-16: change-color($black, $alpha: 0.16) !default;
+$black-12: change-color($black, $alpha: 0.12) !default;
+$black-8: change-color($black, $alpha: 0.08) !default;
+$black-4: change-color($black, $alpha: 0.04) !default;
+$black-2: change-color($black, $alpha: 0.02) !default;
+$black-hover: adjust-color($black-56, $lightness: +12%) !default;
+$black-primary: change-color($black, $alpha: 0.87) !default;
 $black-secondary: $black-56 !default;
 $black-press: $black-60 !default;
 $black-hint: $black-32 !default;
 $black-divider: $black-12 !default;
 
-$white-12: hsla(0, 0%, 100%, 0.12) !default;
 $white: hsla(0, 0%, 100%, 1) !default;
+$white-12: change-color($white, $alpha: 0.12) !default;
+$white-secondary: change-color($white, $alpha: 0.7) !default;
+$white-hint: change-color($white, $alpha: 0.5) !default;
 $white-primary: $white !default;
-$white-secondary: hsla(0, 0%, 100%, 0.7) !default;
-$white-hint: hsla(0, 0%, 100%, 0.5) !default;
 $white-divider: $white-12 !default;
 
-$gray-900: hsla(0, 0%, 13%, 1) !default;
-$gray-850: hsla(0, 0%, 19%, 1) !default;
-$gray-800: hsla(0, 0%, 26%, 1) !default;
-$gray-400: hsla(0, 0%, 74%, 1) !default;
-$gray-200: hsla(0, 0%, 93%, 1) !default;
-$gray-100: hsla(0, 0%, 96%, 1) !default;
-$gray-50: hsla(0, 0%, 98%, 1) !default;
+$gray-900: adjust-color($black, $lightness: +13%) !default;
+$gray-850: adjust-color($black, $lightness: +19%) !default;
+$gray-800: adjust-color($black, $lightness: +26%) !default;
+$gray-400: adjust-color($black, $lightness: +74%) !default;
+$gray-200: adjust-color($black, $lightness: +93%) !default;
+$gray-100: adjust-color($black, $lightness: +96%) !default;
+$gray-50: adjust-color($black, $lightness: +98%) !default;
