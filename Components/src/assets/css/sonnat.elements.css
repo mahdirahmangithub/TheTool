@@ -23,6 +23,12 @@ a {
   cursor: pointer;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 *,
 *:before,
 *:after {
@@ -167,46 +173,46 @@ h1.responsive-typography {
 
 .h1,
 h1 {
-  font-size: 3rem;
-  line-height: 1.5;
-  font-weight: 300;
+  font-size: 3rem !important;
+  line-height: 1.5 !important;
+  font-weight: 300 !important;
 }
 
 .h2,
 h2 {
-  font-size: 2rem;
-  line-height: 1.5;
-  font-weight: normal;
+  font-size: 2rem !important;
+  line-height: 1.5 !important;
+  font-weight: normal !important;
 }
 
 .title-row__title,
 .h3,
 h3 {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-weight: 500;
+  font-size: 1.5rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
 }
 
 .section-row__title,
 .h4,
 h4 {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  font-weight: 500;
+  font-size: 1.25rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
 }
 
 .h5,
 h5 {
-  font-size: 1.125rem;
-  line-height: 1.5;
-  font-weight: 500;
+  font-size: 1.125rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
 }
 
 .h6,
 h6 {
-  font-size: 1rem;
-  line-height: 2;
-  font-weight: 500;
+  font-size: 1rem !important;
+  line-height: 2 !important;
+  font-weight: 500 !important;
 }
 
 p {
@@ -223,87 +229,87 @@ p {
 
 .text-xlg,
 .section-row > .section-row__title ~ .section-row__title {
-  font-size: 1.125rem;
+  font-size: 1.125rem !important;
 }
 
 .text-lg,
 .section-row__paragraph,
 .title-row__title--subtitle {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 .text-lg-stable {
-  font-size: 1rem;
-  line-height: 2;
-  font-weight: normal;
+  font-size: 1rem !important;
+  line-height: 2 !important;
+  font-weight: normal !important;
 }
 
 .text-md,
 .title-row__title--pretitle {
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
 }
 
 .text-sm {
-  font-size: 0.875rem;
+  font-size: 0.875rem !important;
 }
 
 .text-xs {
-  font-size: 0.75rem;
+  font-size: 0.75rem !important;
 }
 
 .text-xxs {
-  font-size: 0.625rem;
+  font-size: 0.625rem !important;
 }
 
 .text-tiny {
-  font-size: 0.5rem;
+  font-size: 0.5rem !important;
 }
 
 @media (max-width: 769px) {
   .h1,
 h1 {
-    font-size: 2rem;
-    line-height: 1.5;
-    font-weight: 300;
+    font-size: 2rem !important;
+    line-height: 1.5 !important;
+    font-weight: 300 !important;
   }
 
   .h2,
 h2 {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    font-weight: normal;
+    font-size: 1.5rem !important;
+    line-height: 1.5 !important;
+    font-weight: normal !important;
   }
 
   .title-row__title,
 .h3,
 h3 {
-    font-size: 1.25rem;
-    line-height: 1.5;
-    font-weight: 500;
+    font-size: 1.25rem !important;
+    line-height: 1.5 !important;
+    font-weight: 500 !important;
   }
 
   .section-row__title,
 .h4,
 h4 {
-    font-size: 1.125rem;
-    line-height: 1.5;
-    font-weight: 500;
+    font-size: 1.125rem !important;
+    line-height: 1.5 !important;
+    font-weight: 500 !important;
   }
 
   .text-xlg,
 .section-row > .section-row__title ~ .section-row__title {
-    font-size: 1rem;
-    line-height: 2;
-    font-weight: normal;
+    font-size: 1rem !important;
+    line-height: 2 !important;
+    font-weight: normal !important;
   }
 
   .text-lg,
 .section-row__paragraph,
 .title-row__title--subtitle {
-    font-size: 0.875rem;
-    line-height: 2;
-    font-weight: normal;
+    font-size: 0.875rem !important;
+    line-height: 2 !important;
+    font-weight: normal !important;
   }
 }
 .visible {
@@ -427,17 +433,23 @@ h4 {
 .checkbox-control, .radio-control {
   display: inline-flex;
   align-items: center;
-  flex-direction: row;
-  margin-right: 2rem;
-  margin-left: 0;
   box-sizing: content-box;
+  vertical-align: middle;
+  min-height: 2.5rem;
+  height: 2.5rem;
 }
 .fa .checkbox-control, .fa .radio-control {
-  flex-direction: row-reverse;
   margin-left: 2rem;
   margin-right: 0;
 }
-.checkbox-control > * + *, .radio-control > * + * {
+.fa .checkbox-control > * + *, .fa .radio-control > * + * {
+  margin-right: 0.25rem;
+}
+.en .checkbox-control, .en .radio-control {
+  margin-right: 2rem;
+  margin-left: 0;
+}
+.en .checkbox-control > * + *, .en .radio-control > * + * {
   margin-left: 0.25rem;
 }
 .disabled.checkbox-control, .disabled.radio-control {
@@ -1053,6 +1065,9 @@ h4 {
 
 .tab-row {
   position: relative;
+  height: 3rem;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .tab-row.stable .tab-list__tab {
   position: relative;
@@ -1096,14 +1111,6 @@ h4 {
   width: 2rem;
   height: 3rem;
   flex-shrink: 0;
-}
-.tab-row .fixer {
-  width: 100%;
-  height: 0.875rem;
-  position: absolute;
-  bottom: 0rem;
-  z-index: 1;
-  background-color: white;
 }
 
 .tab-list {
@@ -1218,6 +1225,9 @@ h4 {
 .button.icon-button > .button__icon + *:not(.rippler) {
   display: none;
 }
+.button.icon-button .button__rippler {
+  border-radius: 50%;
+}
 .small.button.icon-button {
   height: 2rem;
   width: 2rem;
@@ -1233,7 +1243,7 @@ h4 {
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: 1rem;
+  margin: 0.5rem;
   background-color: rgba(0, 0, 0, 0.56);
   color: white;
   border: 1px solid transparent;

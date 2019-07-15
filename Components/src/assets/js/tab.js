@@ -1,10 +1,7 @@
 jQuery(function($) {
-  var _tabItemLeftOffset = 48;
+  var _tabItemLeftOffset = 8;
   var _scrollAnimationSpeed = $.browser.safari || $.browser.mobile ? 500 : 10;
   var _scrollAnimationEasing = "swing";
-
-  // append "fixer" to hide horizontal scrollbar
-  $(".tab-row").append('<div class="fixer"></div>');
 
   // remove side paddings of trio full-width tabs
   $(".tab-row.stable").each(function() {

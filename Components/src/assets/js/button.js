@@ -1,12 +1,13 @@
 jQuery(function($) {
-  $(".button.ripple-element").append(
-    '<div class="button__rippler rippler"><div class="button__rippler__ripple ripple"></div></div>'
-  );
-
   $(document).on(
     "mousedown",
     ".button.ripple-element:not(.disabled):not([disabled])",
     function(e) {
+      if (!$(this).find(".ripple").length)
+        $(this).append(
+          '<div class="button__rippler rippler"><div class="button__rippler__ripple ripple"></div></div>'
+        );
+
       var ripple = $(this).find(".ripple");
       ripple.removeClass("button__ripple-animation");
 

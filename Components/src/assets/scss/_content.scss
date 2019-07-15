@@ -52,54 +52,54 @@
 .h1,
 h1 {
   @extend %base-header;
-  font-size: 3rem;
-  line-height: 1.5;
-  font-weight: 300;
+  font-size: 3rem !important;
+  line-height: 1.5 !important;
+  font-weight: 300 !important;
 }
 
 %h2,
 .h2,
 h2 {
   @extend %base-header;
-  font-size: 2rem;
-  line-height: 1.5;
-  font-weight: normal;
+  font-size: 2rem !important;
+  line-height: 1.5 !important;
+  font-weight: normal !important;
 }
 
 %h3,
 .h3,
 h3 {
   @extend %base-header;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-weight: 500;
+  font-size: 1.5rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
 }
 
 %h4,
 .h4,
 h4 {
   @extend %base-header;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  font-weight: 500;
+  font-size: 1.25rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
 }
 
 %h5,
 .h5,
 h5 {
   @extend %base-header;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  font-weight: 500;
+  font-size: 1.125rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
 }
 
 %h6,
 .h6,
 h6 {
   @extend %base-header;
-  font-size: 1rem;
-  line-height: 2;
-  font-weight: 500;
+  font-size: 1rem !important;
+  line-height: 2 !important;
+  font-weight: 500 !important;
 }
 
 p {
@@ -117,97 +117,97 @@ p {
 .text-xlg,
 %text-xlg {
   @extend %base-text;
-  font-size: 1.125rem;
+  font-size: 1.125rem !important;
 }
 
 .text-lg,
 %text-lg {
   @extend %base-text;
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 .text-lg-stable,
 %text-lg-stable {
-  font-size: 1rem;
-  line-height: 2;
-  font-weight: normal;
+  font-size: 1rem !important;
+  line-height: 2 !important;
+  font-weight: normal !important;
 }
 
 .text-md,
 %text-md {
   @extend %base-text;
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
 }
 
 .text-sm,
 %text-sm {
   @extend %base-text;
-  font-size: 0.875rem;
+  font-size: 0.875rem !important;
 }
 
 .text-xs,
 %text-xs {
   @extend %base-text;
-  font-size: 0.75rem;
+  font-size: 0.75rem !important;
 }
 
 .text-xxs,
 %text-xxs {
   @extend %base-text;
-  font-size: 0.625rem;
+  font-size: 0.625rem !important;
 }
 
 .text-tiny,
 %text-tiny {
   @extend %base-text;
-  font-size: 0.5rem;
+  font-size: 0.5rem !important;
 }
 
 @media (max-width: 769px) {
   %h1,
   .h1,
   h1 {
-    font-size: 2rem;
-    line-height: 1.5;
-    font-weight: 300;
+    font-size: 2rem !important;
+    line-height: 1.5 !important;
+    font-weight: 300 !important;
   }
 
   %h2,
   .h2,
   h2 {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    font-weight: normal;
+    font-size: 1.5rem !important;
+    line-height: 1.5 !important;
+    font-weight: normal !important;
   }
 
   %h3,
   .h3,
   h3 {
-    font-size: 1.25rem;
-    line-height: 1.5;
-    font-weight: 500;
+    font-size: 1.25rem !important;
+    line-height: 1.5 !important;
+    font-weight: 500 !important;
   }
 
   %h4,
   .h4,
   h4 {
-    font-size: 1.125rem;
-    line-height: 1.5;
-    font-weight: 500;
+    font-size: 1.125rem !important;
+    line-height: 1.5 !important;
+    font-weight: 500 !important;
   }
 
   .text-xlg,
   %text-xlg {
-    font-size: 1rem;
-    line-height: 2;
-    font-weight: normal;
+    font-size: 1rem !important;
+    line-height: 2 !important;
+    font-weight: normal !important;
   }
 
   .text-lg,
   %text-lg {
-    font-size: 0.875rem;
-    line-height: 2;
-    font-weight: normal;
+    font-size: 0.875rem !important;
+    line-height: 2 !important;
+    font-weight: normal !important;
   }
 }

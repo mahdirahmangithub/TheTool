@@ -42,42 +42,42 @@
       &.response {
         .h1,
         h1 {
-          font-size: 2rem;
-          line-height: 1.5;
-          font-weight: 300;
+          font-size: 2rem !important;
+          line-height: 1.5 !important;
+          font-weight: 300 !important;
         }
 
         .h2,
         h2 {
-          font-size: 1.5rem;
-          line-height: 1.5;
-          font-weight: normal;
+          font-size: 1.5rem !important;
+          line-height: 1.5 !important;
+          font-weight: normal !important;
         }
 
         .h3,
         h3 {
-          font-size: 1.25rem;
-          line-height: 1.5;
-          font-weight: 500;
+          font-size: 1.25rem !important;
+          line-height: 1.5 !important;
+          font-weight: 500 !important;
         }
 
         .h4,
         h4 {
-          font-size: 1.125rem;
-          line-height: 1.5;
-          font-weight: 500;
+          font-size: 1.125rem !important;
+          line-height: 1.5 !important;
+          font-weight: 500 !important;
         }
 
         .text-xlg {
-          font-size: 1rem;
-          line-height: 2;
-          font-weight: normal;
+          font-size: 1rem !important;
+          line-height: 2 !important;
+          font-weight: normal !important;
         }
 
         .text-lg {
-          font-size: 0.875rem;
-          line-height: 2;
-          font-weight: normal;
+          font-size: 0.875rem !important;
+          line-height: 2 !important;
+          font-weight: normal !important;
         }
       }
     }

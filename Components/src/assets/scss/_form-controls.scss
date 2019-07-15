@@ -1,19 +1,27 @@
 %switch-control {
   display: inline-flex;
   align-items: center;
-  flex-direction: row;
-  margin-right: 2rem;
-  margin-left: 0;
   box-sizing: content-box;
+  vertical-align: middle;
+  min-height: 2.5rem;
+  height: 2.5rem;
 
   .fa & {
-    flex-direction: row-reverse;
     margin-left: 2rem;
     margin-right: 0;
+
+    & > * + * {
+      margin-right: 0.25rem;
+    }
   }
 
-  & > * + * {
-    margin-left: 0.25rem;
+  .en & {
+    margin-right: 2rem;
+    margin-left: 0;
+
+    & > * + * {
+      margin-left: 0.25rem;
+    }
   }
 
   &.disabled {
