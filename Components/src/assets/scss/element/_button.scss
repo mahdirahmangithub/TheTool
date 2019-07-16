@@ -48,9 +48,18 @@
   font-weight: 500;
   vertical-align: middle;
   line-height: 2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   transition: color 360ms ease, background-color 360ms ease,
     transform 360ms ease, border-radius 360ms ease, box-shadow 400ms ease,
     border-color 360ms ease;
+
+  & > *:not(.button__icon) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 
   .fill {
     fill: $white;

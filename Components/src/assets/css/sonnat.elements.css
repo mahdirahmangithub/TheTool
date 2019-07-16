@@ -436,7 +436,7 @@ h4 {
   box-sizing: content-box;
   vertical-align: middle;
   min-height: 2.5rem;
-  height: 2.5rem;
+  height: auto;
 }
 .fa .checkbox-control, .fa .radio-control {
   margin-left: 2rem;
@@ -1316,7 +1316,15 @@ h4 {
   font-weight: 500;
   vertical-align: middle;
   line-height: 2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   transition: color 360ms ease, background-color 360ms ease, transform 360ms ease, border-radius 360ms ease, box-shadow 400ms ease, border-color 360ms ease;
+}
+.button > *:not(.button__icon) {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .button .fill {
   fill: white;
