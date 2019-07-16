@@ -2,30 +2,27 @@
   position: relative;
   margin: 0;
   border: none;
+  border-style: inset;
+  border-color: $black-divider;
+  border-width: 0;
+  border-top-width: 1px;
 
   &:not(.vertical):not(.dotted) {
     width: 100%;
     height: auto;
 
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 1px;
-      background-color: hsla(0, 0%, 0%, 0.12);
-    }
-
     &.padded {
-      &:after {
-        width: auto;
-        left: #{$space};
-        right: #{$space};
-      }
+      height: auto;
+      width: calc(100% - #{$space * 2});
+      margin-right: auto;
+      margin-left: auto;
     }
 
     &.spaced {
-      margin: #{map-get($spaces, "x4")} 0;
+      margin-block-start: map-get($spaces, "x4");
+      margin-block-end: map-get($spaces, "x4");
+      margin-inline-start: auto;
+      margin-inline-end: auto;
     }
   }
 
@@ -38,6 +35,7 @@
     font-weight: 400;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
+    border: none;
 
     &:after {
       content: "...";
@@ -55,26 +53,19 @@
   &.vertical {
     width: auto;
     height: 100%;
-
-    &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      height: 100%;
-      width: 1px;
-      background-color: hsla(0, 0%, 0%, 0.12);
-    }
+    border-color: $black-divider;
+    border-width: 0;
+    border-right-width: 1px;
 
     &.padded {
-      &:after {
-        height: auto;
-        top: #{$space};
-        bottom: #{$space};
-      }
+      height: calc(100% - #{$space * 2});
     }
 
     &.spaced {
-      margin: 0 #{map-get($spaces, "x4")};
+      margin-block-start: auto;
+      margin-block-end: auto;
+      margin-inline-start: map-get($spaces, "x4");
+      margin-inline-end: map-get($spaces, "x4");
     }
   }
 }

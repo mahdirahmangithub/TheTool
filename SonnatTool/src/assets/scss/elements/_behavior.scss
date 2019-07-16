@@ -1,0 +1,213 @@
+.behavior-row {
+  display: flex;
+  direction: ltr;
+  align-items: center;
+  justify-content: flex-start;
+
+  & figure {
+    margin: 0;
+  }
+
+  .en & {
+    & > .behavior__figure + .behavior__figure {
+      margin-left: $gutter;
+    }
+  }
+
+  .fa & {
+    & > .behavior__figure + .behavior__figure {
+      margin-right: $gutter;
+    }
+  }
+
+  & > .behavior__figure.side-label:not(:only-child) {
+    &:first-child {
+      .behavior__figure__img-container {
+        @extend .order-1, .order-lg-2;
+      }
+
+      .behavior__figure__label {
+        @extend .order-2, .order-lg-1;
+      }
+
+      .behavior__figure__caption {
+        @extend .offset-lg-2;
+      }
+    }
+
+    &:last-child {
+      .behavior__figure__img-container {
+        @extend .order-1;
+      }
+
+      .behavior__figure__label {
+        @extend .order-2;
+      }
+
+      .behavior__figure__label {
+        flex-direction: row-reverse;
+
+        & > h6 {
+          margin-left: 0;
+          margin-right: map-get($spaces, "x4");
+        }
+      }
+    }
+
+    .behavior__figure__img-container {
+      @extend .column-lg-10;
+    }
+
+    .behavior__figure__label {
+      @extend .column-lg-2;
+      justify-content: flex-start;
+    }
+
+    .behavior__figure__caption {
+      @extend .column-lg-10, .order-3;
+    }
+  }
+
+  & > .behavior__figure.side-label:only-child {
+    .behavior__figure__img-container {
+      @extend .column-lg-10, .order-1, .order-lg-2;
+    }
+
+    .behavior__figure__label {
+      @extend .column-lg-1, .order-2, .order-lg-1;
+      justify-content: flex-start;
+    }
+
+    .behavior__figure__caption {
+      @extend .column-lg-10, .offset-lg-1;
+      order: 3;
+    }
+  }
+
+  @media (max-width: map-get($breakpoints, "lg") - 1) {
+    & > .behavior__figure.side-label {
+      .behavior__figure__label {
+        flex-direction: row !important;
+
+        & > h6 {
+          margin-left: map-get($spaces, "x4") !important;
+          margin-right: 0 !important;
+        }
+      }
+    }
+
+    & > .behavior__figure.side-label:only-child {
+      .behavior__figure__caption {
+        margin-top: 0;
+      }
+    }
+
+    & > .behavior__figure.side-label:not(:only-child) {
+      .behavior__figure__caption {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @media (max-width: map-get($breakpoints, "sm") - 1) {
+    & {
+      flex-wrap: wrap;
+    }
+
+    & > .behavior__figure + .behavior__figure {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+    }
+
+    & > .behavior__figure.side-label + .behavior__figure {
+      margin-right: -0.5rem !important;
+      margin-left: -0.5rem !important;
+    }
+
+    .behavior__figure.side-label .behavior__figure__caption {
+      margin-top: 0;
+    }
+
+    & > .behavior__figure.side-label .behavior__figure__label {
+      flex-direction: row !important;
+
+      & > h6 {
+        margin-left: map-get($spaces, "x4") !important;
+        margin-right: 0 !important;
+      }
+    }
+  }
+}
+
+.behavior__figure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: $gutter !important;
+  margin-top: $gutter !important;
+
+  &.do-behave {
+    .behavior__figure__label {
+      h6 {
+        color: #49c86c;
+      }
+
+      .fill {
+        fill: #49c86c;
+      }
+    }
+  }
+
+  &.dont-behave {
+    .behavior__figure__label {
+      h6 {
+        color: #ff0000;
+      }
+
+      .fill {
+        fill: #ff0000;
+      }
+    }
+  }
+
+  &.side-label {
+    @extend %row;
+    flex-direction: row;
+    align-items: center;
+
+    .behavior__figure__caption {
+      margin-top: map-get($spaces, "x4");
+    }
+  }
+}
+
+.behavior__figure__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: map-get($spaces, "x4");
+
+  & > h6 {
+    margin-left: map-get($spaces, "x4");
+  }
+}
+
+.behavior__figure__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: map-get($spaces, "x2");
+  overflow: hidden;
+
+  & > img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.behavior__figure__caption {
+  @extend %text-sm;
+  color: $black-secondary;
+}

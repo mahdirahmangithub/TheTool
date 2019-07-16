@@ -95,12 +95,12 @@
   } @else {
     .column-#{$i} {
       @extend %base-numbered-column;
-      flex-basis: #{$i * 100 / 12} + "%";
-      max-width: #{$i * 100 / 12} + "%";
+      flex-basis: $i * 100 / 12 + 0%;
+      max-width: $i * 100 / 12 + 0%;
     }
 
     .offset-#{$i} {
-      margin-left: #{$i * 100 / 12} + "%";
+      margin-left: $i * 100 / 12 + 0%;
     }
 
     .order-#{$i} {
@@ -131,16 +131,16 @@
         }
 
         .offset-#{$key}-#{$i} {
-          margin-left: #{$i * 100 / 12} + "%";
+          margin-left: $i * 100 / 12 + 0%;
         }
       } @else {
         .column-#{$key}-#{$i} {
-          flex-basis: #{$i * 100 / 12} + "%";
-          max-width: #{$i * 100 / 12} + "%";
+          flex-basis: $i * 100 / 12 + 0%;
+          max-width: $i * 100 / 12 + 0%;
         }
 
         .offset-#{$key}-#{$i} {
-          margin-left: #{$i * 100 / 12} + "%";
+          margin-left: $i * 100 / 12 + 0%;
         }
 
         .order-#{$key}-#{$i} {

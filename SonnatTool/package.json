@@ -1,0 +1,43 @@
+{
+  "name": "sonnat-thetool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "watch-sass": "node-sass src/assets/scss/bundle.scss src/assets/css/bundle.css --watch",
+    "compile-sass": "node-sass src/assets/scss/bundle.scss src/assets/css/bundle.css",
+    "prefix-css": "postcss src/assets/css/bundle.css --use autoprefixer -o src/assets/css/bundle.prefix.css",
+    "compress-css": "node-sass src/assets/css/bundle.prefix.css src/assets/css/bundle.min.css --output-style compressed",
+    "build-css": "npm-run-all compile-sass prefix-css compress-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahdirahmangithub/sonnat-TheTool.git"
+  },
+  "contributors": [
+    {
+      "name": "Mostafa Shamsitabar",
+      "email": "mostafa.sh.coderino@gmail.com"
+    },
+    {
+      "name": "Mehdi Rahman",
+      "email": "mehdi.rahman@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mahdirahmangithub/sonnat-TheTool/issues"
+  },
+  "homepage": "https://github.com/mahdirahmangithub/sonnat-TheTool#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.3"
+  },
+  "browserslist": [
+    "cover 95%",
+    "last 4 versions",
+    "not ie <= 9"
+  ]
+}
