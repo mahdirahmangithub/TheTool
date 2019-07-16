@@ -2,9 +2,11 @@
   position: relative;
   margin: 0;
   border: none;
-  height: auto;
 
   &:not(.vertical):not(.dotted) {
+    width: 100%;
+    height: auto;
+
     &:after {
       content: "";
       position: absolute;
@@ -51,6 +53,9 @@
   }
 
   &.vertical {
+    width: auto;
+    height: 100%;
+
     &:after {
       content: "";
       position: absolute;
