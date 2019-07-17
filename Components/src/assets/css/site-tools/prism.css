@@ -119,7 +119,7 @@ pre[class*="language-"] {
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  color: #07a;
+  color: #d56f1a;
 }
 
 .token.function,
@@ -189,7 +189,7 @@ pre[class*="language-"].line-numbers > code {
 
 .dark-theme code[class*="language-"],
 .dark-theme pre[class*="language-"] {
-  color: #acb2be;
+  color: #fff;
 }
 
 .dark-theme pre code .token.comment,
@@ -236,6 +236,7 @@ pre[class*="language-"].line-numbers > code {
 .dark-theme pre code .style .token.string,
 .dark-theme pre code .token.variable {
   color: #f8f8f2 !important;
+  background-color: transparent !important;
 }
 
 .dark-theme pre code .token.atrule,

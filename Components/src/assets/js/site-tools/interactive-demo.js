@@ -5,21 +5,19 @@ jQuery(function($) {
     this.state = {};
     this.blacklist = {};
 
-    this.grandParent = $(selector);
-    this.configButton = this.grandParent.find(".config-button");
-    this.cancelButton = this.grandParent.find(".cancel-button");
+    this.demo = $(selector);
+    this.configButton = this.demo.find(".config-button");
+    this.cancelButton = this.demo.find(".cancel-button");
 
-    this.demoTargetContainer = this.grandParent.find(
+    this.demoTargetContainer = this.demo.find(
       ".interactive-demo__content__main"
     );
-    this.configPanel = this.grandParent.find(
+    this.configPanel = this.demo.find(
       ".interactive-demo__content__configuration"
     );
-    this.tabContainer = this.grandParent.find(".interactive-demo__head__tabs");
+    this.tabContainer = this.demo.find(".interactive-demo__head__tabs");
     this.tabs = this.tabContainer.find(".tab-list__tab");
-    this.target = this.demoTargetContainer.find(
-      this.grandParent.attr("data-target")
-    );
+    this.target = this.demoTargetContainer.find(this.demo.attr("data-target"));
 
     _setState = _setState.bind(this);
     _getState = _getState.bind(this);
@@ -152,11 +150,11 @@ jQuery(function($) {
 
     this.configButton.on("click", function() {
       $(this).trigger("blur");
-      _this.grandParent.addClass("sidebar-opened");
+      _this.demo.addClass("sidebar-opened");
     });
 
     this.cancelButton.on("click", function() {
-      _this.grandParent.removeClass("sidebar-opened");
+      _this.demo.removeClass("sidebar-opened");
     });
 
     this.tabs.on("click", function() {

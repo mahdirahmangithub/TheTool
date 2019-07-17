@@ -1,6 +1,6 @@
 @import "../variable/breakpoint", "../variable/spacing", "../variable/color";
 
 @import "../content", "../display", "../flex", "../visibility", "../grid",
-  "../imagery";
+  "../imagery", "../spacing";
 
-@import "resizable-view", "behavior", "interactive-demo";
+@import "resizable-view", "behavior", "interactive-demo", "code-demo";

@@ -500,26 +500,28 @@
                       </div>
                     </div>
                     <hr class="divider" />
-                    <pre class="lang-scss"><code>
-&:not(.vertical):not(.dotted) {
-  width: 100%;
-  height: auto;
+                    <div class="code-row">
+                      <pre class="line-numbers"><code class="lang-scss">
+                      &:not(.vertical):not(.dotted) {
+                        width: 100%;
+                        height: auto;
 
-  &.padded {
-    height: auto;
-    width: calc(100% - #{$space * 2});
-    margin-right: auto;
-    margin-left: auto;
-  }
+                        &.padded {
+                          height: auto;
+                          width: calc(100% - #{$space * 2});
+                          margin-right: auto;
+                          margin-left: auto;
+                        }
 
-  &.spaced {
-    margin-block-start: map-get($spaces, "x4");
-    margin-block-end: map-get($spaces, "x4");
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-  }
-}
+                        &.spaced {
+                          margin-block-start: map-get($spaces, "x4");
+                          margin-block-end: map-get($spaces, "x4");
+                          margin-inline-start: auto;
+                          margin-inline-end: auto;
+                        }
+                      }
                     </code></pre>
+                    </div>
                   </div>
                 </div>
               </div>

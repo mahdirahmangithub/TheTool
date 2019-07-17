@@ -36,10 +36,6 @@ ul {
   box-sizing: border-box;
 }
 
-.root {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 #main {
   max-width: 1440px;
   margin: 0 auto;
@@ -640,23 +636,26 @@ h4 {
   position: relative;
   margin: 0;
   border: none;
+  border-style: inset;
+  border-color: rgba(0, 0, 0, 0.12);
+  border-width: 0;
+  border-top-width: 1px;
+}
+.divider:not(.vertical):not(.dotted) {
+  width: 100%;
   height: auto;
 }
-.divider:not(.vertical):not(.dotted):after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.12);
-}
-.divider:not(.vertical):not(.dotted).padded:after {
-  width: auto;
-  left: 1rem;
-  right: 1rem;
+.divider:not(.vertical):not(.dotted).padded {
+  height: auto;
+  width: calc(100% - 2rem);
+  margin-right: auto;
+  margin-left: auto;
 }
 .divider:not(.vertical):not(.dotted).spaced {
-  margin: 0.5rem 0;
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
 }
 .divider.dotted {
   box-sizing: content-box;
@@ -667,6 +666,7 @@ h4 {
   font-weight: 400;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+  border: none;
 }
 .divider.dotted:after {
   content: "...";
@@ -679,21 +679,21 @@ h4 {
   --x-height-multiplier: 0.342;
   --baseline-multiplier: 0.22;
 }
-.divider.vertical:after {
-  content: "";
-  position: absolute;
-  left: 0;
+.divider.vertical {
+  width: auto;
   height: 100%;
-  width: 1px;
-  background-color: rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 0, 0, 0.12);
+  border-width: 0;
+  border-right-width: 1px;
 }
-.divider.vertical.padded:after {
-  height: auto;
-  top: 1rem;
-  bottom: 1rem;
+.divider.vertical.padded {
+  height: calc(100% - 2rem);
 }
 .divider.vertical.spaced {
-  margin: 0 0.5rem;
+  margin-block-start: auto;
+  margin-block-end: auto;
+  margin-inline-start: 0.5rem;
+  margin-inline-end: 0.5rem;
 }
 
 .zebra-divider > *:nth-child(even) {
@@ -805,14 +805,23 @@ h4 {
   padding-left: 0.625rem;
   padding-right: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
 }
 .en .switch-toggle {
-  flex-direction: row-reverse;
   padding-right: 0.625rem;
   padding-left: 0;
+}
+.en .switch-toggle .switch-toggle__button {
+  right: auto;
+  left: -9px;
+}
+.en .switch-toggle .switch-toggle__indicator:after {
+  left: -0.75rem;
+}
+.en .switch-toggle .switch-toggle__input:checked + .switch-toggle__track .switch-toggle__button {
+  transform: translateX(18px);
 }
 .switch-toggle.disabled {
   cursor: not-allowed !important;
@@ -881,7 +890,7 @@ h4 {
   border-radius: 0.75rem;
   position: absolute;
   display: flex;
-  flex-flow: row;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   padding: 0.125rem;
@@ -924,10 +933,7 @@ h4 {
   border-radius: 50%;
   background-color: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24);
-  display: flex;
-  align-items: center;
   z-index: 2;
-  justify-content: center;
   pointer-events: none;
 }
 
