@@ -3270,6 +3270,13 @@ p {
   width: calc(100% - 256px);
   padding-top: calc(64px + 4rem); }
 
+.code-row {
+  width: 100%;
+  direction: ltr; }
+  .code-row > pre {
+    max-height: 30rem;
+    overflow: auto; }
+
 @media (max-width: 1023px) {
   #sidebar-nav {
     display: none; }

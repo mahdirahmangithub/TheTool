@@ -57,6 +57,16 @@ $header-height: 64px;
   padding-top: calc(#{$header-height} + #{map-get($spaces, "x32")});
 }
 
+.code-row {
+  width: 100%;
+  direction: ltr;
+
+  & > pre {
+    max-height: 30rem;
+    overflow: auto;
+  }
+}
+
 @media (max-width: map-get($breakpoints, "lg") - 1) {
   #sidebar-nav {
     display: none;
