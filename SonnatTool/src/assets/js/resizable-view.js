@@ -1,114 +1,125 @@
-$(function() {
-  var $view = $(".resizable-view");
-  var $handle = $(".resizable-view__draggable-handle");
-  var $breakpoints = $(".resizable-view-row__breakpoints");
-  var $parent = $view.parent();
+jQuery(function($) {
+  var BREAKPOINT_LEFT_OFFSET = 577;
+  var INDICATOR_SVG_REAL_WIDTH = 17;
 
-  var minWidth = $view.attr("data-min-width");
-  var breakpointLeftOffset = 577;
-  var indicatorSVGRealWidth = 17;
+  function ResizableView(selector) {
+    var _this = this;
 
-  $view.resizable({
-    handles: {
-      e: $handle
-    },
-    maxWidth: getSuitableWidth(),
-    minWidth: 500
-  });
+    this.view = $(selector);
+    this.handle = this.view.find(".resizable-view__draggable-handle");
+    this.parent = this.view.parent();
+    this.breakpoints = this.parent.find(".resizable-view-row__breakpoints");
 
-  $handle.on("mousedown", function() {
-    $(this).addClass("active");
-  });
+    _getSuitableWidth = _getSuitableWidth.bind(this);
 
-  $(document).on("mouseup", function() {
-    $handle.removeClass("active");
-  });
+    this.view.resizable({
+      handles: { e: this.handle },
+      maxWidth: _getSuitableWidth(),
+      minWidth: 500
+    });
 
-  function getSuitableWidth() {
-    if ($parent.width() < $view.width()) $view.width($parent.width());
-    return $parent.width();
-  }
+    this.handle.on("mousedown", function() {
+      $(this).addClass("active");
+    });
 
-  function trimZeros(num) {
-    return parseFloat(num);
-  }
+    $(document).on("mouseup", function() {
+      _this.handle.removeClass("active");
+    });
 
-  function updateTypeInfo() {
-    $(".resizable-typography-row").each(function() {
-      var _fs = parseInt(
-        $(this)
-          .find(".responsive-typography")
-          .css("font-size")
-          .replace("px", "")
-      );
+    function _getSuitableWidth() {
+      if (this.parent.width() < this.view.width())
+        this.view.width(this.parent.width());
+      return this.parent.width();
+    }
 
-      var _lh = parseInt(
-        $(this)
-          .find(".responsive-typography")
-          .css("line-height")
-          .replace("px", "")
-      );
+    function _trimZeros(num) {
+      return parseFloat(num);
+    }
 
-      var _fw = "";
-      switch (
-        parseInt(
+    function _updateTypeInfo() {
+      _this.view.find(".resizable-typography-row").each(function() {
+        var _fs = parseInt(
           $(this)
             .find(".responsive-typography")
-            .css("font-weight")
-        )
-      ) {
-        case 300:
-          _fw = "Light";
-          break;
-        case 400:
-          _fw = "Regular";
-          break;
-        case 500:
-          _fw = "Medium";
-          break;
-        default:
-          _fw = $(this)
-            .find(".responsive-typography")
-            .css("font-weight");
-          break;
-      }
-
-      $(this)
-        .find(".fw")
-        .text(_fw);
-      $(this)
-        .find(".fs-px")
-        .text(_fs);
-      $(this)
-        .find(".fs-rem")
-        .text(trimZeros(parseFloat(_fs / 16).toFixed(3)) + "rem");
-      $(this)
-        .find(".lh")
-        .text(trimZeros(parseFloat(_lh / _fs).toFixed(1)));
-    });
-  }
-
-  if (!!$breakpoints.length) {
-    new ResizeSensor($view, function() {
-      var boxWidth = $view.width();
-
-      updateTypeInfo();
-
-      if (boxWidth >= breakpointLeftOffset + 42) {
-        $(".resizable-typography-row").removeClass("response");
-        $breakpoints.removeClass("response");
-      } else {
-        $(".resizable-typography-row").addClass("response");
-        $breakpoints.addClass("response");
-        $breakpoints.css(
-          "right",
-          $parent.width() - $view.width() + indicatorSVGRealWidth * 0.5 + "px"
+            .css("font-size")
+            .replace("px", "")
         );
-      }
+
+        var _lh = parseInt(
+          $(this)
+            .find(".responsive-typography")
+            .css("line-height")
+            .replace("px", "")
+        );
+
+        var _fw = "";
+        switch (
+          parseInt(
+            $(this)
+              .find(".responsive-typography")
+              .css("font-weight")
+          )
+        ) {
+          case 300:
+            _fw = "Light";
+            break;
+          case 400:
+            _fw = "Regular";
+            break;
+          case 500:
+            _fw = "Medium";
+            break;
+          default:
+            _fw = $(this)
+              .find(".responsive-typography")
+              .css("font-weight");
+            break;
+        }
+
+        $(this)
+          .find(".fw")
+          .text(_fw);
+        $(this)
+          .find(".fs-px")
+          .text(_fs);
+        $(this)
+          .find(".fs-rem")
+          .text(_trimZeros(parseFloat(_fs / 16).toFixed(3)) + "rem");
+        $(this)
+          .find(".lh")
+          .text(_trimZeros(parseFloat(_lh / _fs).toFixed(1)));
+      });
+    }
+
+    if (!!this.breakpoints.length) {
+      new ResizeSensor(_this.view, function() {
+        var boxWidth = _this.view.width();
+
+        _updateTypeInfo();
+
+        if (boxWidth >= BREAKPOINT_LEFT_OFFSET + 42) {
+          _this.view.find(".resizable-typography-row").removeClass("response");
+          _this.breakpoints.removeClass("response");
+        } else {
+          _this.view.find(".resizable-typography-row").addClass("response");
+          _this.breakpoints.addClass("response");
+          _this.breakpoints.css(
+            "right",
+            _this.parent.width() -
+              _this.view.width() +
+              INDICATOR_SVG_REAL_WIDTH * 0.5 +
+              "px"
+          );
+        }
+      });
+    }
+
+    new ResizeSensor(_this.parent, function() {
+      _this.view.resizable("option", "maxWidth", _getSuitableWidth());
     });
   }
 
-  new ResizeSensor($parent, function() {
-    $view.resizable("option", "maxWidth", getSuitableWidth());
+  $(".resizable-view").each(function() {
+    new ResizableView($(this));
   });
 });
