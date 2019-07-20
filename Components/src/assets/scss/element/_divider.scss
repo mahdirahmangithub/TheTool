@@ -49,6 +49,7 @@
     height: auto;
     width: 1px;
     background-color: $black-divider;
+    align-self: stretch;
 
     &.padded {
       margin-top: 1rem;

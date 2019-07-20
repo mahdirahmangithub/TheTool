@@ -678,6 +678,7 @@ h4 {
   height: auto;
   width: 1px;
   background-color: rgba(0, 0, 0, 0.12);
+  align-self: stretch;
 }
 .divider.vertical.padded {
   margin-top: 1rem;
