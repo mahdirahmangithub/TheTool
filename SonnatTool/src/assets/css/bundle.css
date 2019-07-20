@@ -1049,19 +1049,23 @@ p {
   padding-left: 1rem;
   margin-right: auto;
   margin-left: auto; }
-  @media (min-width: 576px) {
+  @media (min-width: 320px) {
     .normal-view
     .container {
-      max-width: 540px; } }
-  @media (min-width: 768px) {
+      max-width: 100%; } }
+  @media (min-width: 520px) {
     .normal-view
     .container {
-      max-width: 720px; } }
-  @media (min-width: 992px) {
+      max-width: 100%; } }
+  @media (min-width: 770px) {
+    .normal-view
+    .container {
+      max-width: 770px; } }
+  @media (min-width: 1024px) {
     .normal-view
     .container {
       max-width: 960px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1366px) {
     .normal-view
     .container {
       max-width: 1184px; } }
@@ -2086,6 +2090,34 @@ p {
   .icon-48 > svg {
     width: 100%;
     height: 100%; }
+
+.responsive-imagery {
+  text-align: center; }
+  .responsive-imagery > .w-responsive-image {
+    max-width: 100%;
+    height: auto; }
+  .responsive-imagery > .h-responsive-image {
+    max-height: 100%;
+    width: auto; }
+
+.preserve-aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden; }
+  .preserve-aspect-ratio > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto; }
+  .preserve-aspect-ratio.ratio-1-1 {
+    padding-top: 100%; }
+  .preserve-aspect-ratio.ratio-4-3 {
+    padding-top: 75%; }
+  .preserve-aspect-ratio.ratio-16-9 {
+    padding-top: 56.25%; }
 
 .divider {
   position: relative;

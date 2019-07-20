@@ -6,25 +6,31 @@
   margin-right: auto;
   margin-left: auto;
 
-  @media (min-width: 576px) {
+  @media (min-width: map-get($breakpoints, "xxs")) {
     .normal-view & {
-      max-width: 540px;
+      max-width: 100%;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: map-get($breakpoints, "xs")) {
     .normal-view & {
-      max-width: 720px;
+      max-width: 100%;
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: map-get($breakpoints, "sm")) {
+    .normal-view & {
+      max-width: 770px;
+    }
+  }
+
+  @media (min-width: map-get($breakpoints, "lg")) {
     .normal-view & {
       max-width: 960px;
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: map-get($breakpoints, "xlg")) {
     .normal-view & {
       max-width: 1184px;
     }
