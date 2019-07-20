@@ -2811,7 +2811,6 @@ h4 {
   padding: 0 0.5rem;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   transition: width 360ms ease;
 }
 .code-demo__head__utils > .switch-toggle {

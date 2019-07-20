@@ -2,27 +2,22 @@
   position: relative;
   margin: 0;
   border: none;
-  border-style: inset;
-  border-color: $black-divider;
-  border-width: 0;
-  border-top-width: 1px;
+  flex-shrink: 0;
 
   &:not(.vertical):not(.dotted) {
     width: 100%;
-    height: auto;
+    height: 1px;
+    background-color: $black-divider;
 
     &.padded {
-      height: auto;
       width: calc(100% - #{$space * 2});
       margin-right: auto;
       margin-left: auto;
     }
 
     &.spaced {
-      margin-block-start: map-get($spaces, "x4");
-      margin-block-end: map-get($spaces, "x4");
-      margin-inline-start: auto;
-      margin-inline-end: auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
   }
 
@@ -33,8 +28,8 @@
     font-size: 1.75rem;
     line-height: 1.14285714;
     font-weight: 400;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: map-get($spaces, "x12");
+    margin-bottom: map-get($spaces, "x4");
     border: none;
 
     &:after {
@@ -51,21 +46,18 @@
   }
 
   &.vertical {
-    width: auto;
-    height: 100%;
-    border-color: $black-divider;
-    border-width: 0;
-    border-right-width: 1px;
+    height: auto;
+    width: 1px;
+    background-color: $black-divider;
 
     &.padded {
-      height: calc(100% - #{$space * 2});
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
 
     &.spaced {
-      margin-block-start: auto;
-      margin-block-end: auto;
-      margin-inline-start: map-get($spaces, "x4");
-      margin-inline-end: map-get($spaces, "x4");
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
   }
 }
