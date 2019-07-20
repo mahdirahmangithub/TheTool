@@ -77,13 +77,41 @@
 .responsive-imagery {
   text-align: center;
 
-  & > img.w-responsive-image {
+  & > .w-responsive-image {
     max-width: 100%;
     height: auto;
   }
 
-  & > img.h-responsive-image {
+  & > .h-responsive-image {
     max-height: 100%;
     width: auto;
+  }
+}
+
+.preserve-aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+
+  & > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+  }
+
+  &.ratio-1-1 {
+    padding-top: 100%;
+  }
+
+  &.ratio-4-3 {
+    padding-top: 75%;
+  }
+
+  &.ratio-16-9 {
+    padding-top: 56.25%;
   }
 }
