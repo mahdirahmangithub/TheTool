@@ -73,3 +73,17 @@
     height: 100%;
   }
 }
+
+.responsive-imagery {
+  text-align: center;
+
+  & > img.w-responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  & > img.h-responsive-image {
+    max-height: 100%;
+    width: auto;
+  }
+}
