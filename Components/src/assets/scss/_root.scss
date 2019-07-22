@@ -7,18 +7,16 @@ body {
   overflow-y: auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
 
-  &.en,
-  &:not(.fa),
-  &:not(.en):not(.fa) {
-    font-family: $font-family-en;
-    direction: ltr;
-  }
+#{onlyEN()} {
+  font-family: $font-family-en;
+  direction: ltr;
+}
 
-  &.fa {
-    font-family: $font-family-fa;
-    direction: rtl;
-  }
+#{onlyFA()} {
+  font-family: $font-family-fa;
+  direction: rtl;
 }
 
 a {

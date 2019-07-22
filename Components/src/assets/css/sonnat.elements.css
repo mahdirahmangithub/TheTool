@@ -8,11 +8,13 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
-body.en, body:not(.fa), body:not(.en):not(.fa) {
+
+body[dir=ltr]:not(.en):not(.fa), body[dir=ltr]:not(.en), body[dir=ltr], body.en:not([dir=rtl]):not(.fa), body.en:not([dir=rtl]), body.en {
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   direction: ltr;
 }
-body.fa {
+
+body[dir=rtl]:not(.fa):not(.en), body[dir=rtl]:not(.fa), body[dir=rtl], body.fa:not([dir=ltr]):not(.en), body.fa:not([dir=ltr]), body.fa {
   font-family: IRANSans, Arial, Tahoma, Helvetica;
   direction: rtl;
 }
@@ -1649,141 +1651,132 @@ h4 {
   position: relative;
   margin-top: 1.5rem;
 }
-body.fa .text-field.rounded .text-field__input {
+body[dir=rtl]:not(.fa):not(.en) .text-field.rounded .text-field__input, body[dir=rtl]:not(.fa) .text-field.rounded .text-field__input, body[dir=rtl] .text-field.rounded .text-field__input, body.fa:not([dir=ltr]):not(.en) .text-field.rounded .text-field__input, body.fa:not([dir=ltr]) .text-field.rounded .text-field__input, body.fa .text-field.rounded .text-field__input {
   border-radius: 1.25rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
-body.fa .text-field.rounded.iconed.iconed--leading .text-field__input {
+body[dir=rtl]:not(.fa):not(.en) .text-field.rounded.iconed.iconed--leading .text-field__input, body[dir=rtl]:not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__input, body[dir=rtl] .text-field.rounded.iconed.iconed--leading .text-field__input, body.fa:not([dir=ltr]):not(.en) .text-field.rounded.iconed.iconed--leading .text-field__input, body.fa:not([dir=ltr]) .text-field.rounded.iconed.iconed--leading .text-field__input, body.fa .text-field.rounded.iconed.iconed--leading .text-field__input {
   padding-right: 2.75rem;
 }
-body.fa .text-field.rounded.iconed.iconed--leading .text-field__icons {
+body[dir=rtl]:not(.fa):not(.en) .text-field.rounded.iconed.iconed--leading .text-field__icons, body[dir=rtl]:not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__icons, body[dir=rtl] .text-field.rounded.iconed.iconed--leading .text-field__icons, body.fa:not([dir=ltr]):not(.en) .text-field.rounded.iconed.iconed--leading .text-field__icons, body.fa:not([dir=ltr]) .text-field.rounded.iconed.iconed--leading .text-field__icons, body.fa .text-field.rounded.iconed.iconed--leading .text-field__icons {
   padding-right: 0.75rem;
 }
-body.fa .text-field.rounded.iconed.iconed--trailing .text-field__input {
+body[dir=rtl]:not(.fa):not(.en) .text-field.rounded.iconed.iconed--trailing .text-field__input, body[dir=rtl]:not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__input, body[dir=rtl] .text-field.rounded.iconed.iconed--trailing .text-field__input, body.fa:not([dir=ltr]):not(.en) .text-field.rounded.iconed.iconed--trailing .text-field__input, body.fa:not([dir=ltr]) .text-field.rounded.iconed.iconed--trailing .text-field__input, body.fa .text-field.rounded.iconed.iconed--trailing .text-field__input {
   padding-left: 2.75rem;
 }
-body.fa .text-field.rounded.iconed.iconed--trailing .text-field__icons {
+body[dir=rtl]:not(.fa):not(.en) .text-field.rounded.iconed.iconed--trailing .text-field__icons, body[dir=rtl]:not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__icons, body[dir=rtl] .text-field.rounded.iconed.iconed--trailing .text-field__icons, body.fa:not([dir=ltr]):not(.en) .text-field.rounded.iconed.iconed--trailing .text-field__icons, body.fa:not([dir=ltr]) .text-field.rounded.iconed.iconed--trailing .text-field__icons, body.fa .text-field.rounded.iconed.iconed--trailing .text-field__icons {
   padding-left: 0.75rem;
 }
-body.fa .text-field.rounded .text-field__wrapper:after {
+body[dir=rtl]:not(.fa):not(.en) .text-field.rounded .text-field__wrapper:after, body[dir=rtl]:not(.fa) .text-field.rounded .text-field__wrapper:after, body[dir=rtl] .text-field.rounded .text-field__wrapper:after, body.fa:not([dir=ltr]):not(.en) .text-field.rounded .text-field__wrapper:after, body.fa:not([dir=ltr]) .text-field.rounded .text-field__wrapper:after, body.fa .text-field.rounded .text-field__wrapper:after {
   border-radius: 1.25rem 0rem 0rem 1.25rem;
 }
-body.fa .text-field.rounded .text-field__wrapper:before {
+body[dir=rtl]:not(.fa):not(.en) .text-field.rounded .text-field__wrapper:before, body[dir=rtl]:not(.fa) .text-field.rounded .text-field__wrapper:before, body[dir=rtl] .text-field.rounded .text-field__wrapper:before, body.fa:not([dir=ltr]):not(.en) .text-field.rounded .text-field__wrapper:before, body.fa:not([dir=ltr]) .text-field.rounded .text-field__wrapper:before, body.fa .text-field.rounded .text-field__wrapper:before {
   width: 1.5rem;
   min-width: 1.5rem;
   border-radius: 0rem 1.25rem 1.25rem 0rem;
 }
-body.fa .text-field.iconed.iconed--leading .text-field__label-text {
+body[dir=rtl]:not(.fa):not(.en) .text-field.iconed.iconed--leading .text-field__label-text, body[dir=rtl]:not(.fa) .text-field.iconed.iconed--leading .text-field__label-text, body[dir=rtl] .text-field.iconed.iconed--leading .text-field__label-text, body.fa:not([dir=ltr]):not(.en) .text-field.iconed.iconed--leading .text-field__label-text, body.fa:not([dir=ltr]) .text-field.iconed.iconed--leading .text-field__label-text, body.fa .text-field.iconed.iconed--leading .text-field__label-text {
   transform: translateX(-1.5rem);
 }
-body.fa .text-field:not(.rounded).iconed.iconed--leading .text-field__input {
+body[dir=rtl]:not(.fa):not(.en) .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body[dir=rtl]:not(.fa) .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body[dir=rtl] .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body.fa:not([dir=ltr]):not(.en) .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body.fa:not([dir=ltr]) .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body.fa .text-field:not(.rounded).iconed.iconed--leading .text-field__input {
   padding-right: 2.5rem;
 }
-body.fa .text-field:not(.rounded).iconed.iconed--trailing .text-field__input {
+body[dir=rtl]:not(.fa):not(.en) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body[dir=rtl]:not(.fa) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body[dir=rtl] .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body.fa:not([dir=ltr]):not(.en) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body.fa:not([dir=ltr]) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body.fa .text-field:not(.rounded).iconed.iconed--trailing .text-field__input {
   padding-left: 2.5rem;
 }
-body.fa .text-field .text-field__wrapper:after {
+body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__wrapper:after, body[dir=rtl]:not(.fa) .text-field .text-field__wrapper:after, body[dir=rtl] .text-field .text-field__wrapper:after, body.fa:not([dir=ltr]):not(.en) .text-field .text-field__wrapper:after, body.fa:not([dir=ltr]) .text-field .text-field__wrapper:after, body.fa .text-field .text-field__wrapper:after {
   border-radius: 0.25rem 0rem 0rem 0.25rem;
   border-left: 2px solid;
 }
-body.fa .text-field .text-field__wrapper:before {
+body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__wrapper:before, body[dir=rtl]:not(.fa) .text-field .text-field__wrapper:before, body[dir=rtl] .text-field .text-field__wrapper:before, body.fa:not([dir=ltr]):not(.en) .text-field .text-field__wrapper:before, body.fa:not([dir=ltr]) .text-field .text-field__wrapper:before, body.fa .text-field .text-field__wrapper:before {
   border-radius: 0rem 0.25rem 0.25rem 0rem;
   border-right: 2px solid;
 }
-body.fa .text-field .text-field__hints__input-length-limit {
+body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__hints__input-length-limit, body[dir=rtl]:not(.fa) .text-field .text-field__hints__input-length-limit, body[dir=rtl] .text-field .text-field__hints__input-length-limit, body.fa:not([dir=ltr]):not(.en) .text-field .text-field__hints__input-length-limit, body.fa:not([dir=ltr]) .text-field .text-field__hints__input-length-limit, body.fa .text-field .text-field__hints__input-length-limit {
   text-align: left;
 }
-body.fa .text-field .text-field__hints__hint-text {
+body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__hints__hint-text, body[dir=rtl]:not(.fa) .text-field .text-field__hints__hint-text, body[dir=rtl] .text-field .text-field__hints__hint-text, body.fa:not([dir=ltr]):not(.en) .text-field .text-field__hints__hint-text, body.fa:not([dir=ltr]) .text-field .text-field__hints__hint-text, body.fa .text-field .text-field__hints__hint-text {
   text-align: right;
 }
-body.fa .text-field .text-field__icons .text-field__icons__leading > * + *,
+body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__icons .text-field__icons__leading > * + *,
+body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__icons .text-field__icons__trailing > * + *, body[dir=rtl]:not(.fa) .text-field .text-field__icons .text-field__icons__leading > * + *,
+body[dir=rtl]:not(.fa) .text-field .text-field__icons .text-field__icons__trailing > * + *, body[dir=rtl] .text-field .text-field__icons .text-field__icons__leading > * + *,
+body[dir=rtl] .text-field .text-field__icons .text-field__icons__trailing > * + *, body.fa:not([dir=ltr]):not(.en) .text-field .text-field__icons .text-field__icons__leading > * + *,
+body.fa:not([dir=ltr]):not(.en) .text-field .text-field__icons .text-field__icons__trailing > * + *, body.fa:not([dir=ltr]) .text-field .text-field__icons .text-field__icons__leading > * + *,
+body.fa:not([dir=ltr]) .text-field .text-field__icons .text-field__icons__trailing > * + *, body.fa .text-field .text-field__icons .text-field__icons__leading > * + *,
 body.fa .text-field .text-field__icons .text-field__icons__trailing > * + * {
   margin-right: 0.5rem;
 }
-body.fa .text-field .text-field__icons .text-field__icons__leading {
+body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__icons .text-field__icons__leading, body[dir=rtl]:not(.fa) .text-field .text-field__icons .text-field__icons__leading, body[dir=rtl] .text-field .text-field__icons .text-field__icons__leading, body.fa:not([dir=ltr]):not(.en) .text-field .text-field__icons .text-field__icons__leading, body.fa:not([dir=ltr]) .text-field .text-field__icons .text-field__icons__leading, body.fa .text-field .text-field__icons .text-field__icons__leading {
   margin-left: auto;
 }
-body.fa .text-field .text-field__icons .text-field__icons__trailing {
+body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__icons .text-field__icons__trailing, body[dir=rtl]:not(.fa) .text-field .text-field__icons .text-field__icons__trailing, body[dir=rtl] .text-field .text-field__icons .text-field__icons__trailing, body.fa:not([dir=ltr]):not(.en) .text-field .text-field__icons .text-field__icons__trailing, body.fa:not([dir=ltr]) .text-field .text-field__icons .text-field__icons__trailing, body.fa .text-field .text-field__icons .text-field__icons__trailing {
   margin-right: auto;
 }
-body.en .text-field.rounded .text-field__input, body:not(.fa) .text-field.rounded .text-field__input,
-.text-field body:not(.fa):not(.en).rounded .text-field__input {
+body[dir=ltr]:not(.en):not(.fa) .text-field.rounded .text-field__input, body[dir=ltr]:not(.en) .text-field.rounded .text-field__input, body[dir=ltr] .text-field.rounded .text-field__input, body.en:not([dir=rtl]):not(.fa) .text-field.rounded .text-field__input, body.en:not([dir=rtl]) .text-field.rounded .text-field__input, body.en .text-field.rounded .text-field__input {
   border-radius: 1.25rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-body.en .text-field.rounded.iconed.iconed--leading .text-field__input, body:not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__input,
-.text-field body:not(.fa):not(.en).rounded.iconed.iconed--leading .text-field__input {
+body[dir=ltr]:not(.en):not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__input, body[dir=ltr]:not(.en) .text-field.rounded.iconed.iconed--leading .text-field__input, body[dir=ltr] .text-field.rounded.iconed.iconed--leading .text-field__input, body.en:not([dir=rtl]):not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__input, body.en:not([dir=rtl]) .text-field.rounded.iconed.iconed--leading .text-field__input, body.en .text-field.rounded.iconed.iconed--leading .text-field__input {
   padding-left: 2.75rem;
 }
-body.en .text-field.rounded.iconed.iconed--leading .text-field__icons, body:not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__icons,
-.text-field body:not(.fa):not(.en).rounded.iconed.iconed--leading .text-field__icons {
+body[dir=ltr]:not(.en):not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__icons, body[dir=ltr]:not(.en) .text-field.rounded.iconed.iconed--leading .text-field__icons, body[dir=ltr] .text-field.rounded.iconed.iconed--leading .text-field__icons, body.en:not([dir=rtl]):not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__icons, body.en:not([dir=rtl]) .text-field.rounded.iconed.iconed--leading .text-field__icons, body.en .text-field.rounded.iconed.iconed--leading .text-field__icons {
   padding-left: 0.75rem;
 }
-body.en .text-field.rounded.iconed.iconed--trailing .text-field__input, body:not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__input,
-.text-field body:not(.fa):not(.en).rounded.iconed.iconed--trailing .text-field__input {
+body[dir=ltr]:not(.en):not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__input, body[dir=ltr]:not(.en) .text-field.rounded.iconed.iconed--trailing .text-field__input, body[dir=ltr] .text-field.rounded.iconed.iconed--trailing .text-field__input, body.en:not([dir=rtl]):not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__input, body.en:not([dir=rtl]) .text-field.rounded.iconed.iconed--trailing .text-field__input, body.en .text-field.rounded.iconed.iconed--trailing .text-field__input {
   padding-right: 2.75rem;
 }
-body.en .text-field.rounded.iconed.iconed--trailing .text-field__icons, body:not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__icons,
-.text-field body:not(.fa):not(.en).rounded.iconed.iconed--trailing .text-field__icons {
+body[dir=ltr]:not(.en):not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__icons, body[dir=ltr]:not(.en) .text-field.rounded.iconed.iconed--trailing .text-field__icons, body[dir=ltr] .text-field.rounded.iconed.iconed--trailing .text-field__icons, body.en:not([dir=rtl]):not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__icons, body.en:not([dir=rtl]) .text-field.rounded.iconed.iconed--trailing .text-field__icons, body.en .text-field.rounded.iconed.iconed--trailing .text-field__icons {
   padding-right: 0.75rem;
 }
-body.en .text-field.rounded .text-field__wrapper:before, body:not(.fa) .text-field.rounded .text-field__wrapper:before,
-.text-field body:not(.fa):not(.en).rounded .text-field__wrapper:before {
+body[dir=ltr]:not(.en):not(.fa) .text-field.rounded .text-field__wrapper:before, body[dir=ltr]:not(.en) .text-field.rounded .text-field__wrapper:before, body[dir=ltr] .text-field.rounded .text-field__wrapper:before, body.en:not([dir=rtl]):not(.fa) .text-field.rounded .text-field__wrapper:before, body.en:not([dir=rtl]) .text-field.rounded .text-field__wrapper:before, body.en .text-field.rounded .text-field__wrapper:before {
   width: 1.5rem;
   min-width: 1.5rem;
   border-radius: 1.25rem 0rem 0rem 1.25rem;
 }
-body.en .text-field.rounded .text-field__wrapper:after, body:not(.fa) .text-field.rounded .text-field__wrapper:after,
-.text-field body:not(.fa):not(.en).rounded .text-field__wrapper:after {
+body[dir=ltr]:not(.en):not(.fa) .text-field.rounded .text-field__wrapper:after, body[dir=ltr]:not(.en) .text-field.rounded .text-field__wrapper:after, body[dir=ltr] .text-field.rounded .text-field__wrapper:after, body.en:not([dir=rtl]):not(.fa) .text-field.rounded .text-field__wrapper:after, body.en:not([dir=rtl]) .text-field.rounded .text-field__wrapper:after, body.en .text-field.rounded .text-field__wrapper:after {
   border-radius: 0rem 1.25rem 1.25rem 0rem;
 }
-body.en .text-field.iconed.iconed--leading .text-field__label-text, body:not(.fa) .text-field.iconed.iconed--leading .text-field__label-text,
-.text-field body:not(.fa):not(.en).iconed.iconed--leading .text-field__label-text {
+body[dir=ltr]:not(.en):not(.fa) .text-field.iconed.iconed--leading .text-field__label-text, body[dir=ltr]:not(.en) .text-field.iconed.iconed--leading .text-field__label-text, body[dir=ltr] .text-field.iconed.iconed--leading .text-field__label-text, body.en:not([dir=rtl]):not(.fa) .text-field.iconed.iconed--leading .text-field__label-text, body.en:not([dir=rtl]) .text-field.iconed.iconed--leading .text-field__label-text, body.en .text-field.iconed.iconed--leading .text-field__label-text {
   transform: translateX(1.5rem);
 }
-body.en .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body:not(.fa) .text-field:not(.rounded).iconed.iconed--leading .text-field__input,
-.text-field body:not(.fa):not(.en):not(.rounded).iconed.iconed--leading .text-field__input {
+body[dir=ltr]:not(.en):not(.fa) .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body[dir=ltr]:not(.en) .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body[dir=ltr] .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body.en:not([dir=rtl]):not(.fa) .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body.en:not([dir=rtl]) .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body.en .text-field:not(.rounded).iconed.iconed--leading .text-field__input {
   padding-left: 2.5rem;
 }
-body.en .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body:not(.fa) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input,
-.text-field body:not(.fa):not(.en):not(.rounded).iconed.iconed--trailing .text-field__input {
+body[dir=ltr]:not(.en):not(.fa) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body[dir=ltr]:not(.en) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body[dir=ltr] .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body.en:not([dir=rtl]):not(.fa) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body.en:not([dir=rtl]) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body.en .text-field:not(.rounded).iconed.iconed--trailing .text-field__input {
   padding-right: 2.5rem;
 }
-body.en .text-field .text-field__wrapper:after, body:not(.fa) .text-field .text-field__wrapper:after,
-.text-field body:not(.fa):not(.en) .text-field__wrapper:after {
+body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__wrapper:after, body[dir=ltr]:not(.en) .text-field .text-field__wrapper:after, body[dir=ltr] .text-field .text-field__wrapper:after, body.en:not([dir=rtl]):not(.fa) .text-field .text-field__wrapper:after, body.en:not([dir=rtl]) .text-field .text-field__wrapper:after, body.en .text-field .text-field__wrapper:after {
   border-radius: 0 0.25rem 0.25rem 0;
   border-right: 2px solid;
 }
-body.en .text-field .text-field__wrapper:before, body:not(.fa) .text-field .text-field__wrapper:before,
-.text-field body:not(.fa):not(.en) .text-field__wrapper:before {
+body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__wrapper:before, body[dir=ltr]:not(.en) .text-field .text-field__wrapper:before, body[dir=ltr] .text-field .text-field__wrapper:before, body.en:not([dir=rtl]):not(.fa) .text-field .text-field__wrapper:before, body.en:not([dir=rtl]) .text-field .text-field__wrapper:before, body.en .text-field .text-field__wrapper:before {
   border-radius: 0.25rem 0 0 0.25rem;
   border-left: 2px solid;
 }
-body.en .text-field .text-field__hints__input-length-limit, body:not(.fa) .text-field .text-field__hints__input-length-limit,
-.text-field body:not(.fa):not(.en) .text-field__hints__input-length-limit {
+body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__hints__input-length-limit, body[dir=ltr]:not(.en) .text-field .text-field__hints__input-length-limit, body[dir=ltr] .text-field .text-field__hints__input-length-limit, body.en:not([dir=rtl]):not(.fa) .text-field .text-field__hints__input-length-limit, body.en:not([dir=rtl]) .text-field .text-field__hints__input-length-limit, body.en .text-field .text-field__hints__input-length-limit {
   text-align: right;
 }
-body.en .text-field .text-field__hints__hint-text, body:not(.fa) .text-field .text-field__hints__hint-text,
-.text-field body:not(.fa):not(.en) .text-field__hints__hint-text {
+body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__hints__hint-text, body[dir=ltr]:not(.en) .text-field .text-field__hints__hint-text, body[dir=ltr] .text-field .text-field__hints__hint-text, body.en:not([dir=rtl]):not(.fa) .text-field .text-field__hints__hint-text, body.en:not([dir=rtl]) .text-field .text-field__hints__hint-text, body.en .text-field .text-field__hints__hint-text {
   text-align: left;
 }
-body.en .text-field .text-field__icons .text-field__icons__leading > * + *,
-body.en .text-field .text-field__icons .text-field__icons__trailing > * + *, body:not(.fa) .text-field .text-field__icons .text-field__icons__leading > * + *,
-body:not(.fa) .text-field .text-field__icons .text-field__icons__trailing > * + *,
-.text-field body:not(.fa):not(.en) .text-field__icons .text-field__icons__leading > * + *,
-.text-field body:not(.fa):not(.en) .text-field__icons .text-field__icons__trailing > * + * {
+body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__icons .text-field__icons__leading > * + *,
+body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__icons .text-field__icons__trailing > * + *, body[dir=ltr]:not(.en) .text-field .text-field__icons .text-field__icons__leading > * + *,
+body[dir=ltr]:not(.en) .text-field .text-field__icons .text-field__icons__trailing > * + *, body[dir=ltr] .text-field .text-field__icons .text-field__icons__leading > * + *,
+body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing > * + *, body.en:not([dir=rtl]):not(.fa) .text-field .text-field__icons .text-field__icons__leading > * + *,
+body.en:not([dir=rtl]):not(.fa) .text-field .text-field__icons .text-field__icons__trailing > * + *, body.en:not([dir=rtl]) .text-field .text-field__icons .text-field__icons__leading > * + *,
+body.en:not([dir=rtl]) .text-field .text-field__icons .text-field__icons__trailing > * + *, body.en .text-field .text-field__icons .text-field__icons__leading > * + *,
+body.en .text-field .text-field__icons .text-field__icons__trailing > * + * {
   margin-right: 0;
   margin-left: 0.5rem;
 }
-body.en .text-field .text-field__icons .text-field__icons__leading, body:not(.fa) .text-field .text-field__icons .text-field__icons__leading,
-.text-field body:not(.fa):not(.en) .text-field__icons .text-field__icons__leading {
+body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__icons .text-field__icons__leading, body[dir=ltr]:not(.en) .text-field .text-field__icons .text-field__icons__leading, body[dir=ltr] .text-field .text-field__icons .text-field__icons__leading, body.en:not([dir=rtl]):not(.fa) .text-field .text-field__icons .text-field__icons__leading, body.en:not([dir=rtl]) .text-field .text-field__icons .text-field__icons__leading, body.en .text-field .text-field__icons .text-field__icons__leading {
   margin-left: 0;
   margin-right: auto;
 }
-body.en .text-field .text-field__icons .text-field__icons__trailing, body:not(.fa) .text-field .text-field__icons .text-field__icons__trailing,
-.text-field body:not(.fa):not(.en) .text-field__icons .text-field__icons__trailing {
+body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__icons .text-field__icons__trailing, body[dir=ltr]:not(.en) .text-field .text-field__icons .text-field__icons__trailing, body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing, body.en:not([dir=rtl]):not(.fa) .text-field .text-field__icons .text-field__icons__trailing, body.en:not([dir=rtl]) .text-field .text-field__icons .text-field__icons__trailing, body.en .text-field .text-field__icons .text-field__icons__trailing {
   margin-right: 0;
   margin-left: auto;
 }
@@ -1791,17 +1784,17 @@ body.en .text-field .text-field__icons .text-field__icons__trailing, body:not(.f
   border-color: rgba(0, 0, 0, 0.48);
 }
 .text-field:not(.error) .text-field__input:focus ~ .text-field__wrapper:after, .text-field:not(.error) .text-field__input:focus ~ .text-field__wrapper:before {
-  border-color: rgba(166, 38, 38, 0.56);
+  border-color: rgba(166, 38, 38, 0.56) !important;
 }
 .text-field:not(.error) .text-field__input:not(:focus) ~ .text-field__wrapper:after, .text-field:not(.error) .text-field__input:not(:focus) ~ .text-field__wrapper:before {
-  border-color: transparent;
+  border-color: transparent !important;
 }
 .text-field.error .text-field__input {
   border-color: transparent;
   color: red;
 }
 .text-field.error .text-field__input ~ .text-field__wrapper:after, .text-field.error .text-field__input ~ .text-field__wrapper:before {
-  border-color: red;
+  border-color: red !important;
 }
 .text-field.error .text-field__hints__hint-text {
   color: red;
@@ -1860,7 +1853,7 @@ body.en .text-field .text-field__icons .text-field__icons__trailing, body:not(.f
 }
 .text-field.legend-label .text-field__input:focus ~ .text-field__wrapper > .text-field__label > .text-field__label-text {
   font-size: 0.75rem;
-  transform: translateY(-88%);
+  transform: translateY(-88%) !important;
   color: #a62626;
 }
 .text-field.legend-label .text-field__input::-webkit-input-placeholder {

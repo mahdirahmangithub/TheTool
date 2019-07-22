@@ -2,6 +2,11 @@
   position: relative;
   margin-top: map-get($spaces, "x12");
 
+  body[dir="rtl"]:not(.fa):not(.en) &,
+  body[dir="rtl"]:not(.fa) &,
+  body[dir="rtl"] &,
+  body.fa:not([dir="ltr"]):not(.en) &,
+  body.fa:not([dir="ltr"]) &,
   body.fa & {
     &.rounded {
       .text-field__input {
@@ -107,9 +112,12 @@
     }
   }
 
-  body.en &,
-  body:not(.fa) &,
-  body:not(.fa):not(.en) {
+  body[dir="ltr"]:not(.en):not(.fa) &,
+  body[dir="ltr"]:not(.en) &,
+  body[dir="ltr"] &,
+  body.en:not([dir="rtl"]):not(.fa) &,
+  body.en:not([dir="rtl"]) &,
+  body.en & {
     &.rounded {
       .text-field__input {
         border-radius: map-get($spaces, "x10");
@@ -229,7 +237,7 @@
         & ~ .text-field__wrapper {
           &:after,
           &:before {
-            border-color: $brand-secondary-color;
+            border-color: $brand-secondary-color !important;
           }
         }
       }
@@ -238,7 +246,7 @@
         & ~ .text-field__wrapper {
           &:after,
           &:before {
-            border-color: transparent;
+            border-color: transparent !important;
           }
         }
       }
@@ -253,7 +261,7 @@
       & ~ .text-field__wrapper {
         &:after,
         &:before {
-          border-color: $danger-color;
+          border-color: $danger-color !important;
         }
       }
     }
@@ -353,7 +361,7 @@
 
             & > .text-field__label-text {
               font-size: 0.75rem;
-              transform: translateY(-88%);
+              transform: translateY(-88%) !important;
               color: $brand-primary-color;
             }
           }
