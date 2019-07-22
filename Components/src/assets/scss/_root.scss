@@ -8,7 +8,9 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 
-  &.en {
+  &.en,
+  &:not(.fa),
+  &:not(.en):not(.fa) {
     font-family: $font-family-en;
     direction: ltr;
   }

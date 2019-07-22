@@ -15,7 +15,9 @@
   text-align: right;
   color: $black-primary;
 
-  .en & {
+  body.en,
+  body:not(.fa) &,
+  body:not(.fa):not(.en) {
     text-align: left;
   }
 
@@ -34,7 +36,9 @@
   text-align: right;
   color: $black-primary;
 
-  .en & {
+  body.en &,
+  body:not(.fa) &,
+  body:not(.fa):not(.en) {
     text-align: left;
   }
 

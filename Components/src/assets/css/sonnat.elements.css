@@ -8,7 +8,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
-body.en {
+body.en, body:not(.fa), body:not(.en):not(.fa) {
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   direction: ltr;
 }
@@ -105,18 +105,44 @@ h1 {
   text-align: right;
   color: rgba(0, 0, 0, 0.87);
 }
-.en .h6,
-.en h6,
-.en .h5,
-.en h5, .en .section-row__title,
-.en .h4,
-.en h4, .en .title-row__title,
-.en .h3,
-.en h3,
-.en .h2,
-.en h2,
-.en .h1,
-.en h1 {
+.h6 body.en,
+h6 body.en,
+.h5 body.en,
+h5 body.en, .section-row__title body.en,
+.h4 body.en,
+h4 body.en, .title-row__title body.en,
+.h3 body.en,
+h3 body.en,
+.h2 body.en,
+h2 body.en,
+.h1 body.en,
+h1 body.en,
+body:not(.fa) .h6,
+body:not(.fa) h6,
+body:not(.fa) .h5,
+body:not(.fa) h5, body:not(.fa) .section-row__title,
+body:not(.fa) .h4,
+body:not(.fa) h4, body:not(.fa) .title-row__title,
+body:not(.fa) .h3,
+body:not(.fa) h3,
+body:not(.fa) .h2,
+body:not(.fa) h2,
+body:not(.fa) .h1,
+body:not(.fa) h1,
+.h6 body:not(.fa):not(.en),
+h6 body:not(.fa):not(.en),
+.h5 body:not(.fa):not(.en),
+h5 body:not(.fa):not(.en),
+.section-row__title body:not(.fa):not(.en),
+.h4 body:not(.fa):not(.en),
+h4 body:not(.fa):not(.en),
+.title-row__title body:not(.fa):not(.en),
+.h3 body:not(.fa):not(.en),
+h3 body:not(.fa):not(.en),
+.h2 body:not(.fa):not(.en),
+h2 body:not(.fa):not(.en),
+.h1 body:not(.fa):not(.en),
+h1 body:not(.fa):not(.en) {
   text-align: left;
 }
 .responsive-typography.h6,
@@ -134,7 +160,9 @@ h1.responsive-typography {
   transition: font-size 200ms ease, line-height 200ms ease;
 }
 
-.text-tiny, .text-xxs, .text-xs, .text-sm, .text-md,
+.text-field__label-text, .text-tiny, .text-xxs, .text-xs,
+.text-field__hints, .text-sm,
+.text-field__description, .text-md,
 .title-row__title--pretitle, .text-lg,
 .section-row__paragraph,
 .title-row__title--subtitle, .text-xlg,
@@ -148,14 +176,38 @@ h1.responsive-typography {
   text-align: right;
   color: rgba(0, 0, 0, 0.87);
 }
-.en .text-tiny, .en .text-xxs, .en .text-xs, .en .text-sm, .en .text-md,
-.en .title-row__title--pretitle, .en .text-lg,
-.en .section-row__paragraph,
-.en .title-row__title--subtitle, .en .text-xlg,
-.en .section-row > .section-row__title ~ .section-row__title {
+body.en .text-field__label-text, body.en .text-tiny, body.en .text-xxs, body.en .text-xs,
+body.en .text-field__hints, body.en .text-sm,
+body.en .text-field__description, body.en .text-md,
+body.en .title-row__title--pretitle, body.en .text-lg,
+body.en .section-row__paragraph,
+body.en .title-row__title--subtitle, body.en .text-xlg,
+body.en .section-row > .section-row__title ~ .section-row__title, body:not(.fa) .text-field__label-text, body:not(.fa) .text-tiny, body:not(.fa) .text-xxs, body:not(.fa) .text-xs,
+body:not(.fa) .text-field__hints, body:not(.fa) .text-sm,
+body:not(.fa) .text-field__description, body:not(.fa) .text-md,
+body:not(.fa) .title-row__title--pretitle, body:not(.fa) .text-lg,
+body:not(.fa) .section-row__paragraph,
+body:not(.fa) .title-row__title--subtitle, body:not(.fa) .text-xlg,
+body:not(.fa) .section-row > .section-row__title ~ .section-row__title,
+.text-field__label-text body:not(.fa):not(.en),
+.text-tiny body:not(.fa):not(.en),
+.text-xxs body:not(.fa):not(.en),
+.text-xs body:not(.fa):not(.en),
+.text-field__hints body:not(.fa):not(.en),
+.text-sm body:not(.fa):not(.en),
+.text-field__description body:not(.fa):not(.en),
+.text-md body:not(.fa):not(.en),
+.title-row__title--pretitle body:not(.fa):not(.en),
+.text-lg body:not(.fa):not(.en),
+.section-row__paragraph body:not(.fa):not(.en),
+.title-row__title--subtitle body:not(.fa):not(.en),
+.text-xlg body:not(.fa):not(.en),
+.section-row > .section-row__title ~ .section-row__title body:not(.fa):not(.en) {
   text-align: left;
 }
-.responsive-typography.text-tiny, .responsive-typography.text-xxs, .responsive-typography.text-xs, .responsive-typography.text-sm, .responsive-typography.text-md,
+.responsive-typography.text-field__label-text, .responsive-typography.text-tiny, .responsive-typography.text-xxs, .responsive-typography.text-xs,
+.responsive-typography.text-field__hints, .responsive-typography.text-sm,
+.responsive-typography.text-field__description, .responsive-typography.text-md,
 .responsive-typography.title-row__title--pretitle, .responsive-typography.text-lg,
 .responsive-typography.section-row__paragraph,
 .responsive-typography.title-row__title--subtitle, .responsive-typography.text-xlg,
@@ -234,7 +286,12 @@ p {
   font-size: 1rem !important;
 }
 
-.text-lg-stable {
+.text-lg-stable,
+.text-field__input:-moz-placeholder,
+.text-field__input:-ms-input-placeholder,
+.text-field__input::-moz-placeholder,
+.text-field__input::-webkit-input-placeholder,
+.text-field__input {
   font-size: 1rem !important;
   line-height: 2 !important;
   font-weight: normal !important;
@@ -246,11 +303,13 @@ p {
   font-weight: 500 !important;
 }
 
-.text-sm {
+.text-sm,
+.text-field__description {
   font-size: 0.875rem !important;
 }
 
-.text-xs {
+.text-xs,
+.text-field__hints {
   font-size: 0.75rem !important;
 }
 
@@ -571,7 +630,7 @@ h4 {
     background-color: rgba(166, 38, 38, 0.04);
   }
 }
-.icon-48, .icon-32, .icon-24, .tab-list__tab__content .tab-list__tab-icon:only-child, .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child), .icon-16, .button.small .button__icon {
+.icon-48, .icon-32, .icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child, .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child), .icon-16, .button.small .button__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -599,13 +658,13 @@ h4 {
   height: 100%;
 }
 
-.icon-24, .tab-list__tab__content .tab-list__tab-icon:only-child {
+.icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child {
   width: 24px;
   height: 24px;
   min-width: 24px;
   min-height: 24px;
 }
-.icon-24 > svg, .tab-list__tab__content .tab-list__tab-icon:only-child > svg {
+.icon-24 > svg, .text-field__icons .text-field__icon > svg, .tab-list__tab__content .tab-list__tab-icon:only-child > svg {
   width: 100%;
   height: 100%;
 }
@@ -1584,6 +1643,349 @@ h4 {
     transform: scale(4);
     opacity: 0.04;
   }
+}
+
+.text-field {
+  position: relative;
+  margin-top: 1.5rem;
+}
+body.fa .text-field.rounded .text-field__input {
+  border-radius: 1.25rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+body.fa .text-field.rounded.iconed.iconed--leading .text-field__input {
+  padding-right: 2.75rem;
+}
+body.fa .text-field.rounded.iconed.iconed--leading .text-field__icons {
+  padding-right: 0.75rem;
+}
+body.fa .text-field.rounded.iconed.iconed--trailing .text-field__input {
+  padding-left: 2.75rem;
+}
+body.fa .text-field.rounded.iconed.iconed--trailing .text-field__icons {
+  padding-left: 0.75rem;
+}
+body.fa .text-field.rounded .text-field__wrapper:after {
+  border-radius: 1.25rem 0rem 0rem 1.25rem;
+}
+body.fa .text-field.rounded .text-field__wrapper:before {
+  width: 1.5rem;
+  min-width: 1.5rem;
+  border-radius: 0rem 1.25rem 1.25rem 0rem;
+}
+body.fa .text-field.iconed.iconed--leading .text-field__label-text {
+  transform: translateX(-1.5rem);
+}
+body.fa .text-field:not(.rounded).iconed.iconed--leading .text-field__input {
+  padding-right: 2.5rem;
+}
+body.fa .text-field:not(.rounded).iconed.iconed--trailing .text-field__input {
+  padding-left: 2.5rem;
+}
+body.fa .text-field .text-field__wrapper:after {
+  border-radius: 0.25rem 0rem 0rem 0.25rem;
+  border-left: 2px solid;
+}
+body.fa .text-field .text-field__wrapper:before {
+  border-radius: 0rem 0.25rem 0.25rem 0rem;
+  border-right: 2px solid;
+}
+body.fa .text-field .text-field__hints__input-length-limit {
+  text-align: left;
+}
+body.fa .text-field .text-field__hints__hint-text {
+  text-align: right;
+}
+body.fa .text-field .text-field__icons .text-field__icons__leading > * + *,
+body.fa .text-field .text-field__icons .text-field__icons__trailing > * + * {
+  margin-right: 0.5rem;
+}
+body.fa .text-field .text-field__icons .text-field__icons__leading {
+  margin-left: auto;
+}
+body.fa .text-field .text-field__icons .text-field__icons__trailing {
+  margin-right: auto;
+}
+body.en .text-field.rounded .text-field__input, body:not(.fa) .text-field.rounded .text-field__input,
+.text-field body:not(.fa):not(.en).rounded .text-field__input {
+  border-radius: 1.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+body.en .text-field.rounded.iconed.iconed--leading .text-field__input, body:not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__input,
+.text-field body:not(.fa):not(.en).rounded.iconed.iconed--leading .text-field__input {
+  padding-left: 2.75rem;
+}
+body.en .text-field.rounded.iconed.iconed--leading .text-field__icons, body:not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__icons,
+.text-field body:not(.fa):not(.en).rounded.iconed.iconed--leading .text-field__icons {
+  padding-left: 0.75rem;
+}
+body.en .text-field.rounded.iconed.iconed--trailing .text-field__input, body:not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__input,
+.text-field body:not(.fa):not(.en).rounded.iconed.iconed--trailing .text-field__input {
+  padding-right: 2.75rem;
+}
+body.en .text-field.rounded.iconed.iconed--trailing .text-field__icons, body:not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__icons,
+.text-field body:not(.fa):not(.en).rounded.iconed.iconed--trailing .text-field__icons {
+  padding-right: 0.75rem;
+}
+body.en .text-field.rounded .text-field__wrapper:before, body:not(.fa) .text-field.rounded .text-field__wrapper:before,
+.text-field body:not(.fa):not(.en).rounded .text-field__wrapper:before {
+  width: 1.5rem;
+  min-width: 1.5rem;
+  border-radius: 1.25rem 0rem 0rem 1.25rem;
+}
+body.en .text-field.rounded .text-field__wrapper:after, body:not(.fa) .text-field.rounded .text-field__wrapper:after,
+.text-field body:not(.fa):not(.en).rounded .text-field__wrapper:after {
+  border-radius: 0rem 1.25rem 1.25rem 0rem;
+}
+body.en .text-field.iconed.iconed--leading .text-field__label-text, body:not(.fa) .text-field.iconed.iconed--leading .text-field__label-text,
+.text-field body:not(.fa):not(.en).iconed.iconed--leading .text-field__label-text {
+  transform: translateX(1.5rem);
+}
+body.en .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body:not(.fa) .text-field:not(.rounded).iconed.iconed--leading .text-field__input,
+.text-field body:not(.fa):not(.en):not(.rounded).iconed.iconed--leading .text-field__input {
+  padding-left: 2.5rem;
+}
+body.en .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body:not(.fa) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input,
+.text-field body:not(.fa):not(.en):not(.rounded).iconed.iconed--trailing .text-field__input {
+  padding-right: 2.5rem;
+}
+body.en .text-field .text-field__wrapper:after, body:not(.fa) .text-field .text-field__wrapper:after,
+.text-field body:not(.fa):not(.en) .text-field__wrapper:after {
+  border-radius: 0 0.25rem 0.25rem 0;
+  border-right: 2px solid;
+}
+body.en .text-field .text-field__wrapper:before, body:not(.fa) .text-field .text-field__wrapper:before,
+.text-field body:not(.fa):not(.en) .text-field__wrapper:before {
+  border-radius: 0.25rem 0 0 0.25rem;
+  border-left: 2px solid;
+}
+body.en .text-field .text-field__hints__input-length-limit, body:not(.fa) .text-field .text-field__hints__input-length-limit,
+.text-field body:not(.fa):not(.en) .text-field__hints__input-length-limit {
+  text-align: right;
+}
+body.en .text-field .text-field__hints__hint-text, body:not(.fa) .text-field .text-field__hints__hint-text,
+.text-field body:not(.fa):not(.en) .text-field__hints__hint-text {
+  text-align: left;
+}
+body.en .text-field .text-field__icons .text-field__icons__leading > * + *,
+body.en .text-field .text-field__icons .text-field__icons__trailing > * + *, body:not(.fa) .text-field .text-field__icons .text-field__icons__leading > * + *,
+body:not(.fa) .text-field .text-field__icons .text-field__icons__trailing > * + *,
+.text-field body:not(.fa):not(.en) .text-field__icons .text-field__icons__leading > * + *,
+.text-field body:not(.fa):not(.en) .text-field__icons .text-field__icons__trailing > * + * {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+body.en .text-field .text-field__icons .text-field__icons__leading, body:not(.fa) .text-field .text-field__icons .text-field__icons__leading,
+.text-field body:not(.fa):not(.en) .text-field__icons .text-field__icons__leading {
+  margin-left: 0;
+  margin-right: auto;
+}
+body.en .text-field .text-field__icons .text-field__icons__trailing, body:not(.fa) .text-field .text-field__icons .text-field__icons__trailing,
+.text-field body:not(.fa):not(.en) .text-field__icons .text-field__icons__trailing {
+  margin-right: 0;
+  margin-left: auto;
+}
+.text-field:not(.error):hover .text-field__input:not(:focus) {
+  border-color: rgba(0, 0, 0, 0.48);
+}
+.text-field:not(.error) .text-field__input:focus ~ .text-field__wrapper:after, .text-field:not(.error) .text-field__input:focus ~ .text-field__wrapper:before {
+  border-color: rgba(166, 38, 38, 0.56);
+}
+.text-field:not(.error) .text-field__input:not(:focus) ~ .text-field__wrapper:after, .text-field:not(.error) .text-field__input:not(:focus) ~ .text-field__wrapper:before {
+  border-color: transparent;
+}
+.text-field.error .text-field__input {
+  border-color: transparent;
+  color: red;
+}
+.text-field.error .text-field__input ~ .text-field__wrapper:after, .text-field.error .text-field__input ~ .text-field__wrapper:before {
+  border-color: red;
+}
+.text-field.error .text-field__hints__hint-text {
+  color: red;
+}
+.text-field.rounded .text-field__hints {
+  padding: 0 1.25rem;
+}
+.text-field.legend-label .text-field__wrapper > .text-field__label {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+  padding: 0rem 0.25rem;
+  transition: 150ms ease;
+}
+.text-field.legend-label .text-field__wrapper > .text-field__label > .text-field__label-text {
+  color: rgba(0, 0, 0, 0.56);
+  font-weight: normal;
+  white-space: nowrap;
+  transform-origin: 100% 50%;
+  transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-field.legend-label.error .text-field__wrapper > .text-field__label {
+  border-top-color: red;
+  border-bottom-color: red;
+}
+.text-field.legend-label.error .text-field__wrapper > .text-field__label > .text-field__label-text {
+  position: relative;
+  color: red;
+}
+.text-field.legend-label.error .text-field__wrapper > .text-field__label > .text-field__label-text:after {
+  content: "*";
+}
+.text-field.legend-label.error .text-field__input:focus ~ .text-field__wrapper:after, .text-field.legend-label.error .text-field__input:focus ~ .text-field__wrapper:before {
+  border-color: red;
+}
+.text-field.legend-label.error .text-field__input:focus ~ .text-field__wrapper > .text-field__label {
+  border-bottom-color: red;
+  border-top-color: transparent;
+}
+.text-field.legend-label.error .text-field__input:focus ~ .text-field__wrapper > .text-field__label > .text-field__label-text {
+  color: red;
+}
+.text-field.legend-label.iconed .fill {
+  fill: rgba(0, 0, 0, 0.56);
+}
+.text-field.legend-label.rounded .text-field__wrapper:before {
+  width: 1.25rem;
+  min-width: 1.25rem;
+}
+.text-field.legend-label .text-field__input:focus ~ .text-field__wrapper > .text-field__label {
+  border-bottom-color: rgba(166, 38, 38, 0.56);
+  border-top-color: transparent;
+}
+.text-field.legend-label .text-field__input:focus ~ .text-field__wrapper > .text-field__label > .text-field__label-text {
+  font-size: 0.75rem;
+  transform: translateY(-88%);
+  color: #a62626;
+}
+.text-field.legend-label .text-field__input::-webkit-input-placeholder {
+  color: transparent;
+}
+.text-field.legend-label .text-field__input::-moz-placeholder {
+  color: transparent;
+}
+.text-field.legend-label .text-field__input:-ms-input-placeholder {
+  color: transparent;
+}
+.text-field.legend-label .text-field__input:-moz-placeholder {
+  color: transparent;
+}
+
+.text-field__wrapper {
+  width: 100%;
+  height: 2.5rem;
+  position: absolute;
+  top: auto;
+  pointer-events: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: translateY(-100%);
+}
+.text-field__wrapper:before, .text-field__wrapper:after {
+  content: "";
+  height: 100%;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  transition: border 150ms ease;
+}
+.text-field__wrapper:after {
+  width: 100%;
+}
+.text-field__wrapper:before {
+  width: 0.75rem;
+  min-width: 0.75rem;
+}
+
+.text-field__label + .text-field__input {
+  margin-top: 0.5rem;
+}
+.text-field__label + .text-field__description {
+  margin-top: 0.25rem;
+}
+
+.text-field__label-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.text-field__description {
+  color: rgba(0, 0, 0, 0.56);
+}
+.text-field__description + .text-field__input {
+  margin-top: 0.5rem;
+}
+
+.text-field__input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  padding: 0.25rem 1rem;
+  transition: border-color 150ms ease, border-radius 150ms ease;
+}
+.text-field__input:focus {
+  border-color: transparent;
+}
+.text-field__input:focus ~ .text-field__wrapper:after, .text-field__input:focus ~ .text-field__wrapper:before {
+  border-color: rgba(166, 38, 38, 0.56);
+}
+.text-field__input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.32);
+}
+.text-field__input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.32);
+}
+.text-field__input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.32);
+}
+.text-field__input:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.32);
+}
+
+.text-field__icons {
+  width: 100%;
+  height: 2.5rem;
+  position: absolute;
+  pointer-events: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0rem 0.5rem;
+  transform: translateY(-100%);
+  top: auto;
+}
+.text-field__icons .text-field__icons__leading,
+.text-field__icons .text-field__icons__trailing {
+  display: flex;
+}
+.text-field__icons .text-field__icons__leading .fill,
+.text-field__icons .text-field__icons__trailing .fill {
+  fill: rgba(0, 0, 0, 0.32);
+}
+.text-field__hints {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+  color: rgba(0, 0, 0, 0.56);
+  padding: 0 0.5rem;
+}
+
+.text-field__hints__hint-text {
+  width: calc(100% - map-get($spaces, "x32"));
+  transition: color 150ms ease;
+}
+
+.text-field__hints__input-length-limit {
+  width: 4rem;
 }
 
 /*# sourceMappingURL=sonnat.elements.css.map */
