@@ -7,18 +7,26 @@ body {
   overflow-y: auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-}
 
-#{onlyEN()} {
-  font-family: $font-family-en;
-  direction: ltr;
-}
+  &[dir="rtl"]:not(.fa):not(.en),
+  &[dir="rtl"]:not(.fa),
+  &[dir="rtl"],
+  &.fa:not([dir="ltr"]):not(.en),
+  &.fa:not([dir="ltr"]) {
+    font-family: $font-family-fa;
+    direction: rtl;
+  }
 
-#{onlyFA()} {
-  font-family: $font-family-fa;
-  direction: rtl;
+  &[dir="ltr"]:not(.en):not(.fa),
+  &[dir="ltr"]:not(.en),
+  &[dir="ltr"],
+  &.en:not([dir="rtl"]):not(.fa),
+  &.en:not([dir="rtl"]),
+  &:not(.fa):not(.en):not([dir="ltr"]):not([dir="rtl"]) {
+    font-family: $font-family-en;
+    direction: ltr;
+  }
 }
-
 a {
   text-decoration: none !important;
   color: inherit;

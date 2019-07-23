@@ -12,12 +12,22 @@
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
-  text-align: right;
   color: $black-primary;
 
-  body.en,
-  body:not(.fa) &,
-  body:not(.fa):not(.en) {
+  body[dir="rtl"]:not(.fa):not(.en) &,
+  body[dir="rtl"]:not(.fa) &,
+  body[dir="rtl"] &,
+  body.fa:not([dir="ltr"]):not(.en) &,
+  body.fa:not([dir="ltr"]) & {
+    text-align: right;
+  }
+
+  body[dir="ltr"]:not(.en):not(.fa) &,
+  body[dir="ltr"]:not(.en) &,
+  body[dir="ltr"] &,
+  body.en:not([dir="rtl"]):not(.fa) &,
+  body.en:not([dir="rtl"]) &,
+  &:not(.fa):not(.en):not([dir="ltr"]):not([dir="rtl"]) {
     text-align: left;
   }
 
@@ -33,12 +43,21 @@
   font-stretch: normal;
   letter-spacing: normal;
   text-size-adjust: 100%;
-  text-align: right;
   color: $black-primary;
 
-  body.en &,
-  body:not(.fa) &,
-  body:not(.fa):not(.en) {
+  body[dir="rtl"]:not(.fa):not(.en) &,
+  body[dir="rtl"]:not(.fa) &,
+  body[dir="rtl"] &,
+  body.fa:not([dir="ltr"]):not(.en) &,
+  body.fa:not([dir="ltr"]) & {
+    text-align: right;
+  }
+
+  body[dir="ltr"]:not(.en):not(.fa) &,
+  body[dir="ltr"]:not(.en) &,
+  body[dir="ltr"] &,
+  body.en:not([dir="rtl"]):not(.fa) &,
+  body.en:not([dir="rtl"]) & {
     text-align: left;
   }
 
