@@ -8,16 +8,17 @@
     margin: 0;
   }
 
-  .en & {
-    & > .behavior__figure + .behavior__figure {
-      margin-left: $gutter;
-    }
-  }
-
-  .fa & {
-    & > .behavior__figure + .behavior__figure {
-      margin-right: $gutter;
-    }
+  & > .behavior__figure + .behavior__figure {
+    @include rtlStyle(
+      (
+        margin-right: $gutter
+      )
+    );
+    @include ltrStyle(
+      (
+        margin-left: $gutter
+      )
+    );
   }
 
   & > .behavior__figure.side-label:not(:only-child) {

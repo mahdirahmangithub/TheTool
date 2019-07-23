@@ -206,9 +206,15 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  direction: rtl;
 
-  .en & {
-    direction: ltr;
-  }
+  @include rtlStyle(
+    (
+      direction: rtl
+    )
+  );
+  @include ltrStyle(
+    (
+      direction: ltr
+    )
+  );
 }
