@@ -27,7 +27,7 @@
   body[dir="ltr"] &,
   body.en:not([dir="rtl"]):not(.fa) &,
   body.en:not([dir="rtl"]) &,
-  &:not(.fa):not(.en):not([dir="ltr"]):not([dir="rtl"]) {
+  body:not(.fa):not(.en):not([dir="ltr"]):not([dir="rtl"]) & {
     text-align: left;
   }
 
