@@ -8,12 +8,16 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
-body[dir=rtl]:not(.fa):not(.en), body[dir=rtl]:not(.fa), body[dir=rtl], body.fa:not([dir=ltr]):not(.en), body.fa:not([dir=ltr]) {
+body[dir=rtl] {
   font-family: IRANSans, Arial, Tahoma, Helvetica;
+}
+body[dir=rtl] {
   direction: rtl;
 }
-body[dir=ltr]:not(.en):not(.fa), body[dir=ltr]:not(.en), body[dir=ltr], body.en:not([dir=rtl]):not(.fa), body.en:not([dir=rtl]), body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+body[dir=ltr], body:not([dir=ltr]):not([dir=rtl]) {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+body[dir=ltr], body:not([dir=ltr]):not([dir=rtl]) {
   direction: ltr;
 }
 
@@ -117,19 +121,7 @@ body[dir=rtl] h3,
 body[dir=rtl] .h2,
 body[dir=rtl] h2,
 body[dir=rtl] .h1,
-body[dir=rtl] h1,
-body.fa:not([dir=ltr]) .h6,
-body.fa:not([dir=ltr]) h6,
-body.fa:not([dir=ltr]) .h5,
-body.fa:not([dir=ltr]) h5, body.fa:not([dir=ltr]) .section-row__title,
-body.fa:not([dir=ltr]) .h4,
-body.fa:not([dir=ltr]) h4, body.fa:not([dir=ltr]) .title-row__title,
-body.fa:not([dir=ltr]) .h3,
-body.fa:not([dir=ltr]) h3,
-body.fa:not([dir=ltr]) .h2,
-body.fa:not([dir=ltr]) h2,
-body.fa:not([dir=ltr]) .h1,
-body.fa:not([dir=ltr]) h1 {
+body[dir=rtl] h1 {
   text-align: right;
 }
 body[dir=ltr] .h6,
@@ -144,30 +136,18 @@ body[dir=ltr] .h2,
 body[dir=ltr] h2,
 body[dir=ltr] .h1,
 body[dir=ltr] h1,
-body.en:not([dir=rtl]) .h6,
-body.en:not([dir=rtl]) h6,
-body.en:not([dir=rtl]) .h5,
-body.en:not([dir=rtl]) h5, body.en:not([dir=rtl]) .section-row__title,
-body.en:not([dir=rtl]) .h4,
-body.en:not([dir=rtl]) h4, body.en:not([dir=rtl]) .title-row__title,
-body.en:not([dir=rtl]) .h3,
-body.en:not([dir=rtl]) h3,
-body.en:not([dir=rtl]) .h2,
-body.en:not([dir=rtl]) h2,
-body.en:not([dir=rtl]) .h1,
-body.en:not([dir=rtl]) h1,
-body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .h6,
-body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) h6,
-body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .h5,
-body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) h5, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .section-row__title,
-body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .h4,
-body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) h4, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .title-row__title,
-body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .h3,
-body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) h3,
-body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .h2,
-body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) h2,
-body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .h1,
-body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) h1 {
+body:not([dir=ltr]):not([dir=rtl]) .h6,
+body:not([dir=ltr]):not([dir=rtl]) h6,
+body:not([dir=ltr]):not([dir=rtl]) .h5,
+body:not([dir=ltr]):not([dir=rtl]) h5, body:not([dir=ltr]):not([dir=rtl]) .section-row__title,
+body:not([dir=ltr]):not([dir=rtl]) .h4,
+body:not([dir=ltr]):not([dir=rtl]) h4, body:not([dir=ltr]):not([dir=rtl]) .title-row__title,
+body:not([dir=ltr]):not([dir=rtl]) .h3,
+body:not([dir=ltr]):not([dir=rtl]) h3,
+body:not([dir=ltr]):not([dir=rtl]) .h2,
+body:not([dir=ltr]):not([dir=rtl]) h2,
+body:not([dir=ltr]):not([dir=rtl]) .h1,
+body:not([dir=ltr]):not([dir=rtl]) h1 {
   text-align: left;
 }
 .responsive-typography.h6,
@@ -206,13 +186,7 @@ body[dir=rtl] .text-field__description, body[dir=rtl] .text-md,
 body[dir=rtl] .title-row__title--pretitle, body[dir=rtl] .text-lg,
 body[dir=rtl] .section-row__paragraph,
 body[dir=rtl] .title-row__title--subtitle, body[dir=rtl] .text-xlg,
-body[dir=rtl] .section-row > .section-row__title ~ .section-row__title, body.fa:not([dir=ltr]) .text-field__label-text, body.fa:not([dir=ltr]) .text-tiny, body.fa:not([dir=ltr]) .text-xxs, body.fa:not([dir=ltr]) .text-xs,
-body.fa:not([dir=ltr]) .text-field__hints, body.fa:not([dir=ltr]) .text-sm,
-body.fa:not([dir=ltr]) .text-field__description, body.fa:not([dir=ltr]) .text-md,
-body.fa:not([dir=ltr]) .title-row__title--pretitle, body.fa:not([dir=ltr]) .text-lg,
-body.fa:not([dir=ltr]) .section-row__paragraph,
-body.fa:not([dir=ltr]) .title-row__title--subtitle, body.fa:not([dir=ltr]) .text-xlg,
-body.fa:not([dir=ltr]) .section-row > .section-row__title ~ .section-row__title {
+body[dir=rtl] .section-row > .section-row__title ~ .section-row__title {
   text-align: right;
 }
 body[dir=ltr] .text-field__label-text, body[dir=ltr] .text-tiny, body[dir=ltr] .text-xxs, body[dir=ltr] .text-xs,
@@ -221,13 +195,13 @@ body[dir=ltr] .text-field__description, body[dir=ltr] .text-md,
 body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .text-lg,
 body[dir=ltr] .section-row__paragraph,
 body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .text-xlg,
-body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body.en:not([dir=rtl]) .text-field__label-text, body.en:not([dir=rtl]) .text-tiny, body.en:not([dir=rtl]) .text-xxs, body.en:not([dir=rtl]) .text-xs,
-body.en:not([dir=rtl]) .text-field__hints, body.en:not([dir=rtl]) .text-sm,
-body.en:not([dir=rtl]) .text-field__description, body.en:not([dir=rtl]) .text-md,
-body.en:not([dir=rtl]) .title-row__title--pretitle, body.en:not([dir=rtl]) .text-lg,
-body.en:not([dir=rtl]) .section-row__paragraph,
-body.en:not([dir=rtl]) .title-row__title--subtitle, body.en:not([dir=rtl]) .text-xlg,
-body.en:not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title {
+body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .text-tiny, body:not([dir=ltr]):not([dir=rtl]) .text-xxs, body:not([dir=ltr]):not([dir=rtl]) .text-xs,
+body:not([dir=ltr]):not([dir=rtl]) .text-field__hints, body:not([dir=ltr]):not([dir=rtl]) .text-sm,
+body:not([dir=ltr]):not([dir=rtl]) .text-field__description, body:not([dir=ltr]):not([dir=rtl]) .text-md,
+body:not([dir=ltr]):not([dir=rtl]) .title-row__title--pretitle, body:not([dir=ltr]):not([dir=rtl]) .text-lg,
+body:not([dir=ltr]):not([dir=rtl]) .section-row__paragraph,
+body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle, body:not([dir=ltr]):not([dir=rtl]) .text-xlg,
+body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title {
   text-align: left;
 }
 .responsive-typography.text-field__label-text, .responsive-typography.text-tiny, .responsive-typography.text-xxs, .responsive-typography.text-xs,
@@ -518,18 +492,22 @@ h4 {
   min-height: 2.5rem;
   height: auto;
 }
-.fa .checkbox-control, .fa .radio-control {
+body[dir=rtl] .checkbox-control, body[dir=rtl] .radio-control {
   margin-left: 2rem;
+}
+body[dir=rtl] .checkbox-control, body[dir=rtl] .radio-control {
   margin-right: 0;
 }
-.fa .checkbox-control > * + *, .fa .radio-control > * + * {
-  margin-right: 0.25rem;
-}
-.en .checkbox-control, .en .radio-control {
+body[dir=ltr] .checkbox-control, body[dir=ltr] .radio-control, body:not([dir=ltr]):not([dir=rtl]) .checkbox-control, body:not([dir=ltr]):not([dir=rtl]) .radio-control {
   margin-right: 2rem;
+}
+body[dir=ltr] .checkbox-control, body[dir=ltr] .radio-control, body:not([dir=ltr]):not([dir=rtl]) .checkbox-control, body:not([dir=ltr]):not([dir=rtl]) .radio-control {
   margin-left: 0;
 }
-.en .checkbox-control > * + *, .en .radio-control > * + * {
+body[dir=rtl] .checkbox-control > * + *, body[dir=rtl] .radio-control > * + * {
+  margin-right: 0.25rem;
+}
+body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, body:not([dir=ltr]):not([dir=rtl]) .checkbox-control > * + *, body:not([dir=ltr]):not([dir=rtl]) .radio-control > * + * {
   margin-left: 0.25rem;
 }
 .disabled.checkbox-control, .disabled.radio-control {
@@ -915,26 +893,22 @@ h4 {
 .switch-toggle {
   min-width: 18rem;
   height: 3rem;
-  padding-left: 0.625rem;
-  padding-right: 0;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
 }
-.en .switch-toggle {
+body[dir=rtl] .switch-toggle {
+  padding-left: 0.625rem;
+}
+body[dir=rtl] .switch-toggle {
+  padding-right: 0;
+}
+body[dir=ltr] .switch-toggle, body:not([dir=ltr]):not([dir=rtl]) .switch-toggle {
   padding-right: 0.625rem;
+}
+body[dir=ltr] .switch-toggle, body:not([dir=ltr]):not([dir=rtl]) .switch-toggle {
   padding-left: 0;
-}
-.en .switch-toggle .switch-toggle__button {
-  right: auto;
-  left: -9px;
-}
-.en .switch-toggle .switch-toggle__indicator:after {
-  left: -0.75rem;
-}
-.en .switch-toggle .switch-toggle__input:checked + .switch-toggle__track .switch-toggle__button {
-  transform: translateX(18px);
 }
 .switch-toggle.disabled {
   cursor: not-allowed !important;
@@ -990,8 +964,11 @@ h4 {
   opacity: 1;
   transform: scale(1.25);
 }
-.switch-toggle__input:checked + .switch-toggle__track .switch-toggle__button {
+body[dir=rtl] .switch-toggle__input:checked + .switch-toggle__track .switch-toggle__button {
   transform: translateX(-18px);
+}
+body[dir=ltr] .switch-toggle__input:checked + .switch-toggle__track .switch-toggle__button, body:not([dir=ltr]):not([dir=rtl]) .switch-toggle__input:checked + .switch-toggle__track .switch-toggle__button {
+  transform: translateX(18px);
 }
 .switch-toggle__input:checked + .switch-toggle__track .switch-toggle__button:before {
   background-color: rgba(166, 38, 38, 0.04);
@@ -1018,13 +995,18 @@ h4 {
   height: 2.625rem;
   border-radius: 50%;
   position: absolute;
-  right: -9px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 120ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   z-index: 2;
+}
+body[dir=rtl] .switch-toggle__button {
+  right: -9px;
+}
+body[dir=ltr] .switch-toggle__button, body:not([dir=ltr]):not([dir=rtl]) .switch-toggle__button {
+  left: -9px;
 }
 .switch-toggle__button:before {
   content: "";
@@ -1073,7 +1055,6 @@ h4 {
   border-radius: 50%;
   background-color: #a62626;
   position: absolute;
-  right: -0.75rem;
   opacity: 0;
   transform: scale(0);
   transform-origin: center;
@@ -1081,6 +1062,12 @@ h4 {
   pointer-events: none;
   user-select: none;
   z-index: -1;
+}
+body[dir=rtl] .switch-toggle__indicator:after {
+  right: -0.75rem;
+}
+body[dir=ltr] .switch-toggle__indicator:after, body:not([dir=ltr]):not([dir=rtl]) .switch-toggle__indicator:after {
+  left: -0.75rem;
 }
 
 .title-row {
@@ -1094,35 +1081,38 @@ h4 {
   flex-direction: column;
 }
 .title-row.standalone-thumbnail .title-row__thumbnail {
-  margin-left: 0;
   margin-bottom: 1rem;
 }
-.en .title-row.standalone-thumbnail .title-row__thumbnail {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
+body[dir=rtl] .title-row.standalone-thumbnail .title-row__thumbnail {
+  margin-left: 0;
+}
+body[dir=ltr] .title-row.standalone-thumbnail .title-row__thumbnail, body:not([dir=ltr]):not([dir=rtl]) .title-row.standalone-thumbnail .title-row__thumbnail {
+  margin-right: 0;
 }
 .title-row.side-thumbnail {
   flex-direction: row;
 }
 .title-row.side-thumbnail .title-row__thumbnail {
-  margin-left: 1rem;
   margin-bottom: 0;
 }
-.en .title-row.side-thumbnail .title-row__thumbnail {
-  margin-right: 1rem !important;
-  margin-left: 0 !important;
+body[dir=rtl] .title-row.side-thumbnail .title-row__thumbnail {
+  margin-left: 1rem;
+}
+body[dir=ltr] .title-row.side-thumbnail .title-row__thumbnail, body:not([dir=ltr]):not([dir=rtl]) .title-row.side-thumbnail .title-row__thumbnail {
+  margin-right: 1rem;
 }
 .title-row.spaced-thumbnail {
   flex-direction: row;
 }
 .title-row.spaced-thumbnail .title-row__thumbnail {
-  margin-left: 1rem;
   margin-bottom: 0;
   margin-top: 2rem;
 }
-.en .title-row.spaced-thumbnail .title-row__thumbnail {
-  margin-right: 1rem !important;
-  margin-left: 0 !important;
+body[dir=rtl] .title-row.spaced-thumbnail .title-row__thumbnail {
+  margin-left: 1rem;
+}
+body[dir=ltr] .title-row.spaced-thumbnail .title-row__thumbnail, body:not([dir=ltr]):not([dir=rtl]) .title-row.spaced-thumbnail .title-row__thumbnail {
+  margin-right: 1rem;
 }
 .title-row.margined {
   margin-bottom: 2rem;
@@ -1132,19 +1122,20 @@ h4 {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 1rem;
-  margin-left: 1rem;
   background-color: rgba(0, 0, 0, 0.12);
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+body[dir=rtl] .title-row__thumbnail {
+  margin-left: 1rem;
+}
+body[dir=ltr] .title-row__thumbnail, body:not([dir=ltr]):not([dir=rtl]) .title-row__thumbnail {
+  margin-right: 1rem;
+}
 .title-row__thumbnail > img {
   max-height: 100%;
-}
-.en .title-row__thumbnail {
-  margin-right: 1rem !important;
-  margin-left: 0 !important;
 }
 @media (max-width: 769px) {
   .title-row__thumbnail {
@@ -1167,9 +1158,8 @@ h4 {
 .title-row__title {
   margin-top: 0.25rem;
 }
-.en .title-row__title {
-  font-weight: bold !important;
-  text-align: left !important;
+body[dir=ltr] .title-row__title, body:not([dir=ltr]):not([dir=rtl]) .title-row__title {
+  font-weight: bold;
 }
 .title-row__title--pretitle {
   color: rgba(0, 0, 0, 0.87);
@@ -1193,15 +1183,16 @@ h4 {
   justify-content: center;
   height: 1.875rem;
   font-size: 0.875rem;
-  margin-left: 0.5rem;
   padding: 0rem 0.5rem;
   border-radius: 0.125rem;
   border: 1px solid rgba(0, 0, 0, 0.12);
   color: rgba(0, 0, 0, 0.56);
 }
-.en .title-row__tag {
-  margin-right: 0.5rem !important;
-  margin-left: 0 !important;
+body[dir=rtl] .title-row__tag {
+  margin-left: 0.5rem;
+}
+body[dir=ltr] .title-row__tag, body:not([dir=ltr]):not([dir=rtl]) .title-row__tag {
+  margin-right: 0.5rem;
 }
 
 .section-row > .section-row__title ~ .section-row__title {
@@ -1229,8 +1220,11 @@ h4 {
 .danger.section-row__paragraph, .danger.section-row__title, .section-row > .section-row__title ~ .danger.section-row__title {
   color: red;
 }
-.en .section-row__paragraph, .en .section-row__title, .en .section-row > .section-row__title ~ .section-row__title {
-  text-align: left !important;
+body[dir=rtl] .section-row__paragraph, body[dir=rtl] .section-row__title, body[dir=rtl] .section-row > .section-row__title ~ .section-row__title {
+  text-align: right;
+}
+body[dir=ltr] .section-row__paragraph, body[dir=ltr] .section-row__title, body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .section-row__paragraph, body:not([dir=ltr]):not([dir=rtl]) .section-row__title {
+  text-align: left;
 }
 
 .section-row__title {
@@ -1353,10 +1347,10 @@ h4 {
   justify-content: center;
   white-space: nowrap;
 }
-.tab-list__tab__content > * + * {
+body[dir=rtl] .tab-list__tab__content > * + * {
   margin-right: 0.5rem;
 }
-.en .tab-list__tab__content > * + * {
+body[dir=ltr] .tab-list__tab__content > * + *, body:not([dir=ltr]):not([dir=rtl]) .tab-list__tab__content > * + * {
   margin-left: 0.5rem;
 }
 
@@ -1467,18 +1461,22 @@ h4 {
 .button.rounded .button__rippler {
   border-radius: 1.5rem;
 }
-.fa .button > .button__icon {
+body[dir=rtl] .button > .button__icon {
   margin-right: -0.25rem;
+}
+body[dir=rtl] .button > .button__icon {
   margin-left: 0.5rem;
 }
-.en .button > .button__icon {
+body[dir=ltr] .button > .button__icon, body:not([dir=ltr]):not([dir=rtl]) .button > .button__icon {
   margin-left: -0.25rem;
+}
+body[dir=ltr] .button > .button__icon, body:not([dir=ltr]):not([dir=rtl]) .button > .button__icon {
   margin-right: 0.5rem;
 }
-.fa .button.small > .button__icon {
+body[dir=rtl] .button.small > .button__icon {
   margin-left: 0.25rem;
 }
-.en .button.small > .button__icon {
+body[dir=ltr] .button.small > .button__icon, body:not([dir=ltr]):not([dir=rtl]) .button.small > .button__icon {
   margin-right: 0.25rem;
 }
 .button.inlined {
@@ -1674,132 +1672,148 @@ h4 {
   position: relative;
   margin-top: 1.5rem;
 }
-body[dir=rtl]:not(.fa):not(.en) .text-field.rounded .text-field__input, body[dir=rtl]:not(.fa) .text-field.rounded .text-field__input, body[dir=rtl] .text-field.rounded .text-field__input, body.fa:not([dir=ltr]):not(.en) .text-field.rounded .text-field__input, body.fa:not([dir=ltr]) .text-field.rounded .text-field__input {
+body[dir=rtl] .text-field.rounded .text-field__input {
   border-radius: 1.25rem;
+}
+body[dir=rtl] .text-field.rounded .text-field__input {
   padding-right: 1.5rem;
+}
+body[dir=rtl] .text-field.rounded .text-field__input {
   padding-left: 1.5rem;
 }
-body[dir=rtl]:not(.fa):not(.en) .text-field.rounded.iconed.iconed--leading .text-field__input, body[dir=rtl]:not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__input, body[dir=rtl] .text-field.rounded.iconed.iconed--leading .text-field__input, body.fa:not([dir=ltr]):not(.en) .text-field.rounded.iconed.iconed--leading .text-field__input, body.fa:not([dir=ltr]) .text-field.rounded.iconed.iconed--leading .text-field__input {
+body[dir=ltr] .text-field.rounded .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field.rounded .text-field__input {
+  border-radius: 1.25rem;
+}
+body[dir=ltr] .text-field.rounded .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field.rounded .text-field__input {
+  padding-left: 1.5rem;
+}
+body[dir=ltr] .text-field.rounded .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field.rounded .text-field__input {
+  padding-right: 1.5rem;
+}
+body[dir=rtl] .text-field.rounded.iconed.iconed--leading .text-field__input {
   padding-right: 2.75rem;
 }
-body[dir=rtl]:not(.fa):not(.en) .text-field.rounded.iconed.iconed--leading .text-field__icons, body[dir=rtl]:not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__icons, body[dir=rtl] .text-field.rounded.iconed.iconed--leading .text-field__icons, body.fa:not([dir=ltr]):not(.en) .text-field.rounded.iconed.iconed--leading .text-field__icons, body.fa:not([dir=ltr]) .text-field.rounded.iconed.iconed--leading .text-field__icons {
-  padding-right: 0.75rem;
-}
-body[dir=rtl]:not(.fa):not(.en) .text-field.rounded.iconed.iconed--trailing .text-field__input, body[dir=rtl]:not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__input, body[dir=rtl] .text-field.rounded.iconed.iconed--trailing .text-field__input, body.fa:not([dir=ltr]):not(.en) .text-field.rounded.iconed.iconed--trailing .text-field__input, body.fa:not([dir=ltr]) .text-field.rounded.iconed.iconed--trailing .text-field__input {
+body[dir=ltr] .text-field.rounded.iconed.iconed--leading .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field.rounded.iconed.iconed--leading .text-field__input {
   padding-left: 2.75rem;
 }
-body[dir=rtl]:not(.fa):not(.en) .text-field.rounded.iconed.iconed--trailing .text-field__icons, body[dir=rtl]:not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__icons, body[dir=rtl] .text-field.rounded.iconed.iconed--trailing .text-field__icons, body.fa:not([dir=ltr]):not(.en) .text-field.rounded.iconed.iconed--trailing .text-field__icons, body.fa:not([dir=ltr]) .text-field.rounded.iconed.iconed--trailing .text-field__icons {
+body[dir=rtl] .text-field.rounded.iconed.iconed--leading .text-field__icons {
+  padding-right: 0.75rem;
+}
+body[dir=ltr] .text-field.rounded.iconed.iconed--leading .text-field__icons, body:not([dir=ltr]):not([dir=rtl]) .text-field.rounded.iconed.iconed--leading .text-field__icons {
   padding-left: 0.75rem;
 }
-body[dir=rtl]:not(.fa):not(.en) .text-field.rounded .text-field__wrapper:after, body[dir=rtl]:not(.fa) .text-field.rounded .text-field__wrapper:after, body[dir=rtl] .text-field.rounded .text-field__wrapper:after, body.fa:not([dir=ltr]):not(.en) .text-field.rounded .text-field__wrapper:after, body.fa:not([dir=ltr]) .text-field.rounded .text-field__wrapper:after {
+body[dir=rtl] .text-field.rounded.iconed.iconed--trailing .text-field__input {
+  padding-left: 2.75rem;
+}
+body[dir=ltr] .text-field.rounded.iconed.iconed--trailing .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field.rounded.iconed.iconed--trailing .text-field__input {
+  padding-right: 2.75rem;
+}
+body[dir=rtl] .text-field.rounded.iconed.iconed--trailing .text-field__icons {
+  padding-left: 0.75rem;
+}
+body[dir=ltr] .text-field.rounded.iconed.iconed--trailing .text-field__icons, body:not([dir=ltr]):not([dir=rtl]) .text-field.rounded.iconed.iconed--trailing .text-field__icons {
+  padding-right: 0.75rem;
+}
+body[dir=rtl] .text-field.rounded .text-field__wrapper:after {
   border-radius: 1.25rem 0rem 0rem 1.25rem;
 }
-body[dir=rtl]:not(.fa):not(.en) .text-field.rounded .text-field__wrapper:before, body[dir=rtl]:not(.fa) .text-field.rounded .text-field__wrapper:before, body[dir=rtl] .text-field.rounded .text-field__wrapper:before, body.fa:not([dir=ltr]):not(.en) .text-field.rounded .text-field__wrapper:before, body.fa:not([dir=ltr]) .text-field.rounded .text-field__wrapper:before {
-  width: 1.5rem;
-  min-width: 1.5rem;
+body[dir=ltr] .text-field.rounded .text-field__wrapper:after, body:not([dir=ltr]):not([dir=rtl]) .text-field.rounded .text-field__wrapper:after {
   border-radius: 0rem 1.25rem 1.25rem 0rem;
 }
-body[dir=rtl]:not(.fa):not(.en) .text-field.iconed.iconed--leading .text-field__label-text, body[dir=rtl]:not(.fa) .text-field.iconed.iconed--leading .text-field__label-text, body[dir=rtl] .text-field.iconed.iconed--leading .text-field__label-text, body.fa:not([dir=ltr]):not(.en) .text-field.iconed.iconed--leading .text-field__label-text, body.fa:not([dir=ltr]) .text-field.iconed.iconed--leading .text-field__label-text {
+.text-field.rounded .text-field__wrapper:before {
+  width: 1.5rem;
+  min-width: 1.5rem;
+}
+body[dir=rtl] .text-field.rounded .text-field__wrapper:before {
+  border-radius: 0rem 1.25rem 1.25rem 0rem;
+}
+body[dir=ltr] .text-field.rounded .text-field__wrapper:before, body:not([dir=ltr]):not([dir=rtl]) .text-field.rounded .text-field__wrapper:before {
+  border-radius: 1.25rem 0rem 0rem 1.25rem;
+}
+body[dir=rtl] .text-field.iconed.iconed--leading .text-field__label-text {
   transform: translateX(-1.5rem);
 }
-body[dir=rtl]:not(.fa):not(.en) .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body[dir=rtl]:not(.fa) .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body[dir=rtl] .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body.fa:not([dir=ltr]):not(.en) .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body.fa:not([dir=ltr]) .text-field:not(.rounded).iconed.iconed--leading .text-field__input {
-  padding-right: 2.5rem;
-}
-body[dir=rtl]:not(.fa):not(.en) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body[dir=rtl]:not(.fa) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body[dir=rtl] .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body.fa:not([dir=ltr]):not(.en) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body.fa:not([dir=ltr]) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input {
-  padding-left: 2.5rem;
-}
-body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__wrapper:after, body[dir=rtl]:not(.fa) .text-field .text-field__wrapper:after, body[dir=rtl] .text-field .text-field__wrapper:after, body.fa:not([dir=ltr]):not(.en) .text-field .text-field__wrapper:after, body.fa:not([dir=ltr]) .text-field .text-field__wrapper:after {
-  border-radius: 0.25rem 0rem 0rem 0.25rem;
-  border-left: 2px solid;
-}
-body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__wrapper:before, body[dir=rtl]:not(.fa) .text-field .text-field__wrapper:before, body[dir=rtl] .text-field .text-field__wrapper:before, body.fa:not([dir=ltr]):not(.en) .text-field .text-field__wrapper:before, body.fa:not([dir=ltr]) .text-field .text-field__wrapper:before {
-  border-radius: 0rem 0.25rem 0.25rem 0rem;
-  border-right: 2px solid;
-}
-body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__hints__input-length-limit, body[dir=rtl]:not(.fa) .text-field .text-field__hints__input-length-limit, body[dir=rtl] .text-field .text-field__hints__input-length-limit, body.fa:not([dir=ltr]):not(.en) .text-field .text-field__hints__input-length-limit, body.fa:not([dir=ltr]) .text-field .text-field__hints__input-length-limit {
-  text-align: left;
-}
-body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__hints__hint-text, body[dir=rtl]:not(.fa) .text-field .text-field__hints__hint-text, body[dir=rtl] .text-field .text-field__hints__hint-text, body.fa:not([dir=ltr]):not(.en) .text-field .text-field__hints__hint-text, body.fa:not([dir=ltr]) .text-field .text-field__hints__hint-text {
-  text-align: right;
-}
-body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__icons .text-field__icons__leading > * + *,
-body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__icons .text-field__icons__trailing > * + *, body[dir=rtl]:not(.fa) .text-field .text-field__icons .text-field__icons__leading > * + *,
-body[dir=rtl]:not(.fa) .text-field .text-field__icons .text-field__icons__trailing > * + *, body[dir=rtl] .text-field .text-field__icons .text-field__icons__leading > * + *,
-body[dir=rtl] .text-field .text-field__icons .text-field__icons__trailing > * + *, body.fa:not([dir=ltr]):not(.en) .text-field .text-field__icons .text-field__icons__leading > * + *,
-body.fa:not([dir=ltr]):not(.en) .text-field .text-field__icons .text-field__icons__trailing > * + *, body.fa:not([dir=ltr]) .text-field .text-field__icons .text-field__icons__leading > * + *,
-body.fa:not([dir=ltr]) .text-field .text-field__icons .text-field__icons__trailing > * + * {
-  margin-right: 0.5rem;
-}
-body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__icons .text-field__icons__leading, body[dir=rtl]:not(.fa) .text-field .text-field__icons .text-field__icons__leading, body[dir=rtl] .text-field .text-field__icons .text-field__icons__leading, body.fa:not([dir=ltr]):not(.en) .text-field .text-field__icons .text-field__icons__leading, body.fa:not([dir=ltr]) .text-field .text-field__icons .text-field__icons__leading {
-  margin-left: auto;
-}
-body[dir=rtl]:not(.fa):not(.en) .text-field .text-field__icons .text-field__icons__trailing, body[dir=rtl]:not(.fa) .text-field .text-field__icons .text-field__icons__trailing, body[dir=rtl] .text-field .text-field__icons .text-field__icons__trailing, body.fa:not([dir=ltr]):not(.en) .text-field .text-field__icons .text-field__icons__trailing, body.fa:not([dir=ltr]) .text-field .text-field__icons .text-field__icons__trailing {
-  margin-right: auto;
-}
-body[dir=ltr]:not(.en):not(.fa) .text-field.rounded .text-field__input, body[dir=ltr]:not(.en) .text-field.rounded .text-field__input, body[dir=ltr] .text-field.rounded .text-field__input, body.en:not([dir=rtl]):not(.fa) .text-field.rounded .text-field__input, body.en:not([dir=rtl]) .text-field.rounded .text-field__input, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field.rounded .text-field__input {
-  border-radius: 1.25rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-body[dir=ltr]:not(.en):not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__input, body[dir=ltr]:not(.en) .text-field.rounded.iconed.iconed--leading .text-field__input, body[dir=ltr] .text-field.rounded.iconed.iconed--leading .text-field__input, body.en:not([dir=rtl]):not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__input, body.en:not([dir=rtl]) .text-field.rounded.iconed.iconed--leading .text-field__input, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field.rounded.iconed.iconed--leading .text-field__input {
-  padding-left: 2.75rem;
-}
-body[dir=ltr]:not(.en):not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__icons, body[dir=ltr]:not(.en) .text-field.rounded.iconed.iconed--leading .text-field__icons, body[dir=ltr] .text-field.rounded.iconed.iconed--leading .text-field__icons, body.en:not([dir=rtl]):not(.fa) .text-field.rounded.iconed.iconed--leading .text-field__icons, body.en:not([dir=rtl]) .text-field.rounded.iconed.iconed--leading .text-field__icons, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field.rounded.iconed.iconed--leading .text-field__icons {
-  padding-left: 0.75rem;
-}
-body[dir=ltr]:not(.en):not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__input, body[dir=ltr]:not(.en) .text-field.rounded.iconed.iconed--trailing .text-field__input, body[dir=ltr] .text-field.rounded.iconed.iconed--trailing .text-field__input, body.en:not([dir=rtl]):not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__input, body.en:not([dir=rtl]) .text-field.rounded.iconed.iconed--trailing .text-field__input, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field.rounded.iconed.iconed--trailing .text-field__input {
-  padding-right: 2.75rem;
-}
-body[dir=ltr]:not(.en):not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__icons, body[dir=ltr]:not(.en) .text-field.rounded.iconed.iconed--trailing .text-field__icons, body[dir=ltr] .text-field.rounded.iconed.iconed--trailing .text-field__icons, body.en:not([dir=rtl]):not(.fa) .text-field.rounded.iconed.iconed--trailing .text-field__icons, body.en:not([dir=rtl]) .text-field.rounded.iconed.iconed--trailing .text-field__icons, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field.rounded.iconed.iconed--trailing .text-field__icons {
-  padding-right: 0.75rem;
-}
-body[dir=ltr]:not(.en):not(.fa) .text-field.rounded .text-field__wrapper:before, body[dir=ltr]:not(.en) .text-field.rounded .text-field__wrapper:before, body[dir=ltr] .text-field.rounded .text-field__wrapper:before, body.en:not([dir=rtl]):not(.fa) .text-field.rounded .text-field__wrapper:before, body.en:not([dir=rtl]) .text-field.rounded .text-field__wrapper:before, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field.rounded .text-field__wrapper:before {
-  width: 1.5rem;
-  min-width: 1.5rem;
-  border-radius: 1.25rem 0rem 0rem 1.25rem;
-}
-body[dir=ltr]:not(.en):not(.fa) .text-field.rounded .text-field__wrapper:after, body[dir=ltr]:not(.en) .text-field.rounded .text-field__wrapper:after, body[dir=ltr] .text-field.rounded .text-field__wrapper:after, body.en:not([dir=rtl]):not(.fa) .text-field.rounded .text-field__wrapper:after, body.en:not([dir=rtl]) .text-field.rounded .text-field__wrapper:after, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field.rounded .text-field__wrapper:after {
-  border-radius: 0rem 1.25rem 1.25rem 0rem;
-}
-body[dir=ltr]:not(.en):not(.fa) .text-field.iconed.iconed--leading .text-field__label-text, body[dir=ltr]:not(.en) .text-field.iconed.iconed--leading .text-field__label-text, body[dir=ltr] .text-field.iconed.iconed--leading .text-field__label-text, body.en:not([dir=rtl]):not(.fa) .text-field.iconed.iconed--leading .text-field__label-text, body.en:not([dir=rtl]) .text-field.iconed.iconed--leading .text-field__label-text, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field.iconed.iconed--leading .text-field__label-text {
+body[dir=ltr] .text-field.iconed.iconed--leading .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .text-field.iconed.iconed--leading .text-field__label-text {
   transform: translateX(1.5rem);
 }
-body[dir=ltr]:not(.en):not(.fa) .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body[dir=ltr]:not(.en) .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body[dir=ltr] .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body.en:not([dir=rtl]):not(.fa) .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body.en:not([dir=rtl]) .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field:not(.rounded).iconed.iconed--leading .text-field__input {
-  padding-left: 2.5rem;
-}
-body[dir=ltr]:not(.en):not(.fa) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body[dir=ltr]:not(.en) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body[dir=ltr] .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body.en:not([dir=rtl]):not(.fa) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body.en:not([dir=rtl]) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input {
+body[dir=rtl] .text-field:not(.rounded).iconed.iconed--leading .text-field__input {
   padding-right: 2.5rem;
 }
-body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__wrapper:after, body[dir=ltr]:not(.en) .text-field .text-field__wrapper:after, body[dir=ltr] .text-field .text-field__wrapper:after, body.en:not([dir=rtl]):not(.fa) .text-field .text-field__wrapper:after, body.en:not([dir=rtl]) .text-field .text-field__wrapper:after, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field .text-field__wrapper:after {
-  border-radius: 0 0.25rem 0.25rem 0;
-  border-right: 2px solid;
+body[dir=ltr] .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field:not(.rounded).iconed.iconed--leading .text-field__input {
+  padding-left: 2.5rem;
 }
-body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__wrapper:before, body[dir=ltr]:not(.en) .text-field .text-field__wrapper:before, body[dir=ltr] .text-field .text-field__wrapper:before, body.en:not([dir=rtl]):not(.fa) .text-field .text-field__wrapper:before, body.en:not([dir=rtl]) .text-field .text-field__wrapper:before, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field .text-field__wrapper:before {
-  border-radius: 0.25rem 0 0 0.25rem;
+body[dir=rtl] .text-field:not(.rounded).iconed.iconed--trailing .text-field__input {
+  padding-left: 2.5rem;
+}
+body[dir=ltr] .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input {
+  padding-right: 2.5rem;
+}
+body[dir=rtl] .text-field .text-field__wrapper:after {
+  border-radius: 0.25rem 0rem 0rem 0.25rem;
+}
+body[dir=rtl] .text-field .text-field__wrapper:after {
   border-left: 2px solid;
 }
-body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__hints__input-length-limit, body[dir=ltr]:not(.en) .text-field .text-field__hints__input-length-limit, body[dir=ltr] .text-field .text-field__hints__input-length-limit, body.en:not([dir=rtl]):not(.fa) .text-field .text-field__hints__input-length-limit, body.en:not([dir=rtl]) .text-field .text-field__hints__input-length-limit, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field .text-field__hints__input-length-limit {
-  text-align: right;
+body[dir=ltr] .text-field .text-field__wrapper:after, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__wrapper:after {
+  border-radius: 0 0.25rem 0.25rem 0;
 }
-body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__hints__hint-text, body[dir=ltr]:not(.en) .text-field .text-field__hints__hint-text, body[dir=ltr] .text-field .text-field__hints__hint-text, body.en:not([dir=rtl]):not(.fa) .text-field .text-field__hints__hint-text, body.en:not([dir=rtl]) .text-field .text-field__hints__hint-text, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field .text-field__hints__hint-text {
+body[dir=ltr] .text-field .text-field__wrapper:after, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__wrapper:after {
+  border-right: 2px solid;
+}
+body[dir=rtl] .text-field .text-field__wrapper:before {
+  border-radius: 0rem 0.25rem 0.25rem 0rem;
+}
+body[dir=rtl] .text-field .text-field__wrapper:before {
+  border-right: 2px solid;
+}
+body[dir=ltr] .text-field .text-field__wrapper:before, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__wrapper:before {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+body[dir=ltr] .text-field .text-field__wrapper:before, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__wrapper:before {
+  border-left: 2px solid;
+}
+body[dir=rtl] .text-field .text-field__hints__input-length-limit {
   text-align: left;
 }
-body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__icons .text-field__icons__leading > * + *,
-body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__icons .text-field__icons__trailing > * + *, body[dir=ltr]:not(.en) .text-field .text-field__icons .text-field__icons__leading > * + *,
-body[dir=ltr]:not(.en) .text-field .text-field__icons .text-field__icons__trailing > * + *, body[dir=ltr] .text-field .text-field__icons .text-field__icons__leading > * + *,
-body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing > * + *, body.en:not([dir=rtl]):not(.fa) .text-field .text-field__icons .text-field__icons__leading > * + *,
-body.en:not([dir=rtl]):not(.fa) .text-field .text-field__icons .text-field__icons__trailing > * + *, body.en:not([dir=rtl]) .text-field .text-field__icons .text-field__icons__leading > * + *,
-body.en:not([dir=rtl]) .text-field .text-field__icons .text-field__icons__trailing > * + *, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__leading > * + *,
-body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__trailing > * + * {
-  margin-right: 0;
+body[dir=ltr] .text-field .text-field__hints__input-length-limit, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__hints__input-length-limit {
+  text-align: right;
+}
+body[dir=rtl] .text-field .text-field__hints__hint-text {
+  text-align: right;
+}
+body[dir=ltr] .text-field .text-field__hints__hint-text, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__hints__hint-text {
+  text-align: left;
+}
+body[dir=rtl] .text-field .text-field__icons .text-field__icons__leading > * + *,
+body[dir=rtl] .text-field .text-field__icons .text-field__icons__trailing > * + * {
+  margin-right: 0.5rem;
+}
+body[dir=ltr] .text-field .text-field__icons .text-field__icons__leading > * + *, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__leading > * + *,
+body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing > * + *,
+body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__trailing > * + * {
   margin-left: 0.5rem;
 }
-body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__icons .text-field__icons__leading, body[dir=ltr]:not(.en) .text-field .text-field__icons .text-field__icons__leading, body[dir=ltr] .text-field .text-field__icons .text-field__icons__leading, body.en:not([dir=rtl]):not(.fa) .text-field .text-field__icons .text-field__icons__leading, body.en:not([dir=rtl]) .text-field .text-field__icons .text-field__icons__leading, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__leading {
+body[dir=ltr] .text-field .text-field__icons .text-field__icons__leading > * + *, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__leading > * + *,
+body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing > * + *,
+body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__trailing > * + * {
+  margin-right: 0;
+}
+body[dir=rtl] .text-field .text-field__icons .text-field__icons__leading {
+  margin-left: auto;
+}
+body[dir=ltr] .text-field .text-field__icons .text-field__icons__leading, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__leading {
   margin-left: 0;
+}
+body[dir=ltr] .text-field .text-field__icons .text-field__icons__leading, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__leading {
   margin-right: auto;
 }
-body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__icons .text-field__icons__trailing, body[dir=ltr]:not(.en) .text-field .text-field__icons .text-field__icons__trailing, body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing, body.en:not([dir=rtl]):not(.fa) .text-field .text-field__icons .text-field__icons__trailing, body.en:not([dir=rtl]) .text-field .text-field__icons .text-field__icons__trailing, body:not(.fa):not(.en):not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__trailing {
+body[dir=rtl] .text-field .text-field__icons .text-field__icons__trailing {
+  margin-right: auto;
+}
+body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__trailing {
   margin-right: 0;
+}
+body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__trailing {
   margin-left: auto;
 }
 .text-field:not(.error):hover .text-field__input:not(:focus) {

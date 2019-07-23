@@ -1,0 +1,33 @@
+@mixin rtlStyle($object) {
+  @if #{&} == "body" {
+    @each $key, $val in $object {
+      &[dir="rtl"] {
+        #{$key}: #{$val};
+      }
+    }
+  } @else {
+    @each $key, $val in $object {
+      body[dir="rtl"] & {
+        #{$key}: #{$val};
+      }
+    }
+  }
+}
+
+@mixin ltrStyle($object) {
+  @if #{&} == "body" {
+    @each $key, $val in $object {
+      &[dir="ltr"],
+      &:not([dir="ltr"]):not([dir="rtl"]) {
+        #{$key}: #{$val};
+      }
+    }
+  } @else {
+    @each $key, $val in $object {
+      body[dir="ltr"] &,
+      body:not([dir="ltr"]):not([dir="rtl"]) & {
+        #{$key}: #{$val};
+      }
+    }
+  }
+}

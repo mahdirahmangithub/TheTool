@@ -2,225 +2,283 @@
   position: relative;
   margin-top: map-get($spaces, "x12");
 
-  body[dir="rtl"]:not(.fa):not(.en) &,
-  body[dir="rtl"]:not(.fa) &,
-  body[dir="rtl"] &,
-  body.fa:not([dir="ltr"]):not(.en) &,
-  body.fa:not([dir="ltr"]) & {
-    &.rounded {
-      .text-field__input {
-        border-radius: map-get($spaces, "x10");
-        padding-right: map-get($spaces, "x12");
-        padding-left: map-get($spaces, "x12");
-      }
-
-      &.iconed {
-        &.iconed--leading {
-          .text-field__input {
-            padding-right: map-get($spaces, "x22");
-          }
-
-          .text-field__icons {
-            padding-right: map-get($spaces, "x6");
-          }
-        }
-
-        &.iconed--trailing {
-          .text-field__input {
-            padding-left: map-get($spaces, "x22");
-          }
-
-          .text-field__icons {
-            padding-left: map-get($spaces, "x6");
-          }
-        }
-      }
-
-      .text-field__wrapper {
-        &:after {
-          border-radius: map-get($spaces, "x10") 0rem 0rem
-            map-get($spaces, "x10");
-        }
-
-        &:before {
-          width: map-get($spaces, "x12");
-          min-width: map-get($spaces, "x12");
-          border-radius: 0rem map-get($spaces, "x10") map-get($spaces, "x10")
-            0rem;
-        }
-      }
+  &.rounded {
+    .text-field__input {
+      @include rtlStyle(
+        (
+          border-radius: #{map-get($spaces, "x10")},
+          padding-right: #{map-get($spaces, "x12")},
+          padding-left: #{map-get($spaces, "x12")}
+        )
+      );
+      @include ltrStyle(
+        (
+          border-radius: #{map-get($spaces, "x10")},
+          padding-left: #{map-get($spaces, "x12")},
+          padding-right: #{map-get($spaces, "x12")}
+        )
+      );
     }
 
     &.iconed {
       &.iconed--leading {
-        .text-field__label-text {
-          transform: translateX(-#{map-get($spaces, "x12")});
-        }
-      }
-    }
-
-    &:not(.rounded).iconed {
-      &.iconed--leading {
         .text-field__input {
-          padding-right: map-get($spaces, "x20");
+          @include rtlStyle(
+            (
+              padding-right: #{map-get($spaces, "x22")}
+            )
+          );
+          @include ltrStyle(
+            (
+              padding-left: #{map-get($spaces, "x22")}
+            )
+          );
+        }
+
+        .text-field__icons {
+          @include rtlStyle(
+            (
+              padding-right: #{map-get($spaces, "x6")}
+            )
+          );
+          @include ltrStyle(
+            (
+              padding-left: #{map-get($spaces, "x6")}
+            )
+          );
         }
       }
 
       &.iconed--trailing {
         .text-field__input {
-          padding-left: map-get($spaces, "x20");
+          @include rtlStyle(
+            (
+              padding-left: #{map-get($spaces, "x22")}
+            )
+          );
+          @include ltrStyle(
+            (
+              padding-right: #{map-get($spaces, "x22")}
+            )
+          );
+        }
+
+        .text-field__icons {
+          @include rtlStyle(
+            (
+              padding-left: #{map-get($spaces, "x6")}
+            )
+          );
+          @include ltrStyle(
+            (
+              padding-right: #{map-get($spaces, "x6")}
+            )
+          );
         }
       }
     }
 
     .text-field__wrapper {
       &:after {
-        border-radius: map-get($spaces, "x2") 0rem 0rem map-get($spaces, "x2");
-        border-left: 2px solid;
+        @include rtlStyle(
+          (
+            border-radius: #{map-get($spaces, "x10")} 0rem 0rem #{map-get(
+                $spaces,
+                "x10"
+              )}
+          )
+        );
+        @include ltrStyle(
+          (
+            border-radius: 0rem #{map-get($spaces, "x10")} #{map-get(
+                $spaces,
+                "x10"
+              )} 0rem
+          )
+        );
       }
 
       &:before {
-        border-radius: 0rem map-get($spaces, "x2") map-get($spaces, "x2") 0rem;
-        border-right: 2px solid;
-      }
-    }
+        width: #{map-get($spaces, "x12")};
+        min-width: #{map-get($spaces, "x12")};
 
-    .text-field__hints__input-length-limit {
-      text-align: left;
-    }
-
-    .text-field__hints__hint-text {
-      text-align: right;
-    }
-
-    .text-field__icons {
-      .text-field__icons__leading,
-      .text-field__icons__trailing {
-        & > * + * {
-          margin-right: map-get($spaces, "x4");
-        }
-      }
-
-      .text-field__icons__leading {
-        margin-left: auto;
-      }
-
-      .text-field__icons__trailing {
-        margin-right: auto;
+        @include rtlStyle(
+          (
+            border-radius: 0rem #{map-get($spaces, "x10")} #{map-get(
+                $spaces,
+                "x10"
+              )} 0rem
+          )
+        );
+        @include ltrStyle(
+          (
+            border-radius: #{map-get($spaces, "x10")} 0rem 0rem #{map-get(
+                $spaces,
+                "x10"
+              )}
+          )
+        );
       }
     }
   }
 
-  body[dir="ltr"]:not(.en):not(.fa) &,
-  body[dir="ltr"]:not(.en) &,
-  body[dir="ltr"] &,
-  body.en:not([dir="rtl"]):not(.fa) &,
-  body.en:not([dir="rtl"]) &,
-  body:not(.fa):not(.en):not([dir="ltr"]):not([dir="rtl"]) & {
-    &.rounded {
+  &.iconed {
+    &.iconed--leading {
+      .text-field__label-text {
+        @include rtlStyle(
+          (
+            transform: translateX(-#{map-get($spaces, "x12")})
+          )
+        );
+        @include ltrStyle(
+          (
+            transform: translateX(#{map-get($spaces, "x12")})
+          )
+        );
+      }
+    }
+  }
+
+  &:not(.rounded).iconed {
+    &.iconed--leading {
       .text-field__input {
-        border-radius: map-get($spaces, "x10");
-        padding-left: map-get($spaces, "x12");
-        padding-right: map-get($spaces, "x12");
-      }
-
-      &.iconed {
-        &.iconed--leading {
-          .text-field__input {
-            padding-left: map-get($spaces, "x22");
-          }
-
-          .text-field__icons {
-            padding-left: map-get($spaces, "x6");
-          }
-        }
-
-        &.iconed--trailing {
-          .text-field__input {
-            padding-right: map-get($spaces, "x22");
-          }
-
-          .text-field__icons {
-            padding-right: map-get($spaces, "x6");
-          }
-        }
-      }
-
-      .text-field__wrapper {
-        &:before {
-          width: map-get($spaces, "x12");
-          min-width: map-get($spaces, "x12");
-          border-radius: map-get($spaces, "x10") 0rem 0rem
-            map-get($spaces, "x10");
-        }
-
-        &:after {
-          border-radius: 0rem map-get($spaces, "x10") map-get($spaces, "x10")
-            0rem;
-        }
+        @include rtlStyle(
+          (
+            padding-right: map-get($spaces, "x20")
+          )
+        );
+        @include ltrStyle(
+          (
+            padding-left: map-get($spaces, "x20")
+          )
+        );
       }
     }
 
-    &.iconed {
-      &.iconed--leading {
-        .text-field__label-text {
-          transform: translateX(#{map-get($spaces, "x12")});
-        }
+    &.iconed--trailing {
+      .text-field__input {
+        @include rtlStyle(
+          (
+            padding-left: map-get($spaces, "x20")
+          )
+        );
+        @include ltrStyle(
+          (
+            padding-right: map-get($spaces, "x20")
+          )
+        );
+      }
+    }
+  }
+
+  .text-field__wrapper {
+    &:after {
+      @include rtlStyle(
+        (
+          border-radius: #{map-get($spaces, "x2")} 0rem 0rem #{map-get(
+              $spaces,
+              "x2"
+            )},
+          border-left: 2px solid
+        )
+      );
+      @include ltrStyle(
+        (
+          border-radius: 0 #{map-get($spaces, "x2")} #{map-get($spaces, "x2")} 0,
+          border-right: 2px solid
+        )
+      );
+    }
+
+    &:before {
+      @include rtlStyle(
+        (
+          border-radius: 0rem #{map-get($spaces, "x2")} #{map-get(
+              $spaces,
+              "x2"
+            )} 0rem,
+          border-right: 2px solid
+        )
+      );
+      @include ltrStyle(
+        (
+          border-radius: #{map-get($spaces, "x2")} 0 0 #{map-get($spaces, "x2")},
+          border-left: 2px solid
+        )
+      );
+    }
+  }
+
+  .text-field__hints__input-length-limit {
+    @include rtlStyle(
+      (
+        text-align: left
+      )
+    );
+    @include ltrStyle(
+      (
+        text-align: right
+      )
+    );
+  }
+
+  .text-field__hints__hint-text {
+    @include rtlStyle(
+      (
+        text-align: right
+      )
+    );
+    @include ltrStyle(
+      (
+        text-align: left
+      )
+    );
+  }
+
+  .text-field__icons {
+    .text-field__icons__leading,
+    .text-field__icons__trailing {
+      & > * + * {
+        @include rtlStyle(
+          (
+            margin-right: #{map-get($spaces, "x4")}
+          )
+        );
+        @include ltrStyle(
+          (
+            margin-left: #{map-get($spaces, "x4")},
+            margin-right: 0
+          )
+        );
       }
     }
 
-    &:not(.rounded).iconed {
-      &.iconed--leading {
-        .text-field__input {
-          padding-left: map-get($spaces, "x20");
-        }
-      }
-
-      &.iconed--trailing {
-        .text-field__input {
-          padding-right: map-get($spaces, "x20");
-        }
-      }
+    .text-field__icons__leading {
+      @include rtlStyle(
+        (
+          margin-left: auto
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: 0,
+          margin-right: auto
+        )
+      );
     }
 
-    .text-field__wrapper {
-      &:after {
-        border-radius: 0 map-get($spaces, "x2") map-get($spaces, "x2") 0;
-        border-right: 2px solid;
-      }
-
-      &:before {
-        border-radius: map-get($spaces, "x2") 0 0 map-get($spaces, "x2");
-        border-left: 2px solid;
-      }
-    }
-
-    .text-field__hints__input-length-limit {
-      text-align: right;
-    }
-
-    .text-field__hints__hint-text {
-      text-align: left;
-    }
-
-    .text-field__icons {
-      .text-field__icons__leading,
-      .text-field__icons__trailing {
-        & > * + * {
-          margin-right: 0;
-          margin-left: map-get($spaces, "x4");
-        }
-      }
-
-      .text-field__icons__leading {
-        margin-left: 0;
-        margin-right: auto;
-      }
-
-      .text-field__icons__trailing {
-        margin-right: 0;
-        margin-left: auto;
-      }
+    .text-field__icons__trailing {
+      @include rtlStyle(
+        (
+          margin-right: auto
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-right: 0,
+          margin-left: auto
+        )
+      );
     }
   }
 

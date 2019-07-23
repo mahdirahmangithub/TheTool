@@ -14,22 +14,16 @@
   letter-spacing: normal;
   color: $black-primary;
 
-  body[dir="rtl"]:not(.fa):not(.en) &,
-  body[dir="rtl"]:not(.fa) &,
-  body[dir="rtl"] &,
-  body.fa:not([dir="ltr"]):not(.en) &,
-  body.fa:not([dir="ltr"]) & {
-    text-align: right;
-  }
-
-  body[dir="ltr"]:not(.en):not(.fa) &,
-  body[dir="ltr"]:not(.en) &,
-  body[dir="ltr"] &,
-  body.en:not([dir="rtl"]):not(.fa) &,
-  body.en:not([dir="rtl"]) &,
-  body:not(.fa):not(.en):not([dir="ltr"]):not([dir="rtl"]) & {
-    text-align: left;
-  }
+  @include rtlStyle(
+    (
+      "text-align": "right"
+    )
+  );
+  @include ltrStyle(
+    (
+      "text-align": "left"
+    )
+  );
 
   &.responsive-typography {
     transition: font-size 200ms ease, line-height 200ms ease;
@@ -45,21 +39,16 @@
   text-size-adjust: 100%;
   color: $black-primary;
 
-  body[dir="rtl"]:not(.fa):not(.en) &,
-  body[dir="rtl"]:not(.fa) &,
-  body[dir="rtl"] &,
-  body.fa:not([dir="ltr"]):not(.en) &,
-  body.fa:not([dir="ltr"]) & {
-    text-align: right;
-  }
-
-  body[dir="ltr"]:not(.en):not(.fa) &,
-  body[dir="ltr"]:not(.en) &,
-  body[dir="ltr"] &,
-  body.en:not([dir="rtl"]):not(.fa) &,
-  body.en:not([dir="rtl"]) & {
-    text-align: left;
-  }
+  @include rtlStyle(
+    (
+      "text-align": "right"
+    )
+  );
+  @include ltrStyle(
+    (
+      "text-align": "left"
+    )
+  );
 
   &.responsive-typography {
     transition: font-size 200ms ease, line-height 200ms ease;

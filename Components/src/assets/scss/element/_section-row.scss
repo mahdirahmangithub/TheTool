@@ -33,9 +33,16 @@
     color: $danger-color;
   }
 
-  .en & {
-    text-align: left !important;
-  }
+  @include rtlStyle(
+    (
+      "text-align": "right"
+    )
+  );
+  @include ltrStyle(
+    (
+      "text-align": "left"
+    )
+  );
 }
 
 .section-row__title {

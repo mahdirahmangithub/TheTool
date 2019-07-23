@@ -6,22 +6,30 @@
   min-height: 2.5rem;
   height: auto;
 
-  .fa & {
-    margin-left: 2rem;
-    margin-right: 0;
+  @include rtlStyle(
+    (
+      "margin-left": "2rem",
+      "margin-right": "0"
+    )
+  );
+  @include ltrStyle(
+    (
+      "margin-right": "2rem",
+      "margin-left": "0"
+    )
+  );
 
-    & > * + * {
-      margin-right: 0.25rem;
-    }
-  }
-
-  .en & {
-    margin-right: 2rem;
-    margin-left: 0;
-
-    & > * + * {
-      margin-left: 0.25rem;
-    }
+  & > * + * {
+    @include rtlStyle(
+      (
+        "margin-right": "0.25rem"
+      )
+    );
+    @include ltrStyle(
+      (
+        "margin-left": "0.25rem"
+      )
+    );
   }
 
   &.disabled {

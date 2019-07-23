@@ -94,18 +94,19 @@
     }
   }
 
-  .fa & {
-    & > .button__icon {
-      margin-right: -0.25rem;
-      margin-left: map-get($spaces, "x4");
-    }
-  }
-
-  .en & {
-    & > .button__icon {
-      margin-left: -0.25rem;
-      margin-right: map-get($spaces, "x4");
-    }
+  & > .button__icon {
+    @include rtlStyle(
+      (
+        "margin-right": "-0.25rem",
+        "margin-left": '#{map-get($spaces, "x4")}'
+      )
+    );
+    @include ltrStyle(
+      (
+        "margin-left": "-0.25rem",
+        "margin-right": '#{map-get($spaces, "x4")}'
+      )
+    );
   }
 
   .button__icon {
@@ -117,16 +118,17 @@
       @extend .icon-16;
     }
 
-    .fa & {
-      & > .button__icon {
-        margin-left: map-get($spaces, "x2");
-      }
-    }
-
-    .en & {
-      & > .button__icon {
-        margin-right: map-get($spaces, "x2");
-      }
+    & > .button__icon {
+      @include rtlStyle(
+        (
+          "margin-left": '#{map-get($spaces, "x2")}'
+        )
+      );
+      @include ltrStyle(
+        (
+          "margin-right": '#{map-get($spaces, "x2")}'
+        )
+      );
     }
   }
 

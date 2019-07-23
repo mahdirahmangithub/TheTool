@@ -138,11 +138,16 @@
   white-space: nowrap;
 
   & > * + * {
-    margin-right: 0.5rem;
-
-    .en & {
-      margin-left: 0.5rem;
-    }
+    @include rtlStyle(
+      (
+        "margin-right": "0.5rem"
+      )
+    );
+    @include ltrStyle(
+      (
+        "margin-left": "0.5rem"
+      )
+    );
   }
 }
 
