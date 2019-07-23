@@ -73,8 +73,10 @@ ul {
 .safari-transition-radius-overflow-combination-fix, .button .button__rippler {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .h6,
@@ -1993,7 +1995,7 @@ body[dir=ltr]:not(.en):not(.fa) .text-field .text-field__icons .text-field__icon
 }
 
 .text-field__hints__hint-text {
-  width: calc(100% - map-get($spaces, "x32"));
+  width: calc(100% - 4rem);
   transition: color 150ms ease;
 }
 

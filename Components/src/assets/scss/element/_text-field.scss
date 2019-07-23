@@ -529,7 +529,7 @@
 }
 
 .text-field__hints__hint-text {
-  width: calc(100% - map-get($spaces, "x32"));
+  width: calc(100% - #{map-get($spaces, "x32")});
   transition: color 150ms ease;
 }
 
