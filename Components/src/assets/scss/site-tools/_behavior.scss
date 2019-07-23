@@ -21,54 +21,6 @@
     );
   }
 
-  & > .behavior__figure.side-label:not(:only-child) {
-    &:first-child {
-      .behavior__figure__img-container {
-        @extend .order-1, .order-lg-2;
-      }
-
-      .behavior__figure__label {
-        @extend .order-2, .order-lg-1;
-      }
-
-      .behavior__figure__caption {
-        @extend .offset-lg-2;
-      }
-    }
-
-    &:last-child {
-      .behavior__figure__img-container {
-        @extend .order-1;
-      }
-
-      .behavior__figure__label {
-        @extend .order-2;
-      }
-
-      .behavior__figure__label {
-        flex-direction: row-reverse;
-
-        & > h6 {
-          margin-left: 0;
-          margin-right: map-get($spaces, "x4");
-        }
-      }
-    }
-
-    .behavior__figure__img-container {
-      @extend .column-lg-10;
-    }
-
-    .behavior__figure__label {
-      @extend .column-lg-2;
-      justify-content: flex-start;
-    }
-
-    .behavior__figure__caption {
-      @extend .column-lg-10, .order-3;
-    }
-  }
-
   & > .behavior__figure.side-label:only-child {
     .behavior__figure__img-container {
       @extend .column-lg-10, .order-1, .order-lg-2;
@@ -98,12 +50,6 @@
     }
 
     & > .behavior__figure.side-label:only-child {
-      .behavior__figure__caption {
-        margin-top: 0;
-      }
-    }
-
-    & > .behavior__figure.side-label:not(:only-child) {
       .behavior__figure__caption {
         margin-top: 0;
       }

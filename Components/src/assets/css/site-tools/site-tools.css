@@ -832,14 +832,14 @@ h4 {
     margin-left: -1.5rem;
   }
 }
-.column-xlg, .column-lg, .column-md, .column-sm, .column-xs, .column-xxs, .column, .column-xlg-12, .column-xlg-11, .column-xlg-10, .column-xlg-9, .column-xlg-8, .column-xlg-7, .column-xlg-6, .column-xlg-5, .column-xlg-4, .column-xlg-3, .column-xlg-2, .column-xlg-1, .column-lg-12, .column-lg-11, .column-lg-10, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__caption, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__img-container, .behavior-row > .behavior__figure.side-label:not(:only-child) .behavior__figure__caption, .behavior-row > .behavior__figure.side-label:not(:only-child) .behavior__figure__img-container, .column-lg-9, .column-lg-8, .column-lg-7, .column-lg-6, .column-lg-5, .column-lg-4, .column-lg-3, .column-lg-2, .behavior-row > .behavior__figure.side-label:not(:only-child) .behavior__figure__label, .column-lg-1, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__label, .column-md-12, .column-md-11, .column-md-10, .column-md-9, .column-md-8, .column-md-7, .column-md-6, .column-md-5, .column-md-4, .column-md-3, .column-md-2, .column-md-1, .column-sm-12, .column-sm-11, .column-sm-10, .column-sm-9, .column-sm-8, .column-sm-7, .column-sm-6, .column-sm-5, .column-sm-4, .column-sm-3, .column-sm-2, .column-sm-1, .column-xs-12, .column-xs-11, .column-xs-10, .column-xs-9, .column-xs-8, .column-xs-7, .column-xs-6, .column-xs-5, .column-xs-4, .column-xs-3, .column-xs-2, .column-xs-1, .column-xxs-12, .column-xxs-11, .column-xxs-10, .column-xxs-9, .column-xxs-8, .column-xxs-7, .column-xxs-6, .column-xxs-5, .column-xxs-4, .column-xxs-3, .column-xxs-2, .column-xxs-1, .column-12, .column-11, .column-10, .column-9, .column-8, .column-7, .column-6, .column-5, .column-4, .column-3, .column-2, .column-1 {
+.column-xlg, .column-lg, .column-md, .column-sm, .column-xs, .column-xxs, .column, .column-xlg-12, .column-xlg-11, .column-xlg-10, .column-xlg-9, .column-xlg-8, .column-xlg-7, .column-xlg-6, .column-xlg-5, .column-xlg-4, .column-xlg-3, .column-xlg-2, .column-xlg-1, .column-lg-12, .column-lg-11, .column-lg-10, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__caption, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__img-container, .column-lg-9, .column-lg-8, .column-lg-7, .column-lg-6, .column-lg-5, .column-lg-4, .column-lg-3, .column-lg-2, .column-lg-1, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__label, .column-md-12, .column-md-11, .column-md-10, .column-md-9, .column-md-8, .column-md-7, .column-md-6, .column-md-5, .column-md-4, .column-md-3, .column-md-2, .column-md-1, .column-sm-12, .column-sm-11, .column-sm-10, .column-sm-9, .column-sm-8, .column-sm-7, .column-sm-6, .column-sm-5, .column-sm-4, .column-sm-3, .column-sm-2, .column-sm-1, .column-xs-12, .column-xs-11, .column-xs-10, .column-xs-9, .column-xs-8, .column-xs-7, .column-xs-6, .column-xs-5, .column-xs-4, .column-xs-3, .column-xs-2, .column-xs-1, .column-xxs-12, .column-xxs-11, .column-xxs-10, .column-xxs-9, .column-xxs-8, .column-xxs-7, .column-xxs-6, .column-xxs-5, .column-xxs-4, .column-xxs-3, .column-xxs-2, .column-xxs-1, .column-12, .column-11, .column-10, .column-9, .column-8, .column-7, .column-6, .column-5, .column-4, .column-3, .column-2, .column-1 {
   position: relative;
   width: 100%;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
 
-.column-xlg-12, .column-xlg-11, .column-xlg-10, .column-xlg-9, .column-xlg-8, .column-xlg-7, .column-xlg-6, .column-xlg-5, .column-xlg-4, .column-xlg-3, .column-xlg-2, .column-xlg-1, .column-lg-12, .column-lg-11, .column-lg-10, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__caption, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__img-container, .behavior-row > .behavior__figure.side-label:not(:only-child) .behavior__figure__caption, .behavior-row > .behavior__figure.side-label:not(:only-child) .behavior__figure__img-container, .column-lg-9, .column-lg-8, .column-lg-7, .column-lg-6, .column-lg-5, .column-lg-4, .column-lg-3, .column-lg-2, .behavior-row > .behavior__figure.side-label:not(:only-child) .behavior__figure__label, .column-lg-1, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__label, .column-md-12, .column-md-11, .column-md-10, .column-md-9, .column-md-8, .column-md-7, .column-md-6, .column-md-5, .column-md-4, .column-md-3, .column-md-2, .column-md-1, .column-sm-12, .column-sm-11, .column-sm-10, .column-sm-9, .column-sm-8, .column-sm-7, .column-sm-6, .column-sm-5, .column-sm-4, .column-sm-3, .column-sm-2, .column-sm-1, .column-xs-12, .column-xs-11, .column-xs-10, .column-xs-9, .column-xs-8, .column-xs-7, .column-xs-6, .column-xs-5, .column-xs-4, .column-xs-3, .column-xs-2, .column-xs-1, .column-xxs-12, .column-xxs-11, .column-xxs-10, .column-xxs-9, .column-xxs-8, .column-xxs-7, .column-xxs-6, .column-xxs-5, .column-xxs-4, .column-xxs-3, .column-xxs-2, .column-xxs-1, .column-12, .column-11, .column-10, .column-9, .column-8, .column-7, .column-6, .column-5, .column-4, .column-3, .column-2, .column-1 {
+.column-xlg-12, .column-xlg-11, .column-xlg-10, .column-xlg-9, .column-xlg-8, .column-xlg-7, .column-xlg-6, .column-xlg-5, .column-xlg-4, .column-xlg-3, .column-xlg-2, .column-xlg-1, .column-lg-12, .column-lg-11, .column-lg-10, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__caption, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__img-container, .column-lg-9, .column-lg-8, .column-lg-7, .column-lg-6, .column-lg-5, .column-lg-4, .column-lg-3, .column-lg-2, .column-lg-1, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__label, .column-md-12, .column-md-11, .column-md-10, .column-md-9, .column-md-8, .column-md-7, .column-md-6, .column-md-5, .column-md-4, .column-md-3, .column-md-2, .column-md-1, .column-sm-12, .column-sm-11, .column-sm-10, .column-sm-9, .column-sm-8, .column-sm-7, .column-sm-6, .column-sm-5, .column-sm-4, .column-sm-3, .column-sm-2, .column-sm-1, .column-xs-12, .column-xs-11, .column-xs-10, .column-xs-9, .column-xs-8, .column-xs-7, .column-xs-6, .column-xs-5, .column-xs-4, .column-xs-3, .column-xs-2, .column-xs-1, .column-xxs-12, .column-xxs-11, .column-xxs-10, .column-xxs-9, .column-xxs-8, .column-xxs-7, .column-xxs-6, .column-xxs-5, .column-xxs-4, .column-xxs-3, .column-xxs-2, .column-xxs-1, .column-12, .column-11, .column-10, .column-9, .column-8, .column-7, .column-6, .column-5, .column-4, .column-3, .column-2, .column-1 {
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -863,7 +863,7 @@ h4 {
   margin-left: 8.3333333333%;
 }
 
-.order-1, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__img-container, .behavior-row > .behavior__figure.side-label:not(:only-child):last-child .behavior__figure__img-container, .behavior-row > .behavior__figure.side-label:not(:only-child):first-child .behavior__figure__img-container {
+.order-1, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__img-container {
   order: 1;
 }
 
@@ -876,7 +876,7 @@ h4 {
   margin-left: 16.6666666667%;
 }
 
-.order-2, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__label, .behavior-row > .behavior__figure.side-label:not(:only-child):last-child .behavior__figure__label, .behavior-row > .behavior__figure.side-label:not(:only-child):first-child .behavior__figure__label {
+.order-2, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__label {
   order: 2;
 }
 
@@ -889,7 +889,7 @@ h4 {
   margin-left: 25%;
 }
 
-.order-3, .behavior-row > .behavior__figure.side-label:not(:only-child) .behavior__figure__caption {
+.order-3 {
   order: 3;
 }
 
@@ -1698,20 +1698,20 @@ h4 {
     margin-left: 8.3333333333%;
   }
 
-  .order-lg-1, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__label, .behavior-row > .behavior__figure.side-label:not(:only-child):first-child .behavior__figure__label {
+  .order-lg-1, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__label {
     order: 1;
   }
 
-  .column-lg-2, .behavior-row > .behavior__figure.side-label:not(:only-child) .behavior__figure__label {
+  .column-lg-2 {
     flex-basis: 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
-  .offset-lg-2, .behavior-row > .behavior__figure.side-label:not(:only-child):first-child .behavior__figure__caption {
+  .offset-lg-2 {
     margin-left: 16.6666666667%;
   }
 
-  .order-lg-2, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__img-container, .behavior-row > .behavior__figure.side-label:not(:only-child):first-child .behavior__figure__img-container {
+  .order-lg-2, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__img-container {
     order: 2;
   }
 
@@ -1806,7 +1806,7 @@ h4 {
     order: 9;
   }
 
-  .column-lg-10, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__caption, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__img-container, .behavior-row > .behavior__figure.side-label:not(:only-child) .behavior__figure__caption, .behavior-row > .behavior__figure.side-label:not(:only-child) .behavior__figure__img-container {
+  .column-lg-10, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__caption, .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__img-container {
     flex-basis: 83.3333333333%;
     max-width: 83.3333333333%;
   }
@@ -2585,16 +2585,6 @@ body[dir=rtl] .behavior-row > .behavior__figure + .behavior__figure {
 body[dir=ltr] .behavior-row > .behavior__figure + .behavior__figure, body:not([dir=ltr]):not([dir=rtl]) .behavior-row > .behavior__figure + .behavior__figure {
   margin-left: 1rem;
 }
-.behavior-row > .behavior__figure.side-label:not(:only-child):last-child .behavior__figure__label {
-  flex-direction: row-reverse;
-}
-.behavior-row > .behavior__figure.side-label:not(:only-child):last-child .behavior__figure__label > h6 {
-  margin-left: 0;
-  margin-right: 0.5rem;
-}
-.behavior-row > .behavior__figure.side-label:not(:only-child) .behavior__figure__label {
-  justify-content: flex-start;
-}
 .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__label {
   justify-content: flex-start;
 }
@@ -2610,9 +2600,6 @@ body[dir=ltr] .behavior-row > .behavior__figure + .behavior__figure, body:not([d
     margin-right: 0 !important;
   }
   .behavior-row > .behavior__figure.side-label:only-child .behavior__figure__caption {
-    margin-top: 0;
-  }
-  .behavior-row > .behavior__figure.side-label:not(:only-child) .behavior__figure__caption {
     margin-top: 0;
   }
 }
