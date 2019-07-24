@@ -169,6 +169,8 @@ h1.responsive-typography {
 .text-field__hints, .text-sm,
 .text-field__description, .text-md,
 .title-row__title--pretitle, .text-lg,
+.unordered-list li,
+.ordered-list li,
 .section-row__paragraph,
 .title-row__title--subtitle, .text-xlg,
 .section-row > .section-row__title ~ .section-row__title {
@@ -184,6 +186,10 @@ body[dir=rtl] .text-field__label-text, body[dir=rtl] .text-tiny, body[dir=rtl] .
 body[dir=rtl] .text-field__hints, body[dir=rtl] .text-sm,
 body[dir=rtl] .text-field__description, body[dir=rtl] .text-md,
 body[dir=rtl] .title-row__title--pretitle, body[dir=rtl] .text-lg,
+body[dir=rtl] .unordered-list li,
+body[dir=rtl] .ordered-list li,
+.unordered-list body[dir=rtl] li,
+.ordered-list body[dir=rtl] li,
 body[dir=rtl] .section-row__paragraph,
 body[dir=rtl] .title-row__title--subtitle, body[dir=rtl] .text-xlg,
 body[dir=rtl] .section-row > .section-row__title ~ .section-row__title {
@@ -193,12 +199,20 @@ body[dir=ltr] .text-field__label-text, body[dir=ltr] .text-tiny, body[dir=ltr] .
 body[dir=ltr] .text-field__hints, body[dir=ltr] .text-sm,
 body[dir=ltr] .text-field__description, body[dir=ltr] .text-md,
 body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .text-lg,
+body[dir=ltr] .unordered-list li,
+body[dir=ltr] .ordered-list li,
+.unordered-list body[dir=ltr] li,
+.ordered-list body[dir=ltr] li,
 body[dir=ltr] .section-row__paragraph,
 body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .text-xlg,
 body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .text-tiny, body:not([dir=ltr]):not([dir=rtl]) .text-xxs, body:not([dir=ltr]):not([dir=rtl]) .text-xs,
 body:not([dir=ltr]):not([dir=rtl]) .text-field__hints, body:not([dir=ltr]):not([dir=rtl]) .text-sm,
 body:not([dir=ltr]):not([dir=rtl]) .text-field__description, body:not([dir=ltr]):not([dir=rtl]) .text-md,
 body:not([dir=ltr]):not([dir=rtl]) .title-row__title--pretitle, body:not([dir=ltr]):not([dir=rtl]) .text-lg,
+body:not([dir=ltr]):not([dir=rtl]) .unordered-list li,
+body:not([dir=ltr]):not([dir=rtl]) .ordered-list li,
+.unordered-list body:not([dir=ltr]):not([dir=rtl]) li,
+.ordered-list body:not([dir=ltr]):not([dir=rtl]) li,
 body:not([dir=ltr]):not([dir=rtl]) .section-row__paragraph,
 body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle, body:not([dir=ltr]):not([dir=rtl]) .text-xlg,
 body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title {
@@ -208,6 +222,8 @@ body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section
 .responsive-typography.text-field__hints, .responsive-typography.text-sm,
 .responsive-typography.text-field__description, .responsive-typography.text-md,
 .responsive-typography.title-row__title--pretitle, .responsive-typography.text-lg,
+.unordered-list li.responsive-typography,
+.ordered-list li.responsive-typography,
 .responsive-typography.section-row__paragraph,
 .responsive-typography.title-row__title--subtitle, .responsive-typography.text-xlg,
 .section-row > .section-row__title ~ .responsive-typography.section-row__title {
@@ -280,6 +296,8 @@ p {
 }
 
 .text-lg,
+.unordered-list li,
+.ordered-list li,
 .section-row__paragraph,
 .title-row__title--subtitle {
   font-size: 1rem !important;
@@ -359,6 +377,8 @@ h4 {
   }
 
   .text-lg,
+.unordered-list li,
+.ordered-list li,
 .section-row__paragraph,
 .title-row__title--subtitle {
     font-size: 0.875rem !important;
@@ -1672,6 +1692,13 @@ body[dir=ltr] .button.small > .button__icon, body:not([dir=ltr]):not([dir=rtl]) 
   position: relative;
   margin-top: 1.5rem;
 }
+.text-field.minimal > *:not(input):not(.text-field__icons) {
+  display: none;
+}
+.text-field.minimal > input, .text-field.minimal > .text-field__input {
+  background-color: transparent;
+  border: none;
+}
 body[dir=rtl] .text-field.rounded .text-field__input {
   border-radius: 1.25rem;
 }
@@ -2015,6 +2042,59 @@ body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing, body:
 
 .text-field__hints__input-length-limit {
   width: 4rem;
+}
+
+.unordered-list, .ordered-list {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.unordered-list li, .ordered-list li {
+  position: relative;
+}
+.unordered-list li ul, .ordered-list li ul {
+  padding-right: 2rem;
+  margin: 0.5rem 0;
+}
+.padded.unordered-list, .padded.ordered-list {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.secondary.unordered-list li, .secondary.ordered-list li {
+  color: rgba(0, 0, 0, 0.56);
+}
+.secondary.unordered-list li ul li:before, .secondary.ordered-list li ul li:before {
+  background-color: transparent;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.56);
+}
+.secondary.unordered-list li:before, .secondary.ordered-list li:before {
+  background-color: rgba(0, 0, 0, 0.56);
+}
+
+.ordered-list {
+  list-style: persian;
+}
+
+.unordered-list li ul li:before {
+  background-color: transparent;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.87);
+  width: 0.1875rem;
+  height: 0.1875rem;
+}
+.unordered-list li:before {
+  content: "";
+  display: inline-block;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.87);
+  box-shadow: none;
+  vertical-align: middle;
+}
+body[dir=rtl] .unordered-list li:before {
+  margin-left: 1rem;
+}
+body[dir=ltr] .unordered-list li:before, body:not([dir=ltr]):not([dir=rtl]) .unordered-list li:before {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=sonnat.elements.css.map */

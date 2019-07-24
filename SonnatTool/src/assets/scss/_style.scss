@@ -35,6 +35,11 @@ $header-height: 64px;
   #branding-text {
     @extend %text-md;
   }
+
+  #searchbox {
+    padding: 0 0.5rem;
+    width: 320px;
+  }
 }
 
 #sidebar-nav {

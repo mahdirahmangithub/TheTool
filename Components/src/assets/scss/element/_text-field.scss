@@ -2,6 +2,28 @@
   position: relative;
   margin-top: map-get($spaces, "x12");
 
+  &.minimal {
+    margin-top: 0;
+
+    & > *:not(input):not(.text-field__icons) {
+      display: none;
+    }
+
+    & > input,
+    & > .text-field__input {
+      background-color: transparent;
+      border: none;
+      font-size: 0.875rem;
+
+      &::-webkit-input-placeholder,
+      &::-moz-placeholder,
+      &:-ms-input-placeholder,
+      &:-moz-placeholder {
+        font-size: 0.875rem;
+      }
+    }
+  }
+
   &.rounded {
     .text-field__input {
       @include rtlStyle(
