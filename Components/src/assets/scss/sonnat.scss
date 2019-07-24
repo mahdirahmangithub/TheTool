@@ -7,9 +7,10 @@
 
 // ESSENTIALS
 @import "reset", "utility", "visibility", "display", "position", "flex",
-  "spacing", "root", "content", "grid", "view", "form-controls", "imagery";
+  "spacing", "root", "content", "grid", "view", "form-controls", "imagery",
+  "collapsable";
 
 // ELEMENTS
 @import "element/divider", "element/radio", "element/checkbox", "element/switch",
   "element/title-row", "element/section-row", "element/tab", "element/button",
-  "element/text-field", "element/list";
+  "element/text-field", "element/list", "element/accordion";

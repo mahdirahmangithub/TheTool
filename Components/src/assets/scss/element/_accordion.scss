@@ -1,0 +1,182 @@
+%base-rail {
+  content: "";
+  position: absolute;
+  width: 1px;
+
+  @include rtlStyle(
+    (
+      right: 0
+    )
+  );
+  @include ltrStyle(
+    (
+      left: 0
+    )
+  );
+
+  top: 0.75rem;
+  bottom: 0.75rem;
+  background-color: transparent;
+}
+
+%base-item {
+  @extend %text-sm;
+
+  color: $black-secondary;
+
+  .fill {
+    fill: $black-secondary;
+  }
+
+  &.active {
+    color: $black-primary;
+    font-weight: 500;
+
+    .fill {
+      fill: $black-primary;
+    }
+  }
+
+  & > a {
+    display: flex;
+    align-items: center;
+    min-height: 2.5rem;
+  }
+}
+
+.accordion {
+  &.iconed {
+    .accordion__list {
+      .accordion__list__item {
+        & > .accordion__list__sub-list {
+          @include rtlStyle(
+            (
+              margin-right: 4rem
+            )
+          );
+          @include ltrStyle(
+            (
+              margin-left: 4rem
+            )
+          );
+        }
+      }
+    }
+  }
+
+  &:not(.iconed) {
+    .accordion__icon {
+      display: none;
+    }
+  }
+}
+
+.accordion__heading {
+  @extend %text-lg-stable;
+
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.accordion__list {
+  .accordion__list__item {
+    @extend %base-item;
+
+    & > .accordion__list__sub-list {
+      position: relative;
+
+      @include rtlStyle(
+        (
+          margin-right: 2rem
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: 2rem
+        )
+      );
+
+      .accordion__list__sub-list__item {
+        @extend %base-item;
+
+        & > .accordion__list__sub-list {
+          position: relative;
+
+          @include rtlStyle(
+            (
+              margin-right: 2rem
+            )
+          );
+          @include ltrStyle(
+            (
+              margin-left: 2rem
+            )
+          );
+
+          &:before {
+            @extend %base-rail;
+
+            background-color: $black-divider;
+          }
+
+          .accordion__list__sub-list__item {
+            @extend %text-xs;
+
+            color: $black-secondary;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            min-height: 2.5rem;
+            position: relative;
+
+            @include rtlStyle(
+              (
+                padding-right: 0.5rem
+              )
+            );
+            @include ltrStyle(
+              (
+                padding-left: 0.5rem
+              )
+            );
+
+            &:before {
+              @extend %base-rail;
+
+              top: 0.75rem;
+              bottom: 0.75rem;
+            }
+
+            &.active {
+              font-weight: 500;
+              color: $brand-primary-color;
+
+              &:before {
+                background-color: $brand-primary-color;
+              }
+            }
+
+            & > a {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.accordion__icon {
+  @extend %icon-24;
+  @include rtlStyle(
+    (
+      margin-left: 0.5rem
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-right: 0.5rem
+    )
+  );
+}

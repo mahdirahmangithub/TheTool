@@ -166,7 +166,10 @@ h1.responsive-typography {
 }
 
 .text-field__label-text, .text-tiny, .text-xxs, .text-xs,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
 .text-field__hints, .text-sm,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
+.accordion__list .accordion__list__item,
 .text-field__description, .text-md,
 .title-row__title--pretitle, .text-lg,
 .unordered-list li,
@@ -183,7 +186,13 @@ h1.responsive-typography {
   color: rgba(0, 0, 0, 0.87);
 }
 body[dir=rtl] .text-field__label-text, body[dir=rtl] .text-tiny, body[dir=rtl] .text-xxs, body[dir=rtl] .text-xs,
+body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item,
 body[dir=rtl] .text-field__hints, body[dir=rtl] .text-sm,
+body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
+.accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item,
+body[dir=rtl] .accordion__list .accordion__list__item,
+.accordion__list body[dir=rtl] .accordion__list__item,
 body[dir=rtl] .text-field__description, body[dir=rtl] .text-md,
 body[dir=rtl] .title-row__title--pretitle, body[dir=rtl] .text-lg,
 body[dir=rtl] .unordered-list li,
@@ -196,7 +205,13 @@ body[dir=rtl] .section-row > .section-row__title ~ .section-row__title {
   text-align: right;
 }
 body[dir=ltr] .text-field__label-text, body[dir=ltr] .text-tiny, body[dir=ltr] .text-xxs, body[dir=ltr] .text-xs,
+body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item,
 body[dir=ltr] .text-field__hints, body[dir=ltr] .text-sm,
+body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
+.accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item,
+body[dir=ltr] .accordion__list .accordion__list__item,
+.accordion__list body[dir=ltr] .accordion__list__item,
 body[dir=ltr] .text-field__description, body[dir=ltr] .text-md,
 body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .text-lg,
 body[dir=ltr] .unordered-list li,
@@ -207,6 +222,10 @@ body[dir=ltr] .section-row__paragraph,
 body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .text-xlg,
 body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .text-tiny, body:not([dir=ltr]):not([dir=rtl]) .text-xxs, body:not([dir=ltr]):not([dir=rtl]) .text-xs,
 body:not([dir=ltr]):not([dir=rtl]) .text-field__hints, body:not([dir=ltr]):not([dir=rtl]) .text-sm,
+body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
+.accordion__list .accordion__list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item,
+body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item,
+.accordion__list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__item,
 body:not([dir=ltr]):not([dir=rtl]) .text-field__description, body:not([dir=ltr]):not([dir=rtl]) .text-md,
 body:not([dir=ltr]):not([dir=rtl]) .title-row__title--pretitle, body:not([dir=ltr]):not([dir=rtl]) .text-lg,
 body:not([dir=ltr]):not([dir=rtl]) .unordered-list li,
@@ -219,7 +238,10 @@ body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section
   text-align: left;
 }
 .responsive-typography.text-field__label-text, .responsive-typography.text-tiny, .responsive-typography.text-xxs, .responsive-typography.text-xs,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .responsive-typography.accordion__list__sub-list__item,
 .responsive-typography.text-field__hints, .responsive-typography.text-sm,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .responsive-typography.accordion__list__sub-list__item,
+.accordion__list .responsive-typography.accordion__list__item,
 .responsive-typography.text-field__description, .responsive-typography.text-md,
 .responsive-typography.title-row__title--pretitle, .responsive-typography.text-lg,
 .unordered-list li.responsive-typography,
@@ -304,6 +326,7 @@ p {
 }
 
 .text-lg-stable,
+.accordion__heading,
 .text-field__input:-moz-placeholder,
 .text-field__input:-ms-input-placeholder,
 .text-field__input::-moz-placeholder,
@@ -321,11 +344,14 @@ p {
 }
 
 .text-sm,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
+.accordion__list .accordion__list__item,
 .text-field__description {
   font-size: 0.875rem !important;
 }
 
 .text-xs,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
 .text-field__hints {
   font-size: 0.75rem !important;
 }
@@ -653,7 +679,8 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
     background-color: rgba(166, 38, 38, 0.04);
   }
 }
-.icon-48, .icon-32, .icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child, .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child), .icon-16, .button.small .button__icon {
+.icon-48, .icon-32, .icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child,
+.accordion__icon, .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child), .icon-16, .button.small .button__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -681,13 +708,15 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   height: 100%;
 }
 
-.icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child {
+.icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child,
+.accordion__icon {
   width: 24px;
   height: 24px;
   min-width: 24px;
   min-height: 24px;
 }
-.icon-24 > svg, .text-field__icons .text-field__icon > svg, .tab-list__tab__content .tab-list__tab-icon:only-child > svg {
+.icon-24 > svg, .text-field__icons .text-field__icon > svg, .tab-list__tab__content .tab-list__tab-icon:only-child > svg,
+.accordion__icon > svg {
   width: 100%;
   height: 100%;
 }
@@ -748,6 +777,16 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 }
 .preserve-aspect-ratio.ratio-16-9 {
   padding-top: 56.25%;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+.collapse.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: transform 360ms ease, height 360ms ease;
 }
 
 .divider {
@@ -1692,12 +1731,19 @@ body[dir=ltr] .button.small > .button__icon, body:not([dir=ltr]):not([dir=rtl]) 
   position: relative;
   margin-top: 1.5rem;
 }
+.text-field.minimal {
+  margin-top: 0;
+}
 .text-field.minimal > *:not(input):not(.text-field__icons) {
   display: none;
 }
 .text-field.minimal > input, .text-field.minimal > .text-field__input {
   background-color: transparent;
   border: none;
+  font-size: 0.875rem;
+}
+.text-field.minimal > input::-webkit-input-placeholder, .text-field.minimal > input::-moz-placeholder, .text-field.minimal > input:-ms-input-placeholder, .text-field.minimal > input:-moz-placeholder, .text-field.minimal > .text-field__input::-webkit-input-placeholder, .text-field.minimal > .text-field__input::-moz-placeholder, .text-field.minimal > .text-field__input:-ms-input-placeholder, .text-field.minimal > .text-field__input:-moz-placeholder {
+  font-size: 0.875rem;
 }
 body[dir=rtl] .text-field.rounded .text-field__input {
   border-radius: 1.25rem;
@@ -2095,6 +2141,113 @@ body[dir=rtl] .unordered-list li:before {
 }
 body[dir=ltr] .unordered-list li:before, body:not([dir=ltr]):not([dir=rtl]) .unordered-list li:before {
   margin-right: 1rem;
+}
+
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item:before, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  top: 0.75rem;
+  bottom: 0.75rem;
+  background-color: transparent;
+}
+body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item:before, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item:before, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list:before, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > .accordion__list__sub-list:before {
+  right: 0;
+}
+body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item:before, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item:before, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list:before, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > .accordion__list__sub-list:before, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item:before, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item:before, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list:before, .accordion__list .accordion__list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > .accordion__list__sub-list:before {
+  left: 0;
+}
+
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item, .accordion__list .accordion__list__item {
+  color: rgba(0, 0, 0, 0.56);
+}
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item .fill, .accordion__list .accordion__list__item .fill {
+  fill: rgba(0, 0, 0, 0.56);
+}
+.accordion__list .accordion__list__item > .accordion__list__sub-list .active.accordion__list__sub-list__item, .accordion__list .active.accordion__list__item {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+}
+.accordion__list .accordion__list__item > .accordion__list__sub-list .active.accordion__list__sub-list__item .fill, .accordion__list .active.accordion__list__item .fill {
+  fill: rgba(0, 0, 0, 0.87);
+}
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > a {
+  display: flex;
+  align-items: center;
+  min-height: 2.5rem;
+}
+
+body[dir=rtl] .accordion.iconed .accordion__list .accordion__list__item > .accordion__list__sub-list {
+  margin-right: 4rem;
+}
+body[dir=ltr] .accordion.iconed .accordion__list .accordion__list__item > .accordion__list__sub-list, body:not([dir=ltr]):not([dir=rtl]) .accordion.iconed .accordion__list .accordion__list__item > .accordion__list__sub-list {
+  margin-left: 4rem;
+}
+.accordion:not(.iconed) .accordion__icon {
+  display: none;
+}
+
+.accordion__heading {
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.accordion__list .accordion__list__item > .accordion__list__sub-list {
+  position: relative;
+}
+body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list {
+  margin-right: 2rem;
+}
+body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list {
+  margin-left: 2rem;
+}
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list {
+  position: relative;
+}
+body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list {
+  margin-right: 2rem;
+}
+body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list {
+  margin-left: 2rem;
+}
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list:before {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item {
+  color: rgba(0, 0, 0, 0.56);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 2.5rem;
+  position: relative;
+}
+body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item {
+  padding-right: 0.5rem;
+}
+body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item {
+  padding-left: 0.5rem;
+}
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item:before {
+  top: 0.75rem;
+  bottom: 0.75rem;
+}
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item.active {
+  font-weight: 500;
+  color: #a62626;
+}
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item.active:before {
+  background-color: #a62626;
+}
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a {
+  width: 100%;
+}
+
+body[dir=rtl] .accordion__icon {
+  margin-left: 0.5rem;
+}
+body[dir=ltr] .accordion__icon, body:not([dir=ltr]):not([dir=rtl]) .accordion__icon {
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=sonnat.elements.css.map */
