@@ -166,10 +166,10 @@ h1.responsive-typography {
 }
 
 .text-field__label-text, .text-tiny, .text-xxs, .text-xs,
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .text-field__hints, .text-sm,
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
-.accordion__list .accordion__list__item,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
+.accordion__list .accordion__list__item > a,
 .text-field__description, .text-md,
 .title-row__title--pretitle, .text-lg,
 .unordered-list li,
@@ -186,13 +186,13 @@ h1.responsive-typography {
   color: rgba(0, 0, 0, 0.87);
 }
 body[dir=rtl] .text-field__label-text, body[dir=rtl] .text-tiny, body[dir=rtl] .text-xxs, body[dir=rtl] .text-xs,
-body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item,
+body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a,
 body[dir=rtl] .text-field__hints, body[dir=rtl] .text-sm,
-body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
-.accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item,
-body[dir=rtl] .accordion__list .accordion__list__item,
-.accordion__list body[dir=rtl] .accordion__list__item,
+body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
+.accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a,
+body[dir=rtl] .accordion__list .accordion__list__item > a,
+.accordion__list body[dir=rtl] .accordion__list__item > a,
 body[dir=rtl] .text-field__description, body[dir=rtl] .text-md,
 body[dir=rtl] .title-row__title--pretitle, body[dir=rtl] .text-lg,
 body[dir=rtl] .unordered-list li,
@@ -205,13 +205,13 @@ body[dir=rtl] .section-row > .section-row__title ~ .section-row__title {
   text-align: right;
 }
 body[dir=ltr] .text-field__label-text, body[dir=ltr] .text-tiny, body[dir=ltr] .text-xxs, body[dir=ltr] .text-xs,
-body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item,
+body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a,
 body[dir=ltr] .text-field__hints, body[dir=ltr] .text-sm,
-body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
-.accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item,
-body[dir=ltr] .accordion__list .accordion__list__item,
-.accordion__list body[dir=ltr] .accordion__list__item,
+body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
+.accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a,
+body[dir=ltr] .accordion__list .accordion__list__item > a,
+.accordion__list body[dir=ltr] .accordion__list__item > a,
 body[dir=ltr] .text-field__description, body[dir=ltr] .text-md,
 body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .text-lg,
 body[dir=ltr] .unordered-list li,
@@ -221,11 +221,12 @@ body[dir=ltr] .ordered-list li,
 body[dir=ltr] .section-row__paragraph,
 body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .text-xlg,
 body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .text-tiny, body:not([dir=ltr]):not([dir=rtl]) .text-xxs, body:not([dir=ltr]):not([dir=rtl]) .text-xs,
+body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 body:not([dir=ltr]):not([dir=rtl]) .text-field__hints, body:not([dir=ltr]):not([dir=rtl]) .text-sm,
-body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
-.accordion__list .accordion__list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item,
-body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item,
-.accordion__list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__item,
+body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
+.accordion__list .accordion__list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a,
+body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > a,
+.accordion__list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__item > a,
 body:not([dir=ltr]):not([dir=rtl]) .text-field__description, body:not([dir=ltr]):not([dir=rtl]) .text-md,
 body:not([dir=ltr]):not([dir=rtl]) .title-row__title--pretitle, body:not([dir=ltr]):not([dir=rtl]) .text-lg,
 body:not([dir=ltr]):not([dir=rtl]) .unordered-list li,
@@ -238,10 +239,10 @@ body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section
   text-align: left;
 }
 .responsive-typography.text-field__label-text, .responsive-typography.text-tiny, .responsive-typography.text-xxs, .responsive-typography.text-xs,
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .responsive-typography.accordion__list__sub-list__item,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.responsive-typography,
 .responsive-typography.text-field__hints, .responsive-typography.text-sm,
-.accordion__list .accordion__list__item > .accordion__list__sub-list .responsive-typography.accordion__list__sub-list__item,
-.accordion__list .responsive-typography.accordion__list__item,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.responsive-typography,
+.accordion__list .accordion__list__item > a.responsive-typography,
 .responsive-typography.text-field__description, .responsive-typography.text-md,
 .responsive-typography.title-row__title--pretitle, .responsive-typography.text-lg,
 .unordered-list li.responsive-typography,
@@ -344,14 +345,14 @@ p {
 }
 
 .text-sm,
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
-.accordion__list .accordion__list__item,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
+.accordion__list .accordion__list__item > a,
 .text-field__description {
   font-size: 0.875rem !important;
 }
 
 .text-xs,
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .text-field__hints {
   font-size: 0.75rem !important;
 }
@@ -782,11 +783,12 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .collapse:not(.show) {
   display: none;
 }
-.collapse.collapsing {
+
+.collapsing {
   position: relative;
   height: 0;
   overflow: hidden;
-  transition: transform 360ms ease, height 360ms ease;
+  transition: height 360ms ease;
 }
 
 .divider {
@@ -2143,7 +2145,7 @@ body[dir=ltr] .unordered-list li:before, body:not([dir=ltr]):not([dir=rtl]) .uno
   margin-right: 1rem;
 }
 
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item:before, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list:before {
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a:before, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list:before {
   content: "";
   position: absolute;
   width: 1px;
@@ -2151,30 +2153,28 @@ body[dir=ltr] .unordered-list li:before, body:not([dir=ltr]):not([dir=rtl]) .uno
   bottom: 0.75rem;
   background-color: transparent;
 }
-body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item:before, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item:before, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list:before, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > .accordion__list__sub-list:before {
+body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a:before, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a:before, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list:before, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > .accordion__list__sub-list:before {
   right: 0;
 }
-body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item:before, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item:before, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list:before, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > .accordion__list__sub-list:before, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item:before, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item:before, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list:before, .accordion__list .accordion__list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > .accordion__list__sub-list:before {
+body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a:before, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a:before, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list:before, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > .accordion__list__sub-list:before, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a:before, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a:before, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list:before, .accordion__list .accordion__list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > .accordion__list__sub-list:before {
   left: 0;
 }
 
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item, .accordion__list .accordion__list__item {
-  color: rgba(0, 0, 0, 0.56);
-}
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item .fill, .accordion__list .accordion__list__item .fill {
-  fill: rgba(0, 0, 0, 0.56);
-}
-.accordion__list .accordion__list__item > .accordion__list__sub-list .active.accordion__list__sub-list__item, .accordion__list .active.accordion__list__item {
-  color: rgba(0, 0, 0, 0.87);
-  font-weight: 500;
-}
-.accordion__list .accordion__list__item > .accordion__list__sub-list .active.accordion__list__sub-list__item .fill, .accordion__list .active.accordion__list__item .fill {
-  fill: rgba(0, 0, 0, 0.87);
-}
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > a {
   display: flex;
   align-items: center;
   min-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.56);
+}
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.active, .accordion__list .accordion__list__item > a.active {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+}
+.accordion__list .accordion__list__item > a.active .fill {
+  fill: rgba(0, 0, 0, 0.87);
+}
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a .fill, .accordion__list .accordion__list__item > a .fill {
+  fill: rgba(0, 0, 0, 0.56);
 }
 
 body[dir=rtl] .accordion.iconed .accordion__list .accordion__list__item > .accordion__list__sub-list {
@@ -2215,32 +2215,32 @@ body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-li
   background-color: rgba(0, 0, 0, 0.12);
 }
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item {
-  color: rgba(0, 0, 0, 0.56);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   min-height: 2.5rem;
+}
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a {
+  color: rgba(0, 0, 0, 0.56);
+  width: 100%;
   position: relative;
 }
-body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item {
+body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a {
   padding-right: 0.5rem;
 }
-body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item {
+body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a {
   padding-left: 0.5rem;
 }
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item:before {
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a:before {
   top: 0.75rem;
   bottom: 0.75rem;
 }
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item.active {
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.active {
   font-weight: 500;
   color: #a62626;
 }
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item.active:before {
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.active:before {
   background-color: #a62626;
-}
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a {
-  width: 100%;
 }
 
 body[dir=rtl] .accordion__icon {

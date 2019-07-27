@@ -20,27 +20,26 @@
 }
 
 %base-item {
-  @extend %text-sm;
-
-  color: $black-secondary;
-
-  .fill {
-    fill: $black-secondary;
-  }
-
-  &.active {
-    color: $black-primary;
-    font-weight: 500;
-
-    .fill {
-      fill: $black-primary;
-    }
-  }
-
   & > a {
+    @extend %text-sm;
+
     display: flex;
     align-items: center;
     min-height: 2.5rem;
+    color: $black-secondary;
+
+    &.active {
+      color: $black-primary;
+      font-weight: 500;
+
+      .fill {
+        fill: $black-primary;
+      }
+    }
+
+    .fill {
+      fill: $black-secondary;
+    }
   }
 }
 
@@ -121,44 +120,44 @@
           }
 
           .accordion__list__sub-list__item {
-            @extend %text-xs;
-
-            color: $black-secondary;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             min-height: 2.5rem;
-            position: relative;
-
-            @include rtlStyle(
-              (
-                padding-right: 0.5rem
-              )
-            );
-            @include ltrStyle(
-              (
-                padding-left: 0.5rem
-              )
-            );
-
-            &:before {
-              @extend %base-rail;
-
-              top: 0.75rem;
-              bottom: 0.75rem;
-            }
-
-            &.active {
-              font-weight: 500;
-              color: $brand-primary-color;
-
-              &:before {
-                background-color: $brand-primary-color;
-              }
-            }
 
             & > a {
+              @extend %text-xs;
+
+              color: $black-secondary;
               width: 100%;
+              position: relative;
+
+              @include rtlStyle(
+                (
+                  padding-right: 0.5rem
+                )
+              );
+              @include ltrStyle(
+                (
+                  padding-left: 0.5rem
+                )
+              );
+
+              &:before {
+                @extend %base-rail;
+
+                top: 0.75rem;
+                bottom: 0.75rem;
+              }
+
+              &.active {
+                font-weight: 500;
+                color: $brand-primary-color;
+
+                &:before {
+                  background-color: $brand-primary-color;
+                }
+              }
             }
           }
         }
