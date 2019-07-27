@@ -5,8 +5,7 @@
 @import "../../../../Components/src/assets/scss/sonnat.scss";
 
 // SONNAT-TOOL ELEMENTS
-@import "elements/resizable-view", "elements/behavior",
-  "elements/interactive-demo";
+@import "element/resizable-view", "element/behavior", "element/interactive-demo";
 
 // SONNAT-TOOL STYLES
 @import "style";

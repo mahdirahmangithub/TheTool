@@ -62,6 +62,69 @@ $header-height: 64px;
   padding-top: calc(#{$header-height} + #{map-get($spaces, "x32")});
 }
 
+#article-navlist {
+  margin: 0;
+  position: sticky;
+  top: 128px;
+
+  & > li {
+    font-size: 0.75rem;
+    color: $black-secondary;
+    display: flex;
+
+    &:not(.active) > a:hover {
+      color: $black-primary;
+    }
+
+    &:before {
+      margin: 0;
+      position: absolute;
+      width: 1px;
+      height: auto;
+      top: #{2 * 0.75rem / 4};
+      bottom: #{2 * 0.75rem / 4};
+      border-radius: 0;
+      background-color: transparent;
+      transition: background-color 360ms ease;
+    }
+
+    &.active {
+      color: $brand-primary-color;
+      font-weight: 500;
+
+      &:before {
+        background-color: $brand-primary-color;
+      }
+    }
+
+    & > a {
+      width: 100%;
+      transition: color 360ms ease;
+      position: relative;
+      bottom: 1px;
+
+      @include rtlStyle(
+        (
+          margin-right: 0.5rem
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: 0.5rem
+        )
+      );
+    }
+  }
+
+  & > .heading {
+    color: $black-32;
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
 .code-row {
   width: 100%;
   direction: ltr;

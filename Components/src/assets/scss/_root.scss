@@ -12,13 +12,15 @@ body {
     (
       "font-family": "#{$font-family-fa}",
       "direction": "rtl"
-    )
+    ),
+    $isBody: true
   );
   @include ltrStyle(
     (
       "font-family": "#{$font-family-en}",
       "direction": "ltr"
-    )
+    ),
+    $isBody: true
   );
 }
 

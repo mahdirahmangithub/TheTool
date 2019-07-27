@@ -1,5 +1,5 @@
-@mixin rtlStyle($object) {
-  @if #{&} == "body" {
+@mixin rtlStyle($object, $isBody: false) {
+  @if $isBody {
     @each $key, $val in $object {
       &[dir="rtl"] {
         #{$key}: #{$val};
@@ -14,8 +14,8 @@
   }
 }
 
-@mixin ltrStyle($object) {
-  @if #{&} == "body" {
+@mixin ltrStyle($object, $isBody: false) {
+  @if $isBody {
     @each $key, $val in $object {
       &[dir="ltr"],
       &:not([dir="ltr"]):not([dir="rtl"]) {
