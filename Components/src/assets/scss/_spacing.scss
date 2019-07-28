@@ -143,9 +143,7 @@
 .margin-left-6 {
   margin-left: 4rem !important;
 }
-// MARGINS END
 
-// PADDINGS BEGIN
 .padding-0 {
   padding: 0 !important;
 }
@@ -260,4 +258,1050 @@
 
 .padding-left-6 {
   padding-left: 4rem !important;
+}
+
+.margin-start-auto {
+  @include rtlStyle(
+    (
+      margin-right: auto !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-left: auto !important
+    )
+  );
+}
+
+.margin-end-auto {
+  @include rtlStyle(
+    (
+      margin-left: auto !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-right: auto !important
+    )
+  );
+}
+
+.margin-start-0 {
+  @include rtlStyle(
+    (
+      margin-right: 0 !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-left: 0 !important
+    )
+  );
+}
+
+.margin-end-0 {
+  @include rtlStyle(
+    (
+      margin-left: 0 !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-right: 0 !important
+    )
+  );
+}
+
+.margin-start-1 {
+  @include rtlStyle(
+    (
+      margin-right: 0.125rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-left: 0.125rem !important
+    )
+  );
+}
+
+.margin-end-1 {
+  @include rtlStyle(
+    (
+      margin-left: 0.125rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-right: 0.125rem !important
+    )
+  );
+}
+
+.margin-start-2 {
+  @include rtlStyle(
+    (
+      margin-right: 0.25rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-left: 0.25rem !important
+    )
+  );
+}
+
+.margin-end-2 {
+  @include rtlStyle(
+    (
+      margin-left: 0.25rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-right: 0.25rem !important
+    )
+  );
+}
+
+.margin-start-3 {
+  @include rtlStyle(
+    (
+      margin-right: 0.5rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-left: 0.5rem !important
+    )
+  );
+}
+
+.margin-end-3 {
+  @include rtlStyle(
+    (
+      margin-left: 0.5rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-right: 0.5rem !important
+    )
+  );
+}
+
+.margin-start-4 {
+  @include rtlStyle(
+    (
+      margin-right: 1rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-left: 1rem !important
+    )
+  );
+}
+
+.margin-end-4 {
+  @include rtlStyle(
+    (
+      margin-left: 1rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-right: 1rem !important
+    )
+  );
+}
+
+.margin-start-5 {
+  @include rtlStyle(
+    (
+      margin-right: 2rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-left: 2rem !important
+    )
+  );
+}
+
+.margin-end-5 {
+  @include rtlStyle(
+    (
+      margin-left: 2rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-right: 2rem !important
+    )
+  );
+}
+
+.margin-start-6 {
+  @include rtlStyle(
+    (
+      margin-right: 4rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-left: 4rem !important
+    )
+  );
+}
+
+.margin-end-6 {
+  @include rtlStyle(
+    (
+      margin-left: 4rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-right: 4rem !important
+    )
+  );
+}
+
+.padding-start-0 {
+  @include rtlStyle(
+    (
+      padding-right: 0 !important
+    )
+  );
+  @include ltrStyle(
+    (
+      padding-left: 0 !important
+    )
+  );
+}
+
+.padding-end-0 {
+  @include rtlStyle(
+    (
+      padding-left: 0 !important
+    )
+  );
+  @include ltrStyle(
+    (
+      padding-right: 0 !important
+    )
+  );
+}
+
+.padding-start-1 {
+  @include rtlStyle(
+    (
+      padding-right: 0.125rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      padding-left: 0.125rem !important
+    )
+  );
+}
+
+.padding-end-1 {
+  @include rtlStyle(
+    (
+      padding-left: 0.125rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      padding-right: 0.125rem !important
+    )
+  );
+}
+
+.padding-start-2 {
+  @include rtlStyle(
+    (
+      padding-right: 0.25rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      padding-left: 0.25rem !important
+    )
+  );
+}
+
+.padding-end-2 {
+  @include rtlStyle(
+    (
+      padding-left: 0.25rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      padding-right: 0.25rem !important
+    )
+  );
+}
+
+.padding-start-3 {
+  @include rtlStyle(
+    (
+      padding-right: 0.5rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      padding-left: 0.5rem !important
+    )
+  );
+}
+
+.padding-end-3 {
+  @include rtlStyle(
+    (
+      padding-left: 0.5rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      padding-right: 0.5rem !important
+    )
+  );
+}
+
+.padding-start-4 {
+  @include rtlStyle(
+    (
+      padding-right: 1rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      padding-left: 1rem !important
+    )
+  );
+}
+
+.padding-end-4 {
+  @include rtlStyle(
+    (
+      padding-left: 1rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      padding-right: 1rem !important
+    )
+  );
+}
+
+.padding-start-5 {
+  @include rtlStyle(
+    (
+      padding-right: 2rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      padding-left: 2rem !important
+    )
+  );
+}
+
+.padding-end-5 {
+  @include rtlStyle(
+    (
+      padding-left: 2rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      padding-right: 2rem !important
+    )
+  );
+}
+
+.padding-start-6 {
+  @include rtlStyle(
+    (
+      padding-right: 4rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      padding-left: 4rem !important
+    )
+  );
+}
+
+.padding-end-6 {
+  @include rtlStyle(
+    (
+      padding-left: 4rem !important
+    )
+  );
+  @include ltrStyle(
+    (
+      padding-right: 4rem !important
+    )
+  );
+}
+
+@each $key, $val in $breakpoints {
+  @media (min-width: map-get($breakpoints, $key)) {
+    .margin-#{$key}-auto {
+      margin: auto !important;
+    }
+
+    .margin-top-#{$key}-auto {
+      margin-top: auto !important;
+    }
+
+    .margin-bottom-#{$key}-auto {
+      margin-bottom: auto !important;
+    }
+
+    .margin-right-#{$key}-auto {
+      margin-right: auto !important;
+    }
+
+    .margin-left-#{$key}-auto {
+      margin-left: auto !important;
+    }
+
+    .margin-rl-#{$key}-auto {
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+
+    .margin-tb-#{$key}-auto {
+      margin-top: auto !important;
+      margin-bottom: auto !important;
+    }
+
+    .margin-#{$key}-0 {
+      margin: 0 !important;
+    }
+
+    .margin-top-#{$key}-0 {
+      margin-top: 0 !important;
+    }
+
+    .margin-bottom-#{$key}-0 {
+      margin-bottom: 0 !important;
+    }
+
+    .margin-right-#{$key}-0 {
+      margin-right: 0 !important;
+    }
+
+    .margin-left-#{$key}-0 {
+      margin-left: 0 !important;
+    }
+
+    .margin-top-#{$key}-1 {
+      margin-top: 0.125rem !important;
+    }
+
+    .margin-bottom-#{$key}-1 {
+      margin-bottom: 0.125rem !important;
+    }
+
+    .margin-right-#{$key}-1 {
+      margin-right: 0.125rem !important;
+    }
+
+    .margin-left-#{$key}-1 {
+      margin-left: 0.125rem !important;
+    }
+
+    .margin-top-#{$key}-2 {
+      margin-top: 0.25rem !important;
+    }
+
+    .margin-bottom-#{$key}-2 {
+      margin-bottom: 0.25rem !important;
+    }
+
+    .margin-right-#{$key}-2 {
+      margin-right: 0.25rem !important;
+    }
+
+    .margin-left-#{$key}-2 {
+      margin-left: 0.25rem !important;
+    }
+
+    .margin-top-#{$key}-3 {
+      margin-top: 0.5rem !important;
+    }
+
+    .margin-bottom-#{$key}-3 {
+      margin-bottom: 0.5rem !important;
+    }
+
+    .margin-right-#{$key}-3 {
+      margin-right: 0.5rem !important;
+    }
+
+    .margin-left-#{$key}-3 {
+      margin-left: 0.5rem !important;
+    }
+
+    .margin-top-#{$key}-4 {
+      margin-top: 1rem !important;
+    }
+
+    .margin-bottom-#{$key}-4 {
+      margin-bottom: 1rem !important;
+    }
+
+    .margin-right-#{$key}-4 {
+      margin-right: 1rem !important;
+    }
+
+    .margin-left-#{$key}-4 {
+      margin-left: 1rem !important;
+    }
+
+    .margin-top-#{$key}-5 {
+      margin-top: 2rem !important;
+    }
+
+    .margin-bottom-#{$key}-5 {
+      margin-bottom: 2rem !important;
+    }
+
+    .margin-right-#{$key}-5 {
+      margin-right: 2rem !important;
+    }
+
+    .margin-left-#{$key}-5 {
+      margin-left: 2rem !important;
+    }
+
+    .margin-top-#{$key}-6 {
+      margin-top: 4rem !important;
+    }
+
+    .margin-bottom-#{$key}-6 {
+      margin-bottom: 4rem !important;
+    }
+
+    .margin-right-#{$key}-6 {
+      margin-right: 4rem !important;
+    }
+
+    .margin-left-#{$key}-6 {
+      margin-left: 4rem !important;
+    }
+
+    .padding-#{$key}-0 {
+      padding: 0 !important;
+    }
+
+    .padding-top-#{$key}-0 {
+      padding-top: 0 !important;
+    }
+
+    .padding-bottom-#{$key}-0 {
+      padding-bottom: 0 !important;
+    }
+
+    .padding-right-#{$key}-0 {
+      padding-right: 0 !important;
+    }
+
+    .padding-left-#{$key}-0 {
+      padding-left: 0 !important;
+    }
+
+    .padding-top-#{$key}-1 {
+      padding-top: 0.125rem !important;
+    }
+
+    .padding-bottom-#{$key}-1 {
+      padding-bottom: 0.125rem !important;
+    }
+
+    .padding-right-#{$key}-1 {
+      padding-right: 0.125rem !important;
+    }
+
+    .padding-left-#{$key}-1 {
+      padding-left: 0.125rem !important;
+    }
+
+    .padding-top-#{$key}-2 {
+      padding-top: 0.25rem !important;
+    }
+
+    .padding-bottom-#{$key}-2 {
+      padding-bottom: 0.25rem !important;
+    }
+
+    .padding-right-#{$key}-2 {
+      padding-right: 0.25rem !important;
+    }
+
+    .padding-left-#{$key}-2 {
+      padding-left: 0.25rem !important;
+    }
+
+    .padding-top-#{$key}-3 {
+      padding-top: 0.5rem !important;
+    }
+
+    .padding-bottom-#{$key}-3 {
+      padding-bottom: 0.5rem !important;
+    }
+
+    .padding-right-#{$key}-3 {
+      padding-right: 0.5rem !important;
+    }
+
+    .padding-left-#{$key}-3 {
+      padding-left: 0.5rem !important;
+    }
+
+    .padding-top-#{$key}-4 {
+      padding-top: 1rem !important;
+    }
+
+    .padding-bottom-#{$key}-4 {
+      padding-bottom: 1rem !important;
+    }
+
+    .padding-right-#{$key}-4 {
+      padding-right: 1rem !important;
+    }
+
+    .padding-left-#{$key}-4 {
+      padding-left: 1rem !important;
+    }
+
+    .padding-top-#{$key}-5 {
+      padding-top: 2rem !important;
+    }
+
+    .padding-bottom-#{$key}-5 {
+      padding-bottom: 2rem !important;
+    }
+
+    .padding-right-#{$key}-5 {
+      padding-right: 2rem !important;
+    }
+
+    .padding-left-#{$key}-5 {
+      padding-left: 2rem !important;
+    }
+
+    .padding-top-#{$key}-6 {
+      padding-top: 4rem !important;
+    }
+
+    .padding-bottom-#{$key}-6 {
+      padding-bottom: 4rem !important;
+    }
+
+    .padding-right-#{$key}-6 {
+      padding-right: 4rem !important;
+    }
+
+    .padding-left-#{$key}-6 {
+      padding-left: 4rem !important;
+    }
+
+    .margin-start-#{$key}-auto {
+      @include rtlStyle(
+        (
+          margin-right: auto !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: auto !important
+        )
+      );
+    }
+
+    .margin-end-#{$key}-auto {
+      @include rtlStyle(
+        (
+          margin-left: auto !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-right: auto !important
+        )
+      );
+    }
+
+    .margin-start-#{$key}-0 {
+      @include rtlStyle(
+        (
+          margin-right: 0 !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: 0 !important
+        )
+      );
+    }
+
+    .margin-end-#{$key}-0 {
+      @include rtlStyle(
+        (
+          margin-left: 0 !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-right: 0 !important
+        )
+      );
+    }
+
+    .margin-start-#{$key}-1 {
+      @include rtlStyle(
+        (
+          margin-right: 0.125rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: 0.125rem !important
+        )
+      );
+    }
+
+    .margin-end-#{$key}-1 {
+      @include rtlStyle(
+        (
+          margin-left: 0.125rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-right: 0.125rem !important
+        )
+      );
+    }
+
+    .margin-start-#{$key}-2 {
+      @include rtlStyle(
+        (
+          margin-right: 0.25rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: 0.25rem !important
+        )
+      );
+    }
+
+    .margin-end-#{$key}-2 {
+      @include rtlStyle(
+        (
+          margin-left: 0.25rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-right: 0.25rem !important
+        )
+      );
+    }
+
+    .margin-start-#{$key}-3 {
+      @include rtlStyle(
+        (
+          margin-right: 0.5rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: 0.5rem !important
+        )
+      );
+    }
+
+    .margin-end-#{$key}-3 {
+      @include rtlStyle(
+        (
+          margin-left: 0.5rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-right: 0.5rem !important
+        )
+      );
+    }
+
+    .margin-start-#{$key}-4 {
+      @include rtlStyle(
+        (
+          margin-right: 1rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: 1rem !important
+        )
+      );
+    }
+
+    .margin-end-#{$key}-4 {
+      @include rtlStyle(
+        (
+          margin-left: 1rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-right: 1rem !important
+        )
+      );
+    }
+
+    .margin-start-#{$key}-5 {
+      @include rtlStyle(
+        (
+          margin-right: 2rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: 2rem !important
+        )
+      );
+    }
+
+    .margin-end-#{$key}-5 {
+      @include rtlStyle(
+        (
+          margin-left: 2rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-right: 2rem !important
+        )
+      );
+    }
+
+    .margin-start-#{$key}-6 {
+      @include rtlStyle(
+        (
+          margin-right: 4rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: 4rem !important
+        )
+      );
+    }
+
+    .margin-end-#{$key}-6 {
+      @include rtlStyle(
+        (
+          margin-left: 4rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-right: 4rem !important
+        )
+      );
+    }
+
+    .padding-start-#{$key}-0 {
+      @include rtlStyle(
+        (
+          padding-right: 0 !important
+        )
+      );
+      @include ltrStyle(
+        (
+          padding-left: 0 !important
+        )
+      );
+    }
+
+    .padding-end-#{$key}-0 {
+      @include rtlStyle(
+        (
+          padding-left: 0 !important
+        )
+      );
+      @include ltrStyle(
+        (
+          padding-right: 0 !important
+        )
+      );
+    }
+
+    .padding-start-#{$key}-1 {
+      @include rtlStyle(
+        (
+          padding-right: 0.125rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          padding-left: 0.125rem !important
+        )
+      );
+    }
+
+    .padding-end-#{$key}-1 {
+      @include rtlStyle(
+        (
+          padding-left: 0.125rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          padding-right: 0.125rem !important
+        )
+      );
+    }
+
+    .padding-start-#{$key}-2 {
+      @include rtlStyle(
+        (
+          padding-right: 0.25rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          padding-left: 0.25rem !important
+        )
+      );
+    }
+
+    .padding-end-#{$key}-2 {
+      @include rtlStyle(
+        (
+          padding-left: 0.25rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          padding-right: 0.25rem !important
+        )
+      );
+    }
+
+    .padding-start-#{$key}-3 {
+      @include rtlStyle(
+        (
+          padding-right: 0.5rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          padding-left: 0.5rem !important
+        )
+      );
+    }
+
+    .padding-end-#{$key}-3 {
+      @include rtlStyle(
+        (
+          padding-left: 0.5rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          padding-right: 0.5rem !important
+        )
+      );
+    }
+
+    .padding-start-#{$key}-4 {
+      @include rtlStyle(
+        (
+          padding-right: 1rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          padding-left: 1rem !important
+        )
+      );
+    }
+
+    .padding-end-#{$key}-4 {
+      @include rtlStyle(
+        (
+          padding-left: 1rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          padding-right: 1rem !important
+        )
+      );
+    }
+
+    .padding-start-#{$key}-5 {
+      @include rtlStyle(
+        (
+          padding-right: 2rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          padding-left: 2rem !important
+        )
+      );
+    }
+
+    .padding-end-#{$key}-5 {
+      @include rtlStyle(
+        (
+          padding-left: 2rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          padding-right: 2rem !important
+        )
+      );
+    }
+
+    .padding-start-#{$key}-6 {
+      @include rtlStyle(
+        (
+          padding-right: 4rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          padding-left: 4rem !important
+        )
+      );
+    }
+
+    .padding-end-#{$key}-6 {
+      @include rtlStyle(
+        (
+          padding-left: 4rem !important
+        )
+      );
+      @include ltrStyle(
+        (
+          padding-right: 4rem !important
+        )
+      );
+    }
+  }
 }
