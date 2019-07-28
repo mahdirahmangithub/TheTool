@@ -3838,6 +3838,9 @@ body:not([dir="ltr"]):not([dir="rtl"]) .accordion__icon {
   z-index: 1030-20;
   border-right: 1px solid rgba(0, 0, 0, 0.12); }
 
+#sidebar-nav__navbar {
+  margin: 2rem; }
+
 #main {
   margin: 0;
   max-width: 100%;

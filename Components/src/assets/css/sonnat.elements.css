@@ -172,8 +172,6 @@ h1.responsive-typography {
 .accordion__list .accordion__list__item > a,
 .text-field__description, .text-md,
 .title-row__title--pretitle, .text-lg,
-.unordered-list li,
-.ordered-list li,
 .section-row__paragraph,
 .title-row__title--subtitle, .text-xlg,
 .section-row > .section-row__title ~ .section-row__title {
@@ -195,10 +193,6 @@ body[dir=rtl] .accordion__list .accordion__list__item > a,
 .accordion__list body[dir=rtl] .accordion__list__item > a,
 body[dir=rtl] .text-field__description, body[dir=rtl] .text-md,
 body[dir=rtl] .title-row__title--pretitle, body[dir=rtl] .text-lg,
-body[dir=rtl] .unordered-list li,
-body[dir=rtl] .ordered-list li,
-.unordered-list body[dir=rtl] li,
-.ordered-list body[dir=rtl] li,
 body[dir=rtl] .section-row__paragraph,
 body[dir=rtl] .title-row__title--subtitle, body[dir=rtl] .text-xlg,
 body[dir=rtl] .section-row > .section-row__title ~ .section-row__title {
@@ -214,10 +208,6 @@ body[dir=ltr] .accordion__list .accordion__list__item > a,
 .accordion__list body[dir=ltr] .accordion__list__item > a,
 body[dir=ltr] .text-field__description, body[dir=ltr] .text-md,
 body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .text-lg,
-body[dir=ltr] .unordered-list li,
-body[dir=ltr] .ordered-list li,
-.unordered-list body[dir=ltr] li,
-.ordered-list body[dir=ltr] li,
 body[dir=ltr] .section-row__paragraph,
 body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .text-xlg,
 body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .text-tiny, body:not([dir=ltr]):not([dir=rtl]) .text-xxs, body:not([dir=ltr]):not([dir=rtl]) .text-xs,
@@ -229,10 +219,6 @@ body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > a,
 .accordion__list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__item > a,
 body:not([dir=ltr]):not([dir=rtl]) .text-field__description, body:not([dir=ltr]):not([dir=rtl]) .text-md,
 body:not([dir=ltr]):not([dir=rtl]) .title-row__title--pretitle, body:not([dir=ltr]):not([dir=rtl]) .text-lg,
-body:not([dir=ltr]):not([dir=rtl]) .unordered-list li,
-body:not([dir=ltr]):not([dir=rtl]) .ordered-list li,
-.unordered-list body:not([dir=ltr]):not([dir=rtl]) li,
-.ordered-list body:not([dir=ltr]):not([dir=rtl]) li,
 body:not([dir=ltr]):not([dir=rtl]) .section-row__paragraph,
 body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle, body:not([dir=ltr]):not([dir=rtl]) .text-xlg,
 body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title {
@@ -245,8 +231,6 @@ body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section
 .accordion__list .accordion__list__item > a.responsive-typography,
 .responsive-typography.text-field__description, .responsive-typography.text-md,
 .responsive-typography.title-row__title--pretitle, .responsive-typography.text-lg,
-.unordered-list li.responsive-typography,
-.ordered-list li.responsive-typography,
 .responsive-typography.section-row__paragraph,
 .responsive-typography.title-row__title--subtitle, .responsive-typography.text-xlg,
 .section-row > .section-row__title ~ .responsive-typography.section-row__title {
@@ -319,8 +303,6 @@ p {
 }
 
 .text-lg,
-.unordered-list li,
-.ordered-list li,
 .section-row__paragraph,
 .title-row__title--subtitle {
   font-size: 1rem !important;
@@ -404,8 +386,6 @@ h4 {
   }
 
   .text-lg,
-.unordered-list li,
-.ordered-list li,
 .section-row__paragraph,
 .title-row__title--subtitle {
     font-size: 0.875rem !important;
@@ -1789,6 +1769,9 @@ body[dir=rtl] .text-field.rounded.iconed.iconed--trailing .text-field__icons {
 body[dir=ltr] .text-field.rounded.iconed.iconed--trailing .text-field__icons, body:not([dir=ltr]):not([dir=rtl]) .text-field.rounded.iconed.iconed--trailing .text-field__icons {
   padding-right: 0.75rem;
 }
+.text-field.rounded .text-field__hints {
+  padding: 0 1.25rem;
+}
 body[dir=rtl] .text-field.rounded .text-field__wrapper:after {
   border-radius: 1.25rem 0rem 0rem 1.25rem;
 }
@@ -1811,94 +1794,26 @@ body[dir=rtl] .text-field.iconed.iconed--leading .text-field__label-text {
 body[dir=ltr] .text-field.iconed.iconed--leading .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .text-field.iconed.iconed--leading .text-field__label-text {
   transform: translateX(1.5rem);
 }
-body[dir=rtl] .text-field:not(.rounded).iconed.iconed--leading .text-field__input {
+body[dir=rtl] .text-field.iconed:not(.rounded).iconed--leading .text-field__input {
   padding-right: 2.5rem;
 }
-body[dir=ltr] .text-field:not(.rounded).iconed.iconed--leading .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field:not(.rounded).iconed.iconed--leading .text-field__input {
+body[dir=ltr] .text-field.iconed:not(.rounded).iconed--leading .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field.iconed:not(.rounded).iconed--leading .text-field__input {
   padding-left: 2.5rem;
 }
-body[dir=rtl] .text-field:not(.rounded).iconed.iconed--trailing .text-field__input {
+body[dir=rtl] .text-field.iconed:not(.rounded).iconed--trailing .text-field__input {
   padding-left: 2.5rem;
 }
-body[dir=ltr] .text-field:not(.rounded).iconed.iconed--trailing .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field:not(.rounded).iconed.iconed--trailing .text-field__input {
+body[dir=ltr] .text-field.iconed:not(.rounded).iconed--trailing .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field.iconed:not(.rounded).iconed--trailing .text-field__input {
   padding-right: 2.5rem;
-}
-body[dir=rtl] .text-field .text-field__wrapper:after {
-  border-radius: 0.25rem 0rem 0rem 0.25rem;
-}
-body[dir=rtl] .text-field .text-field__wrapper:after {
-  border-left: 2px solid;
-}
-body[dir=ltr] .text-field .text-field__wrapper:after, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__wrapper:after {
-  border-radius: 0 0.25rem 0.25rem 0;
-}
-body[dir=ltr] .text-field .text-field__wrapper:after, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__wrapper:after {
-  border-right: 2px solid;
-}
-body[dir=rtl] .text-field .text-field__wrapper:before {
-  border-radius: 0rem 0.25rem 0.25rem 0rem;
-}
-body[dir=rtl] .text-field .text-field__wrapper:before {
-  border-right: 2px solid;
-}
-body[dir=ltr] .text-field .text-field__wrapper:before, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__wrapper:before {
-  border-radius: 0.25rem 0 0 0.25rem;
-}
-body[dir=ltr] .text-field .text-field__wrapper:before, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__wrapper:before {
-  border-left: 2px solid;
-}
-body[dir=rtl] .text-field .text-field__hints__input-length-limit {
-  text-align: left;
-}
-body[dir=ltr] .text-field .text-field__hints__input-length-limit, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__hints__input-length-limit {
-  text-align: right;
-}
-body[dir=rtl] .text-field .text-field__hints__hint-text {
-  text-align: right;
-}
-body[dir=ltr] .text-field .text-field__hints__hint-text, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__hints__hint-text {
-  text-align: left;
-}
-body[dir=rtl] .text-field .text-field__icons .text-field__icons__leading > * + *,
-body[dir=rtl] .text-field .text-field__icons .text-field__icons__trailing > * + * {
-  margin-right: 0.5rem;
-}
-body[dir=ltr] .text-field .text-field__icons .text-field__icons__leading > * + *, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__leading > * + *,
-body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing > * + *,
-body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__trailing > * + * {
-  margin-left: 0.5rem;
-}
-body[dir=ltr] .text-field .text-field__icons .text-field__icons__leading > * + *, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__leading > * + *,
-body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing > * + *,
-body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__trailing > * + * {
-  margin-right: 0;
-}
-body[dir=rtl] .text-field .text-field__icons .text-field__icons__leading {
-  margin-left: auto;
-}
-body[dir=ltr] .text-field .text-field__icons .text-field__icons__leading, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__leading {
-  margin-left: 0;
-}
-body[dir=ltr] .text-field .text-field__icons .text-field__icons__leading, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__leading {
-  margin-right: auto;
-}
-body[dir=rtl] .text-field .text-field__icons .text-field__icons__trailing {
-  margin-right: auto;
-}
-body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__trailing {
-  margin-right: 0;
-}
-body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing, body:not([dir=ltr]):not([dir=rtl]) .text-field .text-field__icons .text-field__icons__trailing {
-  margin-left: auto;
-}
-.text-field:not(.error):hover .text-field__input:not(:focus) {
-  border-color: rgba(0, 0, 0, 0.48);
 }
 .text-field:not(.error) .text-field__input:focus ~ .text-field__wrapper:after, .text-field:not(.error) .text-field__input:focus ~ .text-field__wrapper:before {
   border-color: rgba(166, 38, 38, 0.56) !important;
 }
 .text-field:not(.error) .text-field__input:not(:focus) ~ .text-field__wrapper:after, .text-field:not(.error) .text-field__input:not(:focus) ~ .text-field__wrapper:before {
   border-color: transparent !important;
+}
+.text-field:not(.error):hover .text-field__input:not(:focus) {
+  border-color: rgba(0, 0, 0, 0.48);
 }
 .text-field.error .text-field__input {
   border-color: transparent;
@@ -1909,9 +1824,6 @@ body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing, body:
 }
 .text-field.error .text-field__hints__hint-text {
   color: red;
-}
-.text-field.rounded .text-field__hints {
-  padding: 0 1.25rem;
 }
 .text-field.legend-label .text-field__wrapper > .text-field__label {
   height: 100%;
@@ -2001,9 +1913,33 @@ body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing, body:
 .text-field__wrapper:after {
   width: 100%;
 }
+body[dir=rtl] .text-field__wrapper:after {
+  border-radius: 0.25rem 0rem 0rem 0.25rem;
+}
+body[dir=rtl] .text-field__wrapper:after {
+  border-left: 2px solid;
+}
+body[dir=ltr] .text-field__wrapper:after, body:not([dir=ltr]):not([dir=rtl]) .text-field__wrapper:after {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+body[dir=ltr] .text-field__wrapper:after, body:not([dir=ltr]):not([dir=rtl]) .text-field__wrapper:after {
+  border-right: 2px solid;
+}
 .text-field__wrapper:before {
   width: 0.75rem;
   min-width: 0.75rem;
+}
+body[dir=rtl] .text-field__wrapper:before {
+  border-radius: 0rem 0.25rem 0.25rem 0rem;
+}
+body[dir=rtl] .text-field__wrapper:before {
+  border-right: 2px solid;
+}
+body[dir=ltr] .text-field__wrapper:before, body:not([dir=ltr]):not([dir=rtl]) .text-field__wrapper:before {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+body[dir=ltr] .text-field__wrapper:before, body:not([dir=ltr]):not([dir=rtl]) .text-field__wrapper:before {
+  border-left: 2px solid;
 }
 
 .text-field__label + .text-field__input {
@@ -2074,6 +2010,38 @@ body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing, body:
 .text-field__icons .text-field__icons__trailing .fill {
   fill: rgba(0, 0, 0, 0.32);
 }
+body[dir=rtl] .text-field__icons .text-field__icons__leading > * + *,
+body[dir=rtl] .text-field__icons .text-field__icons__trailing > * + * {
+  margin-right: 0.5rem;
+}
+body[dir=ltr] .text-field__icons .text-field__icons__leading > * + *, body:not([dir=ltr]):not([dir=rtl]) .text-field__icons .text-field__icons__leading > * + *,
+body[dir=ltr] .text-field__icons .text-field__icons__trailing > * + *,
+body:not([dir=ltr]):not([dir=rtl]) .text-field__icons .text-field__icons__trailing > * + * {
+  margin-left: 0.5rem;
+}
+body[dir=ltr] .text-field__icons .text-field__icons__leading > * + *, body:not([dir=ltr]):not([dir=rtl]) .text-field__icons .text-field__icons__leading > * + *,
+body[dir=ltr] .text-field__icons .text-field__icons__trailing > * + *,
+body:not([dir=ltr]):not([dir=rtl]) .text-field__icons .text-field__icons__trailing > * + * {
+  margin-right: 0;
+}
+body[dir=rtl] .text-field__icons .text-field__icons__leading {
+  margin-left: auto;
+}
+body[dir=ltr] .text-field__icons .text-field__icons__leading, body:not([dir=ltr]):not([dir=rtl]) .text-field__icons .text-field__icons__leading {
+  margin-left: 0;
+}
+body[dir=ltr] .text-field__icons .text-field__icons__leading, body:not([dir=ltr]):not([dir=rtl]) .text-field__icons .text-field__icons__leading {
+  margin-right: auto;
+}
+body[dir=rtl] .text-field__icons .text-field__icons__trailing {
+  margin-right: auto;
+}
+body[dir=ltr] .text-field__icons .text-field__icons__trailing, body:not([dir=ltr]):not([dir=rtl]) .text-field__icons .text-field__icons__trailing {
+  margin-right: 0;
+}
+body[dir=ltr] .text-field__icons .text-field__icons__trailing, body:not([dir=ltr]):not([dir=rtl]) .text-field__icons .text-field__icons__trailing {
+  margin-left: auto;
+}
 .text-field__hints {
   display: flex;
   align-items: center;
@@ -2087,9 +2055,21 @@ body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing, body:
   width: calc(100% - 4rem);
   transition: color 150ms ease;
 }
+body[dir=rtl] .text-field__hints__hint-text {
+  text-align: right;
+}
+body[dir=ltr] .text-field__hints__hint-text, body:not([dir=ltr]):not([dir=rtl]) .text-field__hints__hint-text {
+  text-align: left;
+}
 
 .text-field__hints__input-length-limit {
   width: 4rem;
+}
+body[dir=rtl] .text-field__hints__input-length-limit {
+  text-align: left;
+}
+body[dir=ltr] .text-field__hints__input-length-limit, body:not([dir=ltr]):not([dir=rtl]) .text-field__hints__input-length-limit {
+  text-align: right;
 }
 
 .unordered-list, .ordered-list {
@@ -2098,6 +2078,20 @@ body[dir=ltr] .text-field .text-field__icons .text-field__icons__trailing, body:
 }
 .unordered-list li, .ordered-list li {
   position: relative;
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-size-adjust: 100%;
+  color: rgba(0, 0, 0, 0.87);
+}
+body[dir=rtl] .unordered-list li, body[dir=rtl] .ordered-list li {
+  text-align: right;
+}
+body[dir=ltr] .unordered-list li, body[dir=ltr] .ordered-list li, body:not([dir=ltr]):not([dir=rtl]) .unordered-list li, body:not([dir=ltr]):not([dir=rtl]) .ordered-list li {
+  text-align: left;
 }
 .unordered-list li ul, .ordered-list li ul {
   padding-right: 2rem;

@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
     <link rel="stylesheet" href="assets/css/font.css" />
     <link rel="stylesheet" href="assets/css/prism.css" />
-    <!-- <link rel="stylesheet" href="assets/css/sonnat.css" /> -->
     <link rel="stylesheet" href="assets/css/bundle.css" />
     <title>Sonnat - The Tool</title>
   </head>
@@ -71,7 +70,95 @@
             </div>
           </header>
           <main id="main" class="normal-view">
-            <aside id="sidebar-nav"></aside>
+            <aside id="sidebar-nav">
+              <nav id="sidebar-nav__navbar" class="accordion">
+                <p class="accordion__heading">Sonnat System</p>
+                <ul class="accordion__list">
+                  <li class="accordion__list__item">
+                    <a href="">
+                      <div class="accordion__icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            class="fill"
+                            d="M19.1,17.69l-2.77-2.78a6.42,6.42,0,0,0,1.26-3.83,6.52,6.52,0,1,0-2.68,5.25l2.78,2.78a1,1,0,0,0,.71.29,1,1,0,0,0,.7-.29A1,1,0,0,0,19.1,17.69ZM6.59,11.08a4.5,4.5,0,1,1,4.5,4.5A4.5,4.5,0,0,1,6.59,11.08Z"
+                          />
+                        </svg>
+                      </div>
+                      Introduction
+                    </a>
+                  </li>
+                  <li class="accordion__list__item">
+                    <a
+                      href=""
+                      class="collapsable"
+                      data-toggle="collapse"
+                      data-target="#cl1"
+                      data-animation="slide-vertical"
+                    >
+                      <div class="accordion__icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            class="fill"
+                            d="M19.1,17.69l-2.77-2.78a6.42,6.42,0,0,0,1.26-3.83,6.52,6.52,0,1,0-2.68,5.25l2.78,2.78a1,1,0,0,0,.71.29,1,1,0,0,0,.7-.29A1,1,0,0,0,19.1,17.69ZM6.59,11.08a4.5,4.5,0,1,1,4.5,4.5A4.5,4.5,0,0,1,6.59,11.08Z"
+                          />
+                        </svg>
+                      </div>
+                      Components
+                    </a>
+                    <ul class="accordion__list__sub-list collapse" id="cl1">
+                      <li class="accordion__list__sub-list__item">
+                        <a
+                          href=""
+                          class="collapsable"
+                          data-toggle="collapse"
+                          data-target="#cl2"
+                          >Buttons</a
+                        >
+                        <ul class="accordion__list__sub-list collapse" id="cl2">
+                          <li class="accordion__list__sub-list__item">
+                            <a href="" class="active">Normal</a>
+                          </li>
+                          <li class="accordion__list__sub-list__item">
+                            <a href="">Outlined</a>
+                          </li>
+                          <li class="accordion__list__sub-list__item">
+                            <a href="">Inlined</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="accordion__list__sub-list__item">
+                        <a href="">Forms</a>
+                      </li>
+                      <li class="accordion__list__sub-list__item">
+                        <a href="">Lists</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="accordion__list__item">
+                    <a href="">
+                      <div class="accordion__icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            class="fill"
+                            d="M19.1,17.69l-2.77-2.78a6.42,6.42,0,0,0,1.26-3.83,6.52,6.52,0,1,0-2.68,5.25l2.78,2.78a1,1,0,0,0,.71.29,1,1,0,0,0,.7-.29A1,1,0,0,0,19.1,17.69ZM6.59,11.08a4.5,4.5,0,1,1,4.5,4.5A4.5,4.5,0,0,1,6.59,11.08Z"
+                          />
+                        </svg>
+                      </div>
+                      Case Studies
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </aside>
             <section id="content-section">
               <div class="container">
                 <div class="row">
@@ -368,6 +455,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/jquery.browser.min.js"></script>
+    <script src="assets/js/collapsable.js"></script>
     <script src="assets/js/tab.js"></script>
     <script src="assets/js/switch.js"></script>
     <script src="assets/js/button.js"></script>

@@ -51,6 +51,10 @@ $header-height: 64px;
   border-right: 1px solid $black-divider;
 }
 
+#sidebar-nav__navbar {
+  margin: 2rem;
+}
+
 #main {
   margin: 0;
   max-width: 100%;

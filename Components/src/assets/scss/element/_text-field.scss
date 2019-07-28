@@ -100,6 +100,10 @@
       }
     }
 
+    .text-field__hints {
+      padding: 0 map-get($spaces, "x10");
+    }
+
     .text-field__wrapper {
       &:after {
         @include rtlStyle(
@@ -159,154 +163,37 @@
         );
       }
     }
-  }
 
-  &:not(.rounded).iconed {
-    &.iconed--leading {
-      .text-field__input {
-        @include rtlStyle(
-          (
-            padding-right: map-get($spaces, "x20")
-          )
-        );
-        @include ltrStyle(
-          (
-            padding-left: map-get($spaces, "x20")
-          )
-        );
+    &:not(.rounded) {
+      &.iconed--leading {
+        .text-field__input {
+          @include rtlStyle(
+            (
+              padding-right: map-get($spaces, "x20")
+            )
+          );
+          @include ltrStyle(
+            (
+              padding-left: map-get($spaces, "x20")
+            )
+          );
+        }
       }
-    }
 
-    &.iconed--trailing {
-      .text-field__input {
-        @include rtlStyle(
-          (
-            padding-left: map-get($spaces, "x20")
-          )
-        );
-        @include ltrStyle(
-          (
-            padding-right: map-get($spaces, "x20")
-          )
-        );
+      &.iconed--trailing {
+        .text-field__input {
+          @include rtlStyle(
+            (
+              padding-left: map-get($spaces, "x20")
+            )
+          );
+          @include ltrStyle(
+            (
+              padding-right: map-get($spaces, "x20")
+            )
+          );
+        }
       }
-    }
-  }
-
-  .text-field__wrapper {
-    &:after {
-      @include rtlStyle(
-        (
-          border-radius: #{map-get($spaces, "x2")} 0rem 0rem #{map-get(
-              $spaces,
-              "x2"
-            )},
-          border-left: 2px solid
-        )
-      );
-      @include ltrStyle(
-        (
-          border-radius: 0 #{map-get($spaces, "x2")} #{map-get($spaces, "x2")} 0,
-          border-right: 2px solid
-        )
-      );
-    }
-
-    &:before {
-      @include rtlStyle(
-        (
-          border-radius: 0rem #{map-get($spaces, "x2")} #{map-get(
-              $spaces,
-              "x2"
-            )} 0rem,
-          border-right: 2px solid
-        )
-      );
-      @include ltrStyle(
-        (
-          border-radius: #{map-get($spaces, "x2")} 0 0 #{map-get($spaces, "x2")},
-          border-left: 2px solid
-        )
-      );
-    }
-  }
-
-  .text-field__hints__input-length-limit {
-    @include rtlStyle(
-      (
-        text-align: left
-      )
-    );
-    @include ltrStyle(
-      (
-        text-align: right
-      )
-    );
-  }
-
-  .text-field__hints__hint-text {
-    @include rtlStyle(
-      (
-        text-align: right
-      )
-    );
-    @include ltrStyle(
-      (
-        text-align: left
-      )
-    );
-  }
-
-  .text-field__icons {
-    .text-field__icons__leading,
-    .text-field__icons__trailing {
-      & > * + * {
-        @include rtlStyle(
-          (
-            margin-right: #{map-get($spaces, "x4")}
-          )
-        );
-        @include ltrStyle(
-          (
-            margin-left: #{map-get($spaces, "x4")},
-            margin-right: 0
-          )
-        );
-      }
-    }
-
-    .text-field__icons__leading {
-      @include rtlStyle(
-        (
-          margin-left: auto
-        )
-      );
-      @include ltrStyle(
-        (
-          margin-left: 0,
-          margin-right: auto
-        )
-      );
-    }
-
-    .text-field__icons__trailing {
-      @include rtlStyle(
-        (
-          margin-right: auto
-        )
-      );
-      @include ltrStyle(
-        (
-          margin-right: 0,
-          margin-left: auto
-        )
-      );
-    }
-  }
-
-  &:not(.error):hover {
-    .text-field__input:not(:focus) {
-      border-color: $black-48;
     }
   }
 
@@ -330,6 +217,12 @@
         }
       }
     }
+
+    &:hover {
+      .text-field__input:not(:focus) {
+        border-color: $black-48;
+      }
+    }
   }
 
   &.error {
@@ -347,12 +240,6 @@
 
     .text-field__hints__hint-text {
       color: $danger-color;
-    }
-  }
-
-  &.rounded {
-    .text-field__hints {
-      padding: 0 map-get($spaces, "x10");
     }
   }
 
@@ -488,11 +375,41 @@
 
   &:after {
     width: 100%;
+
+    @include rtlStyle(
+      (
+        border-radius: #{map-get($spaces, "x2")} 0rem 0rem #{map-get(
+            $spaces,
+            "x2"
+          )},
+        border-left: 2px solid
+      )
+    );
+    @include ltrStyle(
+      (
+        border-radius: 0 #{map-get($spaces, "x2")} #{map-get($spaces, "x2")} 0,
+        border-right: 2px solid
+      )
+    );
   }
 
   &:before {
     width: map-get($spaces, "x6");
     min-width: map-get($spaces, "x6");
+
+    @include rtlStyle(
+      (
+        border-radius: 0rem #{map-get($spaces, "x2")} #{map-get($spaces, "x2")}
+          0rem,
+        border-right: 2px solid
+      )
+    );
+    @include ltrStyle(
+      (
+        border-radius: #{map-get($spaces, "x2")} 0 0 #{map-get($spaces, "x2")},
+        border-left: 2px solid
+      )
+    );
   }
 }
 
@@ -590,6 +507,48 @@
     .fill {
       fill: $black-hint;
     }
+
+    & > * + * {
+      @include rtlStyle(
+        (
+          margin-right: #{map-get($spaces, "x4")}
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: #{map-get($spaces, "x4")},
+          margin-right: 0
+        )
+      );
+    }
+  }
+
+  .text-field__icons__leading {
+    @include rtlStyle(
+      (
+        margin-left: auto
+      )
+    );
+    @include ltrStyle(
+      (
+        margin-left: 0,
+        margin-right: auto
+      )
+    );
+  }
+
+  .text-field__icons__trailing {
+    @include rtlStyle(
+      (
+        margin-right: auto
+      )
+    );
+    @include ltrStyle(
+      (
+        margin-right: 0,
+        margin-left: auto
+      )
+    );
   }
 
   .text-field__icon {
@@ -611,8 +570,30 @@
 .text-field__hints__hint-text {
   width: calc(100% - #{map-get($spaces, "x32")});
   transition: color 150ms ease;
+
+  @include rtlStyle(
+    (
+      text-align: right
+    )
+  );
+  @include ltrStyle(
+    (
+      text-align: left
+    )
+  );
 }
 
 .text-field__hints__input-length-limit {
   width: map-get($spaces, "x32");
+
+  @include rtlStyle(
+    (
+      text-align: left
+    )
+  );
+  @include ltrStyle(
+    (
+      text-align: right
+    )
+  );
 }
