@@ -4,6 +4,37 @@
   overflow-x: auto;
   overflow-y: hidden;
 
+  &.small {
+    .tab-list__tab {
+      min-width: 6rem;
+    }
+
+    .tab-list__tab-text {
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+    .tab-list__tab__content {
+      & > .tab-list__tab-icon:not(:only-child) {
+        @extend .icon-18;
+      }
+    }
+
+    .tab-list__tab__content {
+      & > * + * {
+        @include rtlStyle(
+          (
+            "margin-right": "0.25rem"
+          )
+        );
+        @include ltrStyle(
+          (
+            "margin-left": "0.25rem"
+          )
+        );
+      }
+    }
+  }
+
   &.stable {
     .tab-list__tab {
       position: relative;
