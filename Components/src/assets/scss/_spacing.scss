@@ -18,12 +18,12 @@
   margin-left: auto !important;
 }
 
-.margin-rl-auto {
+.margin-horizontal-auto {
   margin-right: auto !important;
   margin-left: auto !important;
 }
 
-.margin-tb-auto {
+.margin-vertical-auto {
   margin-top: auto !important;
   margin-bottom: auto !important;
 }
@@ -672,12 +672,12 @@
       margin-left: auto !important;
     }
 
-    .margin-rl-#{$key}-auto {
+    .margin-horizontal-#{$key}-auto {
       margin-right: auto !important;
       margin-left: auto !important;
     }
 
-    .margin-tb-#{$key}-auto {
+    .margin-vertical-#{$key}-auto {
       margin-top: auto !important;
       margin-bottom: auto !important;
     }

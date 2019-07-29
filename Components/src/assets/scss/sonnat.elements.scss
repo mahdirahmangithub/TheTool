@@ -1,11 +1,11 @@
 @import "mixin/direction";
 
 @import "variable/breakpoint", "variable/color", "variable/content",
-  "variable/spacing";
+  "variable/spacing", "variable/zindex";
 
 @import "root", "utility", "content", "visibility", "form-controls", "imagery",
   "collapsable";
 
 @import "element/divider", "element/radio", "element/checkbox", "element/switch",
   "element/title-row", "element/section-row", "element/tab", "element/button",
-  "element/text-field", "element/list", "element/accordion";
+  "element/text-field", "element/list", "element/accordion", "element/tooltip";

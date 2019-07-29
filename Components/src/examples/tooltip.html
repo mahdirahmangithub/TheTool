@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../assets/css/font.css" />
+    <link rel="stylesheet" href="../assets/css/sonnat.grid.css" />
+    <link rel="stylesheet" href="../assets/css/sonnat.elements.css" />
+    <title>Tooltip</title>
+  </head>
+  <body>
+    <div id="x" class="root">
+      <div id="main-wrapper" class="base-wrapper">
+        <header id="header"></header>
+        <main id="main">
+          <section class="normal-view">
+            <div class="container">
+              <div class="display-flex align-items-center">
+                <div
+                  class="margin-horizontal-auto margin-top-6"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  data-has-tail="true"
+                  data-trigger-on="click"
+                  data-title="This is a non-html tooltip!"
+                >
+                  Click (has tail)
+                </div>
+                <div
+                  class="margin-horizontal-auto margin-top-6"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  data-has-tail="true"
+                  data-trigger-on="hover"
+                  data-title="This is a non-html tooltip!"
+                >
+                  Hover (has tail)
+                </div>
+                <div
+                  class="margin-horizontal-auto margin-top-6"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  data-has-tail="false"
+                  data-trigger-on="hover"
+                  data-title="This is a non-html tooltip!"
+                >
+                  Hover (hasn't tail)
+                </div>
+                <div
+                  class="margin-horizontal-auto margin-top-6"
+                  id="manual"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  data-has-tail="true"
+                  data-trigger-on="manual"
+                  data-title="This is a non-html tooltip!"
+                >
+                  Manual (has tail)
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/tooltip.js"></script>
+  </body>
+</html>
