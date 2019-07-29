@@ -21,9 +21,12 @@ jQuery(function($) {
       }
     });
 
-    this.clipboard.on("success", function() {});
-
-    this.clipboard.on("error", function() {});
+    this.clipboard.on("success", function() {
+      _this.copyButton.tooltip({ open: true });
+      setTimeout(function() {
+        _this.copyButton.tooltip({ open: false });
+      }, 1000);
+    });
 
     this.tabs.on("click", function() {
       if (!$(this).hasClass("active")) {

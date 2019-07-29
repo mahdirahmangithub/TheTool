@@ -112,9 +112,9 @@ jQuery(function($) {
       if (_this.is('[data-toggle="tooltip"]')) {
         switch (_settings.triggerOn) {
           case "manual":
-            if (!!_settings.open) {
+            if (_settings.open !== undefined) {
               if (_settings.open === true) {
-                _hideTooltip();
+                if (_this.attr("data-tooltip-id")) _hideTooltip();
                 _showTooltip();
               } else if (_settings.open === false) _hideTooltip();
               else if (_settings.open === "toggle") {
