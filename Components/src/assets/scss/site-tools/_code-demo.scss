@@ -2,9 +2,13 @@
   width: 100%;
   margin-top: 1rem;
   position: relative;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+  overflow: hidden;
 
   &.dark-theme {
     .code-demo__content {
+      border-top: 1px solid $white;
       background-color: hsla(222, 11%, 18%, 1);
     }
   }
@@ -50,8 +54,9 @@
   align-items: center;
   height: 360px;
   position: relative;
-  background-color: $black-2;
   z-index: 3;
+  background-color: $white;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
   transition: background-color 360ms ease;
 }
 
