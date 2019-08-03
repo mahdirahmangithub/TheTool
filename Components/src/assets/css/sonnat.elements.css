@@ -831,8 +831,8 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   align-self: stretch;
 }
 .divider.vertical.padded {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .divider.vertical.spaced {
   margin-left: 1rem;
@@ -1989,6 +1989,7 @@ body[dir=ltr] .text-field__wrapper:before, body:not([dir=ltr]):not([dir=rtl]) .t
   border: none;
   outline: none;
   width: 100%;
+  margin-top: 0.375rem;
   height: 2.5rem;
   border-radius: 0.25rem;
   border: 1px solid rgba(0, 0, 0, 0.24);
