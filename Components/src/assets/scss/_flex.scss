@@ -207,3 +207,142 @@
 .flex-order-last {
   order: 13;
 }
+
+@each $key, $val in $breakpoints {
+  @media (min-width: map-get($breakpoints, $key)) {
+    %flex-#{$key}-row,
+    .flex-#{$key}-row {
+      flex-direction: row !important;
+    }
+
+    %flex-#{$key}-row-reverse,
+    .flex-#{$key}-row-reverse {
+      flex-direction: row-reverse !important;
+    }
+
+    %flex-#{$key}-column,
+    .flex-#{$key}-column {
+      flex-direction: column !important;
+    }
+
+    %flex-#{$key}-column-reverse,
+    .flex-#{$key}-column-reverse {
+      flex-direction: column-reverse !important;
+    }
+
+    %justify-content-#{$key}-start,
+    .justify-content-#{$key}-start {
+      justify-content: flex-start !important;
+    }
+
+    %justify-content-#{$key}-end,
+    .justify-content-#{$key}-end {
+      justify-content: flex-end !important;
+    }
+
+    %justify-content-#{$key}-center,
+    .justify-content-#{$key}-center {
+      justify-content: center !important;
+    }
+
+    %justify-content-#{$key}-between,
+    .justify-content-#{$key}-between {
+      justify-content: space-between !important;
+    }
+
+    %justify-content-#{$key}-around,
+    .justify-content-#{$key}-around {
+      justify-content: space-around !important;
+    }
+
+    %align-items-#{$key}-start,
+    .align-items-#{$key}-start {
+      align-items: flex-start !important;
+    }
+
+    %align-items-#{$key}-end,
+    .align-items-#{$key}-end {
+      align-items: flex-end !important;
+    }
+
+    %align-items-#{$key}-center,
+    .align-items-#{$key}-center {
+      align-items: center !important;
+    }
+
+    %align-items-#{$key}-baseline,
+    .align-items-#{$key}-baseline {
+      align-items: baseline !important;
+    }
+
+    %align-items-#{$key}-stretch,
+    .align-items-#{$key}-stretch {
+      align-items: stretch !important;
+    }
+
+    %align-self-#{$key}-start,
+    .align-self-#{$key}-start {
+      align-self: flex-start !important;
+    }
+
+    %align-self-#{$key}-end,
+    .align-self-#{$key}-end {
+      align-self: flex-end !important;
+    }
+
+    %align-self-#{$key}-center,
+    .align-self-#{$key}-center {
+      align-self: center !important;
+    }
+
+    %align-self-#{$key}-baseline,
+    .align-self-#{$key}-baseline {
+      align-self: baseline !important;
+    }
+
+    %align-self-#{$key}-stretch,
+    .align-self-#{$key}-stretch {
+      align-self: stretch !important;
+    }
+
+    %flex-#{$key}-fill,
+    .flex-#{$key}-fill {
+      flex: 1 1 auto !important;
+    }
+
+    %flex-grow-#{$key}-1,
+    .flex-grow-#{$key}-1 {
+      flex-grow: 1 !important;
+    }
+
+    %flex-grow-#{$key}-0,
+    .flex-grow-#{$key}-0 {
+      flex-grow: 0 !important;
+    }
+
+    %flex-shrink-#{$key}-1,
+    .flex-shrink-#{$key}-1 {
+      flex-shrink: 1 !important;
+    }
+
+    %flex-shrink-#{$key}-0,
+    .flex-shrink-#{$key}-0 {
+      flex-shrink: 0 !important;
+    }
+
+    %flex-#{$key}-wrap,
+    .flex-#{$key}-wrap {
+      flex-wrap: wrap !important;
+    }
+
+    %flex-#{$key}-nowrap,
+    .flex-#{$key}-nowrap {
+      flex-wrap: nowrap !important;
+    }
+
+    %flex-#{$key}-wrap-reverse,
+    .flex-#{$key}-wrap-reverse {
+      flex-wrap: wrap-reverse !important;
+    }
+  }
+}

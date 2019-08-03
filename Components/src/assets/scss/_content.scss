@@ -55,6 +55,14 @@
   }
 }
 
+%letter-spaced {
+  @include ltrStyle(
+    (
+      letter-spacing: 0.048rem
+    )
+  );
+}
+
 %text-justify,
 .text-justify {
   text-align: justify;
