@@ -26,11 +26,13 @@
   & > .behavior__figure.side-label:only-child {
     .behavior__figure__img-container {
       @extend .column-lg-10, .order-1, .order-lg-2;
+      padding-right: 0;
     }
 
     .behavior__figure__label {
       @extend .column-lg-2, .order-2, .order-lg-1;
       justify-content: flex-start;
+      padding-left: 0;
     }
 
     .behavior__figure__caption {
@@ -124,6 +126,7 @@
     @extend %row;
     flex-direction: row;
     align-items: center;
+    margin: 0;
 
     .behavior__figure__caption {
       margin-top: map-get($spaces, "x4");
