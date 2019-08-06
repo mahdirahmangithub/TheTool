@@ -72,11 +72,12 @@
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 1rem;
-  background-color: $black-12;
+  background-color: transparent;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 
   @include rtlStyle(
     (
@@ -113,7 +114,8 @@
 
 .title-row__title {
   @extend %h3;
-  margin-top: 0.25rem;
+
+  margin-bottom: 0.5rem;
 
   @include ltrStyle(
     (
@@ -125,12 +127,12 @@
     @extend %text-md;
     color: $black-primary;
     font-weight: 500;
+    margin-bottom: 0.25rem;
   }
 
   &--subtitle {
     @extend %text-lg;
     color: $black-secondary;
-    margin-top: 0.5rem;
   }
 }
 

@@ -1,8 +1,7 @@
 .resizable-view-row {
   display: flex;
   direction: ltr;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .resizable-view {
@@ -16,10 +15,14 @@
   border-radius: 0rem 0.5rem 0.5rem 0rem;
   border-radius: 4px;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: $black-4;
 
   &.typography-sheet {
     background-color: #fdff7a;
+
+    .resizable-view__content {
+      flex-direction: column;
+    }
 
     .resizable-view__draggable-handle {
       background-color: #fdff8f;
@@ -164,14 +167,14 @@
   transition: background-color 360ms ease, box-shadow 360ms ease;
 
   &:hover:after {
-    background-color: rgba(0, 0, 0, 0.32);
-    box-shadow: 0 2 * $dot-size 0 0 rgba(0, 0, 0, 0.32),
-      0 -2 * $dot-size 0 0 rgba(0, 0, 0, 0.32);
+    background-color: $black-32;
+    box-shadow: 0 2 * $dot-size 0 0 $black-32, 0 -2 * $dot-size 0 0 $black-32;
   }
 
   &.active:after {
-    background-color: #ed3248;
-    box-shadow: 0 2 * $dot-size 0 0 #ed3248, 0 -2 * $dot-size 0 0 #ed3248;
+    background-color: $brand-primary-color;
+    box-shadow: 0 2 * $dot-size 0 0 $brand-primary-color,
+      0 -2 * $dot-size 0 0 $brand-primary-color;
 
     .resizable-view.typography-sheet & {
       background-color: #ffae00;
@@ -188,9 +191,8 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.24);
-    box-shadow: 0 2 * $dot-size 0 0 rgba(0, 0, 0, 0.24),
-      0 -2 * $dot-size 0 0 rgba(0, 0, 0, 0.24);
+    background-color: $black-24;
+    box-shadow: 0 2 * $dot-size 0 0 $black-24, 0 -2 * $dot-size 0 0 $black-24;
     transition: background-color 360ms ease, box-shadow 360ms ease;
   }
 }
@@ -202,7 +204,6 @@
   min-height: 10rem;
   padding: 1rem 2.5625rem 1rem 1rem;
   display: flex;
-  flex-flow: column;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;

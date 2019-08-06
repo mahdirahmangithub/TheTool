@@ -122,7 +122,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: border-color 360ms ease 0.05s, background-color 360ms ease 0.05s;
+  transition: border-color 90ms cubic-bezier(0, 0, 0.2, 1),
+    background-color 90ms cubic-bezier(0, 0, 0.2, 1);
 }
 
 %switch-control__rippler {

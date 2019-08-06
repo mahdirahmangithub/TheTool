@@ -5,10 +5,6 @@
   &.minimal {
     margin-top: 0;
 
-    & > *:not(input):not(.text-field__icons) {
-      display: none;
-    }
-
     & > input,
     & > .text-field__input {
       background-color: transparent;

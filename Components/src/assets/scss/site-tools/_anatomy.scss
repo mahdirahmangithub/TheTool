@@ -1,0 +1,78 @@
+.anatomy-row {
+  @extend %row;
+}
+
+.anatomy {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.anatomy__figure__heading {
+  @extend %base-text;
+
+  line-height: 1.5;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.anatomy__figure {
+  margin: 0;
+}
+
+.anatomy__figure__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 360px;
+  border-radius: 4px;
+  background-color: $black-4;
+
+  &:hover {
+    & > .anatomy__figure__image--spec {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  & > img {
+    transform: scale(1.5);
+  }
+
+  & > .anatomy__figure__image--spec {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 360ms ease, visibility 360ms ease;
+  }
+}
+
+.anatomy__spec-tip {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  pointer-events: none;
+
+  & > .anatomy__spec-tip__icon {
+    @extend %icon-24;
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  & > span {
+    @extend %base-text;
+    font-size: 12px;
+    margin-left: 8px;
+    color: $black-secondary;
+    position: relative;
+    bottom: 1px;
+  }
+}

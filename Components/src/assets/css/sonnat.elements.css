@@ -621,7 +621,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: border-color 360ms ease 0.05s, background-color 360ms ease 0.05s;
+  transition: border-color 90ms cubic-bezier(0, 0, 0.2, 1), background-color 90ms cubic-bezier(0, 0, 0.2, 1);
 }
 
 .switch-toggle__rippler, .checkbox-control__rippler, .radio-control__rippler {
@@ -779,7 +779,6 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   position: relative;
   height: 0;
   overflow: hidden;
-  transition: height 360ms ease;
 }
 
 .divider {
@@ -883,17 +882,15 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 }
 .checkbox-control.checked.disabled .checkbox-control__input:checked + .checkbox-control__button {
   background-color: rgba(0, 0, 0, 0.12);
-  transition: border-color 360ms ease, background-color 360ms ease;
 }
 
 .checkbox-control__input:checked + .checkbox-control__button {
   border-color: #a62626;
   background-color: #a62626;
-  transition: border-color 360ms ease, background-color 360ms ease;
 }
 .checkbox-control__input:checked ~ .checkbox-control__check-icon polyline {
   opacity: 1;
-  animation: check 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.1s forwards;
+  animation: check 200ms cubic-bezier(0.65, 0, 0.45, 1) 48ms forwards;
 }
 
 .checkbox-control__button {
@@ -923,7 +920,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   stroke-width: 2;
   stroke-dasharray: 48;
   stroke-dashoffset: 48;
-  animation: uncheck 0.2s ease-out forwards;
+  animation: uncheck 200ms ease-out forwards;
 }
 
 @keyframes check {
@@ -1174,11 +1171,12 @@ body[dir=ltr] .title-row.spaced-thumbnail .title-row__thumbnail, body:not([dir=l
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 1rem;
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: transparent;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 body[dir=rtl] .title-row__thumbnail {
   margin-left: 1rem;
@@ -1208,7 +1206,7 @@ body[dir=ltr] .title-row__thumbnail, body:not([dir=ltr]):not([dir=rtl]) .title-r
 }
 
 .title-row__title {
-  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 body[dir=ltr] .title-row__title, body:not([dir=ltr]):not([dir=rtl]) .title-row__title {
   font-weight: bold;
@@ -1216,10 +1214,10 @@ body[dir=ltr] .title-row__title, body:not([dir=ltr]):not([dir=rtl]) .title-row__
 .title-row__title--pretitle {
   color: rgba(0, 0, 0, 0.87);
   font-weight: 500;
+  margin-bottom: 0.25rem;
 }
 .title-row__title--subtitle {
   color: rgba(0, 0, 0, 0.56);
-  margin-top: 0.5rem;
 }
 
 .title-row__tags {
@@ -1740,9 +1738,6 @@ body[dir=ltr] .button.small > .button__icon, body:not([dir=ltr]):not([dir=rtl]) 
 .text-field.minimal {
   margin-top: 0;
 }
-.text-field.minimal > *:not(input):not(.text-field__icons) {
-  display: none;
-}
 .text-field.minimal > input, .text-field.minimal > .text-field__input {
   background-color: transparent;
   border: none;
@@ -2210,6 +2205,10 @@ body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-li
   min-height: 2.5rem;
   color: rgba(0, 0, 0, 0.56);
   padding: 0.375rem 0;
+  transition: color 360ms ease;
+}
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a:hover, .accordion__list .accordion__list__item > a:hover {
+  color: rgba(0, 0, 0, 0.87);
 }
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.active, .accordion__list .accordion__list__item > a.active {
   color: rgba(0, 0, 0, 0.87);

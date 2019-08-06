@@ -1,5 +1,5 @@
 .interactive-demo {
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   overflow: hidden;
 
@@ -87,7 +87,7 @@
   overflow: hidden;
   align-items: center;
   background-color: $white;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid $black-12;
   min-height: 300px;
   position: relative;
   z-index: 3;
