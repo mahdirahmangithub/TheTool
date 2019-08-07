@@ -74,7 +74,7 @@ ul {
   Also add minus-index for the image and a higher value for the parent,
   In case of image overflow-bug.
 */
-.safari-transition-radius-overflow-combination-fix, .button .button__rippler {
+.safari-transition-radius-overflow-combination-fix, .fab__rippler, .button .button__rippler {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -165,7 +165,7 @@ h1.responsive-typography {
   transition: font-size 200ms ease, line-height 200ms ease;
 }
 
-.text-field__label-text, .text-tiny, .text-xxs, .text-xs,
+.text-field__label-text, .fab__label, .text-tiny, .text-xxs, .text-xs,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .text-field__hints, .text-sm,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
@@ -183,7 +183,7 @@ h1.responsive-typography {
   text-size-adjust: 100%;
   color: rgba(0, 0, 0, 0.87);
 }
-body[dir=rtl] .text-field__label-text, body[dir=rtl] .text-tiny, body[dir=rtl] .text-xxs, body[dir=rtl] .text-xs,
+body[dir=rtl] .text-field__label-text, body[dir=rtl] .fab__label, body[dir=rtl] .text-tiny, body[dir=rtl] .text-xxs, body[dir=rtl] .text-xs,
 body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a,
 body[dir=rtl] .text-field__hints, body[dir=rtl] .text-sm,
@@ -198,7 +198,7 @@ body[dir=rtl] .title-row__title--subtitle, body[dir=rtl] .text-xlg,
 body[dir=rtl] .section-row > .section-row__title ~ .section-row__title {
   text-align: right;
 }
-body[dir=ltr] .text-field__label-text, body[dir=ltr] .text-tiny, body[dir=ltr] .text-xxs, body[dir=ltr] .text-xs,
+body[dir=ltr] .text-field__label-text, body[dir=ltr] .fab__label, body[dir=ltr] .text-tiny, body[dir=ltr] .text-xxs, body[dir=ltr] .text-xs,
 body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a,
 body[dir=ltr] .text-field__hints, body[dir=ltr] .text-sm,
@@ -210,7 +210,7 @@ body[dir=ltr] .text-field__description, body[dir=ltr] .text-md,
 body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .text-lg,
 body[dir=ltr] .section-row__paragraph,
 body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .text-xlg,
-body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .text-tiny, body:not([dir=ltr]):not([dir=rtl]) .text-xxs, body:not([dir=ltr]):not([dir=rtl]) .text-xs,
+body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .fab__label, body:not([dir=ltr]):not([dir=rtl]) .text-tiny, body:not([dir=ltr]):not([dir=rtl]) .text-xxs, body:not([dir=ltr]):not([dir=rtl]) .text-xs,
 body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 body:not([dir=ltr]):not([dir=rtl]) .text-field__hints, body:not([dir=ltr]):not([dir=rtl]) .text-sm,
 body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
@@ -224,7 +224,7 @@ body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle, body:not([dir=lt
 body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title {
   text-align: left;
 }
-.responsive-typography.text-field__label-text, .responsive-typography.text-tiny, .responsive-typography.text-xxs, .responsive-typography.text-xs,
+.responsive-typography.text-field__label-text, .responsive-typography.fab__label, .responsive-typography.text-tiny, .responsive-typography.text-xxs, .responsive-typography.text-xs,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.responsive-typography,
 .responsive-typography.text-field__hints, .responsive-typography.text-sm,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.responsive-typography,
@@ -660,8 +660,10 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
     background-color: rgba(166, 38, 38, 0.04);
   }
 }
-.icon-48, .icon-32, .icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child, .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child),
-.accordion__icon, .icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child), .icon-16, .button.small .button__icon {
+.icon-48, .icon-32, .icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child,
+.fab__icon, .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child),
+.accordion__icon,
+.fab.small:not(.labeled) .fab__icon, .icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child), .icon-16, .button.small .button__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -690,25 +692,29 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 }
 
 .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child),
-.accordion__icon {
+.accordion__icon,
+.fab.small:not(.labeled) .fab__icon {
   width: 20px;
   height: 20px;
   min-width: 20px;
   min-height: 20px;
 }
 .icon-20 > svg, .button .button__icon > svg, .tab-list__tab__content .tab-list__tab-icon:not(:only-child) > svg,
-.accordion__icon > svg {
+.accordion__icon > svg,
+.fab.small:not(.labeled) .fab__icon > svg {
   width: 100%;
   height: 100%;
 }
 
-.icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child {
+.icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child,
+.fab__icon {
   width: 24px;
   height: 24px;
   min-width: 24px;
   min-height: 24px;
 }
-.icon-24 > svg, .text-field__icons .text-field__icon > svg, .tab-list__tab__content .tab-list__tab-icon:only-child > svg {
+.icon-24 > svg, .text-field__icons .text-field__icon > svg, .tab-list__tab__content .tab-list__tab-icon:only-child > svg,
+.fab__icon > svg {
   width: 100%;
   height: 100%;
 }
@@ -1725,6 +1731,109 @@ body[dir=ltr] .button.small > .button__icon, body:not([dir=ltr]):not([dir=rtl]) 
   animation: button_ripple 0.4s linear;
 }
 @keyframes button_ripple {
+  100% {
+    transform: scale(4);
+    opacity: 0.04;
+  }
+}
+
+.fab {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 1rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a62626;
+  outline: none;
+  border: none;
+  box-shadow: 0 1px 32px 0 rgba(0, 0, 0, 0.08), 0 12px 16px 0 rgba(0, 0, 0, 0.12), 0 8px 12px -6px rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
+  transition: background-color 360ms ease, transform 360ms ease, border-radius 360ms ease, box-shadow 400ms ease;
+}
+.fab:hover, .fab:focus {
+  background-color: #be3737;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.08), 0 4px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 6px -1px rgba(0, 0, 0, 0.24);
+}
+.fab:active {
+  background-color: #9d1b1b;
+}
+.fab:not(.labeled) .fab__label {
+  display: none;
+}
+.fab.labeled {
+  min-width: 6rem;
+  width: auto;
+  height: 3rem;
+  padding: 0 1rem;
+  border-radius: 1.5rem;
+}
+body[dir=rtl] .fab.labeled .fab__icon {
+  margin-right: -0.25rem;
+}
+body[dir=ltr] .fab.labeled .fab__icon, body:not([dir=ltr]):not([dir=rtl]) .fab.labeled .fab__icon {
+  margin-left: -0.25rem;
+}
+.fab.medium:not(.labeled) {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.75rem;
+}
+.fab.small:not(.labeled) {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.625rem;
+}
+.fab__icon .fill {
+  fill: white;
+}
+.fab__icon > svg {
+  transition: fill 360ms ease;
+}
+body[dir=rtl] .fab__icon + .fab__label {
+  margin-right: 0.5rem;
+}
+body[dir=ltr] .fab__icon + .fab__label, body:not([dir=ltr]):not([dir=rtl]) .fab__icon + .fab__label {
+  margin-left: 0.5rem;
+}
+
+.fab__label {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.fab__rippler {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 0.25rem;
+  display: block;
+}
+
+.fab__rippler__ripple {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  transform: scale(0);
+  transform-origin: center;
+  pointer-events: none;
+  user-select: none;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.fab__ripple-animation {
+  animation: fab_ripple 0.4s linear;
+}
+@keyframes fab_ripple {
   100% {
     transform: scale(4);
     opacity: 0.04;
