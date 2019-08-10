@@ -165,7 +165,8 @@ h1.responsive-typography {
   transition: font-size 200ms ease, line-height 200ms ease;
 }
 
-.text-field__label-text, .fab__label, .text-tiny, .text-xxs, .text-xs,
+.chips,
+.chips .chips__text, .text-field__label-text, .fab__label, .text-tiny, .text-xxs, .text-xs,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .text-field__hints, .text-sm,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
@@ -183,7 +184,9 @@ h1.responsive-typography {
   text-size-adjust: 100%;
   color: rgba(0, 0, 0, 0.87);
 }
-body[dir=rtl] .text-field__label-text, body[dir=rtl] .fab__label, body[dir=rtl] .text-tiny, body[dir=rtl] .text-xxs, body[dir=rtl] .text-xs,
+body[dir=rtl] .chips,
+body[dir=rtl] .chips .chips__text,
+.chips body[dir=rtl] .chips__text, body[dir=rtl] .text-field__label-text, body[dir=rtl] .fab__label, body[dir=rtl] .text-tiny, body[dir=rtl] .text-xxs, body[dir=rtl] .text-xs,
 body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a,
 body[dir=rtl] .text-field__hints, body[dir=rtl] .text-sm,
@@ -198,7 +201,9 @@ body[dir=rtl] .title-row__title--subtitle, body[dir=rtl] .text-xlg,
 body[dir=rtl] .section-row > .section-row__title ~ .section-row__title {
   text-align: right;
 }
-body[dir=ltr] .text-field__label-text, body[dir=ltr] .fab__label, body[dir=ltr] .text-tiny, body[dir=ltr] .text-xxs, body[dir=ltr] .text-xs,
+body[dir=ltr] .chips,
+body[dir=ltr] .chips .chips__text,
+.chips body[dir=ltr] .chips__text, body[dir=ltr] .text-field__label-text, body[dir=ltr] .fab__label, body[dir=ltr] .text-tiny, body[dir=ltr] .text-xxs, body[dir=ltr] .text-xs,
 body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a,
 body[dir=ltr] .text-field__hints, body[dir=ltr] .text-sm,
@@ -210,7 +215,9 @@ body[dir=ltr] .text-field__description, body[dir=ltr] .text-md,
 body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .text-lg,
 body[dir=ltr] .section-row__paragraph,
 body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .text-xlg,
-body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .fab__label, body:not([dir=ltr]):not([dir=rtl]) .text-tiny, body:not([dir=ltr]):not([dir=rtl]) .text-xxs, body:not([dir=ltr]):not([dir=rtl]) .text-xs,
+body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .chips,
+body:not([dir=ltr]):not([dir=rtl]) .chips .chips__text,
+.chips body:not([dir=ltr]):not([dir=rtl]) .chips__text, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .fab__label, body:not([dir=ltr]):not([dir=rtl]) .text-tiny, body:not([dir=ltr]):not([dir=rtl]) .text-xxs, body:not([dir=ltr]):not([dir=rtl]) .text-xs,
 body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 body:not([dir=ltr]):not([dir=rtl]) .text-field__hints, body:not([dir=ltr]):not([dir=rtl]) .text-sm,
 body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
@@ -224,7 +231,8 @@ body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle, body:not([dir=lt
 body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title {
   text-align: left;
 }
-.responsive-typography.text-field__label-text, .responsive-typography.fab__label, .responsive-typography.text-tiny, .responsive-typography.text-xxs, .responsive-typography.text-xs,
+.responsive-typography.chips,
+.chips .responsive-typography.chips__text, .responsive-typography.text-field__label-text, .responsive-typography.fab__label, .responsive-typography.text-tiny, .responsive-typography.text-xxs, .responsive-typography.text-xs,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.responsive-typography,
 .responsive-typography.text-field__hints, .responsive-typography.text-sm,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.responsive-typography,
@@ -663,19 +671,25 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .icon-48, .icon-32, .icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child,
 .fab__icon, .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child),
 .accordion__icon,
-.fab.small:not(.labeled) .fab__icon, .icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child), .icon-16, .button.small .button__icon {
+.fab.small:not(.labeled) .fab__icon, .icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child), .icon-16, .button.small .button__icon,
+.chips.removable > .chips__remove > .chips__remove__icon,
+.chips.iconed > .chips__icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.icon-16, .button.small .button__icon {
+.icon-16, .button.small .button__icon,
+.chips.removable > .chips__remove > .chips__remove__icon,
+.chips.iconed > .chips__icon {
   width: 16px;
   height: 16px;
   min-width: 16px;
   min-height: 16px;
 }
-.icon-16 > svg, .button.small .button__icon > svg {
+.icon-16 > svg, .button.small .button__icon > svg,
+.chips.removable > .chips__remove > .chips__remove__icon > svg,
+.chips.iconed > .chips__icon > svg {
   width: 100%;
   height: 100%;
 }
@@ -2563,6 +2577,205 @@ body[dir=ltr] .accordion__icon, body:not([dir=ltr]):not([dir=rtl]) .accordion__i
   left: 0;
   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.12);
   z-index: -1;
+}
+
+.chips {
+  height: 2rem;
+  padding: 0 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  border-radius: 0.25rem;
+  background-color: rgba(0, 0, 0, 0.04);
+  vertical-align: middle;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  transition: color 360ms ease, background-color 360ms ease, border 360ms ease;
+}
+.chips,
+.chips .chips__text {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.56);
+}
+.chips .chips__text {
+  transition: color 360ms ease;
+}
+.chips.togglable:not(.primary).active {
+  background-color: #a62626;
+}
+.chips.togglable:not(.primary).active,
+.chips.togglable:not(.primary).active .chips__text {
+  color: white;
+}
+.chips.togglable:not(.primary).active.iconed > .chips__icon .fill {
+  fill: white;
+}
+.chips.togglable:not(.primary).active:hover, .chips.togglable:not(.primary).active:focus {
+  background-color: #be3737;
+}
+.chips.togglable:not(.primary).active:hover,
+.chips.togglable:not(.primary).active:hover .chips__text, .chips.togglable:not(.primary).active:focus,
+.chips.togglable:not(.primary).active:focus .chips__text {
+  color: white;
+}
+.chips.togglable:not(.primary).active:hover.iconed > .chips__icon .fill, .chips.togglable:not(.primary).active:focus.iconed > .chips__icon .fill {
+  fill: white;
+}
+.chips.primary {
+  background-color: #a62626;
+}
+.chips.primary:not(.removable) {
+  cursor: pointer;
+}
+.chips.primary:not(.removable):not(.outlined):hover, .chips.primary:not(.removable):not(.outlined):focus {
+  background-color: #be3737;
+}
+.chips.primary:not(.removable):not(.outlined):hover,
+.chips.primary:not(.removable):not(.outlined):hover .chips__text, .chips.primary:not(.removable):not(.outlined):focus,
+.chips.primary:not(.removable):not(.outlined):focus .chips__text {
+  color: white;
+}
+.chips.primary:not(.removable):not(.outlined):hover.iconed > .chips__icon .fill, .chips.primary:not(.removable):not(.outlined):focus.iconed > .chips__icon .fill {
+  fill: white;
+}
+.chips.primary:not(.removable).outlined:hover, .chips.primary:not(.removable).outlined:focus {
+  background-color: rgba(166, 38, 38, 0.12);
+}
+.chips.primary,
+.chips.primary .chips__text {
+  color: white;
+}
+.chips.primary.iconed > .chips__icon .fill {
+  fill: white;
+}
+.chips.primary.outlined {
+  background-color: rgba(166, 38, 38, 0.04);
+  border: 1px solid rgba(166, 38, 38, 0.56);
+}
+.chips.primary.outlined,
+.chips.primary.outlined .chips__text {
+  color: #a62626;
+}
+.chips.primary.outlined.iconed > .chips__icon .fill {
+  fill: #a62626;
+}
+.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon {
+  background-color: #be3737;
+}
+.chips.primary.outlined.removable > .chips__remove:hover, .chips.primary.outlined.removable > .chips__remove:focus {
+  background-color: transparent;
+}
+.chips.primary.outlined.removable > .chips__remove:hover > .chips__remove__icon, .chips.primary.outlined.removable > .chips__remove:focus > .chips__remove__icon {
+  background-color: #a62626;
+}
+.chips.primary.removable > .chips__remove > .chips__remove__icon {
+  background-color: rgba(0, 0, 0, 0.24);
+}
+.chips.primary.removable > .chips__remove:hover, .chips.primary.removable > .chips__remove:focus {
+  background-color: transparent;
+}
+.chips.primary.removable > .chips__remove:hover > .chips__remove__icon, .chips.primary.removable > .chips__remove:focus > .chips__remove__icon {
+  background-color: rgba(0, 0, 0, 0.48);
+}
+.chips.outlined {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.chips.outlined.togglable:not(.primary).active {
+  background-color: rgba(166, 38, 38, 0.04);
+  border: 1px solid rgba(166, 38, 38, 0.56);
+}
+.chips.outlined.togglable:not(.primary).active,
+.chips.outlined.togglable:not(.primary).active .chips__text {
+  color: #a62626;
+}
+.chips.outlined.togglable:not(.primary).active.iconed > .chips__icon .fill {
+  fill: #a62626;
+}
+.chips.outlined.togglable:not(.primary).active:hover, .chips.outlined.togglable:not(.primary).active:focus {
+  background-color: rgba(166, 38, 38, 0.12);
+}
+.chips.rounded {
+  border-radius: 1rem;
+}
+.chips.iconed {
+  min-width: 4rem;
+}
+body[dir=rtl] .chips.iconed > .chips__icon {
+  margin-right: -0.25rem;
+}
+body[dir=rtl] .chips.iconed > .chips__icon {
+  margin-left: 0.25rem;
+}
+body[dir=ltr] .chips.iconed > .chips__icon, body:not([dir=ltr]):not([dir=rtl]) .chips.iconed > .chips__icon {
+  margin-left: -0.25rem;
+}
+body[dir=ltr] .chips.iconed > .chips__icon, body:not([dir=ltr]):not([dir=rtl]) .chips.iconed > .chips__icon {
+  margin-right: 0.25rem;
+}
+.chips.iconed > .chips__icon .fill {
+  fill: rgba(0, 0, 0, 0.56);
+  transition: fill 360ms ease;
+}
+.chips:not(.removable):not(.primary) {
+  cursor: pointer;
+}
+.chips:not(.removable):not(.primary):hover, .chips:not(.removable):not(.primary):focus {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.chips:not(.removable):not(.primary):hover,
+.chips:not(.removable):not(.primary):hover .chips__text, .chips:not(.removable):not(.primary):focus,
+.chips:not(.removable):not(.primary):focus .chips__text {
+  color: rgba(0, 0, 0, 0.87);
+}
+.chips:not(.removable):not(.primary):hover > .chips__icon .fill, .chips:not(.removable):not(.primary):focus > .chips__icon .fill {
+  fill: rgba(0, 0, 0, 0.87);
+}
+.chips.removable {
+  pointer-events: none;
+  min-width: 4rem;
+}
+.chips.removable > .chips__remove {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0;
+  border: none;
+  min-width: auto;
+  height: 100%;
+  width: 2rem;
+  background-color: transparent;
+  z-index: 2;
+  pointer-events: auto;
+  display: flex;
+  justify-content: center;
+}
+.chips.removable > .chips__remove > .chips__remove__icon {
+  background-color: rgba(0, 0, 0, 0.56);
+  border-radius: 50%;
+  transition: background-color 360ms ease;
+}
+.chips.removable > .chips__remove > .chips__remove__icon .fill {
+  fill: white;
+}
+.chips.removable > .chips__remove:hover, .chips.removable > .chips__remove:focus {
+  background-color: transparent;
+}
+.chips.removable > .chips__remove:hover > .chips__remove__icon, .chips.removable > .chips__remove:focus > .chips__remove__icon {
+  background-color: rgba(0, 0, 0, 0.87);
+}
+.chips.removable > .chips__remove:active {
+  background-color: transparent;
+}
+body[dir=rtl] .chips.removable > .chips__remove {
+  margin-left: -0.75rem;
+}
+body[dir=ltr] .chips.removable > .chips__remove, body:not([dir=ltr]):not([dir=rtl]) .chips.removable > .chips__remove {
+  margin-right: -0.75rem;
 }
 
 /*# sourceMappingURL=sonnat.elements.css.map */

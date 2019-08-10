@@ -1,0 +1,297 @@
+.chips {
+  height: 2rem;
+  padding: 0 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  border-radius: 0.25rem;
+  background-color: $black-4;
+  vertical-align: middle;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  transition: color 360ms ease, background-color 360ms ease, border 360ms ease;
+
+  &,
+  .chips__text {
+    @extend %base-text;
+    font-size: 14px;
+    color: $black-secondary;
+  }
+
+  .chips__text {
+    transition: color 360ms ease;
+  }
+
+  &.togglable:not(.primary) {
+    &.active {
+      background-color: $brand-primary-color;
+
+      &,
+      .chips__text {
+        color: $white;
+      }
+
+      &.iconed {
+        & > .chips__icon {
+          .fill {
+            fill: $white;
+          }
+        }
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $brand-hover-color;
+
+        &,
+        .chips__text {
+          color: $white;
+        }
+
+        &.iconed {
+          & > .chips__icon {
+            .fill {
+              fill: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.primary {
+    background-color: $brand-primary-color;
+
+    &:not(.removable) {
+      cursor: pointer;
+
+      &:not(.outlined):hover,
+      &:not(.outlined):focus {
+        background-color: $brand-hover-color;
+
+        &,
+        .chips__text {
+          color: $white;
+        }
+
+        &.iconed {
+          & > .chips__icon {
+            .fill {
+              fill: $white;
+            }
+          }
+        }
+      }
+
+      &.outlined:hover,
+      &.outlined:focus {
+        background-color: $brand-color-12;
+      }
+    }
+
+    &,
+    .chips__text {
+      color: $white;
+    }
+
+    &.iconed {
+      & > .chips__icon {
+        .fill {
+          fill: $white;
+        }
+      }
+    }
+
+    &.outlined {
+      background-color: $brand-color-4;
+      border: 1px solid $brand-color-56;
+
+      &,
+      .chips__text {
+        color: $brand-primary-color;
+      }
+
+      &.iconed {
+        & > .chips__icon {
+          .fill {
+            fill: $brand-primary-color;
+          }
+        }
+      }
+
+      &.removable {
+        & > .chips__remove {
+          & > .chips__remove__icon {
+            background-color: $brand-hover-color;
+          }
+
+          &:hover,
+          &:focus {
+            background-color: transparent;
+
+            & > .chips__remove__icon {
+              background-color: $brand-primary-color;
+            }
+          }
+        }
+      }
+    }
+
+    &.removable {
+      & > .chips__remove {
+        & > .chips__remove__icon {
+          background-color: $black-24;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: transparent;
+
+          & > .chips__remove__icon {
+            background-color: $black-48;
+          }
+        }
+      }
+    }
+  }
+
+  &.outlined {
+    background-color: transparent;
+    border: 1px solid $black-divider;
+
+    &.togglable:not(.primary) {
+      &.active {
+        background-color: $brand-color-4;
+        border: 1px solid $brand-color-56;
+
+        &,
+        .chips__text {
+          color: $brand-primary-color;
+        }
+
+        &.iconed {
+          & > .chips__icon {
+            .fill {
+              fill: $brand-primary-color;
+            }
+          }
+        }
+
+        &:hover,
+        &:focus {
+          background-color: $brand-color-12;
+        }
+      }
+    }
+  }
+
+  &.rounded {
+    border-radius: 1rem;
+  }
+
+  &.iconed {
+    min-width: 4rem;
+
+    & > .chips__icon {
+      @extend %icon-16;
+      @include rtlStyle(
+        (
+          margin-right: -0.25rem,
+          margin-left: 0.25rem
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: -0.25rem,
+          margin-right: 0.25rem
+        )
+      );
+
+      .fill {
+        fill: $black-secondary;
+        transition: fill 360ms ease;
+      }
+    }
+  }
+
+  &:not(.removable):not(.primary) {
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $black-12;
+
+      &,
+      .chips__text {
+        color: $black-primary;
+      }
+
+      & > .chips__icon {
+        .fill {
+          fill: $black-primary;
+        }
+      }
+    }
+  }
+
+  &.removable {
+    pointer-events: none;
+    min-width: 4rem;
+
+    & > .chips__remove {
+      padding: 0;
+      margin: 0;
+      outline: none;
+      cursor: pointer;
+      border-radius: 0;
+      border: none;
+      min-width: auto;
+      height: 100%;
+      width: 2rem;
+      background-color: transparent;
+      z-index: 2;
+      pointer-events: auto;
+      display: flex;
+      justify-content: center;
+
+      & > .chips__remove__icon {
+        @extend %icon-16;
+
+        background-color: $black-secondary;
+        border-radius: 50%;
+        transition: background-color 360ms ease;
+
+        .fill {
+          fill: $white;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        background-color: transparent;
+
+        & > .chips__remove__icon {
+          background-color: $black-primary;
+        }
+      }
+
+      &:active {
+        background-color: transparent;
+      }
+
+      @include rtlStyle(
+        (
+          margin-left: -0.75rem
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-right: -0.75rem
+        )
+      );
+    }
+  }
+}
