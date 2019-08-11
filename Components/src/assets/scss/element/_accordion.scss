@@ -76,7 +76,7 @@
 
 %base-item {
   & > a {
-    @extend %text-sm;
+    @extend %body-text-sm;
 
     display: flex;
     align-items: center;
@@ -105,7 +105,7 @@
 }
 
 .accordion__heading {
-  @extend %text-lg-stable;
+  @extend %body-text-md-stable;
 
   min-height: 2.5rem;
   display: flex;
@@ -160,7 +160,7 @@
             min-height: 2.5rem;
 
             & > a {
-              @extend %text-xs;
+              @extend %caption-text-lg;
 
               color: $black-secondary;
               width: 100%;

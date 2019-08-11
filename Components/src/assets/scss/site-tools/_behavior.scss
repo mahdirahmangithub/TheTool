@@ -164,6 +164,6 @@
 }
 
 .behavior__figure__caption {
-  @extend %text-sm;
+  @extend %body-text-sm;
   color: $black-secondary;
 }

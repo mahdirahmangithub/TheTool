@@ -1,6 +1,6 @@
 .section-row {
   & > .section-row__title ~ .section-row__title {
-    @extend %text-xlg, %text-variation;
+    @extend %body-body-text-md, %text-variation;
     line-height: 1.5;
     margin-top: 1rem;
     color: $black;
@@ -51,7 +51,7 @@
 }
 
 .section-row__paragraph {
-  @extend %text-lg, %text-variation;
+  @extend %body-text-md, %text-variation;
   margin-top: 1rem;
   margin-bottom: 1rem;
 

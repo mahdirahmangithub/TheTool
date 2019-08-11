@@ -124,14 +124,14 @@
   );
 
   &--pretitle {
-    @extend %text-md;
+    @extend %body-body-text-sm-bolder;
     color: $black-primary;
     font-weight: 500;
     margin-bottom: 0.25rem;
   }
 
   &--subtitle {
-    @extend %text-lg;
+    @extend %body-text-md;
     color: $black-secondary;
   }
 }

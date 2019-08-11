@@ -427,7 +427,7 @@
 }
 
 .text-field__description {
-  @extend %text-sm;
+  @extend %body-text-sm;
 
   color: $black-secondary;
 
@@ -437,7 +437,7 @@
 }
 
 .text-field__input {
-  @extend %text-lg-stable;
+  @extend %body-text-md-stable;
 
   border: none;
   outline: none;
@@ -461,25 +461,25 @@
   }
 
   &::-webkit-input-placeholder {
-    @extend %text-lg-stable;
+    @extend %body-text-md-stable;
 
     color: $black-hint;
   }
 
   &::-moz-placeholder {
-    @extend %text-lg-stable;
+    @extend %body-text-md-stable;
 
     color: $black-hint;
   }
 
   &:-ms-input-placeholder {
-    @extend %text-lg-stable;
+    @extend %body-text-md-stable;
 
     color: $black-hint;
   }
 
   &:-moz-placeholder {
-    @extend %text-lg-stable;
+    @extend %body-text-md-stable;
 
     color: $black-hint;
   }
@@ -554,7 +554,7 @@
 }
 
 .text-field__hints {
-  @extend %text-xs;
+  @extend %caption-text-lg;
 
   display: flex;
   align-items: center;
