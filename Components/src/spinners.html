@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/sonnat.reset.css" />
+    <link rel="stylesheet" href="assets/css/sonnat.elements.css" />
+    <title>Spinners</title>
+  </head>
+  <body dir="rtl">
+    <div class="root">
+      <div id="main-wrapper" class="base-wrapper">
+        <header id="header"></header>
+        <main
+          id="main"
+          style="display: flex;align-items: center;flex-direction: column;"
+        >
+          <div class="spinner" style="margin-top: 128px">
+            <div class="rotate-spinner"></div>
+          </div>
+          <div class="spinner" style="margin-top: 128px">
+            <div class="io-spinner">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </div>
+          <div class="spinner" style="margin-top: 128px">
+            <div class="snake-spinner">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </div>
+          <div class="svg-spinner" style="margin-top: 128px">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+              <path
+                class="base"
+                d="M8,16a8,8,0,1,1,8-8A8,8,0,0,1,8,16ZM8,2a6,6,0,1,0,6,6A6,6,0,0,0,8,2Z"
+              />
+              <circle
+                class="moving-particle"
+                cx="8"
+                cy="8"
+                r="7"
+                style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"
+              />
+            </svg>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
