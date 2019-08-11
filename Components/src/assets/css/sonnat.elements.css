@@ -83,99 +83,30 @@ ul {
   transform: translate3d(0, 0, 0);
 }
 
-.h6,
-h6,
-.h5,
-h5, .section-row__title,
-.h4,
-h4, .title-row__title,
-.h3,
-h3,
-.h2,
-h2,
-.h1,
-h1 {
-  margin: 0;
-  -webkit-margin-before: 0em;
-  margin-block-start: 0em;
-  -webkit-margin-after: 0em;
-  margin-block-end: 0em;
-  -webkit-margin-start: 0px;
-  margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-  margin-inline-end: 0px;
-  text-size-adjust: 100%;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  color: rgba(0, 0, 0, 0.87);
-}
-body[dir=rtl] .h6,
-body[dir=rtl] h6,
-body[dir=rtl] .h5,
-body[dir=rtl] h5, body[dir=rtl] .section-row__title,
-body[dir=rtl] .h4,
-body[dir=rtl] h4, body[dir=rtl] .title-row__title,
-body[dir=rtl] .h3,
-body[dir=rtl] h3,
-body[dir=rtl] .h2,
-body[dir=rtl] h2,
-body[dir=rtl] .h1,
-body[dir=rtl] h1 {
-  text-align: right;
-}
-body[dir=ltr] .h6,
-body[dir=ltr] h6,
-body[dir=ltr] .h5,
-body[dir=ltr] h5, body[dir=ltr] .section-row__title,
-body[dir=ltr] .h4,
-body[dir=ltr] h4, body[dir=ltr] .title-row__title,
-body[dir=ltr] .h3,
-body[dir=ltr] h3,
-body[dir=ltr] .h2,
-body[dir=ltr] h2,
-body[dir=ltr] .h1,
-body[dir=ltr] h1,
-body:not([dir=ltr]):not([dir=rtl]) .h6,
-body:not([dir=ltr]):not([dir=rtl]) h6,
-body:not([dir=ltr]):not([dir=rtl]) .h5,
-body:not([dir=ltr]):not([dir=rtl]) h5, body:not([dir=ltr]):not([dir=rtl]) .section-row__title,
-body:not([dir=ltr]):not([dir=rtl]) .h4,
-body:not([dir=ltr]):not([dir=rtl]) h4, body:not([dir=ltr]):not([dir=rtl]) .title-row__title,
-body:not([dir=ltr]):not([dir=rtl]) .h3,
-body:not([dir=ltr]):not([dir=rtl]) h3,
-body:not([dir=ltr]):not([dir=rtl]) .h2,
-body:not([dir=ltr]):not([dir=rtl]) h2,
-body:not([dir=ltr]):not([dir=rtl]) .h1,
-body:not([dir=ltr]):not([dir=rtl]) h1 {
-  text-align: left;
-}
-.responsive-typography.h6,
-h6.responsive-typography,
-.responsive-typography.h5,
-h5.responsive-typography, .responsive-typography.section-row__title,
-.responsive-typography.h4,
-h4.responsive-typography, .responsive-typography.title-row__title,
-.responsive-typography.h3,
-h3.responsive-typography,
-.responsive-typography.h2,
-h2.responsive-typography,
-.responsive-typography.h1,
-h1.responsive-typography {
-  transition: font-size 200ms ease, line-height 200ms ease;
-}
-
 .chips,
-.chips .chips__text, .text-field__label-text, .fab__label, .text-tiny, .text-xxs, .text-xs,
+.chips .chips__text, .text-field__label-text, .fab__label, .caption-text-sm, .caption-text-md, .caption-text-lg,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
-.text-field__hints, .text-sm,
+.text-field__hints, .title-row__title--pretitle, .body-text-sm,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .accordion__list .accordion__list__item > a,
-.text-field__description, .text-md,
-.title-row__title--pretitle, .text-lg,
+.text-field__description, .accordion__heading, .text-field__input, .body-text-md,
 .section-row__paragraph,
-.title-row__title--subtitle, .text-xlg,
-.section-row > .section-row__title ~ .section-row__title {
+.title-row__title--subtitle,
+p, .body-text-lg,
+.section-row > .section-row__title ~ .section-row__title, .title-text-xs,
+h6, .title-text-sm,
+h5, .title-text-md,
+.section-row__title,
+h4, .title-text-lg,
+.title-row__title,
+h3,
+h2, .hero-text-sm,
+h1, .hero-text-lg {
+  margin: 0;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   line-height: 2;
   font-weight: normal;
   font-style: normal;
@@ -186,62 +117,95 @@ h1.responsive-typography {
 }
 body[dir=rtl] .chips,
 body[dir=rtl] .chips .chips__text,
-.chips body[dir=rtl] .chips__text, body[dir=rtl] .text-field__label-text, body[dir=rtl] .fab__label, body[dir=rtl] .text-tiny, body[dir=rtl] .text-xxs, body[dir=rtl] .text-xs,
+.chips body[dir=rtl] .chips__text, body[dir=rtl] .text-field__label-text, body[dir=rtl] .fab__label, body[dir=rtl] .caption-text-sm, body[dir=rtl] .caption-text-md, body[dir=rtl] .caption-text-lg,
 body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a,
-body[dir=rtl] .text-field__hints, body[dir=rtl] .text-sm,
+body[dir=rtl] .text-field__hints, body[dir=rtl] .title-row__title--pretitle, body[dir=rtl] .body-text-sm,
 body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a,
 body[dir=rtl] .accordion__list .accordion__list__item > a,
 .accordion__list body[dir=rtl] .accordion__list__item > a,
-body[dir=rtl] .text-field__description, body[dir=rtl] .text-md,
-body[dir=rtl] .title-row__title--pretitle, body[dir=rtl] .text-lg,
+body[dir=rtl] .text-field__description, body[dir=rtl] .accordion__heading, body[dir=rtl] .text-field__input, body[dir=rtl] .body-text-md,
 body[dir=rtl] .section-row__paragraph,
-body[dir=rtl] .title-row__title--subtitle, body[dir=rtl] .text-xlg,
-body[dir=rtl] .section-row > .section-row__title ~ .section-row__title {
+body[dir=rtl] .title-row__title--subtitle,
+body[dir=rtl] p, body[dir=rtl] .body-text-lg,
+body[dir=rtl] .section-row > .section-row__title ~ .section-row__title, body[dir=rtl] .title-text-xs,
+body[dir=rtl] h6, body[dir=rtl] .title-text-sm,
+body[dir=rtl] h5, body[dir=rtl] .title-text-md,
+body[dir=rtl] .section-row__title,
+body[dir=rtl] h4, body[dir=rtl] .title-text-lg,
+body[dir=rtl] .title-row__title,
+body[dir=rtl] h3,
+body[dir=rtl] h2, body[dir=rtl] .hero-text-sm,
+body[dir=rtl] h1, body[dir=rtl] .hero-text-lg {
   text-align: right;
 }
 body[dir=ltr] .chips,
 body[dir=ltr] .chips .chips__text,
-.chips body[dir=ltr] .chips__text, body[dir=ltr] .text-field__label-text, body[dir=ltr] .fab__label, body[dir=ltr] .text-tiny, body[dir=ltr] .text-xxs, body[dir=ltr] .text-xs,
+.chips body[dir=ltr] .chips__text, body[dir=ltr] .text-field__label-text, body[dir=ltr] .fab__label, body[dir=ltr] .caption-text-sm, body[dir=ltr] .caption-text-md, body[dir=ltr] .caption-text-lg,
 body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a,
-body[dir=ltr] .text-field__hints, body[dir=ltr] .text-sm,
+body[dir=ltr] .text-field__hints, body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .body-text-sm,
 body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a,
 body[dir=ltr] .accordion__list .accordion__list__item > a,
 .accordion__list body[dir=ltr] .accordion__list__item > a,
-body[dir=ltr] .text-field__description, body[dir=ltr] .text-md,
-body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .text-lg,
+body[dir=ltr] .text-field__description, body[dir=ltr] .accordion__heading, body[dir=ltr] .text-field__input, body[dir=ltr] .body-text-md,
 body[dir=ltr] .section-row__paragraph,
-body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .text-xlg,
-body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .chips,
+body[dir=ltr] .title-row__title--subtitle,
+body[dir=ltr] p, body[dir=ltr] .body-text-lg,
+body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body[dir=ltr] .title-text-xs,
+body[dir=ltr] h6, body[dir=ltr] .title-text-sm,
+body[dir=ltr] h5, body[dir=ltr] .title-text-md,
+body[dir=ltr] .section-row__title,
+body[dir=ltr] h4, body[dir=ltr] .title-text-lg,
+body[dir=ltr] .title-row__title,
+body[dir=ltr] h3,
+body[dir=ltr] h2, body[dir=ltr] .hero-text-sm,
+body[dir=ltr] h1, body[dir=ltr] .hero-text-lg, body:not([dir=ltr]):not([dir=rtl]) .chips,
 body:not([dir=ltr]):not([dir=rtl]) .chips .chips__text,
-.chips body:not([dir=ltr]):not([dir=rtl]) .chips__text, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .fab__label, body:not([dir=ltr]):not([dir=rtl]) .text-tiny, body:not([dir=ltr]):not([dir=rtl]) .text-xxs, body:not([dir=ltr]):not([dir=rtl]) .text-xs,
+.chips body:not([dir=ltr]):not([dir=rtl]) .chips__text, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .fab__label, body:not([dir=ltr]):not([dir=rtl]) .caption-text-sm, body:not([dir=ltr]):not([dir=rtl]) .caption-text-md, body:not([dir=ltr]):not([dir=rtl]) .caption-text-lg,
 body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
-body:not([dir=ltr]):not([dir=rtl]) .text-field__hints, body:not([dir=ltr]):not([dir=rtl]) .text-sm,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a,
+body:not([dir=ltr]):not([dir=rtl]) .text-field__hints, body:not([dir=ltr]):not([dir=rtl]) .title-row__title--pretitle, body:not([dir=ltr]):not([dir=rtl]) .body-text-sm,
 body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .accordion__list .accordion__list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a,
 body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > a,
 .accordion__list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__item > a,
-body:not([dir=ltr]):not([dir=rtl]) .text-field__description, body:not([dir=ltr]):not([dir=rtl]) .text-md,
-body:not([dir=ltr]):not([dir=rtl]) .title-row__title--pretitle, body:not([dir=ltr]):not([dir=rtl]) .text-lg,
+body:not([dir=ltr]):not([dir=rtl]) .text-field__description, body:not([dir=ltr]):not([dir=rtl]) .accordion__heading, body:not([dir=ltr]):not([dir=rtl]) .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .body-text-md,
 body:not([dir=ltr]):not([dir=rtl]) .section-row__paragraph,
-body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle, body:not([dir=ltr]):not([dir=rtl]) .text-xlg,
-body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title {
+body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle,
+body:not([dir=ltr]):not([dir=rtl]) p, body:not([dir=ltr]):not([dir=rtl]) .body-text-lg,
+body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .title-text-xs,
+body:not([dir=ltr]):not([dir=rtl]) h6, body:not([dir=ltr]):not([dir=rtl]) .title-text-sm,
+body:not([dir=ltr]):not([dir=rtl]) h5, body:not([dir=ltr]):not([dir=rtl]) .title-text-md,
+body:not([dir=ltr]):not([dir=rtl]) .section-row__title,
+body:not([dir=ltr]):not([dir=rtl]) h4, body:not([dir=ltr]):not([dir=rtl]) .title-text-lg,
+body:not([dir=ltr]):not([dir=rtl]) .title-row__title,
+body:not([dir=ltr]):not([dir=rtl]) h3,
+body:not([dir=ltr]):not([dir=rtl]) h2, body:not([dir=ltr]):not([dir=rtl]) .hero-text-sm,
+body:not([dir=ltr]):not([dir=rtl]) h1, body:not([dir=ltr]):not([dir=rtl]) .hero-text-lg {
   text-align: left;
 }
-.responsive-typography.chips,
-.chips .responsive-typography.chips__text, .responsive-typography.text-field__label-text, .responsive-typography.fab__label, .responsive-typography.text-tiny, .responsive-typography.text-xxs, .responsive-typography.text-xs,
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.responsive-typography,
-.responsive-typography.text-field__hints, .responsive-typography.text-sm,
-.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.responsive-typography,
-.accordion__list .accordion__list__item > a.responsive-typography,
-.responsive-typography.text-field__description, .responsive-typography.text-md,
-.responsive-typography.title-row__title--pretitle, .responsive-typography.text-lg,
-.responsive-typography.section-row__paragraph,
-.responsive-typography.title-row__title--subtitle, .responsive-typography.text-xlg,
-.section-row > .section-row__title ~ .responsive-typography.section-row__title {
+.typography-transition.chips,
+.chips .typography-transition.chips__text, .typography-transition.text-field__label-text, .typography-transition.fab__label, .typography-transition.caption-text-sm, .typography-transition.caption-text-md, .typography-transition.caption-text-lg,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition,
+.typography-transition.text-field__hints, .typography-transition.title-row__title--pretitle, .typography-transition.body-text-sm,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition,
+.accordion__list .accordion__list__item > a.typography-transition,
+.typography-transition.text-field__description, .typography-transition.accordion__heading, .typography-transition.text-field__input, .typography-transition.body-text-md,
+.typography-transition.section-row__paragraph,
+.typography-transition.title-row__title--subtitle,
+p.typography-transition, .typography-transition.body-text-lg,
+.section-row > .section-row__title ~ .typography-transition.section-row__title, .typography-transition.title-text-xs,
+h6.typography-transition, .typography-transition.title-text-sm,
+h5.typography-transition, .typography-transition.title-text-md,
+.typography-transition.section-row__title,
+h4.typography-transition, .typography-transition.title-text-lg,
+.typography-transition.title-row__title,
+h3.typography-transition,
+h2.typography-transition, .typography-transition.hero-text-sm,
+h1.typography-transition, .typography-transition.hero-text-lg {
   transition: font-size 200ms ease, line-height 200ms ease;
 }
 
@@ -249,156 +213,180 @@ body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section
   text-align: justify;
 }
 
-.h1,
+.hero-text-lg {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.hero-text-lg.bolder {
+  font-weight: bold;
+}
+.hero-text-lg.lighter {
+  font-weight: 300;
+}
+
 h1 {
-  font-size: 3rem !important;
-  line-height: 1.5 !important;
-  font-weight: 300 !important;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
-.h2,
+.hero-text-sm {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.hero-text-sm.bolder {
+  font-weight: bold;
+}
+.hero-text-sm.lighter {
+  font-weight: 400;
+}
+
 h2 {
-  font-size: 2rem !important;
-  line-height: 1.5 !important;
-  font-weight: normal !important;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
+.title-text-lg,
 .title-row__title,
-.h3,
 h3 {
-  font-size: 1.5rem !important;
-  line-height: 1.5 !important;
-  font-weight: 500 !important;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
+.title-text-md,
 .section-row__title,
-.h4,
 h4 {
-  font-size: 1.25rem !important;
-  line-height: 1.5 !important;
-  font-weight: 500 !important;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
-.h5,
+.title-text-sm,
 h5 {
-  font-size: 1.125rem !important;
-  line-height: 1.5 !important;
-  font-weight: 500 !important;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
-.h6,
+.title-text-xs,
 h6 {
-  font-size: 1rem !important;
-  line-height: 2 !important;
-  font-weight: 500 !important;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
-p {
-  margin: 0;
-  -webkit-margin-before: 0em;
-  margin-block-start: 0em;
-  -webkit-margin-after: 0em;
-  margin-block-end: 0em;
-  -webkit-margin-start: 0px;
-  margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-  margin-inline-end: 0px;
-}
-
-.text-xlg,
+.body-text-lg,
 .section-row > .section-row__title ~ .section-row__title {
-  font-size: 1.125rem !important;
+  font-size: 1.125rem;
+  line-height: 2;
+  font-weight: 400;
 }
 
-.text-lg,
+.body-text-md,
 .section-row__paragraph,
-.title-row__title--subtitle {
-  font-size: 1rem !important;
+.title-row__title--subtitle,
+p {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
 }
 
-.text-lg-stable,
-.accordion__heading,
-.text-field__input:-moz-placeholder,
-.text-field__input:-ms-input-placeholder,
-.text-field__input::-moz-placeholder,
-.text-field__input::-webkit-input-placeholder,
-.text-field__input {
-  font-size: 1rem !important;
-  line-height: 2 !important;
-  font-weight: normal !important;
+.accordion__heading, .text-field__input {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
 }
 
-.text-md,
-.title-row__title--pretitle {
-  font-size: 0.875rem !important;
-  font-weight: 500 !important;
-}
-
-.text-sm,
+.body-text-sm,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .accordion__list .accordion__list__item > a,
 .text-field__description {
-  font-size: 0.875rem !important;
+  font-size: 0.875rem;
+  line-height: 2;
+  font-weight: 400;
+}
+.body-text-sm.bolder,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.bolder,
+.accordion__list .accordion__list__item > a.bolder,
+.bolder.text-field__description {
+  font-weight: 500;
 }
 
-.text-xs,
+.title-row__title--pretitle {
+  font-size: 0.875rem;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.caption-text-lg,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .text-field__hints {
-  font-size: 0.75rem !important;
+  font-size: 0.75rem;
+  line-height: 2;
+  font-weight: 400;
+}
+.caption-text-lg.bolder,
+.accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.bolder,
+.bolder.text-field__hints {
+  font-weight: 500;
 }
 
-.text-xxs {
-  font-size: 0.625rem !important;
+.caption-text-md {
+  font-size: 0.625rem;
+  line-height: 2;
+  font-weight: 400;
 }
 
-.text-tiny {
-  font-size: 0.5rem !important;
+.caption-text-sm {
+  font-size: 0.5rem;
+  line-height: 2;
+  font-weight: 400;
 }
 
 @media (max-width: 769px) {
-  .h1,
-h1 {
-    font-size: 2rem !important;
-    line-height: 1.5 !important;
-    font-weight: 300 !important;
+  .hero-text-lg {
+    font-size: 2rem;
+  }
+  .hero-text-lg.lighter {
+    font-weight: 400;
   }
 
-  .h2,
-h2 {
-    font-size: 1.5rem !important;
-    line-height: 1.5 !important;
-    font-weight: normal !important;
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
   }
 
-  .title-row__title,
-.h3,
+  .hero-text-sm.lighter {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .title-text-lg,
+.title-row__title,
 h3 {
-    font-size: 1.25rem !important;
-    line-height: 1.5 !important;
-    font-weight: 500 !important;
+    font-size: 1.25rem;
   }
 
-  .section-row__title,
-.h4,
+  .title-text-md,
+.section-row__title,
 h4 {
-    font-size: 1.125rem !important;
-    line-height: 1.5 !important;
-    font-weight: 500 !important;
+    font-size: 1.125rem;
   }
 
-  .text-xlg,
+  .body-text-lg,
 .section-row > .section-row__title ~ .section-row__title {
-    font-size: 1rem !important;
-    line-height: 2 !important;
-    font-weight: normal !important;
+    font-size: 1rem;
   }
 
-  .text-lg,
-.section-row__paragraph,
-.title-row__title--subtitle {
-    font-size: 0.875rem !important;
-    line-height: 2 !important;
-    font-weight: normal !important;
+  .body-text-md:not(.stable),
+.section-row__paragraph:not(.stable),
+.title-row__title--subtitle:not(.stable),
+p:not(.stable) {
+    font-size: 0.875rem;
   }
 }
 .visible {
@@ -1866,7 +1854,16 @@ body[dir=ltr] .fab__icon + .fab__label, body:not([dir=ltr]):not([dir=rtl]) .fab_
   border: none;
   font-size: 0.875rem;
 }
-.text-field.minimal > input::-webkit-input-placeholder, .text-field.minimal > input::-moz-placeholder, .text-field.minimal > input:-ms-input-placeholder, .text-field.minimal > input:-moz-placeholder, .text-field.minimal > .text-field__input::-webkit-input-placeholder, .text-field.minimal > .text-field__input::-moz-placeholder, .text-field.minimal > .text-field__input:-ms-input-placeholder, .text-field.minimal > .text-field__input:-moz-placeholder {
+.text-field.minimal > input::-webkit-input-placeholder, .text-field.minimal > .text-field__input::-webkit-input-placeholder {
+  font-size: 0.875rem;
+}
+.text-field.minimal > input::-moz-placeholder, .text-field.minimal > .text-field__input::-moz-placeholder {
+  font-size: 0.875rem;
+}
+.text-field.minimal > input:-ms-input-placeholder, .text-field.minimal > .text-field__input:-ms-input-placeholder {
+  font-size: 0.875rem;
+}
+.text-field.minimal > input:-moz-placeholder, .text-field.minimal > .text-field__input:-moz-placeholder {
   font-size: 0.875rem;
 }
 body[dir=rtl] .text-field.rounded .text-field__input {
@@ -2121,15 +2118,27 @@ body[dir=ltr] .text-field__wrapper:before, body:not([dir=ltr]):not([dir=rtl]) .t
   border-color: rgba(166, 38, 38, 0.56);
 }
 .text-field__input::-webkit-input-placeholder {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.32);
 }
 .text-field__input::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.32);
 }
 .text-field__input:-ms-input-placeholder {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.32);
 }
 .text-field__input:-moz-placeholder {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.32);
 }
 

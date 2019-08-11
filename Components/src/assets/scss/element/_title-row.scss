@@ -124,7 +124,7 @@
   );
 
   &--pretitle {
-    @extend %body-body-text-sm-bolder;
+    @extend %body-text-sm-bolder;
     color: $black-primary;
     font-weight: 500;
     margin-bottom: 0.25rem;

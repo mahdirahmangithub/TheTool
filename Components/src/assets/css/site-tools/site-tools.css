@@ -1,15 +1,12 @@
-.h6,
-h6,
-.h5,
-h5,
-.h4,
-h4,
-.h3,
+.caption-text-sm, .caption-text-md, .caption-text-lg, .body-text-sm,
+.behavior__figure__caption, .body-text-md,
+p, .body-text-lg, .title-text-xs,
+h6, .title-text-sm,
+h5, .title-text-md,
+h4, .title-text-lg,
 h3,
-.h2,
-h2,
-.h1,
-h1 {
+h2, .hero-text-sm,
+h1, .hero-text-lg {
   margin: 0;
   -webkit-margin-before: 0em;
   margin-block-start: 0em;
@@ -18,70 +15,6 @@ h1 {
   -webkit-margin-start: 0px;
   margin-inline-start: 0px;
   -webkit-margin-end: 0px;
-  margin-inline-end: 0px;
-  text-size-adjust: 100%;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  color: rgba(0, 0, 0, 0.87);
-}
-body[dir=rtl] .h6,
-body[dir=rtl] h6,
-body[dir=rtl] .h5,
-body[dir=rtl] h5,
-body[dir=rtl] .h4,
-body[dir=rtl] h4,
-body[dir=rtl] .h3,
-body[dir=rtl] h3,
-body[dir=rtl] .h2,
-body[dir=rtl] h2,
-body[dir=rtl] .h1,
-body[dir=rtl] h1 {
-  text-align: right;
-}
-body[dir=ltr] .h6,
-body[dir=ltr] h6,
-body[dir=ltr] .h5,
-body[dir=ltr] h5,
-body[dir=ltr] .h4,
-body[dir=ltr] h4,
-body[dir=ltr] .h3,
-body[dir=ltr] h3,
-body[dir=ltr] .h2,
-body[dir=ltr] h2,
-body[dir=ltr] .h1,
-body[dir=ltr] h1,
-body:not([dir=ltr]):not([dir=rtl]) .h6,
-body:not([dir=ltr]):not([dir=rtl]) h6,
-body:not([dir=ltr]):not([dir=rtl]) .h5,
-body:not([dir=ltr]):not([dir=rtl]) h5,
-body:not([dir=ltr]):not([dir=rtl]) .h4,
-body:not([dir=ltr]):not([dir=rtl]) h4,
-body:not([dir=ltr]):not([dir=rtl]) .h3,
-body:not([dir=ltr]):not([dir=rtl]) h3,
-body:not([dir=ltr]):not([dir=rtl]) .h2,
-body:not([dir=ltr]):not([dir=rtl]) h2,
-body:not([dir=ltr]):not([dir=rtl]) .h1,
-body:not([dir=ltr]):not([dir=rtl]) h1 {
-  text-align: left;
-}
-.responsive-typography.h6,
-h6.responsive-typography,
-.responsive-typography.h5,
-h5.responsive-typography,
-.responsive-typography.h4,
-h4.responsive-typography,
-.responsive-typography.h3,
-h3.responsive-typography,
-.responsive-typography.h2,
-h2.responsive-typography,
-.responsive-typography.h1,
-h1.responsive-typography {
-  transition: font-size 200ms ease, line-height 200ms ease;
-}
-
-.text-tiny, .text-xxs, .text-xs, .text-sm,
-.behavior__figure__caption, .text-md, .text-lg, .text-xlg {
   line-height: 2;
   font-weight: normal;
   font-style: normal;
@@ -90,64 +23,50 @@ h1.responsive-typography {
   text-size-adjust: 100%;
   color: rgba(0, 0, 0, 0.87);
 }
-body[dir=rtl] .text-tiny, body[dir=rtl] .text-xxs, body[dir=rtl] .text-xs, body[dir=rtl] .text-sm,
-body[dir=rtl] .behavior__figure__caption, body[dir=rtl] .text-md, body[dir=rtl] .text-lg, body[dir=rtl] .text-xlg {
+body[dir=rtl] .caption-text-sm, body[dir=rtl] .caption-text-md, body[dir=rtl] .caption-text-lg, body[dir=rtl] .body-text-sm,
+body[dir=rtl] .behavior__figure__caption, body[dir=rtl] .body-text-md,
+body[dir=rtl] p, body[dir=rtl] .body-text-lg, body[dir=rtl] .title-text-xs,
+body[dir=rtl] h6, body[dir=rtl] .title-text-sm,
+body[dir=rtl] h5, body[dir=rtl] .title-text-md,
+body[dir=rtl] h4, body[dir=rtl] .title-text-lg,
+body[dir=rtl] h3,
+body[dir=rtl] h2, body[dir=rtl] .hero-text-sm,
+body[dir=rtl] h1, body[dir=rtl] .hero-text-lg {
   text-align: right;
 }
-body[dir=ltr] .text-tiny, body[dir=ltr] .text-xxs, body[dir=ltr] .text-xs, body[dir=ltr] .text-sm,
-body[dir=ltr] .behavior__figure__caption, body[dir=ltr] .text-md, body[dir=ltr] .text-lg, body[dir=ltr] .text-xlg, body:not([dir=ltr]):not([dir=rtl]) .text-tiny, body:not([dir=ltr]):not([dir=rtl]) .text-xxs, body:not([dir=ltr]):not([dir=rtl]) .text-xs, body:not([dir=ltr]):not([dir=rtl]) .text-sm,
-body:not([dir=ltr]):not([dir=rtl]) .behavior__figure__caption, body:not([dir=ltr]):not([dir=rtl]) .text-md, body:not([dir=ltr]):not([dir=rtl]) .text-lg, body:not([dir=ltr]):not([dir=rtl]) .text-xlg {
+body[dir=ltr] .caption-text-sm, body[dir=ltr] .caption-text-md, body[dir=ltr] .caption-text-lg, body[dir=ltr] .body-text-sm,
+body[dir=ltr] .behavior__figure__caption, body[dir=ltr] .body-text-md,
+body[dir=ltr] p, body[dir=ltr] .body-text-lg, body[dir=ltr] .title-text-xs,
+body[dir=ltr] h6, body[dir=ltr] .title-text-sm,
+body[dir=ltr] h5, body[dir=ltr] .title-text-md,
+body[dir=ltr] h4, body[dir=ltr] .title-text-lg,
+body[dir=ltr] h3,
+body[dir=ltr] h2, body[dir=ltr] .hero-text-sm,
+body[dir=ltr] h1, body[dir=ltr] .hero-text-lg, body:not([dir=ltr]):not([dir=rtl]) .caption-text-sm, body:not([dir=ltr]):not([dir=rtl]) .caption-text-md, body:not([dir=ltr]):not([dir=rtl]) .caption-text-lg, body:not([dir=ltr]):not([dir=rtl]) .body-text-sm,
+body:not([dir=ltr]):not([dir=rtl]) .behavior__figure__caption, body:not([dir=ltr]):not([dir=rtl]) .body-text-md,
+body:not([dir=ltr]):not([dir=rtl]) p, body:not([dir=ltr]):not([dir=rtl]) .body-text-lg, body:not([dir=ltr]):not([dir=rtl]) .title-text-xs,
+body:not([dir=ltr]):not([dir=rtl]) h6, body:not([dir=ltr]):not([dir=rtl]) .title-text-sm,
+body:not([dir=ltr]):not([dir=rtl]) h5, body:not([dir=ltr]):not([dir=rtl]) .title-text-md,
+body:not([dir=ltr]):not([dir=rtl]) h4, body:not([dir=ltr]):not([dir=rtl]) .title-text-lg,
+body:not([dir=ltr]):not([dir=rtl]) h3,
+body:not([dir=ltr]):not([dir=rtl]) h2, body:not([dir=ltr]):not([dir=rtl]) .hero-text-sm,
+body:not([dir=ltr]):not([dir=rtl]) h1, body:not([dir=ltr]):not([dir=rtl]) .hero-text-lg {
   text-align: left;
 }
-.responsive-typography.text-tiny, .responsive-typography.text-xxs, .responsive-typography.text-xs, .responsive-typography.text-sm,
-.responsive-typography.behavior__figure__caption, .responsive-typography.text-md, .responsive-typography.text-lg, .responsive-typography.text-xlg {
+.typography-transition.caption-text-sm, .typography-transition.caption-text-md, .typography-transition.caption-text-lg, .typography-transition.body-text-sm,
+.typography-transition.behavior__figure__caption, .typography-transition.body-text-md,
+p.typography-transition, .typography-transition.body-text-lg, .typography-transition.title-text-xs,
+h6.typography-transition, .typography-transition.title-text-sm,
+h5.typography-transition, .typography-transition.title-text-md,
+h4.typography-transition, .typography-transition.title-text-lg,
+h3.typography-transition,
+h2.typography-transition, .typography-transition.hero-text-sm,
+h1.typography-transition, .typography-transition.hero-text-lg {
   transition: font-size 200ms ease, line-height 200ms ease;
 }
 
 .text-justify {
   text-align: justify;
-}
-
-.h1,
-h1 {
-  font-size: 3rem !important;
-  line-height: 1.5 !important;
-  font-weight: 300 !important;
-}
-
-.h2,
-h2 {
-  font-size: 2rem !important;
-  line-height: 1.5 !important;
-  font-weight: normal !important;
-}
-
-.h3,
-h3 {
-  font-size: 1.5rem !important;
-  line-height: 1.5 !important;
-  font-weight: 500 !important;
-}
-
-.h4,
-h4 {
-  font-size: 1.25rem !important;
-  line-height: 1.5 !important;
-  font-weight: 500 !important;
-}
-
-.h5,
-h5 {
-  font-size: 1.125rem !important;
-  line-height: 1.5 !important;
-  font-weight: 500 !important;
-}
-
-.h6,
-h6 {
-  font-size: 1rem !important;
-  line-height: 2 !important;
-  font-weight: 500 !important;
 }
 
 p {
@@ -162,81 +81,149 @@ p {
   margin-inline-end: 0px;
 }
 
-.text-xlg {
-  font-size: 1.125rem !important;
+.hero-text-lg {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.hero-text-lg.bolder {
+  font-weight: bold;
+}
+.hero-text-lg.lighter {
+  font-weight: 300;
 }
 
-.text-lg {
-  font-size: 1rem !important;
+h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
-.text-lg-stable {
-  font-size: 1rem !important;
-  line-height: 2 !important;
-  font-weight: normal !important;
+.hero-text-sm {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.hero-text-sm.bolder {
+  font-weight: bold;
+}
+.hero-text-sm.lighter {
+  font-weight: 400;
 }
 
-.text-md {
-  font-size: 0.875rem !important;
-  font-weight: 500 !important;
+h2 {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
-.text-sm,
+.title-text-lg,
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.title-text-md,
+h4 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.title-text-sm,
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.title-text-xs,
+h6 {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.body-text-lg {
+  font-size: 1.125rem;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.body-text-md,
+p {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.body-text-sm,
 .behavior__figure__caption {
-  font-size: 0.875rem !important;
+  font-size: 0.875rem;
+  line-height: 2;
+  font-weight: 400;
+}
+.body-text-sm.bolder,
+.bolder.behavior__figure__caption {
+  font-weight: 500;
 }
 
-.text-xs {
-  font-size: 0.75rem !important;
+.caption-text-lg {
+  font-size: 0.75rem;
+  line-height: 2;
+  font-weight: 400;
+}
+.caption-text-lg.bolder {
+  font-weight: 500;
 }
 
-.text-xxs {
-  font-size: 0.625rem !important;
+.caption-text-md {
+  font-size: 0.625rem;
+  line-height: 2;
+  font-weight: 400;
 }
 
-.text-tiny {
-  font-size: 0.5rem !important;
+.caption-text-sm {
+  font-size: 0.5rem;
+  line-height: 2;
+  font-weight: 400;
 }
 
 @media (max-width: 769px) {
-  .h1,
-h1 {
-    font-size: 2rem !important;
-    line-height: 1.5 !important;
-    font-weight: 300 !important;
+  .hero-text-lg {
+    font-size: 2rem;
+  }
+  .hero-text-lg.lighter {
+    font-weight: 400;
   }
 
-  .h2,
-h2 {
-    font-size: 1.5rem !important;
-    line-height: 1.5 !important;
-    font-weight: normal !important;
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
   }
 
-  .h3,
+  .hero-text-sm.lighter {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .title-text-lg,
 h3 {
-    font-size: 1.25rem !important;
-    line-height: 1.5 !important;
-    font-weight: 500 !important;
+    font-size: 1.25rem;
   }
 
-  .h4,
-h4 {
-    font-size: 1.125rem !important;
-    line-height: 1.5 !important;
-    font-weight: 500 !important;
+  .title-text-md {
+    font-size: 1.125rem;
   }
 
-  .text-xlg {
-    font-size: 1rem !important;
-    line-height: 2 !important;
-    font-weight: normal !important;
+  .body-text-lg {
+    font-size: 1rem;
   }
 
-  .text-lg {
-    font-size: 0.875rem !important;
-    line-height: 2 !important;
-    font-weight: normal !important;
+  .body-text-md:not(.stable),
+p:not(.stable) {
+    font-size: 0.875rem;
   }
 }
 .display-flex {
@@ -6158,12 +6145,12 @@ body[dir=ltr] .padding-end-6, body:not([dir=ltr]):not([dir=rtl]) .padding-end-6 
   line-height: 1.5 !important;
   font-weight: 500 !important;
 }
-.resizable-view.typography-sheet .resizable-typography-row.response .text-xlg {
+.resizable-view.typography-sheet .resizable-typography-row.response .body-body-text-md {
   font-size: 1rem !important;
   line-height: 2 !important;
   font-weight: normal !important;
 }
-.resizable-view.typography-sheet .resizable-typography-row.response .text-lg {
+.resizable-view.typography-sheet .resizable-typography-row.response .body-text-md {
   font-size: 0.875rem !important;
   line-height: 2 !important;
   font-weight: normal !important;

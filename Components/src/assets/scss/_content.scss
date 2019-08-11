@@ -1,12 +1,10 @@
 %base-text {
   margin: 0;
-  -webkit-margin-before: 0em;
   margin-block-start: 0em;
-  -webkit-margin-after: 0em;
   margin-block-end: 0em;
-  -webkit-margin-start: 0px;
   margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+
   line-height: 2;
   font-weight: normal;
   font-style: normal;
@@ -76,16 +74,6 @@ h6 {
 
 p {
   @extend %body-text-md;
-
-  margin: 0;
-  -webkit-margin-before: 0em;
-  margin-block-start: 0em;
-  -webkit-margin-after: 0em;
-  margin-block-end: 0em;
-  -webkit-margin-start: 0px;
-  margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-  margin-inline-end: 0px;
 }
 
 .hero-text-lg,
@@ -183,7 +171,7 @@ p {
 %title-text-md {
   @extend %base-text;
 
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   font-weight: 500;
 }
@@ -339,7 +327,7 @@ p {
   }
 
   .title-text-md,
-  %hero-text-md {
+  %title-text-md {
     font-size: 1.125rem;
   }
 
@@ -355,15 +343,3 @@ p {
     }
   }
 }
-
-// .text-xxs,
-// %text-xxs {
-//   @extend %base-text;
-//   font-size: 0.625rem !important;
-// }
-
-// .text-tiny,
-// %text-tiny {
-//   @extend %base-text;
-//   font-size: 0.5rem !important;
-// }

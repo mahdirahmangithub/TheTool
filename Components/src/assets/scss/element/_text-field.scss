@@ -11,9 +11,18 @@
       border: none;
       font-size: 0.875rem;
 
-      &::-webkit-input-placeholder,
-      &::-moz-placeholder,
-      &:-ms-input-placeholder,
+      &::-webkit-input-placeholder {
+        font-size: 0.875rem;
+      }
+
+      &::-moz-placeholder {
+        font-size: 0.875rem;
+      }
+
+      &:-ms-input-placeholder {
+        font-size: 0.875rem;
+      }
+
       &:-moz-placeholder {
         font-size: 0.875rem;
       }
@@ -461,25 +470,33 @@
   }
 
   &::-webkit-input-placeholder {
-    @extend %body-text-md-stable;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 400;
 
     color: $black-hint;
   }
 
   &::-moz-placeholder {
-    @extend %body-text-md-stable;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 400;
 
     color: $black-hint;
   }
 
   &:-ms-input-placeholder {
-    @extend %body-text-md-stable;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 400;
 
     color: $black-hint;
   }
 
   &:-moz-placeholder {
-    @extend %body-text-md-stable;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 400;
 
     color: $black-hint;
   }

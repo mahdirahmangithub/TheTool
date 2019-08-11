@@ -1,6 +1,6 @@
 .section-row {
   & > .section-row__title ~ .section-row__title {
-    @extend %body-body-text-md, %text-variation;
+    @extend %body-text-lg, %text-variation;
     line-height: 1.5;
     margin-top: 1rem;
     color: $black;
