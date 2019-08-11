@@ -42,124 +42,50 @@
   text-align: justify;
 }
 
+.h1 {
+  @extend %hero-text-lg-medium;
+}
+
+.h2 {
+  @extend %hero-text-sm-medium;
+}
+
+.h3 {
+  @extend %title-text-lg;
+}
+
+.h4 {
+  @extend %title-text-md;
+}
+
+.h5 {
+  @extend %title-text-sm;
+}
+
+.h6 {
+  @extend %title-text-xs;
+}
+
 %h1,
 h1 {
-  @extend %hero-text-lg-medium;
+  @extend %base-text;
+
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 %h2,
 h2 {
-  @extend %hero-text-sm-medium;
+  @extend %base-text;
+
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 %h3,
 h3 {
-  @extend %title-text-lg;
-}
-
-%h4,
-h4 {
-  @extend %title-text-md;
-}
-
-%h5,
-h5 {
-  @extend %title-text-sm;
-}
-
-%h6,
-h6 {
-  @extend %title-text-xs;
-}
-
-p {
-  @extend %body-text-md;
-}
-
-.hero-text-lg,
-%hero-text-lg {
-  @extend %base-text;
-
-  font-size: 3rem;
-  line-height: 1.5;
-  font-weight: 500;
-
-  &.bolder {
-    font-weight: bold;
-  }
-
-  &.lighter {
-    font-weight: 300;
-  }
-}
-
-%hero-text-lg-lighter {
-  @extend %base-text;
-
-  font-size: 3rem;
-  line-height: 1.5;
-  font-weight: 300;
-}
-
-%hero-text-lg-medium {
-  @extend %base-text;
-
-  font-size: 3rem;
-  line-height: 1.5;
-  font-weight: 500;
-}
-
-%hero-text-lg-bolder {
-  @extend %base-text;
-
-  font-size: 3rem;
-  line-height: 1.5;
-  font-weight: bold;
-}
-
-.hero-text-sm,
-%hero-text-sm {
-  @extend %base-text;
-
-  font-size: 2rem;
-  line-height: 1.5;
-  font-weight: 500;
-
-  &.bolder {
-    font-weight: bold;
-  }
-
-  &.lighter {
-    font-weight: 400;
-  }
-}
-
-%hero-text-sm-lighter {
-  @extend %base-text;
-
-  font-size: 2rem;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-%hero-text-sm-medium {
-  @extend %base-text;
-
-  font-size: 2rem;
-  line-height: 1.5;
-  font-weight: 500;
-}
-
-%hero-text-sm-bolder {
-  @extend %base-text;
-
-  font-size: 2rem;
-  line-height: 1.5;
-  font-weight: bold;
-}
-
-.title-text-lg,
-%title-text-lg {
   @extend %base-text;
 
   font-size: 1.5rem;
@@ -167,8 +93,8 @@ p {
   font-weight: 500;
 }
 
-.title-text-md,
-%title-text-md {
+%h4,
+h4 {
   @extend %base-text;
 
   font-size: 1.25rem;
@@ -176,170 +102,316 @@ p {
   font-weight: 500;
 }
 
-.title-text-sm,
-%title-text-sm {
+%h5,
+h5 {
   @extend %base-text;
 
   font-size: 1.125rem;
   line-height: 1.5;
   font-weight: 500;
+}
+
+%h6,
+h6 {
+  @extend %base-text;
+
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+p {
+  @extend %base-text;
+
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.hero-text-lg,
+%hero-text-lg {
+  @extend %base-text;
+
+  font-size: 3rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+
+  &.bolder {
+    font-weight: bold !important;
+  }
+
+  &.lighter {
+    font-weight: 300 !important;
+  }
+}
+
+%hero-text-lg-lighter {
+  @extend %base-text;
+
+  font-size: 3rem !important;
+  line-height: 1.5 !important;
+  font-weight: 300 !important;
+}
+
+%hero-text-lg-medium {
+  @extend %base-text;
+
+  font-size: 3rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+
+%hero-text-lg-bolder {
+  @extend %base-text;
+
+  font-size: 3rem !important;
+  line-height: 1.5 !important;
+  font-weight: bold !important;
+}
+
+.hero-text-sm,
+%hero-text-sm {
+  @extend %base-text;
+
+  font-size: 2rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+
+  &.bolder {
+    font-weight: bold !important;
+  }
+
+  &.lighter {
+    font-weight: 400 !important;
+  }
+}
+
+%hero-text-sm-lighter {
+  @extend %base-text;
+
+  font-size: 2rem !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
+}
+
+%hero-text-sm-medium {
+  @extend %base-text;
+
+  font-size: 2rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+
+%hero-text-sm-bolder {
+  @extend %base-text;
+
+  font-size: 2rem !important;
+  line-height: 1.5 !important;
+  font-weight: bold !important;
+}
+
+.title-text-lg,
+%title-text-lg {
+  @extend %base-text;
+
+  font-size: 1.5rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+
+.title-text-md,
+%title-text-md {
+  @extend %base-text;
+
+  font-size: 1.25rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+
+.title-text-sm,
+%title-text-sm {
+  @extend %base-text;
+
+  font-size: 1.125rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
 }
 
 .title-text-xs,
 %title-text-xs {
   @extend %base-text;
 
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 500;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
 }
 
 .body-text-lg,
 %body-text-lg {
   @extend %base-text;
 
-  font-size: 1.125rem;
-  line-height: 2;
-  font-weight: 400;
+  font-size: 1.125rem !important;
+  line-height: 2 !important;
+  font-weight: 400 !important;
+
+  &.lighter {
+    font-weight: 300 !important;
+  }
 }
 
 .body-text-md,
 %body-text-md {
   @extend %base-text;
 
-  font-size: 1rem;
-  line-height: 2;
-  font-weight: 400;
+  font-size: 1rem !important;
+  line-height: 2 !important;
+  font-weight: 400 !important;
 }
 
 %body-text-md-stable {
   @extend %base-text;
 
-  font-size: 1rem;
-  line-height: 2;
-  font-weight: 400;
+  font-size: 1rem !important;
+  line-height: 2 !important;
+  font-weight: 400 !important;
 }
 
 .body-text-sm,
 %body-text-sm {
   @extend %base-text;
 
-  font-size: 0.875rem;
-  line-height: 2;
-  font-weight: 400;
+  font-size: 0.875rem !important;
+  line-height: 2 !important;
+  font-weight: 400 !important;
 
   &.bolder {
-    font-weight: 500;
+    font-weight: 500 !important;
   }
 }
 
 %body-text-sm-bolder {
   @extend %base-text;
 
-  font-size: 0.875rem;
-  line-height: 2;
-  font-weight: 500;
+  font-size: 0.875rem !important;
+  line-height: 2 !important;
+  font-weight: 500 !important;
 }
 
 .caption-text-lg,
 %caption-text-lg {
   @extend %base-text;
 
-  font-size: 0.75rem;
-  line-height: 2;
-  font-weight: 400;
+  font-size: 0.75rem !important;
+  line-height: 2 !important;
+  font-weight: 400 !important;
 
   &.bolder {
-    font-weight: 500;
+    font-weight: 500 !important;
   }
 }
 
 %caption-text-lg-bolder {
   @extend %base-text;
 
-  font-size: 0.75rem;
-  line-height: 2;
-  font-weight: 500;
+  font-size: 0.75rem !important;
+  line-height: 2 !important;
+  font-weight: 500 !important;
 }
 
 .caption-text-md,
 %caption-text-md {
   @extend %base-text;
 
-  font-size: 0.625rem;
-  line-height: 2;
-  font-weight: 400;
+  font-size: 0.625rem !important;
+  line-height: 2 !important;
+  font-weight: 400 !important;
 }
 
 .caption-text-sm,
 %caption-text-sm {
   @extend %base-text;
 
-  font-size: 0.5rem;
-  line-height: 2;
-  font-weight: 400;
+  font-size: 0.5rem !important;
+  line-height: 2 !important;
+  font-weight: 400 !important;
 }
 
 @media (max-width: map-get($breakpoints, "sm") - 1) {
   .hero-text-lg,
   %hero-text-lg {
-    font-size: 2rem;
+    font-size: 2rem !important;
 
     &.lighter {
-      font-weight: 400;
+      font-weight: 400 !important;
     }
   }
 
   %hero-text-lg-lighter {
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 2rem !important;
+    font-weight: 400 !important;
   }
 
   %hero-text-lg-medium {
+    font-size: 2rem !important;
+    font-weight: 500 !important;
+  }
+
+  %h1,
+  h1 {
     font-size: 2rem;
     font-weight: 500;
   }
 
   %hero-text-lg-bolder {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   .hero-text-sm,
   %hero-text-sm {
     &.lighter {
-      font-size: 1.5rem;
-      font-weight: 500;
+      font-size: 1.5rem !important;
+      font-weight: 500 !important;
     }
   }
 
   %hero-text-sm-lighter {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
   }
 
   %hero-text-sm-bolder {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 
   .title-text-lg,
   %title-text-lg {
+    font-size: 1.25rem !important;
+  }
+
+  %h3,
+  h3 {
     font-size: 1.25rem;
   }
 
   .title-text-md,
   %title-text-md {
+    font-size: 1.125rem !important;
+  }
+
+  %h4,
+  h4 {
     font-size: 1.125rem;
   }
 
   .body-text-lg,
   %body-text-lg {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   .body-text-md,
   %body-text-md {
     &:not(.stable) {
-      font-size: 0.875rem;
+      font-size: 0.875rem !important;
     }
   }
 }
