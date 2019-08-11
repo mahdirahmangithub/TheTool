@@ -1,4 +1,4 @@
-%base-header {
+%base-text {
   margin: 0;
   -webkit-margin-before: 0em;
   margin-block-start: 0em;
@@ -7,30 +7,6 @@
   -webkit-margin-start: 0px;
   margin-inline-start: 0px;
   -webkit-margin-end: 0px;
-  margin-inline-end: 0px;
-  text-size-adjust: 100%;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  color: $black-primary;
-
-  @include rtlStyle(
-    (
-      "text-align": "right"
-    )
-  );
-  @include ltrStyle(
-    (
-      "text-align": "left"
-    )
-  );
-
-  &.responsive-typography {
-    transition: font-size 200ms ease, line-height 200ms ease;
-  }
-}
-
-%base-text {
   line-height: 2;
   font-weight: normal;
   font-style: normal;
@@ -50,7 +26,7 @@
     )
   );
 
-  &.responsive-typography {
+  &.typography-transition {
     transition: font-size 200ms ease, line-height 200ms ease;
   }
 }
@@ -69,60 +45,38 @@
 }
 
 %h1,
-.h1,
 h1 {
-  @extend %base-header;
-  font-size: 3rem !important;
-  line-height: 1.5 !important;
-  font-weight: 300 !important;
+  @extend %hero-text-lg-medium;
 }
 
 %h2,
-.h2,
 h2 {
-  @extend %base-header;
-  font-size: 2rem !important;
-  line-height: 1.5 !important;
-  font-weight: normal !important;
+  @extend %hero-text-sm-medium;
 }
 
 %h3,
-.h3,
 h3 {
-  @extend %base-header;
-  font-size: 1.5rem !important;
-  line-height: 1.5 !important;
-  font-weight: 500 !important;
+  @extend %title-text-lg;
 }
 
 %h4,
-.h4,
 h4 {
-  @extend %base-header;
-  font-size: 1.25rem !important;
-  line-height: 1.5 !important;
-  font-weight: 500 !important;
+  @extend %title-text-md;
 }
 
 %h5,
-.h5,
 h5 {
-  @extend %base-header;
-  font-size: 1.125rem !important;
-  line-height: 1.5 !important;
-  font-weight: 500 !important;
+  @extend %title-text-sm;
 }
 
 %h6,
-.h6,
 h6 {
-  @extend %base-header;
-  font-size: 1rem !important;
-  line-height: 2 !important;
-  font-weight: 500 !important;
+  @extend %title-text-xs;
 }
 
 p {
+  @extend %body-text-md;
+
   margin: 0;
   -webkit-margin-before: 0em;
   margin-block-start: 0em;
@@ -134,100 +88,360 @@ p {
   margin-inline-end: 0px;
 }
 
-.text-xlg,
-%text-xlg {
+.hero-text-lg,
+%hero-text-lg {
   @extend %base-text;
-  font-size: 1.125rem !important;
-}
 
-.text-lg,
-%text-lg {
-  @extend %base-text;
-  font-size: 1rem !important;
-}
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 500;
 
-.text-lg-stable,
-%text-lg-stable {
-  font-size: 1rem !important;
-  line-height: 2 !important;
-  font-weight: normal !important;
-}
-
-.text-md,
-%text-md {
-  @extend %base-text;
-  font-size: 0.875rem !important;
-  font-weight: 500 !important;
-}
-
-.text-sm,
-%text-sm {
-  @extend %base-text;
-  font-size: 0.875rem !important;
-}
-
-.text-xs,
-%text-xs {
-  @extend %base-text;
-  font-size: 0.75rem !important;
-}
-
-.text-xxs,
-%text-xxs {
-  @extend %base-text;
-  font-size: 0.625rem !important;
-}
-
-.text-tiny,
-%text-tiny {
-  @extend %base-text;
-  font-size: 0.5rem !important;
-}
-
-@media (max-width: 769px) {
-  %h1,
-  .h1,
-  h1 {
-    font-size: 2rem !important;
-    line-height: 1.5 !important;
-    font-weight: 300 !important;
+  &.bolder {
+    font-weight: bold;
   }
 
-  %h2,
-  .h2,
-  h2 {
-    font-size: 1.5rem !important;
-    line-height: 1.5 !important;
-    font-weight: normal !important;
-  }
-
-  %h3,
-  .h3,
-  h3 {
-    font-size: 1.25rem !important;
-    line-height: 1.5 !important;
-    font-weight: 500 !important;
-  }
-
-  %h4,
-  .h4,
-  h4 {
-    font-size: 1.125rem !important;
-    line-height: 1.5 !important;
-    font-weight: 500 !important;
-  }
-
-  .text-xlg,
-  %text-xlg {
-    font-size: 1rem !important;
-    line-height: 2 !important;
-    font-weight: normal !important;
-  }
-
-  .text-lg,
-  %text-lg {
-    font-size: 0.875rem !important;
-    line-height: 2 !important;
-    font-weight: normal !important;
+  &.lighter {
+    font-weight: 300;
   }
 }
+
+%hero-text-lg-lighter {
+  @extend %base-text;
+
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+%hero-text-lg-medium {
+  @extend %base-text;
+
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+%hero-text-lg-bolder {
+  @extend %base-text;
+
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.hero-text-sm,
+%hero-text-sm {
+  @extend %base-text;
+
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
+
+  &.bolder {
+    font-weight: bold;
+  }
+
+  &.lighter {
+    font-weight: 400;
+  }
+}
+
+%hero-text-sm-lighter {
+  @extend %base-text;
+
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+%hero-text-sm-medium {
+  @extend %base-text;
+
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+%hero-text-sm-bolder {
+  @extend %base-text;
+
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.title-text-lg,
+%title-text-lg {
+  @extend %base-text;
+
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.title-text-md,
+%title-text-md {
+  @extend %base-text;
+
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.title-text-sm,
+%title-text-sm {
+  @extend %base-text;
+
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.title-text-xs,
+%title-text-xs {
+  @extend %base-text;
+
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.body-text-lg,
+%body-text-lg {
+  @extend %base-text;
+
+  font-size: 1.125rem;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.body-text-md,
+%body-text-md {
+  @extend %base-text;
+
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.body-text-sm,
+%body-text-sm {
+  @extend %base-text;
+
+  font-size: 0.875rem;
+  line-height: 2;
+  font-weight: 400;
+
+  &.bolder {
+    font-weight: 500;
+  }
+}
+
+%body-text-sm-bolder {
+  @extend %base-text;
+
+  font-size: 0.875rem;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.caption-text-lg,
+%caption-text-lg {
+  @extend %base-text;
+
+  font-size: 0.75rem;
+  line-height: 2;
+  font-weight: 400;
+
+  &.bolder {
+    font-weight: 500;
+  }
+}
+
+%caption-text-lg-bolder {
+  @extend %base-text;
+
+  font-size: 0.75rem;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.caption-text-md,
+%caption-text-md {
+  @extend %base-text;
+
+  font-size: 0.625rem;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.caption-text-sm,
+%caption-text-sm {
+  @extend %base-text;
+
+  font-size: 0.5rem;
+  line-height: 2;
+  font-weight: 400;
+}
+
+@media (max-width: map-get($breakpoints, "sm") - 1) {
+  .hero-text-lg,
+  %hero-text-lg {
+    font-size: 2rem;
+
+    &.lighter {
+      font-weight: 400;
+    }
+  }
+
+  %hero-text-lg-lighter {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  %hero-text-lg-medium {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  %hero-text-lg-bolder {
+    font-size: 2rem;
+  }
+
+  .hero-text-sm,
+  %hero-text-sm {
+    &.lighter {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+
+  %hero-text-sm-lighter {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  %hero-text-sm-bolder {
+    font-size: 1.5rem;
+  }
+
+  .title-text-lg,
+  %title-text-lg {
+    font-size: 1.25rem;
+  }
+
+  .title-text-md,
+  %hero-text-md {
+    font-size: 1.125rem;
+  }
+
+  .body-text-lg,
+  %body-text-lg {
+    font-size: 1rem;
+  }
+
+  .body-text-md,
+  %body-text-md {
+    &:not(.stable) {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+// .text-xlg,
+// %text-xlg {
+//   @extend %base-text;
+//   font-size: 1.125rem !important;
+// }
+
+// .text-lg,
+// %text-lg {
+//   @extend %base-text;
+//   font-size: 1rem !important;
+// }
+
+// .text-lg-stable,
+// %text-lg-stable {
+//   font-size: 1rem !important;
+//   line-height: 2 !important;
+//   font-weight: normal !important;
+// }
+
+// .text-md,
+// %text-md {
+//   @extend %base-text;
+//   font-size: 0.875rem !important;
+//   font-weight: 500 !important;
+// }
+
+// .text-sm,
+// %text-sm {
+//   @extend %base-text;
+//   font-size: 0.875rem !important;
+// }
+
+// .text-xs,
+// %text-xs {
+//   @extend %base-text;
+//   font-size: 0.75rem !important;
+// }
+
+// .text-xxs,
+// %text-xxs {
+//   @extend %base-text;
+//   font-size: 0.625rem !important;
+// }
+
+// .text-tiny,
+// %text-tiny {
+//   @extend %base-text;
+//   font-size: 0.5rem !important;
+// }
+
+// @media (max-width: 769px) {
+//   %h1,
+//   .h1,
+//   h1 {
+//     font-size: 2rem !important;
+//     line-height: 1.5 !important;
+//     font-weight: 300 !important;
+//   }
+
+//   %h2,
+//   .h2,
+//   h2 {
+//     font-size: 1.5rem !important;
+//     line-height: 1.5 !important;
+//     font-weight: normal !important;
+//   }
+
+//   %h3,
+//   .h3,
+//   h3 {
+//     font-size: 1.25rem !important;
+//     line-height: 1.5 !important;
+//     font-weight: 500 !important;
+//   }
+
+//   %h4,
+//   .h4,
+//   h4 {
+//     font-size: 1.125rem !important;
+//     line-height: 1.5 !important;
+//     font-weight: 500 !important;
+//   }
+
+//   .text-xlg,
+//   %text-xlg {
+//     font-size: 1rem !important;
+//     line-height: 2 !important;
+//     font-weight: normal !important;
+//   }
+
+//   .text-lg,
+//   %text-lg {
+//     font-size: 0.875rem !important;
+//     line-height: 2 !important;
+//     font-weight: normal !important;
+//   }
+// }

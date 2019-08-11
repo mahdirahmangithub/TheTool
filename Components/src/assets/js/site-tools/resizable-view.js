@@ -40,14 +40,14 @@ jQuery(function($) {
       _this.view.find(".resizable-typography-row").each(function() {
         var _fs = parseInt(
           $(this)
-            .find(".responsive-typography")
+            .find(".typography-transition")
             .css("font-size")
             .replace("px", "")
         );
 
         var _lh = parseInt(
           $(this)
-            .find(".responsive-typography")
+            .find(".typography-transition")
             .css("line-height")
             .replace("px", "")
         );
@@ -56,7 +56,7 @@ jQuery(function($) {
         switch (
           parseInt(
             $(this)
-              .find(".responsive-typography")
+              .find(".typography-transition")
               .css("font-weight")
           )
         ) {
@@ -71,7 +71,7 @@ jQuery(function($) {
             break;
           default:
             _fw = $(this)
-              .find(".responsive-typography")
+              .find(".typography-transition")
               .css("font-weight");
             break;
         }
