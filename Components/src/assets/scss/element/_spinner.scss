@@ -92,7 +92,7 @@
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    border: 0.25rem solid $black-4;
+    border: 0.25rem solid blackColor(0.04);
     animation-name: rotateSpinner;
     animation-duration: 600ms;
     animation-timing-function: linear;
@@ -169,7 +169,7 @@
     }
 
     & > .moving-particle {
-      stroke: $black-48;
+      stroke: blackColor(0.48);
       animation-name: svgRotateSpinnerMoving;
       animation-duration: 1.6s;
       animation-timing-function: ease-in;

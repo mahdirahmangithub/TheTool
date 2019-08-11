@@ -1,11 +1,7 @@
 $brand-primary-color: hsla(360, 63%, 40%, 1) !default;
-$brand-color-56: change-color($brand-primary-color, $alpha: 0.56) !default;
-$brand-color-32: change-color($brand-primary-color, $alpha: 0.32) !default;
-$brand-color-24: change-color($brand-primary-color, $alpha: 0.24) !default;
-$brand-color-14: change-color($brand-primary-color, $alpha: 0.14) !default;
-$brand-color-12: change-color($brand-primary-color, $alpha: 0.12) !default;
-$brand-color-8: change-color($brand-primary-color, $alpha: 0.08) !default;
-$brand-color-4: change-color($brand-primary-color, $alpha: 0.04) !default;
+$brand-secondary-color: brandColor(0.56) !default;
+$brand-hint-color: brandColor(0.32) !default;
+$brand-divider-color: brandColor(0.12) !default;
 $brand-hover-color: adjust-color(
   $brand-primary-color,
   $saturation: -8%,
@@ -16,37 +12,24 @@ $brand-press-color: adjust-color(
   $saturation: +8%,
   $lightness: -4%
 ) !default;
-$brand-secondary-color: $brand-color-56 !default;
-$brand-hint-color: $brand-color-32 !default;
-$brand-divider-color: $brand-color-12 !default;
 
 $danger-color: hsla(360, 100%, 50%, 1) !default;
 $success-color: hsla(123, 46%, 34%, 1) !default;
 
 $black: hsla(0, 0%, 0%, 1) !default;
-$black-60: change-color($black, $alpha: 0.6) !default;
-$black-56: change-color($black, $alpha: 0.56) !default;
-$black-48: change-color($black, $alpha: 0.48) !default;
-$black-32: change-color($black, $alpha: 0.32) !default;
-$black-24: change-color($black, $alpha: 0.24) !default;
-$black-16: change-color($black, $alpha: 0.16) !default;
-$black-12: change-color($black, $alpha: 0.12) !default;
-$black-8: change-color($black, $alpha: 0.08) !default;
-$black-4: change-color($black, $alpha: 0.04) !default;
-$black-2: change-color($black, $alpha: 0.02) !default;
-$black-hover: adjust-color($black-56, $lightness: +12%) !default;
-$black-primary: change-color($black, $alpha: 0.87) !default;
-$black-secondary: $black-56 !default;
-$black-press: $black-60 !default;
-$black-hint: $black-32 !default;
-$black-divider: $black-12 !default;
+$black-tooltip: adjust-color($black, $lightness: +16%);
+$black-hover: adjust-color(blackColor(0.56), $lightness: +12%) !default;
+$black-primary: blackColor(0.87) !default;
+$black-secondary: blackColor(0.56) !default;
+$black-press: blackColor(0.6) !default;
+$black-hint: blackColor(0.32) !default;
+$black-divider: blackColor(0.12) !default;
 
 $white: hsla(0, 0%, 100%, 1) !default;
-$white-12: change-color($white, $alpha: 0.12) !default;
-$white-secondary: change-color($white, $alpha: 0.7) !default;
-$white-hint: change-color($white, $alpha: 0.5) !default;
+$white-secondary: whiteColor(0.7) !default;
+$white-hint: whiteColor(0.5) !default;
 $white-primary: $white !default;
-$white-divider: $white-12 !default;
+$white-divider: whiteColor(0.12) !default;
 
 $gray-900: adjust-color($black, $lightness: +13%) !default;
 $gray-850: adjust-color($black, $lightness: +19%) !default;

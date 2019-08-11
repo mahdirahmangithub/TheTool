@@ -36,7 +36,7 @@
     cursor: not-allowed !important;
 
     %switch-control__label {
-      color: $black-32;
+      color: blackColor(0.32);
       pointer-events: none;
     }
 
@@ -54,7 +54,7 @@
   &.checked {
     %switch-control__cell {
       &:before {
-        background-color: $brand-color-4;
+        background-color: brandColor(0.04);
       }
     }
   }
@@ -82,7 +82,7 @@
     height: 100%;
     border-radius: 50%;
     position: absolute;
-    background-color: $black-4;
+    background-color: blackColor(0.04);
     transform: scale(0);
     opacity: 0;
     transform-origin: center;
@@ -116,7 +116,7 @@
 %switch-control__button {
   width: 1.125rem;
   height: 1.125rem;
-  border: 1px solid $black-24;
+  border: 1px solid blackColor(0.24);
   position: absolute;
   pointer-events: none;
   display: flex;
@@ -148,7 +148,7 @@
   transform-origin: center;
   pointer-events: none;
   user-select: none;
-  background-color: $brand-color-8;
+  background-color: brandColor(0.08);
   z-index: -1;
 }
 
@@ -159,6 +159,6 @@
 @keyframes switch_ripple {
   100% {
     transform: scale(4);
-    background-color: $brand-color-4;
+    background-color: brandColor(0.04);
   }
 }

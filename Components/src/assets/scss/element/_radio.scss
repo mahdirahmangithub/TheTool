@@ -4,14 +4,14 @@
   &.disabled {
     .radio-control__button {
       &:after {
-        background-color: $black-12;
+        background-color: blackColor(0.12);
       }
     }
   }
 
   &.checked:not(.disabled) {
     .radio-control__button {
-      border-color: $brand-color-32;
+      border-color: brandColor(0.32);
 
       &:after {
         opacity: 1;
@@ -43,7 +43,7 @@
 
   .radio-control:not(.disabled) &:checked {
     & + .radio-control__button {
-      border-color: $brand-color-32;
+      border-color: brandColor(0.32);
     }
   }
 }

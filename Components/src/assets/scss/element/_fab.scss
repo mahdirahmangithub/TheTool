@@ -12,8 +12,8 @@
   background-color: $brand-primary-color;
   outline: none;
   border: none;
-  box-shadow: 0 1px 32px 0 $black-8, 0 12px 16px 0 $black-12,
-    0 8px 12px -6px $black-16;
+  box-shadow: 0 1px 32px 0 blackColor(0.08), 0 12px 16px 0 blackColor(0.12),
+    0 8px 12px -6px blackColor(0.16);
   border-radius: 50%;
 
   transition: background-color 360ms ease, transform 360ms ease,
@@ -22,8 +22,8 @@
   &:hover,
   &:focus {
     background-color: $brand-hover-color;
-    box-shadow: 0 0 12px 0 $black-8, 0 4px 10px 0 $black-12,
-      0 2px 6px -1px $black-24;
+    box-shadow: 0 0 12px 0 blackColor(0.08), 0 4px 10px 0 blackColor(0.12),
+      0 2px 6px -1px blackColor(0.24);
   }
 
   &:active {
@@ -132,7 +132,7 @@
   transform-origin: center;
   pointer-events: none;
   user-select: none;
-  background-color: $white-12;
+  background-color: whiteColor(0.12);
 }
 
 .fab__ripple-animation {

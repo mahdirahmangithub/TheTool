@@ -153,7 +153,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $black-4;
+  background-color: blackColor(0.04);
   border-radius: map-get($spaces, "x2");
   overflow: hidden;
 

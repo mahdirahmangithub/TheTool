@@ -5,7 +5,7 @@
   align-items: center;
   align-self: center;
   border-radius: 0.25rem;
-  background-color: $black-4;
+  background-color: blackColor(0.04);
   vertical-align: middle;
   overflow: hidden;
   position: relative;
@@ -88,7 +88,7 @@
 
       &.outlined:hover,
       &.outlined:focus {
-        background-color: $brand-color-12;
+        background-color: brandColor(0.12);
       }
     }
 
@@ -106,8 +106,8 @@
     }
 
     &.outlined {
-      background-color: $brand-color-4;
-      border: 1px solid $brand-color-56;
+      background-color: brandColor(0.04);
+      border: 1px solid brandColor(0.56);
 
       &,
       .chips__text {
@@ -143,7 +143,7 @@
     &.removable {
       & > .chips__remove {
         & > .chips__remove__icon {
-          background-color: $black-24;
+          background-color: blackColor(0.24);
         }
 
         &:hover,
@@ -151,7 +151,7 @@
           background-color: transparent;
 
           & > .chips__remove__icon {
-            background-color: $black-48;
+            background-color: blackColor(0.48);
           }
         }
       }
@@ -164,8 +164,8 @@
 
     &.togglable:not(.primary) {
       &.active {
-        background-color: $brand-color-4;
-        border: 1px solid $brand-color-56;
+        background-color: brandColor(0.04);
+        border: 1px solid brandColor(0.56);
 
         &,
         .chips__text {
@@ -182,7 +182,7 @@
 
         &:hover,
         &:focus {
-          background-color: $brand-color-12;
+          background-color: brandColor(0.12);
         }
       }
     }
@@ -222,7 +222,7 @@
 
     &:hover,
     &:focus {
-      background-color: $black-12;
+      background-color: blackColor(0.12);
 
       &,
       .chips__text {

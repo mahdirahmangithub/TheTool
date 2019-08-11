@@ -23,7 +23,7 @@
     cursor: not-allowed !important;
 
     .switch-toggle__label {
-      color: $black-32;
+      color: blackColor(0.32);
       pointer-events: none;
     }
 
@@ -34,7 +34,7 @@
     }
 
     .switch-toggle__track {
-      background-color: $black-8;
+      background-color: blackColor(0.08);
     }
 
     .switch-toggle__input {
@@ -44,7 +44,7 @@
 
           .switch-toggle__indicator {
             &:after {
-              background-color: $black-12;
+              background-color: blackColor(0.12);
               pointer-events: none !important;
             }
           }
@@ -113,7 +113,7 @@
         );
 
         &:before {
-          background-color: $brand-color-4;
+          background-color: brandColor(0.04);
         }
       }
     }
@@ -132,7 +132,7 @@
   padding: 0.125rem;
   box-sizing: border-box;
   transition: 240ms ease;
-  background-color: $black-24;
+  background-color: blackColor(0.24);
   pointer-events: none;
 }
 
@@ -165,7 +165,7 @@
     height: 100%;
     border-radius: 50%;
     position: absolute;
-    background-color: $black-4;
+    background-color: blackColor(0.04);
     transform: scale(0);
     opacity: 0;
     z-index: -1;
@@ -179,7 +179,7 @@
   height: 1.25rem;
   border-radius: 50%;
   background-color: $white;
-  box-shadow: 0px 2px 4px $black-24;
+  box-shadow: 0px 2px 4px blackColor(0.24);
   z-index: 2;
   pointer-events: none;
 }

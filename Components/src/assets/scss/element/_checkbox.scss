@@ -8,7 +8,7 @@
     }
 
     .checkbox-control__input:checked + .checkbox-control__button {
-      background-color: $black-12;
+      background-color: blackColor(0.12);
     }
   }
 }

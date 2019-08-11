@@ -57,7 +57,7 @@
   position: relative;
   z-index: 3;
   background-color: $white;
-  border-top: 1px solid $black-12;
+  border-top: 1px solid blackColor(0.12);
   transition: background-color 360ms ease;
 }
 

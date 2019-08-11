@@ -30,7 +30,7 @@
   position: relative;
   height: 360px;
   border-radius: 4px;
-  background-color: $black-4;
+  background-color: blackColor(0.04);
 
   &:hover {
     & > .anatomy__figure__image--spec {

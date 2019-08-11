@@ -134,15 +134,15 @@
 
   &.inlined {
     background-color: transparent;
-    color: $black-56;
+    color: blackColor(0.56);
 
     .fill {
-      fill: $black-56;
+      fill: blackColor(0.56);
     }
 
     &:hover,
     &:focus {
-      background-color: $black-4;
+      background-color: blackColor(0.04);
       color: $black-primary;
 
       .fill {
@@ -151,39 +151,39 @@
     }
 
     &:active {
-      background-color: $black-12;
+      background-color: blackColor(0.12);
     }
 
     .button__rippler__ripple {
-      background-color: $black-12;
+      background-color: blackColor(0.12);
     }
 
     &.disabled,
     &[disabled] {
       background-color: transparent;
-      color: $black-32;
+      color: blackColor(0.32);
 
       .fill {
-        fill: $black-32;
+        fill: blackColor(0.32);
       }
     }
   }
 
   &.raised {
-    box-shadow: 0 8px 12px -6px $black-16, 0 12px 16px 0 $black-12,
-      0 1px 32px 0 $black-8;
+    box-shadow: 0 8px 12px -6px blackColor(0.16), 0 12px 16px 0 blackColor(0.12),
+      0 1px 32px 0 blackColor(0.08);
 
     &:hover,
     &:focus {
-      box-shadow: 0 2px 6px -1px $black-24, 0 4px 10px 0 $black-12,
-        0 0 12px 0 $black-8;
+      box-shadow: 0 2px 6px -1px blackColor(0.24), 0 4px 10px 0 blackColor(0.12),
+        0 0 12px 0 blackColor(0.08);
       transform: translateY(0.125rem);
     }
   }
 
   &.outlined {
     background-color: transparent;
-    border-color: $black-48;
+    border-color: blackColor(0.04) 8;
     color: $black-primary;
 
     .fill {
@@ -192,25 +192,25 @@
 
     &:hover,
     &:focus {
-      background-color: $black-4;
+      background-color: blackColor(0.04);
     }
 
     &:active {
-      background-color: $black-12;
+      background-color: blackColor(0.12);
     }
 
     .button__rippler__ripple {
-      background-color: $black-12;
+      background-color: blackColor(0.12);
     }
 
     &.disabled,
     [disabled] {
       background-color: transparent !important;
-      border-color: $black-12;
-      color: $black-32;
+      border-color: blackColor(0.12);
+      color: blackColor(0.32);
 
       .fill {
-        fill: $black-32;
+        fill: blackColor(0.32);
       }
     }
   }
@@ -219,24 +219,24 @@
     background-color: $brand-primary-color;
 
     &.raised {
-      box-shadow: 0 14px 20px -12px $brand-color-32,
-        0 16px 24px 2px $brand-color-14, 0 12px 30px -8px $brand-color-12;
+      box-shadow: 0 14px 20px -12px brandColor(0.32),
+        0 16px 24px 2px brandColor(0.14), 0 12px 30px -8px brandColor(0.12);
 
       &:hover,
       &:focus {
-        box-shadow: 0 0px 6px -2px $brand-color-56,
-          0 4px 16px 0px $brand-color-14, 0 2px 10px 0 $brand-color-12;
+        box-shadow: 0 0px 6px -2px brandColor(0.56),
+          0 4px 16px 0px brandColor(0.14), 0 2px 10px 0 brandColor(0.12);
         transform: translateY(0.125rem);
       }
 
       &.small {
-        box-shadow: 0 8px 9px -4px $brand-color-24,
-          0 14px 16px 2px $brand-color-14, 0 5px 20px 4px $brand-color-12;
+        box-shadow: 0 8px 9px -4px brandColor(0.24),
+          0 14px 16px 2px brandColor(0.14), 0 5px 20px 4px brandColor(0.12);
 
         &:hover,
         &:focus {
-          box-shadow: 0 0px 4px -2px $brand-color-56,
-            0 4px 8px 0 $brand-color-14, 0 0px 8px 2px $brand-color-12;
+          box-shadow: 0 0px 4px -2px brandColor(0.56),
+            0 4px 8px 0 brandColor(0.14), 0 0px 8px 2px brandColor(0.12);
         }
       }
     }
@@ -252,27 +252,27 @@
 
       &:hover,
       &:focus {
-        background-color: $brand-color-4;
+        background-color: brandColor(0.04);
         border-color: $brand-primary-color;
       }
 
       &:active {
-        background-color: $brand-color-12;
+        background-color: brandColor(0.12);
         border-color: $brand-primary-color;
       }
 
       .button__rippler__ripple {
-        background-color: $brand-color-12;
+        background-color: brandColor(0.12);
       }
 
       &.disabled,
       [disabled] {
         background-color: transparent;
-        border-color: $brand-color-12;
-        color: $brand-color-32;
+        border-color: brandColor(0.12);
+        color: brandColor(0.32);
 
         .fill {
-          fill: $brand-color-32;
+          fill: brandColor(0.32);
         }
       }
     }
@@ -287,24 +287,24 @@
 
       &:hover,
       &:focus {
-        background-color: $brand-color-4;
+        background-color: brandColor(0.04);
       }
 
       &:active {
-        background-color: $brand-color-12;
+        background-color: brandColor(0.12);
       }
 
       .button__rippler__ripple {
-        background-color: $brand-color-12;
+        background-color: brandColor(0.12);
       }
 
       &.disabled,
       [disabled] {
         background-color: transparent;
-        color: $brand-color-32;
+        color: brandColor(0.32);
 
         .fill {
-          fill: $brand-color-32;
+          fill: brandColor(0.32);
         }
 
         &:hover,
@@ -335,12 +335,12 @@
   &.disabled,
   &[disabled] {
     background-color: $gray-100;
-    color: $black-32;
+    color: blackColor(0.32);
     cursor: not-allowed;
     box-shadow: none !important;
 
     .fill {
-      fill: $black-32;
+      fill: blackColor(0.32);
     }
 
     &:hover {
@@ -370,7 +370,7 @@
     transform-origin: center;
     pointer-events: none;
     user-select: none;
-    background-color: $white-12;
+    background-color: whiteColor(0.12);
   }
 
   .button__ripple-animation {

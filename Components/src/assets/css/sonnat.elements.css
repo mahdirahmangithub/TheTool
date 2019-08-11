@@ -1586,7 +1586,7 @@ body[dir=ltr] .button.small > .button__icon, body:not([dir=ltr]):not([dir=rtl]) 
 }
 .button.outlined {
   background-color: transparent;
-  border-color: rgba(0, 0, 0, 0.48);
+  border-color: rgba(0, 0, 0, 0.04) 8;
   color: rgba(0, 0, 0, 0.87);
 }
 .button.outlined .fill {
@@ -2459,7 +2459,7 @@ body[dir=ltr] .accordion__icon, body:not([dir=ltr]):not([dir=rtl]) .accordion__i
   color: rgba(0, 0, 0, 0.6);
 }
 .tooltip.tailed .tooltip-box {
-  background-color: #fff;
+  background-color: white;
 }
 .tooltip.tailed .tooltip-box:after, .tooltip.tailed .tooltip-box:before {
   content: "";
@@ -2530,7 +2530,7 @@ body[dir=ltr] .accordion__icon, body:not([dir=ltr]):not([dir=rtl]) .accordion__i
   background-color: #292929;
 }
 .tooltip:not(.tailed) .tooltip-text {
-  color: #fff;
+  color: white;
 }
 
 .tooltip-box {
@@ -2557,7 +2557,7 @@ body[dir=ltr] .accordion__icon, body:not([dir=ltr]):not([dir=rtl]) .accordion__i
   position: absolute;
   width: 0.75rem;
   height: 0.75rem;
-  background-color: #fff;
+  background-color: white;
   z-index: -1;
 }
 

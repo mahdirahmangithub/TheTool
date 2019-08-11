@@ -1,0 +1,11 @@
+@function blackColor($alpha) {
+  @return change-color($black, $alpha: $alpha);
+}
+
+@function brandColor($alpha) {
+  @return change-color($brand-primary-color, $alpha: $alpha);
+}
+
+@function whiteColor($alpha) {
+  @return change-color($white, $alpha: $alpha);
+}
