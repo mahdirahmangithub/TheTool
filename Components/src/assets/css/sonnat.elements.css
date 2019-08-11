@@ -91,17 +91,18 @@ ul {
 .accordion__list .accordion__list__item > a,
 .text-field__description, .accordion__heading, .text-field__input, .body-text-md,
 .section-row__paragraph,
-.title-row__title--subtitle,
-p, .body-text-lg,
+.title-row__title--subtitle, .body-text-lg,
 .section-row > .section-row__title ~ .section-row__title, .title-text-xs,
-h6, .title-text-sm,
-h5, .title-text-md,
-.section-row__title,
-h4, .title-text-lg,
-.title-row__title,
+.h6, .title-text-sm,
+.h5, .title-text-md,
+.h4, .title-text-lg,
+.h3, .h2, .hero-text-sm, .h1, .hero-text-lg, p,
+h6,
+h5, .section-row__title,
+h4, .title-row__title,
 h3,
-h2, .hero-text-sm,
-h1, .hero-text-lg {
+h2,
+h1 {
   margin: 0;
   margin-block-start: 0em;
   margin-block-end: 0em;
@@ -127,17 +128,18 @@ body[dir=rtl] .accordion__list .accordion__list__item > a,
 .accordion__list body[dir=rtl] .accordion__list__item > a,
 body[dir=rtl] .text-field__description, body[dir=rtl] .accordion__heading, body[dir=rtl] .text-field__input, body[dir=rtl] .body-text-md,
 body[dir=rtl] .section-row__paragraph,
-body[dir=rtl] .title-row__title--subtitle,
-body[dir=rtl] p, body[dir=rtl] .body-text-lg,
+body[dir=rtl] .title-row__title--subtitle, body[dir=rtl] .body-text-lg,
 body[dir=rtl] .section-row > .section-row__title ~ .section-row__title, body[dir=rtl] .title-text-xs,
-body[dir=rtl] h6, body[dir=rtl] .title-text-sm,
-body[dir=rtl] h5, body[dir=rtl] .title-text-md,
-body[dir=rtl] .section-row__title,
-body[dir=rtl] h4, body[dir=rtl] .title-text-lg,
-body[dir=rtl] .title-row__title,
+body[dir=rtl] .h6, body[dir=rtl] .title-text-sm,
+body[dir=rtl] .h5, body[dir=rtl] .title-text-md,
+body[dir=rtl] .h4, body[dir=rtl] .title-text-lg,
+body[dir=rtl] .h3, body[dir=rtl] .h2, body[dir=rtl] .hero-text-sm, body[dir=rtl] .h1, body[dir=rtl] .hero-text-lg, body[dir=rtl] p,
+body[dir=rtl] h6,
+body[dir=rtl] h5, body[dir=rtl] .section-row__title,
+body[dir=rtl] h4, body[dir=rtl] .title-row__title,
 body[dir=rtl] h3,
-body[dir=rtl] h2, body[dir=rtl] .hero-text-sm,
-body[dir=rtl] h1, body[dir=rtl] .hero-text-lg {
+body[dir=rtl] h2,
+body[dir=rtl] h1 {
   text-align: right;
 }
 body[dir=ltr] .chips,
@@ -152,17 +154,18 @@ body[dir=ltr] .accordion__list .accordion__list__item > a,
 .accordion__list body[dir=ltr] .accordion__list__item > a,
 body[dir=ltr] .text-field__description, body[dir=ltr] .accordion__heading, body[dir=ltr] .text-field__input, body[dir=ltr] .body-text-md,
 body[dir=ltr] .section-row__paragraph,
-body[dir=ltr] .title-row__title--subtitle,
-body[dir=ltr] p, body[dir=ltr] .body-text-lg,
+body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .body-text-lg,
 body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body[dir=ltr] .title-text-xs,
-body[dir=ltr] h6, body[dir=ltr] .title-text-sm,
-body[dir=ltr] h5, body[dir=ltr] .title-text-md,
-body[dir=ltr] .section-row__title,
-body[dir=ltr] h4, body[dir=ltr] .title-text-lg,
-body[dir=ltr] .title-row__title,
+body[dir=ltr] .h6, body[dir=ltr] .title-text-sm,
+body[dir=ltr] .h5, body[dir=ltr] .title-text-md,
+body[dir=ltr] .h4, body[dir=ltr] .title-text-lg,
+body[dir=ltr] .h3, body[dir=ltr] .h2, body[dir=ltr] .hero-text-sm, body[dir=ltr] .h1, body[dir=ltr] .hero-text-lg, body[dir=ltr] p,
+body[dir=ltr] h6,
+body[dir=ltr] h5, body[dir=ltr] .section-row__title,
+body[dir=ltr] h4, body[dir=ltr] .title-row__title,
 body[dir=ltr] h3,
-body[dir=ltr] h2, body[dir=ltr] .hero-text-sm,
-body[dir=ltr] h1, body[dir=ltr] .hero-text-lg, body:not([dir=ltr]):not([dir=rtl]) .chips,
+body[dir=ltr] h2,
+body[dir=ltr] h1, body:not([dir=ltr]):not([dir=rtl]) .chips,
 body:not([dir=ltr]):not([dir=rtl]) .chips .chips__text,
 .chips body:not([dir=ltr]):not([dir=rtl]) .chips__text, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .fab__label, body:not([dir=ltr]):not([dir=rtl]) .caption-text-sm, body:not([dir=ltr]):not([dir=rtl]) .caption-text-md, body:not([dir=ltr]):not([dir=rtl]) .caption-text-lg,
 body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
@@ -174,17 +177,18 @@ body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > a,
 .accordion__list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__item > a,
 body:not([dir=ltr]):not([dir=rtl]) .text-field__description, body:not([dir=ltr]):not([dir=rtl]) .accordion__heading, body:not([dir=ltr]):not([dir=rtl]) .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .body-text-md,
 body:not([dir=ltr]):not([dir=rtl]) .section-row__paragraph,
-body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle,
-body:not([dir=ltr]):not([dir=rtl]) p, body:not([dir=ltr]):not([dir=rtl]) .body-text-lg,
+body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle, body:not([dir=ltr]):not([dir=rtl]) .body-text-lg,
 body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .title-text-xs,
-body:not([dir=ltr]):not([dir=rtl]) h6, body:not([dir=ltr]):not([dir=rtl]) .title-text-sm,
-body:not([dir=ltr]):not([dir=rtl]) h5, body:not([dir=ltr]):not([dir=rtl]) .title-text-md,
-body:not([dir=ltr]):not([dir=rtl]) .section-row__title,
-body:not([dir=ltr]):not([dir=rtl]) h4, body:not([dir=ltr]):not([dir=rtl]) .title-text-lg,
-body:not([dir=ltr]):not([dir=rtl]) .title-row__title,
+body:not([dir=ltr]):not([dir=rtl]) .h6, body:not([dir=ltr]):not([dir=rtl]) .title-text-sm,
+body:not([dir=ltr]):not([dir=rtl]) .h5, body:not([dir=ltr]):not([dir=rtl]) .title-text-md,
+body:not([dir=ltr]):not([dir=rtl]) .h4, body:not([dir=ltr]):not([dir=rtl]) .title-text-lg,
+body:not([dir=ltr]):not([dir=rtl]) .h3, body:not([dir=ltr]):not([dir=rtl]) .h2, body:not([dir=ltr]):not([dir=rtl]) .hero-text-sm, body:not([dir=ltr]):not([dir=rtl]) .h1, body:not([dir=ltr]):not([dir=rtl]) .hero-text-lg, body:not([dir=ltr]):not([dir=rtl]) p,
+body:not([dir=ltr]):not([dir=rtl]) h6,
+body:not([dir=ltr]):not([dir=rtl]) h5, body:not([dir=ltr]):not([dir=rtl]) .section-row__title,
+body:not([dir=ltr]):not([dir=rtl]) h4, body:not([dir=ltr]):not([dir=rtl]) .title-row__title,
 body:not([dir=ltr]):not([dir=rtl]) h3,
-body:not([dir=ltr]):not([dir=rtl]) h2, body:not([dir=ltr]):not([dir=rtl]) .hero-text-sm,
-body:not([dir=ltr]):not([dir=rtl]) h1, body:not([dir=ltr]):not([dir=rtl]) .hero-text-lg {
+body:not([dir=ltr]):not([dir=rtl]) h2,
+body:not([dir=ltr]):not([dir=rtl]) h1 {
   text-align: left;
 }
 .typography-transition.chips,
@@ -195,34 +199,23 @@ body:not([dir=ltr]):not([dir=rtl]) h1, body:not([dir=ltr]):not([dir=rtl]) .hero-
 .accordion__list .accordion__list__item > a.typography-transition,
 .typography-transition.text-field__description, .typography-transition.accordion__heading, .typography-transition.text-field__input, .typography-transition.body-text-md,
 .typography-transition.section-row__paragraph,
-.typography-transition.title-row__title--subtitle,
-p.typography-transition, .typography-transition.body-text-lg,
+.typography-transition.title-row__title--subtitle, .typography-transition.body-text-lg,
 .section-row > .section-row__title ~ .typography-transition.section-row__title, .typography-transition.title-text-xs,
-h6.typography-transition, .typography-transition.title-text-sm,
-h5.typography-transition, .typography-transition.title-text-md,
-.typography-transition.section-row__title,
-h4.typography-transition, .typography-transition.title-text-lg,
-.typography-transition.title-row__title,
+.typography-transition.h6, .typography-transition.title-text-sm,
+.typography-transition.h5, .typography-transition.title-text-md,
+.typography-transition.h4, .typography-transition.title-text-lg,
+.typography-transition.h3, .typography-transition.h2, .typography-transition.hero-text-sm, .typography-transition.h1, .typography-transition.hero-text-lg, p.typography-transition,
+h6.typography-transition,
+h5.typography-transition, .typography-transition.section-row__title,
+h4.typography-transition, .typography-transition.title-row__title,
 h3.typography-transition,
-h2.typography-transition, .typography-transition.hero-text-sm,
-h1.typography-transition, .typography-transition.hero-text-lg {
+h2.typography-transition,
+h1.typography-transition {
   transition: font-size 200ms ease, line-height 200ms ease;
 }
 
 .text-justify {
   text-align: justify;
-}
-
-.hero-text-lg {
-  font-size: 3rem;
-  line-height: 1.5;
-  font-weight: 500;
-}
-.hero-text-lg.bolder {
-  font-weight: bold;
-}
-.hero-text-lg.lighter {
-  font-weight: 300;
 }
 
 h1 {
@@ -231,25 +224,12 @@ h1 {
   font-weight: 500;
 }
 
-.hero-text-sm {
-  font-size: 2rem;
-  line-height: 1.5;
-  font-weight: 500;
-}
-.hero-text-sm.bolder {
-  font-weight: bold;
-}
-.hero-text-sm.lighter {
-  font-weight: 400;
-}
-
 h2 {
   font-size: 2rem;
   line-height: 1.5;
   font-weight: 500;
 }
 
-.title-text-lg,
 .title-row__title,
 h3 {
   font-size: 1.5rem;
@@ -257,7 +237,6 @@ h3 {
   font-weight: 500;
 }
 
-.title-text-md,
 .section-row__title,
 h4 {
   font-size: 1.25rem;
@@ -265,94 +244,170 @@ h4 {
   font-weight: 500;
 }
 
-.title-text-sm,
 h5 {
   font-size: 1.125rem;
   line-height: 1.5;
   font-weight: 500;
 }
 
-.title-text-xs,
 h6 {
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 500;
 }
 
-.body-text-lg,
-.section-row > .section-row__title ~ .section-row__title {
-  font-size: 1.125rem;
-  line-height: 2;
-  font-weight: 400;
-}
-
-.body-text-md,
-.section-row__paragraph,
-.title-row__title--subtitle,
 p {
   font-size: 1rem;
   line-height: 2;
   font-weight: 400;
 }
 
+.hero-text-lg {
+  font-size: 3rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+.hero-text-lg.bolder {
+  font-weight: bold !important;
+}
+.hero-text-lg.lighter {
+  font-weight: 300 !important;
+}
+
+.h1 {
+  font-size: 3rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+
+.hero-text-sm {
+  font-size: 2rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+.hero-text-sm.bolder {
+  font-weight: bold !important;
+}
+.hero-text-sm.lighter {
+  font-weight: 400 !important;
+}
+
+.h2 {
+  font-size: 2rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+
+.title-text-lg,
+.h3 {
+  font-size: 1.5rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+
+.title-text-md,
+.h4 {
+  font-size: 1.25rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+
+.title-text-sm,
+.h5 {
+  font-size: 1.125rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+
+.title-text-xs,
+.h6 {
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+
+.body-text-lg,
+.section-row > .section-row__title ~ .section-row__title {
+  font-size: 1.125rem !important;
+  line-height: 2 !important;
+  font-weight: 400 !important;
+}
+.body-text-lg.lighter,
+.section-row > .section-row__title ~ .lighter.section-row__title {
+  font-weight: 300 !important;
+}
+
+.body-text-md,
+.section-row__paragraph,
+.title-row__title--subtitle {
+  font-size: 1rem !important;
+  line-height: 2 !important;
+  font-weight: 400 !important;
+}
+
 .accordion__heading, .text-field__input {
-  font-size: 1rem;
-  line-height: 2;
-  font-weight: 400;
+  font-size: 1rem !important;
+  line-height: 2 !important;
+  font-weight: 400 !important;
 }
 
 .body-text-sm,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .accordion__list .accordion__list__item > a,
 .text-field__description {
-  font-size: 0.875rem;
-  line-height: 2;
-  font-weight: 400;
+  font-size: 0.875rem !important;
+  line-height: 2 !important;
+  font-weight: 400 !important;
 }
 .body-text-sm.bolder,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.bolder,
 .accordion__list .accordion__list__item > a.bolder,
 .bolder.text-field__description {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .title-row__title--pretitle {
-  font-size: 0.875rem;
-  line-height: 2;
-  font-weight: 500;
+  font-size: 0.875rem !important;
+  line-height: 2 !important;
+  font-weight: 500 !important;
 }
 
 .caption-text-lg,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a,
 .text-field__hints {
-  font-size: 0.75rem;
-  line-height: 2;
-  font-weight: 400;
+  font-size: 0.75rem !important;
+  line-height: 2 !important;
+  font-weight: 400 !important;
 }
 .caption-text-lg.bolder,
 .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.bolder,
 .bolder.text-field__hints {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .caption-text-md {
-  font-size: 0.625rem;
-  line-height: 2;
-  font-weight: 400;
+  font-size: 0.625rem !important;
+  line-height: 2 !important;
+  font-weight: 400 !important;
 }
 
 .caption-text-sm {
-  font-size: 0.5rem;
-  line-height: 2;
-  font-weight: 400;
+  font-size: 0.5rem !important;
+  line-height: 2 !important;
+  font-weight: 400 !important;
 }
 
 @media (max-width: 769px) {
   .hero-text-lg {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
   .hero-text-lg.lighter {
-    font-weight: 400;
+    font-weight: 400 !important;
+  }
+
+  .h1 {
+    font-size: 2rem !important;
+    font-weight: 500 !important;
   }
 
   h1 {
@@ -361,32 +416,39 @@ p {
   }
 
   .hero-text-sm.lighter {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
   }
 
   .title-text-lg,
-.title-row__title,
+.h3 {
+    font-size: 1.25rem !important;
+  }
+
+  .title-row__title,
 h3 {
     font-size: 1.25rem;
   }
 
   .title-text-md,
-.section-row__title,
+.h4 {
+    font-size: 1.125rem !important;
+  }
+
+  .section-row__title,
 h4 {
     font-size: 1.125rem;
   }
 
   .body-text-lg,
 .section-row > .section-row__title ~ .section-row__title {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   .body-text-md:not(.stable),
 .section-row__paragraph:not(.stable),
-.title-row__title--subtitle:not(.stable),
-p:not(.stable) {
-    font-size: 0.875rem;
+.title-row__title--subtitle:not(.stable) {
+    font-size: 0.875rem !important;
   }
 }
 .visible {
@@ -1586,7 +1648,7 @@ body[dir=ltr] .button.small > .button__icon, body:not([dir=ltr]):not([dir=rtl]) 
 }
 .button.outlined {
   background-color: transparent;
-  border-color: rgba(0, 0, 0, 0.04) 8;
+  border-color: rgba(0, 0, 0, 0.48);
   color: rgba(0, 0, 0, 0.87);
 }
 .button.outlined .fill {
@@ -2785,6 +2847,176 @@ body[dir=rtl] .chips.removable > .chips__remove {
 }
 body[dir=ltr] .chips.removable > .chips__remove, body:not([dir=ltr]):not([dir=rtl]) .chips.removable > .chips__remove {
   margin-right: -0.75rem;
+}
+
+.spinner {
+  max-height: 2.5rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.spinner > .io-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.spinner > .io-spinner.small > .circle:nth-child(4) {
+  display: none;
+}
+.spinner > .io-spinner > .circle {
+  background-color: rgba(0, 0, 0, 0.56);
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  opacity: 0;
+  animation-name: ioSpinner;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.spinner > .io-spinner > .circle:nth-child(1) {
+  animation-delay: 0s;
+}
+.spinner > .io-spinner > .circle:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.spinner > .io-spinner > .circle:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.spinner > .io-spinner > .circle:nth-child(4) {
+  animation-delay: 0.45s;
+}
+.spinner > .snake-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.spinner > .snake-spinner > .circle {
+  background-color: rgba(0, 0, 0, 0.56);
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  opacity: 0;
+  animation-name: snakeSpinner;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.spinner > .snake-spinner > .circle + .circle {
+  margin-right: 4px;
+}
+.spinner > .snake-spinner > .circle:nth-child(1) {
+  animation-delay: 0.4s;
+}
+.spinner > .snake-spinner > .circle:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.spinner > .snake-spinner > .circle:nth-child(3) {
+  animation-delay: 0s;
+}
+.spinner > .rotate-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 0.25rem solid rgba(0, 0, 0, 0.04);
+  animation-name: rotateSpinner;
+  animation-duration: 600ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.spinner > .rotate-spinner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0.25rem;
+  height: 0.25rem;
+  transform: translateY(-100%);
+  background-color: rgba(0, 0, 0, 0.56);
+  border-radius: 50%;
+}
+@keyframes snakeSpinner {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+@keyframes ioSpinner {
+  0% {
+    transform: translateX(1.8rem);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-1.8rem);
+    opacity: 0;
+  }
+}
+@keyframes rotateSpinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.svg-spinner {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+}
+.svg-spinner > svg {
+  width: 100%;
+  height: 100%;
+  animation-name: svgRotateSpinner;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.svg-spinner > svg > .base {
+  fill: rgba(0, 0, 0, 0.12);
+}
+.svg-spinner > svg > .moving-particle {
+  stroke: rgba(0, 0, 0, 0.48);
+  animation-name: svgRotateSpinnerMoving;
+  animation-duration: 1.6s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+@keyframes svgRotateSpinnerMoving {
+  0% {
+    stroke-dasharray: 1, 100;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 80, 100;
+    stroke-dashoffset: 46;
+  }
+  100% {
+    stroke-dasharray: 1, 100;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes svgRotateSpinner {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=sonnat.elements.css.map */
