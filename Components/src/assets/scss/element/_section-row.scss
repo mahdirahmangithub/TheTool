@@ -1,7 +1,10 @@
 .section-row {
   & > .section-row__title ~ .section-row__title {
-    @extend %body-text-lg, %text-variation;
+    @extend %base-text, %text-variation;
+
+    font-size: 1.125rem;
     line-height: 1.5;
+    font-weight: 500;
     margin-top: 1rem;
     color: $black;
 
@@ -46,12 +49,20 @@
 }
 
 .section-row__title {
-  @extend %h4, %text-variation;
+  @extend %base-text, %mq-title-text-md, %text-variation;
+
   margin-top: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 .section-row__paragraph {
-  @extend %body-text-md, %text-variation;
+  @extend %base-text, %mq-body-text-md, %text-variation;
+
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 1rem;
 

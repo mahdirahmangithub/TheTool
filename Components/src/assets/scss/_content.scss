@@ -393,7 +393,8 @@ p {
   }
 
   %h3,
-  h3 {
+  h3,
+  %mq-h3 {
     font-size: 1.25rem;
   }
 
@@ -404,7 +405,8 @@ p {
   }
 
   %h4,
-  h4 {
+  h4,
+  %mq-h4 {
     font-size: 1.125rem;
   }
 

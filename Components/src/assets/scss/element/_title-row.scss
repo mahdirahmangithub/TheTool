@@ -113,8 +113,11 @@
 }
 
 .title-row__title {
-  @extend %h3;
+  @extend %base-text, %mq-title-text-lg;
 
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
   margin-bottom: 0.5rem;
 
   @include ltrStyle(
@@ -124,14 +127,20 @@
   );
 
   &--pretitle {
-    @extend %body-text-sm-bolder;
-    color: $black-primary;
+    @extend %base-text;
+
+    font-size: 0.875rem;
+    line-height: 2;
     font-weight: 500;
     margin-bottom: 0.25rem;
   }
 
   &--subtitle {
-    @extend %body-text-md;
+    @extend %base-text, %mq-body-text-md;
+
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 400;
     color: $black-secondary;
   }
 }

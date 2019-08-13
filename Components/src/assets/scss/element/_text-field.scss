@@ -486,8 +486,11 @@
 }
 
 .text-field__description {
-  @extend %body-text-sm;
+  @extend %base-text;
 
+  font-size: 0.875rem;
+  line-height: 2;
+  font-weight: 400;
   color: $black-secondary;
 
   & + .text-field__input {
@@ -621,8 +624,11 @@
 }
 
 .text-field__hints {
-  @extend %caption-text-lg;
+  @extend %base-text;
 
+  font-size: 0.75rem;
+  line-height: 2;
+  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: space-between;
