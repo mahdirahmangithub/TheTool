@@ -31,10 +31,10 @@ $white-hint: whiteColor(0.5) !default;
 $white-primary: $white !default;
 $white-divider: whiteColor(0.12) !default;
 
-$gray-900: adjust-color($black, $lightness: +13%) !default;
-$gray-850: adjust-color($black, $lightness: +19%) !default;
-$gray-800: adjust-color($black, $lightness: +26%) !default;
-$gray-400: adjust-color($black, $lightness: +74%) !default;
-$gray-200: adjust-color($black, $lightness: +93%) !default;
-$gray-100: adjust-color($black, $lightness: +96%) !default;
-$gray-50: adjust-color($black, $lightness: +98%) !default;
+$gray-900: adjust-color(#000, $lightness: +13%) !default;
+$gray-850: adjust-color(#000, $lightness: +19%) !default;
+$gray-800: adjust-color(#000, $lightness: +26%) !default;
+$gray-400: adjust-color(#000, $lightness: +74%) !default;
+$gray-200: adjust-color(#000, $lightness: +93%) !default;
+$gray-100: adjust-color(#000, $lightness: +96%) !default;
+$gray-50: adjust-color(#000, $lightness: +98%) !default;
