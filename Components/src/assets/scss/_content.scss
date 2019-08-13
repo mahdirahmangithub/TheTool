@@ -338,54 +338,58 @@ p {
 
 @media (max-width: map-get($breakpoints, "sm") - 1) {
   .hero-text-lg,
-  %hero-text-lg {
-    font-size: 2rem !important;
+  %hero-text-lg,
+  %mq-hero-text-lg {
+    font-size: 2rem;
 
     &.lighter {
-      font-weight: 400 !important;
+      font-weight: 400;
     }
   }
 
   %hero-text-lg-lighter {
-    font-size: 2rem !important;
-    font-weight: 400 !important;
+    font-size: 2rem;
+    font-weight: 400;
   }
 
   %hero-text-lg-medium {
-    font-size: 2rem !important;
-    font-weight: 500 !important;
+    font-size: 2rem;
+    font-weight: 500;
   }
 
   %h1,
-  h1 {
+  h1,
+  %mq-h1 {
     font-size: 2rem;
     font-weight: 500;
   }
 
   %hero-text-lg-bolder {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
 
   .hero-text-sm,
-  %hero-text-sm {
+  %hero-text-sm,
+  %mq-hero-text-sm {
     &.lighter {
-      font-size: 1.5rem !important;
-      font-weight: 500 !important;
+      font-size: 1.5rem;
+      font-weight: 500;
     }
   }
 
   %hero-text-sm-lighter {
-    font-size: 1.5rem !important;
-    font-weight: 500 !important;
+    font-size: 1.5rem;
+    font-weight: 500;
   }
 
   %hero-text-sm-bolder {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
   }
 
   .title-text-lg,
-  %title-text-lg {
-    font-size: 1.25rem !important;
+  %title-text-lg,
+  %mq-title-text-lg {
+    font-size: 1.25rem;
   }
 
   %h3,
@@ -394,8 +398,9 @@ p {
   }
 
   .title-text-md,
-  %title-text-md {
-    font-size: 1.125rem !important;
+  %title-text-md,
+  %mq-title-text-md {
+    font-size: 1.125rem;
   }
 
   %h4,
@@ -404,14 +409,22 @@ p {
   }
 
   .body-text-lg,
-  %body-text-lg {
-    font-size: 1rem !important;
+  %body-text-lg,
+  %mq-body-text-lg {
+    font-size: 1rem;
   }
 
   .body-text-md,
-  %body-text-md {
+  %body-text-md,
+  %mq-body-text-md {
     &:not(.stable) {
-      font-size: 0.875rem !important;
+      font-size: 0.875rem;
     }
+  }
+
+  %mq-body-text-md-stable {
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 400;
   }
 }

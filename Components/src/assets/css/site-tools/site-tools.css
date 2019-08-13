@@ -236,15 +236,15 @@ p {
 
 @media (max-width: 769px) {
   .hero-text-lg {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
   .hero-text-lg.lighter {
-    font-weight: 400 !important;
+    font-weight: 400;
   }
 
   .h1 {
-    font-size: 2rem !important;
-    font-weight: 500 !important;
+    font-size: 2rem;
+    font-weight: 500;
   }
 
   h1 {
@@ -253,13 +253,13 @@ p {
   }
 
   .hero-text-sm.lighter {
-    font-size: 1.5rem !important;
-    font-weight: 500 !important;
+    font-size: 1.5rem;
+    font-weight: 500;
   }
 
   .title-text-lg,
 .h3 {
-    font-size: 1.25rem !important;
+    font-size: 1.25rem;
   }
 
   h3 {
@@ -268,7 +268,7 @@ p {
 
   .title-text-md,
 .h4 {
-    font-size: 1.125rem !important;
+    font-size: 1.125rem;
   }
 
   h4 {
@@ -276,11 +276,11 @@ p {
   }
 
   .body-text-lg {
-    font-size: 1rem !important;
+    font-size: 1rem;
   }
 
   .body-text-md:not(.stable) {
-    font-size: 0.875rem !important;
+    font-size: 0.875rem;
   }
 }
 .display-flex {
