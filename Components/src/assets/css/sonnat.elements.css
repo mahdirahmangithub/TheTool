@@ -1934,9 +1934,15 @@ body[dir=ltr] .text-field.rounded .text-field__wrapper:before, body:not([dir=ltr
   border-radius: 1.25rem 0rem 0rem 1.25rem;
 }
 body[dir=rtl] .text-field.iconed.iconed--leading .text-field__label-text {
-  transform: translateX(-1.5rem);
+  transform: translateX(-1.25rem);
 }
 body[dir=ltr] .text-field.iconed.iconed--leading .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .text-field.iconed.iconed--leading .text-field__label-text {
+  transform: translateX(1.25rem);
+}
+body[dir=rtl] .text-field.iconed:not(.rounded).iconed--leading .text-field__label-text {
+  transform: translateX(-1.5rem);
+}
+body[dir=ltr] .text-field.iconed:not(.rounded).iconed--leading .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .text-field.iconed:not(.rounded).iconed--leading .text-field__label-text {
   transform: translateX(1.5rem);
 }
 body[dir=rtl] .text-field.iconed:not(.rounded).iconed--leading .text-field__input {
@@ -1978,7 +1984,7 @@ body[dir=ltr] .text-field.iconed:not(.rounded).iconed--trailing .text-field__inp
   border-top: 1px solid;
   border-bottom: 1px solid;
   border-color: transparent;
-  transition: border 0.15s ease;
+  transition: border 150ms ease, transform 150ms ease;
   position: relative;
   padding: 0rem 0.25rem;
 }

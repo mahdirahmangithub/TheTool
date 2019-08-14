@@ -158,12 +158,12 @@
       .text-field__label-text {
         @include rtlStyle(
           (
-            transform: translateX(-#{map-get($spaces, "x12")})
+            transform: translateX(-#{map-get($spaces, "x10")})
           )
         );
         @include ltrStyle(
           (
-            transform: translateX(#{map-get($spaces, "x12")})
+            transform: translateX(#{map-get($spaces, "x10")})
           )
         );
       }
@@ -171,6 +171,19 @@
 
     &:not(.rounded) {
       &.iconed--leading {
+        .text-field__label-text {
+          @include rtlStyle(
+            (
+              transform: translateX(-#{map-get($spaces, "x12")})
+            )
+          );
+          @include ltrStyle(
+            (
+              transform: translateX(#{map-get($spaces, "x12")})
+            )
+          );
+        }
+
         .text-field__input {
           @include rtlStyle(
             (
@@ -258,7 +271,7 @@
         border-top: 1px solid;
         border-bottom: 1px solid;
         border-color: transparent;
-        transition: border 0.15s ease;
+        transition: border 150ms ease, transform 150ms ease;
         position: relative;
         padding: 0rem map-get($spaces, "x2");
 

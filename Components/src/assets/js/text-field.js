@@ -4,16 +4,13 @@ jQuery(function($) {
     .on("input", function() {
       var $input = $(this);
       var $parent = $input.parent(".text-field");
+      var $limiter = $parent.find(".text-field__hints__input-length-limit");
 
-      if ($parent.find(".text-field__hints__input-length-limit").length) {
+      if ($limiter.length) {
         var _limit = parseInt($input.attr("maxlength"));
         var _valLength = $input.val().length;
 
-        if (_valLength <= _limit) {
-          $(".text-field__hints__input-length-limit")
-            .find(".current")
-            .text(_valLength);
-        }
+        if (_valLength <= _limit) $limiter.find(".current").text(_valLength);
       }
 
       $input.val().length > 0
