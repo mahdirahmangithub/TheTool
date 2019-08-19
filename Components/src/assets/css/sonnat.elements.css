@@ -1617,88 +1617,88 @@ body[dir=ltr] .button.small > .button__icon, body:not([dir=ltr]):not([dir=rtl]) 
 .button.outlined [disabled] .fill {
   fill: rgba(0, 0, 0, 0.32);
 }
-.button.button-primary {
+.button.primary {
   background-color: #a62626;
 }
-.button.button-primary.raised {
+.button.primary.raised {
   box-shadow: 0 14px 20px -12px rgba(166, 38, 38, 0.32), 0 16px 24px 2px rgba(166, 38, 38, 0.14), 0 12px 30px -8px rgba(166, 38, 38, 0.12);
 }
-.button.button-primary.raised:hover, .button.button-primary.raised:focus {
+.button.primary.raised:hover, .button.primary.raised:focus {
   box-shadow: 0 0px 6px -2px rgba(166, 38, 38, 0.56), 0 4px 16px 0px rgba(166, 38, 38, 0.14), 0 2px 10px 0 rgba(166, 38, 38, 0.12);
   transform: translateY(0.125rem);
 }
-.button.button-primary.raised.small {
+.button.primary.raised.small {
   box-shadow: 0 8px 9px -4px rgba(166, 38, 38, 0.24), 0 14px 16px 2px rgba(166, 38, 38, 0.14), 0 5px 20px 4px rgba(166, 38, 38, 0.12);
 }
-.button.button-primary.raised.small:hover, .button.button-primary.raised.small:focus {
+.button.primary.raised.small:hover, .button.primary.raised.small:focus {
   box-shadow: 0 0px 4px -2px rgba(166, 38, 38, 0.56), 0 4px 8px 0 rgba(166, 38, 38, 0.14), 0 0px 8px 2px rgba(166, 38, 38, 0.12);
 }
-.button.button-primary.outlined {
+.button.primary.outlined {
   background-color: transparent;
   border-color: rgba(166, 38, 38, 0.56);
   color: #a62626;
 }
-.button.button-primary.outlined .fill {
+.button.primary.outlined .fill {
   fill: #a62626;
 }
-.button.button-primary.outlined:hover, .button.button-primary.outlined:focus {
+.button.primary.outlined:hover, .button.primary.outlined:focus {
   background-color: rgba(166, 38, 38, 0.04);
   border-color: #a62626;
 }
-.button.button-primary.outlined:active {
+.button.primary.outlined:active {
   background-color: rgba(166, 38, 38, 0.12);
   border-color: #a62626;
 }
-.button.button-primary.outlined .button__rippler__ripple {
+.button.primary.outlined .button__rippler__ripple {
   background-color: rgba(166, 38, 38, 0.12);
 }
-.button.button-primary.outlined.disabled,
-.button.button-primary.outlined [disabled] {
+.button.primary.outlined.disabled,
+.button.primary.outlined [disabled] {
   background-color: transparent;
   border-color: rgba(166, 38, 38, 0.12);
   color: rgba(166, 38, 38, 0.32);
 }
-.button.button-primary.outlined.disabled .fill,
-.button.button-primary.outlined [disabled] .fill {
+.button.primary.outlined.disabled .fill,
+.button.primary.outlined [disabled] .fill {
   fill: rgba(166, 38, 38, 0.32);
 }
-.button.button-primary.inlined {
+.button.primary.inlined {
   background-color: transparent;
   color: #a62626;
 }
-.button.button-primary.inlined .fill {
+.button.primary.inlined .fill {
   fill: #a62626;
 }
-.button.button-primary.inlined:hover, .button.button-primary.inlined:focus {
+.button.primary.inlined:hover, .button.primary.inlined:focus {
   background-color: rgba(166, 38, 38, 0.04);
 }
-.button.button-primary.inlined:active {
+.button.primary.inlined:active {
   background-color: rgba(166, 38, 38, 0.12);
 }
-.button.button-primary.inlined .button__rippler__ripple {
+.button.primary.inlined .button__rippler__ripple {
   background-color: rgba(166, 38, 38, 0.12);
 }
-.button.button-primary.inlined.disabled,
-.button.button-primary.inlined [disabled] {
+.button.primary.inlined.disabled,
+.button.primary.inlined [disabled] {
   background-color: transparent;
   color: rgba(166, 38, 38, 0.32);
 }
-.button.button-primary.inlined.disabled .fill,
-.button.button-primary.inlined [disabled] .fill {
+.button.primary.inlined.disabled .fill,
+.button.primary.inlined [disabled] .fill {
   fill: rgba(166, 38, 38, 0.32);
 }
-.button.button-primary.inlined.disabled:hover, .button.button-primary.inlined.disabled:focus,
-.button.button-primary.inlined [disabled]:hover,
-.button.button-primary.inlined [disabled]:focus {
+.button.primary.inlined.disabled:hover, .button.primary.inlined.disabled:focus,
+.button.primary.inlined [disabled]:hover,
+.button.primary.inlined [disabled]:focus {
   background-color: transparent;
 }
-.button.button-primary:hover, .button.button-primary:focus {
+.button.primary:hover, .button.primary:focus {
   background-color: #be3737;
 }
-.button.button-primary:active {
+.button.primary:active {
   background-color: #9d1b1b;
 }
-.button.button-primary.disabled:hover, .button.button-primary.disabled:focus, .button.button-primary[disabled]:hover, .button.button-primary[disabled]:focus {
+.button.primary.disabled:hover, .button.primary.disabled:focus, .button.primary[disabled]:hover, .button.primary[disabled]:focus {
   background-color: whitesmoke;
 }
 .button.disabled, .button[disabled] {
