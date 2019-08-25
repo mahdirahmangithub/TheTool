@@ -3,8 +3,22 @@
   align-items: center;
   box-sizing: content-box;
   vertical-align: middle;
-  min-height: 2.5rem;
   height: auto;
+  min-height: 2.5rem;
+
+  &.large {
+    %switch-control__label {
+      font-size: 1rem;
+    }
+  }
+
+  &.small {
+    min-height: 2.25rem;
+
+    %switch-control__label {
+      font-size: 0.75rem;
+    }
+  }
 
   @include rtlStyle(
     (
@@ -107,7 +121,7 @@
 }
 
 %switch-control__label {
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 2;
   color: $black-primary;
   transition: 360ms ease;

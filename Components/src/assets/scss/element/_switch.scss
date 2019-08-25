@@ -1,5 +1,5 @@
 .switch-toggle {
-  min-width: 18rem;
+  min-width: 14rem;
   height: 3rem;
   display: flex;
   flex-direction: row-reverse;
@@ -8,16 +8,80 @@
 
   @include rtlStyle(
     (
-      "padding-left": "0.625rem",
-      "padding-right": "0"
+      "padding-left": 0.625rem,
+      "padding-right": 0
     )
   );
   @include ltrStyle(
     (
-      "padding-right": "0.625rem",
-      "padding-left": "0"
+      "padding-right": 0.625rem,
+      "padding-left": 0
     )
   );
+
+  &.large {
+    .switch-toggle__label {
+      font-size: 1rem;
+    }
+  }
+
+  &.small {
+    height: 2.25rem;
+
+    .switch-toggle__label {
+      font-size: 0.75rem;
+    }
+
+    .switch-toggle__handle {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    .switch-toggle__track,
+    .switch-toggle__indicator {
+      width: 2rem;
+      height: 1.25rem;
+    }
+
+    .switch-toggle__cell {
+      width: 2rem;
+    }
+
+    .switch-toggle__button {
+      width: 2.25rem;
+      height: 2.25rem;
+
+      @include rtlStyle(
+        (
+          "right": "-8px"
+        )
+      );
+      @include ltrStyle(
+        (
+          "left": "-8px"
+        )
+      );
+    }
+
+    .switch-toggle__input {
+      &:checked {
+        & + .switch-toggle__track {
+          .switch-toggle__button {
+            @include rtlStyle(
+              (
+                "transform": "translateX(-12px)"
+              )
+            );
+            @include ltrStyle(
+              (
+                "transform": "translateX(12px)"
+              )
+            );
+          }
+        }
+      }
+    }
+  }
 
   &.disabled {
     cursor: not-allowed !important;
@@ -64,7 +128,7 @@
 
 .switch-toggle__cell {
   height: 2.25rem;
-  width: 2.5rem;
+  width: 2.625rem;
   min-height: 2.25rem;
   position: relative;
   display: flex;
