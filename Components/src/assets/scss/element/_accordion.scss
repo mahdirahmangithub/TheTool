@@ -75,18 +75,185 @@
 }
 
 %base-item {
+  position: relative;
+
+  &.has-caret {
+    $caret-diameter: (
+      "small": 6px,
+      "medium": 8px
+    );
+
+    $caret-sizing: (
+      "small": 1rem,
+      "medium": 1.5rem
+    );
+
+    .caret {
+      width: map-get($caret-sizing, "medium");
+      height: map-get($caret-sizing, "medium");
+      position: absolute;
+      cursor: pointer;
+      top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.56;
+      pointer-events: none;
+      transition: opacity 360ms ease;
+
+      @include rtlStyle(
+        (
+          left: 0,
+          right: auto
+        )
+      );
+      @include ltrStyle(
+        (
+          right: 0,
+          left: auto
+        )
+      );
+
+      &:after,
+      &:before {
+        content: "";
+        width: map-get($caret-diameter, "medium");
+        height: 2px;
+        position: absolute;
+        border-radius: 1px;
+        background-color: $black;
+        transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      &:after {
+        transform: translateX(#{map-get($caret-diameter, "medium") * 1.14 / 4})
+          rotate(-45deg);
+      }
+
+      &:before {
+        transform: translateX(-#{map-get($caret-diameter, "medium") * 1.14 / 4})
+          rotate(45deg);
+      }
+
+      &.small {
+        width: map-get($caret-sizing, "small");
+        height: map-get($caret-sizing, "small");
+        top: 14px;
+
+        &:after,
+        &:before {
+          width: map-get($caret-diameter, "small");
+        }
+
+        &:after {
+          transform: translateX(#{map-get($caret-diameter, "small") * 1.14 / 4})
+            rotate(-45deg);
+        }
+
+        &:before {
+          transform: translateX(
+              -#{map-get($caret-diameter, "small") * 1.14 / 4}
+            )
+            rotate(45deg);
+        }
+      }
+    }
+
+    &:hover .caret {
+      opacity: 0.87;
+    }
+
+    & > a.active ~ .caret {
+      &:after {
+        transform: translateX(#{map-get($caret-diameter, "medium") * 1.14 / 4})
+          rotate(45deg);
+      }
+
+      &:before {
+        transform: translateX(-#{map-get($caret-diameter, "medium") * 1.14 / 4})
+          rotate(-45deg);
+      }
+
+      &.small {
+        &:after {
+          transform: translateX(#{map-get($caret-diameter, "small") * 1.14 / 4})
+            rotate(45deg);
+        }
+
+        &:before {
+          transform: translateX(
+              -#{map-get($caret-diameter, "small") * 1.14 / 4}
+            )
+            rotate(-45deg);
+        }
+      }
+    }
+
+    &.has-caret--leading {
+      .caret {
+        width: map-get($caret-sizing, "small");
+        height: map-get($caret-sizing, "small");
+        top: 14px;
+
+        &:after,
+        &:before {
+          width: map-get($caret-diameter, "small");
+        }
+
+        &:after {
+          transform: translateX(#{map-get($caret-diameter, "small") * 1.14 / 4})
+            rotate(-45deg);
+        }
+
+        &:before {
+          transform: translateX(
+              -#{map-get($caret-diameter, "small") * 1.14 / 4}
+            )
+            rotate(45deg);
+        }
+
+        @include rtlStyle(
+          (
+            right: 0,
+            left: auto
+          )
+        );
+        @include ltrStyle(
+          (
+            left: 0,
+            right: auto
+          )
+        );
+      }
+
+      .accordion__icon {
+        display: none;
+      }
+
+      & > a {
+        padding-right: 1.25rem;
+      }
+    }
+  }
+
   & > a {
     @extend %base-text;
 
     font-size: 0.875rem;
     line-height: 2;
     font-weight: 400;
-    display: flex;
+    display: inline-flex;
+    width: 100%;
     align-items: center;
     min-height: 2.5rem;
     color: $black-secondary;
     padding: 0.375rem 0;
     transition: color 360ms ease;
+
+    &.back-to-root {
+      font-size: 0.75rem;
+      color: $black-secondary;
+    }
 
     &:hover {
       color: $black-primary;
@@ -108,11 +275,19 @@
 }
 
 .accordion__heading {
-  @extend %body-text-md-stable;
+  @extend %base-text;
 
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
   min-height: 2.5rem;
   display: flex;
   align-items: center;
+
+  &.small {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
 }
 
 .accordion__list {

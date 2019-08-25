@@ -1,0 +1,127 @@
+.toolbox {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  &.filtered {
+    .toolbox__head__indicator {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.toolbox__head {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+}
+
+.toolbox__head__title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @include rtlStyle(
+    (
+      margin-left: 0.5rem
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-right: 0.55rem
+    )
+  );
+
+  &:hover > .toolbox__head__title__caret {
+    opacity: 0.87;
+  }
+
+  &.active {
+    & > .toolbox__head__title__caret {
+      &:after {
+        transform: translateX(#{6 * 1.14 / 4}px) rotate(45deg);
+      }
+
+      &:before {
+        transform: translateX(-#{6 * 1.14 / 4}px) rotate(-45deg);
+      }
+    }
+
+    & ~ .toolbox__head__indicator {
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0);
+    }
+  }
+}
+
+.toolbox__head__title__text {
+  @extend %base-text;
+
+  font-size: 0.75rem;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.toolbox__head__title__caret {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.56;
+  pointer-events: none;
+  transition: opacity 360ms ease;
+
+  @include rtlStyle(
+    (
+      margin-left: 0.25rem
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-right: 0.25rem
+    )
+  );
+
+  &:after,
+  &:before {
+    content: "";
+    width: 6px;
+    height: 2px;
+    position: absolute;
+    border-radius: 1px;
+    background-color: $black;
+    transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  &:after {
+    transform: translateX(#{6 * 1.14 / 4}px) rotate(-45deg);
+  }
+
+  &:before {
+    transform: translateX(-#{6 * 1.14 / 4}px) rotate(45deg);
+  }
+}
+
+.toolbox__head__indicator {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 360ms ease, visibility 360ms ease, transform 360ms ease;
+
+  @include rtlStyle(
+    (
+      margin-right: auto
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-left: auto
+    )
+  );
+}
+
+.toolbox__content {
+}
