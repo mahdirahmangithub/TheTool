@@ -1,0 +1,26 @@
+.badge {
+  @extend %base-text;
+
+  font-size: 10px;
+  font-weight: 500;
+  color: $white;
+  text-align: center !important;
+  width: auto;
+  min-width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  background-color: $brand-primary-color;
+  display: inline-block;
+  line-height: 1.8;
+  padding: 0 0.25rem;
+
+  &:not(.filled).outlined {
+    box-shadow: 0 0 0 1px $brand-primary-color;
+    background-color: $white;
+    color: $brand-primary-color;
+  }
+
+  &.filled.outlined {
+    box-shadow: 0 0 0 2px $white;
+  }
+}
