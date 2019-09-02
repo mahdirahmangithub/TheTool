@@ -33,7 +33,8 @@
   Also add minus-index for the image and a higher value for the parent,
   In case of image overflow-bug.
 */
-.safari-transition-radius-overflow-combination-fix {
+.safari-transition-radius-overflow-combination-fix,
+%safari-transition-radius-overflow-combination-fix {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/sonnat.reset.css" />
+    <link rel="stylesheet" href="assets/css/sonnat.elements.css" />
+    <title>Range Picker</title>
+  </head>
+  <body dir="rtl">
+    <div class="root">
+      <div
+        style="display: flex; align-items: center; justify-content: center; flex-direction: column; margin: 32px auto"
+      >
+        <div
+          class="range-picker has-infimum"
+          data-min="0"
+          data-max="150000"
+          data-step="10000"
+        >
+          <div class="range-picker__wrapper">
+            <div class="range-picker__steps"></div>
+            <div class="range-picker__interval">
+              <div class="range-picker__sup-handle range-picker__handle">
+                <button
+                  class="range-picker__sup-handle__circle range-picker__handle__circle"
+                >
+                  <div class="range-picker__handle__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path
+                        class="fill"
+                        d="M10.81,12l3.88-3.87a1,1,0,0,0,0-1.42,1,1,0,0,0-1.42,0L8.68,11.29a1,1,0,0,0,0,1.42l4.59,4.58a1,1,0,0,0,.71.3,1,1,0,0,0,.71-1.72Z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              <div class="range-picker__track"></div>
+              <div class="range-picker__inf-handle range-picker__handle">
+                <button
+                  class="range-picker__inf-handle__circle range-picker__handle__circle"
+                >
+                  <div class="range-picker__handle__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path
+                        class="fill"
+                        d="M15.3,11.29,10.72,6.71A1,1,0,1,0,9.31,8.13L13.18,12,9.31,15.87a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0l4.58-4.58A1,1,0,0,0,15.3,11.29Z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="divider spaced" />
+        <div class="range-picker">
+          <input
+            max="224"
+            min="0"
+            value="100"
+            step="22.4"
+            type="range"
+            class="range-picker__input"
+          />
+          <div class="range-picker__wrapper">
+            <div class="range-picker__steps"></div>
+            <div class="range-picker__interval">
+              <div class="range-picker__sup-handle range-picker__handle">
+                <button
+                  class="range-picker__sup-handle__circle range-picker__handle__circle"
+                >
+                  <div class="range-picker__handle__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path
+                        class="fill"
+                        d="M10.81,12l3.88-3.87a1,1,0,0,0,0-1.42,1,1,0,0,0-1.42,0L8.68,11.29a1,1,0,0,0,0,1.42l4.59,4.58a1,1,0,0,0,.71.3,1,1,0,0,0,.71-1.72Z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              <div class="range-picker__track"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/range-picker.js"></script>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+.range-picker {
+  position: relative;
+  min-width: 14rem;
+  height: 3.25rem;
+  direction: ltr;
+
+  &.has-infimum {
+    .range-picker__inf-to-sup {
+      margin-left: 1.625rem;
+    }
+  }
+
+  &.jumping {
+    .range-picker__track,
+    .range-picker__handle {
+      transition: left 360ms ease, right 360ms ease;
+    }
+  }
+
+  &.disabled {
+    pointer-events: none;
+
+    .range-picker__handle__circle,
+    .range-picker__track {
+      background-color: $gray-400;
+    }
+
+    .range-picker__handle__circle {
+      box-shadow: none;
+    }
+
+    .range-picker__handle {
+      &:after {
+        transform: scale(0.8);
+        background-color: $white-secondary;
+        opacity: 1;
+      }
+    }
+
+    .range-picker__handle__icon {
+      .fill {
+        fill: $white;
+      }
+    }
+
+    .range-picker__wrapper:after {
+      background-color: blackColor(0.08);
+    }
+  }
+}
+
+.range-picker__input {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.range-picker__wrapper {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+
+  &:after {
+    content: "";
+    z-index: -1;
+    height: 2px;
+    background-color: $black-divider;
+    width: 100%;
+    position: absolute;
+    border-radius: 2px;
+  }
+}
+
+.range-picker__steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.range-picker__step {
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+
+  &:after {
+    content: "";
+    background-color: $black-hint;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    transform: translateX(1px);
+  }
+}
+
+.range-picker__interval {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  margin-right: -1.125rem;
+  margin-left: -1.125rem;
+}
+
+.range-picker__handle {
+  @extend %safari-transition-radius-overflow-combination-fix;
+
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+  position: absolute;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 240ms ease, opacity 240ms ease,
+      background-color 240ms ease;
+  }
+
+  &:hover {
+    &:after {
+      background-color: brandColor(0.04);
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &.active {
+    .range-picker__handle__circle {
+      background-color: $brand-primary-color;
+      box-shadow: 0 0 0 1px $brand-primary-color;
+
+      .range-picker__handle__icon {
+        .fill {
+          fill: $white;
+        }
+      }
+    }
+  }
+}
+
+.range-picker__sup-handle {
+  right: 0;
+}
+
+.range-picker__inf-handle {
+  left: 0;
+}
+
+.range-picker__handle__circle {
+  width: 1.25rem;
+  height: 1.25rem;
+  box-shadow: 0 0 0 1px $black-divider;
+  background-color: $white;
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  padding: 0;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 360ms ease, box-shadow 360ms ease;
+
+  &:active {
+    background-color: $brand-primary-color;
+    box-shadow: 0 0 0 1px $brand-primary-color;
+
+    .range-picker__handle__icon {
+      .fill {
+        fill: $white;
+      }
+    }
+  }
+}
+
+.range-picker__handle__icon {
+  @extend %icon-16;
+
+  .fill {
+    fill: $black-secondary;
+    transition: fill 360ms ease;
+  }
+}
+
+.range-picker__track {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: $brand-primary-color;
+  margin-right: 1.125rem;
+  margin-left: 1.125rem;
+  border-radius: 2px;
+  transform: translateX(-1px);
+}
