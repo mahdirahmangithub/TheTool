@@ -1,5 +1,5 @@
 .chips {
-  height: 2rem;
+  height: 1.75rem;
   padding: 0 0.75rem;
   display: inline-flex;
   align-items: center;
@@ -14,10 +14,15 @@
   margin-left: 0.5rem;
   transition: color 360ms ease, background-color 360ms ease, border 360ms ease;
 
+  &.small,
+  .chips__text {
+    font-size: 0.75rem;
+  }
+
   &,
   .chips__text {
     @extend %base-text;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: $black-secondary;
   }
 
@@ -26,7 +31,7 @@
   }
 
   &.togglable:not(.primary) {
-    &.active {
+    &.checked {
       background-color: $brand-primary-color;
 
       &,
@@ -125,34 +130,18 @@
       &.removable {
         & > .chips__remove {
           & > .chips__remove__icon {
-            background-color: $brand-hover-color;
-          }
-
-          &:hover,
-          &:focus {
-            background-color: transparent;
-
-            & > .chips__remove__icon {
-              background-color: $brand-primary-color;
-            }
+            @extend %clear-field-primary-small;
           }
         }
       }
     }
 
-    &.removable {
+    &.removable:not(.outlined) {
+      background-color: $brand-primary-color;
+
       & > .chips__remove {
         & > .chips__remove__icon {
-          background-color: blackColor(0.24);
-        }
-
-        &:hover,
-        &:focus {
-          background-color: transparent;
-
-          & > .chips__remove__icon {
-            background-color: blackColor(0.48);
-          }
+          @extend %clear-field-white-small;
         }
       }
     }
@@ -162,8 +151,41 @@
     background-color: transparent;
     border: 1px solid $black-divider;
 
+    &:not(.togglable):not(.removable):not(.primary) {
+      &:hover,
+      &:focus {
+        background-color: blackColor(0.04);
+      }
+
+      &:active {
+        background-color: blackColor(0.12);
+      }
+    }
+
+    &:not(.togglable):not(.removable).primary {
+      &:hover,
+      &:focus {
+        background-color: brandColor(0.12);
+      }
+
+      &:active {
+        background-color: brandColor(0.24);
+      }
+    }
+
     &.togglable:not(.primary) {
-      &.active {
+      &:hover,
+      &:focus {
+        background-color: blackColor(0.04);
+      }
+
+      &:not(.checked) {
+        &:active {
+          background-color: blackColor(0.12);
+        }
+      }
+
+      &.checked {
         background-color: brandColor(0.04);
         border: 1px solid brandColor(0.56);
 
@@ -184,8 +206,20 @@
         &:focus {
           background-color: brandColor(0.12);
         }
+
+        &:active {
+          background-color: brandColor(0.24);
+        }
       }
     }
+
+    &.removable:not(.primary) {
+      background-color: blackColor(0.04);
+    }
+
+    // &.removable.primary {
+    //   background-color: brandColor(0);
+    // }
   }
 
   &.rounded {
@@ -199,13 +233,13 @@
       @extend %icon-16;
       @include rtlStyle(
         (
-          margin-right: -0.25rem,
+          margin-right: -0.375rem,
           margin-left: 0.25rem
         )
       );
       @include ltrStyle(
         (
-          margin-left: -0.25rem,
+          margin-left: -0.375rem,
           margin-right: 0.25rem
         )
       );
@@ -223,23 +257,21 @@
     &:hover,
     &:focus {
       background-color: blackColor(0.12);
+    }
 
-      &,
-      .chips__text {
-        color: $black-primary;
-      }
+    &:not(.checked):active {
+      background-color: blackColor(0.24);
+    }
 
-      & > .chips__icon {
-        .fill {
-          fill: $black-primary;
-        }
-      }
+    &.checked:active {
+      background-color: $brand-press-color;
     }
   }
 
   &.removable {
     pointer-events: none;
     min-width: 4rem;
+    background-color: blackColor(0.12);
 
     & > .chips__remove {
       padding: 0;
@@ -250,7 +282,7 @@
       border: none;
       min-width: auto;
       height: 100%;
-      width: 2rem;
+      width: 1.75rem;
       background-color: transparent;
       z-index: 2;
       pointer-events: auto;
@@ -258,28 +290,7 @@
       justify-content: center;
 
       & > .chips__remove__icon {
-        @extend %icon-16;
-
-        background-color: $black-secondary;
-        border-radius: 50%;
-        transition: background-color 360ms ease;
-
-        .fill {
-          fill: $white;
-        }
-      }
-
-      &:hover,
-      &:focus {
-        background-color: transparent;
-
-        & > .chips__remove__icon {
-          background-color: $black-primary;
-        }
-      }
-
-      &:active {
-        background-color: transparent;
+        @extend %clear-field-small;
       }
 
       @include rtlStyle(

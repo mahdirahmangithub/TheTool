@@ -1,0 +1,137 @@
+.clear-field,
+%clear-field {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 360ms ease;
+
+  svg {
+    @extend %icon-18;
+
+    .fill {
+      fill: $black-secondary;
+      transition: fill 360ms ease;
+    }
+  }
+
+  &.large {
+    width: 1.25rem;
+    height: 1.25rem;
+
+    svg {
+      @extend %icon-20;
+    }
+  }
+
+  &.small {
+    width: 1rem;
+    height: 1rem;
+
+    svg {
+      @extend %icon-16;
+    }
+  }
+
+  &.primary {
+    svg {
+      .fill {
+        fill: $brand-primary-color;
+      }
+    }
+  }
+
+  &.white {
+    svg {
+      .fill {
+        fill: $white;
+      }
+    }
+  }
+
+  *:hover > & {
+    background-color: $black-divider;
+
+    &.primary:not(.white) {
+      background-color: $brand-divider-color;
+    }
+  }
+
+  *:active > & {
+    background-color: blackColor(0.24);
+
+    &.primary:not(.white) {
+      background-color: brandColor(0.24);
+    }
+  }
+}
+
+%clear-field-large {
+  @extend %clear-field;
+
+  width: 1.25rem;
+  height: 1.25rem;
+
+  svg {
+    @extend %icon-20;
+  }
+}
+
+%clear-field-small {
+  @extend %clear-field;
+
+  width: 1rem;
+  height: 1rem;
+
+  svg {
+    @extend %icon-16;
+  }
+}
+
+%clear-field-primary {
+  @extend %clear-field;
+
+  svg {
+    .fill {
+      fill: $brand-primary-color;
+    }
+  }
+
+  *:hover > & {
+    background-color: $brand-divider-color;
+  }
+
+  *:active > & {
+    background-color: brandColor(0.24);
+  }
+}
+
+%clear-field-white {
+  @extend %clear-field;
+
+  svg {
+    .fill {
+      fill: $white;
+    }
+  }
+}
+
+%clear-field-primary-large {
+  @extend %clear-field-large, %clear-field-primary;
+}
+
+%clear-field-primary-small {
+  @extend %clear-field-small, %clear-field-primary;
+}
+
+%clear-field-white-large {
+  @extend %clear-field-large, %clear-field-white;
+}
+
+%clear-field-white-small {
+  @extend %clear-field-small, %clear-field-white;
+}

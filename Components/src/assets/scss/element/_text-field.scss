@@ -1,6 +1,7 @@
 .text-field {
   position: relative;
   margin-top: map-get($spaces, "x12");
+  width: 100%;
 
   &.minimal {
     margin-top: 0;

@@ -656,10 +656,15 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 }
 .icon-48, .icon-32, .icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child,
 .fab__icon, .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child),
+.clear-field.large svg,
 .accordion__icon,
-.fab.small:not(.labeled) .fab__icon, .icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child), .icon-16, .text-field.iconed.small .text-field__icons .text-field__icon, .button.small .button__icon,
+.fab.small:not(.labeled) .fab__icon, .icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child),
+.clear-field svg,
+.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg,
+.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg,
+.chips.removable > .chips__remove > .chips__remove__icon svg, .icon-16, .text-field.iconed.small .text-field__icons .text-field__icon, .button.small .button__icon,
 .range-picker__handle__icon,
-.chips.removable > .chips__remove > .chips__remove__icon,
+.clear-field.small svg,
 .chips.iconed > .chips__icon {
   display: flex;
   align-items: center;
@@ -668,7 +673,10 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 
 .icon-16, .text-field.iconed.small .text-field__icons .text-field__icon, .button.small .button__icon,
 .range-picker__handle__icon,
-.chips.removable > .chips__remove > .chips__remove__icon,
+.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg,
+.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg,
+.chips.removable > .chips__remove > .chips__remove__icon svg,
+.clear-field.small svg,
 .chips.iconed > .chips__icon {
   width: 16px;
   height: 16px;
@@ -677,24 +685,39 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 }
 .icon-16 > svg, .text-field.iconed.small .text-field__icons .text-field__icon > svg, .button.small .button__icon > svg,
 .range-picker__handle__icon > svg,
-.chips.removable > .chips__remove > .chips__remove__icon > svg,
+.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg > svg,
+.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg > svg,
+.chips.removable > .chips__remove > .chips__remove__icon svg > svg,
+.clear-field.small svg > svg,
 .chips.iconed > .chips__icon > svg {
   width: 100%;
   height: 100%;
 }
 
-.icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child) {
+.icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child),
+.clear-field svg,
+.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg,
+.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg,
+.chips.removable > .chips__remove > .chips__remove__icon svg {
   width: 18px;
   height: 18px;
   min-width: 18px;
   min-height: 18px;
 }
-.icon-18 > svg, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child) > svg {
+.icon-18 > svg, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child) > svg,
+.clear-field svg > svg,
+.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg > svg,
+.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg > svg,
+.chips.removable > .chips__remove > .chips__remove__icon svg > svg {
   width: 100%;
   height: 100%;
 }
 
 .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child),
+.clear-field.large svg,
+.chips.primary.removable:not(.outlined) > .chips__remove > .large.chips__remove__icon svg,
+.chips.primary.outlined.removable > .chips__remove > .large.chips__remove__icon svg,
+.chips.removable > .chips__remove > .large.chips__remove__icon svg,
 .accordion__icon,
 .fab.small:not(.labeled) .fab__icon {
   width: 20px;
@@ -703,6 +726,10 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   min-height: 20px;
 }
 .icon-20 > svg, .button .button__icon > svg, .tab-list__tab__content .tab-list__tab-icon:not(:only-child) > svg,
+.clear-field.large svg > svg,
+.chips.primary.removable:not(.outlined) > .chips__remove > .large.chips__remove__icon svg > svg,
+.chips.primary.outlined.removable > .chips__remove > .large.chips__remove__icon svg > svg,
+.chips.removable > .chips__remove > .large.chips__remove__icon svg > svg,
 .accordion__icon > svg,
 .fab.small:not(.labeled) .fab__icon > svg {
   width: 100%;
@@ -1904,6 +1931,7 @@ body[dir=ltr] .fab__icon + .fab__label, body:not([dir=ltr]):not([dir=rtl]) .fab_
 .text-field {
   position: relative;
   margin-top: 1.5rem;
+  width: 100%;
 }
 .text-field.minimal {
   margin-top: 0;
@@ -2956,7 +2984,7 @@ body[dir=ltr] .toolbox__head__indicator, body:not([dir=ltr]):not([dir=rtl]) .too
 }
 
 .chips {
-  height: 2rem;
+  height: 1.75rem;
   padding: 0 0.75rem;
   display: inline-flex;
   align-items: center;
@@ -2971,33 +2999,37 @@ body[dir=ltr] .toolbox__head__indicator, body:not([dir=ltr]):not([dir=rtl]) .too
   margin-left: 0.5rem;
   transition: color 360ms ease, background-color 360ms ease, border 360ms ease;
 }
+.chips.small,
+.chips .chips__text {
+  font-size: 0.75rem;
+}
 .chips,
 .chips .chips__text {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: rgba(0, 0, 0, 0.56);
 }
 .chips .chips__text {
   transition: color 360ms ease;
 }
-.chips.togglable:not(.primary).active {
+.chips.togglable:not(.primary).checked {
   background-color: #a62626;
 }
-.chips.togglable:not(.primary).active,
-.chips.togglable:not(.primary).active .chips__text {
+.chips.togglable:not(.primary).checked,
+.chips.togglable:not(.primary).checked .chips__text {
   color: white;
 }
-.chips.togglable:not(.primary).active.iconed > .chips__icon .fill {
+.chips.togglable:not(.primary).checked.iconed > .chips__icon .fill {
   fill: white;
 }
-.chips.togglable:not(.primary).active:hover, .chips.togglable:not(.primary).active:focus {
+.chips.togglable:not(.primary).checked:hover, .chips.togglable:not(.primary).checked:focus {
   background-color: #be3737;
 }
-.chips.togglable:not(.primary).active:hover,
-.chips.togglable:not(.primary).active:hover .chips__text, .chips.togglable:not(.primary).active:focus,
-.chips.togglable:not(.primary).active:focus .chips__text {
+.chips.togglable:not(.primary).checked:hover,
+.chips.togglable:not(.primary).checked:hover .chips__text, .chips.togglable:not(.primary).checked:focus,
+.chips.togglable:not(.primary).checked:focus .chips__text {
   color: white;
 }
-.chips.togglable:not(.primary).active:hover.iconed > .chips__icon .fill, .chips.togglable:not(.primary).active:focus.iconed > .chips__icon .fill {
+.chips.togglable:not(.primary).checked:hover.iconed > .chips__icon .fill, .chips.togglable:not(.primary).checked:focus.iconed > .chips__icon .fill {
   fill: white;
 }
 .chips.primary {
@@ -3038,41 +3070,50 @@ body[dir=ltr] .toolbox__head__indicator, body:not([dir=ltr]):not([dir=rtl]) .too
 .chips.primary.outlined.iconed > .chips__icon .fill {
   fill: #a62626;
 }
-.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon {
-  background-color: #be3737;
-}
-.chips.primary.outlined.removable > .chips__remove:hover, .chips.primary.outlined.removable > .chips__remove:focus {
-  background-color: transparent;
-}
-.chips.primary.outlined.removable > .chips__remove:hover > .chips__remove__icon, .chips.primary.outlined.removable > .chips__remove:focus > .chips__remove__icon {
+.chips.primary.removable:not(.outlined) {
   background-color: #a62626;
-}
-.chips.primary.removable > .chips__remove > .chips__remove__icon {
-  background-color: rgba(0, 0, 0, 0.24);
-}
-.chips.primary.removable > .chips__remove:hover, .chips.primary.removable > .chips__remove:focus {
-  background-color: transparent;
-}
-.chips.primary.removable > .chips__remove:hover > .chips__remove__icon, .chips.primary.removable > .chips__remove:focus > .chips__remove__icon {
-  background-color: rgba(0, 0, 0, 0.48);
 }
 .chips.outlined {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
-.chips.outlined.togglable:not(.primary).active {
+.chips.outlined:not(.togglable):not(.removable):not(.primary):hover, .chips.outlined:not(.togglable):not(.removable):not(.primary):focus {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.chips.outlined:not(.togglable):not(.removable):not(.primary):active {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.chips.outlined:not(.togglable):not(.removable).primary:hover, .chips.outlined:not(.togglable):not(.removable).primary:focus {
+  background-color: rgba(166, 38, 38, 0.12);
+}
+.chips.outlined:not(.togglable):not(.removable).primary:active {
+  background-color: rgba(166, 38, 38, 0.24);
+}
+.chips.outlined.togglable:not(.primary):hover, .chips.outlined.togglable:not(.primary):focus {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.chips.outlined.togglable:not(.primary):not(.checked):active {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.chips.outlined.togglable:not(.primary).checked {
   background-color: rgba(166, 38, 38, 0.04);
   border: 1px solid rgba(166, 38, 38, 0.56);
 }
-.chips.outlined.togglable:not(.primary).active,
-.chips.outlined.togglable:not(.primary).active .chips__text {
+.chips.outlined.togglable:not(.primary).checked,
+.chips.outlined.togglable:not(.primary).checked .chips__text {
   color: #a62626;
 }
-.chips.outlined.togglable:not(.primary).active.iconed > .chips__icon .fill {
+.chips.outlined.togglable:not(.primary).checked.iconed > .chips__icon .fill {
   fill: #a62626;
 }
-.chips.outlined.togglable:not(.primary).active:hover, .chips.outlined.togglable:not(.primary).active:focus {
+.chips.outlined.togglable:not(.primary).checked:hover, .chips.outlined.togglable:not(.primary).checked:focus {
   background-color: rgba(166, 38, 38, 0.12);
+}
+.chips.outlined.togglable:not(.primary).checked:active {
+  background-color: rgba(166, 38, 38, 0.24);
+}
+.chips.outlined.removable:not(.primary) {
+  background-color: rgba(0, 0, 0, 0.04);
 }
 .chips.rounded {
   border-radius: 1rem;
@@ -3081,13 +3122,13 @@ body[dir=ltr] .toolbox__head__indicator, body:not([dir=ltr]):not([dir=rtl]) .too
   min-width: 4rem;
 }
 body[dir=rtl] .chips.iconed > .chips__icon {
-  margin-right: -0.25rem;
+  margin-right: -0.375rem;
 }
 body[dir=rtl] .chips.iconed > .chips__icon {
   margin-left: 0.25rem;
 }
 body[dir=ltr] .chips.iconed > .chips__icon, body:not([dir=ltr]):not([dir=rtl]) .chips.iconed > .chips__icon {
-  margin-left: -0.25rem;
+  margin-left: -0.375rem;
 }
 body[dir=ltr] .chips.iconed > .chips__icon, body:not([dir=ltr]):not([dir=rtl]) .chips.iconed > .chips__icon {
   margin-right: 0.25rem;
@@ -3102,17 +3143,16 @@ body[dir=ltr] .chips.iconed > .chips__icon, body:not([dir=ltr]):not([dir=rtl]) .
 .chips:not(.removable):not(.primary):hover, .chips:not(.removable):not(.primary):focus {
   background-color: rgba(0, 0, 0, 0.12);
 }
-.chips:not(.removable):not(.primary):hover,
-.chips:not(.removable):not(.primary):hover .chips__text, .chips:not(.removable):not(.primary):focus,
-.chips:not(.removable):not(.primary):focus .chips__text {
-  color: rgba(0, 0, 0, 0.87);
+.chips:not(.removable):not(.primary):not(.checked):active {
+  background-color: rgba(0, 0, 0, 0.24);
 }
-.chips:not(.removable):not(.primary):hover > .chips__icon .fill, .chips:not(.removable):not(.primary):focus > .chips__icon .fill {
-  fill: rgba(0, 0, 0, 0.87);
+.chips:not(.removable):not(.primary).checked:active {
+  background-color: #9d1b1b;
 }
 .chips.removable {
   pointer-events: none;
   min-width: 4rem;
+  background-color: rgba(0, 0, 0, 0.12);
 }
 .chips.removable > .chips__remove {
   padding: 0;
@@ -3123,29 +3163,12 @@ body[dir=ltr] .chips.iconed > .chips__icon, body:not([dir=ltr]):not([dir=rtl]) .
   border: none;
   min-width: auto;
   height: 100%;
-  width: 2rem;
+  width: 1.75rem;
   background-color: transparent;
   z-index: 2;
   pointer-events: auto;
   display: flex;
   justify-content: center;
-}
-.chips.removable > .chips__remove > .chips__remove__icon {
-  background-color: rgba(0, 0, 0, 0.56);
-  border-radius: 50%;
-  transition: background-color 360ms ease;
-}
-.chips.removable > .chips__remove > .chips__remove__icon .fill {
-  fill: white;
-}
-.chips.removable > .chips__remove:hover, .chips.removable > .chips__remove:focus {
-  background-color: transparent;
-}
-.chips.removable > .chips__remove:hover > .chips__remove__icon, .chips.removable > .chips__remove:focus > .chips__remove__icon {
-  background-color: rgba(0, 0, 0, 0.87);
-}
-.chips.removable > .chips__remove:active {
-  background-color: transparent;
 }
 body[dir=rtl] .chips.removable > .chips__remove {
   margin-left: -0.75rem;
@@ -3368,6 +3391,88 @@ body[dir=ltr] .chips.removable > .chips__remove, body:not([dir=ltr]):not([dir=rt
 }
 .badge.filled.outlined {
   box-shadow: 0 0 0 2px white;
+}
+
+.clear-field,
+.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon,
+.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon,
+.chips.removable > .chips__remove > .chips__remove__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 360ms ease;
+}
+.clear-field svg .fill,
+.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg .fill,
+.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg .fill,
+.chips.removable > .chips__remove > .chips__remove__icon svg .fill {
+  fill: rgba(0, 0, 0, 0.56);
+  transition: fill 360ms ease;
+}
+.clear-field.large,
+.chips.primary.removable:not(.outlined) > .chips__remove > .large.chips__remove__icon,
+.chips.primary.outlined.removable > .chips__remove > .large.chips__remove__icon,
+.chips.removable > .chips__remove > .large.chips__remove__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.clear-field.small,
+.chips.primary.removable:not(.outlined) > .chips__remove > .small.chips__remove__icon,
+.chips.primary.outlined.removable > .chips__remove > .small.chips__remove__icon,
+.chips.removable > .chips__remove > .small.chips__remove__icon {
+  width: 1rem;
+  height: 1rem;
+}
+.clear-field.primary svg .fill,
+.chips.removable > .chips__remove > .primary.chips__remove__icon svg .fill {
+  fill: #a62626;
+}
+.clear-field.white svg .fill,
+.chips.removable > .chips__remove > .white.chips__remove__icon svg .fill {
+  fill: white;
+}
+*:hover > .clear-field,
+.chips.primary.removable:not(.outlined) > .chips__remove:hover > .chips__remove__icon,
+.chips.primary.outlined.removable > .chips__remove:hover > .chips__remove__icon,
+.chips.removable > .chips__remove:hover > .chips__remove__icon {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+*:hover > .clear-field.primary:not(.white),
+.chips.removable > .chips__remove:hover > .primary.chips__remove__icon:not(.white) {
+  background-color: rgba(166, 38, 38, 0.12);
+}
+*:active > .clear-field,
+.chips.primary.removable:not(.outlined) > .chips__remove:active > .chips__remove__icon,
+.chips.primary.outlined.removable > .chips__remove:active > .chips__remove__icon,
+.chips.removable > .chips__remove:active > .chips__remove__icon {
+  background-color: rgba(0, 0, 0, 0.24);
+}
+*:active > .clear-field.primary:not(.white),
+.chips.removable > .chips__remove:active > .primary.chips__remove__icon:not(.white) {
+  background-color: rgba(166, 38, 38, 0.24);
+}
+
+.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon, .chips.primary.outlined.removable > .chips__remove > .chips__remove__icon, .chips.removable > .chips__remove > .chips__remove__icon {
+  width: 1rem;
+  height: 1rem;
+}
+.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg .fill {
+  fill: #a62626;
+}
+.chips.primary.outlined.removable > .chips__remove:hover > .chips__remove__icon {
+  background-color: rgba(166, 38, 38, 0.12);
+}
+.chips.primary.outlined.removable > .chips__remove:active > .chips__remove__icon {
+  background-color: rgba(166, 38, 38, 0.24);
+}
+
+.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg .fill {
+  fill: white;
 }
 
 .range-picker {
