@@ -662,7 +662,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .clear-field svg,
 .chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg,
 .chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg,
-.chips.removable > .chips__remove > .chips__remove__icon svg, .icon-16, .text-field.iconed.small .text-field__icons .text-field__icon, .button.small .button__icon,
+.chips.removable > .chips__remove > .chips__remove__icon svg, .icon-16, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon, .button.small .button__icon,
 .range-picker__handle__icon,
 .clear-field.small svg,
 .chips.iconed > .chips__icon {
@@ -671,7 +671,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   justify-content: center;
 }
 
-.icon-16, .text-field.iconed.small .text-field__icons .text-field__icon, .button.small .button__icon,
+.icon-16, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon, .button.small .button__icon,
 .range-picker__handle__icon,
 .chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg,
 .chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg,
@@ -683,7 +683,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   min-width: 16px;
   min-height: 16px;
 }
-.icon-16 > svg, .text-field.iconed.small .text-field__icons .text-field__icon > svg, .button.small .button__icon > svg,
+.icon-16 > svg, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon > svg, .button.small .button__icon > svg,
 .range-picker__handle__icon > svg,
 .chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg > svg,
 .chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg > svg,
@@ -2038,48 +2038,67 @@ body[dir=rtl] .text-field.iconed:not(.rounded).iconed--trailing .text-field__inp
 body[dir=ltr] .text-field.iconed:not(.rounded).iconed--trailing .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field.iconed:not(.rounded).iconed--trailing .text-field__input {
   padding-right: 2.5rem;
 }
-.text-field.iconed.small .text-field__input {
+.text-field:not(.legend-label).small .text-field__wrapper {
+  height: 2rem;
+}
+.text-field:not(.legend-label).small .text-field__input {
   font-size: 0.75rem;
   line-height: 2;
   font-weight: 500;
+  height: 2rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
-body[dir=rtl] .text-field.iconed.small .text-field__input {
+.text-field:not(.legend-label).small .text-field__input::-webkit-input-placeholder {
+  font-size: 0.75rem;
+  line-height: 2;
+  font-weight: 400;
+}
+.text-field:not(.legend-label).small .text-field__input::-moz-placeholder {
+  font-size: 0.75rem;
+  line-height: 2;
+  font-weight: 400;
+}
+.text-field:not(.legend-label).small .text-field__input:-ms-input-placeholder {
+  font-size: 0.75rem;
+  line-height: 2;
+  font-weight: 400;
+}
+.text-field:not(.legend-label).small .text-field__input:-moz-placeholder {
+  font-size: 0.75rem;
+  line-height: 2;
+  font-weight: 400;
+}
+body[dir=rtl] .text-field:not(.legend-label).small.iconed .text-field__input {
   padding-right: 1.75rem;
 }
-body[dir=ltr] .text-field.iconed.small .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field.iconed.small .text-field__input {
+body[dir=ltr] .text-field:not(.legend-label).small.iconed .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field:not(.legend-label).small.iconed .text-field__input {
   padding-left: 1.75rem;
 }
-.text-field.iconed.small .text-field__input::-webkit-input-placeholder {
-  font-size: 0.75rem;
-  line-height: 2;
-  font-weight: 400;
-}
-.text-field.iconed.small .text-field__input::-moz-placeholder {
-  font-size: 0.75rem;
-  line-height: 2;
-  font-weight: 400;
-}
-.text-field.iconed.small .text-field__input:-ms-input-placeholder {
-  font-size: 0.75rem;
-  line-height: 2;
-  font-weight: 400;
-}
-.text-field.iconed.small .text-field__input:-moz-placeholder {
-  font-size: 0.75rem;
-  line-height: 2;
-  font-weight: 400;
-}
-body[dir=rtl] .text-field.iconed.small.iconed--leading .text-field__input {
+body[dir=rtl] .text-field:not(.legend-label).small.iconed.iconed--leading .text-field__input {
   padding-right: 1.75rem;
 }
-body[dir=ltr] .text-field.iconed.small.iconed--leading .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field.iconed.small.iconed--leading .text-field__input {
+body[dir=ltr] .text-field:not(.legend-label).small.iconed.iconed--leading .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field:not(.legend-label).small.iconed.iconed--leading .text-field__input {
   padding-left: 1.75rem;
 }
-body[dir=rtl] .text-field.iconed.small.iconed--trailing .text-field__input {
+body[dir=rtl] .text-field:not(.legend-label).small.iconed.iconed--trailing .text-field__input {
   padding-left: 1.75rem;
 }
-body[dir=ltr] .text-field.iconed.small.iconed--trailing .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field.iconed.small.iconed--trailing .text-field__input {
+body[dir=ltr] .text-field:not(.legend-label).small.iconed.iconed--trailing .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field:not(.legend-label).small.iconed.iconed--trailing .text-field__input {
   padding-right: 1.75rem;
+}
+.text-field:not(.legend-label).small.iconed .text-field__icons {
+  height: 2rem;
+}
+.text-field:not(.legend-label).small.rounded .text-field__input {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+body[dir=rtl] .text-field:not(.legend-label).small.rounded.iconed .text-field__input {
+  padding-right: 2rem;
+}
+body[dir=ltr] .text-field:not(.legend-label).small.rounded.iconed .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field:not(.legend-label).small.rounded.iconed .text-field__input {
+  padding-left: 2rem;
 }
 .text-field:not(.error) .text-field__input:focus ~ .text-field__wrapper:after, .text-field:not(.error) .text-field__input:focus ~ .text-field__wrapper:before {
   border-color: rgba(166, 38, 38, 0.56) !important;

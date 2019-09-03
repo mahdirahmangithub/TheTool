@@ -214,13 +214,48 @@
         }
       }
     }
+  }
 
-    &.small {
-      .text-field__input {
+  &:not(.legend-label).small {
+    .text-field__wrapper {
+      height: 2rem;
+    }
+
+    .text-field__input {
+      font-size: 0.75rem;
+      line-height: 2;
+      font-weight: 500;
+      height: 2rem;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+
+      &::-webkit-input-placeholder {
         font-size: 0.75rem;
         line-height: 2;
-        font-weight: 500;
+        font-weight: 400;
+      }
 
+      &::-moz-placeholder {
+        font-size: 0.75rem;
+        line-height: 2;
+        font-weight: 400;
+      }
+
+      &:-ms-input-placeholder {
+        font-size: 0.75rem;
+        line-height: 2;
+        font-weight: 400;
+      }
+
+      &:-moz-placeholder {
+        font-size: 0.75rem;
+        line-height: 2;
+        font-weight: 400;
+      }
+    }
+
+    &.iconed {
+      .text-field__input {
         @include rtlStyle(
           (
             padding-right: 1.75rem
@@ -231,30 +266,6 @@
             padding-left: 1.75rem
           )
         );
-
-        &::-webkit-input-placeholder {
-          font-size: 0.75rem;
-          line-height: 2;
-          font-weight: 400;
-        }
-
-        &::-moz-placeholder {
-          font-size: 0.75rem;
-          line-height: 2;
-          font-weight: 400;
-        }
-
-        &:-ms-input-placeholder {
-          font-size: 0.75rem;
-          line-height: 2;
-          font-weight: 400;
-        }
-
-        &:-moz-placeholder {
-          font-size: 0.75rem;
-          line-height: 2;
-          font-weight: 400;
-        }
       }
 
       &.iconed--leading {
@@ -288,8 +299,32 @@
       }
 
       .text-field__icons {
+        height: 2rem;
+
         .text-field__icon {
           @extend .icon-16;
+        }
+      }
+    }
+
+    &.rounded {
+      .text-field__input {
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+
+      &.iconed {
+        .text-field__input {
+          @include rtlStyle(
+            (
+              padding-right: 2rem
+            )
+          );
+          @include ltrStyle(
+            (
+              padding-left: 2rem
+            )
+          );
         }
       }
     }
