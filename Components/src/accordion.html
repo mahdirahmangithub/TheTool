@@ -109,7 +109,6 @@
             <hr class="divider" />
             <div class="toolbox">
               <div class="toolbox__head">
-                <div class="toolbox"></div>
                 <div
                   class="toolbox__head__title collapsable"
                   data-toggle="collapse"
@@ -118,36 +117,10 @@
                   <div class="toolbox__head__title__caret"></div>
                   <strong class="toolbox__head__title__text">عنوان</strong>
                 </div>
-                <hr class="divider vertical padded" />
-                <div
-                  class="toolbox__head__text-field text-field minimal iconed small iconed--leading iconed--trailing"
-                >
-                  <input
-                    class="text-field__input"
-                    type="text"
-                    placeholder="وارد کنید..."
-                    name="text_input"
-                  />
-                  <div class="text-field__icons">
-                    <div class="text-field__icons__leading">
-                      <div class="text-field__icon">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            class="fill"
-                            d="M19.1,17.69l-2.77-2.78a6.42,6.42,0,0,0,1.26-3.83,6.52,6.52,0,1,0-2.68,5.25l2.78,2.78a1,1,0,0,0,.71.29,1,1,0,0,0,.7-.29A1,1,0,0,0,19.1,17.69ZM6.59,11.08a4.5,4.5,0,1,1,4.5,4.5A4.5,4.5,0,0,1,6.59,11.08Z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <div class="indicator toolbox__head__indicator"></div>
               </div>
               <div class="toolbox__content collapse" id="cl3">
-                <div style="display: flex; flex-direction: column;">
+                <div class="toolbox__content__container">
                   <div class="checkbox-control small">
                     <div class="checkbox-control__cell">
                       <input
@@ -235,6 +208,59 @@
                       >عنوان</label
                     >
                   </div>
+                  <div id="cl4" class="toolbox__view-more__content collapse">
+                    <div class="toolbox__view-more__content__container">
+                      <div class="checkbox-control small">
+                        <div class="checkbox-control__cell">
+                          <input
+                            class="checkbox-control__input"
+                            id="checkbox_control_3"
+                            type="checkbox"
+                            name="rrr"
+                            value="x"
+                          />
+                          <div class="checkbox-control__button"></div>
+                          <div class="checkbox-control__check-icon">
+                            <svg>
+                              <polyline
+                                id="Path"
+                                transform="translate(5.974874, 2.353553) rotate(-45.000000) translate(-5.974874, -2.353553) "
+                                points="2 0.292893219 2 4.29289322 9.94974747 4.41421356"
+                              ></polyline>
+                            </svg>
+                          </div>
+                          <div class="checkbox-control__rippler rippler">
+                            <div class="checkbox-control__ripple ripple"></div>
+                          </div>
+                        </div>
+                        <label
+                          class="checkbox-control__label"
+                          for="checkbox_control_3"
+                          >عنوان</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="toolbox__view-more collapsable"
+                  data-toggle="collapse"
+                  data-target="#cl4"
+                >
+                  <div class="toolbox__view-more__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path
+                        class="fill"
+                        d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="toolbox__view-more__text"
+                    data-more="بیشتر"
+                    data-less="کمتر"
+                    >مشاهده موارد</span
+                  >
                 </div>
               </div>
             </div>
