@@ -85,7 +85,7 @@ ul {
   transform: translate3d(0, 0, 0);
 }
 
-.badge, .chips,
+.breadcrumb__item, .breadcrumb__item > a, .badge, .chips,
 .chips .chips__text, .toolbox__view-more__text, .toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > a, .text-field__hints, .text-field__input, .text-field__description, .text-field__label-text, .fab__label, .section-row__paragraph, .section-row__title, .section-row > .section-row__title ~ .section-row__title, .title-row__title--subtitle, .title-row__title--pretitle, .title-row__title, .tag,
 .tag .tag__text, .caption-text-sm, .caption-text-md, .caption-text-lg, .body-text-sm, .body-text-md, .body-text-lg, .title-text-xs,
 .h6, .title-text-sm,
@@ -111,7 +111,7 @@ h1 {
   text-size-adjust: 100%;
   color: rgba(0, 0, 0, 0.87);
 }
-body[dir=rtl] .badge, body[dir=rtl] .chips,
+body[dir=rtl] .breadcrumb__item, body[dir=rtl] .breadcrumb__item > a, body[dir=rtl] .badge, body[dir=rtl] .chips,
 body[dir=rtl] .chips .chips__text,
 .chips body[dir=rtl] .chips__text, body[dir=rtl] .toolbox__view-more__text, body[dir=rtl] .toolbox__head__title__text, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a, body[dir=rtl] .accordion__heading, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a, body[dir=rtl] .accordion__list .accordion__list__item > a, .accordion__list body[dir=rtl] .accordion__list__item > a, body[dir=rtl] .text-field__hints, body[dir=rtl] .text-field__input, body[dir=rtl] .text-field__description, body[dir=rtl] .text-field__label-text, body[dir=rtl] .fab__label, body[dir=rtl] .section-row__paragraph, body[dir=rtl] .section-row__title, body[dir=rtl] .section-row > .section-row__title ~ .section-row__title, body[dir=rtl] .title-row__title--subtitle, body[dir=rtl] .title-row__title--pretitle, body[dir=rtl] .title-row__title, body[dir=rtl] .tag,
 body[dir=rtl] .tag .tag__text,
@@ -128,7 +128,7 @@ body[dir=rtl] h2,
 body[dir=rtl] h1 {
   text-align: right;
 }
-body[dir=ltr] .badge, body[dir=ltr] .chips,
+body[dir=ltr] .breadcrumb__item, body[dir=ltr] .breadcrumb__item > a, body[dir=ltr] .badge, body[dir=ltr] .chips,
 body[dir=ltr] .chips .chips__text,
 .chips body[dir=ltr] .chips__text, body[dir=ltr] .toolbox__view-more__text, body[dir=ltr] .toolbox__head__title__text, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a, body[dir=ltr] .accordion__heading, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a, body[dir=ltr] .accordion__list .accordion__list__item > a, .accordion__list body[dir=ltr] .accordion__list__item > a, body[dir=ltr] .text-field__hints, body[dir=ltr] .text-field__input, body[dir=ltr] .text-field__description, body[dir=ltr] .text-field__label-text, body[dir=ltr] .fab__label, body[dir=ltr] .section-row__paragraph, body[dir=ltr] .section-row__title, body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .title-row__title, body[dir=ltr] .tag,
 body[dir=ltr] .tag .tag__text,
@@ -142,7 +142,7 @@ body[dir=ltr] h5,
 body[dir=ltr] h4,
 body[dir=ltr] h3,
 body[dir=ltr] h2,
-body[dir=ltr] h1, body:not([dir=ltr]):not([dir=rtl]) .badge, body:not([dir=ltr]):not([dir=rtl]) .chips,
+body[dir=ltr] h1, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item > a, body:not([dir=ltr]):not([dir=rtl]) .badge, body:not([dir=ltr]):not([dir=rtl]) .chips,
 body:not([dir=ltr]):not([dir=rtl]) .chips .chips__text,
 .chips body:not([dir=ltr]):not([dir=rtl]) .chips__text, body:not([dir=ltr]):not([dir=rtl]) .toolbox__view-more__text, body:not([dir=ltr]):not([dir=rtl]) .toolbox__head__title__text, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a, body:not([dir=ltr]):not([dir=rtl]) .accordion__heading, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > a, .accordion__list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__item > a, body:not([dir=ltr]):not([dir=rtl]) .text-field__hints, body:not([dir=ltr]):not([dir=rtl]) .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field__description, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .fab__label, body:not([dir=ltr]):not([dir=rtl]) .section-row__paragraph, body:not([dir=ltr]):not([dir=rtl]) .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle, body:not([dir=ltr]):not([dir=rtl]) .title-row__title--pretitle, body:not([dir=ltr]):not([dir=rtl]) .title-row__title, body:not([dir=ltr]):not([dir=rtl]) .tag,
 body:not([dir=ltr]):not([dir=rtl]) .tag .tag__text,
@@ -159,7 +159,7 @@ body:not([dir=ltr]):not([dir=rtl]) h2,
 body:not([dir=ltr]):not([dir=rtl]) h1 {
   text-align: left;
 }
-.typography-transition.badge, .typography-transition.chips,
+.typography-transition.breadcrumb__item, .breadcrumb__item > a.typography-transition, .typography-transition.badge, .typography-transition.chips,
 .chips .typography-transition.chips__text, .typography-transition.toolbox__view-more__text, .typography-transition.toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .typography-transition.accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .accordion__list .accordion__list__item > a.typography-transition, .typography-transition.text-field__hints, .typography-transition.text-field__input, .typography-transition.text-field__description, .typography-transition.text-field__label-text, .typography-transition.fab__label, .typography-transition.section-row__paragraph, .typography-transition.section-row__title, .section-row > .section-row__title ~ .typography-transition.section-row__title, .typography-transition.title-row__title--subtitle, .typography-transition.title-row__title--pretitle, .typography-transition.title-row__title, .typography-transition.tag,
 .tag .typography-transition.tag__text, .typography-transition.caption-text-sm, .typography-transition.caption-text-md, .typography-transition.caption-text-lg, .typography-transition.body-text-sm, .typography-transition.body-text-md, .typography-transition.body-text-lg, .typography-transition.title-text-xs,
 .typography-transition.h6, .typography-transition.title-text-sm,
@@ -3800,6 +3800,119 @@ body[dir=ltr] .chips.removable > .chips__remove, body:not([dir=ltr]):not([dir=rt
   margin-left: 1.125rem;
   border-radius: 2px;
   transform: translateX(-1px);
+}
+
+.breadcrumb-row {
+  height: 1.5rem;
+  overflow: hidden;
+}
+
+.breadcrumb {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  height: 2.5rem;
+  position: relative;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.breadcrumb .breadcrumb__item:last-child {
+  margin: 0;
+}
+.breadcrumb .breadcrumb__item:last-child, .breadcrumb .breadcrumb__item:last-child > a {
+  margin: 0;
+}
+.breadcrumb .breadcrumb__item:last-child:after {
+  display: none;
+}
+@media (max-width: 769px) {
+  .breadcrumb:not([data-responsive-behavior]) .breadcrumb__item, .breadcrumb:not([data-responsive-behavior]) .breadcrumb__item > a, .breadcrumb[data-responsive-behavior=multiple-step] .breadcrumb__item, .breadcrumb[data-responsive-behavior=multiple-step] .breadcrumb__item > a {
+    max-width: 7.5rem;
+  }
+  .breadcrumb[data-responsive-behavior=single-step] .breadcrumb__item:not(:nth-last-child(2)) {
+    display: none;
+  }
+  .breadcrumb[data-responsive-behavior=single-step] .breadcrumb__item:nth-last-child(2) {
+    margin: 0;
+  }
+  .breadcrumb[data-responsive-behavior=single-step] .breadcrumb__item:nth-last-child(2), .breadcrumb[data-responsive-behavior=single-step] .breadcrumb__item:nth-last-child(2) > a {
+    margin: 0;
+  }
+  .breadcrumb[data-responsive-behavior=single-step] .breadcrumb__item:nth-last-child(2):hover:after {
+    opacity: 0.87;
+    transform: rotate(180deg);
+  }
+  .breadcrumb[data-responsive-behavior=single-step] .breadcrumb__item:nth-last-child(2):hover ~ .breadcrumb__item:after {
+    transform: rotate(0);
+  }
+  .breadcrumb[data-responsive-behavior=single-step] .breadcrumb__item:nth-last-child(2):after {
+    order: -1;
+    transform: rotate(180deg);
+  }
+  body[dir=rtl] .breadcrumb[data-responsive-behavior=single-step] .breadcrumb__item:nth-last-child(2):after {
+    margin-left: 0.25rem;
+  }
+  body[dir=ltr] .breadcrumb[data-responsive-behavior=single-step] .breadcrumb__item:nth-last-child(2):after, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb[data-responsive-behavior=single-step] .breadcrumb__item:nth-last-child(2):after {
+    margin-right: 0.25rem;
+  }
+}
+
+.breadcrumb__item {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 1.5rem;
+}
+body[dir=rtl] .breadcrumb__item {
+  margin-left: 0.25rem;
+}
+body[dir=ltr] .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item {
+  margin-right: 0.25rem;
+}
+.breadcrumb__item:hover, .breadcrumb__item:hover > a {
+  color: rgba(0, 0, 0, 0.87);
+}
+.breadcrumb__item:hover:after {
+  opacity: 0.87;
+  transform: rotate(180deg);
+}
+.breadcrumb__item:hover ~ .breadcrumb__item:after {
+  transform: rotate(180deg);
+}
+.breadcrumb__item:after {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  opacity: 0.56;
+  flex-shrink: 0;
+  transition: opacity 360ms ease, transform 360ms ease;
+}
+body[dir=rtl] .breadcrumb__item:after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="black" d="M10.81,12l3.88-3.87a1,1,0,0,0,0-1.42,1,1,0,0,0-1.42,0L8.68,11.29a1,1,0,0,0,0,1.42l4.59,4.58a1,1,0,0,0,.71.3,1,1,0,0,0,.71-1.72Z"/></svg>');
+}
+body[dir=ltr] .breadcrumb__item:after, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item:after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="black" d="M15.3,11.29,10.72,6.71A1,1,0,1,0,9.31,8.13L13.18,12,9.31,15.87a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0l4.58-4.58A1,1,0,0,0,15.3,11.29Z"/></svg>');
+}
+.breadcrumb__item, .breadcrumb__item > a {
+  font-size: 0.75rem;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.56);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: color 360ms ease;
+}
+body[dir=rtl] .breadcrumb__item, body[dir=rtl] .breadcrumb__item > a {
+  margin-left: 0.25rem;
+}
+body[dir=ltr] .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item, body[dir=ltr] .breadcrumb__item > a, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item > a {
+  margin-right: 0.25rem;
 }
 
 /*# sourceMappingURL=sonnat.elements.css.map */
