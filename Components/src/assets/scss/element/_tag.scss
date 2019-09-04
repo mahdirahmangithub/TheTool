@@ -1,0 +1,67 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  height: 1.875rem;
+  border-radius: 2px;
+  margin-top: 0.5rem;
+  background-color: $gray-100;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+
+  @include rtlStyle(
+    (
+      margin-left: 0.5rem
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-right: 0.5rem
+    )
+  );
+
+  &,
+  .tag__text {
+    @extend %base-text;
+
+    font-size: 0.875rem;
+    line-height: 2;
+    color: $black-secondary;
+  }
+
+  &.iconed {
+    @include rtlStyle(
+      (
+        padding-right: 0.25rem
+      )
+    );
+    @include ltrStyle(
+      (
+        padding-left: 0.25rem
+      )
+    );
+
+    .tag__icon {
+      @extend %icon-16;
+
+      @include rtlStyle(
+        (
+          margin-left: 0.25rem
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-right: 0.25rem
+        )
+      );
+
+      .fill {
+        fill: $black-secondary;
+      }
+    }
+  }
+
+  &.outlined {
+    border: 1px solid $black-divider;
+    background-color: transparent;
+  }
+}
