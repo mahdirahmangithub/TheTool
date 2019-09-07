@@ -1,0 +1,500 @@
+.dropdown {
+  position: relative;
+  z-index: $zindex-dropdown;
+
+  &:not(.primary) {
+    .dropdown__toggle {
+      &:hover,
+      &:focus {
+        background-color: $black-hover;
+      }
+
+      &:active,
+      &.active {
+        background-color: $black-press;
+      }
+    }
+
+    &:not(.outlined).inlined {
+      .dropdown__toggle {
+        background-color: transparent;
+
+        &,
+        .dropdown__toggle__text {
+          color: $black-secondary;
+        }
+
+        .dropdown__toggle__icon {
+          .fill {
+            fill: $black-secondary;
+          }
+        }
+
+        &.has-caret {
+          &:after {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$black-secondary}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+          }
+        }
+
+        &:hover,
+        &:focus {
+          background-color: blackColor(0.04);
+        }
+
+        &:active,
+        &.active {
+          background-color: blackColor(0.12);
+        }
+      }
+    }
+
+    &:not(.inlined).outlined {
+      .dropdown__toggle {
+        background-color: transparent;
+        border-color: blackColor(0.48);
+
+        &,
+        .dropdown__toggle__text {
+          color: $black-primary;
+        }
+
+        .dropdown__toggle__icon {
+          .fill {
+            fill: $black-primary;
+          }
+        }
+
+        &.has-caret {
+          &:after {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$black-primary}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+          }
+        }
+
+        &:hover,
+        &:focus {
+          background-color: blackColor(0.04);
+        }
+
+        &:active,
+        &.active {
+          background-color: blackColor(0.12);
+        }
+      }
+    }
+  }
+
+  &.primary {
+    .dropdown__toggle {
+      background-color: $brand-primary-color;
+
+      &:hover,
+      &:focus {
+        background-color: $brand-hover-color;
+      }
+
+      &:active,
+      &.active {
+        background-color: $brand-press-color;
+      }
+    }
+
+    &:not(.outlined).inlined {
+      .dropdown__toggle {
+        background-color: transparent;
+
+        &,
+        .dropdown__toggle__text {
+          color: $brand-primary-color;
+        }
+
+        .dropdown__toggle__icon {
+          .fill {
+            fill: $brand-primary-color;
+          }
+        }
+
+        &.has-caret {
+          &:after {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$brand-primary-color}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+          }
+        }
+
+        &:hover,
+        &:focus {
+          background-color: brandColor(0.04);
+        }
+
+        &:active,
+        &.active {
+          background-color: brandColor(0.12);
+        }
+      }
+    }
+
+    &:not(.inlined).outlined {
+      .dropdown__toggle {
+        background-color: transparent;
+        border-color: brandColor(0.48);
+
+        &,
+        .dropdown__toggle__text {
+          color: $brand-primary-color;
+        }
+
+        .dropdown__toggle__icon {
+          .fill {
+            fill: $brand-primary-color;
+          }
+        }
+
+        &.has-caret {
+          &:after {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$brand-primary-color}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+          }
+        }
+
+        &:hover,
+        &:focus {
+          background-color: brandColor(0.04);
+        }
+
+        &:active,
+        &.active {
+          background-color: brandColor(0.12);
+        }
+      }
+    }
+  }
+
+  &.large {
+    .dropdown__toggle {
+      &,
+      .dropdown__toggle__text {
+        font-size: 1rem;
+      }
+
+      .dropdown__toggle__icon {
+        @extend %icon-20;
+      }
+
+      &.has-caret {
+        &:after {
+          width: 1.25rem;
+          height: 1.25rem;
+
+          @include rtlStyle(
+            (
+              margin-right: 0.625rem,
+              margin-left: -0.375rem
+            )
+          );
+          @include ltrStyle(
+            (
+              margin-left: 0.625rem,
+              margin-right: -0.375rem
+            )
+          );
+        }
+      }
+    }
+  }
+
+  &.small {
+    .dropdown__toggle {
+      height: 2rem;
+      padding: 0rem 0.75rem;
+
+      &,
+      .dropdown__toggle__text {
+        font-size: 0.75rem;
+      }
+
+      .dropdown__toggle__icon {
+        @extend %icon-16;
+
+        @include rtlStyle(
+          (
+            margin-right: -0.375rem,
+            margin-left: 0.25rem
+          )
+        );
+        @include ltrStyle(
+          (
+            margin-left: -0.375rem,
+            margin-right: 0.25rem
+          )
+        );
+      }
+
+      &.has-caret {
+        &:after {
+          width: 1rem;
+          height: 1rem;
+
+          @include rtlStyle(
+            (
+              margin-right: 0.5rem,
+              margin-left: -0.25rem
+            )
+          );
+          @include ltrStyle(
+            (
+              margin-left: 0.5rem,
+              margin-right: -0.25rem
+            )
+          );
+        }
+      }
+    }
+
+    .dropdown__menu {
+      max-height: 18rem;
+
+      .dropdown__menu__item {
+        height: 2rem;
+
+        & > a {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+
+  &.disabled {
+    .dropdown__content {
+      display: none;
+    }
+
+    &:not(.primary) {
+      .dropdown__toggle {
+        background-color: $gray-100;
+        cursor: not-allowed;
+
+        &,
+        .dropdown__toggle__text {
+          color: $black-hint;
+        }
+
+        &.has-caret {
+          &:after {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$black-hint}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+          }
+        }
+
+        .dropdown__toggle__icon {
+          .fill {
+            fill: $black-hint;
+          }
+        }
+      }
+
+      &.outlined {
+        .dropdown__toggle {
+          border-color: $black-divider;
+          background-color: transparent;
+
+          &,
+          .dropdown__toggle__text {
+            color: $black-hint;
+          }
+        }
+      }
+    }
+
+    &.primary {
+      .dropdown__toggle {
+        background-color: $gray-100;
+        cursor: not-allowed;
+
+        &,
+        .dropdown__toggle__text {
+          color: $black-hint;
+        }
+
+        &.has-caret {
+          &:after {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$black-hint}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+          }
+        }
+
+        .dropdown__toggle__icon {
+          .fill {
+            fill: $black-hint;
+          }
+        }
+      }
+
+      &.outlined {
+        .dropdown__toggle {
+          border-color: $brand-divider-color;
+          background-color: transparent;
+
+          &.has-caret {
+            &:after {
+              background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$brand-hint-color}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+            }
+          }
+
+          .dropdown__toggle__icon {
+            .fill {
+              fill: $brand-hint-color;
+            }
+          }
+
+          &,
+          .dropdown__toggle__text {
+            color: $brand-hint-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dropdown__toggle {
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 0rem $space;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  background-color: $black-secondary;
+  border: 1px solid transparent;
+  outline: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: color 360ms ease, background-color 360ms ease,
+    transform 360ms ease, border-radius 360ms ease, border-color 360ms ease;
+
+  &,
+  .dropdown__toggle__text {
+    @extend %base-text;
+
+    font-size: 0.875rem;
+    line-height: 2;
+    font-weight: 500;
+    color: $white;
+  }
+
+  .dropdown__toggle__icon {
+    @extend %icon-18;
+
+    @include rtlStyle(
+      (
+        margin-right: -0.5rem,
+        margin-left: 0.5rem
+      )
+    );
+    @include ltrStyle(
+      (
+        margin-left: -0.5rem,
+        margin-right: 0.5rem
+      )
+    );
+
+    .fill {
+      fill: $white;
+      transition: fill 360ms ease;
+    }
+  }
+
+  &.has-caret {
+    &:after {
+      content: "";
+      width: 1.125rem;
+      height: 1.125rem;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$white}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+      transition: opacity 360ms ease, transform 360ms ease;
+
+      @include rtlStyle(
+        (
+          margin-right: 0.6875rem,
+          margin-left: -0.3125rem
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: 0.6875rem,
+          margin-right: -0.3125rem
+        )
+      );
+    }
+  }
+}
+
+.dropdown__content {
+  position: absolute;
+  top: 100%;
+
+  @include rtlStyle(
+    (
+      right: 0
+    )
+  );
+  @include ltrStyle(
+    (
+      left: 0
+    )
+  );
+
+  &:not(.show) {
+    display: none;
+  }
+
+  &:after,
+  &:before {
+    content: "";
+    height: 16px;
+    border-radius: 4px;
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    z-index: 2;
+  }
+
+  &:after {
+    background-image: linear-gradient(to top, $white, transparent);
+    bottom: 0;
+  }
+
+  &:before {
+    background-image: linear-gradient(to bottom, $white, transparent);
+    top: 0.25rem;
+  }
+}
+
+.dropdown__menu {
+  margin-top: 0.25rem;
+  min-width: 14rem;
+  max-height: 22.5rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 6px 0 blackColor(0.04), 0 -8px 32px -4px blackColor(0.08),
+    0 16px 24px -6px blackColor(0.04);
+  background-color: $white;
+  overflow: auto;
+  position: relative;
+  z-index: 1;
+
+  .dropdown__menu__item {
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+
+    & > a {
+      @extend %base-text;
+
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.875rem;
+      line-height: 2;
+      color: $black-secondary;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      height: 100%;
+      flex-grow: 1;
+    }
+  }
+}

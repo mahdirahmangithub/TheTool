@@ -85,7 +85,8 @@ ul {
   transform: translate3d(0, 0, 0);
 }
 
-.breadcrumb__item, .breadcrumb__item > a, .badge, .chips,
+.dropdown__menu .dropdown__menu__item > a, .dropdown__toggle,
+.dropdown__toggle .dropdown__toggle__text, .breadcrumb__item, .breadcrumb__item > a, .badge, .chips,
 .chips .chips__text, .toolbox__view-more__text, .toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > a, .text-field__hints, .text-field__input, .text-field__description, .text-field__label-text, .fab__label, .section-row__paragraph, .section-row__title, .section-row > .section-row__title ~ .section-row__title, .title-row__title--subtitle, .title-row__title--pretitle, .title-row__title, .tag,
 .tag .tag__text, .caption-text-sm, .caption-text-md, .caption-text-lg, .body-text-sm, .body-text-md, .body-text-lg, .title-text-xs,
 .h6, .title-text-sm,
@@ -111,7 +112,9 @@ h1 {
   text-size-adjust: 100%;
   color: rgba(0, 0, 0, 0.87);
 }
-body[dir=rtl] .breadcrumb__item, body[dir=rtl] .breadcrumb__item > a, body[dir=rtl] .badge, body[dir=rtl] .chips,
+body[dir=rtl] .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body[dir=rtl] .dropdown__menu__item > a, body[dir=rtl] .dropdown__toggle,
+body[dir=rtl] .dropdown__toggle .dropdown__toggle__text,
+.dropdown__toggle body[dir=rtl] .dropdown__toggle__text, body[dir=rtl] .breadcrumb__item, body[dir=rtl] .breadcrumb__item > a, body[dir=rtl] .badge, body[dir=rtl] .chips,
 body[dir=rtl] .chips .chips__text,
 .chips body[dir=rtl] .chips__text, body[dir=rtl] .toolbox__view-more__text, body[dir=rtl] .toolbox__head__title__text, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a, body[dir=rtl] .accordion__heading, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a, body[dir=rtl] .accordion__list .accordion__list__item > a, .accordion__list body[dir=rtl] .accordion__list__item > a, body[dir=rtl] .text-field__hints, body[dir=rtl] .text-field__input, body[dir=rtl] .text-field__description, body[dir=rtl] .text-field__label-text, body[dir=rtl] .fab__label, body[dir=rtl] .section-row__paragraph, body[dir=rtl] .section-row__title, body[dir=rtl] .section-row > .section-row__title ~ .section-row__title, body[dir=rtl] .title-row__title--subtitle, body[dir=rtl] .title-row__title--pretitle, body[dir=rtl] .title-row__title, body[dir=rtl] .tag,
 body[dir=rtl] .tag .tag__text,
@@ -128,7 +131,9 @@ body[dir=rtl] h2,
 body[dir=rtl] h1 {
   text-align: right;
 }
-body[dir=ltr] .breadcrumb__item, body[dir=ltr] .breadcrumb__item > a, body[dir=ltr] .badge, body[dir=ltr] .chips,
+body[dir=ltr] .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body[dir=ltr] .dropdown__menu__item > a, body[dir=ltr] .dropdown__toggle,
+body[dir=ltr] .dropdown__toggle .dropdown__toggle__text,
+.dropdown__toggle body[dir=ltr] .dropdown__toggle__text, body[dir=ltr] .breadcrumb__item, body[dir=ltr] .breadcrumb__item > a, body[dir=ltr] .badge, body[dir=ltr] .chips,
 body[dir=ltr] .chips .chips__text,
 .chips body[dir=ltr] .chips__text, body[dir=ltr] .toolbox__view-more__text, body[dir=ltr] .toolbox__head__title__text, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a, body[dir=ltr] .accordion__heading, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a, body[dir=ltr] .accordion__list .accordion__list__item > a, .accordion__list body[dir=ltr] .accordion__list__item > a, body[dir=ltr] .text-field__hints, body[dir=ltr] .text-field__input, body[dir=ltr] .text-field__description, body[dir=ltr] .text-field__label-text, body[dir=ltr] .fab__label, body[dir=ltr] .section-row__paragraph, body[dir=ltr] .section-row__title, body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .title-row__title, body[dir=ltr] .tag,
 body[dir=ltr] .tag .tag__text,
@@ -142,7 +147,9 @@ body[dir=ltr] h5,
 body[dir=ltr] h4,
 body[dir=ltr] h3,
 body[dir=ltr] h2,
-body[dir=ltr] h1, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item > a, body:not([dir=ltr]):not([dir=rtl]) .badge, body:not([dir=ltr]):not([dir=rtl]) .chips,
+body[dir=ltr] h1, body:not([dir=ltr]):not([dir=rtl]) .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body:not([dir=ltr]):not([dir=rtl]) .dropdown__menu__item > a, body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle,
+body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle .dropdown__toggle__text,
+.dropdown__toggle body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle__text, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item > a, body:not([dir=ltr]):not([dir=rtl]) .badge, body:not([dir=ltr]):not([dir=rtl]) .chips,
 body:not([dir=ltr]):not([dir=rtl]) .chips .chips__text,
 .chips body:not([dir=ltr]):not([dir=rtl]) .chips__text, body:not([dir=ltr]):not([dir=rtl]) .toolbox__view-more__text, body:not([dir=ltr]):not([dir=rtl]) .toolbox__head__title__text, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a, body:not([dir=ltr]):not([dir=rtl]) .accordion__heading, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > a, .accordion__list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__item > a, body:not([dir=ltr]):not([dir=rtl]) .text-field__hints, body:not([dir=ltr]):not([dir=rtl]) .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field__description, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .fab__label, body:not([dir=ltr]):not([dir=rtl]) .section-row__paragraph, body:not([dir=ltr]):not([dir=rtl]) .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle, body:not([dir=ltr]):not([dir=rtl]) .title-row__title--pretitle, body:not([dir=ltr]):not([dir=rtl]) .title-row__title, body:not([dir=ltr]):not([dir=rtl]) .tag,
 body:not([dir=ltr]):not([dir=rtl]) .tag .tag__text,
@@ -159,7 +166,8 @@ body:not([dir=ltr]):not([dir=rtl]) h2,
 body:not([dir=ltr]):not([dir=rtl]) h1 {
   text-align: left;
 }
-.typography-transition.breadcrumb__item, .breadcrumb__item > a.typography-transition, .typography-transition.badge, .typography-transition.chips,
+.dropdown__menu .dropdown__menu__item > a.typography-transition, .typography-transition.dropdown__toggle,
+.dropdown__toggle .typography-transition.dropdown__toggle__text, .typography-transition.breadcrumb__item, .breadcrumb__item > a.typography-transition, .typography-transition.badge, .typography-transition.chips,
 .chips .typography-transition.chips__text, .typography-transition.toolbox__view-more__text, .typography-transition.toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .typography-transition.accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .accordion__list .accordion__list__item > a.typography-transition, .typography-transition.text-field__hints, .typography-transition.text-field__input, .typography-transition.text-field__description, .typography-transition.text-field__label-text, .typography-transition.fab__label, .typography-transition.section-row__paragraph, .typography-transition.section-row__title, .section-row > .section-row__title ~ .typography-transition.section-row__title, .typography-transition.title-row__title--subtitle, .typography-transition.title-row__title--pretitle, .typography-transition.title-row__title, .typography-transition.tag,
 .tag .typography-transition.tag__text, .typography-transition.caption-text-sm, .typography-transition.caption-text-md, .typography-transition.caption-text-lg, .typography-transition.body-text-sm, .typography-transition.body-text-md, .typography-transition.body-text-lg, .typography-transition.title-text-xs,
 .typography-transition.h6, .typography-transition.title-text-sm,
@@ -664,13 +672,16 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 }
 .icon-48, .icon-32, .icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child,
 .fab__icon, .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child),
+.dropdown.large .dropdown__toggle .dropdown__toggle__icon,
 .clear-field.large svg,
 .accordion__icon,
 .fab.small:not(.labeled) .fab__icon, .icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child),
+.dropdown__toggle .dropdown__toggle__icon,
 .clear-field svg,
 .chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg,
 .chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg,
 .chips.removable > .chips__remove > .chips__remove__icon svg, .icon-16, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon, .button.small .button__icon,
+.dropdown.small .dropdown__toggle .dropdown__toggle__icon,
 .range-picker__handle__icon,
 .clear-field.small svg,
 .chips.iconed > .chips__icon,
@@ -682,6 +693,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 }
 
 .icon-16, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon, .button.small .button__icon,
+.dropdown.small .dropdown__toggle .dropdown__toggle__icon,
 .range-picker__handle__icon,
 .chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg,
 .chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg,
@@ -696,6 +708,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   min-height: 16px;
 }
 .icon-16 > svg, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon > svg, .button.small .button__icon > svg,
+.dropdown.small .dropdown__toggle .dropdown__toggle__icon > svg,
 .range-picker__handle__icon > svg,
 .chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg > svg,
 .chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg > svg,
@@ -709,6 +722,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 }
 
 .icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child),
+.dropdown__toggle .dropdown__toggle__icon,
 .clear-field svg,
 .chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg,
 .chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg,
@@ -719,6 +733,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   min-height: 18px;
 }
 .icon-18 > svg, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child) > svg,
+.dropdown__toggle .dropdown__toggle__icon > svg,
 .clear-field svg > svg,
 .chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg > svg,
 .chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg > svg,
@@ -728,6 +743,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 }
 
 .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child),
+.dropdown.large .dropdown__toggle .dropdown__toggle__icon,
 .clear-field.large svg,
 .chips.primary.removable:not(.outlined) > .chips__remove > .large.chips__remove__icon svg,
 .chips.primary.outlined.removable > .chips__remove > .large.chips__remove__icon svg,
@@ -740,6 +756,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   min-height: 20px;
 }
 .icon-20 > svg, .button .button__icon > svg, .tab-list__tab__content .tab-list__tab-icon:not(:only-child) > svg,
+.dropdown.large .dropdown__toggle .dropdown__toggle__icon > svg,
 .clear-field.large svg > svg,
 .chips.primary.removable:not(.outlined) > .chips__remove > .large.chips__remove__icon svg > svg,
 .chips.primary.outlined.removable > .chips__remove > .large.chips__remove__icon svg > svg,
@@ -3913,6 +3930,341 @@ body[dir=rtl] .breadcrumb__item, body[dir=rtl] .breadcrumb__item > a {
 }
 body[dir=ltr] .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item, body[dir=ltr] .breadcrumb__item > a, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item > a {
   margin-right: 0.25rem;
+}
+
+.dropdown {
+  position: relative;
+  z-index: 1000;
+}
+.dropdown:not(.primary) .dropdown__toggle:hover, .dropdown:not(.primary) .dropdown__toggle:focus {
+  background-color: rgba(31, 31, 31, 0.56);
+}
+.dropdown:not(.primary) .dropdown__toggle:active, .dropdown:not(.primary) .dropdown__toggle.active {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.dropdown:not(.primary):not(.outlined).inlined .dropdown__toggle {
+  background-color: transparent;
+}
+.dropdown:not(.primary):not(.outlined).inlined .dropdown__toggle,
+.dropdown:not(.primary):not(.outlined).inlined .dropdown__toggle .dropdown__toggle__text {
+  color: rgba(0, 0, 0, 0.56);
+}
+.dropdown:not(.primary):not(.outlined).inlined .dropdown__toggle .dropdown__toggle__icon .fill {
+  fill: rgba(0, 0, 0, 0.56);
+}
+.dropdown:not(.primary):not(.outlined).inlined .dropdown__toggle.has-caret:after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.56)" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+}
+.dropdown:not(.primary):not(.outlined).inlined .dropdown__toggle:hover, .dropdown:not(.primary):not(.outlined).inlined .dropdown__toggle:focus {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.dropdown:not(.primary):not(.outlined).inlined .dropdown__toggle:active, .dropdown:not(.primary):not(.outlined).inlined .dropdown__toggle.active {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.dropdown:not(.primary):not(.inlined).outlined .dropdown__toggle {
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.48);
+}
+.dropdown:not(.primary):not(.inlined).outlined .dropdown__toggle,
+.dropdown:not(.primary):not(.inlined).outlined .dropdown__toggle .dropdown__toggle__text {
+  color: rgba(0, 0, 0, 0.87);
+}
+.dropdown:not(.primary):not(.inlined).outlined .dropdown__toggle .dropdown__toggle__icon .fill {
+  fill: rgba(0, 0, 0, 0.87);
+}
+.dropdown:not(.primary):not(.inlined).outlined .dropdown__toggle.has-caret:after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.87)" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+}
+.dropdown:not(.primary):not(.inlined).outlined .dropdown__toggle:hover, .dropdown:not(.primary):not(.inlined).outlined .dropdown__toggle:focus {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.dropdown:not(.primary):not(.inlined).outlined .dropdown__toggle:active, .dropdown:not(.primary):not(.inlined).outlined .dropdown__toggle.active {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.dropdown.primary .dropdown__toggle {
+  background-color: #a62626;
+}
+.dropdown.primary .dropdown__toggle:hover, .dropdown.primary .dropdown__toggle:focus {
+  background-color: #be3737;
+}
+.dropdown.primary .dropdown__toggle:active, .dropdown.primary .dropdown__toggle.active {
+  background-color: #9d1b1b;
+}
+.dropdown.primary:not(.outlined).inlined .dropdown__toggle {
+  background-color: transparent;
+}
+.dropdown.primary:not(.outlined).inlined .dropdown__toggle,
+.dropdown.primary:not(.outlined).inlined .dropdown__toggle .dropdown__toggle__text {
+  color: #a62626;
+}
+.dropdown.primary:not(.outlined).inlined .dropdown__toggle .dropdown__toggle__icon .fill {
+  fill: #a62626;
+}
+.dropdown.primary:not(.outlined).inlined .dropdown__toggle.has-caret:after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#a62626" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+}
+.dropdown.primary:not(.outlined).inlined .dropdown__toggle:hover, .dropdown.primary:not(.outlined).inlined .dropdown__toggle:focus {
+  background-color: rgba(166, 38, 38, 0.04);
+}
+.dropdown.primary:not(.outlined).inlined .dropdown__toggle:active, .dropdown.primary:not(.outlined).inlined .dropdown__toggle.active {
+  background-color: rgba(166, 38, 38, 0.12);
+}
+.dropdown.primary:not(.inlined).outlined .dropdown__toggle {
+  background-color: transparent;
+  border-color: rgba(166, 38, 38, 0.48);
+}
+.dropdown.primary:not(.inlined).outlined .dropdown__toggle,
+.dropdown.primary:not(.inlined).outlined .dropdown__toggle .dropdown__toggle__text {
+  color: #a62626;
+}
+.dropdown.primary:not(.inlined).outlined .dropdown__toggle .dropdown__toggle__icon .fill {
+  fill: #a62626;
+}
+.dropdown.primary:not(.inlined).outlined .dropdown__toggle.has-caret:after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#a62626" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+}
+.dropdown.primary:not(.inlined).outlined .dropdown__toggle:hover, .dropdown.primary:not(.inlined).outlined .dropdown__toggle:focus {
+  background-color: rgba(166, 38, 38, 0.04);
+}
+.dropdown.primary:not(.inlined).outlined .dropdown__toggle:active, .dropdown.primary:not(.inlined).outlined .dropdown__toggle.active {
+  background-color: rgba(166, 38, 38, 0.12);
+}
+.dropdown.large .dropdown__toggle,
+.dropdown.large .dropdown__toggle .dropdown__toggle__text {
+  font-size: 1rem;
+}
+.dropdown.large .dropdown__toggle.has-caret:after {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+body[dir=rtl] .dropdown.large .dropdown__toggle.has-caret:after {
+  margin-right: 0.625rem;
+}
+body[dir=rtl] .dropdown.large .dropdown__toggle.has-caret:after {
+  margin-left: -0.375rem;
+}
+body[dir=ltr] .dropdown.large .dropdown__toggle.has-caret:after, body:not([dir=ltr]):not([dir=rtl]) .dropdown.large .dropdown__toggle.has-caret:after {
+  margin-left: 0.625rem;
+}
+body[dir=ltr] .dropdown.large .dropdown__toggle.has-caret:after, body:not([dir=ltr]):not([dir=rtl]) .dropdown.large .dropdown__toggle.has-caret:after {
+  margin-right: -0.375rem;
+}
+.dropdown.small .dropdown__toggle {
+  height: 2rem;
+  padding: 0rem 0.75rem;
+}
+.dropdown.small .dropdown__toggle,
+.dropdown.small .dropdown__toggle .dropdown__toggle__text {
+  font-size: 0.75rem;
+}
+body[dir=rtl] .dropdown.small .dropdown__toggle .dropdown__toggle__icon {
+  margin-right: -0.375rem;
+}
+body[dir=rtl] .dropdown.small .dropdown__toggle .dropdown__toggle__icon {
+  margin-left: 0.25rem;
+}
+body[dir=ltr] .dropdown.small .dropdown__toggle .dropdown__toggle__icon, body:not([dir=ltr]):not([dir=rtl]) .dropdown.small .dropdown__toggle .dropdown__toggle__icon {
+  margin-left: -0.375rem;
+}
+body[dir=ltr] .dropdown.small .dropdown__toggle .dropdown__toggle__icon, body:not([dir=ltr]):not([dir=rtl]) .dropdown.small .dropdown__toggle .dropdown__toggle__icon {
+  margin-right: 0.25rem;
+}
+.dropdown.small .dropdown__toggle.has-caret:after {
+  width: 1rem;
+  height: 1rem;
+}
+body[dir=rtl] .dropdown.small .dropdown__toggle.has-caret:after {
+  margin-right: 0.5rem;
+}
+body[dir=rtl] .dropdown.small .dropdown__toggle.has-caret:after {
+  margin-left: -0.25rem;
+}
+body[dir=ltr] .dropdown.small .dropdown__toggle.has-caret:after, body:not([dir=ltr]):not([dir=rtl]) .dropdown.small .dropdown__toggle.has-caret:after {
+  margin-left: 0.5rem;
+}
+body[dir=ltr] .dropdown.small .dropdown__toggle.has-caret:after, body:not([dir=ltr]):not([dir=rtl]) .dropdown.small .dropdown__toggle.has-caret:after {
+  margin-right: -0.25rem;
+}
+.dropdown.small .dropdown__menu {
+  max-height: 18rem;
+}
+.dropdown.small .dropdown__menu .dropdown__menu__item {
+  height: 2rem;
+}
+.dropdown.small .dropdown__menu .dropdown__menu__item > a {
+  font-size: 0.75rem;
+}
+.dropdown.disabled .dropdown__content {
+  display: none;
+}
+.dropdown.disabled:not(.primary) .dropdown__toggle {
+  background-color: whitesmoke;
+  cursor: not-allowed;
+}
+.dropdown.disabled:not(.primary) .dropdown__toggle,
+.dropdown.disabled:not(.primary) .dropdown__toggle .dropdown__toggle__text {
+  color: rgba(0, 0, 0, 0.32);
+}
+.dropdown.disabled:not(.primary) .dropdown__toggle.has-caret:after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.32)" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+}
+.dropdown.disabled:not(.primary) .dropdown__toggle .dropdown__toggle__icon .fill {
+  fill: rgba(0, 0, 0, 0.32);
+}
+.dropdown.disabled:not(.primary).outlined .dropdown__toggle {
+  border-color: rgba(0, 0, 0, 0.12);
+  background-color: transparent;
+}
+.dropdown.disabled:not(.primary).outlined .dropdown__toggle,
+.dropdown.disabled:not(.primary).outlined .dropdown__toggle .dropdown__toggle__text {
+  color: rgba(0, 0, 0, 0.32);
+}
+.dropdown.disabled.primary .dropdown__toggle {
+  background-color: whitesmoke;
+  cursor: not-allowed;
+}
+.dropdown.disabled.primary .dropdown__toggle,
+.dropdown.disabled.primary .dropdown__toggle .dropdown__toggle__text {
+  color: rgba(0, 0, 0, 0.32);
+}
+.dropdown.disabled.primary .dropdown__toggle.has-caret:after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.32)" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+}
+.dropdown.disabled.primary .dropdown__toggle .dropdown__toggle__icon .fill {
+  fill: rgba(0, 0, 0, 0.32);
+}
+.dropdown.disabled.primary.outlined .dropdown__toggle {
+  border-color: rgba(166, 38, 38, 0.12);
+  background-color: transparent;
+}
+.dropdown.disabled.primary.outlined .dropdown__toggle.has-caret:after {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="rgba(166, 38, 38, 0.32)" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+}
+.dropdown.disabled.primary.outlined .dropdown__toggle .dropdown__toggle__icon .fill {
+  fill: rgba(166, 38, 38, 0.32);
+}
+.dropdown.disabled.primary.outlined .dropdown__toggle,
+.dropdown.disabled.primary.outlined .dropdown__toggle .dropdown__toggle__text {
+  color: rgba(166, 38, 38, 0.32);
+}
+
+.dropdown__toggle {
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 0rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.56);
+  border: 1px solid transparent;
+  outline: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: color 360ms ease, background-color 360ms ease, transform 360ms ease, border-radius 360ms ease, border-color 360ms ease;
+}
+.dropdown__toggle,
+.dropdown__toggle .dropdown__toggle__text {
+  font-size: 0.875rem;
+  line-height: 2;
+  font-weight: 500;
+  color: white;
+}
+body[dir=rtl] .dropdown__toggle .dropdown__toggle__icon {
+  margin-right: -0.5rem;
+}
+body[dir=rtl] .dropdown__toggle .dropdown__toggle__icon {
+  margin-left: 0.5rem;
+}
+body[dir=ltr] .dropdown__toggle .dropdown__toggle__icon, body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle .dropdown__toggle__icon {
+  margin-left: -0.5rem;
+}
+body[dir=ltr] .dropdown__toggle .dropdown__toggle__icon, body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle .dropdown__toggle__icon {
+  margin-right: 0.5rem;
+}
+.dropdown__toggle .dropdown__toggle__icon .fill {
+  fill: white;
+  transition: fill 360ms ease;
+}
+.dropdown__toggle.has-caret:after {
+  content: "";
+  width: 1.125rem;
+  height: 1.125rem;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="white" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+  transition: opacity 360ms ease, transform 360ms ease;
+}
+body[dir=rtl] .dropdown__toggle.has-caret:after {
+  margin-right: 0.6875rem;
+}
+body[dir=rtl] .dropdown__toggle.has-caret:after {
+  margin-left: -0.3125rem;
+}
+body[dir=ltr] .dropdown__toggle.has-caret:after, body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle.has-caret:after {
+  margin-left: 0.6875rem;
+}
+body[dir=ltr] .dropdown__toggle.has-caret:after, body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle.has-caret:after {
+  margin-right: -0.3125rem;
+}
+
+.dropdown__content {
+  position: absolute;
+  top: 100%;
+}
+body[dir=rtl] .dropdown__content {
+  right: 0;
+}
+body[dir=ltr] .dropdown__content, body:not([dir=ltr]):not([dir=rtl]) .dropdown__content {
+  left: 0;
+}
+.dropdown__content:not(.show) {
+  display: none;
+}
+.dropdown__content:after, .dropdown__content:before {
+  content: "";
+  height: 16px;
+  border-radius: 4px;
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  z-index: 2;
+}
+.dropdown__content:after {
+  background-image: linear-gradient(to top, white, transparent);
+  bottom: 0;
+}
+.dropdown__content:before {
+  background-image: linear-gradient(to bottom, white, transparent);
+  top: 0.25rem;
+}
+
+.dropdown__menu {
+  margin-top: 0.25rem;
+  min-width: 14rem;
+  max-height: 22.5rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.04), 0 -8px 32px -4px rgba(0, 0, 0, 0.08), 0 16px 24px -6px rgba(0, 0, 0, 0.04);
+  background-color: white;
+  overflow: auto;
+  position: relative;
+  z-index: 1;
+}
+.dropdown__menu .dropdown__menu__item {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+}
+.dropdown__menu .dropdown__menu__item > a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.56);
+  padding-right: 1rem;
+  padding-left: 1rem;
+  height: 100%;
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=sonnat.elements.css.map */
