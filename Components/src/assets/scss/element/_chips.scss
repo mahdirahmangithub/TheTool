@@ -22,6 +22,7 @@
   &,
   .chips__text {
     @extend %base-text;
+
     font-size: 0.875rem;
     color: $black-secondary;
   }
@@ -216,10 +217,6 @@
     &.removable:not(.primary) {
       background-color: blackColor(0.04);
     }
-
-    // &.removable.primary {
-    //   background-color: brandColor(0);
-    // }
   }
 
   &.rounded {

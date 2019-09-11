@@ -85,7 +85,9 @@ ul {
   transform: translate3d(0, 0, 0);
 }
 
-.dropdown__menu .dropdown__menu__item > a, .dropdown__toggle,
+.select__dropdown__options__option > .select__dropdown__options__option__text, .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+.select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
+.select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, .select__dropdown__options__option-group__title, .select__choose-field__unit, .select__choose-field__text, .dropdown__menu .dropdown__menu__item > a, .dropdown__toggle,
 .dropdown__toggle .dropdown__toggle__text, .breadcrumb__item, .breadcrumb__item > a, .badge, .chips,
 .chips .chips__text, .toolbox__view-more__text, .toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > a, .text-field__hints, .text-field__input, .text-field__description, .text-field__label-text, .fab__label, .section-row__paragraph, .section-row__title, .section-row > .section-row__title ~ .section-row__title, .title-row__title--subtitle, .title-row__title--pretitle, .title-row__title, .tag,
 .tag .tag__text, .caption-text-sm, .caption-text-md, .caption-text-lg, .body-text-sm, .body-text-md, .body-text-lg, .title-text-xs,
@@ -112,7 +114,9 @@ h1 {
   text-size-adjust: 100%;
   color: rgba(0, 0, 0, 0.87);
 }
-body[dir=rtl] .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body[dir=rtl] .dropdown__menu__item > a, body[dir=rtl] .dropdown__toggle,
+body[dir=rtl] .select__dropdown__options__option > .select__dropdown__options__option__text, body[dir=rtl] .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+body[dir=rtl] .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
+body[dir=rtl] .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, body[dir=rtl] .select__dropdown__options__option-group__title, body[dir=rtl] .select__choose-field__unit, body[dir=rtl] .select__choose-field__text, body[dir=rtl] .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body[dir=rtl] .dropdown__menu__item > a, body[dir=rtl] .dropdown__toggle,
 body[dir=rtl] .dropdown__toggle .dropdown__toggle__text,
 .dropdown__toggle body[dir=rtl] .dropdown__toggle__text, body[dir=rtl] .breadcrumb__item, body[dir=rtl] .breadcrumb__item > a, body[dir=rtl] .badge, body[dir=rtl] .chips,
 body[dir=rtl] .chips .chips__text,
@@ -131,7 +135,9 @@ body[dir=rtl] h2,
 body[dir=rtl] h1 {
   text-align: right;
 }
-body[dir=ltr] .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body[dir=ltr] .dropdown__menu__item > a, body[dir=ltr] .dropdown__toggle,
+body[dir=ltr] .select__dropdown__options__option > .select__dropdown__options__option__text, body[dir=ltr] .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+body[dir=ltr] .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
+body[dir=ltr] .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, body[dir=ltr] .select__dropdown__options__option-group__title, body[dir=ltr] .select__choose-field__unit, body[dir=ltr] .select__choose-field__text, body[dir=ltr] .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body[dir=ltr] .dropdown__menu__item > a, body[dir=ltr] .dropdown__toggle,
 body[dir=ltr] .dropdown__toggle .dropdown__toggle__text,
 .dropdown__toggle body[dir=ltr] .dropdown__toggle__text, body[dir=ltr] .breadcrumb__item, body[dir=ltr] .breadcrumb__item > a, body[dir=ltr] .badge, body[dir=ltr] .chips,
 body[dir=ltr] .chips .chips__text,
@@ -147,7 +153,9 @@ body[dir=ltr] h5,
 body[dir=ltr] h4,
 body[dir=ltr] h3,
 body[dir=ltr] h2,
-body[dir=ltr] h1, body:not([dir=ltr]):not([dir=rtl]) .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body:not([dir=ltr]):not([dir=rtl]) .dropdown__menu__item > a, body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle,
+body[dir=ltr] h1, body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option > .select__dropdown__options__option__text, body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
+body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option-group__title, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body:not([dir=ltr]):not([dir=rtl]) .dropdown__menu__item > a, body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle,
 body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle .dropdown__toggle__text,
 .dropdown__toggle body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle__text, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item > a, body:not([dir=ltr]):not([dir=rtl]) .badge, body:not([dir=ltr]):not([dir=rtl]) .chips,
 body:not([dir=ltr]):not([dir=rtl]) .chips .chips__text,
@@ -166,7 +174,9 @@ body:not([dir=ltr]):not([dir=rtl]) h2,
 body:not([dir=ltr]):not([dir=rtl]) h1 {
   text-align: left;
 }
-.dropdown__menu .dropdown__menu__item > a.typography-transition, .typography-transition.dropdown__toggle,
+.select__dropdown__options__option > .typography-transition.select__dropdown__options__option__text, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option-group__option__text,
+.select__dropdown__options__option-group__option > .typography-transition.select__dropdown__options__option__text,
+.select__dropdown__options__option-group__option > .typography-transition.select__dropdown__options__option-group__option__text, .typography-transition.select__dropdown__options__option-group__title, .typography-transition.select__choose-field__unit, .typography-transition.select__choose-field__text, .dropdown__menu .dropdown__menu__item > a.typography-transition, .typography-transition.dropdown__toggle,
 .dropdown__toggle .typography-transition.dropdown__toggle__text, .typography-transition.breadcrumb__item, .breadcrumb__item > a.typography-transition, .typography-transition.badge, .typography-transition.chips,
 .chips .typography-transition.chips__text, .typography-transition.toolbox__view-more__text, .typography-transition.toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .typography-transition.accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .accordion__list .accordion__list__item > a.typography-transition, .typography-transition.text-field__hints, .typography-transition.text-field__input, .typography-transition.text-field__description, .typography-transition.text-field__label-text, .typography-transition.fab__label, .typography-transition.section-row__paragraph, .typography-transition.section-row__title, .section-row > .section-row__title ~ .typography-transition.section-row__title, .typography-transition.title-row__title--subtitle, .typography-transition.title-row__title--pretitle, .typography-transition.title-row__title, .typography-transition.tag,
 .tag .typography-transition.tag__text, .typography-transition.caption-text-sm, .typography-transition.caption-text-md, .typography-transition.caption-text-lg, .typography-transition.body-text-sm, .typography-transition.body-text-md, .typography-transition.body-text-lg, .typography-transition.title-text-xs,
@@ -673,17 +683,11 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .icon-48, .icon-32, .icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child,
 .fab__icon, .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child),
 .dropdown.large .dropdown__toggle .dropdown__toggle__icon,
-.clear-field.large svg,
 .accordion__icon,
 .fab.small:not(.labeled) .fab__icon, .icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child),
-.dropdown__toggle .dropdown__toggle__icon,
-.clear-field svg,
-.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg,
-.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg,
-.chips.removable > .chips__remove > .chips__remove__icon svg, .icon-16, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon, .button.small .button__icon,
+.dropdown__toggle .dropdown__toggle__icon, .icon-16, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon, .button.small .button__icon,
 .dropdown.small .dropdown__toggle .dropdown__toggle__icon,
 .range-picker__handle__icon,
-.clear-field.small svg,
 .chips.iconed > .chips__icon,
 .toolbox__view-more__icon,
 .tag.iconed .tag__icon {
@@ -695,10 +699,6 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .icon-16, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon, .button.small .button__icon,
 .dropdown.small .dropdown__toggle .dropdown__toggle__icon,
 .range-picker__handle__icon,
-.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg,
-.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg,
-.chips.removable > .chips__remove > .chips__remove__icon svg,
-.clear-field.small svg,
 .chips.iconed > .chips__icon,
 .toolbox__view-more__icon,
 .tag.iconed .tag__icon {
@@ -710,10 +710,6 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .icon-16 > svg, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon > svg, .button.small .button__icon > svg,
 .dropdown.small .dropdown__toggle .dropdown__toggle__icon > svg,
 .range-picker__handle__icon > svg,
-.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg > svg,
-.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg > svg,
-.chips.removable > .chips__remove > .chips__remove__icon svg > svg,
-.clear-field.small svg > svg,
 .chips.iconed > .chips__icon > svg,
 .toolbox__view-more__icon > svg,
 .tag.iconed .tag__icon > svg {
@@ -722,32 +718,20 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 }
 
 .icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child),
-.dropdown__toggle .dropdown__toggle__icon,
-.clear-field svg,
-.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg,
-.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg,
-.chips.removable > .chips__remove > .chips__remove__icon svg {
+.dropdown__toggle .dropdown__toggle__icon {
   width: 18px;
   height: 18px;
   min-width: 18px;
   min-height: 18px;
 }
 .icon-18 > svg, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child) > svg,
-.dropdown__toggle .dropdown__toggle__icon > svg,
-.clear-field svg > svg,
-.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg > svg,
-.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg > svg,
-.chips.removable > .chips__remove > .chips__remove__icon svg > svg {
+.dropdown__toggle .dropdown__toggle__icon > svg {
   width: 100%;
   height: 100%;
 }
 
 .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child),
 .dropdown.large .dropdown__toggle .dropdown__toggle__icon,
-.clear-field.large svg,
-.chips.primary.removable:not(.outlined) > .chips__remove > .large.chips__remove__icon svg,
-.chips.primary.outlined.removable > .chips__remove > .large.chips__remove__icon svg,
-.chips.removable > .chips__remove > .large.chips__remove__icon svg,
 .accordion__icon,
 .fab.small:not(.labeled) .fab__icon {
   width: 20px;
@@ -757,10 +741,6 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 }
 .icon-20 > svg, .button .button__icon > svg, .tab-list__tab__content .tab-list__tab-icon:not(:only-child) > svg,
 .dropdown.large .dropdown__toggle .dropdown__toggle__icon > svg,
-.clear-field.large svg > svg,
-.chips.primary.removable:not(.outlined) > .chips__remove > .large.chips__remove__icon svg > svg,
-.chips.primary.outlined.removable > .chips__remove > .large.chips__remove__icon svg > svg,
-.chips.removable > .chips__remove > .large.chips__remove__icon svg > svg,
 .accordion__icon > svg,
 .fab.small:not(.labeled) .fab__icon > svg {
   width: 100%;
@@ -2420,7 +2400,6 @@ body[dir=ltr] .text-field__wrapper:before, body:not([dir=ltr]):not([dir=rtl]) .t
   flex-direction: row;
   align-items: center;
   padding: 0rem 0.5rem;
-  transform: translateY(-100%);
   top: auto;
 }
 .text-field__icons .text-field__icons__leading,
@@ -3549,73 +3528,109 @@ body[dir=ltr] .chips.removable > .chips__remove, body:not([dir=ltr]):not([dir=rt
 }
 
 .clear-field,
+.select__choose-field__clear > .select__choose-field__clear__icon,
 .chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon,
 .chips.primary.outlined.removable > .chips__remove > .chips__remove__icon,
+.select__choose-field.small .select__choose-field__clear > .select__choose-field__clear__icon,
 .chips.removable > .chips__remove > .chips__remove__icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  width: 1.125rem;
-  height: 1.125rem;
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 360ms ease;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+}
+.clear-field svg,
+.select__choose-field__clear > .select__choose-field__clear__icon svg,
+.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg,
+.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg,
+.select__choose-field.small .select__choose-field__clear > .select__choose-field__clear__icon svg,
+.chips.removable > .chips__remove > .chips__remove__icon svg {
+  width: 100%;
+  height: 100%;
 }
 .clear-field svg .fill,
+.select__choose-field__clear > .select__choose-field__clear__icon svg .fill,
 .chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg .fill,
 .chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg .fill,
+.select__choose-field.small .select__choose-field__clear > .select__choose-field__clear__icon svg .fill,
 .chips.removable > .chips__remove > .chips__remove__icon svg .fill {
   fill: rgba(0, 0, 0, 0.56);
   transition: fill 360ms ease;
 }
 .clear-field.large,
+.select__choose-field__clear > .large.select__choose-field__clear__icon,
 .chips.primary.removable:not(.outlined) > .chips__remove > .large.chips__remove__icon,
 .chips.primary.outlined.removable > .chips__remove > .large.chips__remove__icon,
+.select__choose-field.small .select__choose-field__clear > .large.select__choose-field__clear__icon,
 .chips.removable > .chips__remove > .large.chips__remove__icon {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
 }
 .clear-field.small,
+.select__choose-field__clear > .small.select__choose-field__clear__icon,
 .chips.primary.removable:not(.outlined) > .chips__remove > .small.chips__remove__icon,
 .chips.primary.outlined.removable > .chips__remove > .small.chips__remove__icon,
+.select__choose-field.small .select__choose-field__clear > .small.select__choose-field__clear__icon,
 .chips.removable > .chips__remove > .small.chips__remove__icon {
-  width: 1rem;
-  height: 1rem;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
 }
 .clear-field.primary svg .fill,
+.select__choose-field__clear > .primary.select__choose-field__clear__icon svg .fill,
 .chips.removable > .chips__remove > .primary.chips__remove__icon svg .fill {
   fill: #a62626;
 }
 .clear-field.white svg .fill,
+.select__choose-field__clear > .white.select__choose-field__clear__icon svg .fill,
 .chips.removable > .chips__remove > .white.chips__remove__icon svg .fill {
   fill: white;
 }
 *:hover > .clear-field,
+.select__choose-field__clear:hover > .select__choose-field__clear__icon,
 .chips.primary.removable:not(.outlined) > .chips__remove:hover > .chips__remove__icon,
 .chips.primary.outlined.removable > .chips__remove:hover > .chips__remove__icon,
+.select__choose-field.small .select__choose-field__clear:hover > .select__choose-field__clear__icon,
 .chips.removable > .chips__remove:hover > .chips__remove__icon {
   background-color: rgba(0, 0, 0, 0.12);
 }
 *:hover > .clear-field.primary:not(.white),
+.select__choose-field__clear:hover > .primary.select__choose-field__clear__icon:not(.white),
+.select__choose-field.small .select__choose-field__clear:hover > .primary.select__choose-field__clear__icon:not(.white),
 .chips.removable > .chips__remove:hover > .primary.chips__remove__icon:not(.white) {
   background-color: rgba(166, 38, 38, 0.12);
 }
 *:active > .clear-field,
+.select__choose-field__clear:active > .select__choose-field__clear__icon,
 .chips.primary.removable:not(.outlined) > .chips__remove:active > .chips__remove__icon,
 .chips.primary.outlined.removable > .chips__remove:active > .chips__remove__icon,
+.select__choose-field.small .select__choose-field__clear:active > .select__choose-field__clear__icon,
 .chips.removable > .chips__remove:active > .chips__remove__icon {
   background-color: rgba(0, 0, 0, 0.24);
 }
 *:active > .clear-field.primary:not(.white),
+.select__choose-field__clear:active > .primary.select__choose-field__clear__icon:not(.white),
+.select__choose-field.small .select__choose-field__clear:active > .primary.select__choose-field__clear__icon:not(.white),
 .chips.removable > .chips__remove:active > .primary.chips__remove__icon:not(.white) {
   background-color: rgba(166, 38, 38, 0.24);
 }
 
-.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon, .chips.primary.outlined.removable > .chips__remove > .chips__remove__icon, .chips.removable > .chips__remove > .chips__remove__icon {
-  width: 1rem;
-  height: 1rem;
+.select__choose-field.small .select__choose-field__clear > .select__choose-field__clear__icon, .chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon, .chips.primary.outlined.removable > .chips__remove > .chips__remove__icon, .chips.removable > .chips__remove > .chips__remove__icon {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
 }
+
 .chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg .fill {
   fill: #a62626;
 }
@@ -4265,6 +4280,281 @@ body[dir=ltr] .dropdown__content, body:not([dir=ltr]):not([dir=rtl]) .dropdown__
   padding-left: 1rem;
   height: 100%;
   flex-grow: 1;
+}
+
+.select {
+  width: 100%;
+  position: relative;
+}
+.select.searchable .select__dropdown:before {
+  display: none;
+}
+.select:not(.searchable) .select__dropdown__search {
+  display: none;
+}
+
+.select__input {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: -1;
+  height: 2.5rem;
+}
+
+.select__choose-field {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 360ms ease;
+}
+.select__choose-field.minimal {
+  border-color: transparent;
+}
+.select__choose-field.small {
+  height: 2rem;
+}
+.select__choose-field.small:after {
+  width: 1rem;
+  height: 1rem;
+}
+body[dir=rtl] .select__choose-field.small:after {
+  margin-left: 0.25rem;
+}
+body[dir=rtl] .select__choose-field.small:after {
+  margin-right: 0.25rem;
+}
+body[dir=ltr] .select__choose-field.small:after, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field.small:after {
+  margin-right: 0.25rem;
+}
+body[dir=ltr] .select__choose-field.small:after, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field.small:after {
+  margin-left: 0.25rem;
+}
+.select__choose-field.small .select__choose-field__text {
+  font-size: 0.75rem;
+}
+body[dir=rtl] .select__choose-field.small .select__choose-field__text {
+  transform: translateX(1.625rem);
+}
+body[dir=ltr] .select__choose-field.small .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field.small .select__choose-field__text {
+  transform: translateX(-1.625rem);
+}
+.select__choose-field.small .select__choose-field__unit {
+  font-size: 0.625rem;
+}
+body[dir=rtl] .select__choose-field.small .select__choose-field__unit {
+  margin-right: 0.25rem;
+}
+body[dir=ltr] .select__choose-field.small .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field.small .select__choose-field__unit {
+  margin-left: 0.25rem;
+}
+.select__choose-field:hover:not(.minimal), .select__choose-field:focus:not(.minimal) {
+  border-color: rgba(0, 0, 0, 0.48);
+}
+.select__choose-field:hover:after, .select__choose-field:focus:after {
+  opacity: 0.56;
+}
+.select__choose-field:after {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.32;
+  flex-shrink: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="black" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+  transition: opacity 360ms ease, transform 360ms ease;
+}
+body[dir=rtl] .select__choose-field:after {
+  margin-left: 0.5rem;
+}
+body[dir=rtl] .select__choose-field:after {
+  margin-right: 0.5rem;
+}
+body[dir=ltr] .select__choose-field:after, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field:after {
+  margin-right: 0.5rem;
+}
+body[dir=ltr] .select__choose-field:after, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field:after {
+  margin-left: 0.5rem;
+}
+.select__choose-field.selected:not(.minimal) {
+  border-color: rgba(0, 0, 0, 0.48);
+}
+.select__choose-field.selected:after {
+  opacity: 0.56;
+}
+.select__choose-field.selected .select__choose-field__clear {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+.select__choose-field.selected .select__choose-field__text {
+  color: rgba(0, 0, 0, 0.87);
+}
+body[dir=rtl] .select__choose-field.selected .select__choose-field__text {
+  transform: translateX(0);
+}
+body[dir=ltr] .select__choose-field.selected .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field.selected .select__choose-field__text {
+  transform: translateX(0);
+}
+
+.select__choose-field__clear {
+  width: 2.125rem;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  flex-shrink: 0;
+  opacity: 0;
+  cursor: pointer;
+  visibility: hidden;
+  transition: opacity 360ms ease, visibility 360ms ease;
+}
+.select__choose-field__text {
+  font-size: 1rem;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.32);
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color 360ms ease, transform 360ms ease;
+}
+body[dir=rtl] .select__choose-field__text {
+  transform: translateX(1.125rem);
+}
+body[dir=ltr] .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field__text {
+  transform: translateX(-1.125rem);
+}
+
+.select__choose-field__unit {
+  font-size: 0.875rem;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.32);
+  flex-shrink: 0;
+}
+body[dir=rtl] .select__choose-field__unit {
+  margin-right: 0.5rem;
+}
+body[dir=ltr] .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field__unit {
+  margin-left: 0.5rem;
+}
+
+.select__dropdown {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+.select__dropdown:not(.show) {
+  display: none;
+}
+.select__dropdown:after, .select__dropdown:before {
+  content: "";
+  height: 16px;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.select__dropdown:after {
+  background-image: linear-gradient(to top, white, transparent);
+  bottom: 0;
+}
+.select__dropdown:before {
+  background-image: linear-gradient(to bottom, white, transparent);
+  top: 0.25rem;
+}
+
+.select__dropdown__container {
+  margin-top: 0.25rem;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.04), 0 -8px 32px -4px rgba(0, 0, 0, 0.08), 0 16px 24px -6px rgba(0, 0, 0, 0.04);
+  background-color: white;
+  z-index: 1;
+}
+
+.select__dropdown__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+.select__dropdown__options {
+  width: 100%;
+  max-height: 20rem;
+  overflow: auto;
+  position: relative;
+}
+
+.select__dropdown__options__option-group__title {
+  font-size: 0.875rem;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.87);
+  padding-right: 1rem;
+  padding-left: 1rem;
+  height: 2.5rem;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.select__dropdown__options__option-group__option {
+  padding-right: 1rem;
+}
+
+.select__dropdown__options__option,
+.select__dropdown__options__option-group__option {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: background-color 360ms ease;
+}
+.select__dropdown__options__option.hide,
+.select__dropdown__options__option-group__option.hide {
+  display: none;
+}
+.select__dropdown__options__option:hover, .select__dropdown__options__option:focus,
+.select__dropdown__options__option-group__option:hover,
+.select__dropdown__options__option-group__option:focus {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.select__dropdown__options__option:active, .select__dropdown__options__option.selected,
+.select__dropdown__options__option-group__option:active,
+.select__dropdown__options__option-group__option.selected {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.select__dropdown__options__option:active > .select__dropdown__options__option__text, .select__dropdown__options__option:active > .select__dropdown__options__option-group__option__text, .select__dropdown__options__option.selected > .select__dropdown__options__option__text, .select__dropdown__options__option.selected > .select__dropdown__options__option-group__option__text,
+.select__dropdown__options__option-group__option:active > .select__dropdown__options__option__text,
+.select__dropdown__options__option-group__option:active > .select__dropdown__options__option-group__option__text,
+.select__dropdown__options__option-group__option.selected > .select__dropdown__options__option__text,
+.select__dropdown__options__option-group__option.selected > .select__dropdown__options__option-group__option__text {
+  color: rgba(0, 0, 0, 0.87);
+}
+.select__dropdown__options__option > .select__dropdown__options__option__text, .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+.select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
+.select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.56);
+  padding-right: 1rem;
+  padding-left: 1rem;
+  height: 100%;
+  flex-grow: 1;
+  transition: color 360ms ease;
 }
 
 /*# sourceMappingURL=sonnat.elements.css.map */
