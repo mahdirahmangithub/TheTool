@@ -46,13 +46,41 @@
             <span class="select__choose-field__text"></span>
           </div>
         </div>
+        <hr class="divider spaced" />
+        <div
+          class="select searchable multiple"
+          data-placeholder="یک مورد را انتخاب کنید"
+        >
+          <select class="select__input" name="n[]" multiple>
+            <option></option>
+            <option value="1">انتخاب ۱</option>
+            <option value="2">انتخاب ۲</option>
+            <option value="3">انتخاب ۳</option>
+            <option value="4">انتخاب ۴</option>
+            <optgroup label="گروه اول">
+              <option value="5">انتخاب ۵</option>
+              <option value="6">انتخاب ۶</option>
+              <option value="7">انتخاب ۷</option>
+            </optgroup>
+          </select>
+          <div class="select__choose-field">
+            <span class="select__choose-field__text"
+              >یک مورد را انتخاب کنید</span
+            >
+            <div class="select__choose-field__chips hide"></div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/select.js"></script>
     <script>
-      select($(".select"), {
-        onchange: function(evt) {}
+      $(".select").each(function() {
+        var s = select($(this), {
+          onchange: function(evt) {
+            console.log(s.getValue());
+          }
+        });
       });
     </script>
   </body>

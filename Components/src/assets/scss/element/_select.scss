@@ -15,6 +15,49 @@
       display: none;
     }
   }
+
+  &:not(.multiple) {
+    .select__choose-field {
+      &.selected {
+        .select__choose-field__text {
+          @include rtlStyle(
+            (
+              transform: translateX(0)
+            )
+          );
+          @include ltrStyle(
+            (
+              transform: translateX(0)
+            )
+          );
+        }
+      }
+    }
+  }
+
+  &.multiple {
+    .select__choose-field__clear {
+      display: none;
+    }
+
+    .select__choose-field__text {
+      @include rtlStyle(
+        (
+          transform: translateX(-1rem)
+        )
+      );
+      @include ltrStyle(
+        (
+          transform: translateX(1rem)
+        )
+      );
+    }
+
+    .select__choose-field {
+      height: auto;
+      min-height: 2.5rem;
+    }
+  }
 }
 
 .select__input {
@@ -153,17 +196,6 @@
 
     .select__choose-field__text {
       color: $black-primary;
-
-      @include rtlStyle(
-        (
-          transform: translateX(0)
-        )
-      );
-      @include ltrStyle(
-        (
-          transform: translateX(0)
-        )
-      );
     }
   }
 }
@@ -208,6 +240,36 @@
       transform: translateX(-1.125rem)
     )
   );
+
+  &.hide {
+    display: none;
+  }
+}
+
+.select__choose-field__chips {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 0.125rem 0.1875rem;
+
+  &.hide {
+    display: none;
+  }
+
+  @include rtlStyle(
+    (
+      padding-left: 0
+    )
+  );
+  @include ltrStyle(
+    (
+      padding-right: 0
+    )
+  );
+}
+
+.select__choose-field__chips__chip {
+  margin: 0.1875rem;
 }
 
 .select__choose-field__unit {
@@ -234,6 +296,7 @@
   position: absolute;
   top: 100%;
   width: 100%;
+  z-index: $zindex-dropdown;
 
   &:not(.show) {
     display: none;
@@ -284,6 +347,26 @@
   max-height: 20rem;
   overflow: auto;
   position: relative;
+}
+
+.select__dropdown__options__empty-statement {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.875rem;
+  color: $black-hint;
+
+  &.hide {
+    display: none;
+  }
+}
+
+.select__dropdown__options__option-group {
+  &.hide {
+    display: none;
+  }
 }
 
 .select__dropdown__options__option-group__title {

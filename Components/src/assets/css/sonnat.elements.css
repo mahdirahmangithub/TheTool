@@ -88,8 +88,8 @@ ul {
 .select__dropdown__options__option > .select__dropdown__options__option__text, .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
 .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
 .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, .select__dropdown__options__option-group__title, .select__choose-field__unit, .select__choose-field__text, .dropdown__menu .dropdown__menu__item > a, .dropdown__toggle,
-.dropdown__toggle .dropdown__toggle__text, .breadcrumb__item, .breadcrumb__item > a, .badge, .chips,
-.chips .chips__text, .toolbox__view-more__text, .toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > a, .text-field__hints, .text-field__input, .text-field__description, .text-field__label-text, .fab__label, .section-row__paragraph, .section-row__title, .section-row > .section-row__title ~ .section-row__title, .title-row__title--subtitle, .title-row__title--pretitle, .title-row__title, .tag,
+.dropdown__toggle .dropdown__toggle__text, .breadcrumb__item, .breadcrumb__item > a, .badge, .chip,
+.chip .chip__text, .toolbox__view-more__text, .toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > a, .text-field__hints, .text-field__input, .text-field__description, .text-field__label-text, .fab__label, .section-row__paragraph, .section-row__title, .section-row > .section-row__title ~ .section-row__title, .title-row__title--subtitle, .title-row__title--pretitle, .title-row__title, .tag,
 .tag .tag__text, .caption-text-sm, .caption-text-md, .caption-text-lg, .body-text-sm, .body-text-md, .body-text-lg, .title-text-xs,
 .h6, .title-text-sm,
 .h5, .title-text-md,
@@ -118,9 +118,9 @@ body[dir=rtl] .select__dropdown__options__option > .select__dropdown__options__o
 body[dir=rtl] .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
 body[dir=rtl] .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, body[dir=rtl] .select__dropdown__options__option-group__title, body[dir=rtl] .select__choose-field__unit, body[dir=rtl] .select__choose-field__text, body[dir=rtl] .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body[dir=rtl] .dropdown__menu__item > a, body[dir=rtl] .dropdown__toggle,
 body[dir=rtl] .dropdown__toggle .dropdown__toggle__text,
-.dropdown__toggle body[dir=rtl] .dropdown__toggle__text, body[dir=rtl] .breadcrumb__item, body[dir=rtl] .breadcrumb__item > a, body[dir=rtl] .badge, body[dir=rtl] .chips,
-body[dir=rtl] .chips .chips__text,
-.chips body[dir=rtl] .chips__text, body[dir=rtl] .toolbox__view-more__text, body[dir=rtl] .toolbox__head__title__text, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a, body[dir=rtl] .accordion__heading, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a, body[dir=rtl] .accordion__list .accordion__list__item > a, .accordion__list body[dir=rtl] .accordion__list__item > a, body[dir=rtl] .text-field__hints, body[dir=rtl] .text-field__input, body[dir=rtl] .text-field__description, body[dir=rtl] .text-field__label-text, body[dir=rtl] .fab__label, body[dir=rtl] .section-row__paragraph, body[dir=rtl] .section-row__title, body[dir=rtl] .section-row > .section-row__title ~ .section-row__title, body[dir=rtl] .title-row__title--subtitle, body[dir=rtl] .title-row__title--pretitle, body[dir=rtl] .title-row__title, body[dir=rtl] .tag,
+.dropdown__toggle body[dir=rtl] .dropdown__toggle__text, body[dir=rtl] .breadcrumb__item, body[dir=rtl] .breadcrumb__item > a, body[dir=rtl] .badge, body[dir=rtl] .chip,
+body[dir=rtl] .chip .chip__text,
+.chip body[dir=rtl] .chip__text, body[dir=rtl] .toolbox__view-more__text, body[dir=rtl] .toolbox__head__title__text, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a, body[dir=rtl] .accordion__heading, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a, body[dir=rtl] .accordion__list .accordion__list__item > a, .accordion__list body[dir=rtl] .accordion__list__item > a, body[dir=rtl] .text-field__hints, body[dir=rtl] .text-field__input, body[dir=rtl] .text-field__description, body[dir=rtl] .text-field__label-text, body[dir=rtl] .fab__label, body[dir=rtl] .section-row__paragraph, body[dir=rtl] .section-row__title, body[dir=rtl] .section-row > .section-row__title ~ .section-row__title, body[dir=rtl] .title-row__title--subtitle, body[dir=rtl] .title-row__title--pretitle, body[dir=rtl] .title-row__title, body[dir=rtl] .tag,
 body[dir=rtl] .tag .tag__text,
 .tag body[dir=rtl] .tag__text, body[dir=rtl] .caption-text-sm, body[dir=rtl] .caption-text-md, body[dir=rtl] .caption-text-lg, body[dir=rtl] .body-text-sm, body[dir=rtl] .body-text-md, body[dir=rtl] .body-text-lg, body[dir=rtl] .title-text-xs,
 body[dir=rtl] .h6, body[dir=rtl] .title-text-sm,
@@ -139,9 +139,9 @@ body[dir=ltr] .select__dropdown__options__option > .select__dropdown__options__o
 body[dir=ltr] .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
 body[dir=ltr] .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, body[dir=ltr] .select__dropdown__options__option-group__title, body[dir=ltr] .select__choose-field__unit, body[dir=ltr] .select__choose-field__text, body[dir=ltr] .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body[dir=ltr] .dropdown__menu__item > a, body[dir=ltr] .dropdown__toggle,
 body[dir=ltr] .dropdown__toggle .dropdown__toggle__text,
-.dropdown__toggle body[dir=ltr] .dropdown__toggle__text, body[dir=ltr] .breadcrumb__item, body[dir=ltr] .breadcrumb__item > a, body[dir=ltr] .badge, body[dir=ltr] .chips,
-body[dir=ltr] .chips .chips__text,
-.chips body[dir=ltr] .chips__text, body[dir=ltr] .toolbox__view-more__text, body[dir=ltr] .toolbox__head__title__text, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a, body[dir=ltr] .accordion__heading, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a, body[dir=ltr] .accordion__list .accordion__list__item > a, .accordion__list body[dir=ltr] .accordion__list__item > a, body[dir=ltr] .text-field__hints, body[dir=ltr] .text-field__input, body[dir=ltr] .text-field__description, body[dir=ltr] .text-field__label-text, body[dir=ltr] .fab__label, body[dir=ltr] .section-row__paragraph, body[dir=ltr] .section-row__title, body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .title-row__title, body[dir=ltr] .tag,
+.dropdown__toggle body[dir=ltr] .dropdown__toggle__text, body[dir=ltr] .breadcrumb__item, body[dir=ltr] .breadcrumb__item > a, body[dir=ltr] .badge, body[dir=ltr] .chip,
+body[dir=ltr] .chip .chip__text,
+.chip body[dir=ltr] .chip__text, body[dir=ltr] .toolbox__view-more__text, body[dir=ltr] .toolbox__head__title__text, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a, body[dir=ltr] .accordion__heading, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a, body[dir=ltr] .accordion__list .accordion__list__item > a, .accordion__list body[dir=ltr] .accordion__list__item > a, body[dir=ltr] .text-field__hints, body[dir=ltr] .text-field__input, body[dir=ltr] .text-field__description, body[dir=ltr] .text-field__label-text, body[dir=ltr] .fab__label, body[dir=ltr] .section-row__paragraph, body[dir=ltr] .section-row__title, body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .title-row__title, body[dir=ltr] .tag,
 body[dir=ltr] .tag .tag__text,
 .tag body[dir=ltr] .tag__text, body[dir=ltr] .caption-text-sm, body[dir=ltr] .caption-text-md, body[dir=ltr] .caption-text-lg, body[dir=ltr] .body-text-sm, body[dir=ltr] .body-text-md, body[dir=ltr] .body-text-lg, body[dir=ltr] .title-text-xs,
 body[dir=ltr] .h6, body[dir=ltr] .title-text-sm,
@@ -157,9 +157,9 @@ body[dir=ltr] h1, body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options_
 body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
 body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option-group__title, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body:not([dir=ltr]):not([dir=rtl]) .dropdown__menu__item > a, body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle,
 body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle .dropdown__toggle__text,
-.dropdown__toggle body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle__text, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item > a, body:not([dir=ltr]):not([dir=rtl]) .badge, body:not([dir=ltr]):not([dir=rtl]) .chips,
-body:not([dir=ltr]):not([dir=rtl]) .chips .chips__text,
-.chips body:not([dir=ltr]):not([dir=rtl]) .chips__text, body:not([dir=ltr]):not([dir=rtl]) .toolbox__view-more__text, body:not([dir=ltr]):not([dir=rtl]) .toolbox__head__title__text, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a, body:not([dir=ltr]):not([dir=rtl]) .accordion__heading, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > a, .accordion__list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__item > a, body:not([dir=ltr]):not([dir=rtl]) .text-field__hints, body:not([dir=ltr]):not([dir=rtl]) .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field__description, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .fab__label, body:not([dir=ltr]):not([dir=rtl]) .section-row__paragraph, body:not([dir=ltr]):not([dir=rtl]) .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle, body:not([dir=ltr]):not([dir=rtl]) .title-row__title--pretitle, body:not([dir=ltr]):not([dir=rtl]) .title-row__title, body:not([dir=ltr]):not([dir=rtl]) .tag,
+.dropdown__toggle body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle__text, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item > a, body:not([dir=ltr]):not([dir=rtl]) .badge, body:not([dir=ltr]):not([dir=rtl]) .chip,
+body:not([dir=ltr]):not([dir=rtl]) .chip .chip__text,
+.chip body:not([dir=ltr]):not([dir=rtl]) .chip__text, body:not([dir=ltr]):not([dir=rtl]) .toolbox__view-more__text, body:not([dir=ltr]):not([dir=rtl]) .toolbox__head__title__text, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a, body:not([dir=ltr]):not([dir=rtl]) .accordion__heading, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > a, .accordion__list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__item > a, body:not([dir=ltr]):not([dir=rtl]) .text-field__hints, body:not([dir=ltr]):not([dir=rtl]) .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field__description, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .fab__label, body:not([dir=ltr]):not([dir=rtl]) .section-row__paragraph, body:not([dir=ltr]):not([dir=rtl]) .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle, body:not([dir=ltr]):not([dir=rtl]) .title-row__title--pretitle, body:not([dir=ltr]):not([dir=rtl]) .title-row__title, body:not([dir=ltr]):not([dir=rtl]) .tag,
 body:not([dir=ltr]):not([dir=rtl]) .tag .tag__text,
 .tag body:not([dir=ltr]):not([dir=rtl]) .tag__text, body:not([dir=ltr]):not([dir=rtl]) .caption-text-sm, body:not([dir=ltr]):not([dir=rtl]) .caption-text-md, body:not([dir=ltr]):not([dir=rtl]) .caption-text-lg, body:not([dir=ltr]):not([dir=rtl]) .body-text-sm, body:not([dir=ltr]):not([dir=rtl]) .body-text-md, body:not([dir=ltr]):not([dir=rtl]) .body-text-lg, body:not([dir=ltr]):not([dir=rtl]) .title-text-xs,
 body:not([dir=ltr]):not([dir=rtl]) .h6, body:not([dir=ltr]):not([dir=rtl]) .title-text-sm,
@@ -177,8 +177,8 @@ body:not([dir=ltr]):not([dir=rtl]) h1 {
 .select__dropdown__options__option > .typography-transition.select__dropdown__options__option__text, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option-group__option__text,
 .select__dropdown__options__option-group__option > .typography-transition.select__dropdown__options__option__text,
 .select__dropdown__options__option-group__option > .typography-transition.select__dropdown__options__option-group__option__text, .typography-transition.select__dropdown__options__option-group__title, .typography-transition.select__choose-field__unit, .typography-transition.select__choose-field__text, .dropdown__menu .dropdown__menu__item > a.typography-transition, .typography-transition.dropdown__toggle,
-.dropdown__toggle .typography-transition.dropdown__toggle__text, .typography-transition.breadcrumb__item, .breadcrumb__item > a.typography-transition, .typography-transition.badge, .typography-transition.chips,
-.chips .typography-transition.chips__text, .typography-transition.toolbox__view-more__text, .typography-transition.toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .typography-transition.accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .accordion__list .accordion__list__item > a.typography-transition, .typography-transition.text-field__hints, .typography-transition.text-field__input, .typography-transition.text-field__description, .typography-transition.text-field__label-text, .typography-transition.fab__label, .typography-transition.section-row__paragraph, .typography-transition.section-row__title, .section-row > .section-row__title ~ .typography-transition.section-row__title, .typography-transition.title-row__title--subtitle, .typography-transition.title-row__title--pretitle, .typography-transition.title-row__title, .typography-transition.tag,
+.dropdown__toggle .typography-transition.dropdown__toggle__text, .typography-transition.breadcrumb__item, .breadcrumb__item > a.typography-transition, .typography-transition.badge, .typography-transition.chip,
+.chip .typography-transition.chip__text, .typography-transition.toolbox__view-more__text, .typography-transition.toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .typography-transition.accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .accordion__list .accordion__list__item > a.typography-transition, .typography-transition.text-field__hints, .typography-transition.text-field__input, .typography-transition.text-field__description, .typography-transition.text-field__label-text, .typography-transition.fab__label, .typography-transition.section-row__paragraph, .typography-transition.section-row__title, .section-row > .section-row__title ~ .typography-transition.section-row__title, .typography-transition.title-row__title--subtitle, .typography-transition.title-row__title--pretitle, .typography-transition.title-row__title, .typography-transition.tag,
 .tag .typography-transition.tag__text, .typography-transition.caption-text-sm, .typography-transition.caption-text-md, .typography-transition.caption-text-lg, .typography-transition.body-text-sm, .typography-transition.body-text-md, .typography-transition.body-text-lg, .typography-transition.title-text-xs,
 .typography-transition.h6, .typography-transition.title-text-sm,
 .typography-transition.h5, .typography-transition.title-text-md,
@@ -688,7 +688,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .dropdown__toggle .dropdown__toggle__icon, .icon-16, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon, .button.small .button__icon,
 .dropdown.small .dropdown__toggle .dropdown__toggle__icon,
 .range-picker__handle__icon,
-.chips.iconed > .chips__icon,
+.chip.iconed > .chip__icon,
 .toolbox__view-more__icon,
 .tag.iconed .tag__icon {
   display: flex;
@@ -699,7 +699,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .icon-16, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon, .button.small .button__icon,
 .dropdown.small .dropdown__toggle .dropdown__toggle__icon,
 .range-picker__handle__icon,
-.chips.iconed > .chips__icon,
+.chip.iconed > .chip__icon,
 .toolbox__view-more__icon,
 .tag.iconed .tag__icon {
   width: 16px;
@@ -710,7 +710,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .icon-16 > svg, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon > svg, .button.small .button__icon > svg,
 .dropdown.small .dropdown__toggle .dropdown__toggle__icon > svg,
 .range-picker__handle__icon > svg,
-.chips.iconed > .chips__icon > svg,
+.chip.iconed > .chip__icon > svg,
 .toolbox__view-more__icon > svg,
 .tag.iconed .tag__icon > svg {
   width: 100%;
@@ -3117,7 +3117,7 @@ body[dir=ltr] .toolbox__view-more__text:after, body:not([dir=ltr]):not([dir=rtl]
   z-index: -1;
 }
 
-.chips {
+.chip {
   height: 1.75rem;
   padding: 0 0.75rem;
   display: inline-flex;
@@ -3129,166 +3129,164 @@ body[dir=ltr] .toolbox__view-more__text:after, body:not([dir=ltr]):not([dir=rtl]
   overflow: hidden;
   position: relative;
   z-index: 1;
-  margin-bottom: 0.5rem;
-  margin-left: 0.5rem;
   transition: color 360ms ease, background-color 360ms ease, border 360ms ease;
 }
-.chips.small,
-.chips .chips__text {
+.chip.small,
+.chip .chip__text {
   font-size: 0.75rem;
 }
-.chips,
-.chips .chips__text {
+.chip,
+.chip .chip__text {
   font-size: 0.875rem;
   color: rgba(0, 0, 0, 0.56);
 }
-.chips .chips__text {
+.chip .chip__text {
   transition: color 360ms ease;
 }
-.chips.togglable:not(.primary).checked {
+.chip.togglable:not(.primary).checked {
   background-color: #a62626;
 }
-.chips.togglable:not(.primary).checked,
-.chips.togglable:not(.primary).checked .chips__text {
+.chip.togglable:not(.primary).checked,
+.chip.togglable:not(.primary).checked .chip__text {
   color: white;
 }
-.chips.togglable:not(.primary).checked.iconed > .chips__icon .fill {
+.chip.togglable:not(.primary).checked.iconed > .chip__icon .fill {
   fill: white;
 }
-.chips.togglable:not(.primary).checked:hover, .chips.togglable:not(.primary).checked:focus {
+.chip.togglable:not(.primary).checked:hover, .chip.togglable:not(.primary).checked:focus {
   background-color: #be3737;
 }
-.chips.togglable:not(.primary).checked:hover,
-.chips.togglable:not(.primary).checked:hover .chips__text, .chips.togglable:not(.primary).checked:focus,
-.chips.togglable:not(.primary).checked:focus .chips__text {
+.chip.togglable:not(.primary).checked:hover,
+.chip.togglable:not(.primary).checked:hover .chip__text, .chip.togglable:not(.primary).checked:focus,
+.chip.togglable:not(.primary).checked:focus .chip__text {
   color: white;
 }
-.chips.togglable:not(.primary).checked:hover.iconed > .chips__icon .fill, .chips.togglable:not(.primary).checked:focus.iconed > .chips__icon .fill {
+.chip.togglable:not(.primary).checked:hover.iconed > .chip__icon .fill, .chip.togglable:not(.primary).checked:focus.iconed > .chip__icon .fill {
   fill: white;
 }
-.chips.primary {
+.chip.primary {
   background-color: #a62626;
 }
-.chips.primary:not(.removable) {
+.chip.primary:not(.removable) {
   cursor: pointer;
 }
-.chips.primary:not(.removable):not(.outlined):hover, .chips.primary:not(.removable):not(.outlined):focus {
+.chip.primary:not(.removable):not(.outlined):hover, .chip.primary:not(.removable):not(.outlined):focus {
   background-color: #be3737;
 }
-.chips.primary:not(.removable):not(.outlined):hover,
-.chips.primary:not(.removable):not(.outlined):hover .chips__text, .chips.primary:not(.removable):not(.outlined):focus,
-.chips.primary:not(.removable):not(.outlined):focus .chips__text {
+.chip.primary:not(.removable):not(.outlined):hover,
+.chip.primary:not(.removable):not(.outlined):hover .chip__text, .chip.primary:not(.removable):not(.outlined):focus,
+.chip.primary:not(.removable):not(.outlined):focus .chip__text {
   color: white;
 }
-.chips.primary:not(.removable):not(.outlined):hover.iconed > .chips__icon .fill, .chips.primary:not(.removable):not(.outlined):focus.iconed > .chips__icon .fill {
+.chip.primary:not(.removable):not(.outlined):hover.iconed > .chip__icon .fill, .chip.primary:not(.removable):not(.outlined):focus.iconed > .chip__icon .fill {
   fill: white;
 }
-.chips.primary:not(.removable).outlined:hover, .chips.primary:not(.removable).outlined:focus {
+.chip.primary:not(.removable).outlined:hover, .chip.primary:not(.removable).outlined:focus {
   background-color: rgba(166, 38, 38, 0.12);
 }
-.chips.primary,
-.chips.primary .chips__text {
+.chip.primary,
+.chip.primary .chip__text {
   color: white;
 }
-.chips.primary.iconed > .chips__icon .fill {
+.chip.primary.iconed > .chip__icon .fill {
   fill: white;
 }
-.chips.primary.outlined {
+.chip.primary.outlined {
   background-color: rgba(166, 38, 38, 0.04);
   border: 1px solid rgba(166, 38, 38, 0.56);
 }
-.chips.primary.outlined,
-.chips.primary.outlined .chips__text {
+.chip.primary.outlined,
+.chip.primary.outlined .chip__text {
   color: #a62626;
 }
-.chips.primary.outlined.iconed > .chips__icon .fill {
+.chip.primary.outlined.iconed > .chip__icon .fill {
   fill: #a62626;
 }
-.chips.primary.removable:not(.outlined) {
+.chip.primary.removable:not(.outlined) {
   background-color: #a62626;
 }
-.chips.outlined {
+.chip.outlined {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
-.chips.outlined:not(.togglable):not(.removable):not(.primary):hover, .chips.outlined:not(.togglable):not(.removable):not(.primary):focus {
+.chip.outlined:not(.togglable):not(.removable):not(.primary):hover, .chip.outlined:not(.togglable):not(.removable):not(.primary):focus {
   background-color: rgba(0, 0, 0, 0.04);
 }
-.chips.outlined:not(.togglable):not(.removable):not(.primary):active {
+.chip.outlined:not(.togglable):not(.removable):not(.primary):active {
   background-color: rgba(0, 0, 0, 0.12);
 }
-.chips.outlined:not(.togglable):not(.removable).primary:hover, .chips.outlined:not(.togglable):not(.removable).primary:focus {
+.chip.outlined:not(.togglable):not(.removable).primary:hover, .chip.outlined:not(.togglable):not(.removable).primary:focus {
   background-color: rgba(166, 38, 38, 0.12);
 }
-.chips.outlined:not(.togglable):not(.removable).primary:active {
+.chip.outlined:not(.togglable):not(.removable).primary:active {
   background-color: rgba(166, 38, 38, 0.24);
 }
-.chips.outlined.togglable:not(.primary):hover, .chips.outlined.togglable:not(.primary):focus {
+.chip.outlined.togglable:not(.primary):hover, .chip.outlined.togglable:not(.primary):focus {
   background-color: rgba(0, 0, 0, 0.04);
 }
-.chips.outlined.togglable:not(.primary):not(.checked):active {
+.chip.outlined.togglable:not(.primary):not(.checked):active {
   background-color: rgba(0, 0, 0, 0.12);
 }
-.chips.outlined.togglable:not(.primary).checked {
+.chip.outlined.togglable:not(.primary).checked {
   background-color: rgba(166, 38, 38, 0.04);
   border: 1px solid rgba(166, 38, 38, 0.56);
 }
-.chips.outlined.togglable:not(.primary).checked,
-.chips.outlined.togglable:not(.primary).checked .chips__text {
+.chip.outlined.togglable:not(.primary).checked,
+.chip.outlined.togglable:not(.primary).checked .chip__text {
   color: #a62626;
 }
-.chips.outlined.togglable:not(.primary).checked.iconed > .chips__icon .fill {
+.chip.outlined.togglable:not(.primary).checked.iconed > .chip__icon .fill {
   fill: #a62626;
 }
-.chips.outlined.togglable:not(.primary).checked:hover, .chips.outlined.togglable:not(.primary).checked:focus {
+.chip.outlined.togglable:not(.primary).checked:hover, .chip.outlined.togglable:not(.primary).checked:focus {
   background-color: rgba(166, 38, 38, 0.12);
 }
-.chips.outlined.togglable:not(.primary).checked:active {
+.chip.outlined.togglable:not(.primary).checked:active {
   background-color: rgba(166, 38, 38, 0.24);
 }
-.chips.outlined.removable:not(.primary) {
+.chip.outlined.removable:not(.primary) {
   background-color: rgba(0, 0, 0, 0.04);
 }
-.chips.rounded {
+.chip.rounded {
   border-radius: 1rem;
 }
-.chips.iconed {
+.chip.iconed {
   min-width: 4rem;
 }
-body[dir=rtl] .chips.iconed > .chips__icon {
+body[dir=rtl] .chip.iconed > .chip__icon {
   margin-right: -0.375rem;
 }
-body[dir=rtl] .chips.iconed > .chips__icon {
+body[dir=rtl] .chip.iconed > .chip__icon {
   margin-left: 0.25rem;
 }
-body[dir=ltr] .chips.iconed > .chips__icon, body:not([dir=ltr]):not([dir=rtl]) .chips.iconed > .chips__icon {
+body[dir=ltr] .chip.iconed > .chip__icon, body:not([dir=ltr]):not([dir=rtl]) .chip.iconed > .chip__icon {
   margin-left: -0.375rem;
 }
-body[dir=ltr] .chips.iconed > .chips__icon, body:not([dir=ltr]):not([dir=rtl]) .chips.iconed > .chips__icon {
+body[dir=ltr] .chip.iconed > .chip__icon, body:not([dir=ltr]):not([dir=rtl]) .chip.iconed > .chip__icon {
   margin-right: 0.25rem;
 }
-.chips.iconed > .chips__icon .fill {
+.chip.iconed > .chip__icon .fill {
   fill: rgba(0, 0, 0, 0.56);
   transition: fill 360ms ease;
 }
-.chips:not(.removable):not(.primary) {
+.chip:not(.removable):not(.primary) {
   cursor: pointer;
 }
-.chips:not(.removable):not(.primary):hover, .chips:not(.removable):not(.primary):focus {
+.chip:not(.removable):not(.primary):hover, .chip:not(.removable):not(.primary):focus {
   background-color: rgba(0, 0, 0, 0.12);
 }
-.chips:not(.removable):not(.primary):not(.checked):active {
+.chip:not(.removable):not(.primary):not(.checked):active {
   background-color: rgba(0, 0, 0, 0.24);
 }
-.chips:not(.removable):not(.primary).checked:active {
+.chip:not(.removable):not(.primary).checked:active {
   background-color: #9d1b1b;
 }
-.chips.removable {
+.chip.removable {
   pointer-events: none;
   min-width: 4rem;
   background-color: rgba(0, 0, 0, 0.12);
 }
-.chips.removable > .chips__remove {
+.chip.removable > .chip__remove {
   padding: 0;
   margin: 0;
   outline: none;
@@ -3304,10 +3302,10 @@ body[dir=ltr] .chips.iconed > .chips__icon, body:not([dir=ltr]):not([dir=rtl]) .
   display: flex;
   justify-content: center;
 }
-body[dir=rtl] .chips.removable > .chips__remove {
+body[dir=rtl] .chip.removable > .chip__remove {
   margin-left: -0.75rem;
 }
-body[dir=ltr] .chips.removable > .chips__remove, body:not([dir=ltr]):not([dir=rtl]) .chips.removable > .chips__remove {
+body[dir=ltr] .chip.removable > .chip__remove, body:not([dir=ltr]):not([dir=rtl]) .chip.removable > .chip__remove {
   margin-right: -0.75rem;
 }
 
@@ -3529,10 +3527,10 @@ body[dir=ltr] .chips.removable > .chips__remove, body:not([dir=ltr]):not([dir=rt
 
 .clear-field,
 .select__choose-field__clear > .select__choose-field__clear__icon,
-.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon,
-.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon,
+.chip.primary.removable:not(.outlined) > .chip__remove > .chip__remove__icon,
+.chip.primary.outlined.removable > .chip__remove > .chip__remove__icon,
 .select__choose-field.small .select__choose-field__clear > .select__choose-field__clear__icon,
-.chips.removable > .chips__remove > .chips__remove__icon {
+.chip.removable > .chip__remove > .chip__remove__icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -3547,28 +3545,28 @@ body[dir=ltr] .chips.removable > .chips__remove, body:not([dir=ltr]):not([dir=rt
 }
 .clear-field svg,
 .select__choose-field__clear > .select__choose-field__clear__icon svg,
-.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg,
-.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg,
+.chip.primary.removable:not(.outlined) > .chip__remove > .chip__remove__icon svg,
+.chip.primary.outlined.removable > .chip__remove > .chip__remove__icon svg,
 .select__choose-field.small .select__choose-field__clear > .select__choose-field__clear__icon svg,
-.chips.removable > .chips__remove > .chips__remove__icon svg {
+.chip.removable > .chip__remove > .chip__remove__icon svg {
   width: 100%;
   height: 100%;
 }
 .clear-field svg .fill,
 .select__choose-field__clear > .select__choose-field__clear__icon svg .fill,
-.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg .fill,
-.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg .fill,
+.chip.primary.removable:not(.outlined) > .chip__remove > .chip__remove__icon svg .fill,
+.chip.primary.outlined.removable > .chip__remove > .chip__remove__icon svg .fill,
 .select__choose-field.small .select__choose-field__clear > .select__choose-field__clear__icon svg .fill,
-.chips.removable > .chips__remove > .chips__remove__icon svg .fill {
+.chip.removable > .chip__remove > .chip__remove__icon svg .fill {
   fill: rgba(0, 0, 0, 0.56);
   transition: fill 360ms ease;
 }
 .clear-field.large,
 .select__choose-field__clear > .large.select__choose-field__clear__icon,
-.chips.primary.removable:not(.outlined) > .chips__remove > .large.chips__remove__icon,
-.chips.primary.outlined.removable > .chips__remove > .large.chips__remove__icon,
+.chip.primary.removable:not(.outlined) > .chip__remove > .large.chip__remove__icon,
+.chip.primary.outlined.removable > .chip__remove > .large.chip__remove__icon,
 .select__choose-field.small .select__choose-field__clear > .large.select__choose-field__clear__icon,
-.chips.removable > .chips__remove > .large.chips__remove__icon {
+.chip.removable > .chip__remove > .large.chip__remove__icon {
   width: 20px;
   height: 20px;
   min-width: 20px;
@@ -3576,10 +3574,10 @@ body[dir=ltr] .chips.removable > .chips__remove, body:not([dir=ltr]):not([dir=rt
 }
 .clear-field.small,
 .select__choose-field__clear > .small.select__choose-field__clear__icon,
-.chips.primary.removable:not(.outlined) > .chips__remove > .small.chips__remove__icon,
-.chips.primary.outlined.removable > .chips__remove > .small.chips__remove__icon,
+.chip.primary.removable:not(.outlined) > .chip__remove > .small.chip__remove__icon,
+.chip.primary.outlined.removable > .chip__remove > .small.chip__remove__icon,
 .select__choose-field.small .select__choose-field__clear > .small.select__choose-field__clear__icon,
-.chips.removable > .chips__remove > .small.chips__remove__icon {
+.chip.removable > .chip__remove > .small.chip__remove__icon {
   width: 16px;
   height: 16px;
   min-width: 16px;
@@ -3587,61 +3585,61 @@ body[dir=ltr] .chips.removable > .chips__remove, body:not([dir=ltr]):not([dir=rt
 }
 .clear-field.primary svg .fill,
 .select__choose-field__clear > .primary.select__choose-field__clear__icon svg .fill,
-.chips.removable > .chips__remove > .primary.chips__remove__icon svg .fill {
+.chip.removable > .chip__remove > .primary.chip__remove__icon svg .fill {
   fill: #a62626;
 }
 .clear-field.white svg .fill,
 .select__choose-field__clear > .white.select__choose-field__clear__icon svg .fill,
-.chips.removable > .chips__remove > .white.chips__remove__icon svg .fill {
+.chip.removable > .chip__remove > .white.chip__remove__icon svg .fill {
   fill: white;
 }
 *:hover > .clear-field,
 .select__choose-field__clear:hover > .select__choose-field__clear__icon,
-.chips.primary.removable:not(.outlined) > .chips__remove:hover > .chips__remove__icon,
-.chips.primary.outlined.removable > .chips__remove:hover > .chips__remove__icon,
+.chip.primary.removable:not(.outlined) > .chip__remove:hover > .chip__remove__icon,
+.chip.primary.outlined.removable > .chip__remove:hover > .chip__remove__icon,
 .select__choose-field.small .select__choose-field__clear:hover > .select__choose-field__clear__icon,
-.chips.removable > .chips__remove:hover > .chips__remove__icon {
+.chip.removable > .chip__remove:hover > .chip__remove__icon {
   background-color: rgba(0, 0, 0, 0.12);
 }
 *:hover > .clear-field.primary:not(.white),
 .select__choose-field__clear:hover > .primary.select__choose-field__clear__icon:not(.white),
 .select__choose-field.small .select__choose-field__clear:hover > .primary.select__choose-field__clear__icon:not(.white),
-.chips.removable > .chips__remove:hover > .primary.chips__remove__icon:not(.white) {
+.chip.removable > .chip__remove:hover > .primary.chip__remove__icon:not(.white) {
   background-color: rgba(166, 38, 38, 0.12);
 }
 *:active > .clear-field,
 .select__choose-field__clear:active > .select__choose-field__clear__icon,
-.chips.primary.removable:not(.outlined) > .chips__remove:active > .chips__remove__icon,
-.chips.primary.outlined.removable > .chips__remove:active > .chips__remove__icon,
+.chip.primary.removable:not(.outlined) > .chip__remove:active > .chip__remove__icon,
+.chip.primary.outlined.removable > .chip__remove:active > .chip__remove__icon,
 .select__choose-field.small .select__choose-field__clear:active > .select__choose-field__clear__icon,
-.chips.removable > .chips__remove:active > .chips__remove__icon {
+.chip.removable > .chip__remove:active > .chip__remove__icon {
   background-color: rgba(0, 0, 0, 0.24);
 }
 *:active > .clear-field.primary:not(.white),
 .select__choose-field__clear:active > .primary.select__choose-field__clear__icon:not(.white),
 .select__choose-field.small .select__choose-field__clear:active > .primary.select__choose-field__clear__icon:not(.white),
-.chips.removable > .chips__remove:active > .primary.chips__remove__icon:not(.white) {
+.chip.removable > .chip__remove:active > .primary.chip__remove__icon:not(.white) {
   background-color: rgba(166, 38, 38, 0.24);
 }
 
-.select__choose-field.small .select__choose-field__clear > .select__choose-field__clear__icon, .chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon, .chips.primary.outlined.removable > .chips__remove > .chips__remove__icon, .chips.removable > .chips__remove > .chips__remove__icon {
+.select__choose-field.small .select__choose-field__clear > .select__choose-field__clear__icon, .chip.primary.removable:not(.outlined) > .chip__remove > .chip__remove__icon, .chip.primary.outlined.removable > .chip__remove > .chip__remove__icon, .chip.removable > .chip__remove > .chip__remove__icon {
   width: 16px;
   height: 16px;
   min-width: 16px;
   min-height: 16px;
 }
 
-.chips.primary.outlined.removable > .chips__remove > .chips__remove__icon svg .fill {
+.chip.primary.outlined.removable > .chip__remove > .chip__remove__icon svg .fill {
   fill: #a62626;
 }
-.chips.primary.outlined.removable > .chips__remove:hover > .chips__remove__icon {
+.chip.primary.outlined.removable > .chip__remove:hover > .chip__remove__icon {
   background-color: rgba(166, 38, 38, 0.12);
 }
-.chips.primary.outlined.removable > .chips__remove:active > .chips__remove__icon {
+.chip.primary.outlined.removable > .chip__remove:active > .chip__remove__icon {
   background-color: rgba(166, 38, 38, 0.24);
 }
 
-.chips.primary.removable:not(.outlined) > .chips__remove > .chips__remove__icon svg .fill {
+.chip.primary.removable:not(.outlined) > .chip__remove > .chip__remove__icon svg .fill {
   fill: white;
 }
 
@@ -4292,6 +4290,25 @@ body[dir=ltr] .dropdown__content, body:not([dir=ltr]):not([dir=rtl]) .dropdown__
 .select:not(.searchable) .select__dropdown__search {
   display: none;
 }
+body[dir=rtl] .select:not(.multiple) .select__choose-field.selected .select__choose-field__text {
+  transform: translateX(0);
+}
+body[dir=ltr] .select:not(.multiple) .select__choose-field.selected .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .select:not(.multiple) .select__choose-field.selected .select__choose-field__text {
+  transform: translateX(0);
+}
+.select.multiple .select__choose-field__clear {
+  display: none;
+}
+body[dir=rtl] .select.multiple .select__choose-field__text {
+  transform: translateX(-1rem);
+}
+body[dir=ltr] .select.multiple .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .select.multiple .select__choose-field__text {
+  transform: translateX(1rem);
+}
+.select.multiple .select__choose-field {
+  height: auto;
+  min-height: 2.5rem;
+}
 
 .select__input {
   visibility: hidden;
@@ -4397,12 +4414,6 @@ body[dir=ltr] .select__choose-field:after, body:not([dir=ltr]):not([dir=rtl]) .s
 .select__choose-field.selected .select__choose-field__text {
   color: rgba(0, 0, 0, 0.87);
 }
-body[dir=rtl] .select__choose-field.selected .select__choose-field__text {
-  transform: translateX(0);
-}
-body[dir=ltr] .select__choose-field.selected .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field.selected .select__choose-field__text {
-  transform: translateX(0);
-}
 
 .select__choose-field__clear {
   width: 2.125rem;
@@ -4433,6 +4444,29 @@ body[dir=rtl] .select__choose-field__text {
 body[dir=ltr] .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field__text {
   transform: translateX(-1.125rem);
 }
+.select__choose-field__text.hide {
+  display: none;
+}
+
+.select__choose-field__chips {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 0.125rem 0.1875rem;
+}
+.select__choose-field__chips.hide {
+  display: none;
+}
+body[dir=rtl] .select__choose-field__chips {
+  padding-left: 0;
+}
+body[dir=ltr] .select__choose-field__chips, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field__chips {
+  padding-right: 0;
+}
+
+.select__choose-field__chips__chip {
+  margin: 0.1875rem;
+}
 
 .select__choose-field__unit {
   font-size: 0.875rem;
@@ -4451,6 +4485,7 @@ body[dir=ltr] .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .s
   position: absolute;
   top: 100%;
   width: 100%;
+  z-index: 1000;
 }
 .select__dropdown:not(.show) {
   display: none;
@@ -4495,6 +4530,23 @@ body[dir=ltr] .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .s
   max-height: 20rem;
   overflow: auto;
   position: relative;
+}
+
+.select__dropdown__options__empty-statement {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.32);
+}
+.select__dropdown__options__empty-statement.hide {
+  display: none;
+}
+
+.select__dropdown__options__option-group.hide {
+  display: none;
 }
 
 .select__dropdown__options__option-group__title {

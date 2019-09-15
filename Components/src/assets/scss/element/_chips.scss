@@ -1,4 +1,4 @@
-.chips {
+.chip {
   height: 1.75rem;
   padding: 0 0.75rem;
   display: inline-flex;
@@ -10,24 +10,22 @@
   overflow: hidden;
   position: relative;
   z-index: 1;
-  margin-bottom: 0.5rem;
-  margin-left: 0.5rem;
   transition: color 360ms ease, background-color 360ms ease, border 360ms ease;
 
   &.small,
-  .chips__text {
+  .chip__text {
     font-size: 0.75rem;
   }
 
   &,
-  .chips__text {
+  .chip__text {
     @extend %base-text;
 
     font-size: 0.875rem;
     color: $black-secondary;
   }
 
-  .chips__text {
+  .chip__text {
     transition: color 360ms ease;
   }
 
@@ -36,12 +34,12 @@
       background-color: $brand-primary-color;
 
       &,
-      .chips__text {
+      .chip__text {
         color: $white;
       }
 
       &.iconed {
-        & > .chips__icon {
+        & > .chip__icon {
           .fill {
             fill: $white;
           }
@@ -53,12 +51,12 @@
         background-color: $brand-hover-color;
 
         &,
-        .chips__text {
+        .chip__text {
           color: $white;
         }
 
         &.iconed {
-          & > .chips__icon {
+          & > .chip__icon {
             .fill {
               fill: $white;
             }
@@ -79,12 +77,12 @@
         background-color: $brand-hover-color;
 
         &,
-        .chips__text {
+        .chip__text {
           color: $white;
         }
 
         &.iconed {
-          & > .chips__icon {
+          & > .chip__icon {
             .fill {
               fill: $white;
             }
@@ -99,12 +97,12 @@
     }
 
     &,
-    .chips__text {
+    .chip__text {
       color: $white;
     }
 
     &.iconed {
-      & > .chips__icon {
+      & > .chip__icon {
         .fill {
           fill: $white;
         }
@@ -116,12 +114,12 @@
       border: 1px solid brandColor(0.56);
 
       &,
-      .chips__text {
+      .chip__text {
         color: $brand-primary-color;
       }
 
       &.iconed {
-        & > .chips__icon {
+        & > .chip__icon {
           .fill {
             fill: $brand-primary-color;
           }
@@ -129,8 +127,8 @@
       }
 
       &.removable {
-        & > .chips__remove {
-          & > .chips__remove__icon {
+        & > .chip__remove {
+          & > .chip__remove__icon {
             @extend %clear-field-primary-small;
           }
         }
@@ -140,8 +138,8 @@
     &.removable:not(.outlined) {
       background-color: $brand-primary-color;
 
-      & > .chips__remove {
-        & > .chips__remove__icon {
+      & > .chip__remove {
+        & > .chip__remove__icon {
           @extend %clear-field-white-small;
         }
       }
@@ -191,12 +189,12 @@
         border: 1px solid brandColor(0.56);
 
         &,
-        .chips__text {
+        .chip__text {
           color: $brand-primary-color;
         }
 
         &.iconed {
-          & > .chips__icon {
+          & > .chip__icon {
             .fill {
               fill: $brand-primary-color;
             }
@@ -226,7 +224,7 @@
   &.iconed {
     min-width: 4rem;
 
-    & > .chips__icon {
+    & > .chip__icon {
       @extend %icon-16;
       @include rtlStyle(
         (
@@ -270,7 +268,7 @@
     min-width: 4rem;
     background-color: blackColor(0.12);
 
-    & > .chips__remove {
+    & > .chip__remove {
       padding: 0;
       margin: 0;
       outline: none;
@@ -286,7 +284,7 @@
       display: flex;
       justify-content: center;
 
-      & > .chips__remove__icon {
+      & > .chip__remove__icon {
         @extend %clear-field-small;
       }
 
