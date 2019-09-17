@@ -170,6 +170,8 @@
                 "select__dropdown__options__option select-option";
               option.setAttribute("data-value", optVal);
 
+              if (opt.disabled) option.className += " disabled";
+
               var span = document.createElement("span");
               span.className =
                 "select__dropdown__options__option__text option-text";
@@ -219,6 +221,8 @@
                       "data-value",
                       innerOpt.getAttribute("value")
                     );
+
+                    if (innerOpt.disabled) option.className += " disabled";
 
                     var span = document.createElement("span");
                     span.className =

@@ -4540,6 +4540,35 @@ body[dir=ltr] .select.small .select__choose-field .select__choose-field__unit, b
 .select.dropdown--open .select__choose-field:after {
   transform: rotate(180deg);
 }
+.select.disabled {
+  pointer-events: none;
+}
+.select.disabled .select__choose-field.selected,
+.select.disabled .select__choose-field {
+  pointer-events: none;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+.select.disabled .select__choose-field.selected:after,
+.select.disabled .select__choose-field:after {
+  opacity: 0.12;
+}
+.select.disabled .select__choose-field.selected .select__choose-field__text,
+.select.disabled .select__choose-field .select__choose-field__text {
+  color: rgba(0, 0, 0, 0.32);
+}
+.select.disabled .select__choose-field.selected .select__choose-field__clear,
+.select.disabled .select__choose-field .select__choose-field__clear {
+  display: none;
+}
+.select.disabled .select__choose-field.selected .select__choose-field__chips__chip,
+.select.disabled .select__choose-field .select__choose-field__chips__chip {
+  pointer-events: none;
+  opacity: 0.56;
+}
+.select.disabled .select__choose-field.selected .select__choose-field__chips__chip > .chip__remove,
+.select.disabled .select__choose-field .select__choose-field__chips__chip > .chip__remove {
+  display: none;
+}
 
 .select__input {
   visibility: hidden;
@@ -4766,6 +4795,19 @@ body[dir=ltr] .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .s
   height: 2.5rem;
   cursor: pointer;
   transition: background-color 360ms ease;
+}
+.select__dropdown__options__option.disabled,
+.select__dropdown__options__option-group__option.disabled {
+  pointer-events: none;
+}
+.select__dropdown__options__option.disabled > .select__dropdown__options__option__text, .select__dropdown__options__option.disabled > .select__dropdown__options__option-group__option__text,
+.select__dropdown__options__option-group__option.disabled > .select__dropdown__options__option__text,
+.select__dropdown__options__option-group__option.disabled > .select__dropdown__options__option-group__option__text {
+  color: rgba(0, 0, 0, 0.32);
+}
+.select__dropdown__options__option.disabled > .select__dropdown__options__option__icon .fill,
+.select__dropdown__options__option-group__option.disabled > .select__dropdown__options__option__icon .fill {
+  fill: rgba(0, 0, 0, 0.12);
 }
 .select__dropdown__options__option.hide,
 .select__dropdown__options__option-group__option.hide {

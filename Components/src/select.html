@@ -28,7 +28,7 @@
             <optgroup label="گروه اول">
               <option value="5">انتخاب ۵</option>
               <option value="6">انتخاب ۶</option>
-              <option value="7">انتخاب ۷</option>
+              <option value="7" disabled>انتخاب ۷</option>
             </optgroup>
           </select>
           <div class="select__choose-field">
@@ -49,6 +49,30 @@
         <hr class="divider spaced" />
         <div
           class="select searchable multiple"
+          data-placeholder="یک مورد را انتخاب کنید"
+        >
+          <select class="select__input" name="n[]" multiple>
+            <option></option>
+            <option value="1" selected>انتخاب ۱</option>
+            <option value="2" selected>انتخاب ۲</option>
+            <option value="3" selected>انتخاب ۳</option>
+            <option value="4">انتخاب ۴</option>
+            <optgroup label="گروه اول">
+              <option value="5">انتخاب ۵</option>
+              <option value="6">انتخاب ۶</option>
+              <option value="7" disabled>انتخاب ۷</option>
+            </optgroup>
+          </select>
+          <div class="select__choose-field">
+            <span class="select__choose-field__text"
+              >یک مورد را انتخاب کنید</span
+            >
+            <div class="select__choose-field__chips hide"></div>
+          </div>
+        </div>
+        <hr class="divider spaced" />
+        <div
+          class="select searchable multiple disabled"
           data-placeholder="یک مورد را انتخاب کنید"
         >
           <select class="select__input" name="n[]" multiple>

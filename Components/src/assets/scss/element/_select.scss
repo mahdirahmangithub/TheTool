@@ -259,6 +259,37 @@
       transform: rotate(180deg);
     }
   }
+
+  &.disabled {
+    pointer-events: none;
+
+    .select__choose-field.selected,
+    .select__choose-field {
+      pointer-events: none;
+      border-color: $black-divider;
+
+      &:after {
+        opacity: 0.12;
+      }
+
+      .select__choose-field__text {
+        color: $black-hint;
+      }
+
+      .select__choose-field__clear {
+        display: none;
+      }
+
+      .select__choose-field__chips__chip {
+        pointer-events: none;
+        opacity: 0.56;
+
+        & > .chip__remove {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 .select__input {
@@ -537,6 +568,21 @@
   height: 2.5rem;
   cursor: pointer;
   transition: background-color 360ms ease;
+
+  &.disabled {
+    pointer-events: none;
+
+    & > .select__dropdown__options__option__text,
+    & > .select__dropdown__options__option-group__option__text {
+      color: $black-hint;
+    }
+
+    & > .select__dropdown__options__option__icon {
+      .fill {
+        fill: $black-divider;
+      }
+    }
+  }
 
   &.hide {
     display: none;
