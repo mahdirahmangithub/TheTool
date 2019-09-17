@@ -427,6 +427,7 @@
         _addClass(_fieldElement, "selected");
         if (!_settings.isMultiple) {
           _textElement.textContent = optionText;
+          _hideDropdown();
         } else {
           var chip = _createChip(optionText, optionValue);
 
@@ -492,11 +493,8 @@
       if (
         !_closest(eventTarget, ".select__dropdown") &&
         isVisible(_dropdownElement)
-      ) {
-        _removeClass(_dropdownElement, "show");
-        _removeClass(_parentElement, "dropdown--open");
-        _detachEvent(document, "click", _outsideClickListener);
-      }
+      )
+        _hideDropdown();
     }
 
     function _clearClickListener(evt) {
@@ -606,20 +604,25 @@
       else e.returnValue = null;
 
       if (isNotClearButton(eventTarget) && isNotChipRemoveButton(eventTarget)) {
-        if (_hasClass(_dropdownElement, "show")) {
-          _detachEvent(document, "click", _outsideClickListener);
-          setTimeout(function() {
-            _removeClass(_dropdownElement, "show");
-            _removeClass(_parentElement, "dropdown--open");
-          }, 0);
-        } else {
-          _attachEvent(document, "click", _outsideClickListener);
-          setTimeout(function() {
-            _addClass(_dropdownElement, "show");
-            _addClass(_parentElement, "dropdown--open");
-          }, 0);
-        }
+        if (_hasClass(_dropdownElement, "show")) _hideDropdown();
+        else _showDropdown();
       }
+    }
+
+    function _showDropdown() {
+      _attachEvent(document, "click", _outsideClickListener);
+      setTimeout(function() {
+        _addClass(_dropdownElement, "show");
+        _addClass(_parentElement, "dropdown--open");
+      }, 0);
+    }
+
+    function _hideDropdown() {
+      _detachEvent(document, "click", _outsideClickListener);
+      setTimeout(function() {
+        _removeClass(_dropdownElement, "show");
+        _removeClass(_parentElement, "dropdown--open");
+      }, 0);
     }
 
     function _extend() {
