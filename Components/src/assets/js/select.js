@@ -59,6 +59,23 @@
         ".select__choose-field__chips"
       );
 
+    function _initialSelection() {
+      var shouldBeSelected, prevSelected;
+      _nativeOptions.options.allIds.forEach(function(vID) {
+        var nativeOption = _nativeOptions.options.byId[vID];
+        if (nativeOption.selected && !_settings.isMultiple) {
+          if (prevSelected) prevSelected.selected = false;
+          prevSelected = nativeOption;
+          shouldBeSelected = vID;
+        } else if (nativeOption.selected && _settings.isMultiple) {
+          if (!shouldBeSelected) shouldBeSelected = [];
+          shouldBeSelected.push(vID);
+        }
+      });
+
+      if (shouldBeSelected) _setValue(shouldBeSelected);
+    }
+
     function _createChip(text, optionVal) {
       var fragment = document.createDocumentFragment();
       var chip = document.createElement("div");
@@ -158,6 +175,16 @@
                 "select__dropdown__options__option__text option-text";
               span.appendChild(document.createTextNode(opt.textContent));
 
+              if (_settings.isMultiple) {
+                var optionIcon = document.createElement("div");
+                optionIcon.className =
+                  "select__dropdown__options__option__icon option-icon";
+                optionIcon.innerHTML =
+                  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">' +
+                  '<path class="fill" d="M10.72,16a1,1,0,0,1-.71-.29l-2.9-2.9a1,1,0,0,1,0-1.42,1,1,0,0,1,1.41,0l2.2,2.19,5-5a1,1,0,0,1,1.41,0,1,1,0,0,1,0,1.41l-5.76,5.77A1,1,0,0,1,10.72,16Z" /></svg>';
+                option.appendChild(optionIcon);
+              }
+
               option.appendChild(span);
               dropdownOptions.appendChild(option);
 
@@ -199,6 +226,16 @@
                     span.appendChild(
                       document.createTextNode(innerOpt.textContent)
                     );
+
+                    if (_settings.isMultiple) {
+                      var optionIcon = document.createElement("div");
+                      optionIcon.className =
+                        "select__dropdown__options__option__icon option-icon";
+                      optionIcon.innerHTML =
+                        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">' +
+                        '<path class="fill" d="M10.72,16a1,1,0,0,1-.71-.29l-2.9-2.9a1,1,0,0,1,0-1.42,1,1,0,0,1,1.41,0l2.2,2.19,5-5a1,1,0,0,1,1.41,0,1,1,0,0,1,0,1.41l-5.76,5.77A1,1,0,0,1,10.72,16Z" /></svg>';
+                      option.appendChild(optionIcon);
+                    }
 
                     option.appendChild(span);
                     optionGroup.appendChild(option);
@@ -453,6 +490,7 @@
         isVisible(_dropdownElement)
       ) {
         _removeClass(_dropdownElement, "show");
+        _removeClass(_parentElement, "dropdown--open");
         _detachEvent(document, "click", _outsideClickListener);
       }
     }
@@ -568,11 +606,13 @@
           _detachEvent(document, "click", _outsideClickListener);
           setTimeout(function() {
             _removeClass(_dropdownElement, "show");
+            _removeClass(_parentElement, "dropdown--open");
           }, 0);
         } else {
           _attachEvent(document, "click", _outsideClickListener);
           setTimeout(function() {
             _addClass(_dropdownElement, "show");
+            _addClass(_parentElement, "dropdown--open");
           }, 0);
         }
       }
@@ -685,6 +725,91 @@
       }
     }
 
+    function _getValue() {
+      return _settings.isMultiple ? _state.values : _state.value;
+    }
+
+    function _setValue(value) {
+      if (!_isArray(value)) {
+        if (
+          !_mimicedOptions.byId[value] &&
+          _nativeOptions.options.byId[value]
+        ) {
+          _state.selected.forEach(function(item) {
+            _removeClass(item, "selected");
+          });
+          _state.selected = [];
+          _removeClass(_fieldElement, "selected");
+          _textElement.textContent = _placeholder;
+
+          if (_settings.isMultiple) {
+            _removeClass(_textElement, "hide");
+            _addClass(_chipsContainer, "hide");
+            _removeChilds(_chipsContainer);
+          }
+
+          if (_settings.isMultiple) _updateValue([]);
+          else _updateValue("");
+        } else {
+          var option = _mimicedOptions.byId[value];
+          var optionText = option.querySelector(".option-text").textContent;
+          var optionValue = option.getAttribute("data-value");
+
+          _state.selected.forEach(function(item) {
+            _removeClass(item, "selected");
+          });
+          _state.selected = [];
+          if (_settings.isMultiple) {
+            _removeChilds(_chipsContainer);
+
+            var chip = _createChip(optionText, optionValue);
+            _attachEvent(
+              chip.querySelector(".chip__remove"),
+              "click",
+              _chipRemoveListener
+            );
+            _chipsContainer.appendChild(chip);
+          }
+
+          _state.selected.push(option);
+          _updateValue(value);
+          _addClass(option, "selected");
+          _addClass(_fieldElement, "selected");
+          if (_settings.isMultiple) {
+            _addClass(_textElement, "hide");
+            _removeClass(_chipsContainer, "hide");
+          } else _textElement.textContent = optionText;
+        }
+      } else if (_settings.isMultiple) {
+        _state.selected.forEach(function(item) {
+          _removeClass(item, "selected");
+        });
+        _state.selected = [];
+        _updateValue(value);
+        _addClass(_fieldElement, "selected");
+        _addClass(_textElement, "hide");
+        _removeClass(_chipsContainer, "hide");
+        _removeChilds(_chipsContainer);
+
+        value.forEach(function(v) {
+          var option = _mimicedOptions.byId[v];
+          var optionText = option.querySelector(".option-text").textContent;
+          var chip = _createChip(optionText, v);
+
+          _state.selected.push(option);
+          _addClass(option, "selected");
+          _attachEvent(
+            chip.querySelector(".chip__remove"),
+            "click",
+            _chipRemoveListener
+          );
+          _chipsContainer.appendChild(chip);
+        });
+      } else {
+        throw Error("The entered value is invalid!");
+      }
+    }
+
     // Initialization
     (function() {
       _textElement.textContent = _placeholder;
@@ -699,6 +824,8 @@
       _emptyStatement = _dropdownElement.querySelector(
         ".select-empty-statement"
       );
+
+      _initialSelection();
 
       _optionElements.forEach(function(option) {
         _attachEvent(option, "click", _optionClickListener);
@@ -718,89 +845,10 @@
       }
     })();
 
-    // Public Field and Methods
+    // Public Fields and Methods
     return {
-      getValue: function() {
-        return _settings.isMultiple ? _state.values : _state.value;
-      },
-      setValue: function(value) {
-        if (!_isArray(value)) {
-          if (
-            !_mimicedOptions.byId[value] &&
-            _nativeOptions.options.byId[value]
-          ) {
-            _state.selected.forEach(function(item) {
-              _removeClass(item, "selected");
-            });
-            _state.selected = [];
-            _removeClass(_fieldElement, "selected");
-            _textElement.textContent = _placeholder;
-
-            if (_settings.isMultiple) {
-              _removeClass(_textElement, "hide");
-              _addClass(_chipsContainer, "hide");
-              _removeChilds(_chipsContainer);
-            }
-
-            if (_settings.isMultiple) _updateValue([]);
-            else _updateValue("");
-          } else {
-            var option = _mimicedOptions.byId[value];
-            var optionText = option.querySelector(".option-text").textContent;
-            var optionValue = option.getAttribute("data-value");
-
-            _state.selected.forEach(function(item) {
-              _removeClass(item, "selected");
-            });
-            _state.selected = [];
-            _removeChilds(_chipsContainer);
-
-            var chip = _createChip(optionText, optionValue);
-            _attachEvent(
-              chip.querySelector(".chip__remove"),
-              "click",
-              _chipRemoveListener
-            );
-            _chipsContainer.appendChild(chip);
-
-            _state.selected.push(option);
-            _updateValue(value);
-            _addClass(option, "selected");
-            _addClass(_fieldElement, "selected");
-            if (_settings.isMultiple) {
-              _addClass(_textElement, "hide");
-              _removeClass(_chipsContainer, "hide");
-            } else _textElement.textContent = optionText;
-          }
-        } else if (_settings.isMultiple) {
-          _state.selected.forEach(function(item) {
-            _removeClass(item, "selected");
-          });
-          _state.selected = [];
-          _updateValue(value);
-          _addClass(_fieldElement, "selected");
-          _addClass(_textElement, "hide");
-          _removeClass(_chipsContainer, "hide");
-          _removeChilds(_chipsContainer);
-
-          value.forEach(function(v) {
-            var option = _mimicedOptions.byId[v];
-            var optionText = option.querySelector(".option-text").textContent;
-            var chip = _createChip(optionText, v);
-
-            _state.selected.push(option);
-            _addClass(option, "selected");
-            _attachEvent(
-              chip.querySelector(".chip__remove"),
-              "click",
-              _chipRemoveListener
-            );
-            _chipsContainer.appendChild(chip);
-          });
-        } else {
-          throw Error("The entered value is invalid!");
-        }
-      }
+      getValue: _getValue,
+      setValue: _setValue
     };
   };
 });

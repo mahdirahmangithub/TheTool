@@ -2,6 +2,27 @@
   width: 100%;
   position: relative;
 
+  &:not(.removable):not(.multiple) {
+    .select__choose-field__clear {
+      display: none;
+    }
+
+    .select__choose-field__text {
+      transform: translateX(0);
+
+      @include rtlStyle(
+        (
+          padding-right: 1rem
+        )
+      );
+      @include ltrStyle(
+        (
+          padding-left: 1rem
+        )
+      );
+    }
+  }
+
   &.searchable {
     .select__dropdown {
       &:before {
@@ -33,6 +54,14 @@
         }
       }
     }
+
+    .select__dropdown__options__option,
+    .select__dropdown__options__option-group__option {
+      & > .select__choose-field__text {
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+    }
   }
 
   &.multiple {
@@ -41,14 +70,16 @@
     }
 
     .select__choose-field__text {
+      transform: translateX(0);
+
       @include rtlStyle(
         (
-          transform: translateX(-1rem)
+          padding-right: 1rem
         )
       );
       @include ltrStyle(
         (
-          transform: translateX(1rem)
+          padding-left: 1rem
         )
       );
     }
@@ -56,6 +87,173 @@
     .select__choose-field {
       height: auto;
       min-height: 2.5rem;
+    }
+
+    .select__dropdown__options__option,
+    .select__dropdown__options__option-group__option {
+      & > .select__dropdown__options__option__icon {
+        @include rtlStyle(
+          (
+            margin-left: 0,
+            margin-right: 1rem
+          )
+        );
+        @include ltrStyle(
+          (
+            margin-right: 0,
+            margin-left: 1rem
+          )
+        );
+      }
+      & > .select__choose-field__text {
+        @include rtlStyle(
+          (
+            padding-left: 1rem,
+            padding-right: 0
+          )
+        );
+        @include ltrStyle(
+          (
+            padding-right: 1rem,
+            padding-left: 0
+          )
+        );
+      }
+    }
+  }
+
+  &.small {
+    &.removable:not(.multiple) {
+      .select__choose-field {
+        .select__choose-field__text {
+          @include rtlStyle(
+            (
+              transform: translateX(1.625rem)
+            )
+          );
+          @include ltrStyle(
+            (
+              transform: translateX(-1.625rem)
+            )
+          );
+        }
+      }
+    }
+
+    &:not(.removable):not(.multiple),
+    &.multiple {
+      .select__choose-field {
+        .select__choose-field__text {
+          transform: translateX(0);
+
+          @include rtlStyle(
+            (
+              padding-right: 0.5rem
+            )
+          );
+          @include ltrStyle(
+            (
+              padding-left: 0.5rem
+            )
+          );
+        }
+      }
+    }
+
+    &.multiple {
+      .select__choose-field__chips {
+        padding: 0;
+      }
+
+      .select__choose-field__chips__chip {
+        font-size: 0.75rem;
+        margin: 1px;
+
+        & .chip__text {
+          font-size: 0.75rem;
+        }
+      }
+
+      .select__choose-field {
+        height: auto;
+        min-height: 2rem;
+      }
+    }
+
+    .select__dropdown__options {
+      max-height: 17.75rem;
+    }
+
+    .select__dropdown__options__option-group__title {
+      height: 2rem;
+      font-size: 0.75rem;
+    }
+
+    .select__dropdown__options__option,
+    .select__dropdown__options__option-group__option {
+      height: 2rem;
+
+      & > .select__dropdown__options__option__text,
+      & > .select__dropdown__options__option-group__option__text {
+        font-size: 0.75rem;
+      }
+
+      & > .select__dropdown__options__option__icon {
+        @extend %icon-16;
+      }
+    }
+
+    .select__choose-field {
+      height: 2rem;
+
+      &:after {
+        width: 1rem;
+        height: 1rem;
+
+        @include rtlStyle(
+          (
+            margin-left: 0.25rem,
+            margin-right: 0.25rem
+          )
+        );
+        @include ltrStyle(
+          (
+            margin-right: 0.25rem,
+            margin-left: 0.25rem
+          )
+        );
+      }
+
+      .select__choose-field__text {
+        font-size: 0.75rem;
+      }
+
+      .select__choose-field__clear {
+        & > .select__choose-field__clear__icon {
+          @extend %clear-field-small;
+        }
+      }
+
+      .select__choose-field__unit {
+        font-size: 0.625rem;
+
+        @include rtlStyle(
+          (
+            margin-right: 0.25rem
+          )
+        );
+        @include ltrStyle(
+          (
+            margin-left: 0.25rem
+          )
+        );
+      }
+    }
+  }
+
+  &.dropdown--open {
+    .select__choose-field:after {
+      transform: rotate(180deg);
     }
   }
 }
@@ -87,64 +285,6 @@
     border-color: transparent;
   }
 
-  &.small {
-    height: 2rem;
-
-    &:after {
-      width: 1rem;
-      height: 1rem;
-
-      @include rtlStyle(
-        (
-          margin-left: 0.25rem,
-          margin-right: 0.25rem
-        )
-      );
-      @include ltrStyle(
-        (
-          margin-right: 0.25rem,
-          margin-left: 0.25rem
-        )
-      );
-    }
-
-    .select__choose-field__clear {
-      & > .select__choose-field__clear__icon {
-        @extend %clear-field-small;
-      }
-    }
-
-    .select__choose-field__text {
-      font-size: 0.75rem;
-
-      @include rtlStyle(
-        (
-          transform: translateX(1.625rem)
-        )
-      );
-      @include ltrStyle(
-        (
-          transform: translateX(-1.625rem)
-        )
-      );
-    }
-
-    .select__choose-field__unit {
-      font-size: 0.625rem;
-
-      @include rtlStyle(
-        (
-          margin-right: 0.25rem
-        )
-      );
-      @include ltrStyle(
-        (
-          margin-left: 0.25rem
-        )
-      );
-    }
-  }
-
   &:hover,
   &:focus {
     &:not(.minimal) {
@@ -163,7 +303,7 @@
     opacity: 0.32;
     flex-shrink: 0;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$black}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
-    transition: opacity 360ms ease, transform 360ms ease;
+    transition: opacity 360ms ease, transform 160ms ease;
 
     @include rtlStyle(
       (
@@ -412,6 +552,12 @@
     & > .select__dropdown__options__option-group__option__text {
       color: $black-primary;
     }
+
+    & > .select__dropdown__options__option__icon {
+      .fill {
+        fill: $black-primary;
+      }
+    }
   }
 
   & > .select__dropdown__options__option__text,
@@ -423,10 +569,17 @@
     font-size: 0.875rem;
     line-height: 2;
     color: $black-secondary;
-    padding-right: 1rem;
-    padding-left: 1rem;
     height: 100%;
     flex-grow: 1;
     transition: color 360ms ease;
+  }
+
+  & > .select__dropdown__options__option__icon {
+    @extend %icon-20;
+
+    .fill {
+      fill: $black-secondary;
+      transition: fill 360ms ease;
+    }
   }
 }

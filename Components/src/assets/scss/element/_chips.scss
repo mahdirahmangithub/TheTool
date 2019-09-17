@@ -4,7 +4,7 @@
   display: inline-flex;
   align-items: center;
   align-self: center;
-  border-radius: 0.25rem;
+  border-radius: 0.125rem;
   background-color: blackColor(0.04);
   vertical-align: middle;
   overflow: hidden;
@@ -13,7 +13,7 @@
   transition: color 360ms ease, background-color 360ms ease, border 360ms ease;
 
   &.small,
-  .chip__text {
+  &.small .chip__text {
     font-size: 0.75rem;
   }
 
