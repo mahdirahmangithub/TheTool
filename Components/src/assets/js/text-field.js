@@ -28,11 +28,12 @@ jQuery(function($) {
 
       var labelPaddingValue = $label.outerWidth() - $label.innerWidth();
 
+      $label.attr(
+        "data-default-width",
+        Math.ceil($label.outerWidth() + labelPaddingValue)
+      );
       $label.width($labelText.outerWidth() * 0.75 + labelPaddingValue);
-    });
-
-  $(".text-field.legend-label")
-    .find(".text-field__input")
+    })
     .on("blur", function() {
       var $input = $(this);
 

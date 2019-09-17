@@ -1,0 +1,89 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.form-field__label {
+  @extend %base-text;
+
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2;
+  color: $black-primary;
+
+  & + .form-field__description {
+    margin-top: 0.25rem;
+  }
+
+  & + .form-field__control {
+    margin-top: 0.5rem;
+  }
+}
+
+.form-field__description {
+  @extend %base-text;
+
+  font-size: 14px;
+  line-height: 2;
+  color: $black-secondary;
+
+  & + .form-field__control {
+    margin-top: 0.5rem;
+  }
+}
+
+.form-field__control {
+  & + .form-field__hints {
+    margin-top: 0.25rem;
+  }
+
+  &.rounded + .form-field__hints {
+    padding: 0 1.25rem;
+  }
+}
+
+.form-field__hints {
+  @extend %base-text;
+
+  font-size: 0.75rem;
+  line-height: 2;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  color: $black-secondary;
+}
+
+.form-field__hints__hint-text {
+  width: calc(100% - #{map-get($spaces, "x32")});
+  transition: color 150ms ease;
+
+  @include rtlStyle(
+    (
+      text-align: right
+    )
+  );
+  @include ltrStyle(
+    (
+      text-align: left
+    )
+  );
+}
+
+.form-field__hints__input-length-limit {
+  width: map-get($spaces, "x32");
+
+  @include rtlStyle(
+    (
+      text-align: left
+    )
+  );
+  @include ltrStyle(
+    (
+      text-align: right
+    )
+  );
+}
