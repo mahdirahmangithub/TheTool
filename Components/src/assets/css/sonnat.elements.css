@@ -4321,8 +4321,9 @@ body[dir=rtl] .select:not(.multiple) .select__choose-field.selected .select__cho
 body[dir=ltr] .select:not(.multiple) .select__choose-field.selected .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .select:not(.multiple) .select__choose-field.selected .select__choose-field__text {
   transform: translateX(0);
 }
-.select:not(.multiple) .select__dropdown__options__option > .select__choose-field__text,
-.select:not(.multiple) .select__dropdown__options__option-group__option > .select__choose-field__text {
+.select:not(.multiple) .select__dropdown__options__option > .select__dropdown__options__option__text, .select:not(.multiple) .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+.select:not(.multiple) .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
+.select:not(.multiple) .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text {
   padding-right: 1rem;
   padding-left: 1rem;
 }
@@ -4360,22 +4361,28 @@ body[dir=ltr] .select.multiple .select__dropdown__options__option-group__option 
 body:not([dir=ltr]):not([dir=rtl]) .select.multiple .select__dropdown__options__option-group__option > .select__dropdown__options__option__icon {
   margin-left: 1rem;
 }
-body[dir=rtl] .select.multiple .select__dropdown__options__option > .select__choose-field__text,
-body[dir=rtl] .select.multiple .select__dropdown__options__option-group__option > .select__choose-field__text {
+body[dir=rtl] .select.multiple .select__dropdown__options__option > .select__dropdown__options__option__text, body[dir=rtl] .select.multiple .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+body[dir=rtl] .select.multiple .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
+body[dir=rtl] .select.multiple .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text {
   padding-left: 1rem;
 }
-body[dir=rtl] .select.multiple .select__dropdown__options__option > .select__choose-field__text,
-body[dir=rtl] .select.multiple .select__dropdown__options__option-group__option > .select__choose-field__text {
+body[dir=rtl] .select.multiple .select__dropdown__options__option > .select__dropdown__options__option__text, body[dir=rtl] .select.multiple .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+body[dir=rtl] .select.multiple .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
+body[dir=rtl] .select.multiple .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text {
   padding-right: 0;
 }
-body[dir=ltr] .select.multiple .select__dropdown__options__option > .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .select.multiple .select__dropdown__options__option > .select__choose-field__text,
-body[dir=ltr] .select.multiple .select__dropdown__options__option-group__option > .select__choose-field__text,
-body:not([dir=ltr]):not([dir=rtl]) .select.multiple .select__dropdown__options__option-group__option > .select__choose-field__text {
+body[dir=ltr] .select.multiple .select__dropdown__options__option > .select__dropdown__options__option__text, body:not([dir=ltr]):not([dir=rtl]) .select.multiple .select__dropdown__options__option > .select__dropdown__options__option__text, body[dir=ltr] .select.multiple .select__dropdown__options__option > .select__dropdown__options__option-group__option__text, body:not([dir=ltr]):not([dir=rtl]) .select.multiple .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+body[dir=ltr] .select.multiple .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
+body:not([dir=ltr]):not([dir=rtl]) .select.multiple .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
+body[dir=ltr] .select.multiple .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text,
+body:not([dir=ltr]):not([dir=rtl]) .select.multiple .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text {
   padding-right: 1rem;
 }
-body[dir=ltr] .select.multiple .select__dropdown__options__option > .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .select.multiple .select__dropdown__options__option > .select__choose-field__text,
-body[dir=ltr] .select.multiple .select__dropdown__options__option-group__option > .select__choose-field__text,
-body:not([dir=ltr]):not([dir=rtl]) .select.multiple .select__dropdown__options__option-group__option > .select__choose-field__text {
+body[dir=ltr] .select.multiple .select__dropdown__options__option > .select__dropdown__options__option__text, body:not([dir=ltr]):not([dir=rtl]) .select.multiple .select__dropdown__options__option > .select__dropdown__options__option__text, body[dir=ltr] .select.multiple .select__dropdown__options__option > .select__dropdown__options__option-group__option__text, body:not([dir=ltr]):not([dir=rtl]) .select.multiple .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+body[dir=ltr] .select.multiple .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
+body:not([dir=ltr]):not([dir=rtl]) .select.multiple .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
+body[dir=ltr] .select.multiple .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text,
+body:not([dir=ltr]):not([dir=rtl]) .select.multiple .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text {
   padding-left: 0;
 }
 body[dir=rtl] .select.small.removable:not(.multiple) .select__choose-field .select__choose-field__text {

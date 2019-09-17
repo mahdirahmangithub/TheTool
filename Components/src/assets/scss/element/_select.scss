@@ -57,7 +57,8 @@
 
     .select__dropdown__options__option,
     .select__dropdown__options__option-group__option {
-      & > .select__choose-field__text {
+      & > .select__dropdown__options__option__text,
+      & > .select__dropdown__options__option-group__option__text {
         padding-right: 1rem;
         padding-left: 1rem;
       }
@@ -105,7 +106,9 @@
           )
         );
       }
-      & > .select__choose-field__text {
+
+      & > .select__dropdown__options__option__text,
+      & > .select__dropdown__options__option-group__option__text {
         @include rtlStyle(
           (
             padding-left: 1rem,
