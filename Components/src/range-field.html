@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/sonnat.reset.css" />
+    <link rel="stylesheet" href="assets/css/sonnat.elements.css" />
+    <title>Range Field</title>
+  </head>
+  <body dir="rtl">
+    <div class="root">
+      <div id="main-wrapper" class="base-wrapper">
+        <header id="header"></header>
+        <main id="main" class="normal-view">
+          <div class="range-field">
+            <div class="range-field__labels">
+              <div class="range-field__labels__label range-field__labels__from">
+                از
+              </div>
+              <div class="range-field__labels__divide"></div>
+              <div class="range-field__labels__label range-field__labels__to">
+                تا
+              </div>
+            </div>
+            <div class="range-field__inputs">
+              <div class="range-field__inputs__input range-field__inputs__from">
+                <div
+                  class="select searchable small"
+                  data-placeholder="یک مورد را انتخاب کنید"
+                  data-unit="تومان"
+                >
+                  <select class="select__input" name="n">
+                    <option></option>
+                    <option value="1">انتخاب ۱</option>
+                    <option value="2">انتخاب ۲</option>
+                    <option value="3">انتخاب ۳</option>
+                    <option value="4">انتخاب ۴</option>
+                    <optgroup label="گروه اول">
+                      <option value="5">انتخاب ۵</option>
+                      <option value="6">انتخاب ۶</option>
+                      <option value="7" disabled>انتخاب ۷</option>
+                    </optgroup>
+                  </select>
+                  <div class="select__choose-field">
+                    <div class="select__choose-field__clear">
+                      <div class="select__choose-field__clear__icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            class="fill"
+                            d="M9,8l1.93-1.93a.68.68,0,1,0-1-1L8,7,6.07,5.11a.68.68,0,1,0-1,1L7,8,5.11,9.93a.67.67,0,0,0,0,1,.68.68,0,0,0,1,0L8,9l1.93,1.93a.68.68,0,0,0,1,0,.67.67,0,0,0,0-1Z"
+                            style="fill-rule:evenodd"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <span class="select__choose-field__text"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="range-field__inputs__input range-field__inputs__to">
+                <div
+                  class="select searchable small"
+                  data-placeholder="یک مورد را انتخاب کنید"
+                  data-unit="تومان"
+                >
+                  <select class="select__input" name="n">
+                    <option></option>
+                    <option value="1">انتخاب ۱</option>
+                    <option value="2">انتخاب ۲</option>
+                    <option value="3">انتخاب ۳</option>
+                    <option value="4">انتخاب ۴</option>
+                    <optgroup label="گروه اول">
+                      <option value="5">انتخاب ۵</option>
+                      <option value="6">انتخاب ۶</option>
+                      <option value="7" disabled>انتخاب ۷</option>
+                    </optgroup>
+                  </select>
+                  <div class="select__choose-field">
+                    <div class="select__choose-field__clear">
+                      <div class="select__choose-field__clear__icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            class="fill"
+                            d="M9,8l1.93-1.93a.68.68,0,1,0-1-1L8,7,6.07,5.11a.68.68,0,1,0-1,1L7,8,5.11,9.93a.67.67,0,0,0,0,1,.68.68,0,0,0,1,0L8,9l1.93,1.93a.68.68,0,0,0,1,0,.67.67,0,0,0,0-1Z"
+                            style="fill-rule:evenodd"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <span class="select__choose-field__text"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="divider spaced" />
+          <div class="range-field">
+            <div class="range-field__labels">
+              <div class="range-field__labels__label range-field__labels__from">
+                از
+              </div>
+              <div class="range-field__labels__divide"></div>
+              <div class="range-field__labels__label range-field__labels__to">
+                تا
+              </div>
+            </div>
+            <div class="range-field__inputs">
+              <div class="range-field__inputs__input range-field__inputs__from">
+                <div class="text-field small">
+                  <input
+                    id="text-input-0"
+                    class="text-field__input"
+                    type="text"
+                    placeholder="متن جایگزین"
+                    name="text_input"
+                    maxlength="20"
+                  />
+                  <div class="text-field__wrapper"></div>
+                </div>
+              </div>
+              <div class="range-field__inputs__input range-field__inputs__to">
+                <div class="text-field small">
+                  <input
+                    id="text-input-0"
+                    class="text-field__input"
+                    type="text"
+                    placeholder="متن جایگزین"
+                    name="text_input"
+                    maxlength="20"
+                  />
+                  <div class="text-field__wrapper"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/text-field.js"></script>
+    <script src="assets/js/select.js"></script>
+    <script>
+      $(".select").each(function() {
+        select($(this));
+      });
+    </script>
+  </body>
+</html>

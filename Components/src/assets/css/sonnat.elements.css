@@ -85,7 +85,7 @@ ul {
   transform: translate3d(0, 0, 0);
 }
 
-.row-element__trail-segment__title, .row-element__mid-segment__title, .row-element__lead-segment__subtitle, .row-element__lead-segment__title, .row-element.row-expandable .row-element__collapsed-content__container, .select__dropdown__options__option > .select__dropdown__options__option__text, .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+.range-field__labels .range-field__labels__label, .row-element__trail-segment__title, .row-element__mid-segment__title, .row-element__lead-segment__subtitle, .row-element__lead-segment__title, .row-element.row-expandable .row-element__collapsed-content__container, .select__dropdown__options__option > .select__dropdown__options__option__text, .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
 .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
 .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, .select__dropdown__options__option-group__title, .select__choose-field__unit, .select__choose-field__text, .dropdown__menu .dropdown__menu__item > a, .dropdown__toggle,
 .dropdown__toggle .dropdown__toggle__text, .breadcrumb__item, .breadcrumb__item > a, .badge, .chip,
@@ -114,7 +114,7 @@ h1 {
   text-size-adjust: 100%;
   color: rgba(0, 0, 0, 0.87);
 }
-body[dir=rtl] .row-element__trail-segment__title, body[dir=rtl] .row-element__mid-segment__title, body[dir=rtl] .row-element__lead-segment__subtitle, body[dir=rtl] .row-element__lead-segment__title, body[dir=rtl] .row-element.row-expandable .row-element__collapsed-content__container, .row-element.row-expandable body[dir=rtl] .row-element__collapsed-content__container, body[dir=rtl] .select__dropdown__options__option > .select__dropdown__options__option__text, body[dir=rtl] .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+body[dir=rtl] .range-field__labels .range-field__labels__label, .range-field__labels body[dir=rtl] .range-field__labels__label, body[dir=rtl] .row-element__trail-segment__title, body[dir=rtl] .row-element__mid-segment__title, body[dir=rtl] .row-element__lead-segment__subtitle, body[dir=rtl] .row-element__lead-segment__title, body[dir=rtl] .row-element.row-expandable .row-element__collapsed-content__container, .row-element.row-expandable body[dir=rtl] .row-element__collapsed-content__container, body[dir=rtl] .select__dropdown__options__option > .select__dropdown__options__option__text, body[dir=rtl] .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
 body[dir=rtl] .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
 body[dir=rtl] .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, body[dir=rtl] .select__dropdown__options__option-group__title, body[dir=rtl] .select__choose-field__unit, body[dir=rtl] .select__choose-field__text, body[dir=rtl] .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body[dir=rtl] .dropdown__menu__item > a, body[dir=rtl] .dropdown__toggle,
 body[dir=rtl] .dropdown__toggle .dropdown__toggle__text,
@@ -135,7 +135,7 @@ body[dir=rtl] h2,
 body[dir=rtl] h1 {
   text-align: right;
 }
-body[dir=ltr] .row-element__trail-segment__title, body[dir=ltr] .row-element__mid-segment__title, body[dir=ltr] .row-element__lead-segment__subtitle, body[dir=ltr] .row-element__lead-segment__title, body[dir=ltr] .row-element.row-expandable .row-element__collapsed-content__container, .row-element.row-expandable body[dir=ltr] .row-element__collapsed-content__container, body[dir=ltr] .select__dropdown__options__option > .select__dropdown__options__option__text, body[dir=ltr] .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+body[dir=ltr] .range-field__labels .range-field__labels__label, .range-field__labels body[dir=ltr] .range-field__labels__label, body[dir=ltr] .row-element__trail-segment__title, body[dir=ltr] .row-element__mid-segment__title, body[dir=ltr] .row-element__lead-segment__subtitle, body[dir=ltr] .row-element__lead-segment__title, body[dir=ltr] .row-element.row-expandable .row-element__collapsed-content__container, .row-element.row-expandable body[dir=ltr] .row-element__collapsed-content__container, body[dir=ltr] .select__dropdown__options__option > .select__dropdown__options__option__text, body[dir=ltr] .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
 body[dir=ltr] .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
 body[dir=ltr] .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, body[dir=ltr] .select__dropdown__options__option-group__title, body[dir=ltr] .select__choose-field__unit, body[dir=ltr] .select__choose-field__text, body[dir=ltr] .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body[dir=ltr] .dropdown__menu__item > a, body[dir=ltr] .dropdown__toggle,
 body[dir=ltr] .dropdown__toggle .dropdown__toggle__text,
@@ -153,7 +153,7 @@ body[dir=ltr] h5,
 body[dir=ltr] h4,
 body[dir=ltr] h3,
 body[dir=ltr] h2,
-body[dir=ltr] h1, body:not([dir=ltr]):not([dir=rtl]) .row-element__trail-segment__title, body:not([dir=ltr]):not([dir=rtl]) .row-element__mid-segment__title, body:not([dir=ltr]):not([dir=rtl]) .row-element__lead-segment__subtitle, body:not([dir=ltr]):not([dir=rtl]) .row-element__lead-segment__title, body:not([dir=ltr]):not([dir=rtl]) .row-element.row-expandable .row-element__collapsed-content__container, .row-element.row-expandable body:not([dir=ltr]):not([dir=rtl]) .row-element__collapsed-content__container, body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option > .select__dropdown__options__option__text, body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+body[dir=ltr] h1, body:not([dir=ltr]):not([dir=rtl]) .range-field__labels .range-field__labels__label, .range-field__labels body:not([dir=ltr]):not([dir=rtl]) .range-field__labels__label, body:not([dir=ltr]):not([dir=rtl]) .row-element__trail-segment__title, body:not([dir=ltr]):not([dir=rtl]) .row-element__mid-segment__title, body:not([dir=ltr]):not([dir=rtl]) .row-element__lead-segment__subtitle, body:not([dir=ltr]):not([dir=rtl]) .row-element__lead-segment__title, body:not([dir=ltr]):not([dir=rtl]) .row-element.row-expandable .row-element__collapsed-content__container, .row-element.row-expandable body:not([dir=ltr]):not([dir=rtl]) .row-element__collapsed-content__container, body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option > .select__dropdown__options__option__text, body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
 body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
 body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option-group__title, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body:not([dir=ltr]):not([dir=rtl]) .dropdown__menu__item > a, body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle,
 body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle .dropdown__toggle__text,
@@ -174,7 +174,7 @@ body:not([dir=ltr]):not([dir=rtl]) h2,
 body:not([dir=ltr]):not([dir=rtl]) h1 {
   text-align: left;
 }
-.typography-transition.row-element__trail-segment__title, .typography-transition.row-element__mid-segment__title, .typography-transition.row-element__lead-segment__subtitle, .typography-transition.row-element__lead-segment__title, .row-element.row-expandable .typography-transition.row-element__collapsed-content__container, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option__text, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option-group__option__text,
+.range-field__labels .typography-transition.range-field__labels__label, .typography-transition.row-element__trail-segment__title, .typography-transition.row-element__mid-segment__title, .typography-transition.row-element__lead-segment__subtitle, .typography-transition.row-element__lead-segment__title, .row-element.row-expandable .typography-transition.row-element__collapsed-content__container, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option__text, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option-group__option__text,
 .select__dropdown__options__option-group__option > .typography-transition.select__dropdown__options__option__text,
 .select__dropdown__options__option-group__option > .typography-transition.select__dropdown__options__option-group__option__text, .typography-transition.select__dropdown__options__option-group__title, .typography-transition.select__choose-field__unit, .typography-transition.select__choose-field__text, .dropdown__menu .dropdown__menu__item > a.typography-transition, .typography-transition.dropdown__toggle,
 .dropdown__toggle .typography-transition.dropdown__toggle__text, .typography-transition.breadcrumb__item, .breadcrumb__item > a.typography-transition, .typography-transition.badge, .typography-transition.chip,
@@ -5067,6 +5067,44 @@ body[dir=rtl] .row-element__trail-segment__icon {
 }
 body[dir=ltr] .row-element__trail-segment__icon, body:not([dir=ltr]):not([dir=rtl]) .row-element__trail-segment__icon {
   margin-left: 1rem;
+}
+
+.range-field {
+  display: flex;
+  align-items: center;
+}
+
+.range-field__labels {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.range-field__labels .range-field__labels__label {
+  font-size: 0.75rem;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.56);
+}
+.range-field__labels .range-field__labels__divide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.24);
+  box-shadow: 0 -5px 0 0 rgba(0, 0, 0, 0.24), 0 5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.range-field__inputs {
+  margin-right: 3rem;
+  flex-grow: 1;
+}
+.range-field__inputs .range-field__inputs__input + .range-field__inputs__input {
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=sonnat.elements.css.map */

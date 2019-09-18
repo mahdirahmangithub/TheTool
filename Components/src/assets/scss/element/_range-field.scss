@@ -1,0 +1,42 @@
+.range-field {
+  display: flex;
+  align-items: center;
+}
+
+.range-field__labels {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .range-field__labels__label {
+    @extend %base-text;
+
+    font-size: 0.75rem;
+    line-height: 2;
+    color: $black-secondary;
+  }
+
+  .range-field__labels__divide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    background-color: blackColor(0.24);
+    box-shadow: 0 -5px 0 0 blackColor(0.24), 0 5px 0 0 blackColor(0.24);
+  }
+}
+
+.range-field__inputs {
+  margin-right: 3rem;
+  flex-grow: 1;
+
+  .range-field__inputs__input + .range-field__inputs__input {
+    margin-top: 1rem;
+  }
+}
