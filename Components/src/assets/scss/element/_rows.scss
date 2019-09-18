@@ -10,6 +10,10 @@
     align-items: stretch;
     padding: 0.5rem 0;
 
+    .row-element__lead-segment__title {
+      white-space: normal;
+    }
+
     .row-element__lead-segment {
       align-items: stretch;
     }
@@ -129,6 +133,8 @@
 .row-element__lead-segment {
   display: inline-flex;
   align-items: center;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 .row-element__lead-segment__icon {
@@ -157,6 +163,9 @@
   font-size: 1rem;
   line-height: 2;
   color: $black-primary;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
   @include rtlStyle(
     (
@@ -181,6 +190,14 @@
 .row-element__mid-segment {
   display: inline-flex;
   align-items: center;
+  width: 33.3333%;
+  flex-shrink: 0;
+  justify-content: center;
+  overflow: hidden;
+
+  & + .row-element__trail-segment {
+    width: 33.3333%;
+  }
 }
 
 .row-element__mid-segment__title {
@@ -189,11 +206,18 @@
   font-size: 1rem;
   line-height: 2;
   color: $black-primary;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .row-element__trail-segment {
   display: inline-flex;
   align-items: center;
+  width: 50%;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  overflow: hidden;
 }
 
 .row-element__trail-segment__title {
@@ -202,6 +226,9 @@
   font-size: 1rem;
   line-height: 2;
   color: $black-primary;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .row-element__trail-segment__score {
