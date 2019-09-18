@@ -1,0 +1,286 @@
+.row-element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 3rem;
+  border-bottom: 1px solid $black-divider;
+
+  &.row-feature {
+    align-items: stretch;
+    padding: 0.5rem 0;
+
+    .row-element__lead-segment {
+      align-items: stretch;
+    }
+
+    .row-element__lead-segment__icon {
+      margin-top: 0.25rem;
+    }
+  }
+
+  &.row-expandable {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding: 0.5rem 0;
+
+    .row-element__lead-segment__title {
+      color: $black-secondary;
+    }
+
+    .row-element__collapsable {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &.active {
+        .row-element__trail-segment {
+          .row-element__trail-segment__caret {
+            .caret {
+              &:after {
+                transform: translateX(#{0.5rem * 1.14 / 4}) rotate(45deg);
+              }
+
+              &:before {
+                transform: translateX(-#{0.5rem * 1.14 / 4}) rotate(-45deg);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .row-element__collapsed-content__container {
+      @extend %base-text;
+
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 16px;
+      line-height: 2;
+      color: $black-primary;
+    }
+
+    .row-element__trail-segment__caret {
+      position: relative;
+      width: 24px;
+      height: 24px;
+
+      @include rtlStyle(
+        (
+          margin-right: 1rem
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: 1rem
+        )
+      );
+
+      .caret {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.56;
+        pointer-events: none;
+        transition: opacity 360ms ease;
+
+        @include rtlStyle(
+          (
+            left: 0,
+            right: auto
+          )
+        );
+        @include ltrStyle(
+          (
+            right: 0,
+            left: auto
+          )
+        );
+
+        &:after,
+        &:before {
+          content: "";
+          width: 0.5rem;
+          height: 2px;
+          position: absolute;
+          border-radius: 1px;
+          background-color: $black;
+          transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+
+        &:after {
+          transform: translateX(#{0.5rem * 1.14 / 4}) rotate(-45deg);
+        }
+
+        &:before {
+          transform: translateX(-#{0.5rem * 1.14 / 4}) rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+.row-element__lead-segment {
+  display: inline-flex;
+  align-items: center;
+}
+
+.row-element__lead-segment__icon {
+  @extend %icon-24;
+
+  @include rtlStyle(
+    (
+      margin-left: 1rem
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-right: 1rem
+    )
+  );
+
+  .fill {
+    fill: $black-secondary;
+    transition: fill 360ms ease;
+  }
+}
+
+.row-element__lead-segment__title {
+  @extend %base-text;
+
+  font-size: 1rem;
+  line-height: 2;
+  color: $black-primary;
+
+  @include rtlStyle(
+    (
+      margin-left: 0.5rem
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-right: 0.5rem
+    )
+  );
+}
+
+.row-element__lead-segment__subtitle {
+  @extend %base-text;
+
+  font-size: 12px;
+  line-height: 2;
+  color: $black-secondary;
+}
+
+.row-element__mid-segment {
+  display: inline-flex;
+  align-items: center;
+}
+
+.row-element__mid-segment__title {
+  @extend %base-text;
+
+  font-size: 1rem;
+  line-height: 2;
+  color: $black-primary;
+}
+
+.row-element__trail-segment {
+  display: inline-flex;
+  align-items: center;
+}
+
+.row-element__trail-segment__title {
+  @extend %base-text;
+
+  font-size: 1rem;
+  line-height: 2;
+  color: $black-primary;
+}
+
+.row-element__trail-segment__score {
+  @include rtlStyle(
+    (
+      margin-right: 0.5rem
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-left: 0.5rem
+    )
+  );
+}
+
+.scorebar {
+  width: 4rem;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+
+  .scorebar__base {
+    width: 100%;
+    height: 100%;
+    background-color: $gray-200;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+
+  .scorebar__fill {
+    width: 60%;
+    height: 100%;
+    background-color: $success-color;
+    transition: width 360ms linear;
+  }
+
+  .scorebar__dividers {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+
+    .scorebar__divider {
+      width: 1px;
+      height: 100%;
+      background-color: $white;
+    }
+  }
+}
+
+.row-element__trail-segment__indicator {
+  @include rtlStyle(
+    (
+      margin-right: 0.5rem
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-left: 0.5rem
+    )
+  );
+}
+
+.row-element__trail-segment__icon {
+  @extend %icon-24;
+
+  @include rtlStyle(
+    (
+      margin-right: 1rem
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-left: 1rem
+    )
+  );
+}
