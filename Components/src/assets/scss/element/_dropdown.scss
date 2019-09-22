@@ -32,7 +32,7 @@
 
         &.has-caret {
           &:after {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$black-secondary}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+            color: $black-secondary;
           }
         }
 
@@ -66,7 +66,7 @@
 
         &.has-caret {
           &:after {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$black-primary}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+            color: $black-primary;
           }
         }
 
@@ -115,7 +115,7 @@
 
         &.has-caret {
           &:after {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$brand-primary-color}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+            color: $brand-primary-color;
           }
         }
 
@@ -149,7 +149,7 @@
 
         &.has-caret {
           &:after {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$brand-primary-color}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+            color: $brand-primary-color;
           }
         }
 
@@ -277,7 +277,7 @@
 
         &.has-caret {
           &:after {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$black-hint}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+            color: $black-hint;
           }
         }
 
@@ -313,7 +313,7 @@
 
         &.has-caret {
           &:after {
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$black-hint}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+            color: $black-hint;
           }
         }
 
@@ -331,7 +331,7 @@
 
           &.has-caret {
             &:after {
-              background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$brand-hint-color}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+              color: $brand-hint-color;
             }
           }
 
@@ -403,11 +403,14 @@
 
   &.has-caret {
     &:after {
-      content: "";
+      @extend %sonnat-icon;
+
+      content: $sonnat-icon-arrow-down-o;
       width: 1.125rem;
       height: 1.125rem;
-      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$white}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
-      transition: opacity 360ms ease, transform 360ms ease;
+      font-size: 1.125rem;
+      color: $white;
+      transition: color 360ms ease, transform 360ms ease;
 
       @include rtlStyle(
         (

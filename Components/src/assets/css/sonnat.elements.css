@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -89,7 +90,7 @@ ul {
 .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
 .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, .select__dropdown__options__option-group__title, .select__choose-field__unit, .select__choose-field__text, .dropdown__menu .dropdown__menu__item > a, .dropdown__toggle,
 .dropdown__toggle .dropdown__toggle__text, .breadcrumb__item, .breadcrumb__item > a, .badge, .chip,
-.chip .chip__text, .toolbox__view-more__text, .toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > a, .text-field__hints, .text-field__input, .text-field__label-text, .form-field-set__description, .form-field-set__title, .form-field__hints, .form-field__description, .form-field__label, .fab__label, .section-row__paragraph, .section-row__title, .section-row > .section-row__title ~ .section-row__title, .title-row__title--subtitle, .title-row__title--pretitle, .title-row__title, .tag,
+.chip .chip__text, .toolbox__view-more__text, .toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > a, .text-field__input, .text-field__label-text, .form-field-set__description, .form-field-set__title, .form-field__hints, .form-field__description, .form-field__label, .fab__label, .section-row__paragraph, .section-row__title, .section-row > .section-row__title ~ .section-row__title, .title-row__title--subtitle, .title-row__title--pretitle, .title-row__title, .tag,
 .tag .tag__text, .caption-text-sm, .caption-text-md, .caption-text-lg, .body-text-sm, .body-text-md, .body-text-lg, .title-text-xs,
 .h6, .title-text-sm,
 .h5, .title-text-md,
@@ -120,7 +121,7 @@ body[dir=rtl] .select__dropdown__options__option-group__option > .select__dropdo
 body[dir=rtl] .dropdown__toggle .dropdown__toggle__text,
 .dropdown__toggle body[dir=rtl] .dropdown__toggle__text, body[dir=rtl] .breadcrumb__item, body[dir=rtl] .breadcrumb__item > a, body[dir=rtl] .badge, body[dir=rtl] .chip,
 body[dir=rtl] .chip .chip__text,
-.chip body[dir=rtl] .chip__text, body[dir=rtl] .toolbox__view-more__text, body[dir=rtl] .toolbox__head__title__text, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a, body[dir=rtl] .accordion__heading, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a, body[dir=rtl] .accordion__list .accordion__list__item > a, .accordion__list body[dir=rtl] .accordion__list__item > a, body[dir=rtl] .text-field__hints, body[dir=rtl] .text-field__input, body[dir=rtl] .text-field__label-text, body[dir=rtl] .form-field-set__description, body[dir=rtl] .form-field-set__title, body[dir=rtl] .form-field__hints, body[dir=rtl] .form-field__description, body[dir=rtl] .form-field__label, body[dir=rtl] .fab__label, body[dir=rtl] .section-row__paragraph, body[dir=rtl] .section-row__title, body[dir=rtl] .section-row > .section-row__title ~ .section-row__title, body[dir=rtl] .title-row__title--subtitle, body[dir=rtl] .title-row__title--pretitle, body[dir=rtl] .title-row__title, body[dir=rtl] .tag,
+.chip body[dir=rtl] .chip__text, body[dir=rtl] .toolbox__view-more__text, body[dir=rtl] .toolbox__head__title__text, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a, body[dir=rtl] .accordion__heading, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a, body[dir=rtl] .accordion__list .accordion__list__item > a, .accordion__list body[dir=rtl] .accordion__list__item > a, body[dir=rtl] .text-field__input, body[dir=rtl] .text-field__label-text, body[dir=rtl] .form-field-set__description, body[dir=rtl] .form-field-set__title, body[dir=rtl] .form-field__hints, body[dir=rtl] .form-field__description, body[dir=rtl] .form-field__label, body[dir=rtl] .fab__label, body[dir=rtl] .section-row__paragraph, body[dir=rtl] .section-row__title, body[dir=rtl] .section-row > .section-row__title ~ .section-row__title, body[dir=rtl] .title-row__title--subtitle, body[dir=rtl] .title-row__title--pretitle, body[dir=rtl] .title-row__title, body[dir=rtl] .tag,
 body[dir=rtl] .tag .tag__text,
 .tag body[dir=rtl] .tag__text, body[dir=rtl] .caption-text-sm, body[dir=rtl] .caption-text-md, body[dir=rtl] .caption-text-lg, body[dir=rtl] .body-text-sm, body[dir=rtl] .body-text-md, body[dir=rtl] .body-text-lg, body[dir=rtl] .title-text-xs,
 body[dir=rtl] .h6, body[dir=rtl] .title-text-sm,
@@ -141,7 +142,7 @@ body[dir=ltr] .select__dropdown__options__option-group__option > .select__dropdo
 body[dir=ltr] .dropdown__toggle .dropdown__toggle__text,
 .dropdown__toggle body[dir=ltr] .dropdown__toggle__text, body[dir=ltr] .breadcrumb__item, body[dir=ltr] .breadcrumb__item > a, body[dir=ltr] .badge, body[dir=ltr] .chip,
 body[dir=ltr] .chip .chip__text,
-.chip body[dir=ltr] .chip__text, body[dir=ltr] .toolbox__view-more__text, body[dir=ltr] .toolbox__head__title__text, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a, body[dir=ltr] .accordion__heading, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a, body[dir=ltr] .accordion__list .accordion__list__item > a, .accordion__list body[dir=ltr] .accordion__list__item > a, body[dir=ltr] .text-field__hints, body[dir=ltr] .text-field__input, body[dir=ltr] .text-field__label-text, body[dir=ltr] .form-field-set__description, body[dir=ltr] .form-field-set__title, body[dir=ltr] .form-field__hints, body[dir=ltr] .form-field__description, body[dir=ltr] .form-field__label, body[dir=ltr] .fab__label, body[dir=ltr] .section-row__paragraph, body[dir=ltr] .section-row__title, body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .title-row__title, body[dir=ltr] .tag,
+.chip body[dir=ltr] .chip__text, body[dir=ltr] .toolbox__view-more__text, body[dir=ltr] .toolbox__head__title__text, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a, body[dir=ltr] .accordion__heading, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a, body[dir=ltr] .accordion__list .accordion__list__item > a, .accordion__list body[dir=ltr] .accordion__list__item > a, body[dir=ltr] .text-field__input, body[dir=ltr] .text-field__label-text, body[dir=ltr] .form-field-set__description, body[dir=ltr] .form-field-set__title, body[dir=ltr] .form-field__hints, body[dir=ltr] .form-field__description, body[dir=ltr] .form-field__label, body[dir=ltr] .fab__label, body[dir=ltr] .section-row__paragraph, body[dir=ltr] .section-row__title, body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .title-row__title, body[dir=ltr] .tag,
 body[dir=ltr] .tag .tag__text,
 .tag body[dir=ltr] .tag__text, body[dir=ltr] .caption-text-sm, body[dir=ltr] .caption-text-md, body[dir=ltr] .caption-text-lg, body[dir=ltr] .body-text-sm, body[dir=ltr] .body-text-md, body[dir=ltr] .body-text-lg, body[dir=ltr] .title-text-xs,
 body[dir=ltr] .h6, body[dir=ltr] .title-text-sm,
@@ -159,7 +160,7 @@ body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option-group__opt
 body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle .dropdown__toggle__text,
 .dropdown__toggle body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle__text, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item > a, body:not([dir=ltr]):not([dir=rtl]) .badge, body:not([dir=ltr]):not([dir=rtl]) .chip,
 body:not([dir=ltr]):not([dir=rtl]) .chip .chip__text,
-.chip body:not([dir=ltr]):not([dir=rtl]) .chip__text, body:not([dir=ltr]):not([dir=rtl]) .toolbox__view-more__text, body:not([dir=ltr]):not([dir=rtl]) .toolbox__head__title__text, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a, body:not([dir=ltr]):not([dir=rtl]) .accordion__heading, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > a, .accordion__list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__item > a, body:not([dir=ltr]):not([dir=rtl]) .text-field__hints, body:not([dir=ltr]):not([dir=rtl]) .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .form-field-set__description, body:not([dir=ltr]):not([dir=rtl]) .form-field-set__title, body:not([dir=ltr]):not([dir=rtl]) .form-field__hints, body:not([dir=ltr]):not([dir=rtl]) .form-field__description, body:not([dir=ltr]):not([dir=rtl]) .form-field__label, body:not([dir=ltr]):not([dir=rtl]) .fab__label, body:not([dir=ltr]):not([dir=rtl]) .section-row__paragraph, body:not([dir=ltr]):not([dir=rtl]) .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle, body:not([dir=ltr]):not([dir=rtl]) .title-row__title--pretitle, body:not([dir=ltr]):not([dir=rtl]) .title-row__title, body:not([dir=ltr]):not([dir=rtl]) .tag,
+.chip body:not([dir=ltr]):not([dir=rtl]) .chip__text, body:not([dir=ltr]):not([dir=rtl]) .toolbox__view-more__text, body:not([dir=ltr]):not([dir=rtl]) .toolbox__head__title__text, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a, body:not([dir=ltr]):not([dir=rtl]) .accordion__heading, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > a, .accordion__list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__item > a, body:not([dir=ltr]):not([dir=rtl]) .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .form-field-set__description, body:not([dir=ltr]):not([dir=rtl]) .form-field-set__title, body:not([dir=ltr]):not([dir=rtl]) .form-field__hints, body:not([dir=ltr]):not([dir=rtl]) .form-field__description, body:not([dir=ltr]):not([dir=rtl]) .form-field__label, body:not([dir=ltr]):not([dir=rtl]) .fab__label, body:not([dir=ltr]):not([dir=rtl]) .section-row__paragraph, body:not([dir=ltr]):not([dir=rtl]) .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle, body:not([dir=ltr]):not([dir=rtl]) .title-row__title--pretitle, body:not([dir=ltr]):not([dir=rtl]) .title-row__title, body:not([dir=ltr]):not([dir=rtl]) .tag,
 body:not([dir=ltr]):not([dir=rtl]) .tag .tag__text,
 .tag body:not([dir=ltr]):not([dir=rtl]) .tag__text, body:not([dir=ltr]):not([dir=rtl]) .caption-text-sm, body:not([dir=ltr]):not([dir=rtl]) .caption-text-md, body:not([dir=ltr]):not([dir=rtl]) .caption-text-lg, body:not([dir=ltr]):not([dir=rtl]) .body-text-sm, body:not([dir=ltr]):not([dir=rtl]) .body-text-md, body:not([dir=ltr]):not([dir=rtl]) .body-text-lg, body:not([dir=ltr]):not([dir=rtl]) .title-text-xs,
 body:not([dir=ltr]):not([dir=rtl]) .h6, body:not([dir=ltr]):not([dir=rtl]) .title-text-sm,
@@ -178,7 +179,7 @@ body:not([dir=ltr]):not([dir=rtl]) h1 {
 .select__dropdown__options__option-group__option > .typography-transition.select__dropdown__options__option__text,
 .select__dropdown__options__option-group__option > .typography-transition.select__dropdown__options__option-group__option__text, .typography-transition.select__dropdown__options__option-group__title, .typography-transition.select__choose-field__unit, .typography-transition.select__choose-field__text, .dropdown__menu .dropdown__menu__item > a.typography-transition, .typography-transition.dropdown__toggle,
 .dropdown__toggle .typography-transition.dropdown__toggle__text, .typography-transition.breadcrumb__item, .breadcrumb__item > a.typography-transition, .typography-transition.badge, .typography-transition.chip,
-.chip .typography-transition.chip__text, .typography-transition.toolbox__view-more__text, .typography-transition.toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .typography-transition.accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .accordion__list .accordion__list__item > a.typography-transition, .typography-transition.text-field__hints, .typography-transition.text-field__input, .typography-transition.text-field__label-text, .typography-transition.form-field-set__description, .typography-transition.form-field-set__title, .typography-transition.form-field__hints, .typography-transition.form-field__description, .typography-transition.form-field__label, .typography-transition.fab__label, .typography-transition.section-row__paragraph, .typography-transition.section-row__title, .section-row > .section-row__title ~ .typography-transition.section-row__title, .typography-transition.title-row__title--subtitle, .typography-transition.title-row__title--pretitle, .typography-transition.title-row__title, .typography-transition.tag,
+.chip .typography-transition.chip__text, .typography-transition.toolbox__view-more__text, .typography-transition.toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .typography-transition.accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .accordion__list .accordion__list__item > a.typography-transition, .typography-transition.text-field__input, .typography-transition.text-field__label-text, .typography-transition.form-field-set__description, .typography-transition.form-field-set__title, .typography-transition.form-field__hints, .typography-transition.form-field__description, .typography-transition.form-field__label, .typography-transition.fab__label, .typography-transition.section-row__paragraph, .typography-transition.section-row__title, .section-row > .section-row__title ~ .typography-transition.section-row__title, .typography-transition.title-row__title--subtitle, .typography-transition.title-row__title--pretitle, .typography-transition.title-row__title, .typography-transition.tag,
 .tag .typography-transition.tag__text, .typography-transition.caption-text-sm, .typography-transition.caption-text-md, .typography-transition.caption-text-lg, .typography-transition.body-text-sm, .typography-transition.body-text-md, .typography-transition.body-text-lg, .typography-transition.title-text-xs,
 .typography-transition.h6, .typography-transition.title-text-sm,
 .typography-transition.h5, .typography-transition.title-text-md,
@@ -680,9 +681,10 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
     background-color: rgba(166, 38, 38, 0.04);
   }
 }
-.icon-48, .icon-32, .icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child,
+.icon-48, .icon-32, .icon-24, .tab-list__tab__content .tab-list__tab-icon:only-child,
 .row-element__trail-segment__icon,
 .row-element__lead-segment__icon,
+.text-field__icons .text-field__icon,
 .fab__icon, .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child),
 .select__dropdown__options__option > .select__dropdown__options__option__icon,
 .select__dropdown__options__option-group__option > .select__dropdown__options__option__icon,
@@ -710,10 +712,11 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .chip.iconed > .chip__icon,
 .toolbox__view-more__icon,
 .tag.iconed .tag__icon {
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
-  min-height: 16px;
+  width: 1rem;
+  height: 1rem;
+  min-width: 1rem;
+  min-height: 1rem;
+  font-size: 1rem;
 }
 .icon-16 > svg, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon > svg, .button.small .button__icon > svg,
 .select.small .select__dropdown__options__option > .select__dropdown__options__option__icon > svg,
@@ -729,10 +732,11 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 
 .icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child),
 .dropdown__toggle .dropdown__toggle__icon {
-  width: 18px;
-  height: 18px;
-  min-width: 18px;
-  min-height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
+  min-width: 1.125rem;
+  min-height: 1.125rem;
+  font-size: 1.125rem;
 }
 .icon-18 > svg, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child) > svg,
 .dropdown__toggle .dropdown__toggle__icon > svg {
@@ -746,10 +750,11 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .dropdown.large .dropdown__toggle .dropdown__toggle__icon,
 .accordion__icon,
 .fab.small:not(.labeled) .fab__icon {
-  width: 20px;
-  height: 20px;
-  min-width: 20px;
-  min-height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  font-size: 1.25rem;
 }
 .icon-20 > svg, .button .button__icon > svg, .tab-list__tab__content .tab-list__tab-icon:not(:only-child) > svg,
 .select__dropdown__options__option > .select__dropdown__options__option__icon > svg,
@@ -761,28 +766,32 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   height: 100%;
 }
 
-.icon-24, .text-field__icons .text-field__icon, .tab-list__tab__content .tab-list__tab-icon:only-child,
+.icon-24, .tab-list__tab__content .tab-list__tab-icon:only-child,
 .row-element__trail-segment__icon,
 .row-element__lead-segment__icon,
+.text-field__icons .text-field__icon,
 .fab__icon {
-  width: 24px;
-  height: 24px;
-  min-width: 24px;
-  min-height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  font-size: 1.5rem;
 }
-.icon-24 > svg, .text-field__icons .text-field__icon > svg, .tab-list__tab__content .tab-list__tab-icon:only-child > svg,
+.icon-24 > svg, .tab-list__tab__content .tab-list__tab-icon:only-child > svg,
 .row-element__trail-segment__icon > svg,
 .row-element__lead-segment__icon > svg,
+.text-field__icons .text-field__icon > svg,
 .fab__icon > svg {
   width: 100%;
   height: 100%;
 }
 
 .icon-32 {
-  width: 32px;
-  height: 32px;
-  min-width: 32px;
-  min-height: 32px;
+  width: 2rem;
+  height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
+  font-size: 2rem;
 }
 .icon-32 > svg {
   width: 100%;
@@ -790,10 +799,11 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 }
 
 .icon-48 {
-  width: 48px;
-  height: 48px;
-  min-width: 48px;
-  min-height: 48px;
+  width: 3rem;
+  height: 3rem;
+  min-width: 3rem;
+  min-height: 3rem;
+  font-size: 3rem;
 }
 .icon-48 > svg {
   width: 100%;
@@ -844,6 +854,664 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   height: 0;
   overflow: hidden;
   transition: height 360ms ease;
+}
+
+@font-face {
+  font-family: "sonnat-icon";
+  src: url("../font/font-icon/sonnat-icon.eot?5se279");
+  src: url("../font/font-icon/sonnat-icon.eot?5se279#iefix") format("embedded-opentype"), url("../font/font-icon/sonnat-icon.ttf?5se279") format("truetype"), url("../font/font-icon/sonnat-icon.woff?5se279") format("woff"), url("../font/font-icon/sonnat-icon.svg?5se279#sonnat-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=sonnat-icon-],
+[class*=" sonnat-icon-"],
+.select__choose-field:after,
+.dropdown__toggle.has-caret:after,
+.breadcrumb__item:after {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "sonnat-icon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sonnat-icon-add-person:before {
+  content: "";
+}
+
+.sonnat-icon-added:before {
+  content: "";
+}
+
+.sonnat-icon-block:before {
+  content: "";
+}
+
+.sonnat-icon-bookmark:before {
+  content: "";
+}
+
+.sonnat-icon-brush:before {
+  content: "";
+}
+
+.sonnat-icon-call-end:before {
+  content: "";
+}
+
+.sonnat-icon-car-inspected:before {
+  content: "";
+}
+
+.sonnat-icon-car-inspection:before {
+  content: "";
+}
+
+.sonnat-icon-car:before {
+  content: "";
+}
+
+.sonnat-icon-checked:before {
+  content: "";
+}
+
+.sonnat-icon-circle-add:before {
+  content: "";
+}
+
+.sonnat-icon-circle-check:before {
+  content: "";
+}
+
+.sonnat-icon-circle-error:before {
+  content: "";
+}
+
+.sonnat-icon-circle-help:before {
+  content: "";
+}
+
+.sonnat-icon-circle-history:before {
+  content: "";
+}
+
+.sonnat-icon-circle-info:before {
+  content: "";
+}
+
+.sonnat-icon-circle-night-mode:before {
+  content: "";
+}
+
+.sonnat-icon-circle-remove:before {
+  content: "";
+}
+
+.sonnat-icon-contact:before {
+  content: "";
+}
+
+.sonnat-icon-declined:before {
+  content: "";
+}
+
+.sonnat-icon-dialog:before {
+  content: "";
+}
+
+.sonnat-icon-edit:before {
+  content: "";
+}
+
+.sonnat-icon-favourite:before {
+  content: "";
+}
+
+.sonnat-icon-flag:before {
+  content: "";
+}
+
+.sonnat-icon-gavel:before {
+  content: "";
+}
+
+.sonnat-icon-history:before {
+  content: "";
+}
+
+.sonnat-icon-info:before {
+  content: "";
+}
+
+.sonnat-icon-lock:before {
+  content: "";
+}
+
+.sonnat-icon-mail:before {
+  content: "";
+}
+
+.sonnat-icon-mic:before {
+  content: "";
+}
+
+.sonnat-icon-night-mode:before {
+  content: "";
+}
+
+.sonnat-icon-payment:before {
+  content: "";
+}
+
+.sonnat-icon-person:before {
+  content: "";
+}
+
+.sonnat-icon-phone:before {
+  content: "";
+}
+
+.sonnat-icon-photo-library:before {
+  content: "";
+}
+
+.sonnat-icon-photo:before {
+  content: "";
+}
+
+.sonnat-icon-pin-location:before {
+  content: "";
+}
+
+.sonnat-icon-pin-tilt:before {
+  content: "";
+}
+
+.sonnat-icon-pin:before {
+  content: "";
+}
+
+.sonnat-icon-report:before {
+  content: "";
+}
+
+.sonnat-icon-sms:before {
+  content: "";
+}
+
+.sonnat-icon-star:before {
+  content: "";
+}
+
+.sonnat-icon-text-message:before {
+  content: "";
+}
+
+.sonnat-icon-tooltip-image:before {
+  content: "";
+}
+
+.sonnat-icon-tooltip-text:before {
+  content: "";
+}
+
+.sonnat-icon-trash:before {
+  content: "";
+}
+
+.sonnat-icon-verified:before {
+  content: "";
+}
+
+.sonnat-icon-view:before {
+  content: "";
+}
+
+.sonnat-icon-warning:before {
+  content: "";
+}
+
+.sonnat-icon-add-camera-o:before {
+  content: "";
+}
+
+.sonnat-icon-add-note-detailed-o:before {
+  content: "";
+}
+
+.sonnat-icon-add-note-o:before {
+  content: "";
+}
+
+.sonnat-icon-add-o:before {
+  content: "";
+}
+
+.sonnat-icon-add-person-o:before {
+  content: "";
+}
+
+.sonnat-icon-added-o:before {
+  content: "";
+}
+
+.sonnat-icon-advert-o:before {
+  content: "";
+}
+
+.sonnat-icon-apartment-modern-o:before {
+  content: "";
+}
+
+.sonnat-icon-apartment-old-o:before {
+  content: "";
+}
+
+.sonnat-icon-arrow-backward-o:before {
+  content: "";
+}
+
+.sonnat-icon-arrow-down-o:before {
+  content: "";
+}
+
+.sonnat-icon-arrow-downward-o:before {
+  content: "";
+}
+
+.sonnat-icon-arrow-forward-o:before {
+  content: "";
+}
+
+.sonnat-icon-arrow-left-o:before {
+  content: "";
+}
+
+.sonnat-icon-arrow-right-o:before {
+  content: "";
+}
+
+.sonnat-icon-arrow-up-o:before {
+  content: "";
+}
+
+.sonnat-icon-arrow-upward-o:before {
+  content: "";
+}
+
+.sonnat-icon-block-o:before {
+  content: "";
+}
+
+.sonnat-icon-bookmark-o:before {
+  content: "";
+}
+
+.sonnat-icon-brush-o:before {
+  content: "";
+}
+
+.sonnat-icon-burger-menu-o:before {
+  content: "";
+}
+
+.sonnat-icon-cached-o:before {
+  content: "";
+}
+
+.sonnat-icon-call-end-o:before {
+  content: "";
+}
+
+.sonnat-icon-camera-o:before {
+  content: "";
+}
+
+.sonnat-icon-car-o:before {
+  content: "";
+}
+
+.sonnat-icon-category-o:before {
+  content: "";
+}
+
+.sonnat-icon-check-o:before {
+  content: "";
+}
+
+.sonnat-icon-checked-o:before {
+  content: "";
+}
+
+.sonnat-icon-circle-add-o:before {
+  content: "";
+}
+
+.sonnat-icon-circle-check-o:before {
+  content: "";
+}
+
+.sonnat-icon-circle-error-o:before {
+  content: "";
+}
+
+.sonnat-icon-circle-help-o:before {
+  content: "";
+}
+
+.sonnat-icon-circle-history-o:before {
+  content: "";
+}
+
+.sonnat-icon-circle-info-o:before {
+  content: "";
+}
+
+.sonnat-icon-circle-night-mode-o:before {
+  content: "";
+}
+
+.sonnat-icon-circle-remove-o:before {
+  content: "";
+}
+
+.sonnat-icon-close-o:before {
+  content: "";
+}
+
+.sonnat-icon-community-o:before {
+  content: "";
+}
+
+.sonnat-icon-copy-o:before {
+  content: "";
+}
+
+.sonnat-icon-crop-4-3-o:before {
+  content: "";
+}
+
+.sonnat-icon-crop-o:before {
+  content: "";
+}
+
+.sonnat-icon-crop-square-o:before {
+  content: "";
+}
+
+.sonnat-icon-declined-o:before {
+  content: "";
+}
+
+.sonnat-icon-dejavu-o:before {
+  content: "";
+}
+
+.sonnat-icon-dialog-o:before {
+  content: "";
+}
+
+.sonnat-icon-dice-o:before {
+  content: "";
+}
+
+.sonnat-icon-dollor-o:before {
+  content: "";
+}
+
+.sonnat-icon-edit-o:before {
+  content: "";
+}
+
+.sonnat-icon-eraser-o:before {
+  content: "";
+}
+
+.sonnat-icon-favourite-o:before {
+  content: "";
+}
+
+.sonnat-icon-filter-o:before {
+  content: "";
+}
+
+.sonnat-icon-flag-o:before {
+  content: "";
+}
+
+.sonnat-icon-flag-wave-o:before {
+  content: "";
+}
+
+.sonnat-icon-full-screen-o:before {
+  content: "";
+}
+
+.sonnat-icon-funnel-o:before {
+  content: "";
+}
+
+.sonnat-icon-gavel-o:before {
+  content: "";
+}
+
+.sonnat-icon-history-o:before {
+  content: "";
+}
+
+.sonnat-icon-info-o:before {
+  content: "";
+}
+
+.sonnat-icon-ladder-group-o:before {
+  content: "";
+}
+
+.sonnat-icon-ladder-o:before {
+  content: "";
+}
+
+.sonnat-icon-lamp-o:before {
+  content: "";
+}
+
+.sonnat-icon-lock-o:before {
+  content: "";
+}
+
+.sonnat-icon-mail-o:before {
+  content: "";
+}
+
+.sonnat-icon-mic-o:before {
+  content: "";
+}
+
+.sonnat-icon-mobile-friendly-o:before {
+  content: "";
+}
+
+.sonnat-icon-mobile-o:before {
+  content: "";
+}
+
+.sonnat-icon-more-horizontal-o:before {
+  content: "";
+}
+
+.sonnat-icon-more-vertical-o:before {
+  content: "";
+}
+
+.sonnat-icon-my-location-o:before {
+  content: "";
+}
+
+.sonnat-icon-night-mode-o:before {
+  content: "";
+}
+
+.sonnat-icon-note-o:before {
+  content: "";
+}
+
+.sonnat-icon-paperclip-thick-o:before {
+  content: "";
+}
+
+.sonnat-icon-paperclip-thin-o:before {
+  content: "";
+}
+
+.sonnat-icon-payment-o:before {
+  content: "";
+}
+
+.sonnat-icon-person-o:before {
+  content: "";
+}
+
+.sonnat-icon-phone-o:before {
+  content: "";
+}
+
+.sonnat-icon-photo-library-o:before {
+  content: "";
+}
+
+.sonnat-icon-photo-o:before {
+  content: "";
+}
+
+.sonnat-icon-pin-location-o:before {
+  content: "";
+}
+
+.sonnat-icon-pin-o:before {
+  content: "";
+}
+
+.sonnat-icon-pin-tilt-o:before {
+  content: "";
+}
+
+.sonnat-icon-read-o:before {
+  content: "";
+}
+
+.sonnat-icon-refresh-o:before {
+  content: "";
+}
+
+.sonnat-icon-remove-o:before {
+  content: "";
+}
+
+.sonnat-icon-renew-o:before {
+  content: "";
+}
+
+.sonnat-icon-role-brush-o:before {
+  content: "";
+}
+
+.sonnat-icon-rotate-90-o:before {
+  content: "";
+}
+
+.sonnat-icon-rotate-left-o:before {
+  content: "";
+}
+
+.sonnat-icon-rotate-right-o:before {
+  content: "";
+}
+
+.sonnat-icon-search-large-o:before {
+  content: "";
+}
+
+.sonnat-icon-search-o:before {
+  content: "";
+}
+
+.sonnat-icon-setting-o:before {
+  content: "";
+}
+
+.sonnat-icon-share-o:before {
+  content: "";
+}
+
+.sonnat-icon-sms-o:before {
+  content: "";
+}
+
+.sonnat-icon-star-half-left-o:before {
+  content: "";
+}
+
+.sonnat-icon-star-half-right-o:before {
+  content: "";
+}
+
+.sonnat-icon-star-o:before {
+  content: "";
+}
+
+.sonnat-icon-suitcase-o:before {
+  content: "";
+}
+
+.sonnat-icon-tablet-o:before {
+  content: "";
+}
+
+.sonnat-icon-text-message-o:before {
+  content: "";
+}
+
+.sonnat-icon-timer-o:before {
+  content: "";
+}
+
+.sonnat-icon-tooltip-image-o:before {
+  content: "";
+}
+
+.sonnat-icon-tooltip-text-o:before {
+  content: "";
+}
+
+.sonnat-icon-trash-o:before {
+  content: "";
+}
+
+.sonnat-icon-trending-up-o:before {
+  content: "";
+}
+
+.sonnat-icon-verified-o:before {
+  content: "";
+}
+
+.sonnat-icon-view-o:before {
+  content: "";
+}
+
+.sonnat-icon-warning-o:before {
+  content: "";
+}
+
+.sonnat-icon-wrest-watch-o:before {
+  content: "";
 }
 
 .divider {
@@ -1031,6 +1699,9 @@ body[dir=rtl] .tag.iconed {
 }
 body[dir=ltr] .tag.iconed, body:not([dir=ltr]):not([dir=rtl]) .tag.iconed {
   padding-left: 0.25rem;
+}
+.tag.iconed .tag__icon {
+  color: rgba(0, 0, 0, 0.56);
 }
 body[dir=rtl] .tag.iconed .tag__icon {
   margin-left: 0.25rem;
@@ -1947,6 +2618,10 @@ body[dir=ltr] .fab.labeled .fab__icon, body:not([dir=ltr]):not([dir=rtl]) .fab.l
   height: 2.5rem;
   padding: 0.625rem;
 }
+.fab__icon {
+  color: white;
+  transition: color 360ms ease;
+}
 .fab__icon .fill {
   fill: white;
 }
@@ -2334,7 +3009,13 @@ body[dir=ltr] .text-field:not(.legend-label).small.rounded.iconed .text-field__i
 .text-field.legend-label.error .text-field__input:focus ~ .text-field__wrapper > .text-field__label > .text-field__label-text {
   color: red;
 }
-.text-field.legend-label.iconed .fill {
+.text-field.legend-label.iconed .text-field__icons__leading,
+.text-field.legend-label.iconed .text-field__icons__trailing {
+  display: flex;
+  color: rgba(0, 0, 0, 0.56);
+}
+.text-field.legend-label.iconed .text-field__icons__leading .fill,
+.text-field.legend-label.iconed .text-field__icons__trailing .fill {
   fill: rgba(0, 0, 0, 0.56);
 }
 .text-field.legend-label.rounded .text-field__wrapper:before {
@@ -2499,6 +3180,7 @@ body[dir=ltr] .text-field__wrapper:before, body:not([dir=ltr]):not([dir=rtl]) .t
 .text-field__icons .text-field__icons__leading,
 .text-field__icons .text-field__icons__trailing {
   display: flex;
+  color: rgba(0, 0, 0, 0.32);
 }
 .text-field__icons .text-field__icons__leading .fill,
 .text-field__icons .text-field__icons__trailing .fill {
@@ -2536,39 +3218,6 @@ body[dir=ltr] .text-field__icons .text-field__icons__trailing, body:not([dir=ltr
 body[dir=ltr] .text-field__icons .text-field__icons__trailing, body:not([dir=ltr]):not([dir=rtl]) .text-field__icons .text-field__icons__trailing {
   margin-left: auto;
 }
-.text-field__hints {
-  font-size: 0.75rem;
-  line-height: 2;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 0.25rem;
-  color: rgba(0, 0, 0, 0.56);
-  padding: 0 0.5rem;
-}
-
-.text-field__hints__hint-text {
-  width: calc(100% - 4rem);
-  transition: color 150ms ease;
-}
-body[dir=rtl] .text-field__hints__hint-text {
-  text-align: right;
-}
-body[dir=ltr] .text-field__hints__hint-text, body:not([dir=ltr]):not([dir=rtl]) .text-field__hints__hint-text {
-  text-align: left;
-}
-
-.text-field__hints__input-length-limit {
-  width: 4rem;
-}
-body[dir=rtl] .text-field__hints__input-length-limit {
-  text-align: left;
-}
-body[dir=ltr] .text-field__hints__input-length-limit, body:not([dir=ltr]):not([dir=rtl]) .text-field__hints__input-length-limit {
-  text-align: right;
-}
-
 .unordered-list, .ordered-list {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -2997,6 +3646,9 @@ body[dir=ltr] .toolbox__head__indicator, body:not([dir=ltr]):not([dir=rtl]) .too
 .toolbox__view-more.active .toolbox__view-more__text:after {
   content: attr(data-less);
 }
+.toolbox__view-more:hover .toolbox__view-more__icon {
+  color: rgba(0, 0, 0, 0.56);
+}
 .toolbox__view-more:hover .toolbox__view-more__icon .fill {
   fill: rgba(0, 0, 0, 0.56);
 }
@@ -3005,7 +3657,8 @@ body[dir=ltr] .toolbox__head__indicator, body:not([dir=ltr]):not([dir=rtl]) .too
 }
 
 .toolbox__view-more__icon {
-  transition: transform 360ms ease;
+  color: rgba(0, 0, 0, 0.32);
+  transition: color 360ms ease, transform 360ms ease;
 }
 body[dir=rtl] .toolbox__view-more__icon {
   margin-left: 0.25rem;
@@ -3243,6 +3896,9 @@ body[dir=ltr] .toolbox__view-more__text:after, body:not([dir=ltr]):not([dir=rtl]
 .chip.togglable:not(.primary).checked .chip__text {
   color: white;
 }
+.chip.togglable:not(.primary).checked.iconed > .chip__icon {
+  color: white;
+}
 .chip.togglable:not(.primary).checked.iconed > .chip__icon .fill {
   fill: white;
 }
@@ -3252,6 +3908,9 @@ body[dir=ltr] .toolbox__view-more__text:after, body:not([dir=ltr]):not([dir=rtl]
 .chip.togglable:not(.primary).checked:hover,
 .chip.togglable:not(.primary).checked:hover .chip__text, .chip.togglable:not(.primary).checked:focus,
 .chip.togglable:not(.primary).checked:focus .chip__text {
+  color: white;
+}
+.chip.togglable:not(.primary).checked:hover.iconed > .chip__icon, .chip.togglable:not(.primary).checked:focus.iconed > .chip__icon {
   color: white;
 }
 .chip.togglable:not(.primary).checked:hover.iconed > .chip__icon .fill, .chip.togglable:not(.primary).checked:focus.iconed > .chip__icon .fill {
@@ -3271,6 +3930,9 @@ body[dir=ltr] .toolbox__view-more__text:after, body:not([dir=ltr]):not([dir=rtl]
 .chip.primary:not(.removable):not(.outlined):focus .chip__text {
   color: white;
 }
+.chip.primary:not(.removable):not(.outlined):hover.iconed > .chip__icon, .chip.primary:not(.removable):not(.outlined):focus.iconed > .chip__icon {
+  color: white;
+}
 .chip.primary:not(.removable):not(.outlined):hover.iconed > .chip__icon .fill, .chip.primary:not(.removable):not(.outlined):focus.iconed > .chip__icon .fill {
   fill: white;
 }
@@ -3279,6 +3941,9 @@ body[dir=ltr] .toolbox__view-more__text:after, body:not([dir=ltr]):not([dir=rtl]
 }
 .chip.primary,
 .chip.primary .chip__text {
+  color: white;
+}
+.chip.primary.iconed > .chip__icon {
   color: white;
 }
 .chip.primary.iconed > .chip__icon .fill {
@@ -3290,6 +3955,9 @@ body[dir=ltr] .toolbox__view-more__text:after, body:not([dir=ltr]):not([dir=rtl]
 }
 .chip.primary.outlined,
 .chip.primary.outlined .chip__text {
+  color: #a62626;
+}
+.chip.primary.outlined.iconed > .chip__icon {
   color: #a62626;
 }
 .chip.primary.outlined.iconed > .chip__icon .fill {
@@ -3328,6 +3996,9 @@ body[dir=ltr] .toolbox__view-more__text:after, body:not([dir=ltr]):not([dir=rtl]
 .chip.outlined.togglable:not(.primary).checked .chip__text {
   color: #a62626;
 }
+.chip.outlined.togglable:not(.primary).checked.iconed > .chip__icon {
+  color: #a62626;
+}
 .chip.outlined.togglable:not(.primary).checked.iconed > .chip__icon .fill {
   fill: #a62626;
 }
@@ -3345,6 +4016,10 @@ body[dir=ltr] .toolbox__view-more__text:after, body:not([dir=ltr]):not([dir=rtl]
 }
 .chip.iconed {
   min-width: 4rem;
+}
+.chip.iconed > .chip__icon {
+  color: rgba(0, 0, 0, 0.56);
+  transition: color 360ms ease;
 }
 body[dir=rtl] .chip.iconed > .chip__icon {
   margin-right: -0.375rem;
@@ -3630,11 +4305,13 @@ body[dir=ltr] .chip.removable > .chip__remove, body:not([dir=ltr]):not([dir=rtl]
   background-color: transparent;
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 360ms ease;
-  width: 18px;
-  height: 18px;
-  min-width: 18px;
-  min-height: 18px;
+  color: rgba(0, 0, 0, 0.56);
+  transition: background-color 360ms ease, color 360ms ease;
+  width: 1.125rem;
+  height: 1.125rem;
+  min-width: 1.125rem;
+  min-height: 1.125rem;
+  font-size: 1.125rem;
 }
 .clear-field svg,
 .select__choose-field__clear > .select__choose-field__clear__icon svg,
@@ -3660,10 +4337,11 @@ body[dir=ltr] .chip.removable > .chip__remove, body:not([dir=ltr]):not([dir=rtl]
 .chip.primary.outlined.removable > .chip__remove > .large.chip__remove__icon,
 .select.small .select__choose-field .select__choose-field__clear > .large.select__choose-field__clear__icon,
 .chip.removable > .chip__remove > .large.chip__remove__icon {
-  width: 20px;
-  height: 20px;
-  min-width: 20px;
-  min-height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  font-size: 1.25rem;
 }
 .clear-field.small,
 .select__choose-field__clear > .small.select__choose-field__clear__icon,
@@ -3671,16 +4349,33 @@ body[dir=ltr] .chip.removable > .chip__remove, body:not([dir=ltr]):not([dir=rtl]
 .chip.primary.outlined.removable > .chip__remove > .small.chip__remove__icon,
 .select.small .select__choose-field .select__choose-field__clear > .small.select__choose-field__clear__icon,
 .chip.removable > .chip__remove > .small.chip__remove__icon {
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
-  min-height: 16px;
+  width: 1rem;
+  height: 1rem;
+  min-width: 1rem;
+  min-height: 1rem;
+  font-size: 1rem;
+}
+.clear-field.primary,
+.select__choose-field__clear > .primary.select__choose-field__clear__icon,
+.chip.primary.removable:not(.outlined) > .chip__remove > .primary.chip__remove__icon,
+.chip.primary.outlined.removable > .chip__remove > .primary.chip__remove__icon,
+.select.small .select__choose-field .select__choose-field__clear > .primary.select__choose-field__clear__icon,
+.chip.removable > .chip__remove > .primary.chip__remove__icon {
+  color: #a62626;
 }
 .clear-field.primary svg .fill,
 .select__choose-field__clear > .primary.select__choose-field__clear__icon svg .fill,
 .select.small .select__choose-field .select__choose-field__clear > .primary.select__choose-field__clear__icon svg .fill,
 .chip.removable > .chip__remove > .primary.chip__remove__icon svg .fill {
   fill: #a62626;
+}
+.clear-field.white,
+.select__choose-field__clear > .white.select__choose-field__clear__icon,
+.chip.primary.removable:not(.outlined) > .chip__remove > .white.chip__remove__icon,
+.chip.primary.outlined.removable > .chip__remove > .white.chip__remove__icon,
+.select.small .select__choose-field .select__choose-field__clear > .white.select__choose-field__clear__icon,
+.chip.removable > .chip__remove > .white.chip__remove__icon {
+  color: white;
 }
 .clear-field.white svg .fill,
 .select__choose-field__clear > .white.select__choose-field__clear__icon svg .fill,
@@ -3718,12 +4413,16 @@ body[dir=ltr] .chip.removable > .chip__remove, body:not([dir=ltr]):not([dir=rtl]
 }
 
 .select.small .select__choose-field .select__choose-field__clear > .select__choose-field__clear__icon, .chip.primary.removable:not(.outlined) > .chip__remove > .chip__remove__icon, .chip.primary.outlined.removable > .chip__remove > .chip__remove__icon, .chip.removable > .chip__remove > .chip__remove__icon {
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
-  min-height: 16px;
+  width: 1rem;
+  height: 1rem;
+  min-width: 1rem;
+  min-height: 1rem;
+  font-size: 1rem;
 }
 
+.chip.primary.outlined.removable > .chip__remove > .chip__remove__icon {
+  color: #a62626;
+}
 .chip.primary.outlined.removable > .chip__remove > .chip__remove__icon svg .fill {
   fill: #a62626;
 }
@@ -3734,6 +4433,9 @@ body[dir=ltr] .chip.removable > .chip__remove, body:not([dir=ltr]):not([dir=rtl]
   background-color: rgba(166, 38, 38, 0.24);
 }
 
+.chip.primary.removable:not(.outlined) > .chip__remove > .chip__remove__icon {
+  color: white;
+}
 .chip.primary.removable:not(.outlined) > .chip__remove > .chip__remove__icon svg .fill {
   fill: white;
 }
@@ -3765,6 +4467,9 @@ body[dir=ltr] .chip.removable > .chip__remove, body:not([dir=ltr]):not([dir=rtl]
   transform: scale(0.8);
   background-color: rgba(255, 255, 255, 0.7);
   opacity: 1;
+}
+.range-picker.disabled .range-picker__handle__icon {
+  color: white;
 }
 .range-picker.disabled .range-picker__handle__icon .fill {
   fill: white;
@@ -3871,6 +4576,9 @@ body[dir=ltr] .chip.removable > .chip__remove, body:not([dir=ltr]):not([dir=rtl]
   background-color: #a62626;
   box-shadow: 0 0 0 1px #a62626;
 }
+.range-picker__handle.active .range-picker__handle__circle .range-picker__handle__icon {
+  color: white;
+}
 .range-picker__handle.active .range-picker__handle__circle .range-picker__handle__icon .fill {
   fill: white;
 }
@@ -3906,10 +4614,17 @@ body[dir=ltr] .chip.removable > .chip__remove, body:not([dir=ltr]):not([dir=rtl]
   background-color: #a62626;
   box-shadow: 0 0 0 1px #a62626;
 }
+.range-picker__handle__circle:active .range-picker__handle__icon {
+  color: white;
+}
 .range-picker__handle__circle:active .range-picker__handle__icon .fill {
   fill: white;
 }
 
+.range-picker__handle__icon {
+  color: rgba(0, 0, 0, 0.56);
+  transition: color 360ms ease;
+}
 .range-picker__handle__icon .fill {
   fill: rgba(0, 0, 0, 0.56);
   transition: fill 360ms ease;
@@ -3969,7 +4684,7 @@ body[dir=ltr] .chip.removable > .chip__remove, body:not([dir=ltr]):not([dir=rtl]
     margin: 0;
   }
   .breadcrumb[data-responsive-behavior=single-step] .breadcrumb__item:nth-last-child(2):hover:after {
-    opacity: 0.87;
+    color: rgba(0, 0, 0, 0.87);
     transform: rotate(180deg);
   }
   .breadcrumb[data-responsive-behavior=single-step] .breadcrumb__item:nth-last-child(2):hover ~ .breadcrumb__item:after {
@@ -4003,26 +4718,26 @@ body[dir=ltr] .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb_
   color: rgba(0, 0, 0, 0.87);
 }
 .breadcrumb__item:hover:after {
-  opacity: 0.87;
+  color: rgba(0, 0, 0, 0.87);
   transform: rotate(180deg);
 }
 .breadcrumb__item:hover ~ .breadcrumb__item:after {
   transform: rotate(180deg);
 }
 .breadcrumb__item:after {
-  content: "";
   width: 1rem;
   height: 1rem;
+  font-size: 1rem;
   display: block;
-  opacity: 0.56;
+  color: rgba(0, 0, 0, 0.56);
   flex-shrink: 0;
-  transition: opacity 360ms ease, transform 360ms ease;
+  transition: color 360ms ease, transform 360ms ease;
 }
 body[dir=rtl] .breadcrumb__item:after {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="black" d="M10.81,12l3.88-3.87a1,1,0,0,0,0-1.42,1,1,0,0,0-1.42,0L8.68,11.29a1,1,0,0,0,0,1.42l4.59,4.58a1,1,0,0,0,.71.3,1,1,0,0,0,.71-1.72Z"/></svg>');
+  content: "";
 }
 body[dir=ltr] .breadcrumb__item:after, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item:after {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="black" d="M15.3,11.29,10.72,6.71A1,1,0,1,0,9.31,8.13L13.18,12,9.31,15.87a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0l4.58-4.58A1,1,0,0,0,15.3,11.29Z"/></svg>');
+  content: "";
 }
 .breadcrumb__item, .breadcrumb__item > a {
   font-size: 0.75rem;
@@ -4061,7 +4776,7 @@ body[dir=ltr] .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb_
   fill: rgba(0, 0, 0, 0.56);
 }
 .dropdown:not(.primary):not(.outlined).inlined .dropdown__toggle.has-caret:after {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.56)" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+  color: rgba(0, 0, 0, 0.56);
 }
 .dropdown:not(.primary):not(.outlined).inlined .dropdown__toggle:hover, .dropdown:not(.primary):not(.outlined).inlined .dropdown__toggle:focus {
   background-color: rgba(0, 0, 0, 0.04);
@@ -4081,7 +4796,7 @@ body[dir=ltr] .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb_
   fill: rgba(0, 0, 0, 0.87);
 }
 .dropdown:not(.primary):not(.inlined).outlined .dropdown__toggle.has-caret:after {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.87)" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+  color: rgba(0, 0, 0, 0.87);
 }
 .dropdown:not(.primary):not(.inlined).outlined .dropdown__toggle:hover, .dropdown:not(.primary):not(.inlined).outlined .dropdown__toggle:focus {
   background-color: rgba(0, 0, 0, 0.04);
@@ -4109,7 +4824,7 @@ body[dir=ltr] .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb_
   fill: #a62626;
 }
 .dropdown.primary:not(.outlined).inlined .dropdown__toggle.has-caret:after {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#a62626" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+  color: #a62626;
 }
 .dropdown.primary:not(.outlined).inlined .dropdown__toggle:hover, .dropdown.primary:not(.outlined).inlined .dropdown__toggle:focus {
   background-color: rgba(166, 38, 38, 0.04);
@@ -4129,7 +4844,7 @@ body[dir=ltr] .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb_
   fill: #a62626;
 }
 .dropdown.primary:not(.inlined).outlined .dropdown__toggle.has-caret:after {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#a62626" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+  color: #a62626;
 }
 .dropdown.primary:not(.inlined).outlined .dropdown__toggle:hover, .dropdown.primary:not(.inlined).outlined .dropdown__toggle:focus {
   background-color: rgba(166, 38, 38, 0.04);
@@ -4214,7 +4929,7 @@ body[dir=ltr] .dropdown.small .dropdown__toggle.has-caret:after, body:not([dir=l
   color: rgba(0, 0, 0, 0.32);
 }
 .dropdown.disabled:not(.primary) .dropdown__toggle.has-caret:after {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.32)" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+  color: rgba(0, 0, 0, 0.32);
 }
 .dropdown.disabled:not(.primary) .dropdown__toggle .dropdown__toggle__icon .fill {
   fill: rgba(0, 0, 0, 0.32);
@@ -4236,7 +4951,7 @@ body[dir=ltr] .dropdown.small .dropdown__toggle.has-caret:after, body:not([dir=l
   color: rgba(0, 0, 0, 0.32);
 }
 .dropdown.disabled.primary .dropdown__toggle.has-caret:after {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.32)" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+  color: rgba(0, 0, 0, 0.32);
 }
 .dropdown.disabled.primary .dropdown__toggle .dropdown__toggle__icon .fill {
   fill: rgba(0, 0, 0, 0.32);
@@ -4246,7 +4961,7 @@ body[dir=ltr] .dropdown.small .dropdown__toggle.has-caret:after, body:not([dir=l
   background-color: transparent;
 }
 .dropdown.disabled.primary.outlined .dropdown__toggle.has-caret:after {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="rgba(166, 38, 38, 0.32)" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
+  color: rgba(166, 38, 38, 0.32);
 }
 .dropdown.disabled.primary.outlined .dropdown__toggle .dropdown__toggle__icon .fill {
   fill: rgba(166, 38, 38, 0.32);
@@ -4297,11 +5012,12 @@ body[dir=ltr] .dropdown__toggle .dropdown__toggle__icon, body:not([dir=ltr]):not
   transition: fill 360ms ease;
 }
 .dropdown__toggle.has-caret:after {
-  content: "";
+  content: "";
   width: 1.125rem;
   height: 1.125rem;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="white" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
-  transition: opacity 360ms ease, transform 360ms ease;
+  font-size: 1.125rem;
+  color: white;
+  transition: color 360ms ease, transform 360ms ease;
 }
 body[dir=rtl] .dropdown__toggle.has-caret:after {
   margin-right: 0.6875rem;
@@ -4467,11 +5183,17 @@ body[dir=ltr] .select.multiple .select__dropdown__options__option-group__option 
 body:not([dir=ltr]):not([dir=rtl]) .select.multiple .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text {
   padding-left: 0;
 }
-body[dir=rtl] .select.small.removable:not(.multiple) .select__choose-field .select__choose-field__text {
+body[dir=rtl] .select.small.removable:not(.multiple) .select__choose-field:not(.selected) .select__choose-field__text {
   transform: translateX(1.625rem);
 }
-body[dir=ltr] .select.small.removable:not(.multiple) .select__choose-field .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .select.small.removable:not(.multiple) .select__choose-field .select__choose-field__text {
+body[dir=ltr] .select.small.removable:not(.multiple) .select__choose-field:not(.selected) .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .select.small.removable:not(.multiple) .select__choose-field:not(.selected) .select__choose-field__text {
   transform: translateX(-1.625rem);
+}
+body[dir=rtl] .select.small.removable:not(.multiple) .select__choose-field.selected .select__choose-field__text {
+  transform: translateX(0);
+}
+body[dir=ltr] .select.small.removable:not(.multiple) .select__choose-field.selected .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .select.small.removable:not(.multiple) .select__choose-field.selected .select__choose-field__text {
+  transform: translateX(0);
 }
 .select.small:not(.removable):not(.multiple) .select__choose-field .select__choose-field__text, .select.small.multiple .select__choose-field .select__choose-field__text {
   transform: translateX(0);
@@ -4518,6 +5240,7 @@ body[dir=ltr] .select.small:not(.removable):not(.multiple) .select__choose-field
 .select.small .select__choose-field:after {
   width: 1rem;
   height: 1rem;
+  font-size: 1rem;
 }
 body[dir=rtl] .select.small .select__choose-field:after {
   margin-left: 0.25rem;
@@ -4556,7 +5279,7 @@ body[dir=ltr] .select.small .select__choose-field .select__choose-field__unit, b
 }
 .select.disabled .select__choose-field.selected:after,
 .select.disabled .select__choose-field:after {
-  opacity: 0.12;
+  color: rgba(0, 0, 0, 0.12);
 }
 .select.disabled .select__choose-field.selected .select__choose-field__text,
 .select.disabled .select__choose-field .select__choose-field__text {
@@ -4606,16 +5329,16 @@ body[dir=ltr] .select.small .select__choose-field .select__choose-field__unit, b
   border-color: rgba(0, 0, 0, 0.48);
 }
 .select__choose-field:hover:after, .select__choose-field:focus:after {
-  opacity: 0.56;
+  color: rgba(0, 0, 0, 0.56);
 }
 .select__choose-field:after {
-  content: "";
+  content: "";
+  color: rgba(0, 0, 0, 0.32);
   width: 1.5rem;
   height: 1.5rem;
-  opacity: 0.32;
+  font-size: 1.5rem;
   flex-shrink: 0;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="black" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
-  transition: opacity 360ms ease, transform 160ms ease;
+  transition: color 360ms ease, transform 160ms ease;
 }
 body[dir=rtl] .select__choose-field:after {
   margin-left: 0.5rem;
@@ -4633,7 +5356,7 @@ body[dir=ltr] .select__choose-field:after, body:not([dir=ltr]):not([dir=rtl]) .s
   border-color: rgba(0, 0, 0, 0.48);
 }
 .select__choose-field.selected:after {
-  opacity: 0.56;
+  color: rgba(0, 0, 0, 0.56);
 }
 .select__choose-field.selected .select__choose-field__clear {
   opacity: 1;
@@ -4811,6 +5534,10 @@ body[dir=ltr] .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .s
 .select__dropdown__options__option-group__option.disabled > .select__dropdown__options__option-group__option__text {
   color: rgba(0, 0, 0, 0.32);
 }
+.select__dropdown__options__option.disabled > .select__dropdown__options__option__icon,
+.select__dropdown__options__option-group__option.disabled > .select__dropdown__options__option__icon {
+  color: rgba(0, 0, 0, 0.12);
+}
 .select__dropdown__options__option.disabled > .select__dropdown__options__option__icon .fill,
 .select__dropdown__options__option-group__option.disabled > .select__dropdown__options__option__icon .fill {
   fill: rgba(0, 0, 0, 0.12);
@@ -4836,6 +5563,11 @@ body[dir=ltr] .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .s
 .select__dropdown__options__option-group__option.selected > .select__dropdown__options__option-group__option__text {
   color: rgba(0, 0, 0, 0.87);
 }
+.select__dropdown__options__option:active > .select__dropdown__options__option__icon, .select__dropdown__options__option.selected > .select__dropdown__options__option__icon,
+.select__dropdown__options__option-group__option:active > .select__dropdown__options__option__icon,
+.select__dropdown__options__option-group__option.selected > .select__dropdown__options__option__icon {
+  color: rgba(0, 0, 0, 0.87);
+}
 .select__dropdown__options__option:active > .select__dropdown__options__option__icon .fill, .select__dropdown__options__option.selected > .select__dropdown__options__option__icon .fill,
 .select__dropdown__options__option-group__option:active > .select__dropdown__options__option__icon .fill,
 .select__dropdown__options__option-group__option.selected > .select__dropdown__options__option__icon .fill {
@@ -4851,6 +5583,11 @@ body[dir=ltr] .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .s
   color: rgba(0, 0, 0, 0.56);
   height: 100%;
   flex-grow: 1;
+  transition: color 360ms ease;
+}
+.select__dropdown__options__option > .select__dropdown__options__option__icon,
+.select__dropdown__options__option-group__option > .select__dropdown__options__option__icon {
+  color: rgba(0, 0, 0, 0.56);
   transition: color 360ms ease;
 }
 .select__dropdown__options__option > .select__dropdown__options__option__icon .fill,
@@ -4966,6 +5703,10 @@ body[dir=ltr] .row-element.row-expandable .row-element__trail-segment__caret .ca
   overflow: hidden;
 }
 
+.row-element__lead-segment__icon {
+  color: rgba(0, 0, 0, 0.56);
+  transition: color 360ms ease;
+}
 body[dir=rtl] .row-element__lead-segment__icon {
   margin-left: 1rem;
 }

@@ -128,17 +128,34 @@
   &.small {
     &.removable:not(.multiple) {
       .select__choose-field {
-        .select__choose-field__text {
-          @include rtlStyle(
-            (
-              transform: translateX(1.625rem)
-            )
-          );
-          @include ltrStyle(
-            (
-              transform: translateX(-1.625rem)
-            )
-          );
+        &:not(.selected) {
+          .select__choose-field__text {
+            @include rtlStyle(
+              (
+                transform: translateX(1.625rem)
+              )
+            );
+            @include ltrStyle(
+              (
+                transform: translateX(-1.625rem)
+              )
+            );
+          }
+        }
+
+        &.selected {
+          .select__choose-field__text {
+            @include rtlStyle(
+              (
+                transform: translateX(0)
+              )
+            );
+            @include ltrStyle(
+              (
+                transform: translateX(0)
+              )
+            );
+          }
         }
       }
     }
@@ -212,6 +229,7 @@
       &:after {
         width: 1rem;
         height: 1rem;
+        font-size: 1rem;
 
         @include rtlStyle(
           (
@@ -269,7 +287,7 @@
       border-color: $black-divider;
 
       &:after {
-        opacity: 0.12;
+        color: $black-divider;
       }
 
       .select__choose-field__text {
@@ -326,18 +344,20 @@
     }
 
     &:after {
-      opacity: 0.56;
+      color: $black-secondary;
     }
   }
 
   &:after {
-    content: "";
+    @extend %sonnat-icon;
+
+    content: $sonnat-icon-arrow-down-o;
+    color: $black-hint;
     width: 1.5rem;
     height: 1.5rem;
-    opacity: 0.32;
+    font-size: 1.5rem;
     flex-shrink: 0;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="#{$black}" d="M17.29,9.3a1,1,0,0,0-1.42,0L12,13.17,8.13,9.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42l4.58,4.58a1,1,0,0,0,1.42,0l4.58-4.58A1,1,0,0,0,17.29,9.3Z"/></svg>');
-    transition: opacity 360ms ease, transform 160ms ease;
+    transition: color 360ms ease, transform 160ms ease;
 
     @include rtlStyle(
       (
@@ -359,7 +379,7 @@
     }
 
     &:after {
-      opacity: 0.56;
+      color: $black-secondary;
     }
 
     .select__choose-field__clear {
@@ -578,6 +598,8 @@
     }
 
     & > .select__dropdown__options__option__icon {
+      color: $black-divider;
+
       .fill {
         fill: $black-divider;
       }
@@ -603,6 +625,8 @@
     }
 
     & > .select__dropdown__options__option__icon {
+      color: $black-primary;
+
       .fill {
         fill: $black-primary;
       }
@@ -625,6 +649,9 @@
 
   & > .select__dropdown__options__option__icon {
     @extend %icon-20;
+
+    color: $black-secondary;
+    transition: color 360ms ease;
 
     .fill {
       fill: $black-secondary;

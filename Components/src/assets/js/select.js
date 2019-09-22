@@ -82,10 +82,7 @@
       var chipRemoveButton = document.createElement("button");
       chipRemoveButton.className = "chip__remove";
       chipRemoveButton.innerHTML =
-        '<div class="chip__remove__icon">' +
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">' +
-        '<path class="fill" d="M9,8l1.93-1.93a.68.68,0,1,0-1-1L8,7,6.07,5.11a.68.68,0,1,0-1,1L7,8,5.11,9.93a.67.67,0,0,0,0,1,.68.68,0,0,0,1,0L8,9l1.93,1.93a.68.68,0,0,0,1,0,.67.67,0,0,0,0-1Z" style="fill-rule:evenodd"/>' +
-        "</svg></div>";
+        '<div class="chip__remove__icon sonnat-icon sonnat-icon-remove-o"></div>';
 
       chip.appendChild(chipText);
       chip.appendChild(chipRemoveButton);
@@ -122,10 +119,7 @@
           '<input class="text-field__input" type="text" placeholder="جستجو" />' +
           '<div class="text-field__icons">' +
           '<div class="text-field__icons__leading">' +
-          '<div class="text-field__icon">' +
-          '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">' +
-          '<path class="fill" d="M19.1,17.69l-2.77-2.78a6.42,6.42,0,0,0,1.26-3.83,6.52,6.52,0,1,0-2.68,5.25l2.78,2.78a1,1,0,0,0,.71.29,1,1,0,0,0,.7-.29A1,1,0,0,0,19.1,17.69ZM6.59,11.08a4.5,4.5,0,1,1,4.5,4.5A4.5,4.5,0,0,1,6.59,11.08Z"></path>' +
-          "</svg></div></div></div>";
+          '<div class="text-field__icon sonnat-icon sonnat-icon-search-o"></div></div></div>';
 
         dropdownSearch.appendChild(textField);
         fragment.appendChild(dropdownSearch);
@@ -173,10 +167,7 @@
               if (_settings.isMultiple) {
                 var optionIcon = document.createElement("div");
                 optionIcon.className =
-                  "select__dropdown__options__option__icon option-icon";
-                optionIcon.innerHTML =
-                  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">' +
-                  '<path class="fill" d="M10.72,16a1,1,0,0,1-.71-.29l-2.9-2.9a1,1,0,0,1,0-1.42,1,1,0,0,1,1.41,0l2.2,2.19,5-5a1,1,0,0,1,1.41,0,1,1,0,0,1,0,1.41l-5.76,5.77A1,1,0,0,1,10.72,16Z" /></svg>';
+                  "select__dropdown__options__option__icon option-icon sonnat-icon sonnat-icon-check-o";
                 option.appendChild(optionIcon);
               }
 

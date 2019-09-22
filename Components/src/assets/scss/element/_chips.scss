@@ -40,6 +40,8 @@
 
       &.iconed {
         & > .chip__icon {
+          color: $white;
+
           .fill {
             fill: $white;
           }
@@ -57,6 +59,8 @@
 
         &.iconed {
           & > .chip__icon {
+            color: $white;
+
             .fill {
               fill: $white;
             }
@@ -83,6 +87,8 @@
 
         &.iconed {
           & > .chip__icon {
+            color: $white;
+
             .fill {
               fill: $white;
             }
@@ -103,6 +109,8 @@
 
     &.iconed {
       & > .chip__icon {
+        color: $white;
+
         .fill {
           fill: $white;
         }
@@ -120,6 +128,8 @@
 
       &.iconed {
         & > .chip__icon {
+          color: $brand-primary-color;
+
           .fill {
             fill: $brand-primary-color;
           }
@@ -195,6 +205,8 @@
 
         &.iconed {
           & > .chip__icon {
+            color: $brand-primary-color;
+
             .fill {
               fill: $brand-primary-color;
             }
@@ -238,6 +250,9 @@
           margin-right: 0.25rem
         )
       );
+
+      color: $black-secondary;
+      transition: color 360ms ease;
 
       .fill {
         fill: $black-secondary;

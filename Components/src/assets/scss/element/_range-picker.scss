@@ -38,6 +38,8 @@
     }
 
     .range-picker__handle__icon {
+      color: $white;
+
       .fill {
         fill: $white;
       }
@@ -158,6 +160,8 @@
       box-shadow: 0 0 0 1px $brand-primary-color;
 
       .range-picker__handle__icon {
+        color: $white;
+
         .fill {
           fill: $white;
         }
@@ -198,6 +202,8 @@
     box-shadow: 0 0 0 1px $brand-primary-color;
 
     .range-picker__handle__icon {
+      color: $white;
+
       .fill {
         fill: $white;
       }
@@ -207,6 +213,9 @@
 
 .range-picker__handle__icon {
   @extend %icon-16;
+
+  color: $black-secondary;
+  transition: color 360ms ease;
 
   .fill {
     fill: $black-secondary;

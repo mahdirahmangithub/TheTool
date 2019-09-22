@@ -450,8 +450,14 @@
     }
 
     &.iconed {
-      .fill {
-        fill: $black-secondary;
+      .text-field__icons__leading,
+      .text-field__icons__trailing {
+        display: flex;
+        color: $black-secondary;
+
+        .fill {
+          fill: $black-secondary;
+        }
       }
     }
 
@@ -676,6 +682,7 @@
   .text-field__icons__leading,
   .text-field__icons__trailing {
     display: flex;
+    color: $black-hint;
 
     .fill {
       fill: $black-hint;
@@ -725,51 +732,6 @@
   }
 
   .text-field__icon {
-    @extend .icon-24;
+    @extend %icon-24;
   }
-}
-
-.text-field__hints {
-  @extend %base-text;
-
-  font-size: 0.75rem;
-  line-height: 2;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: map-get($spaces, "x2");
-  color: $black-secondary;
-  padding: 0 map-get($spaces, "x4");
-}
-
-.text-field__hints__hint-text {
-  width: calc(100% - #{map-get($spaces, "x32")});
-  transition: color 150ms ease;
-
-  @include rtlStyle(
-    (
-      text-align: right
-    )
-  );
-  @include ltrStyle(
-    (
-      text-align: left
-    )
-  );
-}
-
-.text-field__hints__input-length-limit {
-  width: map-get($spaces, "x32");
-
-  @include rtlStyle(
-    (
-      text-align: left
-    )
-  );
-  @include ltrStyle(
-    (
-      text-align: right
-    )
-  );
 }

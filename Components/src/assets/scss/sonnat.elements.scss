@@ -3,10 +3,10 @@
 @import "mixin/direction", "function/coloring";
 
 @import "variable/breakpoint", "variable/color", "variable/content",
-  "variable/spacing", "variable/zindex";
+  "variable/spacing", "variable/zindex", "variable/font-icon";
 
 @import "root", "utility", "content", "visibility", "form-controls", "imagery",
-  "collapsable";
+  "collapsable", "font-icon";
 
 @import "element/divider", "element/radio", "element/checkbox", "element/tag",
   "element/switch", "element/title-row", "element/section-row", "element/tab",

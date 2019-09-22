@@ -81,6 +81,9 @@
 .fab__icon {
   @extend %icon-24;
 
+  color: $white;
+  transition: color 360ms ease;
+
   .fill {
     fill: $white;
   }

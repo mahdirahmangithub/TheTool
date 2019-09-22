@@ -5,12 +5,12 @@
 
 // VARIABLES
 @import "variable/breakpoint", "variable/spacing", "variable/zindex",
-  "variable/content", "variable/color";
+  "variable/content", "variable/color", "variable/font-icon";
 
 // ESSENTIALS
 @import "reset", "utility", "visibility", "display", "position", "flex",
   "spacing", "root", "content", "grid", "view", "form-controls", "imagery",
-  "collapsable";
+  "collapsable", "font-icon";
 
 // ELEMENTS
 @import "element/divider", "element/radio", "element/checkbox", "element/tag",
@@ -21,5 +21,3 @@
   "element/badge", "element/clear-field", "element/range-picker",
   "element/breadcrumb", "element/dropdown", "element/select", "element/rows",
   "element/range-field";
-
-@import "sonnat.font-icon.scss";

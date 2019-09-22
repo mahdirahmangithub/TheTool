@@ -151,6 +151,9 @@
     )
   );
 
+  color: $black-secondary;
+  transition: color 360ms ease;
+
   .fill {
     fill: $black-secondary;
     transition: fill 360ms ease;

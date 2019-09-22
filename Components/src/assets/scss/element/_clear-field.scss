@@ -6,12 +6,14 @@
   background-color: transparent;
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 360ms ease;
+  color: $black-secondary;
+  transition: background-color 360ms ease, color 360ms ease;
 
-  width: 18px;
-  height: 18px;
-  min-width: 18px;
-  min-height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
+  min-width: 1.125rem;
+  min-height: 1.125rem;
+  font-size: 1.125rem;
 
   svg {
     width: 100%;
@@ -24,20 +26,24 @@
   }
 
   &.large {
-    width: 20px;
-    height: 20px;
-    min-width: 20px;
-    min-height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+    font-size: 1.25rem;
   }
 
   &.small {
-    width: 16px;
-    height: 16px;
-    min-width: 16px;
-    min-height: 16px;
+    width: 1rem;
+    height: 1rem;
+    min-width: 1rem;
+    min-height: 1rem;
+    font-size: 1rem;
   }
 
   &.primary {
+    color: $brand-primary-color;
+
     svg {
       .fill {
         fill: $brand-primary-color;
@@ -46,6 +52,8 @@
   }
 
   &.white {
+    color: $white;
+
     svg {
       .fill {
         fill: $white;
@@ -73,23 +81,27 @@
 %clear-field-large {
   @extend %clear-field;
 
-  width: 20px;
-  height: 20px;
-  min-width: 20px;
-  min-height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  font-size: 1.25rem;
 }
 
 %clear-field-small {
   @extend %clear-field;
 
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
-  min-height: 16px;
+  width: 1rem;
+  height: 1rem;
+  min-width: 1rem;
+  min-height: 1rem;
+  font-size: 1rem;
 }
 
 %clear-field-primary {
   @extend %clear-field;
+
+  color: $brand-primary-color;
 
   svg {
     .fill {
@@ -108,6 +120,8 @@
 
 %clear-field-white {
   @extend %clear-field;
+
+  color: $white;
 
   svg {
     .fill {
