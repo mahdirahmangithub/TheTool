@@ -66,10 +66,14 @@
       color: $black-primary;
     }
 
+    .row-element__collapsed-content__container__description {
+      @extend %body-text-md;
+    }
+
     .row-element__trail-segment__caret {
       position: relative;
-      width: 24px;
-      height: 24px;
+      width: 1.5rem;
+      height: 1.5rem;
 
       @include rtlStyle(
         (
@@ -126,6 +130,65 @@
           transform: translateX(-#{0.5rem * 1.14 / 4}) rotate(45deg);
         }
       }
+    }
+  }
+
+  &.small {
+    .row-element__lead-segment__title,
+    .row-element__mid-segment__title,
+    .row-element__trail-segment__title {
+      font-size: 0.875rem;
+    }
+
+    .row-element__lead-segment__icon,
+    .row-element__trail-segment__icon {
+      @extend %icon-20;
+    }
+
+    .row-element__lead-segment__icon {
+      @include rtlStyle(
+        (
+          margin-left: 0.5rem
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-right: 0.5rem
+        )
+      );
+    }
+
+    .row-element__trail-segment__icon {
+      @include rtlStyle(
+        (
+          margin-right: 0.5rem,
+          margin-left: 0.625rem
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: 0.5rem,
+          margin-right: 0.625rem
+        )
+      );
+    }
+
+    .row-element__trail-segment__caret {
+      transform: scale(0.88);
+      transform-origin: left center;
+
+      @include rtlStyle(
+        (
+          margin-right: 0.25rem,
+          margin-left: 0.625rem
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-left: 0.25rem,
+          margin-right: 0.625rem
+        )
+      );
     }
   }
 }
@@ -188,6 +251,9 @@
   font-size: 12px;
   line-height: 2;
   color: $black-secondary;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .row-element__mid-segment {
@@ -200,6 +266,17 @@
 
   & + .row-element__trail-segment {
     width: 33.3333%;
+
+    @include rtlStyle(
+      (
+        margin-right: 0
+      )
+    );
+    @include ltrStyle(
+      (
+        margin-left: 0
+      )
+    );
   }
 }
 
@@ -217,10 +294,21 @@
 .row-element__trail-segment {
   display: inline-flex;
   align-items: center;
-  width: 50%;
+  max-width: 50%;
   flex-shrink: 0;
   justify-content: flex-end;
   overflow: hidden;
+
+  @include rtlStyle(
+    (
+      margin-right: 1rem
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-left: 1rem
+    )
+  );
 }
 
 .row-element__trail-segment__title {

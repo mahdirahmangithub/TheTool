@@ -352,93 +352,93 @@ p {
   .hero-text-lg,
   %hero-text-lg,
   %mq-hero-text-lg {
-    font-size: 2rem;
+    font-size: 2rem !important;
 
     &.lighter {
-      font-weight: 400;
+      font-weight: 400 !important;
     }
   }
 
   %hero-text-lg-lighter {
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 2rem !important;
+    font-weight: 400 !important;
   }
 
   %hero-text-lg-medium {
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 2rem !important;
+    font-weight: 500 !important;
   }
 
   %h1,
   h1,
   %mq-h1 {
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 2rem !important;
+    font-weight: 500 !important;
   }
 
   %hero-text-lg-bolder {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   .hero-text-sm,
   %hero-text-sm,
   %mq-hero-text-sm {
     &.lighter {
-      font-size: 1.5rem;
-      font-weight: 500;
+      font-size: 1.5rem !important;
+      font-weight: 500 !important;
     }
   }
 
   %hero-text-sm-lighter {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
   }
 
   %hero-text-sm-bolder {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 
   .title-text-lg,
   %title-text-lg,
   %mq-title-text-lg {
-    font-size: 1.25rem;
+    font-size: 1.25rem !important;
   }
 
   %h3,
   h3,
   %mq-h3 {
-    font-size: 1.25rem;
+    font-size: 1.25rem !important;
   }
 
   .title-text-md,
   %title-text-md,
   %mq-title-text-md {
-    font-size: 1.125rem;
+    font-size: 1.125rem !important;
   }
 
   %h4,
   h4,
   %mq-h4 {
-    font-size: 1.125rem;
+    font-size: 1.125rem !important;
   }
 
   .body-text-lg,
   %body-text-lg,
   %mq-body-text-lg {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   .body-text-md,
   %body-text-md,
   %mq-body-text-md {
     &:not(.stable) {
-      font-size: 0.875rem;
+      font-size: 0.875rem !important;
     }
   }
 
   %mq-body-text-md-stable {
-    font-size: 1rem;
-    line-height: 2;
-    font-weight: 400;
+    font-size: 1rem !important;
+    line-height: 2 !important;
+    font-weight: 400 !important;
   }
 }
