@@ -116,72 +116,6 @@ h1 {
   text-size-adjust: 100%;
   color: rgba(0, 0, 0, 0.87);
 }
-body[dir=rtl] .card-post__content__footer__tags > span, body[dir=rtl] .card-post__content__descriptor, body[dir=rtl] .card-post__content__title, body[dir=rtl] .range-field__labels .range-field__labels__label, .range-field__labels body[dir=rtl] .range-field__labels__label, body[dir=rtl] .row-element__trail-segment__title, body[dir=rtl] .row-element__mid-segment__title, body[dir=rtl] .row-element__lead-segment__subtitle, body[dir=rtl] .row-element__lead-segment__title, body[dir=rtl] .row-element.row-expandable .row-element__collapsed-content__container, .row-element.row-expandable body[dir=rtl] .row-element__collapsed-content__container, body[dir=rtl] .select__dropdown__options__option > .select__dropdown__options__option__text, body[dir=rtl] .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
-body[dir=rtl] .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
-body[dir=rtl] .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, body[dir=rtl] .select__dropdown__options__option-group__title, body[dir=rtl] .select__choose-field__unit, body[dir=rtl] .select__choose-field__text, body[dir=rtl] .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body[dir=rtl] .dropdown__menu__item > a, body[dir=rtl] .dropdown__toggle,
-body[dir=rtl] .dropdown__toggle .dropdown__toggle__text,
-.dropdown__toggle body[dir=rtl] .dropdown__toggle__text, body[dir=rtl] .breadcrumb__item, body[dir=rtl] .breadcrumb__item > a, body[dir=rtl] .badge, body[dir=rtl] .chip,
-body[dir=rtl] .chip .chip__text,
-.chip body[dir=rtl] .chip__text, body[dir=rtl] .toolbox__view-more__text, body[dir=rtl] .toolbox__head__title__text, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a, body[dir=rtl] .accordion__heading, body[dir=rtl] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=rtl] .accordion__list__sub-list__item > a, body[dir=rtl] .accordion__list .accordion__list__item > a, .accordion__list body[dir=rtl] .accordion__list__item > a, body[dir=rtl] .text-field__input, body[dir=rtl] .text-field__label-text, body[dir=rtl] .form-field-set__description, body[dir=rtl] .form-field-set__title, body[dir=rtl] .form-field__hints, body[dir=rtl] .form-field__description, body[dir=rtl] .form-field__label, body[dir=rtl] .fab__label, body[dir=rtl] .section-row__paragraph, body[dir=rtl] .section-row__title, body[dir=rtl] .section-row > .section-row__title ~ .section-row__title, body[dir=rtl] .title-row__title--subtitle, body[dir=rtl] .title-row__title--pretitle, body[dir=rtl] .title-row__title, body[dir=rtl] .tag,
-body[dir=rtl] .tag .tag__text,
-.tag body[dir=rtl] .tag__text, body[dir=rtl] .caption-text-sm, body[dir=rtl] .caption-text-md, body[dir=rtl] .caption-text-lg, body[dir=rtl] .body-text-sm, body[dir=rtl] .body-text-md,
-body[dir=rtl] .row-element.row-expandable .row-element__collapsed-content__container__description,
-.row-element.row-expandable body[dir=rtl] .row-element__collapsed-content__container__description, body[dir=rtl] .body-text-lg, body[dir=rtl] .title-text-xs,
-body[dir=rtl] .h6, body[dir=rtl] .title-text-sm,
-body[dir=rtl] .h5, body[dir=rtl] .title-text-md,
-body[dir=rtl] .h4, body[dir=rtl] .title-text-lg,
-body[dir=rtl] .h3, body[dir=rtl] .h2, body[dir=rtl] .hero-text-sm, body[dir=rtl] .h1, body[dir=rtl] .hero-text-lg, body[dir=rtl] p,
-body[dir=rtl] h6,
-body[dir=rtl] h5,
-body[dir=rtl] h4,
-body[dir=rtl] h3,
-body[dir=rtl] h2,
-body[dir=rtl] h1 {
-  text-align: right;
-}
-body[dir=ltr] .card-post__content__footer__tags > span, body[dir=ltr] .card-post__content__descriptor, body[dir=ltr] .card-post__content__title, body[dir=ltr] .range-field__labels .range-field__labels__label, .range-field__labels body[dir=ltr] .range-field__labels__label, body[dir=ltr] .row-element__trail-segment__title, body[dir=ltr] .row-element__mid-segment__title, body[dir=ltr] .row-element__lead-segment__subtitle, body[dir=ltr] .row-element__lead-segment__title, body[dir=ltr] .row-element.row-expandable .row-element__collapsed-content__container, .row-element.row-expandable body[dir=ltr] .row-element__collapsed-content__container, body[dir=ltr] .select__dropdown__options__option > .select__dropdown__options__option__text, body[dir=ltr] .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
-body[dir=ltr] .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
-body[dir=ltr] .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, body[dir=ltr] .select__dropdown__options__option-group__title, body[dir=ltr] .select__choose-field__unit, body[dir=ltr] .select__choose-field__text, body[dir=ltr] .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body[dir=ltr] .dropdown__menu__item > a, body[dir=ltr] .dropdown__toggle,
-body[dir=ltr] .dropdown__toggle .dropdown__toggle__text,
-.dropdown__toggle body[dir=ltr] .dropdown__toggle__text, body[dir=ltr] .breadcrumb__item, body[dir=ltr] .breadcrumb__item > a, body[dir=ltr] .badge, body[dir=ltr] .chip,
-body[dir=ltr] .chip .chip__text,
-.chip body[dir=ltr] .chip__text, body[dir=ltr] .toolbox__view-more__text, body[dir=ltr] .toolbox__head__title__text, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a, body[dir=ltr] .accordion__heading, body[dir=ltr] .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body[dir=ltr] .accordion__list__sub-list__item > a, body[dir=ltr] .accordion__list .accordion__list__item > a, .accordion__list body[dir=ltr] .accordion__list__item > a, body[dir=ltr] .text-field__input, body[dir=ltr] .text-field__label-text, body[dir=ltr] .form-field-set__description, body[dir=ltr] .form-field-set__title, body[dir=ltr] .form-field__hints, body[dir=ltr] .form-field__description, body[dir=ltr] .form-field__label, body[dir=ltr] .fab__label, body[dir=ltr] .section-row__paragraph, body[dir=ltr] .section-row__title, body[dir=ltr] .section-row > .section-row__title ~ .section-row__title, body[dir=ltr] .title-row__title--subtitle, body[dir=ltr] .title-row__title--pretitle, body[dir=ltr] .title-row__title, body[dir=ltr] .tag,
-body[dir=ltr] .tag .tag__text,
-.tag body[dir=ltr] .tag__text, body[dir=ltr] .caption-text-sm, body[dir=ltr] .caption-text-md, body[dir=ltr] .caption-text-lg, body[dir=ltr] .body-text-sm, body[dir=ltr] .body-text-md,
-body[dir=ltr] .row-element.row-expandable .row-element__collapsed-content__container__description,
-.row-element.row-expandable body[dir=ltr] .row-element__collapsed-content__container__description, body[dir=ltr] .body-text-lg, body[dir=ltr] .title-text-xs,
-body[dir=ltr] .h6, body[dir=ltr] .title-text-sm,
-body[dir=ltr] .h5, body[dir=ltr] .title-text-md,
-body[dir=ltr] .h4, body[dir=ltr] .title-text-lg,
-body[dir=ltr] .h3, body[dir=ltr] .h2, body[dir=ltr] .hero-text-sm, body[dir=ltr] .h1, body[dir=ltr] .hero-text-lg, body[dir=ltr] p,
-body[dir=ltr] h6,
-body[dir=ltr] h5,
-body[dir=ltr] h4,
-body[dir=ltr] h3,
-body[dir=ltr] h2,
-body[dir=ltr] h1, body:not([dir=ltr]):not([dir=rtl]) .card-post__content__footer__tags > span, body:not([dir=ltr]):not([dir=rtl]) .card-post__content__descriptor, body:not([dir=ltr]):not([dir=rtl]) .card-post__content__title, body:not([dir=ltr]):not([dir=rtl]) .range-field__labels .range-field__labels__label, .range-field__labels body:not([dir=ltr]):not([dir=rtl]) .range-field__labels__label, body:not([dir=ltr]):not([dir=rtl]) .row-element__trail-segment__title, body:not([dir=ltr]):not([dir=rtl]) .row-element__mid-segment__title, body:not([dir=ltr]):not([dir=rtl]) .row-element__lead-segment__subtitle, body:not([dir=ltr]):not([dir=rtl]) .row-element__lead-segment__title, body:not([dir=ltr]):not([dir=rtl]) .row-element.row-expandable .row-element__collapsed-content__container, .row-element.row-expandable body:not([dir=ltr]):not([dir=rtl]) .row-element__collapsed-content__container, body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option > .select__dropdown__options__option__text, body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
-body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
-body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, body:not([dir=ltr]):not([dir=rtl]) .select__dropdown__options__option-group__title, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .select__choose-field__text, body:not([dir=ltr]):not([dir=rtl]) .dropdown__menu .dropdown__menu__item > a, .dropdown__menu body:not([dir=ltr]):not([dir=rtl]) .dropdown__menu__item > a, body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle,
-body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle .dropdown__toggle__text,
-.dropdown__toggle body:not([dir=ltr]):not([dir=rtl]) .dropdown__toggle__text, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb__item > a, body:not([dir=ltr]):not([dir=rtl]) .badge, body:not([dir=ltr]):not([dir=rtl]) .chip,
-body:not([dir=ltr]):not([dir=rtl]) .chip .chip__text,
-.chip body:not([dir=ltr]):not([dir=rtl]) .chip__text, body:not([dir=ltr]):not([dir=rtl]) .toolbox__view-more__text, body:not([dir=ltr]):not([dir=rtl]) .toolbox__head__title__text, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a, body:not([dir=ltr]):not([dir=rtl]) .accordion__heading, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > .accordion__list__sub-list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__sub-list__item > a, body:not([dir=ltr]):not([dir=rtl]) .accordion__list .accordion__list__item > a, .accordion__list body:not([dir=ltr]):not([dir=rtl]) .accordion__list__item > a, body:not([dir=ltr]):not([dir=rtl]) .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field__label-text, body:not([dir=ltr]):not([dir=rtl]) .form-field-set__description, body:not([dir=ltr]):not([dir=rtl]) .form-field-set__title, body:not([dir=ltr]):not([dir=rtl]) .form-field__hints, body:not([dir=ltr]):not([dir=rtl]) .form-field__description, body:not([dir=ltr]):not([dir=rtl]) .form-field__label, body:not([dir=ltr]):not([dir=rtl]) .fab__label, body:not([dir=ltr]):not([dir=rtl]) .section-row__paragraph, body:not([dir=ltr]):not([dir=rtl]) .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .section-row > .section-row__title ~ .section-row__title, body:not([dir=ltr]):not([dir=rtl]) .title-row__title--subtitle, body:not([dir=ltr]):not([dir=rtl]) .title-row__title--pretitle, body:not([dir=ltr]):not([dir=rtl]) .title-row__title, body:not([dir=ltr]):not([dir=rtl]) .tag,
-body:not([dir=ltr]):not([dir=rtl]) .tag .tag__text,
-.tag body:not([dir=ltr]):not([dir=rtl]) .tag__text, body:not([dir=ltr]):not([dir=rtl]) .caption-text-sm, body:not([dir=ltr]):not([dir=rtl]) .caption-text-md, body:not([dir=ltr]):not([dir=rtl]) .caption-text-lg, body:not([dir=ltr]):not([dir=rtl]) .body-text-sm, body:not([dir=ltr]):not([dir=rtl]) .body-text-md,
-body:not([dir=ltr]):not([dir=rtl]) .row-element.row-expandable .row-element__collapsed-content__container__description,
-.row-element.row-expandable body:not([dir=ltr]):not([dir=rtl]) .row-element__collapsed-content__container__description, body:not([dir=ltr]):not([dir=rtl]) .body-text-lg, body:not([dir=ltr]):not([dir=rtl]) .title-text-xs,
-body:not([dir=ltr]):not([dir=rtl]) .h6, body:not([dir=ltr]):not([dir=rtl]) .title-text-sm,
-body:not([dir=ltr]):not([dir=rtl]) .h5, body:not([dir=ltr]):not([dir=rtl]) .title-text-md,
-body:not([dir=ltr]):not([dir=rtl]) .h4, body:not([dir=ltr]):not([dir=rtl]) .title-text-lg,
-body:not([dir=ltr]):not([dir=rtl]) .h3, body:not([dir=ltr]):not([dir=rtl]) .h2, body:not([dir=ltr]):not([dir=rtl]) .hero-text-sm, body:not([dir=ltr]):not([dir=rtl]) .h1, body:not([dir=ltr]):not([dir=rtl]) .hero-text-lg, body:not([dir=ltr]):not([dir=rtl]) p,
-body:not([dir=ltr]):not([dir=rtl]) h6,
-body:not([dir=ltr]):not([dir=rtl]) h5,
-body:not([dir=ltr]):not([dir=rtl]) h4,
-body:not([dir=ltr]):not([dir=rtl]) h3,
-body:not([dir=ltr]):not([dir=rtl]) h2,
-body:not([dir=ltr]):not([dir=rtl]) h1 {
-  text-align: left;
-}
 .card-post__content__footer__tags > span.typography-transition, .typography-transition.card-post__content__descriptor, .typography-transition.card-post__content__title, .range-field__labels .typography-transition.range-field__labels__label, .typography-transition.row-element__trail-segment__title, .typography-transition.row-element__mid-segment__title, .typography-transition.row-element__lead-segment__subtitle, .typography-transition.row-element__lead-segment__title, .row-element.row-expandable .typography-transition.row-element__collapsed-content__container, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option__text, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option-group__option__text,
 .select__dropdown__options__option-group__option > .typography-transition.select__dropdown__options__option__text,
 .select__dropdown__options__option-group__option > .typography-transition.select__dropdown__options__option-group__option__text, .typography-transition.select__dropdown__options__option-group__title, .typography-transition.select__choose-field__unit, .typography-transition.select__choose-field__text, .dropdown__menu .dropdown__menu__item > a.typography-transition, .typography-transition.dropdown__toggle,
@@ -2251,6 +2185,9 @@ body[dir=ltr] .tab-row.small .tab-list__tab__content > * + *, body:not([dir=ltr]
 .tab-list__tab.active .tab-list__tab-text {
   color: #a62626;
 }
+.tab-list__tab.active .tab-list__tab-icon {
+  color: #a62626;
+}
 .tab-list__tab.active .tab-list__tab-icon .fill {
   fill: #a62626;
 }
@@ -2283,6 +2220,10 @@ body[dir=ltr] .tab-list__tab__content > * + *, body:not([dir=ltr]):not([dir=rtl]
   white-space: nowrap;
 }
 
+.tab-list__tab-icon {
+  color: rgba(0, 0, 0, 0.56);
+  transition: color 360ms ease;
+}
 .tab-list__tab-icon .fill {
   fill: rgba(0, 0, 0, 0.56);
   transition: fill 360ms ease;
@@ -4804,7 +4745,6 @@ body[dir=ltr] .breadcrumb__item, body:not([dir=ltr]):not([dir=rtl]) .breadcrumb_
 
 .dropdown {
   position: relative;
-  z-index: 1000;
 }
 .dropdown:not(.primary) .dropdown__toggle:hover, .dropdown:not(.primary) .dropdown__toggle:focus {
   background-color: rgba(31, 31, 31, 0.56);
@@ -5598,27 +5538,22 @@ body[dir=ltr] .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .s
 .select__dropdown__options__option-group__option:focus {
   background-color: rgba(0, 0, 0, 0.04);
 }
-.select__dropdown__options__option:active, .select__dropdown__options__option.selected,
-.select__dropdown__options__option-group__option:active,
-.select__dropdown__options__option-group__option.selected {
-  background-color: rgba(0, 0, 0, 0.04);
-}
 .select__dropdown__options__option:active > .select__dropdown__options__option__text, .select__dropdown__options__option:active > .select__dropdown__options__option-group__option__text, .select__dropdown__options__option.selected > .select__dropdown__options__option__text, .select__dropdown__options__option.selected > .select__dropdown__options__option-group__option__text,
 .select__dropdown__options__option-group__option:active > .select__dropdown__options__option__text,
 .select__dropdown__options__option-group__option:active > .select__dropdown__options__option-group__option__text,
 .select__dropdown__options__option-group__option.selected > .select__dropdown__options__option__text,
 .select__dropdown__options__option-group__option.selected > .select__dropdown__options__option-group__option__text {
-  color: rgba(0, 0, 0, 0.87);
+  color: #a62626;
 }
 .select__dropdown__options__option:active > .select__dropdown__options__option__icon, .select__dropdown__options__option.selected > .select__dropdown__options__option__icon,
 .select__dropdown__options__option-group__option:active > .select__dropdown__options__option__icon,
 .select__dropdown__options__option-group__option.selected > .select__dropdown__options__option__icon {
-  color: rgba(0, 0, 0, 0.87);
+  color: #a62626;
 }
 .select__dropdown__options__option:active > .select__dropdown__options__option__icon .fill, .select__dropdown__options__option.selected > .select__dropdown__options__option__icon .fill,
 .select__dropdown__options__option-group__option:active > .select__dropdown__options__option__icon .fill,
 .select__dropdown__options__option-group__option.selected > .select__dropdown__options__option__icon .fill {
-  fill: rgba(0, 0, 0, 0.87);
+  fill: #a62626;
 }
 .select__dropdown__options__option > .select__dropdown__options__option__text, .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
 .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
@@ -6086,6 +6021,7 @@ body[dir=ltr] .card-post__content__footer__chat, body:not([dir=ltr]):not([dir=rt
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin: 0;
 }
 body[dir=rtl] .card-post__image {
   margin-right: 0.25rem;

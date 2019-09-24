@@ -617,18 +617,16 @@
 
   &:active,
   &.selected {
-    background-color: blackColor(0.04);
-
     & > .select__dropdown__options__option__text,
     & > .select__dropdown__options__option-group__option__text {
-      color: $black-primary;
+      color: $brand-primary-color;
     }
 
     & > .select__dropdown__options__option__icon {
-      color: $black-primary;
+      color: $brand-primary-color;
 
       .fill {
-        fill: $black-primary;
+        fill: $brand-primary-color;
       }
     }
   }

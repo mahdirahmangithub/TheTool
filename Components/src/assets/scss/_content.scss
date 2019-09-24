@@ -13,17 +13,6 @@
   text-size-adjust: 100%;
   color: $black-primary;
 
-  @include rtlStyle(
-    (
-      "text-align": "right"
-    )
-  );
-  @include ltrStyle(
-    (
-      "text-align": "left"
-    )
-  );
-
   &.typography-transition {
     transition: font-size 200ms ease, line-height 200ms ease;
   }

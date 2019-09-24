@@ -666,9 +666,33 @@ function RangePicker(selector, options) {
     var DRAG = this.state.drag;
     var LIMIT = this.parent.offsetWidth;
 
-    DRAG["sup"].currentX = this.state.value - LIMIT;
-    DRAG["sup"].offsetX = DRAG["sup"].currentX;
-    _move("right", Math.abs(LIMIT - this.state.value));
+    if (this.state.step.numberOfSteps) {
+      var constrainedInitValue = _constrain(
+        _this.state.value,
+        _inputMin,
+        _inputMax
+      );
+      var stepNumber = Math.round(
+        _map(
+          constrainedInitValue / _this.state.step.stepValue,
+          0,
+          _inputMax / _this.state.step.stepValue,
+          1,
+          _this.state.step.numberOfSteps
+        )
+      );
+      stepNumber = _constrain(
+        _this.state.step.numberOfSteps - stepNumber + 1,
+        1,
+        _this.state.step.numberOfSteps
+      );
+
+      var stepPosition = _getLengthCSSValue(_getStep(stepNumber - 1), "right");
+
+      DRAG["sup"].currentX = -1 * stepPosition;
+      DRAG["sup"].offsetX = DRAG["sup"].currentX;
+      _move("right", Math.abs(stepPosition));
+    }
   }
 }
 

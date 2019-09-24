@@ -146,6 +146,8 @@
     }
 
     .tab-list__tab-icon {
+      color: $brand-primary-color;
+
       .fill {
         fill: $brand-primary-color;
       }
@@ -198,6 +200,9 @@
   .tab-list__tab__content &:only-child {
     @extend .icon-24;
   }
+
+  color: $black-secondary;
+  transition: color 360ms ease;
 
   .fill {
     fill: $black-secondary;
