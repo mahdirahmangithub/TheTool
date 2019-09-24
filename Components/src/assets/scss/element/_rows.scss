@@ -134,6 +134,12 @@
   }
 
   &.small {
+    .row-element__lead-segment__control {
+    }
+
+    .row-element__trail-segment__control {
+    }
+
     .row-element__lead-segment__title,
     .row-element__mid-segment__title,
     .row-element__trail-segment__title {
@@ -401,4 +407,40 @@
       margin-left: 1rem
     )
   );
+}
+
+.row-element__lead-segment__control {
+  & > div {
+    @include rtlStyle(
+      (
+        padding-left: 0.25rem,
+        margin-left: 0
+      )
+    );
+    @include ltrStyle(
+      (
+        padding-right: 0.25rem,
+        margin-right: 0
+      )
+    );
+  }
+}
+
+.row-element__trail-segment__control {
+  & > div {
+    min-width: auto;
+
+    @include rtlStyle(
+      (
+        padding-right: 0.625rem,
+        margin-left: 0
+      )
+    );
+    @include ltrStyle(
+      (
+        padding-left: 0.625rem,
+        margin-right: 0
+      )
+    );
+  }
 }

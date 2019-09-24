@@ -5936,6 +5936,35 @@ body[dir=ltr] .row-element__trail-segment__icon, body:not([dir=ltr]):not([dir=rt
   margin-left: 1rem;
 }
 
+body[dir=rtl] .row-element__lead-segment__control > div {
+  padding-left: 0.25rem;
+}
+body[dir=rtl] .row-element__lead-segment__control > div {
+  margin-left: 0;
+}
+body[dir=ltr] .row-element__lead-segment__control > div, body:not([dir=ltr]):not([dir=rtl]) .row-element__lead-segment__control > div {
+  padding-right: 0.25rem;
+}
+body[dir=ltr] .row-element__lead-segment__control > div, body:not([dir=ltr]):not([dir=rtl]) .row-element__lead-segment__control > div {
+  margin-right: 0;
+}
+
+.row-element__trail-segment__control > div {
+  min-width: auto;
+}
+body[dir=rtl] .row-element__trail-segment__control > div {
+  padding-right: 0.625rem;
+}
+body[dir=rtl] .row-element__trail-segment__control > div {
+  margin-left: 0;
+}
+body[dir=ltr] .row-element__trail-segment__control > div, body:not([dir=ltr]):not([dir=rtl]) .row-element__trail-segment__control > div {
+  padding-left: 0.625rem;
+}
+body[dir=ltr] .row-element__trail-segment__control > div, body:not([dir=ltr]):not([dir=rtl]) .row-element__trail-segment__control > div {
+  margin-right: 0;
+}
+
 .range-field {
   display: flex;
   align-items: center;
