@@ -1,9 +1,8 @@
 .form-field-set {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   margin: 0;
   border: none;
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
 
 .form-field-set__title {
@@ -13,6 +12,17 @@
   font-weight: 500;
   line-height: 2;
   color: $black-primary;
+
+  @include rtlStyle(
+    (
+      float: right
+    )
+  );
+  @include ltrStyle(
+    (
+      float: left
+    )
+  );
 
   & + .form-field-set__description {
     margin-top: 0.25rem;
@@ -25,4 +35,13 @@
   font-size: 14px;
   line-height: 2;
   color: $black-secondary;
+  clear: both;
+}
+
+.form-field-set__fields {
+  clear: both;
+
+  .form-field {
+    padding: 0.5rem 0;
+  }
 }

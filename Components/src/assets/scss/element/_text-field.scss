@@ -5,6 +5,45 @@
   &.minimal {
     margin-top: 0;
 
+    &.iconed {
+      .text-field__icons {
+        .text-field__icon {
+          @extend %icon-20;
+        }
+      }
+
+      &.rounded.iconed--leading {
+        .text-field__icons {
+          @include rtlStyle(
+            (
+              padding-right: 0.5rem
+            )
+          );
+          @include ltrStyle(
+            (
+              padding-left: 0.5rem
+            )
+          );
+        }
+      }
+
+      &.iconed--leading:not(.rounded),
+      &.iconed--leading.rounded {
+        .text-field__input {
+          @include rtlStyle(
+            (
+              padding-right: 2.25rem
+            )
+          );
+          @include ltrStyle(
+            (
+              padding-left: 2.25rem
+            )
+          );
+        }
+      }
+    }
+
     & > input,
     & > .text-field__input {
       background-color: transparent;

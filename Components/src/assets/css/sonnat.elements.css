@@ -703,6 +703,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .select__dropdown__options__option-group__option > .select__dropdown__options__option__icon,
 .dropdown.large .dropdown__toggle .dropdown__toggle__icon,
 .accordion__icon,
+.text-field.minimal.iconed .text-field__icons .text-field__icon,
 .fab.small:not(.labeled) .fab__icon, .icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child),
 .dropdown__toggle .dropdown__toggle__icon, .icon-16, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon, .button.small .button__icon,
 .select.small .select__dropdown__options__option > .select__dropdown__options__option__icon,
@@ -765,6 +766,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .select__dropdown__options__option-group__option > .select__dropdown__options__option__icon,
 .dropdown.large .dropdown__toggle .dropdown__toggle__icon,
 .accordion__icon,
+.text-field.minimal.iconed .text-field__icons .text-field__icon,
 .fab.small:not(.labeled) .fab__icon {
   width: 1.25rem;
   height: 1.25rem;
@@ -780,6 +782,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .select__dropdown__options__option-group__option > .select__dropdown__options__option__icon > svg,
 .dropdown.large .dropdown__toggle .dropdown__toggle__icon > svg,
 .accordion__icon > svg,
+.text-field.minimal.iconed .text-field__icons .text-field__icon > svg,
 .fab.small:not(.labeled) .fab__icon > svg {
   width: 100%;
   height: 100%;
@@ -2697,7 +2700,7 @@ body[dir=ltr] .fab__icon + .fab__label, body:not([dir=ltr]):not([dir=rtl]) .fab_
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 
 .form-field__label {
@@ -2762,11 +2765,10 @@ body[dir=ltr] .form-field__hints__input-length-limit, body:not([dir=ltr]):not([d
 }
 
 .form-field-set {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   margin: 0;
   border: none;
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
 
 .form-field-set__title {
@@ -2774,6 +2776,12 @@ body[dir=ltr] .form-field__hints__input-length-limit, body:not([dir=ltr]):not([d
   font-weight: 500;
   line-height: 2;
   color: rgba(0, 0, 0, 0.87);
+}
+body[dir=rtl] .form-field-set__title {
+  float: right;
+}
+body[dir=ltr] .form-field-set__title, body:not([dir=ltr]):not([dir=rtl]) .form-field-set__title {
+  float: left;
 }
 .form-field-set__title + .form-field-set__description {
   margin-top: 0.25rem;
@@ -2783,6 +2791,14 @@ body[dir=ltr] .form-field__hints__input-length-limit, body:not([dir=ltr]):not([d
   font-size: 14px;
   line-height: 2;
   color: rgba(0, 0, 0, 0.56);
+  clear: both;
+}
+
+.form-field-set__fields {
+  clear: both;
+}
+.form-field-set__fields .form-field {
+  padding: 0.5rem 0;
 }
 
 .text-field {
@@ -2791,6 +2807,18 @@ body[dir=ltr] .form-field__hints__input-length-limit, body:not([dir=ltr]):not([d
 }
 .text-field.minimal {
   margin-top: 0;
+}
+body[dir=rtl] .text-field.minimal.iconed.rounded.iconed--leading .text-field__icons {
+  padding-right: 0.5rem;
+}
+body[dir=ltr] .text-field.minimal.iconed.rounded.iconed--leading .text-field__icons, body:not([dir=ltr]):not([dir=rtl]) .text-field.minimal.iconed.rounded.iconed--leading .text-field__icons {
+  padding-left: 0.5rem;
+}
+body[dir=rtl] .text-field.minimal.iconed.iconed--leading:not(.rounded) .text-field__input, body[dir=rtl] .text-field.minimal.iconed.iconed--leading.rounded .text-field__input {
+  padding-right: 2.25rem;
+}
+body[dir=ltr] .text-field.minimal.iconed.iconed--leading:not(.rounded) .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field.minimal.iconed.iconed--leading:not(.rounded) .text-field__input, body[dir=ltr] .text-field.minimal.iconed.iconed--leading.rounded .text-field__input, body:not([dir=ltr]):not([dir=rtl]) .text-field.minimal.iconed.iconed--leading.rounded .text-field__input {
+  padding-left: 2.25rem;
 }
 .text-field.minimal > input, .text-field.minimal > .text-field__input {
   background-color: transparent;
