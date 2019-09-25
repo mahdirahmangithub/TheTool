@@ -124,8 +124,17 @@
 }
 
 .toolbox__content__container {
+  &.vertical-content {
+    flex-direction: column;
+  }
+
+  &.horizontal-content,
+  &:not(.horizontal-content):not(.vertical-content) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   display: flex;
-  flex-direction: column;
   position: relative;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;

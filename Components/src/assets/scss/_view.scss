@@ -8,11 +8,8 @@
 
   & > .sidebar-view__content {
     width: 100%;
-  }
-
-  & > .sidebar-view__content,
-  & > .sidebar-view__sidebar {
-    @extend %overflow-x-hidden, %overflow-y-auto;
+    flex-grow: 1;
+    flex-basis: 0;
   }
 
   @media (max-width: map-get($map: $breakpoints, $key: "lg") - 1) {
@@ -35,8 +32,11 @@
 
   & > .form-view__content {
     width: 100%;
+    flex-basis: 0;
+    flex-grow: 1;
     margin: 0 auto;
-    @extend %overflow-x-hidden, %overflow-y-auto;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   @media (min-width: map-get($map: $breakpoints, $key: "sm")) {
@@ -51,9 +51,12 @@
 
   & > .chat-view__content {
     width: 100%;
+    flex-basis: 0;
+    flex-grow: 1;
     max-width: 1024px;
     margin: 0 auto;
-    @extend %overflow-x-hidden, %overflow-y-auto;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 }
 
@@ -62,8 +65,11 @@
 
   & > .post-view__content {
     width: 100%;
+    flex-basis: 0;
+    flex-grow: 1;
     margin: 0 auto;
-    @extend %overflow-x-hidden, %overflow-y-auto;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   @media (min-width: map-get($map: $breakpoints, $key: "sm")) {

@@ -192,12 +192,10 @@ template {
   overflow-x: auto;
 }
 
-.post-view > .post-view__content, .chat-view > .chat-view__content, .form-view > .form-view__content, .sidebar-view > .sidebar-view__content, .sidebar-view > .sidebar-view__sidebar,
 .overflow-y-auto {
   overflow-y: auto;
 }
 
-.post-view > .post-view__content, .chat-view > .chat-view__content, .form-view > .form-view__content, .sidebar-view > .sidebar-view__content, .sidebar-view > .sidebar-view__sidebar,
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -6302,6 +6300,8 @@ p {
 
 .sidebar-view > .sidebar-view__content {
   width: 100%;
+  flex-grow: 1;
+  flex-basis: 0;
 }
 @media (max-width: 1023px) {
   .sidebar-view > .sidebar-view__sidebar {
@@ -6318,7 +6318,11 @@ p {
 
 .form-view > .form-view__content {
   width: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
   margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 @media (min-width: 770px) {
   .form-view > .form-view__content {
@@ -6328,13 +6332,21 @@ p {
 
 .chat-view > .chat-view__content {
   width: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
   max-width: 1024px;
   margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .post-view > .post-view__content {
   width: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
   margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 @media (min-width: 770px) {
   .post-view > .post-view__content {
@@ -9390,10 +9402,16 @@ body[dir=ltr] .toolbox__head__indicator, body:not([dir=ltr]):not([dir=rtl]) .too
 
 .toolbox__content__container {
   display: flex;
-  flex-direction: column;
   position: relative;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.toolbox__content__container.vertical-content {
+  flex-direction: column;
+}
+.toolbox__content__container.horizontal-content, .toolbox__content__container:not(.horizontal-content):not(.vertical-content) {
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .toolbox__view-more {
@@ -10208,9 +10226,10 @@ body[dir=ltr] .chip.removable > .chip__remove, body:not([dir=ltr]):not([dir=rtl]
 
 .range-picker {
   position: relative;
-  min-width: 14rem;
   height: 3.25rem;
   direction: ltr;
+  width: calc(100% - 2.25rem);
+  margin: 0 auto;
 }
 .range-picker.has-infimum .range-picker__inf-to-sup {
   margin-left: 1.625rem;
