@@ -11282,6 +11282,7 @@ body[dir=ltr] .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .s
   align-items: center;
   height: 2.5rem;
   cursor: pointer;
+  transition: background-color 360ms ease;
 }
 .select__dropdown__options__option.disabled,
 .select__dropdown__options__option-group__option.disabled {
@@ -11304,16 +11305,9 @@ body[dir=ltr] .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .s
 .select__dropdown__options__option-group__option.hide {
   display: none;
 }
-.select__dropdown__options__option:hover > .select__dropdown__options__option__text, .select__dropdown__options__option:hover > .select__dropdown__options__option-group__option__text, .select__dropdown__options__option:focus > .select__dropdown__options__option__text, .select__dropdown__options__option:focus > .select__dropdown__options__option-group__option__text,
-.select__dropdown__options__option-group__option:hover > .select__dropdown__options__option__text,
-.select__dropdown__options__option-group__option:hover > .select__dropdown__options__option-group__option__text,
-.select__dropdown__options__option-group__option:focus > .select__dropdown__options__option__text,
-.select__dropdown__options__option-group__option:focus > .select__dropdown__options__option-group__option__text {
-  color: rgba(0, 0, 0, 0.87);
-}
-.select__dropdown__options__option:active, .select__dropdown__options__option.selected,
-.select__dropdown__options__option-group__option:active,
-.select__dropdown__options__option-group__option.selected {
+.select__dropdown__options__option:hover, .select__dropdown__options__option:focus,
+.select__dropdown__options__option-group__option:hover,
+.select__dropdown__options__option-group__option:focus {
   background-color: rgba(0, 0, 0, 0.04);
 }
 .select__dropdown__options__option:active > .select__dropdown__options__option__text, .select__dropdown__options__option:active > .select__dropdown__options__option-group__option__text, .select__dropdown__options__option.selected > .select__dropdown__options__option__text, .select__dropdown__options__option.selected > .select__dropdown__options__option-group__option__text,
@@ -11321,17 +11315,17 @@ body[dir=ltr] .select__choose-field__unit, body:not([dir=ltr]):not([dir=rtl]) .s
 .select__dropdown__options__option-group__option:active > .select__dropdown__options__option-group__option__text,
 .select__dropdown__options__option-group__option.selected > .select__dropdown__options__option__text,
 .select__dropdown__options__option-group__option.selected > .select__dropdown__options__option-group__option__text {
-  color: rgba(0, 0, 0, 0.87);
+  color: #a62626;
 }
 .select__dropdown__options__option:active > .select__dropdown__options__option__icon, .select__dropdown__options__option.selected > .select__dropdown__options__option__icon,
 .select__dropdown__options__option-group__option:active > .select__dropdown__options__option__icon,
 .select__dropdown__options__option-group__option.selected > .select__dropdown__options__option__icon {
-  color: rgba(0, 0, 0, 0.87);
+  color: #a62626;
 }
 .select__dropdown__options__option:active > .select__dropdown__options__option__icon .fill, .select__dropdown__options__option.selected > .select__dropdown__options__option__icon .fill,
 .select__dropdown__options__option-group__option:active > .select__dropdown__options__option__icon .fill,
 .select__dropdown__options__option-group__option.selected > .select__dropdown__options__option__icon .fill {
-  fill: rgba(0, 0, 0, 0.87);
+  fill: #a62626;
 }
 .select__dropdown__options__option > .select__dropdown__options__option__text, .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
 .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,

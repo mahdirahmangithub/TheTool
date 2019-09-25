@@ -86,7 +86,7 @@ ul {
   transform: translate3d(0, 0, 0);
 }
 
-.card-post__content__footer__tags > span, .card-post__content__descriptor, .card-post__content__title, .range-field__labels .range-field__labels__label, .row-element__trail-segment__title, .row-element__mid-segment__title, .row-element__lead-segment__subtitle, .row-element__lead-segment__title, .row-element.row-expandable .row-element__collapsed-content__container, .select__dropdown__options__option > .select__dropdown__options__option__text, .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+.action-element__text, .card-post__content__footer__tags > span, .card-post__content__descriptor, .card-post__content__title, .range-field__labels .range-field__labels__label, .row-element__trail-segment__title, .row-element__mid-segment__title, .row-element__lead-segment__subtitle, .row-element__lead-segment__title, .row-element.row-expandable .row-element__collapsed-content__container, .select__dropdown__options__option > .select__dropdown__options__option__text, .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
 .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
 .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, .select__dropdown__options__option-group__title, .select__choose-field__unit, .select__choose-field__text, .dropdown__menu .dropdown__menu__item > a, .dropdown__toggle,
 .dropdown__toggle .dropdown__toggle__text, .breadcrumb__item, .breadcrumb__item > a, .badge, .chip,
@@ -116,7 +116,7 @@ h1 {
   text-size-adjust: 100%;
   color: rgba(0, 0, 0, 0.87);
 }
-.card-post__content__footer__tags > span.typography-transition, .typography-transition.card-post__content__descriptor, .typography-transition.card-post__content__title, .range-field__labels .typography-transition.range-field__labels__label, .typography-transition.row-element__trail-segment__title, .typography-transition.row-element__mid-segment__title, .typography-transition.row-element__lead-segment__subtitle, .typography-transition.row-element__lead-segment__title, .row-element.row-expandable .typography-transition.row-element__collapsed-content__container, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option__text, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option-group__option__text,
+.typography-transition.action-element__text, .card-post__content__footer__tags > span.typography-transition, .typography-transition.card-post__content__descriptor, .typography-transition.card-post__content__title, .range-field__labels .typography-transition.range-field__labels__label, .typography-transition.row-element__trail-segment__title, .typography-transition.row-element__mid-segment__title, .typography-transition.row-element__lead-segment__subtitle, .typography-transition.row-element__lead-segment__title, .row-element.row-expandable .typography-transition.row-element__collapsed-content__container, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option__text, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option-group__option__text,
 .select__dropdown__options__option-group__option > .typography-transition.select__dropdown__options__option__text,
 .select__dropdown__options__option-group__option > .typography-transition.select__dropdown__options__option-group__option__text, .typography-transition.select__dropdown__options__option-group__title, .typography-transition.select__choose-field__unit, .typography-transition.select__choose-field__text, .dropdown__menu .dropdown__menu__item > a.typography-transition, .typography-transition.dropdown__toggle,
 .dropdown__toggle .typography-transition.dropdown__toggle__text, .typography-transition.breadcrumb__item, .breadcrumb__item > a.typography-transition, .typography-transition.badge, .typography-transition.chip,
@@ -630,6 +630,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .row-element__lead-segment__icon,
 .text-field__icons .text-field__icon,
 .fab__icon, .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child),
+.action-element__icon,
 .card-post__content__footer__chat,
 .row-element.small .row-element__lead-segment__icon,
 .row-element.small .row-element__trail-segment__icon,
@@ -640,6 +641,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .text-field.minimal.iconed .text-field__icons .text-field__icon,
 .fab.small:not(.labeled) .fab__icon, .icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child),
 .dropdown__toggle .dropdown__toggle__icon, .icon-16, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon, .button.small .button__icon,
+.action-container.small-icon .action-element__icon,
 .select.small .select__dropdown__options__option > .select__dropdown__options__option__icon,
 .select.small .select__dropdown__options__option-group__option > .select__dropdown__options__option__icon,
 .dropdown.small .dropdown__toggle .dropdown__toggle__icon,
@@ -653,6 +655,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 }
 
 .icon-16, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon, .button.small .button__icon,
+.action-container.small-icon .action-element__icon,
 .select.small .select__dropdown__options__option > .select__dropdown__options__option__icon,
 .select.small .select__dropdown__options__option-group__option > .select__dropdown__options__option__icon,
 .dropdown.small .dropdown__toggle .dropdown__toggle__icon,
@@ -667,6 +670,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   font-size: 1rem;
 }
 .icon-16 > svg, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon > svg, .button.small .button__icon > svg,
+.action-container.small-icon .action-element__icon > svg,
 .select.small .select__dropdown__options__option > .select__dropdown__options__option__icon > svg,
 .select.small .select__dropdown__options__option-group__option > .select__dropdown__options__option__icon > svg,
 .dropdown.small .dropdown__toggle .dropdown__toggle__icon > svg,
@@ -693,6 +697,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 }
 
 .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child),
+.action-element__icon,
 .card-post__content__footer__chat,
 .row-element.small .row-element__lead-segment__icon,
 .row-element.small .row-element__trail-segment__icon,
@@ -709,6 +714,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   font-size: 1.25rem;
 }
 .icon-20 > svg, .button .button__icon > svg, .tab-list__tab__content .tab-list__tab-icon:not(:only-child) > svg,
+.action-element__icon > svg,
 .card-post__content__footer__chat > svg,
 .row-element.small .row-element__lead-segment__icon > svg,
 .row-element.small .row-element__trail-segment__icon > svg,
@@ -6031,6 +6037,50 @@ body[dir=ltr] .card-post__image, body:not([dir=ltr]):not([dir=rtl]) .card-post__
 }
 .card-post__image > img {
   border-radius: 0.125rem;
+}
+
+.action-container {
+  display: flex;
+  align-items: stretch;
+}
+body[dir=rtl] .action-container.small-icon.small-text .action-element__icon {
+  margin-left: 0.25rem;
+}
+body[dir=ltr] .action-container.small-icon.small-text .action-element__icon, body:not([dir=ltr]):not([dir=rtl]) .action-container.small-icon.small-text .action-element__icon {
+  margin-right: 0.25rem;
+}
+.action-container.small-text .action-element__text {
+  font-size: 0.875rem;
+}
+
+.action-element {
+  flex-grow: 1;
+  flex-basis: 0;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.action-element__icon {
+  color: rgba(0, 0, 0, 0.56);
+  transition: color 360ms ease;
+}
+body[dir=rtl] .action-element__icon {
+  margin-left: 0.5rem;
+}
+body[dir=ltr] .action-element__icon, body:not([dir=ltr]):not([dir=rtl]) .action-element__icon {
+  margin-right: 0.5rem;
+}
+
+.action-element__text {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.56);
 }
 
 /*# sourceMappingURL=sonnat.elements.css.map */
