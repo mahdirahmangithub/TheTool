@@ -100,18 +100,30 @@
   }
 }
 
-.responsive-imagery {
+.responsive-imagery,
+%responsive-imagery {
   text-align: center;
 
-  & > .w-responsive-image {
+  & > .w-responsive-image,
+  %w-responsive-img {
     max-width: 100%;
     height: auto;
   }
 
-  & > .h-responsive-image {
+  & > .h-responsive-image,
+  %h-reponsive-image {
     max-height: 100%;
     width: auto;
   }
+}
+
+%content-in-ratio {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
 }
 
 .preserve-aspect-ratio {
@@ -120,13 +132,9 @@
   height: 0;
   overflow: hidden;
 
-  & > img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: auto;
+  & > img,
+  .content-in-ratio {
+    @extend %content-in-ratio;
   }
 
   &.ratio-1-1 {
@@ -139,5 +147,70 @@
 
   &.ratio-16-9 {
     padding-top: 56.25%;
+  }
+}
+
+%preserve-aspect-ratio-1-1 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 100%;
+
+  & > img,
+  .content-in-ratio {
+    @extend %content-in-ratio;
+  }
+}
+
+%preserve-aspect-ratio-4-3 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 75%;
+
+  & > img,
+  .content-in-ratio {
+    @extend %content-in-ratio;
+  }
+}
+
+%preserve-aspect-ratio-16-9 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 56.25%;
+
+  & > img,
+  .content-in-ratio {
+    @extend %content-in-ratio;
+  }
+}
+
+%preserve-aspect-ratio-3-2 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 66.6667%;
+
+  & > img,
+  .content-in-ratio {
+    @extend %content-in-ratio;
+  }
+}
+
+%preserve-aspect-ratio-golden {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 61.8034%;
+
+  & > img,
+  .content-in-ratio {
+    @extend %content-in-ratio;
   }
 }

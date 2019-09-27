@@ -1,0 +1,130 @@
+.carousel {
+  position: relative;
+  width: 100%;
+
+  &[data-aspect-ratio="1:1"] {
+    .carousel__frames__inner-wrapper {
+      @extend %preserve-aspect-ratio-1-1;
+    }
+  }
+
+  &[data-aspect-ratio="4:3"] {
+    .carousel__frames__inner-wrapper {
+      @extend %preserve-aspect-ratio-4-3;
+    }
+  }
+
+  &[data-aspect-ratio="16:9"] {
+    .carousel__frames__inner-wrapper {
+      @extend %preserve-aspect-ratio-16-9;
+    }
+  }
+
+  &[data-aspect-ratio="3:2"] {
+    .carousel__frames__inner-wrapper {
+      @extend %preserve-aspect-ratio-3-2;
+    }
+  }
+
+  &[data-aspect-ratio="golden"] {
+    .carousel__frames__inner-wrapper {
+      @extend %preserve-aspect-ratio-golden;
+    }
+  }
+}
+
+.carousel__frames {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.carousel__frames__inner-wrapper {
+  transform: translateX(0);
+}
+
+.carousel__frame {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  transition: transform 360ms linear;
+}
+
+.carousel__image {
+  flex-shrink: 0;
+  height: 100%;
+  min-height: 1px;
+}
+
+.carousel__indicators {
+  height: 3rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .carousel__indicators__container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel__indicators__fill {
+    height: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: $white;
+    position: absolute;
+    left: 8px;
+    right: 56px;
+
+    &.left {
+      transition: left 0.24s cubic-bezier(0.4, 0, 0.2, 1),
+        right 0.24s 0.064s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &.right {
+      transition: left 0.24s 0.064s cubic-bezier(0.4, 0, 0.2, 1),
+        right 0.24s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .carousel__indicators__indicator {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: whiteColor(0.32);
+    }
+  }
+}
+
+.carousel__handles {
+  .carousel__handles__handle {
+  }
+}
