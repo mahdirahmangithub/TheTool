@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../assets/css/font.css" />
+    <link rel="stylesheet" href="../assets/css/sonnat.font-icon.css" />
+    <link rel="stylesheet" href="../assets/css/sonnat.grid.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/css/divar/sonnat.divar.elements.css"
+    />
+    <title>Navigation Bar</title>
+  </head>
+  <body dir="rtl">
+    <div class="root">
+      <header id="header" class="navbar">
+        <nav class="navbar__nav">
+          <div class="navbar__branding">
+            <div class="navbar__branding__logo">
+              <img src="../assets/media/divar.svg" alt="Divar" />
+            </div>
+          </div>
+          <hr
+            class="divider vertical display-none display-lg-block"
+            style="margin-top: 1rem;margin-bottom: 1rem;margin-right: 1rem;margin-left: 0.5rem"
+          />
+          <div class="navbar__utilities">
+            <button id="navbar__location" class="button inlined navbar__button">
+              <div
+                class="button__icon sonnat-icon sonnat-icon-pin-location-o"
+              ></div>
+              انتخاب شهر
+            </button>
+            <div class="navbar__search-tools">
+              <div class="navbar__search-tools__category">
+                <div class="dropdown inlined iconed small">
+                  <button
+                    class="dropdown__toggle has-caret"
+                    data-toggle="dropdown"
+                  >
+                    <span class="dropdown__toggle__text">دسته‌بندی‌ها</span>
+                  </button>
+                  <div class="dropdown__content">
+                    <ul class="dropdown__menu">
+                      <li class="dropdown__menu__item"><a href="">اول</a></li>
+                      <li class="dropdown__menu__item"><a href="">دوم</a></li>
+                      <li class="dropdown__menu__item"><a href="">سوم</a></li>
+                      <li><hr class="divider" /></li>
+                      <li class="dropdown__menu__item">
+                        <a href="">چهارم</a>
+                      </li>
+                      <li class="dropdown__menu__item">
+                        <a href="">پنجم</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="navbar__search-tools__searchbox">
+                <div class="navbar__search-tools__searchbox__search">
+                  <div class="text-field minimal iconed iconed--leading">
+                    <input
+                      class="text-field__input"
+                      type="text"
+                      placeholder="جستجو در دیوار"
+                      name="search"
+                    />
+                    <div class="text-field__icons">
+                      <div class="text-field__icons__leading">
+                        <div
+                          class="text-field__icon sonnat-icon sonnat-icon-search-o"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="navbar__search-tools__searchbox__search-results"
+                ></div>
+              </div>
+            </div>
+            <hr
+              class="divider vertical spaced display-block display-xlg-none"
+              style="margin-top: 16px;margin-bottom: 16px"
+            />
+            <div class="navbar__actions">
+              <button
+                id="navbar__profile"
+                class="button inlined navbar__button"
+              >
+                <div
+                  class="button__icon sonnat-icon sonnat-icon-person-o"
+                ></div>
+                دیوار من
+              </button>
+              <button id="navbar__chat" class="button inlined navbar__button">
+                <div
+                  class="button__icon sonnat-icon sonnat-icon-dialog-o"
+                ></div>
+                چت
+              </button>
+              <button
+                id="navbar__support"
+                class="button inlined navbar__button"
+              >
+                <div
+                  class="button__icon sonnat-icon sonnat-icon-dialog-o"
+                ></div>
+                پشتیبانی
+              </button>
+              <button id="navbar__submit" class="button primary">
+                ثبت رایگان آگهی
+              </button>
+            </div>
+          </div>
+          <div class="navbar__mobile-utilities">
+            <div class="navbar__mobile-actions">
+              <button
+                id="navbar__mobile-search"
+                class="button inlined icon-button"
+              >
+                <div
+                  class="button__icon sonnat-icon sonnat-icon-search-o"
+                ></div>
+              </button>
+              <button
+                id="navbar__mobile-profile"
+                class="button inlined icon-button"
+              >
+                <div
+                  class="button__icon sonnat-icon sonnat-icon-person-o"
+                ></div>
+              </button>
+              <button
+                id="navbar__mobile-chat"
+                class="button inlined icon-button"
+              >
+                <div
+                  class="button__icon sonnat-icon sonnat-icon-dialog-o"
+                ></div>
+              </button>
+              <button
+                id="navbar__mobile-burger"
+                class="button inlined icon-button"
+              >
+                <div
+                  class="button__icon sonnat-icon sonnat-icon-burger-menu-o"
+                ></div>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div class="navbar__extensions action-container small-text">
+          <div id="navbar__extensions__categories" class="action-element">
+            <div
+              class="action-element__icon sonnat-icon sonnat-icon-category-o"
+            ></div>
+            <span class="action-element__text">دسته‌بندی‌ها</span>
+          </div>
+          <hr class="divider vertical padded" />
+          <div id="navbar__extensions__filters" class="action-element">
+            <div
+              class="action-element__icon sonnat-icon sonnat-icon-filter-o"
+            ></div>
+            <span class="action-element__text">فیلترها</span>
+            <div class="badge">۳</div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
