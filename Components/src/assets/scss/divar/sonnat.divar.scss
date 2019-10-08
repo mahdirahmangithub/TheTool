@@ -4,4 +4,5 @@
 @import "../sonnat.scss";
 
 // DIVAR ELEMENTS
-@import "element/navigation-bar";
+@import "element/navigation-bar", "element/nav-button", "element/nav-dropdown",
+  "element/nav-menu", "element/nav-filters";

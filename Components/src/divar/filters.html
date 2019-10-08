@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../assets/css/font.css" />
+    <link rel="stylesheet" href="../assets/css/sonnat.font-icon.css" />
+    <link rel="stylesheet" href="../assets/css/sonnat.grid.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/css/divar/sonnat.divar.elements.css"
+    />
+    <title>Navbar Filters</title>
+  </head>
+  <body dir="rtl">
+    <div class="root">
+      <div class="navbar__filters">
+        <div class="navbar__filters__head">
+          <span
+            class="navbar__filters__head__icon sonnat-icon sonnat-icon-arrow-backward-large-o"
+          ></span>
+          <span class="navbar__filters__head__title">فیلترها</span>
+          <button class="navbar__filters__head__clear button inlined small">
+            <span class="button__icon sonnat-icon sonnat-icon-remove-o"></span>
+            حذف همه
+          </button>
+        </div>
+        <div class="toolbox navbar__filter">
+          <div class="toolbox__head">
+            <div
+              class="toolbox__head__title collapsable"
+              data-toggle="collapse"
+              data-target="#filters"
+            >
+              <div class="toolbox__head__title__caret"></div>
+              <strong class="toolbox__head__title__text">فیلترها</strong>
+            </div>
+            <div class="indicator toolbox__head__indicator"></div>
+          </div>
+          <div class="toolbox__content collapse show" id="filters">
+            <div class="toolbox__content__container">
+              <div class="filter-chip chip primary removable rounded">
+                <span class="chip__text">عنوان</span>
+                <button class="chip__remove">
+                  <div
+                    class="chip__remove__icon sonnat-icon sonnat-icon-remove-o"
+                  ></div>
+                </button>
+              </div>
+              <div class="filter-chip chip primary removable rounded">
+                <span class="chip__text">عنوان</span>
+                <button class="chip__remove">
+                  <div
+                    class="chip__remove__icon sonnat-icon sonnat-icon-remove-o"
+                  ></div>
+                </button>
+              </div>
+              <div class="filter-chip chip primary removable rounded">
+                <span class="chip__text">عنوان</span>
+                <button class="chip__remove">
+                  <div
+                    class="chip__remove__icon sonnat-icon sonnat-icon-remove-o"
+                  ></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="divider thick" />
+        <div class="accordion iconed navbar__filter">
+          <p class="accordion__heading">دسته‌بندی‌ها</p>
+          <ul class="accordion__list">
+            <li class="accordion__list__item">
+              <a class="back-to-root" href=""
+                ><div
+                  class="accordion__icon sonnat-icon sonnat-icon-arrow-backward-o"
+                ></div>
+                همه آگهی‌ها</a
+              >
+            </li>
+            <li class="accordion__list__item">
+              <a
+                href=""
+                class="collapsable"
+                data-toggle="collapse"
+                data-target="#cl1"
+              >
+                <div
+                  class="accordion__icon sonnat-icon sonnat-icon-car-o"
+                ></div>
+                وسایل نقلیه
+              </a>
+              <ul class="accordion__list__sub-list collapse show" id="cl1">
+                <li class="accordion__list__sub-list__item">
+                  <a
+                    href=""
+                    class="collapsable"
+                    data-toggle="collapse"
+                    data-target="#cl2"
+                    >خودرو</a
+                  >
+                  <ul class="accordion__list__sub-list collapse show" id="cl2">
+                    <li class="accordion__list__sub-list__item">
+                      <a href="" class="active">سواری</a>
+                    </li>
+                    <li class="accordion__list__sub-list__item">
+                      <a href="">کلاسیک</a>
+                    </li>
+                    <li class="accordion__list__sub-list__item">
+                      <a href="">اجاره‌ای</a>
+                    </li>
+                    <li class="accordion__list__sub-list__item">
+                      <a href="">سنگین</a>
+                    </li>
+                  </ul>
+                  <div class="caret"></div>
+                </li>
+              </ul>
+              <div class="caret"></div>
+            </li>
+          </ul>
+        </div>
+        <hr class="divider thick" />
+        <div class="toolbox navbar__filter">
+          <div class="toolbox__head">
+            <div
+              class="toolbox__head__title collapsable"
+              data-toggle="collapse"
+              data-target="#brands"
+            >
+              <div class="toolbox__head__title__caret"></div>
+              <strong class="toolbox__head__title__text">برند</strong>
+            </div>
+            <div class="indicator toolbox__head__indicator"></div>
+          </div>
+          <div class="toolbox__content collapse show" id="brands">
+            <div class="toolbox__content__container vertical-content">
+              <div class="filter-search">
+                <div class="text-field iconed iconed--leading iconed--trailing">
+                  <input
+                    id="text-input-0"
+                    class="text-field__input"
+                    type="text"
+                    placeholder="جستجو در برند"
+                    name="text_input"
+                    maxlength="20"
+                  />
+                  <div class="text-field__icons">
+                    <div class="text-field__icons__leading">
+                      <div
+                        class="text-field__icon sonnat-icon sonnat-icon-search-o"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="text-field__wrapper"></div>
+                </div>
+              </div>
+              <div class="checkbox-control">
+                <div class="checkbox-control__cell">
+                  <input
+                    class="checkbox-control__input"
+                    id="checkbox_control_2"
+                    type="checkbox"
+                    name="rr"
+                    value="x"
+                  />
+                  <div class="checkbox-control__button"></div>
+                  <div class="checkbox-control__check-icon">
+                    <svg>
+                      <polyline
+                        id="Path"
+                        transform="translate(5.974874, 2.353553) rotate(-45.000000) translate(-5.974874, -2.353553) "
+                        points="2 0.292893219 2 4.29289322 9.94974747 4.41421356"
+                      ></polyline>
+                    </svg>
+                  </div>
+                  <div class="checkbox-control__rippler rippler">
+                    <div class="checkbox-control__ripple ripple"></div>
+                  </div>
+                </div>
+                <label class="checkbox-control__label" for="checkbox_control_2"
+                  >عنوان</label
+                >
+              </div>
+              <div
+                id="brands-more"
+                class="toolbox__view-more__content collapse show"
+              >
+                <div class="toolbox__view-more__content__container">
+                  <div class="checkbox-control">
+                    <div class="checkbox-control__cell">
+                      <input
+                        class="checkbox-control__input"
+                        id="checkbox_control_3"
+                        type="checkbox"
+                        name="rrr"
+                        value="x"
+                      />
+                      <div class="checkbox-control__button"></div>
+                      <div class="checkbox-control__check-icon">
+                        <svg>
+                          <polyline
+                            id="Path"
+                            transform="translate(5.974874, 2.353553) rotate(-45.000000) translate(-5.974874, -2.353553) "
+                            points="2 0.292893219 2 4.29289322 9.94974747 4.41421356"
+                          ></polyline>
+                        </svg>
+                      </div>
+                      <div class="checkbox-control__rippler rippler">
+                        <div class="checkbox-control__ripple ripple"></div>
+                      </div>
+                    </div>
+                    <label
+                      class="checkbox-control__label"
+                      for="checkbox_control_3"
+                      >عنوان</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="toolbox__view-more collapsable"
+              data-toggle="collapse"
+              data-target="#brands-more"
+            >
+              <div
+                class="toolbox__view-more__icon sonnat-icon sonnat-icon-arrow-down-o"
+              ></div>
+              <span
+                class="toolbox__view-more__text"
+                data-more="بیشتر"
+                data-less="کمتر"
+                >مشاهده موارد</span
+              >
+            </div>
+          </div>
+        </div>
+        <hr class="divider thick" />
+        <div class="toolbox navbar__filter">
+          <div class="toolbox__head">
+            <div
+              class="toolbox__head__title collapsable"
+              data-toggle="collapse"
+              data-target="#pricing"
+            >
+              <div class="toolbox__head__title__caret"></div>
+              <strong class="toolbox__head__title__text">قیمت</strong>
+            </div>
+            <div class="indicator toolbox__head__indicator"></div>
+          </div>
+          <div class="toolbox__content collapse show" id="pricing">
+            <div class="toolbox__content__container vertical-content">
+              <div
+                class="range-picker has-infimum"
+                data-min="0"
+                data-max="150000"
+                data-step="10000"
+              >
+                <div class="range-picker__wrapper">
+                  <div class="range-picker__steps"></div>
+                  <div class="range-picker__interval">
+                    <div class="range-picker__sup-handle range-picker__handle">
+                      <button
+                        class="range-picker__sup-handle__circle range-picker__handle__circle"
+                      >
+                        <div
+                          class="range-picker__handle__icon sonnat-icon sonnat-icon-arrow-left-o"
+                        ></div>
+                      </button>
+                    </div>
+                    <div class="range-picker__track"></div>
+                    <div class="range-picker__inf-handle range-picker__handle">
+                      <button
+                        class="range-picker__inf-handle__circle range-picker__handle__circle"
+                      >
+                        <div
+                          class="range-picker__handle__icon sonnat-icon sonnat-icon-arrow-right-o"
+                        ></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="range-field">
+                <div class="range-field__labels">
+                  <div
+                    class="range-field__labels__label range-field__labels__from"
+                  >
+                    از
+                  </div>
+                  <div class="range-field__labels__divide"></div>
+                  <div
+                    class="range-field__labels__label range-field__labels__to"
+                  >
+                    تا
+                  </div>
+                </div>
+                <div class="range-field__inputs">
+                  <div
+                    class="range-field__inputs__input range-field__inputs__from"
+                  >
+                    <div class="text-field">
+                      <input
+                        id="text-input-0"
+                        class="text-field__input"
+                        type="text"
+                        placeholder="حداقل قیمت"
+                        name="text_input"
+                        maxlength="20"
+                      />
+                      <div class="text-field__wrapper"></div>
+                    </div>
+                  </div>
+                  <div
+                    class="range-field__inputs__input range-field__inputs__to"
+                  >
+                    <div class="text-field">
+                      <input
+                        id="text-input-0"
+                        class="text-field__input"
+                        type="text"
+                        placeholder="حداکثر قیمت"
+                        name="text_input"
+                        maxlength="20"
+                      />
+                      <div class="text-field__wrapper"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="divider thick" />
+        <div class="toolbox navbar__filter">
+          <div class="toolbox__head">
+            <div
+              class="toolbox__head__title collapsable"
+              data-toggle="collapse"
+              data-target="#mileage"
+            >
+              <div class="toolbox__head__title__caret"></div>
+              <strong class="toolbox__head__title__text">کارکرد</strong>
+            </div>
+            <div class="indicator toolbox__head__indicator"></div>
+          </div>
+          <div class="toolbox__content collapse show" id="mileage">
+            <div class="toolbox__content__container">
+              <div
+                class="select searchable removable"
+                data-placeholder="یک مورد را انتخاب کنید"
+                data-unit="تومان"
+              >
+                <select class="select__input" name="n">
+                  <option></option>
+                  <option value="1" selected>انتخاب ۱</option>
+                  <option value="2" selected>انتخاب ۲</option>
+                  <option value="3" selected>انتخاب ۳</option>
+                  <option value="4">انتخاب ۴</option>
+                  <optgroup label="گروه اول">
+                    <option value="5">انتخاب ۵</option>
+                    <option value="6">انتخاب ۶</option>
+                    <option value="7" disabled>انتخاب ۷</option>
+                  </optgroup>
+                </select>
+                <div class="select__choose-field">
+                  <div class="select__choose-field__clear">
+                    <div
+                      class="select__choose-field__clear__icon sonnat-icon sonnat-icon-remove-o"
+                    ></div>
+                  </div>
+                  <span class="select__choose-field__text"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="divider thick" />
+        <div class="toolbox navbar__filter">
+          <div class="toolbox__head">
+            <div
+              class="toolbox__head__title collapsable"
+              data-toggle="collapse"
+              data-target="#vicinity"
+            >
+              <div class="toolbox__head__title__caret"></div>
+              <strong class="toolbox__head__title__text">محله</strong>
+            </div>
+            <div class="indicator toolbox__head__indicator"></div>
+          </div>
+          <div class="toolbox__content collapse show" id="vicinity">
+            <div class="toolbox__content__container">
+              <div
+                class="select searchable multiple"
+                data-placeholder="یک مورد را انتخاب کنید"
+              >
+                <select class="select__input" name="n[]" multiple>
+                  <option></option>
+                  <option value="1" selected>انتخاب ۱</option>
+                  <option value="2" selected>انتخاب ۲</option>
+                  <option value="3" selected>انتخاب ۳</option>
+                  <option value="4">انتخاب ۴</option>
+                  <optgroup label="گروه اول">
+                    <option value="5">انتخاب ۵</option>
+                    <option value="6">انتخاب ۶</option>
+                    <option value="7" disabled>انتخاب ۷</option>
+                    <option value="8" disabled>انتخاب ۷</option>
+                    <option value="9" disabled>انتخاب ۷</option>
+                    <option value="10" disabled>انتخاب ۷</option>
+                  </optgroup>
+                </select>
+                <div class="select__choose-field">
+                  <span class="select__choose-field__text"
+                    >یک مورد را انتخاب کنید</span
+                  >
+                  <div class="select__choose-field__chips hide"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

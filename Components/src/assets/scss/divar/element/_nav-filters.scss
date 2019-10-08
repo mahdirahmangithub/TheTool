@@ -1,0 +1,70 @@
+.navbar__filters {
+  .filter-chip {
+    margin-bottom: 0.5rem;
+
+    @include rtlStyle(
+      (
+        margin-left: 0.5rem
+      )
+    );
+    @include ltrStyle(
+      (
+        margin-right: 0.5rem
+      )
+    );
+  }
+
+  .range-field__labels .range-field__labels__label {
+    font-size: 0.875rem;
+  }
+}
+
+.navbar__filter {
+  padding: 0 1rem;
+}
+
+.navbar__filters__head {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  box-shadow: 0 1px 2px 0 $black-divider;
+}
+
+.navbar__filters__head__icon {
+  @extend %icon-20;
+  @include rtlStyle(
+    (
+      margin-left: 0.5rem
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-right: 0.5rem
+    )
+  );
+
+  color: $black-secondary;
+}
+
+.navbar__filters__head__title {
+  @extend %base-text;
+
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 2;
+  color: $black-secondary;
+}
+
+.navbar__filters__head__clear {
+  @include rtlStyle(
+    (
+      margin-right: auto
+    )
+  );
+  @include ltrStyle(
+    (
+      margin-left: auto
+    )
+  );
+}

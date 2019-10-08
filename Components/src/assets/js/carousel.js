@@ -2,9 +2,9 @@
   if (typeof define === "function" && define.amd) {
     define([], factory);
   } else if (typeof module === "object" && module.exports) {
-    module.exports = factory();
-  } else root.carousel = factory();
-})(typeof self !== "undefined" ? self : this, function() {
+    module.exports = factory(require("./sonnat.dev.utils"));
+  } else root.carousel = factory(root._);
+})(typeof self !== "undefined" ? self : this, function(_) {
   return function(selector, opts) {
     if (!selector)
       throw Error(
@@ -38,138 +38,18 @@
     var IMAGE_WIDTH = -1,
       IMAGE_HEIGHT = -1;
 
-    var _utils = {
-      dispatchEvent: function(element, eventName) {
-        if ("createEvent" in document) {
-          var event = document.createEvent("HTMLEvents");
-
-          event.initEvent(eventName, false, true);
-          element.dispatchEvent(event);
-        } else element.fireEvent("on" + eventName);
-      },
-      extend: function() {
-        var extended = {};
-        var deep = false;
-        var i = 0;
-        var argsLength = arguments.length;
-
-        // Check if a deep merge
-        if (typeof arguments[argsLength - 1] === "boolean") {
-          deep = arguments[argsLength - 1];
-          argsLength--;
-        }
-
-        // Merge the object into the extended object
-        var merge = function(o) {
-          for (var p in o) {
-            if (Object.prototype.hasOwnProperty.call(o, p)) {
-              if (deep && typeof o[p] === "object")
-                extended[p] = _extend(extended[p], o[p], true);
-              else extended[p] = o[p];
-            }
-          }
-        };
-
-        // Loop through each object and conduct a merge
-        while (i < argsLength) merge(arguments[i++]);
-
-        return extended;
-      },
-      closest: function(element, selectors) {
-        if (Element.prototype.closest) return element.closest(selectors);
-        else {
-          // Polyfill for IE9+
-
-          if (!Element.prototype.matches) {
-            Element.prototype.matches =
-              Element.prototype.msMatchesSelector ||
-              Element.prototype.webkitMatchesSelector;
-          }
-          Element.prototype.closest = function(s) {
-            var el = this;
-
-            do {
-              if (el.matches(s)) return el;
-              el = el.parentElement || el.parentNode;
-            } while (el !== null && el.nodeType === 1);
-            return null;
-          };
-        }
-      },
-      addClass: function(element, cName) {
-        var _className = element.className;
-
-        if (_className.indexOf(cName) > -1) return;
-
-        _className = _className.trim();
-        _className += " " + cName;
-        element.className = _className;
-      },
-      removeClass: function(element, cName) {
-        // WARNING: Don't remove 'prettier-ignore' comment!
-        // prettier-ignore
-        var regx = new RegExp('(?:^|\s*)' + cName );
-        element.className = element.className.replace(regx, "");
-      },
-      hasClass: function(element, cName) {
-        return element.className.indexOf(cName) > -1;
-      },
-      attachEvent: function(element, event, callback, opt) {
-        if (element.addEventListener)
-          element.addEventListener(event, callback, opt);
-        else if (element.attachEvent)
-          element.attachEvent("on" + event, callback);
-        else element["on" + event] = callback;
-      },
-      detachEvent: function(element, event, callback, opt) {
-        if (element.removeEventListener)
-          element.removeEventListener(event, callback, opt);
-        else if (element.detachEvent)
-          element.detachEvent("on" + event, callback);
-        else delete element["on" + event];
-      },
-      isArray: function(object) {
-        if (!Array.isArray) {
-          Array.isArray = function(object) {
-            return Object.prototype.toString.call(object) === "[object Array]";
-          };
-        }
-
-        return Array.isArray(object);
-      },
-      removeChilds: function(parent) {
-        if (parent.childNodes && parent.childNodes.length) {
-          var child = parent.firstChild;
-
-          while (child) {
-            parent.removeChild(child);
-            child = parent.firstChild;
-          }
-        }
-      },
-      getCssValue: function(element, property) {
-        return element.style[property];
-      },
-      setCssValue: function(element, property, value) {
-        element.style[property] = value;
-      },
-      getComputedCssValue: function(element, property) {
-        return getComputedStyle(element)[property];
-      }
-    };
-
     var _state = { index: 0, activeIndicator: null, dx: 0 };
-    var _settings = _utils.extend({ isLoopable: false }, opts, true);
+    var _settings = _.extend({ isLoopable: false }, opts, true);
 
     function _computeImageDimensions() {
       var image = _frameElement.querySelector(".carousel__image");
 
       return {
         width: parseInt(
-          _utils.getComputedCssValue(image, "width").replace("px", "")
+          _.getComputedCssValue(image, "width").replace("px", "")
         ),
         height: parseInt(
-          _utils.getComputedCssValue(image, "height").replace("px", "")
+          _.getComputedCssValue(image, "height").replace("px", "")
         )
       };
     }
@@ -179,16 +59,16 @@
       var direction = deltaIndex > 0 ? "left" : "right";
 
       if (direction === "left") {
-        if (_utils.hasClass(_fillIndicator, "right"))
-          _utils.removeClass(_fillIndicator, "right");
-        _utils.addClass(_fillIndicator, "left");
+        if (_.hasClass(_fillIndicator, "right"))
+          _.removeClass(_fillIndicator, "right");
+        _.addClass(_fillIndicator, "left");
       } else {
-        if (_utils.hasClass(_fillIndicator, "left"))
-          _utils.removeClass(_fillIndicator, "left");
-        _utils.addClass(_fillIndicator, "right");
+        if (_.hasClass(_fillIndicator, "left"))
+          _.removeClass(_fillIndicator, "left");
+        _.addClass(_fillIndicator, "right");
       }
 
-      _utils.setCssValue(
+      _.setCssValue(
         _frameElement,
         "transform",
         "translateX(" + (_state.dx + tVal) + "px)"
@@ -210,9 +90,9 @@
       var prevIndex = _state.index;
       _state.index = targetIndex;
 
-      if (!_utils.hasClass(currentTarget, "active")) {
-        _utils.removeClass(_state.activeIndicator, "active");
-        _utils.addClass(currentTarget, "active");
+      if (!_.hasClass(currentTarget, "active")) {
+        _.removeClass(_state.activeIndicator, "active");
+        _.addClass(currentTarget, "active");
         _state.activeIndicator = currentTarget;
       }
 
@@ -220,13 +100,13 @@
     }
 
     function _updateFillPosition() {
-      _utils.setCssValue(
+      _.setCssValue(
         _fillIndicator,
         "left",
         _state.activeIndicator.getAttribute("data-left") + "px"
       );
 
-      _utils.setCssValue(
+      _.setCssValue(
         _fillIndicator,
         "right",
         _state.activeIndicator.getAttribute("data-right") + "px"
@@ -240,7 +120,7 @@
       IMAGE_WIDTH = computedImageDimensions.width;
       IMAGE_HEIGHT = computedImageDimensions.height;
 
-      _utils.setCssValue(
+      _.setCssValue(
         _frameElement,
         "width",
         _images.length * IMAGE_WIDTH + "px"
@@ -259,11 +139,11 @@
           indicatorCountainerBRect.right - indicatorBRect.right + 8
         );
 
-        if (_utils.hasClass(indicator, "active")) {
+        if (_.hasClass(indicator, "active")) {
           _state.activeIndicator = indicator;
         }
 
-        _utils.attachEvent(indicator, "click", _indicatorClickHandler);
+        _.attachEvent(indicator, "click", _indicatorClickHandler);
       });
 
       _updateFillPosition();

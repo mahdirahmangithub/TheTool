@@ -2,9 +2,9 @@
   if (typeof define === "function" && define.amd) {
     define([], factory);
   } else if (typeof module === "object" && module.exports) {
-    module.exports = factory();
-  } else root.select = factory();
-})(typeof self !== "undefined" ? self : this, function() {
+    module.exports = factory(require("./sonnat.dev.utils"));
+  } else root.select = factory(root._);
+})(typeof self !== "undefined" ? self : this, function(_) {
   return function(selector, opts) {
     // Private Fields and Methods
     var _parentElement =
@@ -38,10 +38,10 @@
     var _nativeOptions = _getNativeOptions(),
       _mimicedOptions;
 
-    var _settings = _extend(
+    var _settings = _.extend(
       {
-        isSearchable: _hasClass(_parentElement, "searchable"),
-        isMultiple: _hasClass(_parentElement, "multiple")
+        isSearchable: _.hasClass(_parentElement, "searchable"),
+        isMultiple: _.hasClass(_parentElement, "multiple")
       },
       opts,
       true
@@ -262,15 +262,6 @@
       return fragment;
     }
 
-    function _dispatchEvent(element, eventName) {
-      if ("createEvent" in document) {
-        var event = document.createEvent("HTMLEvents");
-
-        event.initEvent(eventName, false, true);
-        element.dispatchEvent(event);
-      } else element.fireEvent("on" + eventName);
-    }
-
     function _removeValue(value) {
       if (_state.values.length) {
         _state.values.forEach(function(v, index) {
@@ -282,7 +273,7 @@
         });
       }
 
-      _dispatchEvent(_inputElement, "change");
+      _.dispatchEvent(_inputElement, "change");
     }
 
     function _updateValue(value) {
@@ -297,7 +288,7 @@
             : (nativeOption.selected = false);
         }
       } else {
-        if (_isArray(value)) {
+        if (_.isArray(value)) {
           _state.values = value;
 
           _nativeOptions.options.allIds.forEach(function(vID) {
@@ -321,7 +312,7 @@
         }
       }
 
-      _dispatchEvent(_inputElement, "change");
+      _.dispatchEvent(_inputElement, "change");
     }
 
     function _getNativeOptions() {
@@ -331,9 +322,7 @@
       if (_inputElement.childNodes && _inputElement.childNodes.length) {
         var nodes = _inputElement.childNodes;
 
-        for (var i = 0; i < nodes.length; i++) {
-          var node = nodes[i];
-
+        nodes.forEach(function(node) {
           if (node.nodeType === Node.ELEMENT_NODE) {
             if (node.nodeName.toLowerCase() === "option") {
               var id = node.value || node.getAttribute("value") || "empty";
@@ -347,9 +336,7 @@
               if (node.childNodes && node.childNodes.length) {
                 var innerNodes = node.childNodes;
 
-                for (var j = 0; j < innerNodes.length; j++) {
-                  var innerNode = innerNodes[j];
-
+                innerNodes.forEach(function(innerNode) {
                   if (innerNode.nodeType === Node.ELEMENT_NODE) {
                     if (innerNode.nodeName.toLowerCase() === "option") {
                       var id =
@@ -361,11 +348,11 @@
                       nativeOptions.allIds.push(id);
                     }
                   }
-                }
+                });
               }
             }
           }
-        }
+        });
       }
 
       return { options: nativeOptions, childsOfSelect: childsInOrder };
@@ -407,28 +394,28 @@
 
         _state.selected.push(option);
         _updateValue(optionValue);
-        _addClass(option, "selected");
-        _addClass(_fieldElement, "selected");
+        _.addClass(option, "selected");
+        _.addClass(_fieldElement, "selected");
         if (!_settings.isMultiple) {
           _textElement.textContent = optionText;
           _hideDropdown();
         } else {
           var chip = _createChip(optionText, optionValue);
 
-          _addClass(_textElement, "hide");
-          _attachEvent(
+          _.addClass(_textElement, "hide");
+          _.attachEvent(
             chip.querySelector(".chip__remove"),
             "click",
             _chipRemoveListener
           );
-          _removeClass(_chipsContainer, "hide");
+          _.removeClass(_chipsContainer, "hide");
           _chipsContainer.appendChild(chip);
         }
       };
 
       var deselect = function(option, index) {
         _state.selected.splice(index, 1);
-        _removeClass(option, "selected");
+        _.removeClass(option, "selected");
 
         var optionValue = option.getAttribute("data-value");
         var chip = _getChip(optionValue);
@@ -436,10 +423,10 @@
         _removeValue(optionValue);
 
         if (!_state.selected.length) {
-          _removeClass(_fieldElement, "selected");
+          _.removeClass(_fieldElement, "selected");
           _textElement.textContent = _placeholder;
-          _removeClass(_textElement, "hide");
-          if (_settings.isMultiple) _addClass(_chipsContainer, "hide");
+          _.removeClass(_textElement, "hide");
+          if (_settings.isMultiple) _.addClass(_chipsContainer, "hide");
           else _updateValue("");
         }
       };
@@ -449,7 +436,7 @@
         if (indexOfObject < 0) {
           if (!_state.selected.length) selectOption(this);
           else {
-            _removeClass(_state.selected.splice(0)[0], "selected");
+            _.removeClass(_state.selected.splice(0)[0], "selected");
             selectOption(this);
           }
         }
@@ -475,7 +462,7 @@
       var eventTarget = e.target || e.srcElement;
 
       if (
-        !_closest(eventTarget, ".select__dropdown") &&
+        !_.closest(eventTarget, ".select__dropdown") &&
         isVisible(_dropdownElement)
       )
         _hideDropdown();
@@ -488,20 +475,20 @@
       else e.returnValue = null;
 
       _mimicedOptions.allIds.forEach(function(id) {
-        _removeClass(_mimicedOptions.byId[id], "selected");
+        _.removeClass(_mimicedOptions.byId[id], "selected");
       });
 
       _updateValue("");
-      _removeClass(_fieldElement, "selected");
+      _.removeClass(_fieldElement, "selected");
       _textElement.textContent = _placeholder;
     }
 
     function _showEmptyStatement() {
-      _removeClass(_emptyStatement, "hide");
+      _.removeClass(_emptyStatement, "hide");
     }
 
     function _hideEmptyStatement() {
-      _addClass(_emptyStatement, "hide");
+      _.addClass(_emptyStatement, "hide");
     }
 
     function _searchChildrens(query, parent) {
@@ -512,22 +499,22 @@
 
         nodes.forEach(function(node) {
           if (node.nodeType === Node.ELEMENT_NODE) {
-            if (_hasClass(node, "select-option")) {
+            if (_.hasClass(node, "select-option")) {
               var optionText = node.querySelector(".option-text").textContent;
               if (optionText.indexOf(query) > -1) {
-                _removeClass(node, "hide");
+                _.removeClass(node, "hide");
                 foundOption = true;
-              } else _addClass(node, "hide");
-            } else if (_hasClass(node, "select-optgroup"))
+              } else _.addClass(node, "hide");
+            } else if (_.hasClass(node, "select-optgroup"))
               foundOption = _searchChildrens(query, node) || foundOption;
           }
         });
       }
 
-      if (foundOption && _hasClass(parent, "select-optgroup"))
-        _removeClass(parent, "hide");
-      else if (!foundOption && _hasClass(parent, "select-optgroup"))
-        _addClass(parent, "hide");
+      if (foundOption && _.hasClass(parent, "select-optgroup"))
+        _.removeClass(parent, "hide");
+      else if (!foundOption && _.hasClass(parent, "select-optgroup"))
+        _.addClass(parent, "hide");
 
       return foundOption;
     }
@@ -543,17 +530,17 @@
       var optionInfo = _getSelectedOptionInfo(optionValue);
 
       var splicedOption = _state.selected.splice(optionInfo.index, 1)[0];
-      _removeClass(splicedOption, "selected");
+      _.removeClass(splicedOption, "selected");
 
       if (!_state.selected.length) {
-        _removeClass(_fieldElement, "selected");
+        _.removeClass(_fieldElement, "selected");
         _textElement.textContent = _placeholder;
-        _removeClass(_textElement, "hide");
-        _addClass(_chipsContainer, "hide");
+        _.removeClass(_textElement, "hide");
+        _.addClass(_chipsContainer, "hide");
       }
 
       _removeValue(optionValue);
-      _detachEvent(this, "click", _chipRemoveListener);
+      _.detachEvent(this, "click", _chipRemoveListener);
       _chipsContainer.removeChild(chip);
     }
 
@@ -574,11 +561,11 @@
 
     function _toggleDropdown(evt) {
       var isNotClearButton = function(element) {
-        return !_closest(element, ".select__choose-field__clear");
+        return !_.closest(element, ".select__choose-field__clear");
       };
 
       var isNotChipRemoveButton = function(element) {
-        return !_closest(element, ".chip__remove");
+        return !_.closest(element, ".chip__remove");
       };
 
       var e = evt || window.event;
@@ -588,132 +575,25 @@
       else e.returnValue = null;
 
       if (isNotClearButton(eventTarget) && isNotChipRemoveButton(eventTarget)) {
-        if (_hasClass(_dropdownElement, "show")) _hideDropdown();
+        if (_.hasClass(_dropdownElement, "show")) _hideDropdown();
         else _showDropdown();
       }
     }
 
     function _showDropdown() {
-      _attachEvent(document, "click", _outsideClickListener);
+      _.attachEvent(document, "click", _outsideClickListener);
       setTimeout(function() {
-        _addClass(_dropdownElement, "show");
-        _addClass(_parentElement, "dropdown--open");
+        _.addClass(_dropdownElement, "show");
+        _.addClass(_parentElement, "dropdown--open");
       }, 0);
     }
 
     function _hideDropdown() {
-      _detachEvent(document, "click", _outsideClickListener);
+      _.detachEvent(document, "click", _outsideClickListener);
       setTimeout(function() {
-        _removeClass(_dropdownElement, "show");
-        _removeClass(_parentElement, "dropdown--open");
+        _.removeClass(_dropdownElement, "show");
+        _.removeClass(_parentElement, "dropdown--open");
       }, 0);
-    }
-
-    function _extend() {
-      var extended = {};
-      var deep = false;
-      var i = 0;
-      var argsLength = arguments.length;
-
-      // Check if a deep merge
-      if (typeof arguments[argsLength - 1] === "boolean") {
-        deep = arguments[argsLength - 1];
-        argsLength--;
-      }
-
-      // Merge the object into the extended object
-      var merge = function(o) {
-        for (var p in o) {
-          if (Object.prototype.hasOwnProperty.call(o, p)) {
-            if (deep && typeof o[p] === "object")
-              extended[p] = _extend(extended[p], o[p], true);
-            else extended[p] = o[p];
-          }
-        }
-      };
-
-      // Loop through each object and conduct a merge
-      while (i < argsLength) merge(arguments[i++]);
-
-      return extended;
-    }
-
-    function _closest(element, selectors) {
-      if (Element.prototype.closest) return element.closest(selectors);
-      else {
-        // Polyfill for IE9+
-
-        if (!Element.prototype.matches) {
-          Element.prototype.matches =
-            Element.prototype.msMatchesSelector ||
-            Element.prototype.webkitMatchesSelector;
-        }
-        Element.prototype.closest = function(s) {
-          var el = this;
-
-          do {
-            if (el.matches(s)) return el;
-            el = el.parentElement || el.parentNode;
-          } while (el !== null && el.nodeType === 1);
-          return null;
-        };
-      }
-    }
-
-    function _addClass(element, cName) {
-      var _className = element.className;
-
-      if (_className.indexOf(cName) > -1) return;
-
-      _className = _className.trim();
-      _className += " " + cName;
-      element.className = _className;
-    }
-
-    function _removeClass(element, cName) {
-      // WARNING: Don't remove 'prettier-ignore' comment!
-      // prettier-ignore
-      var regx = new RegExp('(?:^|\s*)' + cName );
-      element.className = element.className.replace(regx, "");
-    }
-
-    function _hasClass(element, cName) {
-      return element.className.indexOf(cName) > -1;
-    }
-
-    function _attachEvent(element, event, callback, opt) {
-      if (element.addEventListener)
-        element.addEventListener(event, callback, opt);
-      else if (element.attachEvent) element.attachEvent("on" + event, callback);
-      else element["on" + event] = callback;
-    }
-
-    function _detachEvent(element, event, callback, opt) {
-      if (element.removeEventListener)
-        element.removeEventListener(event, callback, opt);
-      else if (element.detachEvent) element.detachEvent("on" + event, callback);
-      else delete element["on" + event];
-    }
-
-    function _isArray(object) {
-      if (!Array.isArray) {
-        Array.isArray = function(object) {
-          return Object.prototype.toString.call(object) === "[object Array]";
-        };
-      }
-
-      return Array.isArray(object);
-    }
-
-    function _removeChilds(parent) {
-      if (parent.childNodes && parent.childNodes.length) {
-        var child = parent.firstChild;
-
-        while (child) {
-          parent.removeChild(child);
-          child = parent.firstChild;
-        }
-      }
     }
 
     function _getValue() {
@@ -721,22 +601,22 @@
     }
 
     function _setValue(value) {
-      if (!_isArray(value)) {
+      if (!_.isArray(value)) {
         if (
           !_mimicedOptions.byId[value] &&
           _nativeOptions.options.byId[value]
         ) {
           _state.selected.forEach(function(item) {
-            _removeClass(item, "selected");
+            _.removeClass(item, "selected");
           });
           _state.selected = [];
-          _removeClass(_fieldElement, "selected");
+          _.removeClass(_fieldElement, "selected");
           _textElement.textContent = _placeholder;
 
           if (_settings.isMultiple) {
-            _removeClass(_textElement, "hide");
-            _addClass(_chipsContainer, "hide");
-            _removeChilds(_chipsContainer);
+            _.removeClass(_textElement, "hide");
+            _.addClass(_chipsContainer, "hide");
+            _.removeChilds(_chipsContainer);
           }
 
           if (_settings.isMultiple) _updateValue([]);
@@ -747,14 +627,14 @@
           var optionValue = option.getAttribute("data-value");
 
           _state.selected.forEach(function(item) {
-            _removeClass(item, "selected");
+            _.removeClass(item, "selected");
           });
           _state.selected = [];
           if (_settings.isMultiple) {
-            _removeChilds(_chipsContainer);
+            _.removeChilds(_chipsContainer);
 
             var chip = _createChip(optionText, optionValue);
-            _attachEvent(
+            _.attachEvent(
               chip.querySelector(".chip__remove"),
               "click",
               _chipRemoveListener
@@ -764,23 +644,23 @@
 
           _state.selected.push(option);
           _updateValue(value);
-          _addClass(option, "selected");
-          _addClass(_fieldElement, "selected");
+          _.addClass(option, "selected");
+          _.addClass(_fieldElement, "selected");
           if (_settings.isMultiple) {
-            _addClass(_textElement, "hide");
-            _removeClass(_chipsContainer, "hide");
+            _.addClass(_textElement, "hide");
+            _.removeClass(_chipsContainer, "hide");
           } else _textElement.textContent = optionText;
         }
       } else if (_settings.isMultiple) {
         _state.selected.forEach(function(item) {
-          _removeClass(item, "selected");
+          _.removeClass(item, "selected");
         });
         _state.selected = [];
         _updateValue(value);
-        _addClass(_fieldElement, "selected");
-        _addClass(_textElement, "hide");
-        _removeClass(_chipsContainer, "hide");
-        _removeChilds(_chipsContainer);
+        _.addClass(_fieldElement, "selected");
+        _.addClass(_textElement, "hide");
+        _.removeClass(_chipsContainer, "hide");
+        _.removeChilds(_chipsContainer);
 
         value.forEach(function(v) {
           var option = _mimicedOptions.byId[v];
@@ -788,8 +668,8 @@
           var chip = _createChip(optionText, v);
 
           _state.selected.push(option);
-          _addClass(option, "selected");
-          _attachEvent(
+          _.addClass(option, "selected");
+          _.attachEvent(
             chip.querySelector(".chip__remove"),
             "click",
             _chipRemoveListener
@@ -819,20 +699,20 @@
       _initialSelection();
 
       _optionElements.forEach(function(option) {
-        _attachEvent(option, "click", _optionClickListener);
+        _.attachEvent(option, "click", _optionClickListener);
       });
 
-      _attachEvent(_fieldElement, "click", _toggleDropdown);
+      _.attachEvent(_fieldElement, "click", _toggleDropdown);
 
       if (!_settings.isMultiple)
-        _attachEvent(_clearFieldElement, "click", _clearClickListener);
+        _.attachEvent(_clearFieldElement, "click", _clearClickListener);
 
       if (_settings.onchange)
-        _attachEvent(_inputElement, "change", opts.onchange);
+        _.attachEvent(_inputElement, "change", opts.onchange);
 
       if (_settings.isSearchable) {
         _dropdownSearch = _dropdownElement.querySelector(".text-field__input");
-        _attachEvent(_dropdownSearch, "input", _searchInputListener);
+        _.attachEvent(_dropdownSearch, "input", _searchInputListener);
       }
     })();
 

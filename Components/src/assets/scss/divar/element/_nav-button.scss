@@ -1,0 +1,172 @@
+.nav-button {
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 0rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  background-color: $black-secondary;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+  transition: color 360ms ease, background-color 360ms ease,
+    transform 360ms ease, border-radius 360ms ease, box-shadow 400ms ease,
+    border-color 360ms ease;
+
+  &.small {
+    padding: 0rem 0.75rem;
+
+    &,
+    .nav-button__text {
+      font-size: 0.75rem;
+    }
+
+    .nav-button__icon {
+      @include rtlStyle(
+        (
+          margin-left: 0.375rem,
+          margin-right: -0.25rem
+        )
+      );
+      @include ltrStyle(
+        (
+          margin-right: 0.375rem,
+          margin-left: -0.25rem
+        )
+      );
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $black-hover;
+  }
+
+  &:active {
+    background-color: $black-press;
+  }
+
+  &,
+  .nav-button__text {
+    @extend %base-text;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 2;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: $white;
+  }
+
+  .nav-button__text {
+    transition: color 360ms ease;
+  }
+
+  .nav-button__icon {
+    @extend %icon-20;
+    @include rtlStyle(
+      (
+        margin-left: 0.5rem,
+        margin-right: -0.5rem
+      )
+    );
+    @include ltrStyle(
+      (
+        margin-right: 0.5rem,
+        margin-left: -0.5rem
+      )
+    );
+
+    color: $white;
+    transition: color 360ms ease;
+  }
+
+  &.primary {
+    background-color: $brand-primary-color;
+
+    &:hover,
+    &:focus {
+      background-color: $brand-hover-color;
+    }
+
+    &:active {
+      background-color: $brand-press-color;
+    }
+  }
+
+  &.inlined {
+    background-color: transparent;
+
+    &:not(.primary) {
+      &,
+      .nav-button__text,
+      .nav-button__icon {
+        color: $black-secondary;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: blackColor(0.04);
+
+        &,
+        .nav-button__text,
+        .nav-button__icon {
+          color: $black-primary;
+        }
+      }
+
+      &:active {
+        background-color: blackColor(0.12);
+
+        &,
+        .nav-button__text,
+        .nav-button__icon {
+          color: $black-primary;
+        }
+      }
+    }
+
+    &.primary {
+      &,
+      .nav-button__text,
+      .nav-button__icon {
+        color: $brand-primary-color;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: brandColor(0.04);
+
+        &,
+        .nav-button__text,
+        .nav-button__icon {
+          color: $brand-primary-color;
+        }
+      }
+
+      &:active {
+        background-color: brandColor(0.12);
+
+        &,
+        .nav-button__text,
+        .nav-button__icon {
+          color: $brand-primary-color;
+        }
+      }
+    }
+  }
+
+  &.icon-button {
+    padding: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    justify-content: center;
+
+    .nav-button__icon {
+      margin: 0 !important;
+    }
+  }
+}
