@@ -81,9 +81,7 @@
       element.className = _className;
     },
     removeClass: function(element, cName) {
-      // WARNING: Don't remove 'prettier-ignore' comment!
-      // prettier-ignore
-      var regx = new RegExp('(?:^|\s*)' + cName );
+      var regx = new RegExp("(?:^|\\s*)" + cName);
       element.className = element.className.replace(regx, "");
     },
     hasClass: function(element, cName) {
@@ -94,6 +92,20 @@
         element.addEventListener(event, callback, opt);
       else if (element.attachEvent) element.attachEvent("on" + event, callback);
       else element["on" + event] = callback;
+    },
+    attachEventAll: function(elements, event, callback, opt) {
+      var context = this;
+
+      elements.forEach(function(element) {
+        context.attachEvent(element, event, callback, opt);
+      });
+    },
+    detachEventAll: function(elements, event, callback, opt) {
+      var context = this;
+
+      elements.forEach(function(element) {
+        this.detachEvent(element, event, callback, opt);
+      });
     },
     detachEvent: function(element, event, callback, opt) {
       if (element.removeEventListener)
@@ -128,6 +140,11 @@
     },
     getComputedCssValue: function(element, property) {
       return getComputedStyle(element)[property];
+    },
+    convertRemToPixels: function(rem) {
+      return (
+        rem * parseFloat(getComputedStyle(document.documentElement).fontSize)
+      );
     }
   };
 });

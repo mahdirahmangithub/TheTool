@@ -4,7 +4,7 @@
   } else if (typeof module === "object" && module.exports) {
     module.exports = factory();
   } else root.rangePicker = factory();
-})(typeof self !== "undefined" ? self : this, function(_) {
+})(typeof self !== "undefined" ? self : this, function() {
   return function(selector, opts) {
     if (!selector)
       throw Error(

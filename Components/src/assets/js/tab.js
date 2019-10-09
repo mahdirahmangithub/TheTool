@@ -79,3 +79,83 @@ jQuery(function($) {
     );
   }
 });
+
+// (function(root, factory) {
+//   if (typeof define === "function" && define.amd) {
+//     define([], factory);
+//   } else if (typeof module === "object" && module.exports) {
+//     module.exports = factory(require("./sonnat.dev.utils"));
+//   } else root.tabilize = factory(root._);
+// })(typeof self !== "undefined" ? self : this, function(_) {
+//   return function() {
+//     // Private methods and fields
+//     var _tabLists = document.querySelectorAll(".tab-list");
+//     var _leftChevron = document.querySelector(".tab-row__chevron--left");
+//     var _rightChevron = document.querySelector(".tab-row__chevron--right");
+
+//     function tabClickListener(evt) {
+//       var e = evt || window.event;
+
+//       if (e.preventDefault) e.preventDefault();
+//       else e.returnValue = null;
+//     }
+
+//     function tabListScrollListener(evt) {
+//       var parent = this.parentNode;
+//       var listRect = this.getBoundingClientRect();
+
+//       var scrollLeft = this.scrollLeft;
+//       var maxScroll = this.scrollWidth - listRect.width;
+//     }
+
+//     function goToLeft(tabList) {
+//       tabList.scrollLeft = 0;
+//     }
+//     function goToRight(tabList) {
+//       tabList.scrollLeft =
+//         tabList.scrollWidth - tabList.getBoundingClientRect().width;
+//     }
+
+//     function chevronClickListener(evt) {
+//       var e = evt || window.event;
+
+//       if (e.preventDefault) e.preventDefault();
+//       else e.returnValue = null;
+
+//       var tabList = this.parentNode.querySelector(".tab-list");
+//       if (this === _leftChevron) {
+//         goToLeft(tabList);
+//       } else if (this === _rightChevron) {
+//         goToRight(tabList);
+//       }
+//     }
+
+//     // Initialization
+//     (function() {
+//       _tabLists.forEach(function(tabList) {
+//         _.attachEventAll(
+//           tabList.querySelectorAll(".tab-list__tab"),
+//           "click",
+//           tabClickListener
+//         );
+
+//         var last = $(tabList)
+//           .children()
+//           .last();
+
+//         // var ss = scrollWidth - tabList.offsetWidth;
+//         // console.log(tabList.scrollWidth, tabList.offsetWidth, -ss);
+//         jQuery(tabList).animate({
+//           scrollLeft: last.position().left - 32
+//         });
+
+//         _.attachEvent(tabList, "scroll", tabListScrollListener);
+//         _.attachEvent(_leftChevron, "click", chevronClickListener);
+//         _.attachEvent(_rightChevron, "click", chevronClickListener);
+//       });
+//     })();
+
+//     // public methods and fields
+//     return {};
+//   };
+// });

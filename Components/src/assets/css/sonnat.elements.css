@@ -1686,6 +1686,10 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   margin-left: 1rem;
   margin-right: 1rem;
 }
+.divider.thick:not(.vertical):not(.dotted) {
+  height: 1rem;
+  background-color: whitesmoke;
+}
 
 .zebra-divider > *:nth-child(even) {
   background-color: #fafafa;
