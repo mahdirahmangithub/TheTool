@@ -1,0 +1,115 @@
+.textarea {
+  display: flex;
+  position: relative;
+
+  textarea {
+    @extend %base-text;
+
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 400;
+    width: 100%;
+    min-height: 7.5rem;
+    border-radius: 0.25rem;
+    outline: none;
+    border: 1px solid $black-divider;
+    position: relative;
+    background-color: transparent;
+    resize: none;
+    padding: 0.5rem 1rem;
+    box-shadow: inset 0 0 0 0 transparent;
+    transition: border-color 400ms ease, box-shadow 400ms ease;
+
+    &:focus {
+      border-color: $brand-secondary-color;
+      box-shadow: inset 0 0 0 1px $brand-secondary-color;
+
+      & + .textarea__resize-grabber {
+        transform: translate(1px, -1px);
+
+        &:after {
+          background-color: $brand-secondary-color;
+        }
+      }
+    }
+
+    &::-webkit-input-placeholder {
+      @extend %base-text;
+
+      font-size: 1rem;
+      line-height: 2;
+      font-weight: 400;
+
+      color: $black-hint;
+    }
+
+    &::-moz-placeholder {
+      @extend %base-text;
+
+      font-size: 1rem;
+      line-height: 2;
+      font-weight: 400;
+
+      color: $black-hint;
+    }
+
+    &:-ms-input-placeholder {
+      @extend %base-text;
+
+      font-size: 1rem;
+      line-height: 2;
+      font-weight: 400;
+
+      color: $black-hint;
+    }
+
+    &:-moz-placeholder {
+      @extend %base-text;
+
+      font-size: 1rem;
+      line-height: 2;
+      font-weight: 400;
+
+      color: $black-hint;
+    }
+  }
+
+  &.resizable {
+    textarea {
+      resize: vertical;
+    }
+
+    .textarea__resize-grabber {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.textarea__resize-grabber {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-bottom-left-radius: 3px;
+  background-color: $white;
+  bottom: 1px;
+  left: 1px;
+  z-index: 2;
+  position: absolute;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 400ms ease;
+  opacity: 0;
+  visibility: hidden;
+
+  &:after {
+    content: "";
+    border-radius: 2px;
+    width: 0.5rem;
+    height: 1px;
+    background-color: blackColor(0.24);
+    transform: rotate(45deg);
+    transition: 400ms ease;
+  }
+}

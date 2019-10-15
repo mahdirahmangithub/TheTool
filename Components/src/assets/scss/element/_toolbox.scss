@@ -3,7 +3,7 @@
   margin-bottom: 0.5rem;
 
   &.filtered {
-    .toolbox__head__indicator {
+    .toolbox__head__clear-field {
       opacity: 1;
       visibility: visible;
     }
@@ -48,10 +48,21 @@
       }
     }
 
-    & ~ .toolbox__head__indicator {
-      opacity: 0;
-      visibility: hidden;
-      transform: scale(0);
+    & ~ .toolbox__head__clear-field {
+      .clear-field--button__wrapper {
+        max-width: 6rem;
+        background-color: brandColor(0.04);
+        border-color: $brand-divider-color;
+        transform: scale(1);
+        transition: transform 240ms ease, max-width 240ms ease 200ms,
+          background-color 240ms ease;
+
+        .clear-field--button__text,
+        .clear-field--button__icon {
+          opacity: 1;
+          transition: 200ms ease 260ms;
+        }
+      }
     }
   }
 }
@@ -106,7 +117,7 @@
   }
 }
 
-.toolbox__head__indicator {
+.toolbox__head__clear-field {
   opacity: 0;
   visibility: hidden;
   transition: opacity 360ms ease, visibility 360ms ease, transform 360ms ease;

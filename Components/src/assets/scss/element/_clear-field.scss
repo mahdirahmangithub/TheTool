@@ -61,7 +61,90 @@
     }
   }
 
-  *:hover > & {
+  &.clear-field--button {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+
+    .clear-field--button__wrapper {
+      width: auto;
+      max-width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 0.75rem;
+      padding: 0 0.25rem;
+      border: 1px solid transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      transform: scale(0.33333);
+      background-color: $brand-primary-color;
+      transition: transform 160ms ease 160ms, max-width 160ms ease,
+        background-color 160ms ease 160ms;
+
+      &.active {
+        max-width: 6rem;
+        background-color: brandColor(0.04);
+        border-color: $brand-divider-color;
+        transform: scale(1);
+        transition: transform 240ms ease, max-width 240ms ease 200ms,
+          background-color 240ms ease;
+
+        .clear-field--button__text,
+        .clear-field--button__icon {
+          opacity: 1;
+          transition: 200ms ease 260ms;
+        }
+      }
+
+      .clear-field--button__text {
+        @extend %base-text;
+        @include rtlStyle(
+          (
+            margin-left: 0.25rem
+          )
+        );
+        @include ltrStyle(
+          (
+            margin-right: 0.25rem
+          )
+        );
+
+        font-size: 0.75rem;
+        line-height: 2;
+        color: $brand-primary-color;
+        opacity: 0;
+        overflow: hidden;
+        transition: 240ms ease;
+      }
+
+      .clear-field--button__icon {
+        @extend %icon-16;
+        @include rtlStyle(
+          (
+            margin-left: 0.25rem
+          )
+        );
+        @include ltrStyle(
+          (
+            margin-right: 0.25rem
+          )
+        );
+
+        backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        opacity: 0;
+        color: $brand-primary-color;
+        transition: 160ms ease;
+      }
+    }
+  }
+
+  *:hover > &:not(.clear-field--button) {
     background-color: $black-divider;
 
     &.primary:not(.white) {
@@ -69,7 +152,7 @@
     }
   }
 
-  *:active > & {
+  *:active > &:not(.clear-field--button) {
     background-color: blackColor(0.24);
 
     &.primary:not(.white) {
