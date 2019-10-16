@@ -145,6 +145,24 @@
       return (
         rem * parseFloat(getComputedStyle(document.documentElement).fontSize)
       );
+    },
+    memoize: function(fn) {
+      var cache = {};
+
+      function cacher(fn) {
+        return function() {
+          var key = JSON.stringify(arguments);
+
+          if (cache[key]) return cache[key];
+          else {
+            var value = fn.apply(null, arguments);
+            cache[key] = value;
+            return value;
+          }
+        };
+      }
+
+      return cacher(fn);
     }
   };
 });
