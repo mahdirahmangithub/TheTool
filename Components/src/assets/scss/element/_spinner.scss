@@ -201,3 +201,46 @@
     }
   }
 }
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &[data-flow="rtl"] {
+    .progress-bar__track {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  &[data-flow="ltr"] {
+    .progress-bar__track {
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &.padded {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  &.primary {
+    .progress-bar__track {
+      background-color: $brand-primary-color;
+    }
+  }
+
+  .progress-bar__track {
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;
+    background-color: $black-secondary;
+    transition: width 360ms linear;
+  }
+}

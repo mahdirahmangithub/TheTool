@@ -149,7 +149,7 @@
     memoize: function(fn) {
       var cache = {};
 
-      function cacher(fn) {
+      return (function(fn) {
         return function() {
           var key = JSON.stringify(arguments);
 
@@ -160,9 +160,7 @@
             return value;
           }
         };
-      }
-
-      return cacher(fn);
+      })(fn);
     }
   };
 });

@@ -4429,6 +4429,38 @@ body[dir=ltr] .chip.removable > .chip__remove, body:not([dir=ltr]):not([dir=rtl]
   }
 }
 
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.progress-bar[data-flow=rtl] .progress-bar__track {
+  position: absolute;
+  right: 0;
+}
+.progress-bar[data-flow=ltr] .progress-bar__track {
+  position: absolute;
+  left: 0;
+}
+.progress-bar.padded {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+.progress-bar.primary .progress-bar__track {
+  background-color: #a62626;
+}
+.progress-bar .progress-bar__track {
+  width: 100%;
+  height: 2px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.56);
+  transition: width 360ms linear;
+}
+
 .indicator {
   width: 1.5rem;
   height: 1.5rem;
