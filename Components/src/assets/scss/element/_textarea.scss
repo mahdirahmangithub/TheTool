@@ -34,8 +34,6 @@
     }
 
     &::-webkit-input-placeholder {
-      @extend %base-text;
-
       font-size: 1rem;
       line-height: 2;
       font-weight: 400;
@@ -44,8 +42,6 @@
     }
 
     &::-moz-placeholder {
-      @extend %base-text;
-
       font-size: 1rem;
       line-height: 2;
       font-weight: 400;
@@ -54,8 +50,6 @@
     }
 
     &:-ms-input-placeholder {
-      @extend %base-text;
-
       font-size: 1rem;
       line-height: 2;
       font-weight: 400;
@@ -64,8 +58,6 @@
     }
 
     &:-moz-placeholder {
-      @extend %base-text;
-
       font-size: 1rem;
       line-height: 2;
       font-weight: 400;

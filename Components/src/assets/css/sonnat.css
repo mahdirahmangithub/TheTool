@@ -4709,10 +4709,12 @@ ul {
   margin: 0 auto;
 }
 
-.action-element__text, .card-post__content__footer__tags > span, .card-post__content__descriptor, .card-post__content__title, .range-field__labels .range-field__labels__label, .row-element__trail-segment__title, .row-element__mid-segment__title, .row-element__lead-segment__subtitle, .row-element__lead-segment__title, .row-element.row-expandable .row-element__collapsed-content__container, .select__dropdown__options__option > .select__dropdown__options__option__text, .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
+.textarea textarea, .action-element__text, .card-post__content__footer__tags > span, .card-post__content__descriptor, .card-post__content__title, .range-field__labels .range-field__labels__label, .row-element__trail-segment__title, .row-element__mid-segment__title, .row-element__lead-segment__subtitle, .row-element__lead-segment__title, .row-element.row-expandable .row-element__collapsed-content__container, .select__dropdown__options__option > .select__dropdown__options__option__text, .select__dropdown__options__option > .select__dropdown__options__option-group__option__text,
 .select__dropdown__options__option-group__option > .select__dropdown__options__option__text,
 .select__dropdown__options__option-group__option > .select__dropdown__options__option-group__option__text, .select__dropdown__options__option-group__title, .select__choose-field__unit, .select__choose-field__text, .dropdown__menu .dropdown__menu__item > a, .dropdown__toggle,
-.dropdown__toggle .dropdown__toggle__text, .breadcrumb__item, .breadcrumb__item > a, .badge, .chip,
+.dropdown__toggle .dropdown__toggle__text, .breadcrumb__item, .breadcrumb__item > a, .clear-field.clear-field--button .clear-field--button__wrapper .clear-field--button__text,
+.select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper .clear-field--button__text,
+.chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper .clear-field--button__text, .badge, .chip,
 .chip .chip__text, .toolbox__view-more__text, .toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a, .accordion__list .accordion__list__item > a, .text-field__input, .text-field__label-text, .form-field-set__description, .form-field-set__title, .form-field__hints, .form-field__description, .form-field__label, .section-row__paragraph, .section-row__title, .section-row > .section-row__title ~ .section-row__title, .title-row__title--subtitle, .title-row__title--pretitle, .title-row__title, .tag,
 .tag .tag__text, .caption-text-sm, .caption-text-md, .caption-text-lg, .body-text-sm, .body-text-md,
 .row-element.row-expandable .row-element__collapsed-content__container__description, .body-text-lg, .title-text-xs,
@@ -4739,10 +4741,12 @@ h1 {
   text-size-adjust: 100%;
   color: rgba(0, 0, 0, 0.87);
 }
-.typography-transition.action-element__text, .card-post__content__footer__tags > span.typography-transition, .typography-transition.card-post__content__descriptor, .typography-transition.card-post__content__title, .range-field__labels .typography-transition.range-field__labels__label, .typography-transition.row-element__trail-segment__title, .typography-transition.row-element__mid-segment__title, .typography-transition.row-element__lead-segment__subtitle, .typography-transition.row-element__lead-segment__title, .row-element.row-expandable .typography-transition.row-element__collapsed-content__container, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option__text, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option-group__option__text,
+.textarea textarea.typography-transition, .typography-transition.action-element__text, .card-post__content__footer__tags > span.typography-transition, .typography-transition.card-post__content__descriptor, .typography-transition.card-post__content__title, .range-field__labels .typography-transition.range-field__labels__label, .typography-transition.row-element__trail-segment__title, .typography-transition.row-element__mid-segment__title, .typography-transition.row-element__lead-segment__subtitle, .typography-transition.row-element__lead-segment__title, .row-element.row-expandable .typography-transition.row-element__collapsed-content__container, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option__text, .select__dropdown__options__option > .typography-transition.select__dropdown__options__option-group__option__text,
 .select__dropdown__options__option-group__option > .typography-transition.select__dropdown__options__option__text,
 .select__dropdown__options__option-group__option > .typography-transition.select__dropdown__options__option-group__option__text, .typography-transition.select__dropdown__options__option-group__title, .typography-transition.select__choose-field__unit, .typography-transition.select__choose-field__text, .dropdown__menu .dropdown__menu__item > a.typography-transition, .typography-transition.dropdown__toggle,
-.dropdown__toggle .typography-transition.dropdown__toggle__text, .typography-transition.breadcrumb__item, .breadcrumb__item > a.typography-transition, .typography-transition.badge, .typography-transition.chip,
+.dropdown__toggle .typography-transition.dropdown__toggle__text, .typography-transition.breadcrumb__item, .breadcrumb__item > a.typography-transition, .clear-field.clear-field--button .clear-field--button__wrapper .typography-transition.clear-field--button__text,
+.select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper .typography-transition.clear-field--button__text,
+.chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper .typography-transition.clear-field--button__text, .typography-transition.badge, .typography-transition.chip,
 .chip .typography-transition.chip__text, .typography-transition.toolbox__view-more__text, .typography-transition.toolbox__head__title__text, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .typography-transition.accordion__heading, .accordion__list .accordion__list__item > .accordion__list__sub-list .accordion__list__sub-list__item > a.typography-transition, .accordion__list .accordion__list__item > a.typography-transition, .typography-transition.text-field__input, .typography-transition.text-field__label-text, .typography-transition.form-field-set__description, .typography-transition.form-field-set__title, .typography-transition.form-field__hints, .typography-transition.form-field__description, .typography-transition.form-field__label, .typography-transition.section-row__paragraph, .typography-transition.section-row__title, .section-row > .section-row__title ~ .typography-transition.section-row__title, .typography-transition.title-row__title--subtitle, .typography-transition.title-row__title--pretitle, .typography-transition.title-row__title, .typography-transition.tag,
 .tag .typography-transition.tag__text, .typography-transition.caption-text-sm, .typography-transition.caption-text-md, .typography-transition.caption-text-lg, .typography-transition.body-text-sm, .typography-transition.body-text-md,
 .row-element.row-expandable .typography-transition.row-element__collapsed-content__container__description, .typography-transition.body-text-lg, .typography-transition.title-text-xs,
@@ -6522,7 +6526,8 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
     background-color: rgba(166, 38, 38, 0.04);
   }
 }
-.icon-48, .icon-32, .icon-24, .tab-list__tab__content .tab-list__tab-icon:only-child,
+.icon-48, .icon-32,
+.file-input .file-input--image-uploader__hotspot__icon__photo, .icon-24, .tab-list__tab__content .tab-list__tab-icon:only-child,
 .row-element__trail-segment__icon,
 .row-element__lead-segment__icon,
 .text-field__icons .text-field__icon, .icon-20, .button .button__icon, .tab-list__tab__content .tab-list__tab-icon:not(:only-child),
@@ -6535,12 +6540,16 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .dropdown.large .dropdown__toggle .dropdown__toggle__icon,
 .accordion__icon,
 .text-field.minimal.iconed .text-field__icons .text-field__icon, .icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child),
+.file-input .file-input--image-uploader__hotspot__icon__plus,
 .dropdown__toggle .dropdown__toggle__icon, .icon-16, .text-field:not(.legend-label).small.iconed .text-field__icons .text-field__icon, .button.small .button__icon,
 .action-container.small-icon .action-element__icon,
 .select.small .select__dropdown__options__option > .select__dropdown__options__option__icon,
 .select.small .select__dropdown__options__option-group__option > .select__dropdown__options__option__icon,
 .dropdown.small .dropdown__toggle .dropdown__toggle__icon,
 .range-picker__handle__icon,
+.clear-field.clear-field--button .clear-field--button__wrapper .clear-field--button__icon,
+.select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper .clear-field--button__icon,
+.chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper .clear-field--button__icon,
 .chip.iconed > .chip__icon,
 .toolbox__view-more__icon,
 .tag.iconed .tag__icon {
@@ -6555,6 +6564,9 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .select.small .select__dropdown__options__option-group__option > .select__dropdown__options__option__icon,
 .dropdown.small .dropdown__toggle .dropdown__toggle__icon,
 .range-picker__handle__icon,
+.clear-field.clear-field--button .clear-field--button__wrapper .clear-field--button__icon,
+.select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper .clear-field--button__icon,
+.chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper .clear-field--button__icon,
 .chip.iconed > .chip__icon,
 .toolbox__view-more__icon,
 .tag.iconed .tag__icon {
@@ -6570,6 +6582,9 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .select.small .select__dropdown__options__option-group__option > .select__dropdown__options__option__icon > svg,
 .dropdown.small .dropdown__toggle .dropdown__toggle__icon > svg,
 .range-picker__handle__icon > svg,
+.clear-field.clear-field--button .clear-field--button__wrapper .clear-field--button__icon > svg,
+.select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper .clear-field--button__icon > svg,
+.chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper .clear-field--button__icon > svg,
 .chip.iconed > .chip__icon > svg,
 .toolbox__view-more__icon > svg,
 .tag.iconed .tag__icon > svg {
@@ -6578,6 +6593,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 }
 
 .icon-18, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child),
+.file-input .file-input--image-uploader__hotspot__icon__plus,
 .dropdown__toggle .dropdown__toggle__icon {
   width: 1.125rem;
   height: 1.125rem;
@@ -6586,6 +6602,7 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   font-size: 1.125rem;
 }
 .icon-18 > svg, .tab-row.small .tab-list__tab__content > .tab-list__tab-icon:not(:only-child) > svg,
+.file-input .file-input--image-uploader__hotspot__icon__plus > svg,
 .dropdown__toggle .dropdown__toggle__icon > svg {
   width: 100%;
   height: 100%;
@@ -6639,14 +6656,16 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   height: 100%;
 }
 
-.icon-32 {
+.icon-32,
+.file-input .file-input--image-uploader__hotspot__icon__photo {
   width: 2rem;
   height: 2rem;
   min-width: 2rem;
   min-height: 2rem;
   font-size: 2rem;
 }
-.icon-32 > svg {
+.icon-32 > svg,
+.file-input .file-input--image-uploader__hotspot__icon__photo > svg {
   width: 100%;
   height: 100%;
 }
@@ -6675,72 +6694,134 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
   width: auto;
 }
 
-.carousel[data-aspect-ratio=golden] .carousel__frames__inner-wrapper > img,
-.carousel[data-aspect-ratio=golden] .carousel__frames__inner-wrapper .content-in-ratio, .carousel[data-aspect-ratio="3:2"] .carousel__frames__inner-wrapper > img,
-.carousel[data-aspect-ratio="3:2"] .carousel__frames__inner-wrapper .content-in-ratio, .carousel[data-aspect-ratio="16:9"] .carousel__frames__inner-wrapper > img,
-.carousel[data-aspect-ratio="16:9"] .carousel__frames__inner-wrapper .content-in-ratio, .carousel[data-aspect-ratio="4:3"] .carousel__frames__inner-wrapper > img,
-.carousel[data-aspect-ratio="4:3"] .carousel__frames__inner-wrapper .content-in-ratio, .carousel[data-aspect-ratio="1:1"] .carousel__frames__inner-wrapper > img,
-.carousel[data-aspect-ratio="1:1"] .carousel__frames__inner-wrapper .content-in-ratio, .preserve-aspect-ratio > img,
-.preserve-aspect-ratio .content-in-ratio {
+.file-input .file-input--image-uploader__hotspot, .carousel[data-aspect-ratio=golden] .carousel__frames__inner-wrapper .content-in-ratio, .carousel[data-aspect-ratio="3:2"] .carousel__frames__inner-wrapper .content-in-ratio, .carousel[data-aspect-ratio="16:9"] .carousel__frames__inner-wrapper .content-in-ratio, .carousel[data-aspect-ratio="4:3"] .carousel__frames__inner-wrapper .content-in-ratio, .file-input.file-input--image-uploader .content-in-ratio, .carousel[data-aspect-ratio="1:1"] .carousel__frames__inner-wrapper .content-in-ratio, .preserve-aspect-ratio > img.content-in-ratio, .preserve-aspect-ratio .content-in-ratio {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .preserve-aspect-ratio {
-  position: relative;
   width: 100%;
-  height: 0;
   overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.preserve-aspect-ratio.ratio-1-1 {
+.preserve-aspect-ratio:after {
+  content: "";
+  height: 0;
+  display: block;
+}
+.preserve-aspect-ratio > img.content-in-ratio {
+  height: auto;
+}
+.preserve-aspect-ratio.ratio-1-1:after {
   padding-top: 100%;
 }
-.preserve-aspect-ratio.ratio-4-3 {
+.preserve-aspect-ratio.ratio-4-3:after {
   padding-top: 75%;
 }
-.preserve-aspect-ratio.ratio-16-9 {
+.preserve-aspect-ratio.ratio-16-9:after {
   padding-top: 56.25%;
 }
-
-.carousel[data-aspect-ratio="1:1"] .carousel__frames__inner-wrapper {
-  position: relative;
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-  padding-top: 100%;
-}
-.carousel[data-aspect-ratio="4:3"] .carousel__frames__inner-wrapper {
-  position: relative;
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-  padding-top: 75%;
-}
-.carousel[data-aspect-ratio="16:9"] .carousel__frames__inner-wrapper {
-  position: relative;
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-  padding-top: 56.25%;
-}
-.carousel[data-aspect-ratio="3:2"] .carousel__frames__inner-wrapper {
-  position: relative;
-  width: 100%;
-  height: 0;
-  overflow: hidden;
+.preserve-aspect-ratio.ratio-3-2:after {
   padding-top: 66.6667%;
 }
-.carousel[data-aspect-ratio=golden] .carousel__frames__inner-wrapper {
-  position: relative;
-  width: 100%;
-  height: 0;
-  overflow: hidden;
+.preserve-aspect-ratio.golden-ratio:after {
   padding-top: 61.8034%;
 }
+
+.file-input.file-input--image-uploader, .carousel[data-aspect-ratio="1:1"] .carousel__frames__inner-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.file-input.file-input--image-uploader:after, .carousel[data-aspect-ratio="1:1"] .carousel__frames__inner-wrapper:after {
+  content: "";
+  height: 0;
+  display: block;
+  padding-top: 100%;
+}
+.file-input.file-input--image-uploader > img.content-in-ratio, .carousel[data-aspect-ratio="1:1"] .carousel__frames__inner-wrapper > img.content-in-ratio {
+  height: auto;
+}
+
+.carousel[data-aspect-ratio="4:3"] .carousel__frames__inner-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel[data-aspect-ratio="4:3"] .carousel__frames__inner-wrapper:after {
+  content: "";
+  height: 0;
+  display: block;
+  padding-top: 75%;
+}
+.carousel[data-aspect-ratio="4:3"] .carousel__frames__inner-wrapper > img.content-in-ratio {
+  height: auto;
+}
+
+.carousel[data-aspect-ratio="16:9"] .carousel__frames__inner-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel[data-aspect-ratio="16:9"] .carousel__frames__inner-wrapper:after {
+  content: "";
+  height: 0;
+  display: block;
+  padding-top: 56.25%;
+}
+.carousel[data-aspect-ratio="16:9"] .carousel__frames__inner-wrapper > img.content-in-ratio {
+  height: auto;
+}
+
+.carousel[data-aspect-ratio="3:2"] .carousel__frames__inner-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel[data-aspect-ratio="3:2"] .carousel__frames__inner-wrapper:after {
+  content: "";
+  height: 0;
+  display: block;
+  padding-top: 66.6667%;
+}
+.carousel[data-aspect-ratio="3:2"] .carousel__frames__inner-wrapper > img.content-in-ratio {
+  height: auto;
+}
+
+.carousel[data-aspect-ratio=golden] .carousel__frames__inner-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel[data-aspect-ratio=golden] .carousel__frames__inner-wrapper:after {
+  content: "";
+  height: 0;
+  display: block;
+  padding-top: 61.8034%;
+}
+.carousel[data-aspect-ratio=golden] .carousel__frames__inner-wrapper > img.content-in-ratio {
+  height: auto;
+}
+
 .collapse:not(.show) {
   display: none;
 }
@@ -7576,6 +7657,10 @@ body[dir=ltr] .checkbox-control > * + *, body[dir=ltr] .radio-control > * + *, b
 .divider.vertical.spaced {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.divider.thick:not(.vertical):not(.dotted) {
+  height: 1rem;
+  background-color: whitesmoke;
 }
 
 .zebra-divider > *:nth-child(even) {
@@ -8584,7 +8669,7 @@ body[dir=ltr] .button.small > .button__icon, body:not([dir=ltr]):not([dir=rtl]) 
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 .form-field__label {
@@ -8607,6 +8692,11 @@ body[dir=ltr] .button.small > .button__icon, body:not([dir=ltr]):not([dir=rtl]) 
 }
 .form-field__description + .form-field__control {
   margin-top: 0.5rem;
+}
+@media (max-width: 769px) {
+  .form-field__description + .form-field__control {
+    margin-top: 1rem;
+  }
 }
 
 .form-field__control + .form-field__hints {
@@ -9464,7 +9554,7 @@ body[dir=ltr] .accordion__icon, body:not([dir=ltr]):not([dir=rtl]) .accordion__i
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.toolbox.filtered .toolbox__head__indicator {
+.toolbox.filtered .toolbox__head__clear-field {
   opacity: 1;
   visibility: visible;
 }
@@ -9496,10 +9586,17 @@ body[dir=ltr] .toolbox__head__title, body:not([dir=ltr]):not([dir=rtl]) .toolbox
 .toolbox__head__title.active > .toolbox__head__title__caret:before {
   transform: translateX(-1.71px) rotate(-45deg);
 }
-.toolbox__head__title.active ~ .toolbox__head__indicator {
-  opacity: 0;
-  visibility: hidden;
-  transform: scale(0);
+.toolbox__head__title.active ~ .toolbox__head__clear-field .clear-field--button__wrapper {
+  max-width: 6rem;
+  background-color: rgba(166, 38, 38, 0.04);
+  border-color: rgba(166, 38, 38, 0.12);
+  transform: scale(1);
+  transition: transform 240ms ease, max-width 240ms ease 200ms, background-color 240ms ease;
+}
+.toolbox__head__title.active ~ .toolbox__head__clear-field .clear-field--button__wrapper .clear-field--button__text,
+.toolbox__head__title.active ~ .toolbox__head__clear-field .clear-field--button__wrapper .clear-field--button__icon {
+  opacity: 1;
+  transition: 200ms ease 260ms;
 }
 
 .toolbox__head__title__text {
@@ -9541,15 +9638,15 @@ body[dir=ltr] .toolbox__head__title__caret, body:not([dir=ltr]):not([dir=rtl]) .
   transform: translateX(-1.71px) rotate(45deg);
 }
 
-.toolbox__head__indicator {
+.toolbox__head__clear-field {
   opacity: 0;
   visibility: hidden;
   transition: opacity 360ms ease, visibility 360ms ease, transform 360ms ease;
 }
-body[dir=rtl] .toolbox__head__indicator {
+body[dir=rtl] .toolbox__head__clear-field {
   margin-right: auto;
 }
-body[dir=ltr] .toolbox__head__indicator, body:not([dir=ltr]):not([dir=rtl]) .toolbox__head__indicator {
+body[dir=ltr] .toolbox__head__clear-field, body:not([dir=ltr]):not([dir=rtl]) .toolbox__head__clear-field {
   margin-left: auto;
 }
 
@@ -10184,6 +10281,38 @@ body[dir=ltr] .chip.removable > .chip__remove, body:not([dir=ltr]):not([dir=rtl]
   }
 }
 
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.progress-bar[data-flow=rtl] .progress-bar__track {
+  position: absolute;
+  right: 0;
+}
+.progress-bar[data-flow=ltr] .progress-bar__track {
+  position: absolute;
+  left: 0;
+}
+.progress-bar.padded {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+.progress-bar.primary .progress-bar__track {
+  background-color: #a62626;
+}
+.progress-bar .progress-bar__track {
+  width: 100%;
+  height: 2px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.56);
+  transition: width 360ms linear;
+}
+
 .indicator {
   width: 1.5rem;
   height: 1.5rem;
@@ -10320,32 +10449,121 @@ body[dir=ltr] .chip.removable > .chip__remove, body:not([dir=ltr]):not([dir=rtl]
 .chip.removable > .chip__remove > .white.chip__remove__icon svg .fill {
   fill: white;
 }
-*:hover > .clear-field,
-.select__choose-field__clear:hover > .select__choose-field__clear__icon,
-.chip.primary.removable:not(.outlined) > .chip__remove:hover > .chip__remove__icon,
-.chip.primary.outlined.removable > .chip__remove:hover > .chip__remove__icon,
-.select.small .select__choose-field .select__choose-field__clear:hover > .select__choose-field__clear__icon,
-.chip.removable > .chip__remove:hover > .chip__remove__icon {
+.clear-field.clear-field--button,
+.select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon,
+.chip.primary.removable:not(.outlined) > .chip__remove > .clear-field--button.chip__remove__icon,
+.chip.primary.outlined.removable > .chip__remove > .clear-field--button.chip__remove__icon,
+.select.small .select__choose-field .select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon,
+.chip.removable > .chip__remove > .clear-field--button.chip__remove__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+.clear-field.clear-field--button .clear-field--button__wrapper,
+.select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper,
+.select.small .select__choose-field .select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper,
+.chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper {
+  width: auto;
+  max-width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  padding: 0 0.25rem;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  transform: scale(0.33333);
+  background-color: #a62626;
+  transition: transform 160ms ease 160ms, max-width 160ms ease, background-color 160ms ease 160ms;
+}
+.clear-field.clear-field--button .clear-field--button__wrapper.active,
+.select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper.active,
+.chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper.active {
+  max-width: 6rem;
+  background-color: rgba(166, 38, 38, 0.04);
+  border-color: rgba(166, 38, 38, 0.12);
+  transform: scale(1);
+  transition: transform 240ms ease, max-width 240ms ease 200ms, background-color 240ms ease;
+}
+.clear-field.clear-field--button .clear-field--button__wrapper.active .clear-field--button__text,
+.clear-field.clear-field--button .clear-field--button__wrapper.active .clear-field--button__icon,
+.select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper.active .clear-field--button__text,
+.chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper.active .clear-field--button__text,
+.select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper.active .clear-field--button__icon,
+.chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper.active .clear-field--button__icon {
+  opacity: 1;
+  transition: 200ms ease 260ms;
+}
+.clear-field.clear-field--button .clear-field--button__wrapper .clear-field--button__text,
+.select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper .clear-field--button__text,
+.chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper .clear-field--button__text {
+  font-size: 0.75rem;
+  line-height: 2;
+  color: #a62626;
+  opacity: 0;
+  overflow: hidden;
+  transition: 240ms ease;
+}
+body[dir=rtl] .clear-field.clear-field--button .clear-field--button__wrapper .clear-field--button__text,
+body[dir=rtl] .select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper .clear-field--button__text,
+body[dir=rtl] .chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper .clear-field--button__text {
+  margin-left: 0.25rem;
+}
+body[dir=ltr] .clear-field.clear-field--button .clear-field--button__wrapper .clear-field--button__text, body:not([dir=ltr]):not([dir=rtl]) .clear-field.clear-field--button .clear-field--button__wrapper .clear-field--button__text,
+body[dir=ltr] .select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper .clear-field--button__text,
+body[dir=ltr] .chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper .clear-field--button__text,
+body:not([dir=ltr]):not([dir=rtl]) .select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper .clear-field--button__text,
+body:not([dir=ltr]):not([dir=rtl]) .chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper .clear-field--button__text {
+  margin-right: 0.25rem;
+}
+.clear-field.clear-field--button .clear-field--button__wrapper .clear-field--button__icon,
+.select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper .clear-field--button__icon,
+.chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper .clear-field--button__icon {
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  opacity: 0;
+  color: #a62626;
+  transition: 160ms ease;
+}
+body[dir=rtl] .clear-field.clear-field--button .clear-field--button__wrapper .clear-field--button__icon,
+body[dir=rtl] .select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper .clear-field--button__icon,
+body[dir=rtl] .chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper .clear-field--button__icon {
+  margin-left: 0.25rem;
+}
+body[dir=ltr] .clear-field.clear-field--button .clear-field--button__wrapper .clear-field--button__icon, body:not([dir=ltr]):not([dir=rtl]) .clear-field.clear-field--button .clear-field--button__wrapper .clear-field--button__icon,
+body[dir=ltr] .select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper .clear-field--button__icon,
+body[dir=ltr] .chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper .clear-field--button__icon,
+body:not([dir=ltr]):not([dir=rtl]) .select__choose-field__clear > .clear-field--button.select__choose-field__clear__icon .clear-field--button__wrapper .clear-field--button__icon,
+body:not([dir=ltr]):not([dir=rtl]) .chip.removable > .chip__remove > .clear-field--button.chip__remove__icon .clear-field--button__wrapper .clear-field--button__icon {
+  margin-right: 0.25rem;
+}
+*:hover > .clear-field:not(.clear-field--button),
+.select__choose-field__clear:hover > .select__choose-field__clear__icon:not(.clear-field--button),
+.select.small .select__choose-field .select__choose-field__clear:hover > .select__choose-field__clear__icon:not(.clear-field--button),
+.chip.removable > .chip__remove:hover > .chip__remove__icon:not(.clear-field--button) {
   background-color: rgba(0, 0, 0, 0.12);
 }
-*:hover > .clear-field.primary:not(.white),
-.select__choose-field__clear:hover > .primary.select__choose-field__clear__icon:not(.white),
-.select.small .select__choose-field .select__choose-field__clear:hover > .primary.select__choose-field__clear__icon:not(.white),
-.chip.removable > .chip__remove:hover > .primary.chip__remove__icon:not(.white) {
+*:hover > .clear-field:not(.clear-field--button).primary:not(.white),
+.select__choose-field__clear:hover > .select__choose-field__clear__icon:not(.clear-field--button).primary:not(.white),
+.select.small .select__choose-field .select__choose-field__clear:hover > .select__choose-field__clear__icon:not(.clear-field--button).primary:not(.white),
+.chip.removable > .chip__remove:hover > .chip__remove__icon:not(.clear-field--button).primary:not(.white) {
   background-color: rgba(166, 38, 38, 0.12);
 }
-*:active > .clear-field,
-.select__choose-field__clear:active > .select__choose-field__clear__icon,
-.chip.primary.removable:not(.outlined) > .chip__remove:active > .chip__remove__icon,
-.chip.primary.outlined.removable > .chip__remove:active > .chip__remove__icon,
-.select.small .select__choose-field .select__choose-field__clear:active > .select__choose-field__clear__icon,
-.chip.removable > .chip__remove:active > .chip__remove__icon {
+*:active > .clear-field:not(.clear-field--button),
+.select__choose-field__clear:active > .select__choose-field__clear__icon:not(.clear-field--button),
+.select.small .select__choose-field .select__choose-field__clear:active > .select__choose-field__clear__icon:not(.clear-field--button),
+.chip.removable > .chip__remove:active > .chip__remove__icon:not(.clear-field--button) {
   background-color: rgba(0, 0, 0, 0.24);
 }
-*:active > .clear-field.primary:not(.white),
-.select__choose-field__clear:active > .primary.select__choose-field__clear__icon:not(.white),
-.select.small .select__choose-field .select__choose-field__clear:active > .primary.select__choose-field__clear__icon:not(.white),
-.chip.removable > .chip__remove:active > .primary.chip__remove__icon:not(.white) {
+*:active > .clear-field:not(.clear-field--button).primary:not(.white),
+.select__choose-field__clear:active > .select__choose-field__clear__icon:not(.clear-field--button).primary:not(.white),
+.select.small .select__choose-field .select__choose-field__clear:active > .select__choose-field__clear__icon:not(.clear-field--button).primary:not(.white),
+.chip.removable > .chip__remove:active > .chip__remove__icon:not(.clear-field--button).primary:not(.white) {
   background-color: rgba(166, 38, 38, 0.24);
 }
 
@@ -12116,6 +12334,154 @@ body[dir=ltr] .action-element__icon, body:not([dir=ltr]):not([dir=rtl]) .action-
   height: 0.5rem;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.32);
+}
+
+.textarea {
+  display: flex;
+  position: relative;
+}
+.textarea textarea {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
+  width: 100%;
+  min-height: 7.5rem;
+  border-radius: 0.25rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  position: relative;
+  background-color: transparent;
+  resize: none;
+  padding: 0.5rem 1rem;
+  box-shadow: inset 0 0 0 0 transparent;
+  transition: border-color 400ms ease, box-shadow 400ms ease;
+}
+.textarea textarea:focus {
+  border-color: rgba(166, 38, 38, 0.56);
+  box-shadow: inset 0 0 0 1px rgba(166, 38, 38, 0.56);
+}
+.textarea textarea:focus + .textarea__resize-grabber {
+  transform: translate(1px, -1px);
+}
+.textarea textarea:focus + .textarea__resize-grabber:after {
+  background-color: rgba(166, 38, 38, 0.56);
+}
+.textarea textarea::-webkit-input-placeholder {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.32);
+}
+.textarea textarea::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.32);
+}
+.textarea textarea:-ms-input-placeholder {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.32);
+}
+.textarea textarea:-moz-placeholder {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.32);
+}
+.textarea.resizable textarea {
+  resize: vertical;
+}
+.textarea.resizable .textarea__resize-grabber {
+  opacity: 1;
+  visibility: visible;
+}
+
+.textarea__resize-grabber {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-bottom-left-radius: 3px;
+  background-color: white;
+  bottom: 1px;
+  left: 1px;
+  z-index: 2;
+  position: absolute;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 400ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.textarea__resize-grabber:after {
+  content: "";
+  border-radius: 2px;
+  width: 0.5rem;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.24);
+  transform: rotate(45deg);
+  transition: 400ms ease;
+}
+
+.file-input.file-input--image-uploader:hover .file-input--image-uploader__hotspot__dashed-border, .file-input.file-input--image-uploader:focus .file-input--image-uploader__hotspot__dashed-border {
+  opacity: 0.48;
+}
+.file-input.file-input--image-uploader:hover .file-input--image-uploader__hotspot__icon__photo, .file-input.file-input--image-uploader:focus .file-input--image-uploader__hotspot__icon__photo {
+  color: rgba(0, 0, 0, 0.48);
+}
+.file-input .file-input--image-uploader__hotspot {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.file-input .file-input--image-uploader__hotspot__dashed-border {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  opacity: 0.24;
+  transition: opacity 360ms ease;
+}
+.file-input .file-input--image-uploader__hotspot__dashed-border img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.file-input .file-input--image-uploader__hotspot__icon {
+  position: absolute;
+}
+.file-input .file-input--image-uploader__hotspot__icon__plus {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -0.25rem;
+  right: -0.25rem;
+  z-index: 2;
+  color: #a62626;
+  transition: color 360ms ease;
+}
+.file-input .file-input--image-uploader__hotspot__icon__plus:after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: -1;
+  border-radius: 50%;
+}
+.file-input .file-input--image-uploader__hotspot__icon__photo {
+  color: rgba(0, 0, 0, 0.24);
+  transition: color 360ms ease;
+}
+.file-input .file-input--image-uploader__input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=sonnat.css.map */

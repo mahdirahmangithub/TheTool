@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/sonnat.font-icon.css" />
+    <link rel="stylesheet" href="assets/css/sonnat.reset.css" />
+    <link rel="stylesheet" href="assets/css/sonnat.elements.css" />
+    <title>File Input</title>
+  </head>
+  <body dir="rtl">
+    <div class="root">
+      <div class="file-input file-input--image-uploader">
+        <label class="file-input--image-uploader__hotspot" for="image-uploader">
+          <div class="file-input--image-uploader__hotspot__dashed-border">
+            <img src="assets/media/dashed-border.svg" alt="Dashed Border" />
+          </div>
+          <div class="file-input--image-uploader__hotspot__icon">
+            <span
+              class="file-input--image-uploader__hotspot__icon__photo sonnat-icon sonnat-icon-photo-o"
+            ></span>
+            <span
+              class="file-input--image-uploader__hotspot__icon__plus sonnat-icon sonnat-icon-circle-add"
+            ></span>
+          </div>
+        </label>
+        <input
+          class="file-input--image-uploader__input"
+          type="file"
+          name="image"
+          id="image-uploader"
+          multiple
+        />
+      </div>
+    </div>
+  </body>
+</html>
